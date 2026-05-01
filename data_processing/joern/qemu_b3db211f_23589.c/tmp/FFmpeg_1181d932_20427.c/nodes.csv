@@ -1,0 +1,133 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/FFmpeg_1181d932_20427.c								
+ANR	2	Function	avc_luma_hv_qrt_and_aver_dst_16x16_msa	1:0:0:986							
+ANR	3	FunctionDef	"avc_luma_hv_qrt_and_aver_dst_16x16_msa (const uint8_t * src_x , const uint8_t * src_y , int32_t src_stride , uint8_t * dst , int32_t dst_stride)"		2	0					
+ANR	4	CompoundStatement		6:0:353:986	2	0					
+ANR	5	IdentifierDeclStatement	uint32_t multiple8_cnt ;	7:4:359:381	2	0	True				
+ANR	6	IdentifierDecl	multiple8_cnt		2	0					
+ANR	7	IdentifierDeclType	uint32_t		2	0					
+ANR	8	Identifier	multiple8_cnt		2	1					
+ANR	9	ForStatement	for ( multiple8_cnt = 2 ; multiple8_cnt -- ; )		2	1					
+ANR	10	ForInit	multiple8_cnt = 2 ;	9:9:393:410	2	0	True				
+ANR	11	AssignmentExpression	multiple8_cnt = 2		2	0		=			
+ANR	12	Identifier	multiple8_cnt		2	0					
+ANR	13	PrimaryExpression	2		2	1					
+ANR	14	Condition	multiple8_cnt --	9:28:412:426	2	1	True				
+ANR	15	PostIncDecOperationExpression	multiple8_cnt --		2	0					
+ANR	16	Identifier	multiple8_cnt		2	0					
+ANR	17	IncDec	--		2	1					
+ANR	18	CompoundStatement		4:46:76:76	2	2					
+ANR	19	ExpressionStatement	"avc_luma_hv_qrt_and_aver_dst_8x8_msa ( src_x , src_y , src_stride , dst , dst_stride )"	10:8:440:564	2	0	True				
+ANR	20	CallExpression	"avc_luma_hv_qrt_and_aver_dst_8x8_msa ( src_x , src_y , src_stride , dst , dst_stride )"		2	0					
+ANR	21	Callee	avc_luma_hv_qrt_and_aver_dst_8x8_msa		2	0					
+ANR	22	Identifier	avc_luma_hv_qrt_and_aver_dst_8x8_msa		2	0					
+ANR	23	ArgumentList	src_x		2	1					
+ANR	24	Argument	src_x		2	0					
+ANR	25	Identifier	src_x		2	0					
+ANR	26	Argument	src_y		2	1					
+ANR	27	Identifier	src_y		2	0					
+ANR	28	Argument	src_stride		2	2					
+ANR	29	Identifier	src_stride		2	0					
+ANR	30	Argument	dst		2	3					
+ANR	31	Identifier	dst		2	0					
+ANR	32	Argument	dst_stride		2	4					
+ANR	33	Identifier	dst_stride		2	0					
+ANR	34	ExpressionStatement	src_x += 8	13:8:575:585	2	1	True				
+ANR	35	AssignmentExpression	src_x += 8		2	0		+=			
+ANR	36	Identifier	src_x		2	0					
+ANR	37	PrimaryExpression	8		2	1					
+ANR	38	ExpressionStatement	src_y += 8	14:8:595:605	2	2	True				
+ANR	39	AssignmentExpression	src_y += 8		2	0		+=			
+ANR	40	Identifier	src_y		2	0					
+ANR	41	PrimaryExpression	8		2	1					
+ANR	42	ExpressionStatement	dst += 8	15:8:615:623	2	3	True				
+ANR	43	AssignmentExpression	dst += 8		2	0		+=			
+ANR	44	Identifier	dst		2	0					
+ANR	45	PrimaryExpression	8		2	1					
+ANR	46	ExpressionStatement	src_x += ( 8 * src_stride ) - 16	18:4:636:666	2	2	True				
+ANR	47	AssignmentExpression	src_x += ( 8 * src_stride ) - 16		2	0		+=			
+ANR	48	Identifier	src_x		2	0					
+ANR	49	AdditiveExpression	( 8 * src_stride ) - 16		2	1		-			
+ANR	50	MultiplicativeExpression	8 * src_stride		2	0		*			
+ANR	51	PrimaryExpression	8		2	0					
+ANR	52	Identifier	src_stride		2	1					
+ANR	53	PrimaryExpression	16		2	1					
+ANR	54	ExpressionStatement	src_y += ( 8 * src_stride ) - 16	19:4:672:702	2	3	True				
+ANR	55	AssignmentExpression	src_y += ( 8 * src_stride ) - 16		2	0		+=			
+ANR	56	Identifier	src_y		2	0					
+ANR	57	AdditiveExpression	( 8 * src_stride ) - 16		2	1		-			
+ANR	58	MultiplicativeExpression	8 * src_stride		2	0		*			
+ANR	59	PrimaryExpression	8		2	0					
+ANR	60	Identifier	src_stride		2	1					
+ANR	61	PrimaryExpression	16		2	1					
+ANR	62	ExpressionStatement	dst += ( 8 * dst_stride ) - 16	20:4:708:736	2	4	True				
+ANR	63	AssignmentExpression	dst += ( 8 * dst_stride ) - 16		2	0		+=			
+ANR	64	Identifier	dst		2	0					
+ANR	65	AdditiveExpression	( 8 * dst_stride ) - 16		2	1		-			
+ANR	66	MultiplicativeExpression	8 * dst_stride		2	0		*			
+ANR	67	PrimaryExpression	8		2	0					
+ANR	68	Identifier	dst_stride		2	1					
+ANR	69	PrimaryExpression	16		2	1					
+ANR	70	ForStatement	for ( multiple8_cnt = 2 ; multiple8_cnt -- ; )		2	5					
+ANR	71	ForInit	multiple8_cnt = 2 ;	22:9:748:765	2	0	True				
+ANR	72	AssignmentExpression	multiple8_cnt = 2		2	0		=			
+ANR	73	Identifier	multiple8_cnt		2	0					
+ANR	74	PrimaryExpression	2		2	1					
+ANR	75	Condition	multiple8_cnt --	22:28:767:781	2	1	True				
+ANR	76	PostIncDecOperationExpression	multiple8_cnt --		2	0					
+ANR	77	Identifier	multiple8_cnt		2	0					
+ANR	78	IncDec	--		2	1					
+ANR	79	CompoundStatement		17:46:431:431	2	2					
+ANR	80	ExpressionStatement	"avc_luma_hv_qrt_and_aver_dst_8x8_msa ( src_x , src_y , src_stride , dst , dst_stride )"	23:8:795:919	2	0	True				
+ANR	81	CallExpression	"avc_luma_hv_qrt_and_aver_dst_8x8_msa ( src_x , src_y , src_stride , dst , dst_stride )"		2	0					
+ANR	82	Callee	avc_luma_hv_qrt_and_aver_dst_8x8_msa		2	0					
+ANR	83	Identifier	avc_luma_hv_qrt_and_aver_dst_8x8_msa		2	0					
+ANR	84	ArgumentList	src_x		2	1					
+ANR	85	Argument	src_x		2	0					
+ANR	86	Identifier	src_x		2	0					
+ANR	87	Argument	src_y		2	1					
+ANR	88	Identifier	src_y		2	0					
+ANR	89	Argument	src_stride		2	2					
+ANR	90	Identifier	src_stride		2	0					
+ANR	91	Argument	dst		2	3					
+ANR	92	Identifier	dst		2	0					
+ANR	93	Argument	dst_stride		2	4					
+ANR	94	Identifier	dst_stride		2	0					
+ANR	95	ExpressionStatement	src_x += 8	26:8:930:940	2	1	True				
+ANR	96	AssignmentExpression	src_x += 8		2	0		+=			
+ANR	97	Identifier	src_x		2	0					
+ANR	98	PrimaryExpression	8		2	1					
+ANR	99	ExpressionStatement	src_y += 8	27:8:950:960	2	2	True				
+ANR	100	AssignmentExpression	src_y += 8		2	0		+=			
+ANR	101	Identifier	src_y		2	0					
+ANR	102	PrimaryExpression	8		2	1					
+ANR	103	ExpressionStatement	dst += 8	28:8:970:978	2	3	True				
+ANR	104	AssignmentExpression	dst += 8		2	0		+=			
+ANR	105	Identifier	dst		2	0					
+ANR	106	PrimaryExpression	8		2	1					
+ANR	107	ReturnType	static void		2	1					
+ANR	108	Identifier	avc_luma_hv_qrt_and_aver_dst_16x16_msa		2	2					
+ANR	109	ParameterList	"const uint8_t * src_x , const uint8_t * src_y , int32_t src_stride , uint8_t * dst , int32_t dst_stride"		2	3					
+ANR	110	Parameter	const uint8_t * src_x	1:51:51:70	2	0	True				
+ANR	111	ParameterType	const uint8_t *		2	0					
+ANR	112	Identifier	src_x		2	1					
+ANR	113	Parameter	const uint8_t * src_y	2:51:124:143	2	1	True				
+ANR	114	ParameterType	const uint8_t *		2	0					
+ANR	115	Identifier	src_y		2	1					
+ANR	116	Parameter	int32_t src_stride	3:51:197:214	2	2	True				
+ANR	117	ParameterType	int32_t		2	0					
+ANR	118	Identifier	src_stride		2	1					
+ANR	119	Parameter	uint8_t * dst	4:51:268:279	2	3	True				
+ANR	120	ParameterType	uint8_t *		2	0					
+ANR	121	Identifier	dst		2	1					
+ANR	122	Parameter	int32_t dst_stride	5:51:333:350	2	4	True				
+ANR	123	ParameterType	int32_t		2	0					
+ANR	124	Identifier	dst_stride		2	1					
+ANR	125	CFGEntryNode	ENTRY		2		True				
+ANR	126	CFGExitNode	EXIT		2		True				
+ANR	127	Symbol	src_x		2						
+ANR	128	Symbol	src_stride		2						
+ANR	129	Symbol	dst		2						
+ANR	130	Symbol	src_y		2						
+ANR	131	Symbol	dst_stride		2						
+ANR	132	Symbol	multiple8_cnt		2						

@@ -1,0 +1,88 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	3562	File	tmp/FFmpeg_a26e1d4c_24228.c								
+ANR	3563	Function	put_packetheader	1:0:0:393							
+ANR	3564	FunctionDef	"put_packetheader (NUTContext * nut , ByteIOContext * bc , int max_size , int calculate_checksum)"		3563	0					
+ANR	3565	CompoundStatement		2:0:102:393	3563	0					
+ANR	3566	ExpressionStatement	put_flush_packet ( bc )	3:4:108:128	3563	0	True				
+ANR	3567	CallExpression	put_flush_packet ( bc )		3563	0					
+ANR	3568	Callee	put_flush_packet		3563	0					
+ANR	3569	Identifier	put_flush_packet		3563	0					
+ANR	3570	ArgumentList	bc		3563	1					
+ANR	3571	Argument	bc		3563	0					
+ANR	3572	Identifier	bc		3563	0					
+ANR	3573	ExpressionStatement	nut -> packet_start [ 2 ] = url_ftell ( bc ) - 8	4:4:134:173	3563	1	True				
+ANR	3574	AssignmentExpression	nut -> packet_start [ 2 ] = url_ftell ( bc ) - 8		3563	0		=			
+ANR	3575	ArrayIndexing	nut -> packet_start [ 2 ]		3563	0					
+ANR	3576	PtrMemberAccess	nut -> packet_start		3563	0					
+ANR	3577	Identifier	nut		3563	0					
+ANR	3578	Identifier	packet_start		3563	1					
+ANR	3579	PrimaryExpression	2		3563	1					
+ANR	3580	AdditiveExpression	url_ftell ( bc ) - 8		3563	1		-			
+ANR	3581	CallExpression	url_ftell ( bc )		3563	0					
+ANR	3582	Callee	url_ftell		3563	0					
+ANR	3583	Identifier	url_ftell		3563	0					
+ANR	3584	ArgumentList	bc		3563	1					
+ANR	3585	Argument	bc		3563	0					
+ANR	3586	Identifier	bc		3563	0					
+ANR	3587	PrimaryExpression	8		3563	1					
+ANR	3588	ExpressionStatement	nut -> written_packet_size = max_size	5:4:179:214	3563	2	True				
+ANR	3589	AssignmentExpression	nut -> written_packet_size = max_size		3563	0		=			
+ANR	3590	PtrMemberAccess	nut -> written_packet_size		3563	0					
+ANR	3591	Identifier	nut		3563	0					
+ANR	3592	Identifier	written_packet_size		3563	1					
+ANR	3593	Identifier	max_size		3563	1					
+ANR	3594	IfStatement	if ( calculate_checksum )		3563	3					
+ANR	3595	Condition	calculate_checksum	7:7:228:245	3563	0	True				
+ANR	3596	Identifier	calculate_checksum		3563	0					
+ANR	3597	ExpressionStatement	"init_checksum ( bc , update_adler32 , 0 )"	8:8:256:292	3563	1	True				
+ANR	3598	CallExpression	"init_checksum ( bc , update_adler32 , 0 )"		3563	0					
+ANR	3599	Callee	init_checksum		3563	0					
+ANR	3600	Identifier	init_checksum		3563	0					
+ANR	3601	ArgumentList	bc		3563	1					
+ANR	3602	Argument	bc		3563	0					
+ANR	3603	Identifier	bc		3563	0					
+ANR	3604	Argument	update_adler32		3563	1					
+ANR	3605	Identifier	update_adler32		3563	0					
+ANR	3606	Argument	0		3563	2					
+ANR	3607	PrimaryExpression	0		3563	0					
+ANR	3608	ExpressionStatement	"put_v ( bc , nut -> written_packet_size )"	11:4:323:358	3563	4	True				
+ANR	3609	CallExpression	"put_v ( bc , nut -> written_packet_size )"		3563	0					
+ANR	3610	Callee	put_v		3563	0					
+ANR	3611	Identifier	put_v		3563	0					
+ANR	3612	ArgumentList	bc		3563	1					
+ANR	3613	Argument	bc		3563	0					
+ANR	3614	Identifier	bc		3563	0					
+ANR	3615	Argument	nut -> written_packet_size		3563	1					
+ANR	3616	PtrMemberAccess	nut -> written_packet_size		3563	0					
+ANR	3617	Identifier	nut		3563	0					
+ANR	3618	Identifier	written_packet_size		3563	1					
+ANR	3619	ReturnStatement	return 0 ;	13:4:383:391	3563	5	True				
+ANR	3620	PrimaryExpression	0		3563	0					
+ANR	3621	ReturnType	static int		3563	1					
+ANR	3622	Identifier	put_packetheader		3563	2					
+ANR	3623	ParameterList	"NUTContext * nut , ByteIOContext * bc , int max_size , int calculate_checksum"		3563	3					
+ANR	3624	Parameter	NUTContext * nut	1:28:28:42	3563	0	True				
+ANR	3625	ParameterType	NUTContext *		3563	0					
+ANR	3626	Identifier	nut		3563	1					
+ANR	3627	Parameter	ByteIOContext * bc	1:45:45:61	3563	1	True				
+ANR	3628	ParameterType	ByteIOContext *		3563	0					
+ANR	3629	Identifier	bc		3563	1					
+ANR	3630	Parameter	int max_size	1:64:64:75	3563	2	True				
+ANR	3631	ParameterType	int		3563	0					
+ANR	3632	Identifier	max_size		3563	1					
+ANR	3633	Parameter	int calculate_checksum	1:78:78:99	3563	3	True				
+ANR	3634	ParameterType	int		3563	0					
+ANR	3635	Identifier	calculate_checksum		3563	1					
+ANR	3636	CFGEntryNode	ENTRY		3563		True				
+ANR	3637	CFGExitNode	EXIT		3563		True				
+ANR	3638	Symbol	bc		3563						
+ANR	3639	Symbol	* * nut		3563						
+ANR	3640	Symbol	* nut -> packet_start		3563						
+ANR	3641	Symbol	calculate_checksum		3563						
+ANR	3642	Symbol	nut -> packet_start		3563						
+ANR	3643	Symbol	* nut		3563						
+ANR	3644	Symbol	url_ftell		3563						
+ANR	3645	Symbol	update_adler32		3563						
+ANR	3646	Symbol	nut		3563						
+ANR	3647	Symbol	nut -> written_packet_size		3563						
+ANR	3648	Symbol	max_size		3563						

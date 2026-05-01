@@ -1,0 +1,146 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	2490	File	tmp/FFmpeg_570a4a01_12957.c								
+ANR	2491	Function	avi_read_tag	1:0:0:486							
+ANR	2492	FunctionDef	"avi_read_tag (AVFormatContext * s , AVStream * st , uint32_t tag , uint32_t size)"		2491	0					
+ANR	2493	CompoundStatement		2:0:87:486	2491	0					
+ANR	2494	IdentifierDeclStatement	AVIOContext * pb = s -> pb ;	3:4:93:116	2491	0	True				
+ANR	2495	IdentifierDecl	* pb = s -> pb		2491	0					
+ANR	2496	IdentifierDeclType	AVIOContext *		2491	0					
+ANR	2497	Identifier	pb		2491	1					
+ANR	2498	AssignmentExpression	* pb = s -> pb		2491	2		=			
+ANR	2499	Identifier	pb		2491	0					
+ANR	2500	PtrMemberAccess	s -> pb		2491	1					
+ANR	2501	Identifier	s		2491	0					
+ANR	2502	Identifier	pb		2491	1					
+ANR	2503	IdentifierDeclStatement	"char key [ 5 ] = { 0 } , * value ;"	4:4:122:147	2491	1	True				
+ANR	2504	IdentifierDecl	key [ 5 ] = { 0 }		2491	0					
+ANR	2505	IdentifierDeclType	char [ 5 ]		2491	0					
+ANR	2506	Identifier	key		2491	1					
+ANR	2507	PrimaryExpression	5		2491	2					
+ANR	2508	AssignmentExpression	key [ 5 ] = { 0 }		2491	3		=			
+ANR	2509	Identifier	key		2491	0					
+ANR	2510	InitializerList	0		2491	1					
+ANR	2511	PrimaryExpression	0		2491	0					
+ANR	2512	IdentifierDecl	* value		2491	1					
+ANR	2513	IdentifierDeclType	char *		2491	0					
+ANR	2514	Identifier	value		2491	1					
+ANR	2515	ExpressionStatement	size += ( size & 1 )	6:4:154:172	2491	2	True				
+ANR	2516	AssignmentExpression	size += ( size & 1 )		2491	0		+=			
+ANR	2517	Identifier	size		2491	0					
+ANR	2518	BitAndExpression	size & 1		2491	1		&			
+ANR	2519	Identifier	size		2491	0					
+ANR	2520	PrimaryExpression	1		2491	1					
+ANR	2521	IfStatement	if ( size == UINT_MAX )		2491	3					
+ANR	2522	Condition	size == UINT_MAX	8:8:183:198	2491	0	True				
+ANR	2523	EqualityExpression	size == UINT_MAX		2491	0		==			
+ANR	2524	Identifier	size		2491	0					
+ANR	2525	Identifier	UINT_MAX		2491	1					
+ANR	2526	ReturnStatement	return - 1 ;	9:8:209:218	2491	1	True				
+ANR	2527	UnaryOperationExpression	- 1		2491	0					
+ANR	2528	UnaryOperator	-		2491	0					
+ANR	2529	PrimaryExpression	1		2491	1					
+ANR	2530	ExpressionStatement	value = av_malloc ( size + 1 )	10:4:224:249	2491	4	True				
+ANR	2531	AssignmentExpression	value = av_malloc ( size + 1 )		2491	0		=			
+ANR	2532	Identifier	value		2491	0					
+ANR	2533	CallExpression	av_malloc ( size + 1 )		2491	1					
+ANR	2534	Callee	av_malloc		2491	0					
+ANR	2535	Identifier	av_malloc		2491	0					
+ANR	2536	ArgumentList	size + 1		2491	1					
+ANR	2537	Argument	size + 1		2491	0					
+ANR	2538	AdditiveExpression	size + 1		2491	0		+			
+ANR	2539	Identifier	size		2491	0					
+ANR	2540	PrimaryExpression	1		2491	1					
+ANR	2541	IfStatement	if ( ! value )		2491	5					
+ANR	2542	Condition	! value	11:8:259:264	2491	0	True				
+ANR	2543	UnaryOperationExpression	! value		2491	0					
+ANR	2544	UnaryOperator	!		2491	0					
+ANR	2545	Identifier	value		2491	1					
+ANR	2546	ReturnStatement	return - 1 ;	12:8:275:284	2491	1	True				
+ANR	2547	UnaryOperationExpression	- 1		2491	0					
+ANR	2548	UnaryOperator	-		2491	0					
+ANR	2549	PrimaryExpression	1		2491	1					
+ANR	2550	ExpressionStatement	"avio_read ( pb , value , size )"	13:4:290:316	2491	6	True				
+ANR	2551	CallExpression	"avio_read ( pb , value , size )"		2491	0					
+ANR	2552	Callee	avio_read		2491	0					
+ANR	2553	Identifier	avio_read		2491	0					
+ANR	2554	ArgumentList	pb		2491	1					
+ANR	2555	Argument	pb		2491	0					
+ANR	2556	Identifier	pb		2491	0					
+ANR	2557	Argument	value		2491	1					
+ANR	2558	Identifier	value		2491	0					
+ANR	2559	Argument	size		2491	2					
+ANR	2560	Identifier	size		2491	0					
+ANR	2561	ExpressionStatement	value [ size ] = 0	14:4:322:335	2491	7	True				
+ANR	2562	AssignmentExpression	value [ size ] = 0		2491	0		=			
+ANR	2563	ArrayIndexing	value [ size ]		2491	0					
+ANR	2564	Identifier	value		2491	0					
+ANR	2565	Identifier	size		2491	1					
+ANR	2566	PrimaryExpression	0		2491	1					
+ANR	2567	ExpressionStatement	"AV_WL32 ( key , tag )"	16:4:342:359	2491	8	True				
+ANR	2568	CallExpression	"AV_WL32 ( key , tag )"		2491	0					
+ANR	2569	Callee	AV_WL32		2491	0					
+ANR	2570	Identifier	AV_WL32		2491	0					
+ANR	2571	ArgumentList	key		2491	1					
+ANR	2572	Argument	key		2491	0					
+ANR	2573	Identifier	key		2491	0					
+ANR	2574	Argument	tag		2491	1					
+ANR	2575	Identifier	tag		2491	0					
+ANR	2576	ReturnStatement	"return av_dict_set ( st ? & st -> metadata : & s -> metadata , key , value , AV_DICT_DONT_STRDUP_VAL ) ;"	18:4:366:484	2491	9	True				
+ANR	2577	CallExpression	"av_dict_set ( st ? & st -> metadata : & s -> metadata , key , value , AV_DICT_DONT_STRDUP_VAL )"		2491	0					
+ANR	2578	Callee	av_dict_set		2491	0					
+ANR	2579	Identifier	av_dict_set		2491	0					
+ANR	2580	ArgumentList	st ? & st -> metadata : & s -> metadata		2491	1					
+ANR	2581	Argument	st ? & st -> metadata : & s -> metadata		2491	0					
+ANR	2582	ConditionalExpression	st ? & st -> metadata : & s -> metadata		2491	0					
+ANR	2583	Condition	st		2491	0					
+ANR	2584	Identifier	st		2491	0					
+ANR	2585	UnaryOperationExpression	& st -> metadata		2491	1					
+ANR	2586	UnaryOperator	&		2491	0					
+ANR	2587	PtrMemberAccess	st -> metadata		2491	1					
+ANR	2588	Identifier	st		2491	0					
+ANR	2589	Identifier	metadata		2491	1					
+ANR	2590	UnaryOperationExpression	& s -> metadata		2491	2					
+ANR	2591	UnaryOperator	&		2491	0					
+ANR	2592	PtrMemberAccess	s -> metadata		2491	1					
+ANR	2593	Identifier	s		2491	0					
+ANR	2594	Identifier	metadata		2491	1					
+ANR	2595	Argument	key		2491	1					
+ANR	2596	Identifier	key		2491	0					
+ANR	2597	Argument	value		2491	2					
+ANR	2598	Identifier	value		2491	0					
+ANR	2599	Argument	AV_DICT_DONT_STRDUP_VAL		2491	3					
+ANR	2600	Identifier	AV_DICT_DONT_STRDUP_VAL		2491	0					
+ANR	2601	ReturnType	static int		2491	1					
+ANR	2602	Identifier	avi_read_tag		2491	2					
+ANR	2603	ParameterList	"AVFormatContext * s , AVStream * st , uint32_t tag , uint32_t size"		2491	3					
+ANR	2604	Parameter	AVFormatContext * s	1:24:24:41	2491	0	True				
+ANR	2605	ParameterType	AVFormatContext *		2491	0					
+ANR	2606	Identifier	s		2491	1					
+ANR	2607	Parameter	AVStream * st	1:44:44:55	2491	1	True				
+ANR	2608	ParameterType	AVStream *		2491	0					
+ANR	2609	Identifier	st		2491	1					
+ANR	2610	Parameter	uint32_t tag	1:58:58:69	2491	2	True				
+ANR	2611	ParameterType	uint32_t		2491	0					
+ANR	2612	Identifier	tag		2491	1					
+ANR	2613	Parameter	uint32_t size	1:72:72:84	2491	3	True				
+ANR	2614	ParameterType	uint32_t		2491	0					
+ANR	2615	Identifier	size		2491	1					
+ANR	2616	CFGEntryNode	ENTRY		2491		True				
+ANR	2617	CFGExitNode	EXIT		2491		True				
+ANR	2618	Symbol	av_malloc		2491						
+ANR	2619	Symbol	st		2491						
+ANR	2620	Symbol	& s -> metadata		2491						
+ANR	2621	Symbol	av_dict_set		2491						
+ANR	2622	Symbol	s -> pb		2491						
+ANR	2623	Symbol	UINT_MAX		2491						
+ANR	2624	Symbol	pb		2491						
+ANR	2625	Symbol	s		2491						
+ANR	2626	Symbol	* size		2491						
+ANR	2627	Symbol	size		2491						
+ANR	2628	Symbol	* value		2491						
+ANR	2629	Symbol	& st -> metadata		2491						
+ANR	2630	Symbol	tag		2491						
+ANR	2631	Symbol	* s		2491						
+ANR	2632	Symbol	value		2491						
+ANR	2633	Symbol	key		2491						
+ANR	2634	Symbol	AV_DICT_DONT_STRDUP_VAL		2491						

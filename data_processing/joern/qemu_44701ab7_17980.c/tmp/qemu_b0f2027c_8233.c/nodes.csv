@@ -1,0 +1,40 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/qemu_b0f2027c_8233.c								
+ANR	2	Function	virtio_blk_data_plane_create	1:0:0:919							
+ANR	3	FunctionDef	"virtio_blk_data_plane_create (VirtIODevice * vdev , VirtIOBlkConf * blk , VirtIOBlockDataPlane * * dataplane)"		2	0					
+ANR	4	CompoundStatement		3:0:142:919	2	0					
+ANR	5	IdentifierDeclStatement	VirtIOBlockDataPlane * s ;	4:4:148:171	2	0	True				
+ANR	6	IdentifierDecl	* s		2	0					
+ANR	7	IdentifierDeclType	VirtIOBlockDataPlane *		2	0					
+ANR	8	Identifier	s		2	1					
+ANR	9	IdentifierDeclStatement	int fd ;	5:4:177:183	2	1	True				
+ANR	10	IdentifierDecl	fd		2	0					
+ANR	11	IdentifierDeclType	int		2	0					
+ANR	12	Identifier	fd		2	1					
+ANR	13	ExpressionStatement	* dataplane = NULL	6:4:189:206	2	2	True				
+ANR	14	AssignmentExpression	* dataplane = NULL		2	0		=			
+ANR	15	UnaryOperationExpression	* dataplane		2	0					
+ANR	16	UnaryOperator	*		2	0					
+ANR	17	Identifier	dataplane		2	1					
+ANR	18	Identifier	NULL		2	1					
+ANR	19	ReturnType	bool		2	1					
+ANR	20	Identifier	virtio_blk_data_plane_create		2	2					
+ANR	21	ParameterList	"VirtIODevice * vdev , VirtIOBlkConf * blk , VirtIOBlockDataPlane * * dataplane"		2	3					
+ANR	22	Parameter	VirtIODevice * vdev	1:34:34:51	2	0	True				
+ANR	23	ParameterType	VirtIODevice *		2	0					
+ANR	24	Identifier	vdev		2	1					
+ANR	25	Parameter	VirtIOBlkConf * blk	1:54:54:71	2	1	True				
+ANR	26	ParameterType	VirtIOBlkConf *		2	0					
+ANR	27	Identifier	blk		2	1					
+ANR	28	Parameter	VirtIOBlockDataPlane * * dataplane	2:34:108:139	2	2	True				
+ANR	29	ParameterType	VirtIOBlockDataPlane * *		2	0					
+ANR	30	Identifier	dataplane		2	1					
+ANR	31	CFGEntryNode	ENTRY		2		True				
+ANR	32	CFGExitNode	EXIT		2		True				
+ANR	33	Symbol	blk		2						
+ANR	34	Symbol	dataplane		2						
+ANR	35	Symbol	s		2						
+ANR	36	Symbol	NULL		2						
+ANR	37	Symbol	vdev		2						
+ANR	38	Symbol	* dataplane		2						
+ANR	39	Symbol	fd		2						

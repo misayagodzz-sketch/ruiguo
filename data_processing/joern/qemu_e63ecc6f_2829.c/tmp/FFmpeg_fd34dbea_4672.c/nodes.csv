@@ -1,0 +1,76 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/FFmpeg_fd34dbea_4672.c								
+ANR	2	Function	mxf_read_cryptographic_context	1:0:0:316							
+ANR	3	FunctionDef	"mxf_read_cryptographic_context (void * arg , AVIOContext * pb , int tag , int size , UID uid)"		2	0					
+ANR	4	CompoundStatement		2:0:98:316	2	0					
+ANR	5	IdentifierDeclStatement	MXFCryptoContext * cryptocontext = arg ;	3:4:104:141	2	0	True				
+ANR	6	IdentifierDecl	* cryptocontext = arg		2	0					
+ANR	7	IdentifierDeclType	MXFCryptoContext *		2	0					
+ANR	8	Identifier	cryptocontext		2	1					
+ANR	9	AssignmentExpression	* cryptocontext = arg		2	2		=			
+ANR	10	Identifier	arg		2	0					
+ANR	11	Identifier	arg		2	1					
+ANR	12	IfStatement	if ( size != 16 )		2	1					
+ANR	13	Condition	size != 16	4:8:151:160	2	0	True				
+ANR	14	EqualityExpression	size != 16		2	0		!=			
+ANR	15	Identifier	size		2	0					
+ANR	16	PrimaryExpression	16		2	1					
+ANR	17	ReturnStatement	return - 1 ;	5:8:171:180	2	1	True				
+ANR	18	UnaryOperationExpression	- 1		2	0					
+ANR	19	UnaryOperator	-		2	0					
+ANR	20	PrimaryExpression	1		2	1					
+ANR	21	IfStatement	"if ( IS_KLV_KEY ( uid , mxf_crypto_source_container_ul ) )"		2	2					
+ANR	22	Condition	"IS_KLV_KEY ( uid , mxf_crypto_source_container_ul )"	6:8:190:236	2	0	True				
+ANR	23	CallExpression	"IS_KLV_KEY ( uid , mxf_crypto_source_container_ul )"		2	0					
+ANR	24	Callee	IS_KLV_KEY		2	0					
+ANR	25	Identifier	IS_KLV_KEY		2	0					
+ANR	26	ArgumentList	uid		2	1					
+ANR	27	Argument	uid		2	0					
+ANR	28	Identifier	uid		2	0					
+ANR	29	Argument	mxf_crypto_source_container_ul		2	1					
+ANR	30	Identifier	mxf_crypto_source_container_ul		2	0					
+ANR	31	ExpressionStatement	"avio_read ( pb , cryptocontext -> source_container_ul , 16 )"	7:8:247:300	2	1	True				
+ANR	32	CallExpression	"avio_read ( pb , cryptocontext -> source_container_ul , 16 )"		2	0					
+ANR	33	Callee	avio_read		2	0					
+ANR	34	Identifier	avio_read		2	0					
+ANR	35	ArgumentList	pb		2	1					
+ANR	36	Argument	pb		2	0					
+ANR	37	Identifier	pb		2	0					
+ANR	38	Argument	cryptocontext -> source_container_ul		2	1					
+ANR	39	PtrMemberAccess	cryptocontext -> source_container_ul		2	0					
+ANR	40	Identifier	cryptocontext		2	0					
+ANR	41	Identifier	source_container_ul		2	1					
+ANR	42	Argument	16		2	2					
+ANR	43	PrimaryExpression	16		2	0					
+ANR	44	ReturnStatement	return 0 ;	8:4:306:314	2	3	True				
+ANR	45	PrimaryExpression	0		2	0					
+ANR	46	ReturnType	static int		2	1					
+ANR	47	Identifier	mxf_read_cryptographic_context		2	2					
+ANR	48	ParameterList	"void * arg , AVIOContext * pb , int tag , int size , UID uid"		2	3					
+ANR	49	Parameter	void * arg	1:42:42:50	2	0	True				
+ANR	50	ParameterType	void *		2	0					
+ANR	51	Identifier	arg		2	1					
+ANR	52	Parameter	AVIOContext * pb	1:53:53:67	2	1	True				
+ANR	53	ParameterType	AVIOContext *		2	0					
+ANR	54	Identifier	pb		2	1					
+ANR	55	Parameter	int tag	1:70:70:76	2	2	True				
+ANR	56	ParameterType	int		2	0					
+ANR	57	Identifier	tag		2	1					
+ANR	58	Parameter	int size	1:79:79:86	2	3	True				
+ANR	59	ParameterType	int		2	0					
+ANR	60	Identifier	size		2	1					
+ANR	61	Parameter	UID uid	1:89:89:95	2	4	True				
+ANR	62	ParameterType	UID		2	0					
+ANR	63	Identifier	uid		2	1					
+ANR	64	CFGEntryNode	ENTRY		2		True				
+ANR	65	CFGExitNode	EXIT		2		True				
+ANR	66	Symbol	uid		2						
+ANR	67	Symbol	pb		2						
+ANR	68	Symbol	cryptocontext		2						
+ANR	69	Symbol	size		2						
+ANR	70	Symbol	arg		2						
+ANR	71	Symbol	cryptocontext -> source_container_ul		2						
+ANR	72	Symbol	tag		2						
+ANR	73	Symbol	IS_KLV_KEY		2						
+ANR	74	Symbol	* cryptocontext		2						
+ANR	75	Symbol	mxf_crypto_source_container_ul		2						

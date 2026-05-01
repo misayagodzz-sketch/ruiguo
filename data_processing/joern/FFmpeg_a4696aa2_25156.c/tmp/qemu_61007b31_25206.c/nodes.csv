@@ -1,0 +1,42 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	142	File	tmp/qemu_61007b31_25206.c								
+ANR	143	Function	bdrv_io_limits_disable	1:0:0:167							
+ANR	144	FunctionDef	bdrv_io_limits_disable (BlockDriverState * bs)		143	0					
+ANR	145	CompoundStatement		2:0:50:167	143	0					
+ANR	146	ExpressionStatement	bs -> io_limits_enabled = false	3:4:56:85	143	0	True				
+ANR	147	AssignmentExpression	bs -> io_limits_enabled = false		143	0		=			
+ANR	148	PtrMemberAccess	bs -> io_limits_enabled		143	0					
+ANR	149	Identifier	bs		143	0					
+ANR	150	Identifier	io_limits_enabled		143	1					
+ANR	151	Identifier	false		143	1					
+ANR	152	ExpressionStatement	bdrv_start_throttled_reqs ( bs )	5:4:92:121	143	1	True				
+ANR	153	CallExpression	bdrv_start_throttled_reqs ( bs )		143	0					
+ANR	154	Callee	bdrv_start_throttled_reqs		143	0					
+ANR	155	Identifier	bdrv_start_throttled_reqs		143	0					
+ANR	156	ArgumentList	bs		143	1					
+ANR	157	Argument	bs		143	0					
+ANR	158	Identifier	bs		143	0					
+ANR	159	ExpressionStatement	throttle_destroy ( & bs -> throttle_state )	7:4:128:165	143	2	True				
+ANR	160	CallExpression	throttle_destroy ( & bs -> throttle_state )		143	0					
+ANR	161	Callee	throttle_destroy		143	0					
+ANR	162	Identifier	throttle_destroy		143	0					
+ANR	163	ArgumentList	& bs -> throttle_state		143	1					
+ANR	164	Argument	& bs -> throttle_state		143	0					
+ANR	165	UnaryOperationExpression	& bs -> throttle_state		143	0					
+ANR	166	UnaryOperator	&		143	0					
+ANR	167	PtrMemberAccess	bs -> throttle_state		143	1					
+ANR	168	Identifier	bs		143	0					
+ANR	169	Identifier	throttle_state		143	1					
+ANR	170	ReturnType	void		143	1					
+ANR	171	Identifier	bdrv_io_limits_disable		143	2					
+ANR	172	ParameterList	BlockDriverState * bs		143	3					
+ANR	173	Parameter	BlockDriverState * bs	1:28:28:47	143	0	True				
+ANR	174	ParameterType	BlockDriverState *		143	0					
+ANR	175	Identifier	bs		143	1					
+ANR	176	CFGEntryNode	ENTRY		143		True				
+ANR	177	CFGExitNode	EXIT		143		True				
+ANR	178	Symbol	bs		143						
+ANR	179	Symbol	* bs		143						
+ANR	180	Symbol	& bs -> throttle_state		143						
+ANR	181	Symbol	false		143						
+ANR	182	Symbol	bs -> io_limits_enabled		143						

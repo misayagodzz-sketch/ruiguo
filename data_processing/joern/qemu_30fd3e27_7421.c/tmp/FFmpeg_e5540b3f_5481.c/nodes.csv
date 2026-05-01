@@ -1,0 +1,349 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	605	File	tmp/FFmpeg_e5540b3f_5481.c								
+ANR	606	Function	decode_b_mbs	1:0:0:2445							
+ANR	607	FunctionDef	decode_b_mbs (VC9Context * v)		606	0					
+ANR	608	CompoundStatement		2:0:39:2445	606	0					
+ANR	609	IdentifierDeclStatement	"int x , y , current_mb = 0 , last_mb = v -> height_mb * v -> width_mb , i ;"	3:4:45:150	606	0	True				
+ANR	610	IdentifierDecl	x		606	0					
+ANR	611	IdentifierDeclType	int		606	0					
+ANR	612	Identifier	x		606	1					
+ANR	613	IdentifierDecl	y		606	1					
+ANR	614	IdentifierDeclType	int		606	0					
+ANR	615	Identifier	y		606	1					
+ANR	616	IdentifierDecl	current_mb = 0		606	2					
+ANR	617	IdentifierDeclType	int		606	0					
+ANR	618	Identifier	current_mb		606	1					
+ANR	619	AssignmentExpression	current_mb = 0		606	2		=			
+ANR	620	Identifier	current_mb		606	0					
+ANR	621	PrimaryExpression	0		606	1					
+ANR	622	IdentifierDecl	last_mb = v -> height_mb * v -> width_mb		606	3					
+ANR	623	IdentifierDeclType	int		606	0					
+ANR	624	Identifier	last_mb		606	1					
+ANR	625	AssignmentExpression	last_mb = v -> height_mb * v -> width_mb		606	2		=			
+ANR	626	Identifier	last_mb		606	0					
+ANR	627	MultiplicativeExpression	v -> height_mb * v -> width_mb		606	1		*			
+ANR	628	PtrMemberAccess	v -> height_mb		606	0					
+ANR	629	Identifier	v		606	0					
+ANR	630	Identifier	height_mb		606	1					
+ANR	631	PtrMemberAccess	v -> width_mb		606	1					
+ANR	632	Identifier	v		606	0					
+ANR	633	Identifier	width_mb		606	1					
+ANR	634	IdentifierDecl	i		606	4					
+ANR	635	IdentifierDeclType	int		606	0					
+ANR	636	Identifier	i		606	1					
+ANR	637	IdentifierDeclStatement	"int direct_b_bit = 0 , skip_mb_bit = 0 ;"	5:4:156:193	606	1	True				
+ANR	638	IdentifierDecl	direct_b_bit = 0		606	0					
+ANR	639	IdentifierDeclType	int		606	0					
+ANR	640	Identifier	direct_b_bit		606	1					
+ANR	641	AssignmentExpression	direct_b_bit = 0		606	2		=			
+ANR	642	Identifier	direct_b_bit		606	0					
+ANR	643	PrimaryExpression	0		606	1					
+ANR	644	IdentifierDecl	skip_mb_bit = 0		606	1					
+ANR	645	IdentifierDeclType	int		606	0					
+ANR	646	Identifier	skip_mb_bit		606	1					
+ANR	647	AssignmentExpression	skip_mb_bit = 0		606	2		=			
+ANR	648	Identifier	skip_mb_bit		606	0					
+ANR	649	PrimaryExpression	0		606	1					
+ANR	650	IdentifierDeclStatement	int ac_pred ;	6:4:199:210	606	2	True				
+ANR	651	IdentifierDecl	ac_pred		606	0					
+ANR	652	IdentifierDeclType	int		606	0					
+ANR	653	Identifier	ac_pred		606	1					
+ANR	654	IdentifierDeclStatement	"int b_mv1 = 0 , b_mv2 = 0 , b_mv_type = 0 ;"	7:4:216:255	606	3	True				
+ANR	655	IdentifierDecl	b_mv1 = 0		606	0					
+ANR	656	IdentifierDeclType	int		606	0					
+ANR	657	Identifier	b_mv1		606	1					
+ANR	658	AssignmentExpression	b_mv1 = 0		606	2		=			
+ANR	659	Identifier	b_mv1		606	0					
+ANR	660	PrimaryExpression	0		606	1					
+ANR	661	IdentifierDecl	b_mv2 = 0		606	1					
+ANR	662	IdentifierDeclType	int		606	0					
+ANR	663	Identifier	b_mv2		606	1					
+ANR	664	AssignmentExpression	b_mv2 = 0		606	2		=			
+ANR	665	Identifier	b_mv2		606	0					
+ANR	666	PrimaryExpression	0		606	1					
+ANR	667	IdentifierDecl	b_mv_type = 0		606	2					
+ANR	668	IdentifierDeclType	int		606	0					
+ANR	669	Identifier	b_mv_type		606	1					
+ANR	670	AssignmentExpression	b_mv_type = 0		606	2		=			
+ANR	671	Identifier	b_mv_type		606	0					
+ANR	672	PrimaryExpression	0		606	1					
+ANR	673	IdentifierDeclStatement	"int mquant , mqdiff ;"	8:4:261:279	606	4	True				
+ANR	674	IdentifierDecl	mquant		606	0					
+ANR	675	IdentifierDeclType	int		606	0					
+ANR	676	Identifier	mquant		606	1					
+ANR	677	IdentifierDecl	mqdiff		606	1					
+ANR	678	IdentifierDeclType	int		606	0					
+ANR	679	Identifier	mqdiff		606	1					
+ANR	680	IdentifierDeclStatement	int tt_block ;	9:4:306:318	606	5	True				
+ANR	681	IdentifierDecl	tt_block		606	0					
+ANR	682	IdentifierDeclType	int		606	0					
+ANR	683	Identifier	tt_block		606	1					
+ANR	684	ForStatement	for ( y = 0 ; y < v -> height_mb ; y ++ )		606	6					
+ANR	685	ForInit	y = 0 ;	11:9:361:364	606	0	True				
+ANR	686	AssignmentExpression	y = 0		606	0		=			
+ANR	687	Identifier	y		606	0					
+ANR	688	PrimaryExpression	0		606	1					
+ANR	689	Condition	y < v -> height_mb	11:14:366:379	606	1	True				
+ANR	690	RelationalExpression	y < v -> height_mb		606	0		<			
+ANR	691	Identifier	y		606	0					
+ANR	692	PtrMemberAccess	v -> height_mb		606	1					
+ANR	693	Identifier	v		606	0					
+ANR	694	Identifier	height_mb		606	1					
+ANR	695	PostIncDecOperationExpression	y ++	11:30:382:384	606	2	True				
+ANR	696	Identifier	y		606	0					
+ANR	697	IncDec	++		606	1					
+ANR	698	CompoundStatement		11:4:351:351	606	3					
+ANR	699	ForStatement	for ( x = 0 ; x < v -> width_mb ; x ++ )		606	0					
+ANR	700	ForInit	x = 0 ;	13:13:406:409	606	0	True				
+ANR	701	AssignmentExpression	x = 0		606	0		=			
+ANR	702	Identifier	x		606	0					
+ANR	703	PrimaryExpression	0		606	1					
+ANR	704	Condition	x < v -> width_mb	13:18:411:423	606	1	True				
+ANR	705	RelationalExpression	x < v -> width_mb		606	0		<			
+ANR	706	Identifier	x		606	0					
+ANR	707	PtrMemberAccess	v -> width_mb		606	1					
+ANR	708	Identifier	v		606	0					
+ANR	709	Identifier	width_mb		606	1					
+ANR	710	PostIncDecOperationExpression	x ++	13:33:426:428	606	2	True				
+ANR	711	Identifier	x		606	0					
+ANR	712	IncDec	++		606	1					
+ANR	713	CompoundStatement		13:8:399:399	606	3					
+ANR	714	IfStatement	if ( v -> direct_mb_plane [ current_mb ] )		606	0					
+ANR	715	Condition	v -> direct_mb_plane [ current_mb ]	15:16:457:486	606	0	True				
+ANR	716	ArrayIndexing	v -> direct_mb_plane [ current_mb ]		606	0					
+ANR	717	PtrMemberAccess	v -> direct_mb_plane		606	0					
+ANR	718	Identifier	v		606	0					
+ANR	719	Identifier	direct_mb_plane		606	1					
+ANR	720	Identifier	current_mb		606	1					
+ANR	721	ExpressionStatement	"direct_b_bit = get_bits ( & v -> gb , 1 )"	16:14:503:537	606	1	True				
+ANR	722	AssignmentExpression	"direct_b_bit = get_bits ( & v -> gb , 1 )"		606	0		=			
+ANR	723	Identifier	direct_b_bit		606	0					
+ANR	724	CallExpression	"get_bits ( & v -> gb , 1 )"		606	1					
+ANR	725	Callee	get_bits		606	0					
+ANR	726	Identifier	get_bits		606	0					
+ANR	727	ArgumentList	& v -> gb		606	1					
+ANR	728	Argument	& v -> gb		606	0					
+ANR	729	UnaryOperationExpression	& v -> gb		606	0					
+ANR	730	UnaryOperator	&		606	0					
+ANR	731	PtrMemberAccess	v -> gb		606	1					
+ANR	732	Identifier	v		606	0					
+ANR	733	Identifier	gb		606	1					
+ANR	734	Argument	1		606	1					
+ANR	735	PrimaryExpression	1		606	0					
+ANR	736	IfStatement	if ( 1 )		606	1					
+ANR	737	Condition	1	17:16:555:555	606	0	True				
+ANR	738	PrimaryExpression	1		606	0					
+ANR	739	CompoundStatement		17:12:553:553	606	1					
+ANR	740	ExpressionStatement	"skip_mb_bit = get_bits ( & v -> gb , n )"	21:16:670:703	606	0	True				
+ANR	741	AssignmentExpression	"skip_mb_bit = get_bits ( & v -> gb , n )"		606	0		=			
+ANR	742	Identifier	skip_mb_bit		606	0					
+ANR	743	CallExpression	"get_bits ( & v -> gb , n )"		606	1					
+ANR	744	Callee	get_bits		606	0					
+ANR	745	Identifier	get_bits		606	0					
+ANR	746	ArgumentList	& v -> gb		606	1					
+ANR	747	Argument	& v -> gb		606	0					
+ANR	748	UnaryOperationExpression	& v -> gb		606	0					
+ANR	749	UnaryOperator	&		606	0					
+ANR	750	PtrMemberAccess	v -> gb		606	1					
+ANR	751	Identifier	v		606	0					
+ANR	752	Identifier	gb		606	1					
+ANR	753	Argument	n		606	1					
+ANR	754	Identifier	n		606	0					
+ANR	755	IfStatement	if ( ! direct_b_bit )		606	2					
+ANR	756	Condition	! direct_b_bit	24:16:748:760	606	0	True				
+ANR	757	UnaryOperationExpression	! direct_b_bit		606	0					
+ANR	758	UnaryOperator	!		606	0					
+ANR	759	Identifier	direct_b_bit		606	1					
+ANR	760	CompoundStatement		24:12:735:735	606	1					
+ANR	761	IfStatement	if ( skip_mb_bit )		606	0					
+ANR	762	Condition	skip_mb_bit	26:20:797:807	606	0	True				
+ANR	763	Identifier	skip_mb_bit		606	0					
+ANR	764	CompoundStatement		26:16:786:786	606	1					
+ANR	765	ExpressionStatement	"b_mv_type = get_bits ( & v -> gb , n )"	30:20:911:942	606	0	True				
+ANR	766	AssignmentExpression	"b_mv_type = get_bits ( & v -> gb , n )"		606	0		=			
+ANR	767	Identifier	b_mv_type		606	0					
+ANR	768	CallExpression	"get_bits ( & v -> gb , n )"		606	1					
+ANR	769	Callee	get_bits		606	0					
+ANR	770	Identifier	get_bits		606	0					
+ANR	771	ArgumentList	& v -> gb		606	1					
+ANR	772	Argument	& v -> gb		606	0					
+ANR	773	UnaryOperationExpression	& v -> gb		606	0					
+ANR	774	UnaryOperator	&		606	0					
+ANR	775	PtrMemberAccess	v -> gb		606	1					
+ANR	776	Identifier	v		606	0					
+ANR	777	Identifier	gb		606	1					
+ANR	778	Argument	n		606	1					
+ANR	779	Identifier	n		606	0					
+ANR	780	ElseStatement	else		606	0					
+ANR	781	CompoundStatement		33:16:972:972	606	0					
+ANR	782	ExpressionStatement	"b_mv1 = get_bits ( & v -> gb , n )"	37:20:1098:1125	606	0	True				
+ANR	783	AssignmentExpression	"b_mv1 = get_bits ( & v -> gb , n )"		606	0		=			
+ANR	784	Identifier	b_mv1		606	0					
+ANR	785	CallExpression	"get_bits ( & v -> gb , n )"		606	1					
+ANR	786	Callee	get_bits		606	0					
+ANR	787	Identifier	get_bits		606	0					
+ANR	788	ArgumentList	& v -> gb		606	1					
+ANR	789	Argument	& v -> gb		606	0					
+ANR	790	UnaryOperationExpression	& v -> gb		606	0					
+ANR	791	UnaryOperator	&		606	0					
+ANR	792	PtrMemberAccess	v -> gb		606	1					
+ANR	793	Identifier	v		606	0					
+ANR	794	Identifier	gb		606	1					
+ANR	795	Argument	n		606	1					
+ANR	796	Identifier	n		606	0					
+ANR	797	IfStatement	if ( 1 )		606	1					
+ANR	798	Condition	1	39:24:1164:1164	606	0	True				
+ANR	799	PrimaryExpression	1		606	0					
+ANR	800	CompoundStatement		39:20:1171:1171	606	1					
+ANR	801	ExpressionStatement	b_mv_type = 0	42:24:1291:1304	606	0	True				
+ANR	802	AssignmentExpression	b_mv_type = 0		606	0		=			
+ANR	803	Identifier	b_mv_type		606	0					
+ANR	804	PrimaryExpression	0		606	1					
+ANR	805	IfStatement	if ( ! skip_mb_bit )		606	3					
+ANR	806	Condition	! skip_mb_bit	46:16:1382:1393	606	0	True				
+ANR	807	UnaryOperationExpression	! skip_mb_bit		606	0					
+ANR	808	UnaryOperator	!		606	0					
+ANR	809	Identifier	skip_mb_bit		606	1					
+ANR	810	CompoundStatement		46:12:1368:1368	606	1					
+ANR	811	IfStatement	if ( b_mv1 != last_mb )		606	0					
+ANR	812	Condition	b_mv1 != last_mb	48:20:1430:1445	606	0	True				
+ANR	813	EqualityExpression	b_mv1 != last_mb		606	0		!=			
+ANR	814	Identifier	b_mv1		606	0					
+ANR	815	Identifier	last_mb		606	1					
+ANR	816	CompoundStatement		48:16:1424:1424	606	1					
+ANR	817	ExpressionStatement	GET_MQUANT ( )	50:20:1486:1498	606	0	True				
+ANR	818	CallExpression	GET_MQUANT ( )		606	0					
+ANR	819	Callee	GET_MQUANT		606	0					
+ANR	820	Identifier	GET_MQUANT		606	0					
+ANR	821	ArgumentList			606	1					
+ANR	822	IfStatement	if ( 1 )		606	1					
+ANR	823	Condition	1	51:24:1524:1524	606	0	True				
+ANR	824	PrimaryExpression	1		606	0					
+ANR	825	ExpressionStatement	"ac_pred = get_bits ( & v -> gb , 1 )"	52:24:1566:1595	606	1	True				
+ANR	826	AssignmentExpression	"ac_pred = get_bits ( & v -> gb , 1 )"		606	0		=			
+ANR	827	Identifier	ac_pred		606	0					
+ANR	828	CallExpression	"get_bits ( & v -> gb , 1 )"		606	1					
+ANR	829	Callee	get_bits		606	0					
+ANR	830	Identifier	get_bits		606	0					
+ANR	831	ArgumentList	& v -> gb		606	1					
+ANR	832	Argument	& v -> gb		606	0					
+ANR	833	UnaryOperationExpression	& v -> gb		606	0					
+ANR	834	UnaryOperator	&		606	0					
+ANR	835	PtrMemberAccess	v -> gb		606	1					
+ANR	836	Identifier	v		606	0					
+ANR	837	Identifier	gb		606	1					
+ANR	838	Argument	1		606	1					
+ANR	839	PrimaryExpression	1		606	0					
+ANR	840	ElseStatement	else		606	0					
+ANR	841	CompoundStatement		54:16:1612:1612	606	0					
+ANR	842	IfStatement	if ( 1 )		606	0					
+ANR	843	Condition	1	56:24:1678:1678	606	0	True				
+ANR	844	PrimaryExpression	1		606	0					
+ANR	845	CompoundStatement		56:20:1693:1693	606	1					
+ANR	846	ExpressionStatement	b_mv2 = 0	59:24:1813:1822	606	0	True				
+ANR	847	AssignmentExpression	b_mv2 = 0		606	0		=			
+ANR	848	Identifier	b_mv2		606	0					
+ANR	849	PrimaryExpression	0		606	1					
+ANR	850	IfStatement	if ( 1 )		606	1					
+ANR	851	Condition	1	61:24:1876:1876	606	0	True				
+ANR	852	PrimaryExpression	1		606	0					
+ANR	853	CompoundStatement		61:20:1886:1886	606	1					
+ANR	854	IfStatement	if ( 1 )		606	0					
+ANR	855	Condition	1	63:28:1956:1956	606	0	True				
+ANR	856	PrimaryExpression	1		606	0					
+ANR	857	ExpressionStatement	"ac_pred = get_bits ( & v -> gb , 1 )"	64:28:2002:2031	606	1	True				
+ANR	858	AssignmentExpression	"ac_pred = get_bits ( & v -> gb , 1 )"		606	0		=			
+ANR	859	Identifier	ac_pred		606	0					
+ANR	860	CallExpression	"get_bits ( & v -> gb , 1 )"		606	1					
+ANR	861	Callee	get_bits		606	0					
+ANR	862	Identifier	get_bits		606	0					
+ANR	863	ArgumentList	& v -> gb		606	1					
+ANR	864	Argument	& v -> gb		606	0					
+ANR	865	UnaryOperationExpression	& v -> gb		606	0					
+ANR	866	UnaryOperator	&		606	0					
+ANR	867	PtrMemberAccess	v -> gb		606	1					
+ANR	868	Identifier	v		606	0					
+ANR	869	Identifier	gb		606	1					
+ANR	870	Argument	1		606	1					
+ANR	871	PrimaryExpression	1		606	0					
+ANR	872	ExpressionStatement	GET_MQUANT ( )	65:24:2057:2069	606	1	True				
+ANR	873	CallExpression	GET_MQUANT ( )		606	0					
+ANR	874	Callee	GET_MQUANT		606	0					
+ANR	875	Identifier	GET_MQUANT		606	0					
+ANR	876	ArgumentList			606	1					
+ANR	877	IfStatement	if ( v -> ttmbf )		606	4					
+ANR	878	Condition	v -> ttmbf	72:16:2216:2223	606	0	True				
+ANR	879	PtrMemberAccess	v -> ttmbf		606	0					
+ANR	880	Identifier	v		606	0					
+ANR	881	Identifier	ttmbf		606	1					
+ANR	882	ExpressionStatement	"v -> ttmb = get_bits ( & v -> gb , n )"	73:16:2242:2271	606	1	True				
+ANR	883	AssignmentExpression	"v -> ttmb = get_bits ( & v -> gb , n )"		606	0		=			
+ANR	884	PtrMemberAccess	v -> ttmb		606	0					
+ANR	885	Identifier	v		606	0					
+ANR	886	Identifier	ttmb		606	1					
+ANR	887	CallExpression	"get_bits ( & v -> gb , n )"		606	1					
+ANR	888	Callee	get_bits		606	0					
+ANR	889	Identifier	get_bits		606	0					
+ANR	890	ArgumentList	& v -> gb		606	1					
+ANR	891	Argument	& v -> gb		606	0					
+ANR	892	UnaryOperationExpression	& v -> gb		606	0					
+ANR	893	UnaryOperator	&		606	0					
+ANR	894	PtrMemberAccess	v -> gb		606	1					
+ANR	895	Identifier	v		606	0					
+ANR	896	Identifier	gb		606	1					
+ANR	897	Argument	n		606	1					
+ANR	898	Identifier	n		606	0					
+ANR	899	ForStatement	for ( i = 0 ; i < 6 ; i ++ )		606	1					
+ANR	900	ForInit	i = 0 ;	77:13:2324:2327	606	0	True				
+ANR	901	AssignmentExpression	i = 0		606	0		=			
+ANR	902	Identifier	i		606	0					
+ANR	903	PrimaryExpression	0		606	1					
+ANR	904	Condition	i < 6	77:18:2329:2331	606	1	True				
+ANR	905	RelationalExpression	i < 6		606	0		<			
+ANR	906	Identifier	i		606	0					
+ANR	907	PrimaryExpression	6		606	1					
+ANR	908	PostIncDecOperationExpression	i ++	77:23:2334:2336	606	2	True				
+ANR	909	Identifier	i		606	0					
+ANR	910	IncDec	++		606	1					
+ANR	911	CompoundStatement		77:8:2307:2307	606	3					
+ANR	912	ExpressionStatement	current_mb ++	82:8:2411:2423	606	2	True				
+ANR	913	PostIncDecOperationExpression	current_mb ++		606	0					
+ANR	914	Identifier	current_mb		606	0					
+ANR	915	IncDec	++		606	1					
+ANR	916	ReturnStatement	return 0 ;	84:4:2435:2443	606	7	True				
+ANR	917	PrimaryExpression	0		606	0					
+ANR	918	ReturnType	static int		606	1					
+ANR	919	Identifier	decode_b_mbs		606	2					
+ANR	920	ParameterList	VC9Context * v		606	3					
+ANR	921	Parameter	VC9Context * v	1:24:24:36	606	0	True				
+ANR	922	ParameterType	VC9Context *		606	0					
+ANR	923	Identifier	v		606	1					
+ANR	924	CFGEntryNode	ENTRY		606		True				
+ANR	925	CFGExitNode	EXIT		606		True				
+ANR	926	Symbol	* v		606						
+ANR	927	Symbol	tt_block		606						
+ANR	928	Symbol	* current_mb		606						
+ANR	929	Symbol	v -> height_mb		606						
+ANR	930	Symbol	ac_pred		606						
+ANR	931	Symbol	get_bits		606						
+ANR	932	Symbol	current_mb		606						
+ANR	933	Symbol	mqdiff		606						
+ANR	934	Symbol	* * v		606						
+ANR	935	Symbol	v -> ttmb		606						
+ANR	936	Symbol	* v -> direct_mb_plane		606						
+ANR	937	Symbol	mquant		606						
+ANR	938	Symbol	& v -> gb		606						
+ANR	939	Symbol	b_mv1		606						
+ANR	940	Symbol	v -> direct_mb_plane		606						
+ANR	941	Symbol	b_mv2		606						
+ANR	942	Symbol	v -> ttmbf		606						
+ANR	943	Symbol	direct_b_bit		606						
+ANR	944	Symbol	v -> width_mb		606						
+ANR	945	Symbol	b_mv_type		606						
+ANR	946	Symbol	skip_mb_bit		606						
+ANR	947	Symbol	i		606						
+ANR	948	Symbol	n		606						
+ANR	949	Symbol	last_mb		606						
+ANR	950	Symbol	v		606						
+ANR	951	Symbol	x		606						
+ANR	952	Symbol	y		606						

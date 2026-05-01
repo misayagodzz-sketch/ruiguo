@@ -1,0 +1,152 @@
+nohup: ignoring input
+======================================
+Running experiment: baseline
+======================================
+====================================================================================================
+Ablation mode: baseline
+Injection plan dir: ../vulnsc_dataset/vulnsc_injection_plans
+Feature size: 100, Graph embed size: 100
+====================================================================================================
+Train: 9894, Valid: 1269, Test: 1228
+Train batches: 155, Valid batches: 20, Test batches: 20
+Total Parameters: 805,363
+Model: AblationDevignModel
+Start training!
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+----------------------------------------------------------------------------------------------------
+Epoch 1	---Train--- Average Loss:     0.6623	 Patience 0	 Loss:     0.8329	Accuracy: 46.7859	Precision: 46.7859	Recall: 100.0000	f1: 63.747	
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+Epoch 1	----Valid---- Loss: 0.8232	Accuracy: 47.4389	Precision: 47.4389	Recall: 100.0000	F1: 64.3506
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+Epoch 1	----Test---- Loss: 0.8055	Accuracy: 47.3941	Precision: 47.3941	Recall: 100.0000	F1: 64.3094
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+----------------------------------------------------------------------------------------------------
+Epoch 2	---Train--- Average Loss:     1.0064	 Patience 0	 Loss:     0.7733	Accuracy: 46.7859	Precision: 46.7859	Recall: 100.0000	f1: 63.747	
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+Epoch 2	----Valid---- Loss: 0.7673	Accuracy: 47.4389	Precision: 47.4389	Recall: 100.0000	F1: 64.3506
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+Epoch 2	----Test---- Loss: 0.7528	Accuracy: 47.3941	Precision: 47.3941	Recall: 100.0000	F1: 64.3094
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+----------------------------------------------------------------------------------------------------
+Epoch 3	---Train--- Average Loss:     0.8641	 Patience 1	 Loss:     0.7136	Accuracy: 52.3347	Precision: 48.0200	Recall: 22.7911	f1: 30.911	
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+Epoch 3	----Valid---- Loss: 0.7081	Accuracy: 54.2159	Precision: 53.9033	Recall: 24.0864	F1: 33.2951
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+Epoch 3	----Test---- Loss: 0.7288	Accuracy: 50.5700	Precision: 45.2830	Recall: 20.6186	F1: 28.3353
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+----------------------------------------------------------------------------------------------------
+Epoch 4	---Train--- Average Loss:     0.8054	 Patience 2	 Loss:     0.7742	Accuracy: 53.2141	Precision: 0.0000	Recall: 0.0000	f1: 0.000	
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 4	----Valid---- Loss: 0.7838	Accuracy: 52.5611	Precision: 0.0000	Recall: 0.0000	F1: 0.0000
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 4	----Test---- Loss: 0.8002	Accuracy: 52.6059	Precision: 0.0000	Recall: 0.0000	F1: 0.0000
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+----------------------------------------------------------------------------------------------------
+Epoch 5	---Train--- Average Loss:     0.7602	 Patience 3	 Loss:     0.6959	Accuracy: 53.8003	Precision: 64.5000	Recall: 2.7868	f1: 5.343	
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+Epoch 5	----Valid---- Loss: 0.6951	Accuracy: 53.5067	Precision: 70.0000	Recall: 3.4884	F1: 6.6456
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+Epoch 5	----Test---- Loss: 0.7016	Accuracy: 52.1173	Precision: 35.0000	Recall: 1.2027	F1: 2.3256
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+----------------------------------------------------------------------------------------------------
+Epoch 6	---Train--- Average Loss:     0.8000	 Patience 4	 Loss:     0.7236	Accuracy: 53.3455	Precision: 60.0000	Recall: 0.8425	f1: 1.662	
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+Epoch 6	----Valid---- Loss: 0.7195	Accuracy: 52.9551	Precision: 69.2308	Recall: 1.4950	F1: 2.9268
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+Epoch 6	----Test---- Loss: 0.7444	Accuracy: 53.0130	Precision: 77.7778	Recall: 1.2027	F1: 2.3689
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+----------------------------------------------------------------------------------------------------
+Epoch 7	---Train--- Average Loss:     0.7771	 Patience 5	 Loss:     0.7002	Accuracy: 53.2444	Precision: 50.2075	Recall: 7.8419	f1: 13.565	
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+Epoch 7	----Valid---- Loss: 0.6987	Accuracy: 54.0583	Precision: 61.7284	Recall: 8.3056	F1: 14.6413
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+Epoch 7	----Test---- Loss: 0.7070	Accuracy: 50.7329	Precision: 37.3626	Recall: 5.8419	F1: 10.1040
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+----------------------------------------------------------------------------------------------------
+Epoch 8	---Train--- Average Loss:     0.8003	 Patience 6	 Loss:     0.7187	Accuracy: 53.3859	Precision: 56.2044	Recall: 1.6634	f1: 3.231	
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+Epoch 8	----Valid---- Loss: 0.7172	Accuracy: 52.7975	Precision: 61.5385	Recall: 1.3289	F1: 2.6016
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))
+Epoch 8	----Test---- Loss: 0.7380	Accuracy: 52.1987	Precision: 33.3333	Recall: 0.8591	F1: 1.6750
+/home/tSdu/.conda/envs/ample3/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+/home/tSdu/_New_World/ruiguo/AMPLE/AMPLE_code/graph_transformer_layers.py:39: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  batch_list = torch.tensor(batch_list, device = torch.device('cuda:0'))

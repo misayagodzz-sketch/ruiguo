@@ -1,0 +1,91 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	5449	File	tmp/qemu_d42cf288_6921.c								
+ANR	5450	Function	bdrv_drained_begin	1:0:0:391							
+ANR	5451	FunctionDef	bdrv_drained_begin (BlockDriverState * bs)		5450	0					
+ANR	5452	CompoundStatement		2:0:46:391	5450	0					
+ANR	5453	IfStatement	if ( ! bs -> quiesce_counter ++ )		5450	0					
+ANR	5454	Condition	! bs -> quiesce_counter ++	3:8:56:77	5450	0	True				
+ANR	5455	UnaryOperationExpression	! bs -> quiesce_counter ++		5450	0					
+ANR	5456	UnaryOperator	!		5450	0					
+ANR	5457	PostIncDecOperationExpression	bs -> quiesce_counter ++		5450	1					
+ANR	5458	PtrMemberAccess	bs -> quiesce_counter		5450	0					
+ANR	5459	Identifier	bs		5450	0					
+ANR	5460	Identifier	quiesce_counter		5450	1					
+ANR	5461	IncDec	++		5450	1					
+ANR	5462	CompoundStatement		2:32:33:33	5450	1					
+ANR	5463	ExpressionStatement	aio_disable_external ( bdrv_get_aio_context ( bs ) )	4:8:90:136	5450	0	True				
+ANR	5464	CallExpression	aio_disable_external ( bdrv_get_aio_context ( bs ) )		5450	0					
+ANR	5465	Callee	aio_disable_external		5450	0					
+ANR	5466	Identifier	aio_disable_external		5450	0					
+ANR	5467	ArgumentList	bdrv_get_aio_context ( bs )		5450	1					
+ANR	5468	Argument	bdrv_get_aio_context ( bs )		5450	0					
+ANR	5469	CallExpression	bdrv_get_aio_context ( bs )		5450	0					
+ANR	5470	Callee	bdrv_get_aio_context		5450	0					
+ANR	5471	Identifier	bdrv_get_aio_context		5450	0					
+ANR	5472	ArgumentList	bs		5450	1					
+ANR	5473	Argument	bs		5450	0					
+ANR	5474	Identifier	bs		5450	0					
+ANR	5475	ExpressionStatement	bdrv_parent_drained_begin ( bs )	5:8:146:175	5450	1	True				
+ANR	5476	CallExpression	bdrv_parent_drained_begin ( bs )		5450	0					
+ANR	5477	Callee	bdrv_parent_drained_begin		5450	0					
+ANR	5478	Identifier	bdrv_parent_drained_begin		5450	0					
+ANR	5479	ArgumentList	bs		5450	1					
+ANR	5480	Argument	bs		5450	0					
+ANR	5481	Identifier	bs		5450	0					
+ANR	5482	ExpressionStatement	bdrv_io_unplugged_begin ( bs )	8:4:188:215	5450	1	True				
+ANR	5483	CallExpression	bdrv_io_unplugged_begin ( bs )		5450	0					
+ANR	5484	Callee	bdrv_io_unplugged_begin		5450	0					
+ANR	5485	Identifier	bdrv_io_unplugged_begin		5450	0					
+ANR	5486	ArgumentList	bs		5450	1					
+ANR	5487	Argument	bs		5450	0					
+ANR	5488	Identifier	bs		5450	0					
+ANR	5489	ExpressionStatement	bdrv_drain_recurse ( bs )	9:4:221:243	5450	2	True				
+ANR	5490	CallExpression	bdrv_drain_recurse ( bs )		5450	0					
+ANR	5491	Callee	bdrv_drain_recurse		5450	0					
+ANR	5492	Identifier	bdrv_drain_recurse		5450	0					
+ANR	5493	ArgumentList	bs		5450	1					
+ANR	5494	Argument	bs		5450	0					
+ANR	5495	Identifier	bs		5450	0					
+ANR	5496	IfStatement	if ( qemu_in_coroutine ( ) )		5450	3					
+ANR	5497	Condition	qemu_in_coroutine ( )	10:8:253:271	5450	0	True				
+ANR	5498	CallExpression	qemu_in_coroutine ( )		5450	0					
+ANR	5499	Callee	qemu_in_coroutine		5450	0					
+ANR	5500	Identifier	qemu_in_coroutine		5450	0					
+ANR	5501	ArgumentList			5450	1					
+ANR	5502	CompoundStatement		9:29:227:227	5450	1					
+ANR	5503	ExpressionStatement	bdrv_co_yield_to_drain ( bs )	11:8:284:310	5450	0	True				
+ANR	5504	CallExpression	bdrv_co_yield_to_drain ( bs )		5450	0					
+ANR	5505	Callee	bdrv_co_yield_to_drain		5450	0					
+ANR	5506	Identifier	bdrv_co_yield_to_drain		5450	0					
+ANR	5507	ArgumentList	bs		5450	1					
+ANR	5508	Argument	bs		5450	0					
+ANR	5509	Identifier	bs		5450	0					
+ANR	5510	ElseStatement	else		5450	0					
+ANR	5511	CompoundStatement		11:11:276:276	5450	0					
+ANR	5512	ExpressionStatement	bdrv_drain_poll ( bs )	13:8:333:352	5450	0	True				
+ANR	5513	CallExpression	bdrv_drain_poll ( bs )		5450	0					
+ANR	5514	Callee	bdrv_drain_poll		5450	0					
+ANR	5515	Identifier	bdrv_drain_poll		5450	0					
+ANR	5516	ArgumentList	bs		5450	1					
+ANR	5517	Argument	bs		5450	0					
+ANR	5518	Identifier	bs		5450	0					
+ANR	5519	ExpressionStatement	bdrv_io_unplugged_end ( bs )	15:4:364:389	5450	4	True				
+ANR	5520	CallExpression	bdrv_io_unplugged_end ( bs )		5450	0					
+ANR	5521	Callee	bdrv_io_unplugged_end		5450	0					
+ANR	5522	Identifier	bdrv_io_unplugged_end		5450	0					
+ANR	5523	ArgumentList	bs		5450	1					
+ANR	5524	Argument	bs		5450	0					
+ANR	5525	Identifier	bs		5450	0					
+ANR	5526	ReturnType	void		5450	1					
+ANR	5527	Identifier	bdrv_drained_begin		5450	2					
+ANR	5528	ParameterList	BlockDriverState * bs		5450	3					
+ANR	5529	Parameter	BlockDriverState * bs	1:24:24:43	5450	0	True				
+ANR	5530	ParameterType	BlockDriverState *		5450	0					
+ANR	5531	Identifier	bs		5450	1					
+ANR	5532	CFGEntryNode	ENTRY		5450		True				
+ANR	5533	CFGExitNode	EXIT		5450		True				
+ANR	5534	Symbol	bs		5450						
+ANR	5535	Symbol	bdrv_get_aio_context		5450						
+ANR	5536	Symbol	qemu_in_coroutine		5450						
+ANR	5537	Symbol	bs -> quiesce_counter		5450						
+ANR	5538	Symbol	* bs		5450						

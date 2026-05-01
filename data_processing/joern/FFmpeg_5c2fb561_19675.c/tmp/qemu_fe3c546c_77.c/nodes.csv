@@ -1,0 +1,201 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/qemu_fe3c546c_77.c								
+ANR	2	Function	rndis_set_response	1:0:0:982							
+ANR	3	FunctionDef	"rndis_set_response (USBNetState * s , rndis_set_msg_type * buf , unsigned int length)"		2	0					
+ANR	4	CompoundStatement		3:0:108:982	2	0					
+ANR	5	IdentifierDeclStatement	"rndis_set_cmplt_type * resp = rndis_queue_response ( s , sizeof ( rndis_set_cmplt_type ) ) ;"	4:4:114:208	2	0	True				
+ANR	6	IdentifierDecl	"* resp = rndis_queue_response ( s , sizeof ( rndis_set_cmplt_type ) )"		2	0					
+ANR	7	IdentifierDeclType	rndis_set_cmplt_type *		2	0					
+ANR	8	Identifier	resp		2	1					
+ANR	9	AssignmentExpression	"* resp = rndis_queue_response ( s , sizeof ( rndis_set_cmplt_type ) )"		2	2		=			
+ANR	10	Identifier	resp		2	0					
+ANR	11	CallExpression	"rndis_queue_response ( s , sizeof ( rndis_set_cmplt_type ) )"		2	1					
+ANR	12	Callee	rndis_queue_response		2	0					
+ANR	13	Identifier	rndis_queue_response		2	0					
+ANR	14	ArgumentList	s		2	1					
+ANR	15	Argument	s		2	0					
+ANR	16	Identifier	s		2	0					
+ANR	17	Argument	sizeof ( rndis_set_cmplt_type )		2	1					
+ANR	18	SizeofExpression	sizeof ( rndis_set_cmplt_type )		2	0					
+ANR	19	Sizeof	sizeof		2	0					
+ANR	20	SizeofOperand	rndis_set_cmplt_type		2	1					
+ANR	21	IdentifierDeclStatement	"uint32_t bufoffs , buflen ;"	6:4:214:238	2	1	True				
+ANR	22	IdentifierDecl	bufoffs		2	0					
+ANR	23	IdentifierDeclType	uint32_t		2	0					
+ANR	24	Identifier	bufoffs		2	1					
+ANR	25	IdentifierDecl	buflen		2	1					
+ANR	26	IdentifierDeclType	uint32_t		2	0					
+ANR	27	Identifier	buflen		2	1					
+ANR	28	IdentifierDeclStatement	int ret ;	7:4:244:251	2	2	True				
+ANR	29	IdentifierDecl	ret		2	0					
+ANR	30	IdentifierDeclType	int		2	0					
+ANR	31	Identifier	ret		2	1					
+ANR	32	IfStatement	if ( ! resp )		2	3					
+ANR	33	Condition	! resp	9:8:262:266	2	0	True				
+ANR	34	UnaryOperationExpression	! resp		2	0					
+ANR	35	UnaryOperator	!		2	0					
+ANR	36	Identifier	resp		2	1					
+ANR	37	ReturnStatement	return USB_RET_STALL ;	10:8:277:297	2	1	True				
+ANR	38	Identifier	USB_RET_STALL		2	0					
+ANR	39	ExpressionStatement	bufoffs = le32_to_cpu ( buf -> InformationBufferOffset ) + 8	12:4:304:359	2	4	True				
+ANR	40	AssignmentExpression	bufoffs = le32_to_cpu ( buf -> InformationBufferOffset ) + 8		2	0		=			
+ANR	41	Identifier	bufoffs		2	0					
+ANR	42	AdditiveExpression	le32_to_cpu ( buf -> InformationBufferOffset ) + 8		2	1		+			
+ANR	43	CallExpression	le32_to_cpu ( buf -> InformationBufferOffset )		2	0					
+ANR	44	Callee	le32_to_cpu		2	0					
+ANR	45	Identifier	le32_to_cpu		2	0					
+ANR	46	ArgumentList	buf -> InformationBufferOffset		2	1					
+ANR	47	Argument	buf -> InformationBufferOffset		2	0					
+ANR	48	PtrMemberAccess	buf -> InformationBufferOffset		2	0					
+ANR	49	Identifier	buf		2	0					
+ANR	50	Identifier	InformationBufferOffset		2	1					
+ANR	51	PrimaryExpression	8		2	1					
+ANR	52	ExpressionStatement	buflen = le32_to_cpu ( buf -> InformationBufferLength )	13:4:365:415	2	5	True				
+ANR	53	AssignmentExpression	buflen = le32_to_cpu ( buf -> InformationBufferLength )		2	0		=			
+ANR	54	Identifier	buflen		2	0					
+ANR	55	CallExpression	le32_to_cpu ( buf -> InformationBufferLength )		2	1					
+ANR	56	Callee	le32_to_cpu		2	0					
+ANR	57	Identifier	le32_to_cpu		2	0					
+ANR	58	ArgumentList	buf -> InformationBufferLength		2	1					
+ANR	59	Argument	buf -> InformationBufferLength		2	0					
+ANR	60	PtrMemberAccess	buf -> InformationBufferLength		2	0					
+ANR	61	Identifier	buf		2	0					
+ANR	62	Identifier	InformationBufferLength		2	1					
+ANR	63	IfStatement	if ( bufoffs + buflen > length )		2	6					
+ANR	64	Condition	bufoffs + buflen > length	14:8:425:449	2	0	True				
+ANR	65	RelationalExpression	bufoffs + buflen > length		2	0		>			
+ANR	66	AdditiveExpression	bufoffs + buflen		2	0		+			
+ANR	67	Identifier	bufoffs		2	0					
+ANR	68	Identifier	buflen		2	1					
+ANR	69	Identifier	length		2	1					
+ANR	70	ReturnStatement	return USB_RET_STALL ;	15:8:460:480	2	1	True				
+ANR	71	Identifier	USB_RET_STALL		2	0					
+ANR	72	ExpressionStatement	"ret = ndis_set ( s , le32_to_cpu ( buf -> OID ) , bufoffs + ( uint8_t * ) buf , buflen )"	17:4:487:582	2	7	True				
+ANR	73	AssignmentExpression	"ret = ndis_set ( s , le32_to_cpu ( buf -> OID ) , bufoffs + ( uint8_t * ) buf , buflen )"		2	0		=			
+ANR	74	Identifier	ret		2	0					
+ANR	75	CallExpression	"ndis_set ( s , le32_to_cpu ( buf -> OID ) , bufoffs + ( uint8_t * ) buf , buflen )"		2	1					
+ANR	76	Callee	ndis_set		2	0					
+ANR	77	Identifier	ndis_set		2	0					
+ANR	78	ArgumentList	s		2	1					
+ANR	79	Argument	s		2	0					
+ANR	80	Identifier	s		2	0					
+ANR	81	Argument	le32_to_cpu ( buf -> OID )		2	1					
+ANR	82	CallExpression	le32_to_cpu ( buf -> OID )		2	0					
+ANR	83	Callee	le32_to_cpu		2	0					
+ANR	84	Identifier	le32_to_cpu		2	0					
+ANR	85	ArgumentList	buf -> OID		2	1					
+ANR	86	Argument	buf -> OID		2	0					
+ANR	87	PtrMemberAccess	buf -> OID		2	0					
+ANR	88	Identifier	buf		2	0					
+ANR	89	Identifier	OID		2	1					
+ANR	90	Argument	bufoffs + ( uint8_t * ) buf		2	2					
+ANR	91	AdditiveExpression	bufoffs + ( uint8_t * ) buf		2	0		+			
+ANR	92	Identifier	bufoffs		2	0					
+ANR	93	CastExpression	( uint8_t * ) buf		2	1					
+ANR	94	CastTarget	uint8_t *		2	0					
+ANR	95	Identifier	buf		2	1					
+ANR	96	Argument	buflen		2	3					
+ANR	97	Identifier	buflen		2	0					
+ANR	98	ExpressionStatement	resp -> MessageType = cpu_to_le32 ( RNDIS_SET_CMPLT )	19:4:588:636	2	8	True				
+ANR	99	AssignmentExpression	resp -> MessageType = cpu_to_le32 ( RNDIS_SET_CMPLT )		2	0		=			
+ANR	100	PtrMemberAccess	resp -> MessageType		2	0					
+ANR	101	Identifier	resp		2	0					
+ANR	102	Identifier	MessageType		2	1					
+ANR	103	CallExpression	cpu_to_le32 ( RNDIS_SET_CMPLT )		2	1					
+ANR	104	Callee	cpu_to_le32		2	0					
+ANR	105	Identifier	cpu_to_le32		2	0					
+ANR	106	ArgumentList	RNDIS_SET_CMPLT		2	1					
+ANR	107	Argument	RNDIS_SET_CMPLT		2	0					
+ANR	108	Identifier	RNDIS_SET_CMPLT		2	0					
+ANR	109	ExpressionStatement	resp -> RequestID = buf -> RequestID	20:4:642:674	2	9	True				
+ANR	110	AssignmentExpression	resp -> RequestID = buf -> RequestID		2	0		=			
+ANR	111	PtrMemberAccess	resp -> RequestID		2	0					
+ANR	112	Identifier	resp		2	0					
+ANR	113	Identifier	RequestID		2	1					
+ANR	114	PtrMemberAccess	buf -> RequestID		2	1					
+ANR	115	Identifier	buf		2	0					
+ANR	116	Identifier	RequestID		2	1					
+ANR	117	ExpressionStatement	resp -> MessageLength = cpu_to_le32 ( sizeof ( rndis_set_cmplt_type ) )	21:4:709:772	2	10	True				
+ANR	118	AssignmentExpression	resp -> MessageLength = cpu_to_le32 ( sizeof ( rndis_set_cmplt_type ) )		2	0		=			
+ANR	119	PtrMemberAccess	resp -> MessageLength		2	0					
+ANR	120	Identifier	resp		2	0					
+ANR	121	Identifier	MessageLength		2	1					
+ANR	122	CallExpression	cpu_to_le32 ( sizeof ( rndis_set_cmplt_type ) )		2	1					
+ANR	123	Callee	cpu_to_le32		2	0					
+ANR	124	Identifier	cpu_to_le32		2	0					
+ANR	125	ArgumentList	sizeof ( rndis_set_cmplt_type )		2	1					
+ANR	126	Argument	sizeof ( rndis_set_cmplt_type )		2	0					
+ANR	127	SizeofExpression	sizeof ( rndis_set_cmplt_type )		2	0					
+ANR	128	Sizeof	sizeof		2	0					
+ANR	129	SizeofOperand	rndis_set_cmplt_type		2	1					
+ANR	130	IfStatement	if ( ret < 0 )		2	11					
+ANR	131	Condition	ret < 0	22:8:782:788	2	0	True				
+ANR	132	RelationalExpression	ret < 0		2	0		<			
+ANR	133	Identifier	ret		2	0					
+ANR	134	PrimaryExpression	0		2	1					
+ANR	135	CompoundStatement		20:17:682:682	2	1					
+ANR	136	ExpressionStatement	resp -> Status = cpu_to_le32 ( RNDIS_STATUS_NOT_SUPPORTED )	24:8:833:887	2	0	True				
+ANR	137	AssignmentExpression	resp -> Status = cpu_to_le32 ( RNDIS_STATUS_NOT_SUPPORTED )		2	0		=			
+ANR	138	PtrMemberAccess	resp -> Status		2	0					
+ANR	139	Identifier	resp		2	0					
+ANR	140	Identifier	Status		2	1					
+ANR	141	CallExpression	cpu_to_le32 ( RNDIS_STATUS_NOT_SUPPORTED )		2	1					
+ANR	142	Callee	cpu_to_le32		2	0					
+ANR	143	Identifier	cpu_to_le32		2	0					
+ANR	144	ArgumentList	RNDIS_STATUS_NOT_SUPPORTED		2	1					
+ANR	145	Argument	RNDIS_STATUS_NOT_SUPPORTED		2	0					
+ANR	146	Identifier	RNDIS_STATUS_NOT_SUPPORTED		2	0					
+ANR	147	ReturnStatement	return 0 ;	25:8:897:905	2	1	True				
+ANR	148	PrimaryExpression	0		2	0					
+ANR	149	ExpressionStatement	resp -> Status = cpu_to_le32 ( RNDIS_STATUS_SUCCESS )	27:4:917:965	2	12	True				
+ANR	150	AssignmentExpression	resp -> Status = cpu_to_le32 ( RNDIS_STATUS_SUCCESS )		2	0		=			
+ANR	151	PtrMemberAccess	resp -> Status		2	0					
+ANR	152	Identifier	resp		2	0					
+ANR	153	Identifier	Status		2	1					
+ANR	154	CallExpression	cpu_to_le32 ( RNDIS_STATUS_SUCCESS )		2	1					
+ANR	155	Callee	cpu_to_le32		2	0					
+ANR	156	Identifier	cpu_to_le32		2	0					
+ANR	157	ArgumentList	RNDIS_STATUS_SUCCESS		2	1					
+ANR	158	Argument	RNDIS_STATUS_SUCCESS		2	0					
+ANR	159	Identifier	RNDIS_STATUS_SUCCESS		2	0					
+ANR	160	ReturnStatement	return 0 ;	29:4:972:980	2	13	True				
+ANR	161	PrimaryExpression	0		2	0					
+ANR	162	ReturnType	static int		2	1					
+ANR	163	Identifier	rndis_set_response		2	2					
+ANR	164	ParameterList	"USBNetState * s , rndis_set_msg_type * buf , unsigned int length"		2	3					
+ANR	165	Parameter	USBNetState * s	1:30:30:43	2	0	True				
+ANR	166	ParameterType	USBNetState *		2	0					
+ANR	167	Identifier	s		2	1					
+ANR	168	Parameter	rndis_set_msg_type * buf	2:16:62:84	2	1	True				
+ANR	169	ParameterType	rndis_set_msg_type *		2	0					
+ANR	170	Identifier	buf		2	1					
+ANR	171	Parameter	unsigned int length	2:41:87:105	2	2	True				
+ANR	172	ParameterType	unsigned int		2	0					
+ANR	173	Identifier	length		2	1					
+ANR	174	CFGEntryNode	ENTRY		2		True				
+ANR	175	CFGExitNode	EXIT		2		True				
+ANR	176	Symbol	bufoffs		2						
+ANR	177	Symbol	RNDIS_STATUS_SUCCESS		2						
+ANR	178	Symbol	cpu_to_le32		2						
+ANR	179	Symbol	le32_to_cpu		2						
+ANR	180	Symbol	resp -> MessageLength		2						
+ANR	181	Symbol	resp -> Status		2						
+ANR	182	Symbol	buflen		2						
+ANR	183	Symbol	ndis_set		2						
+ANR	184	Symbol	RNDIS_STATUS_NOT_SUPPORTED		2						
+ANR	185	Symbol	buf -> RequestID		2						
+ANR	186	Symbol	rndis_queue_response		2						
+ANR	187	Symbol	ret		2						
+ANR	188	Symbol	* buf		2						
+ANR	189	Symbol	resp -> MessageType		2						
+ANR	190	Symbol	resp		2						
+ANR	191	Symbol	* resp		2						
+ANR	192	Symbol	length		2						
+ANR	193	Symbol	USB_RET_STALL		2						
+ANR	194	Symbol	buf -> InformationBufferOffset		2						
+ANR	195	Symbol	buf -> OID		2						
+ANR	196	Symbol	resp -> RequestID		2						
+ANR	197	Symbol	RNDIS_SET_CMPLT		2						
+ANR	198	Symbol	buf		2						
+ANR	199	Symbol	s		2						
+ANR	200	Symbol	buf -> InformationBufferLength		2						

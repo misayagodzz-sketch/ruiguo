@@ -1,0 +1,115 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	2743	File	tmp/FFmpeg_8bc396fc_12063.c								
+ANR	2744	Function	vp5_parse_header	1:0:0:1233							
+ANR	2745	FunctionDef	"vp5_parse_header (VP56Context * s , const uint8_t * buf , int buf_size , int * golden_frame)"		2744	0					
+ANR	2746	CompoundStatement		3:0:125:1233	2744	0					
+ANR	2747	IdentifierDeclStatement	VP56RangeCoder * c = & s -> c ;	4:4:131:156	2744	0	True				
+ANR	2748	IdentifierDecl	* c = & s -> c		2744	0					
+ANR	2749	IdentifierDeclType	VP56RangeCoder *		2744	0					
+ANR	2750	Identifier	c		2744	1					
+ANR	2751	AssignmentExpression	* c = & s -> c		2744	2		=			
+ANR	2752	Identifier	c		2744	0					
+ANR	2753	UnaryOperationExpression	& s -> c		2744	1					
+ANR	2754	UnaryOperator	&		2744	0					
+ANR	2755	PtrMemberAccess	s -> c		2744	1					
+ANR	2756	Identifier	s		2744	0					
+ANR	2757	Identifier	c		2744	1					
+ANR	2758	IdentifierDeclStatement	"int rows , cols ;"	5:4:162:176	2744	1	True				
+ANR	2759	IdentifierDecl	rows		2744	0					
+ANR	2760	IdentifierDeclType	int		2744	0					
+ANR	2761	Identifier	rows		2744	1					
+ANR	2762	IdentifierDecl	cols		2744	1					
+ANR	2763	IdentifierDeclType	int		2744	0					
+ANR	2764	Identifier	cols		2744	1					
+ANR	2765	ExpressionStatement	"ff_vp56_init_range_decoder ( & s -> c , buf , buf_size )"	7:4:183:231	2744	2	True				
+ANR	2766	CallExpression	"ff_vp56_init_range_decoder ( & s -> c , buf , buf_size )"		2744	0					
+ANR	2767	Callee	ff_vp56_init_range_decoder		2744	0					
+ANR	2768	Identifier	ff_vp56_init_range_decoder		2744	0					
+ANR	2769	ArgumentList	& s -> c		2744	1					
+ANR	2770	Argument	& s -> c		2744	0					
+ANR	2771	UnaryOperationExpression	& s -> c		2744	0					
+ANR	2772	UnaryOperator	&		2744	0					
+ANR	2773	PtrMemberAccess	s -> c		2744	1					
+ANR	2774	Identifier	s		2744	0					
+ANR	2775	Identifier	c		2744	1					
+ANR	2776	Argument	buf		2744	1					
+ANR	2777	Identifier	buf		2744	0					
+ANR	2778	Argument	buf_size		2744	2					
+ANR	2779	Identifier	buf_size		2744	0					
+ANR	2780	ExpressionStatement	s -> framep [ VP56_FRAME_CURRENT ] -> key_frame = ! vp56_rac_get ( c )	8:4:237:296	2744	3	True				
+ANR	2781	AssignmentExpression	s -> framep [ VP56_FRAME_CURRENT ] -> key_frame = ! vp56_rac_get ( c )		2744	0		=			
+ANR	2782	PtrMemberAccess	s -> framep [ VP56_FRAME_CURRENT ] -> key_frame		2744	0					
+ANR	2783	ArrayIndexing	s -> framep [ VP56_FRAME_CURRENT ]		2744	0					
+ANR	2784	PtrMemberAccess	s -> framep		2744	0					
+ANR	2785	Identifier	s		2744	0					
+ANR	2786	Identifier	framep		2744	1					
+ANR	2787	Identifier	VP56_FRAME_CURRENT		2744	1					
+ANR	2788	Identifier	key_frame		2744	1					
+ANR	2789	UnaryOperationExpression	! vp56_rac_get ( c )		2744	1					
+ANR	2790	UnaryOperator	!		2744	0					
+ANR	2791	CallExpression	vp56_rac_get ( c )		2744	1					
+ANR	2792	Callee	vp56_rac_get		2744	0					
+ANR	2793	Identifier	vp56_rac_get		2744	0					
+ANR	2794	ArgumentList	c		2744	1					
+ANR	2795	Argument	c		2744	0					
+ANR	2796	Identifier	c		2744	0					
+ANR	2797	ExpressionStatement	vp56_rac_get ( c )	9:4:302:317	2744	4	True				
+ANR	2798	CallExpression	vp56_rac_get ( c )		2744	0					
+ANR	2799	Callee	vp56_rac_get		2744	0					
+ANR	2800	Identifier	vp56_rac_get		2744	0					
+ANR	2801	ArgumentList	c		2744	1					
+ANR	2802	Argument	c		2744	0					
+ANR	2803	Identifier	c		2744	0					
+ANR	2804	ExpressionStatement	"ff_vp56_init_dequant ( s , vp56_rac_gets ( c , 6 ) )"	10:4:323:367	2744	5	True				
+ANR	2805	CallExpression	"ff_vp56_init_dequant ( s , vp56_rac_gets ( c , 6 ) )"		2744	0					
+ANR	2806	Callee	ff_vp56_init_dequant		2744	0					
+ANR	2807	Identifier	ff_vp56_init_dequant		2744	0					
+ANR	2808	ArgumentList	s		2744	1					
+ANR	2809	Argument	s		2744	0					
+ANR	2810	Identifier	s		2744	0					
+ANR	2811	Argument	"vp56_rac_gets ( c , 6 )"		2744	1					
+ANR	2812	CallExpression	"vp56_rac_gets ( c , 6 )"		2744	0					
+ANR	2813	Callee	vp56_rac_gets		2744	0					
+ANR	2814	Identifier	vp56_rac_gets		2744	0					
+ANR	2815	ArgumentList	c		2744	1					
+ANR	2816	Argument	c		2744	0					
+ANR	2817	Identifier	c		2744	0					
+ANR	2818	Argument	6		2744	1					
+ANR	2819	PrimaryExpression	6		2744	0					
+ANR	2820	ReturnType	static int		2744	1					
+ANR	2821	Identifier	vp5_parse_header		2744	2					
+ANR	2822	ParameterList	"VP56Context * s , const uint8_t * buf , int buf_size , int * golden_frame"		2744	3					
+ANR	2823	Parameter	VP56Context * s	1:28:28:41	2744	0	True				
+ANR	2824	ParameterType	VP56Context *		2744	0					
+ANR	2825	Identifier	s		2744	1					
+ANR	2826	Parameter	const uint8_t * buf	1:44:44:61	2744	1	True				
+ANR	2827	ParameterType	const uint8_t *		2744	0					
+ANR	2828	Identifier	buf		2744	1					
+ANR	2829	Parameter	int buf_size	1:64:64:75	2744	2	True				
+ANR	2830	ParameterType	int		2744	0					
+ANR	2831	Identifier	buf_size		2744	1					
+ANR	2832	Parameter	int * golden_frame	2:28:106:122	2744	3	True				
+ANR	2833	ParameterType	int *		2744	0					
+ANR	2834	Identifier	golden_frame		2744	1					
+ANR	2835	CFGEntryNode	ENTRY		2744		True				
+ANR	2836	CFGExitNode	EXIT		2744		True				
+ANR	2837	Symbol	s -> framep		2744						
+ANR	2838	Symbol	c		2744						
+ANR	2839	Symbol	buf_size		2744						
+ANR	2840	Symbol	* * s -> framep		2744						
+ANR	2841	Symbol	s -> framep [ VP56_FRAME_CURRENT ] -> key_frame		2744						
+ANR	2842	Symbol	* * VP56_FRAME_CURRENT		2744						
+ANR	2843	Symbol	rows		2744						
+ANR	2844	Symbol	* VP56_FRAME_CURRENT		2744						
+ANR	2845	Symbol	* * * s		2744						
+ANR	2846	Symbol	buf		2744						
+ANR	2847	Symbol	& s -> c		2744						
+ANR	2848	Symbol	s		2744						
+ANR	2849	Symbol	* s -> framep		2744						
+ANR	2850	Symbol	vp56_rac_get		2744						
+ANR	2851	Symbol	* * s		2744						
+ANR	2852	Symbol	golden_frame		2744						
+ANR	2853	Symbol	vp56_rac_gets		2744						
+ANR	2854	Symbol	cols		2744						
+ANR	2855	Symbol	* s		2744						
+ANR	2856	Symbol	VP56_FRAME_CURRENT		2744						

@@ -1,0 +1,53 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/qemu_1e9b65bb_26747.c								
+ANR	2	Function	error_setg	1:0:0:168							
+ANR	3	FunctionDef	"error_setg (Error * * errp , const char * fmt)"		2	0					
+ANR	4	CompoundStatement		2:0:52:168	2	0					
+ANR	5	IdentifierDeclStatement	va_list ap ;	3:4:58:68	2	0	True				
+ANR	6	IdentifierDecl	ap		2	0					
+ANR	7	IdentifierDeclType	va_list		2	0					
+ANR	8	Identifier	ap		2	1					
+ANR	9	ExpressionStatement	"va_start ( ap , fmt )"	5:4:75:92	2	1	True				
+ANR	10	CallExpression	"va_start ( ap , fmt )"		2	0					
+ANR	11	Callee	va_start		2	0					
+ANR	12	Identifier	va_start		2	0					
+ANR	13	ArgumentList	ap		2	1					
+ANR	14	Argument	ap		2	0					
+ANR	15	Identifier	ap		2	0					
+ANR	16	Argument	fmt		2	1					
+ANR	17	Identifier	fmt		2	0					
+ANR	18	ExpressionStatement	"error_setv ( errp , ERROR_CLASS_GENERIC_ERROR , fmt , ap )"	6:4:98:150	2	2	True				
+ANR	19	CallExpression	"error_setv ( errp , ERROR_CLASS_GENERIC_ERROR , fmt , ap )"		2	0					
+ANR	20	Callee	error_setv		2	0					
+ANR	21	Identifier	error_setv		2	0					
+ANR	22	ArgumentList	errp		2	1					
+ANR	23	Argument	errp		2	0					
+ANR	24	Identifier	errp		2	0					
+ANR	25	Argument	ERROR_CLASS_GENERIC_ERROR		2	1					
+ANR	26	Identifier	ERROR_CLASS_GENERIC_ERROR		2	0					
+ANR	27	Argument	fmt		2	2					
+ANR	28	Identifier	fmt		2	0					
+ANR	29	Argument	ap		2	3					
+ANR	30	Identifier	ap		2	0					
+ANR	31	ExpressionStatement	va_end ( ap )	7:4:156:166	2	3	True				
+ANR	32	CallExpression	va_end ( ap )		2	0					
+ANR	33	Callee	va_end		2	0					
+ANR	34	Identifier	va_end		2	0					
+ANR	35	ArgumentList	ap		2	1					
+ANR	36	Argument	ap		2	0					
+ANR	37	Identifier	ap		2	0					
+ANR	38	ReturnType	void		2	1					
+ANR	39	Identifier	error_setg		2	2					
+ANR	40	ParameterList	"Error * * errp , const char * fmt"		2	3					
+ANR	41	Parameter	Error * * errp	1:16:16:27	2	0	True				
+ANR	42	ParameterType	Error * *		2	0					
+ANR	43	Identifier	errp		2	1					
+ANR	44	Parameter	const char * fmt	1:30:30:44	2	1	True				
+ANR	45	ParameterType	const char *		2	0					
+ANR	46	Identifier	fmt		2	1					
+ANR	47	CFGEntryNode	ENTRY		2		True				
+ANR	48	CFGExitNode	EXIT		2		True				
+ANR	49	Symbol	ERROR_CLASS_GENERIC_ERROR		2						
+ANR	50	Symbol	errp		2						
+ANR	51	Symbol	fmt		2						
+ANR	52	Symbol	ap		2						

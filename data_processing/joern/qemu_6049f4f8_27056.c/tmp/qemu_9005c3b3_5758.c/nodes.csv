@@ -1,0 +1,78 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/qemu_9005c3b3_5758.c								
+ANR	2	Function	mp_dacl_listxattr	1:0:0:389							
+ANR	3	FunctionDef	"mp_dacl_listxattr (FsContext * ctx , const char * path , char * name , void * value , size_t osize)"		2	0					
+ANR	4	CompoundStatement		3:0:139:389	2	0					
+ANR	5	IdentifierDeclStatement	ssize_t len = sizeof ( ACL_DEFAULT ) ;	4:4:145:178	2	0	True				
+ANR	6	IdentifierDecl	len = sizeof ( ACL_DEFAULT )		2	0					
+ANR	7	IdentifierDeclType	ssize_t		2	0					
+ANR	8	Identifier	len		2	1					
+ANR	9	AssignmentExpression	len = sizeof ( ACL_DEFAULT )		2	2		=			
+ANR	10	Identifier	len		2	0					
+ANR	11	SizeofExpression	sizeof ( ACL_DEFAULT )		2	1					
+ANR	12	Sizeof	sizeof		2	0					
+ANR	13	SizeofOperand	ACL_DEFAULT		2	1					
+ANR	14	IfStatement	if ( ! value )		2	1					
+ANR	15	Condition	! value	6:8:189:194	2	0	True				
+ANR	16	UnaryOperationExpression	! value		2	0					
+ANR	17	UnaryOperator	!		2	0					
+ANR	18	Identifier	value		2	1					
+ANR	19	CompoundStatement		4:16:57:57	2	1					
+ANR	20	ReturnStatement	return len ;	7:8:207:217	2	0	True				
+ANR	21	Identifier	len		2	0					
+ANR	22	IfStatement	if ( osize < len )		2	2					
+ANR	23	Condition	osize < len	10:8:234:244	2	0	True				
+ANR	24	RelationalExpression	osize < len		2	0		<			
+ANR	25	Identifier	osize		2	0					
+ANR	26	Identifier	len		2	1					
+ANR	27	CompoundStatement		8:21:107:107	2	1					
+ANR	28	ExpressionStatement	errno = ERANGE	11:8:257:271	2	0	True				
+ANR	29	AssignmentExpression	errno = ERANGE		2	0		=			
+ANR	30	Identifier	errno		2	0					
+ANR	31	Identifier	ERANGE		2	1					
+ANR	32	ReturnStatement	return - 1 ;	12:8:281:290	2	1	True				
+ANR	33	UnaryOperationExpression	- 1		2	0					
+ANR	34	UnaryOperator	-		2	0					
+ANR	35	PrimaryExpression	1		2	1					
+ANR	36	ExpressionStatement	"memcpy ( value , ACL_ACCESS , len )"	16:4:343:373	2	3	True				
+ANR	37	CallExpression	"memcpy ( value , ACL_ACCESS , len )"		2	0					
+ANR	38	Callee	memcpy		2	0					
+ANR	39	Identifier	memcpy		2	0					
+ANR	40	ArgumentList	value		2	1					
+ANR	41	Argument	value		2	0					
+ANR	42	Identifier	value		2	0					
+ANR	43	Argument	ACL_ACCESS		2	1					
+ANR	44	Identifier	ACL_ACCESS		2	0					
+ANR	45	Argument	len		2	2					
+ANR	46	Identifier	len		2	0					
+ANR	47	ReturnStatement	return 0 ;	17:4:379:387	2	4	True				
+ANR	48	PrimaryExpression	0		2	0					
+ANR	49	ReturnType	static ssize_t		2	1					
+ANR	50	Identifier	mp_dacl_listxattr		2	2					
+ANR	51	ParameterList	"FsContext * ctx , const char * path , char * name , void * value , size_t osize"		2	3					
+ANR	52	Parameter	FsContext * ctx	1:33:33:46	2	0	True				
+ANR	53	ParameterType	FsContext *		2	0					
+ANR	54	Identifier	ctx		2	1					
+ANR	55	Parameter	const char * path	1:49:49:64	2	1	True				
+ANR	56	ParameterType	const char *		2	0					
+ANR	57	Identifier	path		2	1					
+ANR	58	Parameter	char * name	2:33:100:109	2	2	True				
+ANR	59	ParameterType	char *		2	0					
+ANR	60	Identifier	name		2	1					
+ANR	61	Parameter	void * value	2:45:112:122	2	3	True				
+ANR	62	ParameterType	void *		2	0					
+ANR	63	Identifier	value		2	1					
+ANR	64	Parameter	size_t osize	2:58:125:136	2	4	True				
+ANR	65	ParameterType	size_t		2	0					
+ANR	66	Identifier	osize		2	1					
+ANR	67	CFGEntryNode	ENTRY		2		True				
+ANR	68	CFGExitNode	EXIT		2		True				
+ANR	69	Symbol	path		2						
+ANR	70	Symbol	osize		2						
+ANR	71	Symbol	errno		2						
+ANR	72	Symbol	len		2						
+ANR	73	Symbol	ctx		2						
+ANR	74	Symbol	name		2						
+ANR	75	Symbol	ERANGE		2						
+ANR	76	Symbol	ACL_ACCESS		2						
+ANR	77	Symbol	value		2						

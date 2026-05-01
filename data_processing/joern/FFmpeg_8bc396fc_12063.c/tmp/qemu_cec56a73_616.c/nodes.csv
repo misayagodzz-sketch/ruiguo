@@ -1,0 +1,788 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	6312	File	tmp/qemu_cec56a73_616.c								
+ANR	6313	Function	cpu_state_reset	1:0:0:6666							
+ANR	6314	FunctionDef	cpu_state_reset (CPUMIPSState * env)		6313	0					
+ANR	6315	CompoundStatement		2:0:40:6666	6313	0					
+ANR	6316	IdentifierDeclStatement	MIPSCPU * cpu = mips_env_get_cpu ( env ) ;	3:4:46:82	6313	0	True				
+ANR	6317	IdentifierDecl	* cpu = mips_env_get_cpu ( env )		6313	0					
+ANR	6318	IdentifierDeclType	MIPSCPU *		6313	0					
+ANR	6319	Identifier	cpu		6313	1					
+ANR	6320	AssignmentExpression	* cpu = mips_env_get_cpu ( env )		6313	2		=			
+ANR	6321	Identifier	cpu		6313	0					
+ANR	6322	CallExpression	mips_env_get_cpu ( env )		6313	1					
+ANR	6323	Callee	mips_env_get_cpu		6313	0					
+ANR	6324	Identifier	mips_env_get_cpu		6313	0					
+ANR	6325	ArgumentList	env		6313	1					
+ANR	6326	Argument	env		6313	0					
+ANR	6327	Identifier	env		6313	0					
+ANR	6328	IdentifierDeclStatement	CPUState * cs = CPU ( cpu ) ;	4:4:88:111	6313	1	True				
+ANR	6329	IdentifierDecl	* cs = CPU ( cpu )		6313	0					
+ANR	6330	IdentifierDeclType	CPUState *		6313	0					
+ANR	6331	Identifier	cs		6313	1					
+ANR	6332	AssignmentExpression	* cs = CPU ( cpu )		6313	2		=			
+ANR	6333	Identifier	cs		6313	0					
+ANR	6334	CallExpression	CPU ( cpu )		6313	1					
+ANR	6335	Callee	CPU		6313	0					
+ANR	6336	Identifier	CPU		6313	0					
+ANR	6337	ArgumentList	cpu		6313	1					
+ANR	6338	Argument	cpu		6313	0					
+ANR	6339	Identifier	cpu		6313	0					
+ANR	6340	ExpressionStatement	env -> CP0_PRid = env -> cpu_model -> CP0_PRid	6:4:167:207	6313	2	True				
+ANR	6341	AssignmentExpression	env -> CP0_PRid = env -> cpu_model -> CP0_PRid		6313	0		=			
+ANR	6342	PtrMemberAccess	env -> CP0_PRid		6313	0					
+ANR	6343	Identifier	env		6313	0					
+ANR	6344	Identifier	CP0_PRid		6313	1					
+ANR	6345	PtrMemberAccess	env -> cpu_model -> CP0_PRid		6313	1					
+ANR	6346	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6347	Identifier	env		6313	0					
+ANR	6348	Identifier	cpu_model		6313	1					
+ANR	6349	Identifier	CP0_PRid		6313	1					
+ANR	6350	ExpressionStatement	env -> CP0_Config0 = env -> cpu_model -> CP0_Config0	7:4:213:259	6313	3	True				
+ANR	6351	AssignmentExpression	env -> CP0_Config0 = env -> cpu_model -> CP0_Config0		6313	0		=			
+ANR	6352	PtrMemberAccess	env -> CP0_Config0		6313	0					
+ANR	6353	Identifier	env		6313	0					
+ANR	6354	Identifier	CP0_Config0		6313	1					
+ANR	6355	PtrMemberAccess	env -> cpu_model -> CP0_Config0		6313	1					
+ANR	6356	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6357	Identifier	env		6313	0					
+ANR	6358	Identifier	cpu_model		6313	1					
+ANR	6359	Identifier	CP0_Config0		6313	1					
+ANR	6360	ExpressionStatement	env -> CP0_Config0 |= ( 1 << CP0C0_BE )	9:4:295:330	6313	4	True				
+ANR	6361	AssignmentExpression	env -> CP0_Config0 |= ( 1 << CP0C0_BE )		6313	0		|=			
+ANR	6362	PtrMemberAccess	env -> CP0_Config0		6313	0					
+ANR	6363	Identifier	env		6313	0					
+ANR	6364	Identifier	CP0_Config0		6313	1					
+ANR	6365	ShiftExpression	1 << CP0C0_BE		6313	1		<<			
+ANR	6366	PrimaryExpression	1		6313	0					
+ANR	6367	Identifier	CP0C0_BE		6313	1					
+ANR	6368	ExpressionStatement	env -> CP0_Config1 = env -> cpu_model -> CP0_Config1	11:4:343:389	6313	5	True				
+ANR	6369	AssignmentExpression	env -> CP0_Config1 = env -> cpu_model -> CP0_Config1		6313	0		=			
+ANR	6370	PtrMemberAccess	env -> CP0_Config1		6313	0					
+ANR	6371	Identifier	env		6313	0					
+ANR	6372	Identifier	CP0_Config1		6313	1					
+ANR	6373	PtrMemberAccess	env -> cpu_model -> CP0_Config1		6313	1					
+ANR	6374	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6375	Identifier	env		6313	0					
+ANR	6376	Identifier	cpu_model		6313	1					
+ANR	6377	Identifier	CP0_Config1		6313	1					
+ANR	6378	ExpressionStatement	env -> CP0_Config2 = env -> cpu_model -> CP0_Config2	12:4:395:441	6313	6	True				
+ANR	6379	AssignmentExpression	env -> CP0_Config2 = env -> cpu_model -> CP0_Config2		6313	0		=			
+ANR	6380	PtrMemberAccess	env -> CP0_Config2		6313	0					
+ANR	6381	Identifier	env		6313	0					
+ANR	6382	Identifier	CP0_Config2		6313	1					
+ANR	6383	PtrMemberAccess	env -> cpu_model -> CP0_Config2		6313	1					
+ANR	6384	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6385	Identifier	env		6313	0					
+ANR	6386	Identifier	cpu_model		6313	1					
+ANR	6387	Identifier	CP0_Config2		6313	1					
+ANR	6388	ExpressionStatement	env -> CP0_Config3 = env -> cpu_model -> CP0_Config3	13:4:447:493	6313	7	True				
+ANR	6389	AssignmentExpression	env -> CP0_Config3 = env -> cpu_model -> CP0_Config3		6313	0		=			
+ANR	6390	PtrMemberAccess	env -> CP0_Config3		6313	0					
+ANR	6391	Identifier	env		6313	0					
+ANR	6392	Identifier	CP0_Config3		6313	1					
+ANR	6393	PtrMemberAccess	env -> cpu_model -> CP0_Config3		6313	1					
+ANR	6394	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6395	Identifier	env		6313	0					
+ANR	6396	Identifier	cpu_model		6313	1					
+ANR	6397	Identifier	CP0_Config3		6313	1					
+ANR	6398	ExpressionStatement	env -> CP0_Config4 = env -> cpu_model -> CP0_Config4	14:4:499:545	6313	8	True				
+ANR	6399	AssignmentExpression	env -> CP0_Config4 = env -> cpu_model -> CP0_Config4		6313	0		=			
+ANR	6400	PtrMemberAccess	env -> CP0_Config4		6313	0					
+ANR	6401	Identifier	env		6313	0					
+ANR	6402	Identifier	CP0_Config4		6313	1					
+ANR	6403	PtrMemberAccess	env -> cpu_model -> CP0_Config4		6313	1					
+ANR	6404	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6405	Identifier	env		6313	0					
+ANR	6406	Identifier	cpu_model		6313	1					
+ANR	6407	Identifier	CP0_Config4		6313	1					
+ANR	6408	ExpressionStatement	env -> CP0_Config4_rw_bitmask = env -> cpu_model -> CP0_Config4_rw_bitmask	15:4:551:619	6313	9	True				
+ANR	6409	AssignmentExpression	env -> CP0_Config4_rw_bitmask = env -> cpu_model -> CP0_Config4_rw_bitmask		6313	0		=			
+ANR	6410	PtrMemberAccess	env -> CP0_Config4_rw_bitmask		6313	0					
+ANR	6411	Identifier	env		6313	0					
+ANR	6412	Identifier	CP0_Config4_rw_bitmask		6313	1					
+ANR	6413	PtrMemberAccess	env -> cpu_model -> CP0_Config4_rw_bitmask		6313	1					
+ANR	6414	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6415	Identifier	env		6313	0					
+ANR	6416	Identifier	cpu_model		6313	1					
+ANR	6417	Identifier	CP0_Config4_rw_bitmask		6313	1					
+ANR	6418	ExpressionStatement	env -> CP0_Config5 = env -> cpu_model -> CP0_Config5	16:4:625:671	6313	10	True				
+ANR	6419	AssignmentExpression	env -> CP0_Config5 = env -> cpu_model -> CP0_Config5		6313	0		=			
+ANR	6420	PtrMemberAccess	env -> CP0_Config5		6313	0					
+ANR	6421	Identifier	env		6313	0					
+ANR	6422	Identifier	CP0_Config5		6313	1					
+ANR	6423	PtrMemberAccess	env -> cpu_model -> CP0_Config5		6313	1					
+ANR	6424	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6425	Identifier	env		6313	0					
+ANR	6426	Identifier	cpu_model		6313	1					
+ANR	6427	Identifier	CP0_Config5		6313	1					
+ANR	6428	ExpressionStatement	env -> CP0_Config5_rw_bitmask = env -> cpu_model -> CP0_Config5_rw_bitmask	17:4:677:745	6313	11	True				
+ANR	6429	AssignmentExpression	env -> CP0_Config5_rw_bitmask = env -> cpu_model -> CP0_Config5_rw_bitmask		6313	0		=			
+ANR	6430	PtrMemberAccess	env -> CP0_Config5_rw_bitmask		6313	0					
+ANR	6431	Identifier	env		6313	0					
+ANR	6432	Identifier	CP0_Config5_rw_bitmask		6313	1					
+ANR	6433	PtrMemberAccess	env -> cpu_model -> CP0_Config5_rw_bitmask		6313	1					
+ANR	6434	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6435	Identifier	env		6313	0					
+ANR	6436	Identifier	cpu_model		6313	1					
+ANR	6437	Identifier	CP0_Config5_rw_bitmask		6313	1					
+ANR	6438	ExpressionStatement	env -> CP0_Config6 = env -> cpu_model -> CP0_Config6	18:4:751:797	6313	12	True				
+ANR	6439	AssignmentExpression	env -> CP0_Config6 = env -> cpu_model -> CP0_Config6		6313	0		=			
+ANR	6440	PtrMemberAccess	env -> CP0_Config6		6313	0					
+ANR	6441	Identifier	env		6313	0					
+ANR	6442	Identifier	CP0_Config6		6313	1					
+ANR	6443	PtrMemberAccess	env -> cpu_model -> CP0_Config6		6313	1					
+ANR	6444	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6445	Identifier	env		6313	0					
+ANR	6446	Identifier	cpu_model		6313	1					
+ANR	6447	Identifier	CP0_Config6		6313	1					
+ANR	6448	ExpressionStatement	env -> CP0_Config7 = env -> cpu_model -> CP0_Config7	19:4:803:849	6313	13	True				
+ANR	6449	AssignmentExpression	env -> CP0_Config7 = env -> cpu_model -> CP0_Config7		6313	0		=			
+ANR	6450	PtrMemberAccess	env -> CP0_Config7		6313	0					
+ANR	6451	Identifier	env		6313	0					
+ANR	6452	Identifier	CP0_Config7		6313	1					
+ANR	6453	PtrMemberAccess	env -> cpu_model -> CP0_Config7		6313	1					
+ANR	6454	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6455	Identifier	env		6313	0					
+ANR	6456	Identifier	cpu_model		6313	1					
+ANR	6457	Identifier	CP0_Config7		6313	1					
+ANR	6458	ExpressionStatement	env -> CP0_LLAddr_rw_bitmask = env -> cpu_model -> CP0_LLAddr_rw_bitmask << env -> cpu_model -> CP0_LLAddr_shift	20:4:855:990	6313	14	True				
+ANR	6459	AssignmentExpression	env -> CP0_LLAddr_rw_bitmask = env -> cpu_model -> CP0_LLAddr_rw_bitmask << env -> cpu_model -> CP0_LLAddr_shift		6313	0		=			
+ANR	6460	PtrMemberAccess	env -> CP0_LLAddr_rw_bitmask		6313	0					
+ANR	6461	Identifier	env		6313	0					
+ANR	6462	Identifier	CP0_LLAddr_rw_bitmask		6313	1					
+ANR	6463	ShiftExpression	env -> cpu_model -> CP0_LLAddr_rw_bitmask << env -> cpu_model -> CP0_LLAddr_shift		6313	1		<<			
+ANR	6464	PtrMemberAccess	env -> cpu_model -> CP0_LLAddr_rw_bitmask		6313	0					
+ANR	6465	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6466	Identifier	env		6313	0					
+ANR	6467	Identifier	cpu_model		6313	1					
+ANR	6468	Identifier	CP0_LLAddr_rw_bitmask		6313	1					
+ANR	6469	PtrMemberAccess	env -> cpu_model -> CP0_LLAddr_shift		6313	1					
+ANR	6470	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6471	Identifier	env		6313	0					
+ANR	6472	Identifier	cpu_model		6313	1					
+ANR	6473	Identifier	CP0_LLAddr_shift		6313	1					
+ANR	6474	ExpressionStatement	env -> CP0_LLAddr_shift = env -> cpu_model -> CP0_LLAddr_shift	22:4:996:1052	6313	15	True				
+ANR	6475	AssignmentExpression	env -> CP0_LLAddr_shift = env -> cpu_model -> CP0_LLAddr_shift		6313	0		=			
+ANR	6476	PtrMemberAccess	env -> CP0_LLAddr_shift		6313	0					
+ANR	6477	Identifier	env		6313	0					
+ANR	6478	Identifier	CP0_LLAddr_shift		6313	1					
+ANR	6479	PtrMemberAccess	env -> cpu_model -> CP0_LLAddr_shift		6313	1					
+ANR	6480	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6481	Identifier	env		6313	0					
+ANR	6482	Identifier	cpu_model		6313	1					
+ANR	6483	Identifier	CP0_LLAddr_shift		6313	1					
+ANR	6484	ExpressionStatement	env -> SYNCI_Step = env -> cpu_model -> SYNCI_Step	23:4:1058:1102	6313	16	True				
+ANR	6485	AssignmentExpression	env -> SYNCI_Step = env -> cpu_model -> SYNCI_Step		6313	0		=			
+ANR	6486	PtrMemberAccess	env -> SYNCI_Step		6313	0					
+ANR	6487	Identifier	env		6313	0					
+ANR	6488	Identifier	SYNCI_Step		6313	1					
+ANR	6489	PtrMemberAccess	env -> cpu_model -> SYNCI_Step		6313	1					
+ANR	6490	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6491	Identifier	env		6313	0					
+ANR	6492	Identifier	cpu_model		6313	1					
+ANR	6493	Identifier	SYNCI_Step		6313	1					
+ANR	6494	ExpressionStatement	env -> CCRes = env -> cpu_model -> CCRes	24:4:1108:1142	6313	17	True				
+ANR	6495	AssignmentExpression	env -> CCRes = env -> cpu_model -> CCRes		6313	0		=			
+ANR	6496	PtrMemberAccess	env -> CCRes		6313	0					
+ANR	6497	Identifier	env		6313	0					
+ANR	6498	Identifier	CCRes		6313	1					
+ANR	6499	PtrMemberAccess	env -> cpu_model -> CCRes		6313	1					
+ANR	6500	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6501	Identifier	env		6313	0					
+ANR	6502	Identifier	cpu_model		6313	1					
+ANR	6503	Identifier	CCRes		6313	1					
+ANR	6504	ExpressionStatement	env -> CP0_Status_rw_bitmask = env -> cpu_model -> CP0_Status_rw_bitmask	25:4:1148:1214	6313	18	True				
+ANR	6505	AssignmentExpression	env -> CP0_Status_rw_bitmask = env -> cpu_model -> CP0_Status_rw_bitmask		6313	0		=			
+ANR	6506	PtrMemberAccess	env -> CP0_Status_rw_bitmask		6313	0					
+ANR	6507	Identifier	env		6313	0					
+ANR	6508	Identifier	CP0_Status_rw_bitmask		6313	1					
+ANR	6509	PtrMemberAccess	env -> cpu_model -> CP0_Status_rw_bitmask		6313	1					
+ANR	6510	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6511	Identifier	env		6313	0					
+ANR	6512	Identifier	cpu_model		6313	1					
+ANR	6513	Identifier	CP0_Status_rw_bitmask		6313	1					
+ANR	6514	ExpressionStatement	env -> CP0_TCStatus_rw_bitmask = env -> cpu_model -> CP0_TCStatus_rw_bitmask	26:4:1220:1290	6313	19	True				
+ANR	6515	AssignmentExpression	env -> CP0_TCStatus_rw_bitmask = env -> cpu_model -> CP0_TCStatus_rw_bitmask		6313	0		=			
+ANR	6516	PtrMemberAccess	env -> CP0_TCStatus_rw_bitmask		6313	0					
+ANR	6517	Identifier	env		6313	0					
+ANR	6518	Identifier	CP0_TCStatus_rw_bitmask		6313	1					
+ANR	6519	PtrMemberAccess	env -> cpu_model -> CP0_TCStatus_rw_bitmask		6313	1					
+ANR	6520	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6521	Identifier	env		6313	0					
+ANR	6522	Identifier	cpu_model		6313	1					
+ANR	6523	Identifier	CP0_TCStatus_rw_bitmask		6313	1					
+ANR	6524	ExpressionStatement	env -> CP0_SRSCtl = env -> cpu_model -> CP0_SRSCtl	27:4:1296:1340	6313	20	True				
+ANR	6525	AssignmentExpression	env -> CP0_SRSCtl = env -> cpu_model -> CP0_SRSCtl		6313	0		=			
+ANR	6526	PtrMemberAccess	env -> CP0_SRSCtl		6313	0					
+ANR	6527	Identifier	env		6313	0					
+ANR	6528	Identifier	CP0_SRSCtl		6313	1					
+ANR	6529	PtrMemberAccess	env -> cpu_model -> CP0_SRSCtl		6313	1					
+ANR	6530	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6531	Identifier	env		6313	0					
+ANR	6532	Identifier	cpu_model		6313	1					
+ANR	6533	Identifier	CP0_SRSCtl		6313	1					
+ANR	6534	ExpressionStatement	env -> current_tc = 0	28:4:1346:1365	6313	21	True				
+ANR	6535	AssignmentExpression	env -> current_tc = 0		6313	0		=			
+ANR	6536	PtrMemberAccess	env -> current_tc		6313	0					
+ANR	6537	Identifier	env		6313	0					
+ANR	6538	Identifier	current_tc		6313	1					
+ANR	6539	PrimaryExpression	0		6313	1					
+ANR	6540	ExpressionStatement	env -> SEGBITS = env -> cpu_model -> SEGBITS	29:4:1371:1409	6313	22	True				
+ANR	6541	AssignmentExpression	env -> SEGBITS = env -> cpu_model -> SEGBITS		6313	0		=			
+ANR	6542	PtrMemberAccess	env -> SEGBITS		6313	0					
+ANR	6543	Identifier	env		6313	0					
+ANR	6544	Identifier	SEGBITS		6313	1					
+ANR	6545	PtrMemberAccess	env -> cpu_model -> SEGBITS		6313	1					
+ANR	6546	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6547	Identifier	env		6313	0					
+ANR	6548	Identifier	cpu_model		6313	1					
+ANR	6549	Identifier	SEGBITS		6313	1					
+ANR	6550	Statement	env	30:4:1415:1417	6313	23	True				
+ANR	6551	Statement	->	30:7:1418:1419	6313	24	True				
+ANR	6552	Statement	SEGMask	30:9:1420:1426	6313	25	True				
+ANR	6553	Statement	=	30:17:1428:1428	6313	26	True				
+ANR	6554	Statement	(	30:19:1430:1430	6313	27	True				
+ANR	6555	Statement	target_ulong	30:20:1431:1442	6313	28	True				
+ANR	6556	Statement	)	30:32:1443:1443	6313	29	True				
+ANR	6557	Statement	(	30:33:1444:1444	6313	30	True				
+ANR	6558	Statement	(	30:34:1445:1445	6313	31	True				
+ANR	6559	Statement	1UL	30:35:1446:1448	6313	32	True				
+ANR	6560	Statement	L	30:38:1449:1449	6313	33	True				
+ANR	6561	Statement	<<	30:40:1451:1452	6313	34	True				
+ANR	6562	Statement	env	30:43:1454:1456	6313	35	True				
+ANR	6563	Statement	->	30:46:1457:1458	6313	36	True				
+ANR	6564	Statement	cpu_model	30:48:1459:1467	6313	37	True				
+ANR	6565	Statement	->	30:57:1468:1469	6313	38	True				
+ANR	6566	Statement	SEGBITS	30:59:1470:1476	6313	39	True				
+ANR	6567	Statement	)	30:66:1477:1477	6313	40	True				
+ANR	6568	Statement	-	30:68:1479:1479	6313	41	True				
+ANR	6569	Statement	1	30:70:1481:1481	6313	42	True				
+ANR	6570	Statement	)	30:71:1482:1482	6313	43	True				
+ANR	6571	ExpressionStatement		30:72:1483:1483	6313	44	True				
+ANR	6572	IfStatement	if ( env -> cpu_model -> insn_flags & ISA_MIPS3 )		6313	45					
+ANR	6573	Condition	env -> cpu_model -> insn_flags & ISA_MIPS3	32:8:1520:1557	6313	0	True				
+ANR	6574	BitAndExpression	env -> cpu_model -> insn_flags & ISA_MIPS3		6313	0		&			
+ANR	6575	PtrMemberAccess	env -> cpu_model -> insn_flags		6313	0					
+ANR	6576	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6577	Identifier	env		6313	0					
+ANR	6578	Identifier	cpu_model		6313	1					
+ANR	6579	Identifier	insn_flags		6313	1					
+ANR	6580	Identifier	ISA_MIPS3		6313	1					
+ANR	6581	CompoundStatement		31:48:1519:1519	6313	1					
+ANR	6582	Statement	env	33:8:1570:1572	6313	0	True				
+ANR	6583	Statement	->	33:11:1573:1574	6313	1	True				
+ANR	6584	Statement	SEGMask	33:13:1575:1581	6313	2	True				
+ANR	6585	Statement	|=	33:21:1583:1584	6313	3	True				
+ANR	6586	Statement	3UL	33:24:1586:1588	6313	4	True				
+ANR	6587	ExpressionStatement	L << 62	33:27:1589:1596	6313	5	True				
+ANR	6588	ShiftExpression	L << 62		6313	0		<<			
+ANR	6589	Identifier	L		6313	0					
+ANR	6590	PrimaryExpression	62		6313	1					
+ANR	6591	ExpressionStatement	env -> PABITS = env -> cpu_model -> PABITS	36:4:1615:1651	6313	46	True				
+ANR	6592	AssignmentExpression	env -> PABITS = env -> cpu_model -> PABITS		6313	0		=			
+ANR	6593	PtrMemberAccess	env -> PABITS		6313	0					
+ANR	6594	Identifier	env		6313	0					
+ANR	6595	Identifier	PABITS		6313	1					
+ANR	6596	PtrMemberAccess	env -> cpu_model -> PABITS		6313	1					
+ANR	6597	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6598	Identifier	env		6313	0					
+ANR	6599	Identifier	cpu_model		6313	1					
+ANR	6600	Identifier	PABITS		6313	1					
+ANR	6601	ExpressionStatement	env -> CP0_SRSConf0_rw_bitmask = env -> cpu_model -> CP0_SRSConf0_rw_bitmask	37:4:1657:1727	6313	47	True				
+ANR	6602	AssignmentExpression	env -> CP0_SRSConf0_rw_bitmask = env -> cpu_model -> CP0_SRSConf0_rw_bitmask		6313	0		=			
+ANR	6603	PtrMemberAccess	env -> CP0_SRSConf0_rw_bitmask		6313	0					
+ANR	6604	Identifier	env		6313	0					
+ANR	6605	Identifier	CP0_SRSConf0_rw_bitmask		6313	1					
+ANR	6606	PtrMemberAccess	env -> cpu_model -> CP0_SRSConf0_rw_bitmask		6313	1					
+ANR	6607	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6608	Identifier	env		6313	0					
+ANR	6609	Identifier	cpu_model		6313	1					
+ANR	6610	Identifier	CP0_SRSConf0_rw_bitmask		6313	1					
+ANR	6611	ExpressionStatement	env -> CP0_SRSConf0 = env -> cpu_model -> CP0_SRSConf0	38:4:1733:1781	6313	48	True				
+ANR	6612	AssignmentExpression	env -> CP0_SRSConf0 = env -> cpu_model -> CP0_SRSConf0		6313	0		=			
+ANR	6613	PtrMemberAccess	env -> CP0_SRSConf0		6313	0					
+ANR	6614	Identifier	env		6313	0					
+ANR	6615	Identifier	CP0_SRSConf0		6313	1					
+ANR	6616	PtrMemberAccess	env -> cpu_model -> CP0_SRSConf0		6313	1					
+ANR	6617	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6618	Identifier	env		6313	0					
+ANR	6619	Identifier	cpu_model		6313	1					
+ANR	6620	Identifier	CP0_SRSConf0		6313	1					
+ANR	6621	ExpressionStatement	env -> CP0_SRSConf1_rw_bitmask = env -> cpu_model -> CP0_SRSConf1_rw_bitmask	39:4:1787:1857	6313	49	True				
+ANR	6622	AssignmentExpression	env -> CP0_SRSConf1_rw_bitmask = env -> cpu_model -> CP0_SRSConf1_rw_bitmask		6313	0		=			
+ANR	6623	PtrMemberAccess	env -> CP0_SRSConf1_rw_bitmask		6313	0					
+ANR	6624	Identifier	env		6313	0					
+ANR	6625	Identifier	CP0_SRSConf1_rw_bitmask		6313	1					
+ANR	6626	PtrMemberAccess	env -> cpu_model -> CP0_SRSConf1_rw_bitmask		6313	1					
+ANR	6627	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6628	Identifier	env		6313	0					
+ANR	6629	Identifier	cpu_model		6313	1					
+ANR	6630	Identifier	CP0_SRSConf1_rw_bitmask		6313	1					
+ANR	6631	ExpressionStatement	env -> CP0_SRSConf1 = env -> cpu_model -> CP0_SRSConf1	40:4:1863:1911	6313	50	True				
+ANR	6632	AssignmentExpression	env -> CP0_SRSConf1 = env -> cpu_model -> CP0_SRSConf1		6313	0		=			
+ANR	6633	PtrMemberAccess	env -> CP0_SRSConf1		6313	0					
+ANR	6634	Identifier	env		6313	0					
+ANR	6635	Identifier	CP0_SRSConf1		6313	1					
+ANR	6636	PtrMemberAccess	env -> cpu_model -> CP0_SRSConf1		6313	1					
+ANR	6637	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6638	Identifier	env		6313	0					
+ANR	6639	Identifier	cpu_model		6313	1					
+ANR	6640	Identifier	CP0_SRSConf1		6313	1					
+ANR	6641	ExpressionStatement	env -> CP0_SRSConf2_rw_bitmask = env -> cpu_model -> CP0_SRSConf2_rw_bitmask	41:4:1917:1987	6313	51	True				
+ANR	6642	AssignmentExpression	env -> CP0_SRSConf2_rw_bitmask = env -> cpu_model -> CP0_SRSConf2_rw_bitmask		6313	0		=			
+ANR	6643	PtrMemberAccess	env -> CP0_SRSConf2_rw_bitmask		6313	0					
+ANR	6644	Identifier	env		6313	0					
+ANR	6645	Identifier	CP0_SRSConf2_rw_bitmask		6313	1					
+ANR	6646	PtrMemberAccess	env -> cpu_model -> CP0_SRSConf2_rw_bitmask		6313	1					
+ANR	6647	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6648	Identifier	env		6313	0					
+ANR	6649	Identifier	cpu_model		6313	1					
+ANR	6650	Identifier	CP0_SRSConf2_rw_bitmask		6313	1					
+ANR	6651	ExpressionStatement	env -> CP0_SRSConf2 = env -> cpu_model -> CP0_SRSConf2	42:4:1993:2041	6313	52	True				
+ANR	6652	AssignmentExpression	env -> CP0_SRSConf2 = env -> cpu_model -> CP0_SRSConf2		6313	0		=			
+ANR	6653	PtrMemberAccess	env -> CP0_SRSConf2		6313	0					
+ANR	6654	Identifier	env		6313	0					
+ANR	6655	Identifier	CP0_SRSConf2		6313	1					
+ANR	6656	PtrMemberAccess	env -> cpu_model -> CP0_SRSConf2		6313	1					
+ANR	6657	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6658	Identifier	env		6313	0					
+ANR	6659	Identifier	cpu_model		6313	1					
+ANR	6660	Identifier	CP0_SRSConf2		6313	1					
+ANR	6661	ExpressionStatement	env -> CP0_SRSConf3_rw_bitmask = env -> cpu_model -> CP0_SRSConf3_rw_bitmask	43:4:2047:2117	6313	53	True				
+ANR	6662	AssignmentExpression	env -> CP0_SRSConf3_rw_bitmask = env -> cpu_model -> CP0_SRSConf3_rw_bitmask		6313	0		=			
+ANR	6663	PtrMemberAccess	env -> CP0_SRSConf3_rw_bitmask		6313	0					
+ANR	6664	Identifier	env		6313	0					
+ANR	6665	Identifier	CP0_SRSConf3_rw_bitmask		6313	1					
+ANR	6666	PtrMemberAccess	env -> cpu_model -> CP0_SRSConf3_rw_bitmask		6313	1					
+ANR	6667	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6668	Identifier	env		6313	0					
+ANR	6669	Identifier	cpu_model		6313	1					
+ANR	6670	Identifier	CP0_SRSConf3_rw_bitmask		6313	1					
+ANR	6671	ExpressionStatement	env -> CP0_SRSConf3 = env -> cpu_model -> CP0_SRSConf3	44:4:2123:2171	6313	54	True				
+ANR	6672	AssignmentExpression	env -> CP0_SRSConf3 = env -> cpu_model -> CP0_SRSConf3		6313	0		=			
+ANR	6673	PtrMemberAccess	env -> CP0_SRSConf3		6313	0					
+ANR	6674	Identifier	env		6313	0					
+ANR	6675	Identifier	CP0_SRSConf3		6313	1					
+ANR	6676	PtrMemberAccess	env -> cpu_model -> CP0_SRSConf3		6313	1					
+ANR	6677	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6678	Identifier	env		6313	0					
+ANR	6679	Identifier	cpu_model		6313	1					
+ANR	6680	Identifier	CP0_SRSConf3		6313	1					
+ANR	6681	ExpressionStatement	env -> CP0_SRSConf4_rw_bitmask = env -> cpu_model -> CP0_SRSConf4_rw_bitmask	45:4:2177:2247	6313	55	True				
+ANR	6682	AssignmentExpression	env -> CP0_SRSConf4_rw_bitmask = env -> cpu_model -> CP0_SRSConf4_rw_bitmask		6313	0		=			
+ANR	6683	PtrMemberAccess	env -> CP0_SRSConf4_rw_bitmask		6313	0					
+ANR	6684	Identifier	env		6313	0					
+ANR	6685	Identifier	CP0_SRSConf4_rw_bitmask		6313	1					
+ANR	6686	PtrMemberAccess	env -> cpu_model -> CP0_SRSConf4_rw_bitmask		6313	1					
+ANR	6687	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6688	Identifier	env		6313	0					
+ANR	6689	Identifier	cpu_model		6313	1					
+ANR	6690	Identifier	CP0_SRSConf4_rw_bitmask		6313	1					
+ANR	6691	ExpressionStatement	env -> CP0_SRSConf4 = env -> cpu_model -> CP0_SRSConf4	46:4:2253:2301	6313	56	True				
+ANR	6692	AssignmentExpression	env -> CP0_SRSConf4 = env -> cpu_model -> CP0_SRSConf4		6313	0		=			
+ANR	6693	PtrMemberAccess	env -> CP0_SRSConf4		6313	0					
+ANR	6694	Identifier	env		6313	0					
+ANR	6695	Identifier	CP0_SRSConf4		6313	1					
+ANR	6696	PtrMemberAccess	env -> cpu_model -> CP0_SRSConf4		6313	1					
+ANR	6697	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6698	Identifier	env		6313	0					
+ANR	6699	Identifier	cpu_model		6313	1					
+ANR	6700	Identifier	CP0_SRSConf4		6313	1					
+ANR	6701	ExpressionStatement	env -> CP0_PageGrain_rw_bitmask = env -> cpu_model -> CP0_PageGrain_rw_bitmask	47:4:2307:2379	6313	57	True				
+ANR	6702	AssignmentExpression	env -> CP0_PageGrain_rw_bitmask = env -> cpu_model -> CP0_PageGrain_rw_bitmask		6313	0		=			
+ANR	6703	PtrMemberAccess	env -> CP0_PageGrain_rw_bitmask		6313	0					
+ANR	6704	Identifier	env		6313	0					
+ANR	6705	Identifier	CP0_PageGrain_rw_bitmask		6313	1					
+ANR	6706	PtrMemberAccess	env -> cpu_model -> CP0_PageGrain_rw_bitmask		6313	1					
+ANR	6707	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6708	Identifier	env		6313	0					
+ANR	6709	Identifier	cpu_model		6313	1					
+ANR	6710	Identifier	CP0_PageGrain_rw_bitmask		6313	1					
+ANR	6711	ExpressionStatement	env -> CP0_PageGrain = env -> cpu_model -> CP0_PageGrain	48:4:2385:2435	6313	58	True				
+ANR	6712	AssignmentExpression	env -> CP0_PageGrain = env -> cpu_model -> CP0_PageGrain		6313	0		=			
+ANR	6713	PtrMemberAccess	env -> CP0_PageGrain		6313	0					
+ANR	6714	Identifier	env		6313	0					
+ANR	6715	Identifier	CP0_PageGrain		6313	1					
+ANR	6716	PtrMemberAccess	env -> cpu_model -> CP0_PageGrain		6313	1					
+ANR	6717	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6718	Identifier	env		6313	0					
+ANR	6719	Identifier	cpu_model		6313	1					
+ANR	6720	Identifier	CP0_PageGrain		6313	1					
+ANR	6721	ExpressionStatement	env -> CP0_EBaseWG_rw_bitmask = env -> cpu_model -> CP0_EBaseWG_rw_bitmask	49:4:2441:2509	6313	59	True				
+ANR	6722	AssignmentExpression	env -> CP0_EBaseWG_rw_bitmask = env -> cpu_model -> CP0_EBaseWG_rw_bitmask		6313	0		=			
+ANR	6723	PtrMemberAccess	env -> CP0_EBaseWG_rw_bitmask		6313	0					
+ANR	6724	Identifier	env		6313	0					
+ANR	6725	Identifier	CP0_EBaseWG_rw_bitmask		6313	1					
+ANR	6726	PtrMemberAccess	env -> cpu_model -> CP0_EBaseWG_rw_bitmask		6313	1					
+ANR	6727	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6728	Identifier	env		6313	0					
+ANR	6729	Identifier	cpu_model		6313	1					
+ANR	6730	Identifier	CP0_EBaseWG_rw_bitmask		6313	1					
+ANR	6731	ExpressionStatement	env -> active_fpu . fcr0 = env -> cpu_model -> CP1_fcr0	50:4:2515:2562	6313	60	True				
+ANR	6732	AssignmentExpression	env -> active_fpu . fcr0 = env -> cpu_model -> CP1_fcr0		6313	0		=			
+ANR	6733	MemberAccess	env -> active_fpu . fcr0		6313	0					
+ANR	6734	PtrMemberAccess	env -> active_fpu		6313	0					
+ANR	6735	Identifier	env		6313	0					
+ANR	6736	Identifier	active_fpu		6313	1					
+ANR	6737	Identifier	fcr0		6313	1					
+ANR	6738	PtrMemberAccess	env -> cpu_model -> CP1_fcr0		6313	1					
+ANR	6739	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6740	Identifier	env		6313	0					
+ANR	6741	Identifier	cpu_model		6313	1					
+ANR	6742	Identifier	CP1_fcr0		6313	1					
+ANR	6743	ExpressionStatement	env -> active_fpu . fcr31_rw_bitmask = env -> cpu_model -> CP1_fcr31_rw_bitmask	51:4:2568:2639	6313	61	True				
+ANR	6744	AssignmentExpression	env -> active_fpu . fcr31_rw_bitmask = env -> cpu_model -> CP1_fcr31_rw_bitmask		6313	0		=			
+ANR	6745	MemberAccess	env -> active_fpu . fcr31_rw_bitmask		6313	0					
+ANR	6746	PtrMemberAccess	env -> active_fpu		6313	0					
+ANR	6747	Identifier	env		6313	0					
+ANR	6748	Identifier	active_fpu		6313	1					
+ANR	6749	Identifier	fcr31_rw_bitmask		6313	1					
+ANR	6750	PtrMemberAccess	env -> cpu_model -> CP1_fcr31_rw_bitmask		6313	1					
+ANR	6751	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6752	Identifier	env		6313	0					
+ANR	6753	Identifier	cpu_model		6313	1					
+ANR	6754	Identifier	CP1_fcr31_rw_bitmask		6313	1					
+ANR	6755	ExpressionStatement	env -> active_fpu . fcr31 = env -> cpu_model -> CP1_fcr31	52:4:2645:2694	6313	62	True				
+ANR	6756	AssignmentExpression	env -> active_fpu . fcr31 = env -> cpu_model -> CP1_fcr31		6313	0		=			
+ANR	6757	MemberAccess	env -> active_fpu . fcr31		6313	0					
+ANR	6758	PtrMemberAccess	env -> active_fpu		6313	0					
+ANR	6759	Identifier	env		6313	0					
+ANR	6760	Identifier	active_fpu		6313	1					
+ANR	6761	Identifier	fcr31		6313	1					
+ANR	6762	PtrMemberAccess	env -> cpu_model -> CP1_fcr31		6313	1					
+ANR	6763	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6764	Identifier	env		6313	0					
+ANR	6765	Identifier	cpu_model		6313	1					
+ANR	6766	Identifier	CP1_fcr31		6313	1					
+ANR	6767	ExpressionStatement	env -> msair = env -> cpu_model -> MSAIR	53:4:2700:2734	6313	63	True				
+ANR	6768	AssignmentExpression	env -> msair = env -> cpu_model -> MSAIR		6313	0		=			
+ANR	6769	PtrMemberAccess	env -> msair		6313	0					
+ANR	6770	Identifier	env		6313	0					
+ANR	6771	Identifier	msair		6313	1					
+ANR	6772	PtrMemberAccess	env -> cpu_model -> MSAIR		6313	1					
+ANR	6773	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6774	Identifier	env		6313	0					
+ANR	6775	Identifier	cpu_model		6313	1					
+ANR	6776	Identifier	MSAIR		6313	1					
+ANR	6777	ExpressionStatement	env -> insn_flags = env -> cpu_model -> insn_flags	54:4:2740:2784	6313	64	True				
+ANR	6778	AssignmentExpression	env -> insn_flags = env -> cpu_model -> insn_flags		6313	0		=			
+ANR	6779	PtrMemberAccess	env -> insn_flags		6313	0					
+ANR	6780	Identifier	env		6313	0					
+ANR	6781	Identifier	insn_flags		6313	1					
+ANR	6782	PtrMemberAccess	env -> cpu_model -> insn_flags		6313	1					
+ANR	6783	PtrMemberAccess	env -> cpu_model		6313	0					
+ANR	6784	Identifier	env		6313	0					
+ANR	6785	Identifier	cpu_model		6313	1					
+ANR	6786	Identifier	insn_flags		6313	1					
+ANR	6787	ExpressionStatement	env -> CP0_Status = ( MIPS_HFLAG_UM << CP0St_KSU )	56:4:2820:2866	6313	65	True				
+ANR	6788	AssignmentExpression	env -> CP0_Status = ( MIPS_HFLAG_UM << CP0St_KSU )		6313	0		=			
+ANR	6789	PtrMemberAccess	env -> CP0_Status		6313	0					
+ANR	6790	Identifier	env		6313	0					
+ANR	6791	Identifier	CP0_Status		6313	1					
+ANR	6792	ShiftExpression	MIPS_HFLAG_UM << CP0St_KSU		6313	1		<<			
+ANR	6793	Identifier	MIPS_HFLAG_UM		6313	0					
+ANR	6794	Identifier	CP0St_KSU		6313	1					
+ANR	6795	Statement	ifdef	57:2:2870:2874	6313	66	True				
+ANR	6796	Statement	TARGET_MIPS64	57:8:2876:2888	6313	67	True				
+ANR	6797	ExpressionStatement	env -> CP0_Status |= ( 1 << CP0St_PX )	59:4:2934:2968	6313	68	True				
+ANR	6798	AssignmentExpression	env -> CP0_Status |= ( 1 << CP0St_PX )		6313	0		|=			
+ANR	6799	PtrMemberAccess	env -> CP0_Status		6313	0					
+ANR	6800	Identifier	env		6313	0					
+ANR	6801	Identifier	CP0_Status		6313	1					
+ANR	6802	ShiftExpression	1 << CP0St_PX		6313	1		<<			
+ANR	6803	PrimaryExpression	1		6313	0					
+ANR	6804	Identifier	CP0St_PX		6313	1					
+ANR	6805	Statement	endif	60:2:2972:2976	6313	69	True				
+ANR	6806	Statement	ifdef	61:2:2980:2984	6313	70	True				
+ANR	6807	Statement	TARGET_ABI_MIPSN64	61:8:2986:3003	6313	71	True				
+ANR	6808	ExpressionStatement	env -> CP0_Status |= ( 1 << CP0St_UX )	63:4:3048:3082	6313	72	True				
+ANR	6809	AssignmentExpression	env -> CP0_Status |= ( 1 << CP0St_UX )		6313	0		|=			
+ANR	6810	PtrMemberAccess	env -> CP0_Status		6313	0					
+ANR	6811	Identifier	env		6313	0					
+ANR	6812	Identifier	CP0_Status		6313	1					
+ANR	6813	ShiftExpression	1 << CP0St_UX		6313	1		<<			
+ANR	6814	PrimaryExpression	1		6313	0					
+ANR	6815	Identifier	CP0St_UX		6313	1					
+ANR	6816	Statement	endif	64:2:3086:3090	6313	73	True				
+ANR	6817	ExpressionStatement	env -> CP0_HWREna |= 0x0000000F	67:4:3195:3224	6313	74	True				
+ANR	6818	AssignmentExpression	env -> CP0_HWREna |= 0x0000000F		6313	0		|=			
+ANR	6819	PtrMemberAccess	env -> CP0_HWREna		6313	0					
+ANR	6820	Identifier	env		6313	0					
+ANR	6821	Identifier	CP0_HWREna		6313	1					
+ANR	6822	PrimaryExpression	0x0000000F		6313	1					
+ANR	6823	IfStatement	if ( env -> CP0_Config1 & ( 1 << CP0C1_FP ) )		6313	75					
+ANR	6824	Condition	env -> CP0_Config1 & ( 1 << CP0C1_FP )	68:8:3234:3267	6313	0	True				
+ANR	6825	BitAndExpression	env -> CP0_Config1 & ( 1 << CP0C1_FP )		6313	0		&			
+ANR	6826	PtrMemberAccess	env -> CP0_Config1		6313	0					
+ANR	6827	Identifier	env		6313	0					
+ANR	6828	Identifier	CP0_Config1		6313	1					
+ANR	6829	ShiftExpression	1 << CP0C1_FP		6313	1		<<			
+ANR	6830	PrimaryExpression	1		6313	0					
+ANR	6831	Identifier	CP0C1_FP		6313	1					
+ANR	6832	CompoundStatement		67:44:3229:3229	6313	1					
+ANR	6833	ExpressionStatement	env -> CP0_Status |= ( 1 << CP0St_CU1 )	69:8:3280:3315	6313	0	True				
+ANR	6834	AssignmentExpression	env -> CP0_Status |= ( 1 << CP0St_CU1 )		6313	0		|=			
+ANR	6835	PtrMemberAccess	env -> CP0_Status		6313	0					
+ANR	6836	Identifier	env		6313	0					
+ANR	6837	Identifier	CP0_Status		6313	1					
+ANR	6838	ShiftExpression	1 << CP0St_CU1		6313	1		<<			
+ANR	6839	PrimaryExpression	1		6313	0					
+ANR	6840	Identifier	CP0St_CU1		6313	1					
+ANR	6841	IfStatement	if ( env -> CP0_Config3 & ( 1 << CP0C3_DSPP ) )		6313	76					
+ANR	6842	Condition	env -> CP0_Config3 & ( 1 << CP0C3_DSPP )	71:8:3331:3366	6313	0	True				
+ANR	6843	BitAndExpression	env -> CP0_Config3 & ( 1 << CP0C3_DSPP )		6313	0		&			
+ANR	6844	PtrMemberAccess	env -> CP0_Config3		6313	0					
+ANR	6845	Identifier	env		6313	0					
+ANR	6846	Identifier	CP0_Config3		6313	1					
+ANR	6847	ShiftExpression	1 << CP0C3_DSPP		6313	1		<<			
+ANR	6848	PrimaryExpression	1		6313	0					
+ANR	6849	Identifier	CP0C3_DSPP		6313	1					
+ANR	6850	CompoundStatement		70:46:3328:3328	6313	1					
+ANR	6851	ExpressionStatement	env -> CP0_Status |= ( 1 << CP0St_MX )	72:8:3379:3413	6313	0	True				
+ANR	6852	AssignmentExpression	env -> CP0_Status |= ( 1 << CP0St_MX )		6313	0		|=			
+ANR	6853	PtrMemberAccess	env -> CP0_Status		6313	0					
+ANR	6854	Identifier	env		6313	0					
+ANR	6855	Identifier	CP0_Status		6313	1					
+ANR	6856	ShiftExpression	1 << CP0St_MX		6313	1		<<			
+ANR	6857	PrimaryExpression	1		6313	0					
+ANR	6858	Identifier	CP0St_MX		6313	1					
+ANR	6859	Statement	if	74:2:3423:3424	6313	77	True				
+ANR	6860	Statement	defined	74:5:3426:3432	6313	78	True				
+ANR	6861	Statement	(	74:12:3433:3433	6313	79	True				
+ANR	6862	Statement	TARGET_MIPS64	74:13:3434:3446	6313	80	True				
+ANR	6863	Statement	)	74:26:3447:3447	6313	81	True				
+ANR	6864	IfStatement	if ( ( env -> CP0_Config1 & ( 1 << CP0C1_FP ) ) && ( env -> CP0_Status_rw_bitmask & ( 1 << CP0St_FR ) ) )		6313	82					
+ANR	6865	Condition	( env -> CP0_Config1 & ( 1 << CP0C1_FP ) ) && ( env -> CP0_Status_rw_bitmask & ( 1 << CP0St_FR ) )	76:8:3538:3631	6313	0	True				
+ANR	6866	AndExpression	( env -> CP0_Config1 & ( 1 << CP0C1_FP ) ) && ( env -> CP0_Status_rw_bitmask & ( 1 << CP0St_FR ) )		6313	0		&&			
+ANR	6867	BitAndExpression	env -> CP0_Config1 & ( 1 << CP0C1_FP )		6313	0		&			
+ANR	6868	PtrMemberAccess	env -> CP0_Config1		6313	0					
+ANR	6869	Identifier	env		6313	0					
+ANR	6870	Identifier	CP0_Config1		6313	1					
+ANR	6871	ShiftExpression	1 << CP0C1_FP		6313	1		<<			
+ANR	6872	PrimaryExpression	1		6313	0					
+ANR	6873	Identifier	CP0C1_FP		6313	1					
+ANR	6874	BitAndExpression	env -> CP0_Status_rw_bitmask & ( 1 << CP0St_FR )		6313	1		&			
+ANR	6875	PtrMemberAccess	env -> CP0_Status_rw_bitmask		6313	0					
+ANR	6876	Identifier	env		6313	0					
+ANR	6877	Identifier	CP0_Status_rw_bitmask		6313	1					
+ANR	6878	ShiftExpression	1 << CP0St_FR		6313	1		<<			
+ANR	6879	PrimaryExpression	1		6313	0					
+ANR	6880	Identifier	CP0St_FR		6313	1					
+ANR	6881	CompoundStatement		76:56:3593:3593	6313	1					
+ANR	6882	ExpressionStatement	env -> CP0_Status |= ( 1 << CP0St_FR )	78:8:3644:3678	6313	0	True				
+ANR	6883	AssignmentExpression	env -> CP0_Status |= ( 1 << CP0St_FR )		6313	0		|=			
+ANR	6884	PtrMemberAccess	env -> CP0_Status		6313	0					
+ANR	6885	Identifier	env		6313	0					
+ANR	6886	Identifier	CP0_Status		6313	1					
+ANR	6887	ShiftExpression	1 << CP0St_FR		6313	1		<<			
+ANR	6888	PrimaryExpression	1		6313	0					
+ANR	6889	Identifier	CP0St_FR		6313	1					
+ANR	6890	Statement	endif	80:2:3688:3692	6313	83	True				
+ANR	6891	IfStatement	if ( ( env -> insn_flags & ISA_MIPS32R6 ) && ( env -> active_fpu . fcr0 & ( 1 << FCR0_F64 ) ) )		6313	84					
+ANR	6892	Condition	( env -> insn_flags & ISA_MIPS32R6 ) && ( env -> active_fpu . fcr0 & ( 1 << FCR0_F64 ) )	145:8:6116:6199	6313	0	True				
+ANR	6893	AndExpression	( env -> insn_flags & ISA_MIPS32R6 ) && ( env -> active_fpu . fcr0 & ( 1 << FCR0_F64 ) )		6313	0		&&			
+ANR	6894	BitAndExpression	env -> insn_flags & ISA_MIPS32R6		6313	0		&			
+ANR	6895	PtrMemberAccess	env -> insn_flags		6313	0					
+ANR	6896	Identifier	env		6313	0					
+ANR	6897	Identifier	insn_flags		6313	1					
+ANR	6898	Identifier	ISA_MIPS32R6		6313	1					
+ANR	6899	BitAndExpression	env -> active_fpu . fcr0 & ( 1 << FCR0_F64 )		6313	1		&			
+ANR	6900	MemberAccess	env -> active_fpu . fcr0		6313	0					
+ANR	6901	PtrMemberAccess	env -> active_fpu		6313	0					
+ANR	6902	Identifier	env		6313	0					
+ANR	6903	Identifier	active_fpu		6313	1					
+ANR	6904	Identifier	fcr0		6313	1					
+ANR	6905	ShiftExpression	1 << FCR0_F64		6313	1		<<			
+ANR	6906	PrimaryExpression	1		6313	0					
+ANR	6907	Identifier	FCR0_F64		6313	1					
+ANR	6908	CompoundStatement		145:50:6161:6161	6313	1					
+ANR	6909	ExpressionStatement	env -> CP0_Status |= ( 1 << CP0St_FR )	148:8:6277:6311	6313	0	True				
+ANR	6910	AssignmentExpression	env -> CP0_Status |= ( 1 << CP0St_FR )		6313	0		|=			
+ANR	6911	PtrMemberAccess	env -> CP0_Status		6313	0					
+ANR	6912	Identifier	env		6313	0					
+ANR	6913	Identifier	CP0_Status		6313	1					
+ANR	6914	ShiftExpression	1 << CP0St_FR		6313	1		<<			
+ANR	6915	PrimaryExpression	1		6313	0					
+ANR	6916	Identifier	CP0St_FR		6313	1					
+ANR	6917	IfStatement	if ( env -> CP0_Config3 & ( 1 << CP0C3_MSAP ) )		6313	85					
+ANR	6918	Condition	env -> CP0_Config3 & ( 1 << CP0C3_MSAP )	151:8:6341:6376	6313	0	True				
+ANR	6919	BitAndExpression	env -> CP0_Config3 & ( 1 << CP0C3_MSAP )		6313	0		&			
+ANR	6920	PtrMemberAccess	env -> CP0_Config3		6313	0					
+ANR	6921	Identifier	env		6313	0					
+ANR	6922	Identifier	CP0_Config3		6313	1					
+ANR	6923	ShiftExpression	1 << CP0C3_MSAP		6313	1		<<			
+ANR	6924	PrimaryExpression	1		6313	0					
+ANR	6925	Identifier	CP0C3_MSAP		6313	1					
+ANR	6926	CompoundStatement		150:46:6338:6338	6313	1					
+ANR	6927	ExpressionStatement	msa_reset ( env )	152:8:6389:6403	6313	0	True				
+ANR	6928	CallExpression	msa_reset ( env )		6313	0					
+ANR	6929	Callee	msa_reset		6313	0					
+ANR	6930	Identifier	msa_reset		6313	0					
+ANR	6931	ArgumentList	env		6313	1					
+ANR	6932	Argument	env		6313	0					
+ANR	6933	Identifier	env		6313	0					
+ANR	6934	ExpressionStatement	compute_hflags ( env )	154:4:6415:6434	6313	86	True				
+ANR	6935	CallExpression	compute_hflags ( env )		6313	0					
+ANR	6936	Callee	compute_hflags		6313	0					
+ANR	6937	Identifier	compute_hflags		6313	0					
+ANR	6938	ArgumentList	env		6313	1					
+ANR	6939	Argument	env		6313	0					
+ANR	6940	Identifier	env		6313	0					
+ANR	6941	ExpressionStatement	restore_fp_status ( env )	155:4:6440:6462	6313	87	True				
+ANR	6942	CallExpression	restore_fp_status ( env )		6313	0					
+ANR	6943	Callee	restore_fp_status		6313	0					
+ANR	6944	Identifier	restore_fp_status		6313	0					
+ANR	6945	ArgumentList	env		6313	1					
+ANR	6946	Argument	env		6313	0					
+ANR	6947	Identifier	env		6313	0					
+ANR	6948	ExpressionStatement	restore_pamask ( env )	156:4:6468:6487	6313	88	True				
+ANR	6949	CallExpression	restore_pamask ( env )		6313	0					
+ANR	6950	Callee	restore_pamask		6313	0					
+ANR	6951	Identifier	restore_pamask		6313	0					
+ANR	6952	ArgumentList	env		6313	1					
+ANR	6953	Argument	env		6313	0					
+ANR	6954	Identifier	env		6313	0					
+ANR	6955	ExpressionStatement	cs -> exception_index = EXCP_NONE	157:4:6493:6524	6313	89	True				
+ANR	6956	AssignmentExpression	cs -> exception_index = EXCP_NONE		6313	0		=			
+ANR	6957	PtrMemberAccess	cs -> exception_index		6313	0					
+ANR	6958	Identifier	cs		6313	0					
+ANR	6959	Identifier	exception_index		6313	1					
+ANR	6960	Identifier	EXCP_NONE		6313	1					
+ANR	6961	IfStatement	if ( semihosting_get_argc ( ) )		6313	90					
+ANR	6962	Condition	semihosting_get_argc ( )	158:8:6534:6555	6313	0	True				
+ANR	6963	CallExpression	semihosting_get_argc ( )		6313	0					
+ANR	6964	Callee	semihosting_get_argc		6313	0					
+ANR	6965	Identifier	semihosting_get_argc		6313	0					
+ANR	6966	ArgumentList			6313	1					
+ANR	6967	CompoundStatement		157:32:6517:6517	6313	1					
+ANR	6968	ExpressionStatement	env -> active_tc . gpr [ 4 ] = - 1	160:8:6632:6658	6313	0	True				
+ANR	6969	AssignmentExpression	env -> active_tc . gpr [ 4 ] = - 1		6313	0		=			
+ANR	6970	ArrayIndexing	env -> active_tc . gpr [ 4 ]		6313	0					
+ANR	6971	MemberAccess	env -> active_tc . gpr		6313	0					
+ANR	6972	PtrMemberAccess	env -> active_tc		6313	0					
+ANR	6973	Identifier	env		6313	0					
+ANR	6974	Identifier	active_tc		6313	1					
+ANR	6975	Identifier	gpr		6313	1					
+ANR	6976	PrimaryExpression	4		6313	1					
+ANR	6977	UnaryOperationExpression	- 1		6313	1					
+ANR	6978	UnaryOperator	-		6313	0					
+ANR	6979	PrimaryExpression	1		6313	1					
+ANR	6980	ReturnType	void		6313	1					
+ANR	6981	Identifier	cpu_state_reset		6313	2					
+ANR	6982	ParameterList	CPUMIPSState * env		6313	3					
+ANR	6983	Parameter	CPUMIPSState * env	1:21:21:37	6313	0	True				
+ANR	6984	ParameterType	CPUMIPSState *		6313	0					
+ANR	6985	Identifier	env		6313	1					
+ANR	6986	CFGEntryNode	ENTRY		6313		True				
+ANR	6987	CFGExitNode	EXIT		6313		True				
+ANR	6988	Symbol	env -> active_fpu . fcr0		6313						
+ANR	6989	Symbol	env -> active_fpu		6313						
+ANR	6990	Symbol	env -> cpu_model -> CP0_Config5_rw_bitmask		6313						
+ANR	6991	Symbol	env -> cpu_model -> CP0_LLAddr_rw_bitmask		6313						
+ANR	6992	Symbol	env -> SEGBITS		6313						
+ANR	6993	Symbol	CP0St_UX		6313						
+ANR	6994	Symbol	env -> CP0_SRSConf1_rw_bitmask		6313						
+ANR	6995	Symbol	mips_env_get_cpu		6313						
+ANR	6996	Symbol	env -> active_tc . gpr		6313						
+ANR	6997	Symbol	env -> CP0_SRSConf4_rw_bitmask		6313						
+ANR	6998	Symbol	env -> CP0_Status_rw_bitmask		6313						
+ANR	6999	Symbol	env -> CP0_SRSCtl		6313						
+ANR	7000	Symbol	env -> CP0_PageGrain		6313						
+ANR	7001	Symbol	env -> insn_flags		6313						
+ANR	7002	Symbol	semihosting_get_argc		6313						
+ANR	7003	Symbol	env -> cpu_model -> CP0_SRSConf4_rw_bitmask		6313						
+ANR	7004	Symbol	* env -> active_tc . gpr		6313						
+ANR	7005	Symbol	env -> active_fpu . fcr31_rw_bitmask		6313						
+ANR	7006	Symbol	* cs		6313						
+ANR	7007	Symbol	CP0St_MX		6313						
+ANR	7008	Symbol	env -> cpu_model -> SEGBITS		6313						
+ANR	7009	Symbol	* * env		6313						
+ANR	7010	Symbol	env -> CCRes		6313						
+ANR	7011	Symbol	env -> CP0_SRSConf0_rw_bitmask		6313						
+ANR	7012	Symbol	* env -> cpu_model		6313						
+ANR	7013	Symbol	env -> cpu_model -> CP0_PageGrain_rw_bitmask		6313						
+ANR	7014	Symbol	env -> cpu_model -> CP0_SRSCtl		6313						
+ANR	7015	Symbol	CP0C1_FP		6313						
+ANR	7016	Symbol	env -> CP0_SRSConf3_rw_bitmask		6313						
+ANR	7017	Symbol	EXCP_NONE		6313						
+ANR	7018	Symbol	env -> cpu_model -> CP0_Status_rw_bitmask		6313						
+ANR	7019	Symbol	env -> CP0_PageGrain_rw_bitmask		6313						
+ANR	7020	Symbol	CP0St_FR		6313						
+ANR	7021	Symbol	CP0C3_MSAP		6313						
+ANR	7022	Symbol	env -> cpu_model -> PABITS		6313						
+ANR	7023	Symbol	env -> cpu_model -> CP0_EBaseWG_rw_bitmask		6313						
+ANR	7024	Symbol	env -> cpu_model -> CP1_fcr31_rw_bitmask		6313						
+ANR	7025	Symbol	CP0C0_BE		6313						
+ANR	7026	Symbol	env -> CP0_SRSConf2_rw_bitmask		6313						
+ANR	7027	Symbol	env -> msair		6313						
+ANR	7028	Symbol	env -> cpu_model -> CP1_fcr0		6313						
+ANR	7029	Symbol	cs		6313						
+ANR	7030	Symbol	FCR0_F64		6313						
+ANR	7031	Symbol	env -> cpu_model -> CP0_LLAddr_shift		6313						
+ANR	7032	Symbol	env -> cpu_model -> CP0_TCStatus_rw_bitmask		6313						
+ANR	7033	Symbol	env -> PABITS		6313						
+ANR	7034	Symbol	env -> cpu_model -> CP1_fcr31		6313						
+ANR	7035	Symbol	env -> active_tc		6313						
+ANR	7036	Symbol	CPU		6313						
+ANR	7037	Symbol	CP0St_PX		6313						
+ANR	7038	Symbol	env -> cpu_model -> CP0_SRSConf3_rw_bitmask		6313						
+ANR	7039	Symbol	env -> current_tc		6313						
+ANR	7040	Symbol	env -> cpu_model -> SYNCI_Step		6313						
+ANR	7041	Symbol	cs -> exception_index		6313						
+ANR	7042	Symbol	* env		6313						
+ANR	7043	Symbol	cpu		6313						
+ANR	7044	Symbol	env -> cpu_model -> CP0_PRid		6313						
+ANR	7045	Symbol	ISA_MIPS32R6		6313						
+ANR	7046	Symbol	env -> CP0_HWREna		6313						
+ANR	7047	Symbol	* env -> active_tc		6313						
+ANR	7048	Symbol	env -> cpu_model -> CP0_Config4_rw_bitmask		6313						
+ANR	7049	Symbol	env -> cpu_model -> insn_flags		6313						
+ANR	7050	Symbol	env -> cpu_model -> MSAIR		6313						
+ANR	7051	Symbol	env -> SYNCI_Step		6313						
+ANR	7052	Symbol	env -> cpu_model -> CP0_SRSConf2_rw_bitmask		6313						
+ANR	7053	Symbol	CP0St_CU1		6313						
+ANR	7054	Symbol	env -> cpu_model		6313						
+ANR	7055	Symbol	env -> cpu_model -> CP0_Config0		6313						
+ANR	7056	Symbol	env -> cpu_model -> CP0_Config1		6313						
+ANR	7057	Symbol	env -> cpu_model -> CP0_Config2		6313						
+ANR	7058	Symbol	MIPS_HFLAG_UM		6313						
+ANR	7059	Symbol	env -> cpu_model -> CP0_Config3		6313						
+ANR	7060	Symbol	env -> CP0_SRSConf0		6313						
+ANR	7061	Symbol	env -> cpu_model -> CP0_Config4		6313						
+ANR	7062	Symbol	env -> CP0_SRSConf1		6313						
+ANR	7063	Symbol	env -> cpu_model -> CP0_Config5		6313						
+ANR	7064	Symbol	env -> CP0_SRSConf2		6313						
+ANR	7065	Symbol	env -> cpu_model -> CP0_Config6		6313						
+ANR	7066	Symbol	env -> CP0_SRSConf3		6313						
+ANR	7067	Symbol	env -> cpu_model -> CP0_Config7		6313						
+ANR	7068	Symbol	env -> CP0_SRSConf4		6313						
+ANR	7069	Symbol	env -> CP0_LLAddr_shift		6313						
+ANR	7070	Symbol	env -> CP0_LLAddr_rw_bitmask		6313						
+ANR	7071	Symbol	env -> CP0_Config4_rw_bitmask		6313						
+ANR	7072	Symbol	env -> CP0_Config7		6313						
+ANR	7073	Symbol	env -> CP0_Config6		6313						
+ANR	7074	Symbol	env -> CP0_Status		6313						
+ANR	7075	Symbol	env -> CP0_Config3		6313						
+ANR	7076	Symbol	env -> cpu_model -> CP0_SRSConf0_rw_bitmask		6313						
+ANR	7077	Symbol	env -> CP0_Config2		6313						
+ANR	7078	Symbol	env -> CP0_Config5		6313						
+ANR	7079	Symbol	env -> active_fpu . fcr31		6313						
+ANR	7080	Symbol	env -> CP0_Config4		6313						
+ANR	7081	Symbol	env -> cpu_model -> CP0_PageGrain		6313						
+ANR	7082	Symbol	env -> CP0_Config5_rw_bitmask		6313						
+ANR	7083	Symbol	env -> cpu_model -> CP0_SRSConf3		6313						
+ANR	7084	Symbol	env -> cpu_model -> CP0_SRSConf4		6313						
+ANR	7085	Symbol	env -> CP0_Config1		6313						
+ANR	7086	Symbol	env -> CP0_Config0		6313						
+ANR	7087	Symbol	env		6313						
+ANR	7088	Symbol	CP0C3_DSPP		6313						
+ANR	7089	Symbol	env -> cpu_model -> CP0_SRSConf0		6313						
+ANR	7090	Symbol	env -> cpu_model -> CP0_SRSConf1		6313						
+ANR	7091	Symbol	env -> cpu_model -> CP0_SRSConf2		6313						
+ANR	7092	Symbol	env -> cpu_model -> CCRes		6313						
+ANR	7093	Symbol	env -> CP0_TCStatus_rw_bitmask		6313						
+ANR	7094	Symbol	CP0St_KSU		6313						
+ANR	7095	Symbol	env -> CP0_EBaseWG_rw_bitmask		6313						
+ANR	7096	Symbol	env -> cpu_model -> CP0_SRSConf1_rw_bitmask		6313						
+ANR	7097	Symbol	env -> CP0_PRid		6313						
+ANR	7098	Symbol	ISA_MIPS3		6313						

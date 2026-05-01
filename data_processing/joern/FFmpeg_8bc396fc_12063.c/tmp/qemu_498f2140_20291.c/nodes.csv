@@ -1,0 +1,707 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	4761	File	tmp/qemu_498f2140_20291.c								
+ANR	4762	Function	sd_open	1:0:0:2768							
+ANR	4763	FunctionDef	"sd_open (BlockDriverState * bs , QDict * options , int flags , Error * * errp)"		4762	0					
+ANR	4764	CompoundStatement		3:0:101:2768	4762	0					
+ANR	4765	IdentifierDeclStatement	"int ret , fd ;"	4:4:107:118	4762	0	True				
+ANR	4766	IdentifierDecl	ret		4762	0					
+ANR	4767	IdentifierDeclType	int		4762	0					
+ANR	4768	Identifier	ret		4762	1					
+ANR	4769	IdentifierDecl	fd		4762	1					
+ANR	4770	IdentifierDeclType	int		4762	0					
+ANR	4771	Identifier	fd		4762	1					
+ANR	4772	IdentifierDeclStatement	uint32_t vid = 0 ;	5:4:124:140	4762	1	True				
+ANR	4773	IdentifierDecl	vid = 0		4762	0					
+ANR	4774	IdentifierDeclType	uint32_t		4762	0					
+ANR	4775	Identifier	vid		4762	1					
+ANR	4776	AssignmentExpression	vid = 0		4762	2		=			
+ANR	4777	Identifier	vid		4762	0					
+ANR	4778	PrimaryExpression	0		4762	1					
+ANR	4779	IdentifierDeclStatement	BDRVSheepdogState * s = bs -> opaque ;	6:4:146:179	4762	2	True				
+ANR	4780	IdentifierDecl	* s = bs -> opaque		4762	0					
+ANR	4781	IdentifierDeclType	BDRVSheepdogState *		4762	0					
+ANR	4782	Identifier	s		4762	1					
+ANR	4783	AssignmentExpression	* s = bs -> opaque		4762	2		=			
+ANR	4784	Identifier	s		4762	0					
+ANR	4785	PtrMemberAccess	bs -> opaque		4762	1					
+ANR	4786	Identifier	bs		4762	0					
+ANR	4787	Identifier	opaque		4762	1					
+ANR	4788	IdentifierDeclStatement	"char vdi [ SD_MAX_VDI_LEN ] , tag [ SD_MAX_VDI_TAG_LEN ] ;"	7:4:185:234	4762	3	True				
+ANR	4789	IdentifierDecl	vdi [ SD_MAX_VDI_LEN ]		4762	0					
+ANR	4790	IdentifierDeclType	char [ SD_MAX_VDI_LEN ]		4762	0					
+ANR	4791	Identifier	vdi		4762	1					
+ANR	4792	Identifier	SD_MAX_VDI_LEN		4762	2					
+ANR	4793	IdentifierDecl	tag [ SD_MAX_VDI_TAG_LEN ]		4762	1					
+ANR	4794	IdentifierDeclType	char [ SD_MAX_VDI_TAG_LEN ]		4762	0					
+ANR	4795	Identifier	tag		4762	1					
+ANR	4796	Identifier	SD_MAX_VDI_TAG_LEN		4762	2					
+ANR	4797	IdentifierDeclStatement	uint32_t snapid ;	8:4:240:255	4762	4	True				
+ANR	4798	IdentifierDecl	snapid		4762	0					
+ANR	4799	IdentifierDeclType	uint32_t		4762	0					
+ANR	4800	Identifier	snapid		4762	1					
+ANR	4801	IdentifierDeclStatement	char * buf = NULL ;	9:4:261:277	4762	5	True				
+ANR	4802	IdentifierDecl	* buf = NULL		4762	0					
+ANR	4803	IdentifierDeclType	char *		4762	0					
+ANR	4804	Identifier	buf		4762	1					
+ANR	4805	AssignmentExpression	* buf = NULL		4762	2		=			
+ANR	4806	Identifier	NULL		4762	0					
+ANR	4807	Identifier	NULL		4762	1					
+ANR	4808	IdentifierDeclStatement	QemuOpts * opts ;	10:4:283:297	4762	6	True				
+ANR	4809	IdentifierDecl	* opts		4762	0					
+ANR	4810	IdentifierDeclType	QemuOpts *		4762	0					
+ANR	4811	Identifier	opts		4762	1					
+ANR	4812	IdentifierDeclStatement	Error * local_err = NULL ;	11:4:303:326	4762	7	True				
+ANR	4813	IdentifierDecl	* local_err = NULL		4762	0					
+ANR	4814	IdentifierDeclType	Error *		4762	0					
+ANR	4815	Identifier	local_err		4762	1					
+ANR	4816	AssignmentExpression	* local_err = NULL		4762	2		=			
+ANR	4817	Identifier	NULL		4762	0					
+ANR	4818	Identifier	NULL		4762	1					
+ANR	4819	IdentifierDeclStatement	const char * filename ;	12:4:332:352	4762	8	True				
+ANR	4820	IdentifierDecl	* filename		4762	0					
+ANR	4821	IdentifierDeclType	const char *		4762	0					
+ANR	4822	Identifier	filename		4762	1					
+ANR	4823	ExpressionStatement	s -> bs = bs	14:4:359:369	4762	9	True				
+ANR	4824	AssignmentExpression	s -> bs = bs		4762	0		=			
+ANR	4825	PtrMemberAccess	s -> bs		4762	0					
+ANR	4826	Identifier	s		4762	0					
+ANR	4827	Identifier	bs		4762	1					
+ANR	4828	Identifier	bs		4762	1					
+ANR	4829	ExpressionStatement	s -> aio_context = bdrv_get_aio_context ( bs )	15:4:375:416	4762	10	True				
+ANR	4830	AssignmentExpression	s -> aio_context = bdrv_get_aio_context ( bs )		4762	0		=			
+ANR	4831	PtrMemberAccess	s -> aio_context		4762	0					
+ANR	4832	Identifier	s		4762	0					
+ANR	4833	Identifier	aio_context		4762	1					
+ANR	4834	CallExpression	bdrv_get_aio_context ( bs )		4762	1					
+ANR	4835	Callee	bdrv_get_aio_context		4762	0					
+ANR	4836	Identifier	bdrv_get_aio_context		4762	0					
+ANR	4837	ArgumentList	bs		4762	1					
+ANR	4838	Argument	bs		4762	0					
+ANR	4839	Identifier	bs		4762	0					
+ANR	4840	ExpressionStatement	"opts = qemu_opts_create ( & runtime_opts , NULL , 0 , & error_abort )"	17:4:423:484	4762	11	True				
+ANR	4841	AssignmentExpression	"opts = qemu_opts_create ( & runtime_opts , NULL , 0 , & error_abort )"		4762	0		=			
+ANR	4842	Identifier	opts		4762	0					
+ANR	4843	CallExpression	"qemu_opts_create ( & runtime_opts , NULL , 0 , & error_abort )"		4762	1					
+ANR	4844	Callee	qemu_opts_create		4762	0					
+ANR	4845	Identifier	qemu_opts_create		4762	0					
+ANR	4846	ArgumentList	& runtime_opts		4762	1					
+ANR	4847	Argument	& runtime_opts		4762	0					
+ANR	4848	UnaryOperationExpression	& runtime_opts		4762	0					
+ANR	4849	UnaryOperator	&		4762	0					
+ANR	4850	Identifier	runtime_opts		4762	1					
+ANR	4851	Argument	NULL		4762	1					
+ANR	4852	Identifier	NULL		4762	0					
+ANR	4853	Argument	0		4762	2					
+ANR	4854	PrimaryExpression	0		4762	0					
+ANR	4855	Argument	& error_abort		4762	3					
+ANR	4856	UnaryOperationExpression	& error_abort		4762	0					
+ANR	4857	UnaryOperator	&		4762	0					
+ANR	4858	Identifier	error_abort		4762	1					
+ANR	4859	ExpressionStatement	"qemu_opts_absorb_qdict ( opts , options , & local_err )"	18:4:490:539	4762	12	True				
+ANR	4860	CallExpression	"qemu_opts_absorb_qdict ( opts , options , & local_err )"		4762	0					
+ANR	4861	Callee	qemu_opts_absorb_qdict		4762	0					
+ANR	4862	Identifier	qemu_opts_absorb_qdict		4762	0					
+ANR	4863	ArgumentList	opts		4762	1					
+ANR	4864	Argument	opts		4762	0					
+ANR	4865	Identifier	opts		4762	0					
+ANR	4866	Argument	options		4762	1					
+ANR	4867	Identifier	options		4762	0					
+ANR	4868	Argument	& local_err		4762	2					
+ANR	4869	UnaryOperationExpression	& local_err		4762	0					
+ANR	4870	UnaryOperator	&		4762	0					
+ANR	4871	Identifier	local_err		4762	1					
+ANR	4872	IfStatement	if ( local_err )		4762	13					
+ANR	4873	Condition	local_err	19:8:549:557	4762	0	True				
+ANR	4874	Identifier	local_err		4762	0					
+ANR	4875	CompoundStatement		17:19:458:458	4762	1					
+ANR	4876	ExpressionStatement	"error_propagate ( errp , local_err )"	20:8:570:602	4762	0	True				
+ANR	4877	CallExpression	"error_propagate ( errp , local_err )"		4762	0					
+ANR	4878	Callee	error_propagate		4762	0					
+ANR	4879	Identifier	error_propagate		4762	0					
+ANR	4880	ArgumentList	errp		4762	1					
+ANR	4881	Argument	errp		4762	0					
+ANR	4882	Identifier	errp		4762	0					
+ANR	4883	Argument	local_err		4762	1					
+ANR	4884	Identifier	local_err		4762	0					
+ANR	4885	ExpressionStatement	ret = - EINVAL	21:8:612:625	4762	1	True				
+ANR	4886	AssignmentExpression	ret = - EINVAL		4762	0		=			
+ANR	4887	Identifier	ret		4762	0					
+ANR	4888	UnaryOperationExpression	- EINVAL		4762	1					
+ANR	4889	UnaryOperator	-		4762	0					
+ANR	4890	Identifier	EINVAL		4762	1					
+ANR	4891	GotoStatement	goto out ;	22:8:635:643	4762	2	True				
+ANR	4892	Identifier	out		4762	0					
+ANR	4893	ExpressionStatement	"filename = qemu_opt_get ( opts , ""filename"" )"	25:4:656:697	4762	14	True				
+ANR	4894	AssignmentExpression	"filename = qemu_opt_get ( opts , ""filename"" )"		4762	0		=			
+ANR	4895	Identifier	filename		4762	0					
+ANR	4896	CallExpression	"qemu_opt_get ( opts , ""filename"" )"		4762	1					
+ANR	4897	Callee	qemu_opt_get		4762	0					
+ANR	4898	Identifier	qemu_opt_get		4762	0					
+ANR	4899	ArgumentList	opts		4762	1					
+ANR	4900	Argument	opts		4762	0					
+ANR	4901	Identifier	opts		4762	0					
+ANR	4902	Argument	"""filename"""		4762	1					
+ANR	4903	PrimaryExpression	"""filename"""		4762	0					
+ANR	4904	ExpressionStatement	QLIST_INIT ( & s -> inflight_aio_head )	27:4:704:737	4762	15	True				
+ANR	4905	CallExpression	QLIST_INIT ( & s -> inflight_aio_head )		4762	0					
+ANR	4906	Callee	QLIST_INIT		4762	0					
+ANR	4907	Identifier	QLIST_INIT		4762	0					
+ANR	4908	ArgumentList	& s -> inflight_aio_head		4762	1					
+ANR	4909	Argument	& s -> inflight_aio_head		4762	0					
+ANR	4910	UnaryOperationExpression	& s -> inflight_aio_head		4762	0					
+ANR	4911	UnaryOperator	&		4762	0					
+ANR	4912	PtrMemberAccess	s -> inflight_aio_head		4762	1					
+ANR	4913	Identifier	s		4762	0					
+ANR	4914	Identifier	inflight_aio_head		4762	1					
+ANR	4915	ExpressionStatement	QLIST_INIT ( & s -> failed_aio_head )	28:4:743:774	4762	16	True				
+ANR	4916	CallExpression	QLIST_INIT ( & s -> failed_aio_head )		4762	0					
+ANR	4917	Callee	QLIST_INIT		4762	0					
+ANR	4918	Identifier	QLIST_INIT		4762	0					
+ANR	4919	ArgumentList	& s -> failed_aio_head		4762	1					
+ANR	4920	Argument	& s -> failed_aio_head		4762	0					
+ANR	4921	UnaryOperationExpression	& s -> failed_aio_head		4762	0					
+ANR	4922	UnaryOperator	&		4762	0					
+ANR	4923	PtrMemberAccess	s -> failed_aio_head		4762	1					
+ANR	4924	Identifier	s		4762	0					
+ANR	4925	Identifier	failed_aio_head		4762	1					
+ANR	4926	ExpressionStatement	QLIST_INIT ( & s -> inflight_aiocb_head )	29:4:780:815	4762	17	True				
+ANR	4927	CallExpression	QLIST_INIT ( & s -> inflight_aiocb_head )		4762	0					
+ANR	4928	Callee	QLIST_INIT		4762	0					
+ANR	4929	Identifier	QLIST_INIT		4762	0					
+ANR	4930	ArgumentList	& s -> inflight_aiocb_head		4762	1					
+ANR	4931	Argument	& s -> inflight_aiocb_head		4762	0					
+ANR	4932	UnaryOperationExpression	& s -> inflight_aiocb_head		4762	0					
+ANR	4933	UnaryOperator	&		4762	0					
+ANR	4934	PtrMemberAccess	s -> inflight_aiocb_head		4762	1					
+ANR	4935	Identifier	s		4762	0					
+ANR	4936	Identifier	inflight_aiocb_head		4762	1					
+ANR	4937	ExpressionStatement	s -> fd = - 1	30:4:821:831	4762	18	True				
+ANR	4938	AssignmentExpression	s -> fd = - 1		4762	0		=			
+ANR	4939	PtrMemberAccess	s -> fd		4762	0					
+ANR	4940	Identifier	s		4762	0					
+ANR	4941	Identifier	fd		4762	1					
+ANR	4942	UnaryOperationExpression	- 1		4762	1					
+ANR	4943	UnaryOperator	-		4762	0					
+ANR	4944	PrimaryExpression	1		4762	1					
+ANR	4945	ExpressionStatement	"memset ( vdi , 0 , sizeof ( vdi ) )"	32:4:838:865	4762	19	True				
+ANR	4946	CallExpression	"memset ( vdi , 0 , sizeof ( vdi ) )"		4762	0					
+ANR	4947	Callee	memset		4762	0					
+ANR	4948	Identifier	memset		4762	0					
+ANR	4949	ArgumentList	vdi		4762	1					
+ANR	4950	Argument	vdi		4762	0					
+ANR	4951	Identifier	vdi		4762	0					
+ANR	4952	Argument	0		4762	1					
+ANR	4953	PrimaryExpression	0		4762	0					
+ANR	4954	Argument	sizeof ( vdi )		4762	2					
+ANR	4955	SizeofExpression	sizeof ( vdi )		4762	0					
+ANR	4956	Sizeof	sizeof		4762	0					
+ANR	4957	SizeofOperand	vdi		4762	1					
+ANR	4958	ExpressionStatement	"memset ( tag , 0 , sizeof ( tag ) )"	33:4:871:898	4762	20	True				
+ANR	4959	CallExpression	"memset ( tag , 0 , sizeof ( tag ) )"		4762	0					
+ANR	4960	Callee	memset		4762	0					
+ANR	4961	Identifier	memset		4762	0					
+ANR	4962	ArgumentList	tag		4762	1					
+ANR	4963	Argument	tag		4762	0					
+ANR	4964	Identifier	tag		4762	0					
+ANR	4965	Argument	0		4762	1					
+ANR	4966	PrimaryExpression	0		4762	0					
+ANR	4967	Argument	sizeof ( tag )		4762	2					
+ANR	4968	SizeofExpression	sizeof ( tag )		4762	0					
+ANR	4969	Sizeof	sizeof		4762	0					
+ANR	4970	SizeofOperand	tag		4762	1					
+ANR	4971	IfStatement	"if ( strstr ( filename , ""://"" ) )"		4762	21					
+ANR	4972	Condition	"strstr ( filename , ""://"" )"	35:8:909:931	4762	0	True				
+ANR	4973	CallExpression	"strstr ( filename , ""://"" )"		4762	0					
+ANR	4974	Callee	strstr		4762	0					
+ANR	4975	Identifier	strstr		4762	0					
+ANR	4976	ArgumentList	filename		4762	1					
+ANR	4977	Argument	filename		4762	0					
+ANR	4978	Identifier	filename		4762	0					
+ANR	4979	Argument	"""://"""		4762	1					
+ANR	4980	PrimaryExpression	"""://"""		4762	0					
+ANR	4981	CompoundStatement		33:33:832:832	4762	1					
+ANR	4982	ExpressionStatement	"ret = sd_parse_uri ( s , filename , vdi , & snapid , tag )"	36:8:944:994	4762	0	True				
+ANR	4983	AssignmentExpression	"ret = sd_parse_uri ( s , filename , vdi , & snapid , tag )"		4762	0		=			
+ANR	4984	Identifier	ret		4762	0					
+ANR	4985	CallExpression	"sd_parse_uri ( s , filename , vdi , & snapid , tag )"		4762	1					
+ANR	4986	Callee	sd_parse_uri		4762	0					
+ANR	4987	Identifier	sd_parse_uri		4762	0					
+ANR	4988	ArgumentList	s		4762	1					
+ANR	4989	Argument	s		4762	0					
+ANR	4990	Identifier	s		4762	0					
+ANR	4991	Argument	filename		4762	1					
+ANR	4992	Identifier	filename		4762	0					
+ANR	4993	Argument	vdi		4762	2					
+ANR	4994	Identifier	vdi		4762	0					
+ANR	4995	Argument	& snapid		4762	3					
+ANR	4996	UnaryOperationExpression	& snapid		4762	0					
+ANR	4997	UnaryOperator	&		4762	0					
+ANR	4998	Identifier	snapid		4762	1					
+ANR	4999	Argument	tag		4762	4					
+ANR	5000	Identifier	tag		4762	0					
+ANR	5001	ElseStatement	else		4762	0					
+ANR	5002	CompoundStatement		35:11:905:905	4762	0					
+ANR	5003	ExpressionStatement	"ret = parse_vdiname ( s , filename , vdi , & snapid , tag )"	38:8:1017:1068	4762	0	True				
+ANR	5004	AssignmentExpression	"ret = parse_vdiname ( s , filename , vdi , & snapid , tag )"		4762	0		=			
+ANR	5005	Identifier	ret		4762	0					
+ANR	5006	CallExpression	"parse_vdiname ( s , filename , vdi , & snapid , tag )"		4762	1					
+ANR	5007	Callee	parse_vdiname		4762	0					
+ANR	5008	Identifier	parse_vdiname		4762	0					
+ANR	5009	ArgumentList	s		4762	1					
+ANR	5010	Argument	s		4762	0					
+ANR	5011	Identifier	s		4762	0					
+ANR	5012	Argument	filename		4762	1					
+ANR	5013	Identifier	filename		4762	0					
+ANR	5014	Argument	vdi		4762	2					
+ANR	5015	Identifier	vdi		4762	0					
+ANR	5016	Argument	& snapid		4762	3					
+ANR	5017	UnaryOperationExpression	& snapid		4762	0					
+ANR	5018	UnaryOperator	&		4762	0					
+ANR	5019	Identifier	snapid		4762	1					
+ANR	5020	Argument	tag		4762	4					
+ANR	5021	Identifier	tag		4762	0					
+ANR	5022	IfStatement	if ( ret < 0 )		4762	22					
+ANR	5023	Condition	ret < 0	40:8:1084:1090	4762	0	True				
+ANR	5024	RelationalExpression	ret < 0		4762	0		<			
+ANR	5025	Identifier	ret		4762	0					
+ANR	5026	PrimaryExpression	0		4762	1					
+ANR	5027	CompoundStatement		38:17:991:991	4762	1					
+ANR	5028	ExpressionStatement	"error_setg ( errp , ""Can't parse filename"" )"	41:8:1103:1143	4762	0	True				
+ANR	5029	CallExpression	"error_setg ( errp , ""Can't parse filename"" )"		4762	0					
+ANR	5030	Callee	error_setg		4762	0					
+ANR	5031	Identifier	error_setg		4762	0					
+ANR	5032	ArgumentList	errp		4762	1					
+ANR	5033	Argument	errp		4762	0					
+ANR	5034	Identifier	errp		4762	0					
+ANR	5035	Argument	"""Can't parse filename"""		4762	1					
+ANR	5036	PrimaryExpression	"""Can't parse filename"""		4762	0					
+ANR	5037	GotoStatement	goto out ;	42:8:1153:1161	4762	1	True				
+ANR	5038	Identifier	out		4762	0					
+ANR	5039	ExpressionStatement	"s -> fd = get_sheep_fd ( s , errp )"	44:4:1173:1202	4762	23	True				
+ANR	5040	AssignmentExpression	"s -> fd = get_sheep_fd ( s , errp )"		4762	0		=			
+ANR	5041	PtrMemberAccess	s -> fd		4762	0					
+ANR	5042	Identifier	s		4762	0					
+ANR	5043	Identifier	fd		4762	1					
+ANR	5044	CallExpression	"get_sheep_fd ( s , errp )"		4762	1					
+ANR	5045	Callee	get_sheep_fd		4762	0					
+ANR	5046	Identifier	get_sheep_fd		4762	0					
+ANR	5047	ArgumentList	s		4762	1					
+ANR	5048	Argument	s		4762	0					
+ANR	5049	Identifier	s		4762	0					
+ANR	5050	Argument	errp		4762	1					
+ANR	5051	Identifier	errp		4762	0					
+ANR	5052	IfStatement	if ( s -> fd < 0 )		4762	24					
+ANR	5053	Condition	s -> fd < 0	45:8:1212:1220	4762	0	True				
+ANR	5054	RelationalExpression	s -> fd < 0		4762	0		<			
+ANR	5055	PtrMemberAccess	s -> fd		4762	0					
+ANR	5056	Identifier	s		4762	0					
+ANR	5057	Identifier	fd		4762	1					
+ANR	5058	PrimaryExpression	0		4762	1					
+ANR	5059	CompoundStatement		43:19:1121:1121	4762	1					
+ANR	5060	ExpressionStatement	ret = s -> fd	46:8:1233:1244	4762	0	True				
+ANR	5061	AssignmentExpression	ret = s -> fd		4762	0		=			
+ANR	5062	Identifier	ret		4762	0					
+ANR	5063	PtrMemberAccess	s -> fd		4762	1					
+ANR	5064	Identifier	s		4762	0					
+ANR	5065	Identifier	fd		4762	1					
+ANR	5066	GotoStatement	goto out ;	47:8:1254:1262	4762	1	True				
+ANR	5067	Identifier	out		4762	0					
+ANR	5068	ExpressionStatement	"ret = find_vdi_name ( s , vdi , snapid , tag , & vid , true , errp )"	50:4:1275:1333	4762	25	True				
+ANR	5069	AssignmentExpression	"ret = find_vdi_name ( s , vdi , snapid , tag , & vid , true , errp )"		4762	0		=			
+ANR	5070	Identifier	ret		4762	0					
+ANR	5071	CallExpression	"find_vdi_name ( s , vdi , snapid , tag , & vid , true , errp )"		4762	1					
+ANR	5072	Callee	find_vdi_name		4762	0					
+ANR	5073	Identifier	find_vdi_name		4762	0					
+ANR	5074	ArgumentList	s		4762	1					
+ANR	5075	Argument	s		4762	0					
+ANR	5076	Identifier	s		4762	0					
+ANR	5077	Argument	vdi		4762	1					
+ANR	5078	Identifier	vdi		4762	0					
+ANR	5079	Argument	snapid		4762	2					
+ANR	5080	Identifier	snapid		4762	0					
+ANR	5081	Argument	tag		4762	3					
+ANR	5082	Identifier	tag		4762	0					
+ANR	5083	Argument	& vid		4762	4					
+ANR	5084	UnaryOperationExpression	& vid		4762	0					
+ANR	5085	UnaryOperator	&		4762	0					
+ANR	5086	Identifier	vid		4762	1					
+ANR	5087	Argument	true		4762	5					
+ANR	5088	Identifier	true		4762	0					
+ANR	5089	Argument	errp		4762	6					
+ANR	5090	Identifier	errp		4762	0					
+ANR	5091	IfStatement	if ( ret )		4762	26					
+ANR	5092	Condition	ret	51:8:1343:1345	4762	0	True				
+ANR	5093	Identifier	ret		4762	0					
+ANR	5094	CompoundStatement		49:13:1246:1246	4762	1					
+ANR	5095	GotoStatement	goto out ;	52:8:1358:1366	4762	0	True				
+ANR	5096	Identifier	out		4762	0					
+ANR	5097	ExpressionStatement	s -> cache_flags = SD_FLAG_CMD_CACHE	59:4:1542:1576	4762	27	True				
+ANR	5098	AssignmentExpression	s -> cache_flags = SD_FLAG_CMD_CACHE		4762	0		=			
+ANR	5099	PtrMemberAccess	s -> cache_flags		4762	0					
+ANR	5100	Identifier	s		4762	0					
+ANR	5101	Identifier	cache_flags		4762	1					
+ANR	5102	Identifier	SD_FLAG_CMD_CACHE		4762	1					
+ANR	5103	IfStatement	if ( flags & BDRV_O_NOCACHE )		4762	28					
+ANR	5104	Condition	flags & BDRV_O_NOCACHE	60:8:1586:1607	4762	0	True				
+ANR	5105	BitAndExpression	flags & BDRV_O_NOCACHE		4762	0		&			
+ANR	5106	Identifier	flags		4762	0					
+ANR	5107	Identifier	BDRV_O_NOCACHE		4762	1					
+ANR	5108	CompoundStatement		58:32:1508:1508	4762	1					
+ANR	5109	ExpressionStatement	s -> cache_flags = SD_FLAG_CMD_DIRECT	61:8:1620:1655	4762	0	True				
+ANR	5110	AssignmentExpression	s -> cache_flags = SD_FLAG_CMD_DIRECT		4762	0		=			
+ANR	5111	PtrMemberAccess	s -> cache_flags		4762	0					
+ANR	5112	Identifier	s		4762	0					
+ANR	5113	Identifier	cache_flags		4762	1					
+ANR	5114	Identifier	SD_FLAG_CMD_DIRECT		4762	1					
+ANR	5115	ExpressionStatement	s -> discard_supported = true	63:4:1667:1694	4762	29	True				
+ANR	5116	AssignmentExpression	s -> discard_supported = true		4762	0		=			
+ANR	5117	PtrMemberAccess	s -> discard_supported		4762	0					
+ANR	5118	Identifier	s		4762	0					
+ANR	5119	Identifier	discard_supported		4762	1					
+ANR	5120	Identifier	true		4762	1					
+ANR	5121	IfStatement	if ( snapid || tag [ 0 ] != '\\0' )		4762	30					
+ANR	5122	Condition	snapid || tag [ 0 ] != '\\0'	65:8:1705:1728	4762	0	True				
+ANR	5123	OrExpression	snapid || tag [ 0 ] != '\\0'		4762	0		||			
+ANR	5124	Identifier	snapid		4762	0					
+ANR	5125	EqualityExpression	tag [ 0 ] != '\\0'		4762	1		!=			
+ANR	5126	ArrayIndexing	tag [ 0 ]		4762	0					
+ANR	5127	Identifier	tag		4762	0					
+ANR	5128	PrimaryExpression	0		4762	1					
+ANR	5129	PrimaryExpression	'\\0'		4762	1					
+ANR	5130	CompoundStatement		63:34:1629:1629	4762	1					
+ANR	5131	Statement	DPRINTF	66:8:1741:1747	4762	0	True				
+ANR	5132	Statement	(	66:15:1748:1748	4762	1	True				
+ANR	5133	Statement	"""%"""	66:16:1749:1751	4762	2	True				
+ANR	5134	Statement	PRIx32	66:20:1753:1758	4762	3	True				
+ANR	5135	Statement	""" snapshot inode was open.\\n"""	66:27:1760:1788	4762	4	True				
+ANR	5136	Statement	","	66:56:1789:1789	4762	5	True				
+ANR	5137	Statement	vid	66:58:1791:1793	4762	6	True				
+ANR	5138	Statement	)	66:61:1794:1794	4762	7	True				
+ANR	5139	ExpressionStatement		66:62:1795:1795	4762	8	True				
+ANR	5140	ExpressionStatement	s -> is_snapshot = true	67:8:1805:1826	4762	9	True				
+ANR	5141	AssignmentExpression	s -> is_snapshot = true		4762	0		=			
+ANR	5142	PtrMemberAccess	s -> is_snapshot		4762	0					
+ANR	5143	Identifier	s		4762	0					
+ANR	5144	Identifier	is_snapshot		4762	1					
+ANR	5145	Identifier	true		4762	1					
+ANR	5146	ExpressionStatement	"fd = connect_to_sdog ( s , errp )"	70:4:1839:1868	4762	31	True				
+ANR	5147	AssignmentExpression	"fd = connect_to_sdog ( s , errp )"		4762	0		=			
+ANR	5148	Identifier	fd		4762	0					
+ANR	5149	CallExpression	"connect_to_sdog ( s , errp )"		4762	1					
+ANR	5150	Callee	connect_to_sdog		4762	0					
+ANR	5151	Identifier	connect_to_sdog		4762	0					
+ANR	5152	ArgumentList	s		4762	1					
+ANR	5153	Argument	s		4762	0					
+ANR	5154	Identifier	s		4762	0					
+ANR	5155	Argument	errp		4762	1					
+ANR	5156	Identifier	errp		4762	0					
+ANR	5157	IfStatement	if ( fd < 0 )		4762	32					
+ANR	5158	Condition	fd < 0	71:8:1878:1883	4762	0	True				
+ANR	5159	RelationalExpression	fd < 0		4762	0		<			
+ANR	5160	Identifier	fd		4762	0					
+ANR	5161	PrimaryExpression	0		4762	1					
+ANR	5162	CompoundStatement		69:16:1784:1784	4762	1					
+ANR	5163	ExpressionStatement	ret = fd	72:8:1896:1904	4762	0	True				
+ANR	5164	AssignmentExpression	ret = fd		4762	0		=			
+ANR	5165	Identifier	ret		4762	0					
+ANR	5166	Identifier	fd		4762	1					
+ANR	5167	GotoStatement	goto out ;	73:8:1914:1922	4762	1	True				
+ANR	5168	Identifier	out		4762	0					
+ANR	5169	ExpressionStatement	buf = g_malloc ( SD_INODE_SIZE )	76:4:1935:1964	4762	33	True				
+ANR	5170	AssignmentExpression	buf = g_malloc ( SD_INODE_SIZE )		4762	0		=			
+ANR	5171	Identifier	buf		4762	0					
+ANR	5172	CallExpression	g_malloc ( SD_INODE_SIZE )		4762	1					
+ANR	5173	Callee	g_malloc		4762	0					
+ANR	5174	Identifier	g_malloc		4762	0					
+ANR	5175	ArgumentList	SD_INODE_SIZE		4762	1					
+ANR	5176	Argument	SD_INODE_SIZE		4762	0					
+ANR	5177	Identifier	SD_INODE_SIZE		4762	0					
+ANR	5178	ExpressionStatement	"ret = read_object ( fd , s -> aio_context , buf , vid_to_vdi_oid ( vid ) , 0 , SD_INODE_SIZE , 0 , s -> cache_flags )"	77:4:1970:2092	4762	34	True				
+ANR	5179	AssignmentExpression	"ret = read_object ( fd , s -> aio_context , buf , vid_to_vdi_oid ( vid ) , 0 , SD_INODE_SIZE , 0 , s -> cache_flags )"		4762	0		=			
+ANR	5180	Identifier	ret		4762	0					
+ANR	5181	CallExpression	"read_object ( fd , s -> aio_context , buf , vid_to_vdi_oid ( vid ) , 0 , SD_INODE_SIZE , 0 , s -> cache_flags )"		4762	1					
+ANR	5182	Callee	read_object		4762	0					
+ANR	5183	Identifier	read_object		4762	0					
+ANR	5184	ArgumentList	fd		4762	1					
+ANR	5185	Argument	fd		4762	0					
+ANR	5186	Identifier	fd		4762	0					
+ANR	5187	Argument	s -> aio_context		4762	1					
+ANR	5188	PtrMemberAccess	s -> aio_context		4762	0					
+ANR	5189	Identifier	s		4762	0					
+ANR	5190	Identifier	aio_context		4762	1					
+ANR	5191	Argument	buf		4762	2					
+ANR	5192	Identifier	buf		4762	0					
+ANR	5193	Argument	vid_to_vdi_oid ( vid )		4762	3					
+ANR	5194	CallExpression	vid_to_vdi_oid ( vid )		4762	0					
+ANR	5195	Callee	vid_to_vdi_oid		4762	0					
+ANR	5196	Identifier	vid_to_vdi_oid		4762	0					
+ANR	5197	ArgumentList	vid		4762	1					
+ANR	5198	Argument	vid		4762	0					
+ANR	5199	Identifier	vid		4762	0					
+ANR	5200	Argument	0		4762	4					
+ANR	5201	PrimaryExpression	0		4762	0					
+ANR	5202	Argument	SD_INODE_SIZE		4762	5					
+ANR	5203	Identifier	SD_INODE_SIZE		4762	0					
+ANR	5204	Argument	0		4762	6					
+ANR	5205	PrimaryExpression	0		4762	0					
+ANR	5206	Argument	s -> cache_flags		4762	7					
+ANR	5207	PtrMemberAccess	s -> cache_flags		4762	0					
+ANR	5208	Identifier	s		4762	0					
+ANR	5209	Identifier	cache_flags		4762	1					
+ANR	5210	ExpressionStatement	closesocket ( fd )	80:4:2099:2114	4762	35	True				
+ANR	5211	CallExpression	closesocket ( fd )		4762	0					
+ANR	5212	Callee	closesocket		4762	0					
+ANR	5213	Identifier	closesocket		4762	0					
+ANR	5214	ArgumentList	fd		4762	1					
+ANR	5215	Argument	fd		4762	0					
+ANR	5216	Identifier	fd		4762	0					
+ANR	5217	IfStatement	if ( ret )		4762	36					
+ANR	5218	Condition	ret	82:8:2125:2127	4762	0	True				
+ANR	5219	Identifier	ret		4762	0					
+ANR	5220	CompoundStatement		80:13:2028:2028	4762	1					
+ANR	5221	ExpressionStatement	"error_setg ( errp , ""Can't read snapshot inode"" )"	83:8:2140:2185	4762	0	True				
+ANR	5222	CallExpression	"error_setg ( errp , ""Can't read snapshot inode"" )"		4762	0					
+ANR	5223	Callee	error_setg		4762	0					
+ANR	5224	Identifier	error_setg		4762	0					
+ANR	5225	ArgumentList	errp		4762	1					
+ANR	5226	Argument	errp		4762	0					
+ANR	5227	Identifier	errp		4762	0					
+ANR	5228	Argument	"""Can't read snapshot inode"""		4762	1					
+ANR	5229	PrimaryExpression	"""Can't read snapshot inode"""		4762	0					
+ANR	5230	GotoStatement	goto out ;	84:8:2195:2203	4762	1	True				
+ANR	5231	Identifier	out		4762	0					
+ANR	5232	ExpressionStatement	"memcpy ( & s -> inode , buf , sizeof ( s -> inode ) )"	87:4:2216:2256	4762	37	True				
+ANR	5233	CallExpression	"memcpy ( & s -> inode , buf , sizeof ( s -> inode ) )"		4762	0					
+ANR	5234	Callee	memcpy		4762	0					
+ANR	5235	Identifier	memcpy		4762	0					
+ANR	5236	ArgumentList	& s -> inode		4762	1					
+ANR	5237	Argument	& s -> inode		4762	0					
+ANR	5238	UnaryOperationExpression	& s -> inode		4762	0					
+ANR	5239	UnaryOperator	&		4762	0					
+ANR	5240	PtrMemberAccess	s -> inode		4762	1					
+ANR	5241	Identifier	s		4762	0					
+ANR	5242	Identifier	inode		4762	1					
+ANR	5243	Argument	buf		4762	1					
+ANR	5244	Identifier	buf		4762	0					
+ANR	5245	Argument	sizeof ( s -> inode )		4762	2					
+ANR	5246	SizeofExpression	sizeof ( s -> inode )		4762	0					
+ANR	5247	Sizeof	sizeof		4762	0					
+ANR	5248	PtrMemberAccess	s -> inode		4762	1					
+ANR	5249	Identifier	s		4762	0					
+ANR	5250	Identifier	inode		4762	1					
+ANR	5251	ExpressionStatement	s -> min_dirty_data_idx = UINT32_MAX	88:4:2262:2296	4762	38	True				
+ANR	5252	AssignmentExpression	s -> min_dirty_data_idx = UINT32_MAX		4762	0		=			
+ANR	5253	PtrMemberAccess	s -> min_dirty_data_idx		4762	0					
+ANR	5254	Identifier	s		4762	0					
+ANR	5255	Identifier	min_dirty_data_idx		4762	1					
+ANR	5256	Identifier	UINT32_MAX		4762	1					
+ANR	5257	ExpressionStatement	s -> max_dirty_data_idx = 0	89:4:2302:2327	4762	39	True				
+ANR	5258	AssignmentExpression	s -> max_dirty_data_idx = 0		4762	0		=			
+ANR	5259	PtrMemberAccess	s -> max_dirty_data_idx		4762	0					
+ANR	5260	Identifier	s		4762	0					
+ANR	5261	Identifier	max_dirty_data_idx		4762	1					
+ANR	5262	PrimaryExpression	0		4762	1					
+ANR	5263	ExpressionStatement	bs -> total_sectors = s -> inode . vdi_size / BDRV_SECTOR_SIZE	91:4:2334:2390	4762	40	True				
+ANR	5264	AssignmentExpression	bs -> total_sectors = s -> inode . vdi_size / BDRV_SECTOR_SIZE		4762	0		=			
+ANR	5265	PtrMemberAccess	bs -> total_sectors		4762	0					
+ANR	5266	Identifier	bs		4762	0					
+ANR	5267	Identifier	total_sectors		4762	1					
+ANR	5268	MultiplicativeExpression	s -> inode . vdi_size / BDRV_SECTOR_SIZE		4762	1		/			
+ANR	5269	MemberAccess	s -> inode . vdi_size		4762	0					
+ANR	5270	PtrMemberAccess	s -> inode		4762	0					
+ANR	5271	Identifier	s		4762	0					
+ANR	5272	Identifier	inode		4762	1					
+ANR	5273	Identifier	vdi_size		4762	1					
+ANR	5274	Identifier	BDRV_SECTOR_SIZE		4762	1					
+ANR	5275	ExpressionStatement	"pstrcpy ( s -> name , sizeof ( s -> name ) , vdi )"	92:4:2396:2434	4762	41	True				
+ANR	5276	CallExpression	"pstrcpy ( s -> name , sizeof ( s -> name ) , vdi )"		4762	0					
+ANR	5277	Callee	pstrcpy		4762	0					
+ANR	5278	Identifier	pstrcpy		4762	0					
+ANR	5279	ArgumentList	s -> name		4762	1					
+ANR	5280	Argument	s -> name		4762	0					
+ANR	5281	PtrMemberAccess	s -> name		4762	0					
+ANR	5282	Identifier	s		4762	0					
+ANR	5283	Identifier	name		4762	1					
+ANR	5284	Argument	sizeof ( s -> name )		4762	1					
+ANR	5285	SizeofExpression	sizeof ( s -> name )		4762	0					
+ANR	5286	Sizeof	sizeof		4762	0					
+ANR	5287	PtrMemberAccess	s -> name		4762	1					
+ANR	5288	Identifier	s		4762	0					
+ANR	5289	Identifier	name		4762	1					
+ANR	5290	Argument	vdi		4762	2					
+ANR	5291	Identifier	vdi		4762	0					
+ANR	5292	ExpressionStatement	qemu_co_mutex_init ( & s -> lock )	93:4:2440:2468	4762	42	True				
+ANR	5293	CallExpression	qemu_co_mutex_init ( & s -> lock )		4762	0					
+ANR	5294	Callee	qemu_co_mutex_init		4762	0					
+ANR	5295	Identifier	qemu_co_mutex_init		4762	0					
+ANR	5296	ArgumentList	& s -> lock		4762	1					
+ANR	5297	Argument	& s -> lock		4762	0					
+ANR	5298	UnaryOperationExpression	& s -> lock		4762	0					
+ANR	5299	UnaryOperator	&		4762	0					
+ANR	5300	PtrMemberAccess	s -> lock		4762	1					
+ANR	5301	Identifier	s		4762	0					
+ANR	5302	Identifier	lock		4762	1					
+ANR	5303	ExpressionStatement	qemu_co_queue_init ( & s -> overwrapping_queue )	94:4:2474:2516	4762	43	True				
+ANR	5304	CallExpression	qemu_co_queue_init ( & s -> overwrapping_queue )		4762	0					
+ANR	5305	Callee	qemu_co_queue_init		4762	0					
+ANR	5306	Identifier	qemu_co_queue_init		4762	0					
+ANR	5307	ArgumentList	& s -> overwrapping_queue		4762	1					
+ANR	5308	Argument	& s -> overwrapping_queue		4762	0					
+ANR	5309	UnaryOperationExpression	& s -> overwrapping_queue		4762	0					
+ANR	5310	UnaryOperator	&		4762	0					
+ANR	5311	PtrMemberAccess	s -> overwrapping_queue		4762	1					
+ANR	5312	Identifier	s		4762	0					
+ANR	5313	Identifier	overwrapping_queue		4762	1					
+ANR	5314	ExpressionStatement	qemu_opts_del ( opts )	95:4:2522:2541	4762	44	True				
+ANR	5315	CallExpression	qemu_opts_del ( opts )		4762	0					
+ANR	5316	Callee	qemu_opts_del		4762	0					
+ANR	5317	Identifier	qemu_opts_del		4762	0					
+ANR	5318	ArgumentList	opts		4762	1					
+ANR	5319	Argument	opts		4762	0					
+ANR	5320	Identifier	opts		4762	0					
+ANR	5321	ExpressionStatement	g_free ( buf )	96:4:2547:2558	4762	45	True				
+ANR	5322	CallExpression	g_free ( buf )		4762	0					
+ANR	5323	Callee	g_free		4762	0					
+ANR	5324	Identifier	g_free		4762	0					
+ANR	5325	ArgumentList	buf		4762	1					
+ANR	5326	Argument	buf		4762	0					
+ANR	5327	Identifier	buf		4762	0					
+ANR	5328	ReturnStatement	return 0 ;	97:4:2564:2572	4762	46	True				
+ANR	5329	PrimaryExpression	0		4762	0					
+ANR	5330	Label	out :	98:0:2574:2577	4762	47	True				
+ANR	5331	Identifier	out		4762	0					
+ANR	5332	ExpressionStatement	"aio_set_fd_handler ( bdrv_get_aio_context ( bs ) , s -> fd , NULL , NULL , NULL )"	99:4:2583:2652	4762	48	True				
+ANR	5333	CallExpression	"aio_set_fd_handler ( bdrv_get_aio_context ( bs ) , s -> fd , NULL , NULL , NULL )"		4762	0					
+ANR	5334	Callee	aio_set_fd_handler		4762	0					
+ANR	5335	Identifier	aio_set_fd_handler		4762	0					
+ANR	5336	ArgumentList	bdrv_get_aio_context ( bs )		4762	1					
+ANR	5337	Argument	bdrv_get_aio_context ( bs )		4762	0					
+ANR	5338	CallExpression	bdrv_get_aio_context ( bs )		4762	0					
+ANR	5339	Callee	bdrv_get_aio_context		4762	0					
+ANR	5340	Identifier	bdrv_get_aio_context		4762	0					
+ANR	5341	ArgumentList	bs		4762	1					
+ANR	5342	Argument	bs		4762	0					
+ANR	5343	Identifier	bs		4762	0					
+ANR	5344	Argument	s -> fd		4762	1					
+ANR	5345	PtrMemberAccess	s -> fd		4762	0					
+ANR	5346	Identifier	s		4762	0					
+ANR	5347	Identifier	fd		4762	1					
+ANR	5348	Argument	NULL		4762	2					
+ANR	5349	Identifier	NULL		4762	0					
+ANR	5350	Argument	NULL		4762	3					
+ANR	5351	Identifier	NULL		4762	0					
+ANR	5352	Argument	NULL		4762	4					
+ANR	5353	Identifier	NULL		4762	0					
+ANR	5354	IfStatement	if ( s -> fd >= 0 )		4762	49					
+ANR	5355	Condition	s -> fd >= 0	100:8:2662:2671	4762	0	True				
+ANR	5356	RelationalExpression	s -> fd >= 0		4762	0		>=			
+ANR	5357	PtrMemberAccess	s -> fd		4762	0					
+ANR	5358	Identifier	s		4762	0					
+ANR	5359	Identifier	fd		4762	1					
+ANR	5360	PrimaryExpression	0		4762	1					
+ANR	5361	CompoundStatement		98:20:2572:2572	4762	1					
+ANR	5362	ExpressionStatement	closesocket ( s -> fd )	101:8:2684:2702	4762	0	True				
+ANR	5363	CallExpression	closesocket ( s -> fd )		4762	0					
+ANR	5364	Callee	closesocket		4762	0					
+ANR	5365	Identifier	closesocket		4762	0					
+ANR	5366	ArgumentList	s -> fd		4762	1					
+ANR	5367	Argument	s -> fd		4762	0					
+ANR	5368	PtrMemberAccess	s -> fd		4762	0					
+ANR	5369	Identifier	s		4762	0					
+ANR	5370	Identifier	fd		4762	1					
+ANR	5371	ExpressionStatement	qemu_opts_del ( opts )	103:4:2714:2733	4762	50	True				
+ANR	5372	CallExpression	qemu_opts_del ( opts )		4762	0					
+ANR	5373	Callee	qemu_opts_del		4762	0					
+ANR	5374	Identifier	qemu_opts_del		4762	0					
+ANR	5375	ArgumentList	opts		4762	1					
+ANR	5376	Argument	opts		4762	0					
+ANR	5377	Identifier	opts		4762	0					
+ANR	5378	ExpressionStatement	g_free ( buf )	104:4:2739:2750	4762	51	True				
+ANR	5379	CallExpression	g_free ( buf )		4762	0					
+ANR	5380	Callee	g_free		4762	0					
+ANR	5381	Identifier	g_free		4762	0					
+ANR	5382	ArgumentList	buf		4762	1					
+ANR	5383	Argument	buf		4762	0					
+ANR	5384	Identifier	buf		4762	0					
+ANR	5385	ReturnStatement	return ret ;	105:4:2756:2766	4762	52	True				
+ANR	5386	Identifier	ret		4762	0					
+ANR	5387	ReturnType	static int		4762	1					
+ANR	5388	Identifier	sd_open		4762	2					
+ANR	5389	ParameterList	"BlockDriverState * bs , QDict * options , int flags , Error * * errp"		4762	3					
+ANR	5390	Parameter	BlockDriverState * bs	1:19:19:38	4762	0	True				
+ANR	5391	ParameterType	BlockDriverState *		4762	0					
+ANR	5392	Identifier	bs		4762	1					
+ANR	5393	Parameter	QDict * options	1:41:41:54	4762	1	True				
+ANR	5394	ParameterType	QDict *		4762	0					
+ANR	5395	Identifier	options		4762	1					
+ANR	5396	Parameter	int flags	1:57:57:65	4762	2	True				
+ANR	5397	ParameterType	int		4762	0					
+ANR	5398	Identifier	flags		4762	1					
+ANR	5399	Parameter	Error * * errp	2:19:87:98	4762	3	True				
+ANR	5400	ParameterType	Error * *		4762	0					
+ANR	5401	Identifier	errp		4762	1					
+ANR	5402	CFGEntryNode	ENTRY		4762		True				
+ANR	5403	CFGExitNode	EXIT		4762		True				
+ANR	5404	Symbol	qemu_opts_create		4762						
+ANR	5405	Symbol	s -> inode . vdi_size		4762						
+ANR	5406	Symbol	errp		4762						
+ANR	5407	Symbol	qemu_opt_get		4762						
+ANR	5408	Symbol	s -> aio_context		4762						
+ANR	5409	Symbol	vid		4762						
+ANR	5410	Symbol	* bs		4762						
+ANR	5411	Symbol	opts		4762						
+ANR	5412	Symbol	s -> max_dirty_data_idx		4762						
+ANR	5413	Symbol	& s -> inflight_aiocb_head		4762						
+ANR	5414	Symbol	options		4762						
+ANR	5415	Symbol	tag		4762						
+ANR	5416	Symbol	snapid		4762						
+ANR	5417	Symbol	s -> is_snapshot		4762						
+ANR	5418	Symbol	ret		4762						
+ANR	5419	Symbol	bdrv_get_aio_context		4762						
+ANR	5420	Symbol	NULL		4762						
+ANR	5421	Symbol	bs -> total_sectors		4762						
+ANR	5422	Symbol	s -> bs		4762						
+ANR	5423	Symbol	read_object		4762						
+ANR	5424	Symbol	& s -> lock		4762						
+ANR	5425	Symbol	& vid		4762						
+ANR	5426	Symbol	s -> cache_flags		4762						
+ANR	5427	Symbol	s -> inode		4762						
+ANR	5428	Symbol	BDRV_O_NOCACHE		4762						
+ANR	5429	Symbol	& snapid		4762						
+ANR	5430	Symbol	filename		4762						
+ANR	5431	Symbol	& s -> failed_aio_head		4762						
+ANR	5432	Symbol	strstr		4762						
+ANR	5433	Symbol	true		4762						
+ANR	5434	Symbol	SD_INODE_SIZE		4762						
+ANR	5435	Symbol	parse_vdiname		4762						
+ANR	5436	Symbol	fd		4762						
+ANR	5437	Symbol	s -> fd		4762						
+ANR	5438	Symbol	local_err		4762						
+ANR	5439	Symbol	UINT32_MAX		4762						
+ANR	5440	Symbol	s -> min_dirty_data_idx		4762						
+ANR	5441	Symbol	* tag		4762						
+ANR	5442	Symbol	get_sheep_fd		4762						
+ANR	5443	Symbol	vid_to_vdi_oid		4762						
+ANR	5444	Symbol	flags		4762						
+ANR	5445	Symbol	& runtime_opts		4762						
+ANR	5446	Symbol	bs		4762						
+ANR	5447	Symbol	& s -> inflight_aio_head		4762						
+ANR	5448	Symbol	SD_FLAG_CMD_CACHE		4762						
+ANR	5449	Symbol	g_malloc		4762						
+ANR	5450	Symbol	sd_parse_uri		4762						
+ANR	5451	Symbol	find_vdi_name		4762						
+ANR	5452	Symbol	& local_err		4762						
+ANR	5453	Symbol	connect_to_sdog		4762						
+ANR	5454	Symbol	bs -> opaque		4762						
+ANR	5455	Symbol	& error_abort		4762						
+ANR	5456	Symbol	& s -> inode		4762						
+ANR	5457	Symbol	EINVAL		4762						
+ANR	5458	Symbol	buf		4762						
+ANR	5459	Symbol	s		4762						
+ANR	5460	Symbol	s -> name		4762						
+ANR	5461	Symbol	& s -> overwrapping_queue		4762						
+ANR	5462	Symbol	BDRV_SECTOR_SIZE		4762						
+ANR	5463	Symbol	s -> discard_supported		4762						
+ANR	5464	Symbol	vdi		4762						
+ANR	5465	Symbol	* s		4762						
+ANR	5466	Symbol	SD_FLAG_CMD_DIRECT		4762						

@@ -1,0 +1,808 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/FFmpeg_3b606e71_6805.c								
+ANR	2	Function	svq3_decode_slice_header	1:0:0:2690							
+ANR	3	FunctionDef	svq3_decode_slice_header (H264Context * h)		2	0					
+ANR	4	CompoundStatement		2:0:52:2690	2	0					
+ANR	5	Statement	MpegEncContext	3:4:58:71	2	0	True				
+ANR	6	Statement	*	3:19:73:73	2	1	True				
+ANR	7	Statement	const	3:20:74:78	2	2	True				
+ANR	8	ExpressionStatement	s = ( MpegEncContext * ) h	3:26:80:104	2	3	True				
+ANR	9	AssignmentExpression	s = ( MpegEncContext * ) h		2	0		=			
+ANR	10	Identifier	s		2	0					
+ANR	11	CastExpression	( MpegEncContext * ) h		2	1					
+ANR	12	CastTarget	MpegEncContext *		2	0					
+ANR	13	Identifier	h		2	1					
+ANR	14	IdentifierDeclStatement	const int mb_xy = h -> mb_xy ;	4:4:110:136	2	4	True				
+ANR	15	IdentifierDecl	mb_xy = h -> mb_xy		2	0					
+ANR	16	IdentifierDeclType	const int		2	0					
+ANR	17	Identifier	mb_xy		2	1					
+ANR	18	AssignmentExpression	mb_xy = h -> mb_xy		2	2		=			
+ANR	19	Identifier	mb_xy		2	0					
+ANR	20	PtrMemberAccess	h -> mb_xy		2	1					
+ANR	21	Identifier	h		2	0					
+ANR	22	Identifier	mb_xy		2	1					
+ANR	23	IdentifierDeclStatement	"int i , header ;"	5:4:142:155	2	5	True				
+ANR	24	IdentifierDecl	i		2	0					
+ANR	25	IdentifierDeclType	int		2	0					
+ANR	26	Identifier	i		2	1					
+ANR	27	IdentifierDecl	header		2	1					
+ANR	28	IdentifierDeclType	int		2	0					
+ANR	29	Identifier	header		2	1					
+ANR	30	ExpressionStatement	"header = get_bits ( & s -> gb , 8 )"	7:4:162:190	2	6	True				
+ANR	31	AssignmentExpression	"header = get_bits ( & s -> gb , 8 )"		2	0		=			
+ANR	32	Identifier	header		2	0					
+ANR	33	CallExpression	"get_bits ( & s -> gb , 8 )"		2	1					
+ANR	34	Callee	get_bits		2	0					
+ANR	35	Identifier	get_bits		2	0					
+ANR	36	ArgumentList	& s -> gb		2	1					
+ANR	37	Argument	& s -> gb		2	0					
+ANR	38	UnaryOperationExpression	& s -> gb		2	0					
+ANR	39	UnaryOperator	&		2	0					
+ANR	40	PtrMemberAccess	s -> gb		2	1					
+ANR	41	Identifier	s		2	0					
+ANR	42	Identifier	gb		2	1					
+ANR	43	Argument	8		2	1					
+ANR	44	PrimaryExpression	8		2	0					
+ANR	45	IfStatement	if ( ( ( header & 0x9F ) != 1 && ( header & 0x9F ) != 2 ) || ( header & 0x60 ) == 0 )		2	7					
+ANR	46	Condition	( ( header & 0x9F ) != 1 && ( header & 0x9F ) != 2 ) || ( header & 0x60 ) == 0	9:8:201:270	2	0	True				
+ANR	47	OrExpression	( ( header & 0x9F ) != 1 && ( header & 0x9F ) != 2 ) || ( header & 0x60 ) == 0		2	0		||			
+ANR	48	AndExpression	( header & 0x9F ) != 1 && ( header & 0x9F ) != 2		2	0		&&			
+ANR	49	EqualityExpression	( header & 0x9F ) != 1		2	0		!=			
+ANR	50	BitAndExpression	header & 0x9F		2	0		&			
+ANR	51	Identifier	header		2	0					
+ANR	52	PrimaryExpression	0x9F		2	1					
+ANR	53	PrimaryExpression	1		2	1					
+ANR	54	EqualityExpression	( header & 0x9F ) != 2		2	1		!=			
+ANR	55	BitAndExpression	header & 0x9F		2	0		&			
+ANR	56	Identifier	header		2	0					
+ANR	57	PrimaryExpression	0x9F		2	1					
+ANR	58	PrimaryExpression	2		2	1					
+ANR	59	EqualityExpression	( header & 0x60 ) == 0		2	1		==			
+ANR	60	BitAndExpression	header & 0x60		2	0		&			
+ANR	61	Identifier	header		2	0					
+ANR	62	PrimaryExpression	0x60		2	1					
+ANR	63	PrimaryExpression	0		2	1					
+ANR	64	CompoundStatement		8:80:220:220	2	1					
+ANR	65	ExpressionStatement	"av_log ( h -> s . avctx , AV_LOG_ERROR , ""unsupported slice header (%02X)\\n"" , header )"	11:8:309:386	2	0	True				
+ANR	66	CallExpression	"av_log ( h -> s . avctx , AV_LOG_ERROR , ""unsupported slice header (%02X)\\n"" , header )"		2	0					
+ANR	67	Callee	av_log		2	0					
+ANR	68	Identifier	av_log		2	0					
+ANR	69	ArgumentList	h -> s . avctx		2	1					
+ANR	70	Argument	h -> s . avctx		2	0					
+ANR	71	MemberAccess	h -> s . avctx		2	0					
+ANR	72	PtrMemberAccess	h -> s		2	0					
+ANR	73	Identifier	h		2	0					
+ANR	74	Identifier	s		2	1					
+ANR	75	Identifier	avctx		2	1					
+ANR	76	Argument	AV_LOG_ERROR		2	1					
+ANR	77	Identifier	AV_LOG_ERROR		2	0					
+ANR	78	Argument	"""unsupported slice header (%02X)\\n"""		2	2					
+ANR	79	PrimaryExpression	"""unsupported slice header (%02X)\\n"""		2	0					
+ANR	80	Argument	header		2	3					
+ANR	81	Identifier	header		2	0					
+ANR	82	ReturnStatement	return - 1 ;	12:8:396:405	2	1	True				
+ANR	83	UnaryOperationExpression	- 1		2	0					
+ANR	84	UnaryOperator	-		2	0					
+ANR	85	PrimaryExpression	1		2	1					
+ANR	86	ElseStatement	else		2	0					
+ANR	87	CompoundStatement		13:8:375:405	2	0					
+ANR	88	IdentifierDeclStatement	int length = ( header >> 5 ) & 3 ;	14:8:428:458	2	0	True				
+ANR	89	IdentifierDecl	length = ( header >> 5 ) & 3		2	0					
+ANR	90	IdentifierDeclType	int		2	0					
+ANR	91	Identifier	length		2	1					
+ANR	92	AssignmentExpression	length = ( header >> 5 ) & 3		2	2		=			
+ANR	93	Identifier	length		2	0					
+ANR	94	BitAndExpression	( header >> 5 ) & 3		2	1		&			
+ANR	95	ShiftExpression	header >> 5		2	0		>>			
+ANR	96	Identifier	header		2	0					
+ANR	97	PrimaryExpression	5		2	1					
+ANR	98	PrimaryExpression	3		2	1					
+ANR	99	ExpressionStatement	"h -> next_slice_index = get_bits_count ( & s -> gb ) + 8 * show_bits ( & s -> gb , 8 * length ) + 8 * length"	16:8:469:556	2	1	True				
+ANR	100	AssignmentExpression	"h -> next_slice_index = get_bits_count ( & s -> gb ) + 8 * show_bits ( & s -> gb , 8 * length ) + 8 * length"		2	0		=			
+ANR	101	PtrMemberAccess	h -> next_slice_index		2	0					
+ANR	102	Identifier	h		2	0					
+ANR	103	Identifier	next_slice_index		2	1					
+ANR	104	AdditiveExpression	"get_bits_count ( & s -> gb ) + 8 * show_bits ( & s -> gb , 8 * length ) + 8 * length"		2	1		+			
+ANR	105	CallExpression	get_bits_count ( & s -> gb )		2	0					
+ANR	106	Callee	get_bits_count		2	0					
+ANR	107	Identifier	get_bits_count		2	0					
+ANR	108	ArgumentList	& s -> gb		2	1					
+ANR	109	Argument	& s -> gb		2	0					
+ANR	110	UnaryOperationExpression	& s -> gb		2	0					
+ANR	111	UnaryOperator	&		2	0					
+ANR	112	PtrMemberAccess	s -> gb		2	1					
+ANR	113	Identifier	s		2	0					
+ANR	114	Identifier	gb		2	1					
+ANR	115	AdditiveExpression	"8 * show_bits ( & s -> gb , 8 * length ) + 8 * length"		2	1		+			
+ANR	116	MultiplicativeExpression	"8 * show_bits ( & s -> gb , 8 * length )"		2	0		*			
+ANR	117	PrimaryExpression	8		2	0					
+ANR	118	CallExpression	"show_bits ( & s -> gb , 8 * length )"		2	1					
+ANR	119	Callee	show_bits		2	0					
+ANR	120	Identifier	show_bits		2	0					
+ANR	121	ArgumentList	& s -> gb		2	1					
+ANR	122	Argument	& s -> gb		2	0					
+ANR	123	UnaryOperationExpression	& s -> gb		2	0					
+ANR	124	UnaryOperator	&		2	0					
+ANR	125	PtrMemberAccess	s -> gb		2	1					
+ANR	126	Identifier	s		2	0					
+ANR	127	Identifier	gb		2	1					
+ANR	128	Argument	8 * length		2	1					
+ANR	129	MultiplicativeExpression	8 * length		2	0		*			
+ANR	130	PrimaryExpression	8		2	0					
+ANR	131	Identifier	length		2	1					
+ANR	132	MultiplicativeExpression	8 * length		2	1		*			
+ANR	133	PrimaryExpression	8		2	0					
+ANR	134	Identifier	length		2	1					
+ANR	135	IfStatement	if ( h -> next_slice_index > s -> gb . size_in_bits )		2	2					
+ANR	136	Condition	h -> next_slice_index > s -> gb . size_in_bits	18:12:571:610	2	0	True				
+ANR	137	RelationalExpression	h -> next_slice_index > s -> gb . size_in_bits		2	0		>			
+ANR	138	PtrMemberAccess	h -> next_slice_index		2	0					
+ANR	139	Identifier	h		2	0					
+ANR	140	Identifier	next_slice_index		2	1					
+ANR	141	MemberAccess	s -> gb . size_in_bits		2	1					
+ANR	142	PtrMemberAccess	s -> gb		2	0					
+ANR	143	Identifier	s		2	0					
+ANR	144	Identifier	gb		2	1					
+ANR	145	Identifier	size_in_bits		2	1					
+ANR	146	CompoundStatement		17:54:560:560	2	1					
+ANR	147	ExpressionStatement	"av_log ( h -> s . avctx , AV_LOG_ERROR , ""slice after bitstream end\\n"" )"	19:12:627:690	2	0	True				
+ANR	148	CallExpression	"av_log ( h -> s . avctx , AV_LOG_ERROR , ""slice after bitstream end\\n"" )"		2	0					
+ANR	149	Callee	av_log		2	0					
+ANR	150	Identifier	av_log		2	0					
+ANR	151	ArgumentList	h -> s . avctx		2	1					
+ANR	152	Argument	h -> s . avctx		2	0					
+ANR	153	MemberAccess	h -> s . avctx		2	0					
+ANR	154	PtrMemberAccess	h -> s		2	0					
+ANR	155	Identifier	h		2	0					
+ANR	156	Identifier	s		2	1					
+ANR	157	Identifier	avctx		2	1					
+ANR	158	Argument	AV_LOG_ERROR		2	1					
+ANR	159	Identifier	AV_LOG_ERROR		2	0					
+ANR	160	Argument	"""slice after bitstream end\\n"""		2	2					
+ANR	161	PrimaryExpression	"""slice after bitstream end\\n"""		2	0					
+ANR	162	ReturnStatement	return - 1 ;	20:12:704:713	2	1	True				
+ANR	163	UnaryOperationExpression	- 1		2	0					
+ANR	164	UnaryOperator	-		2	0					
+ANR	165	PrimaryExpression	1		2	1					
+ANR	166	ExpressionStatement	s -> gb . size_in_bits = h -> next_slice_index - 8 * ( length - 1 )	23:8:730:787	2	3	True				
+ANR	167	AssignmentExpression	s -> gb . size_in_bits = h -> next_slice_index - 8 * ( length - 1 )		2	0		=			
+ANR	168	MemberAccess	s -> gb . size_in_bits		2	0					
+ANR	169	PtrMemberAccess	s -> gb		2	0					
+ANR	170	Identifier	s		2	0					
+ANR	171	Identifier	gb		2	1					
+ANR	172	Identifier	size_in_bits		2	1					
+ANR	173	AdditiveExpression	h -> next_slice_index - 8 * ( length - 1 )		2	1		-			
+ANR	174	PtrMemberAccess	h -> next_slice_index		2	0					
+ANR	175	Identifier	h		2	0					
+ANR	176	Identifier	next_slice_index		2	1					
+ANR	177	MultiplicativeExpression	8 * ( length - 1 )		2	1		*			
+ANR	178	PrimaryExpression	8		2	0					
+ANR	179	AdditiveExpression	length - 1		2	1		-			
+ANR	180	Identifier	length		2	0					
+ANR	181	PrimaryExpression	1		2	1					
+ANR	182	ExpressionStatement	"skip_bits ( & s -> gb , 8 )"	24:8:797:817	2	4	True				
+ANR	183	CallExpression	"skip_bits ( & s -> gb , 8 )"		2	0					
+ANR	184	Callee	skip_bits		2	0					
+ANR	185	Identifier	skip_bits		2	0					
+ANR	186	ArgumentList	& s -> gb		2	1					
+ANR	187	Argument	& s -> gb		2	0					
+ANR	188	UnaryOperationExpression	& s -> gb		2	0					
+ANR	189	UnaryOperator	&		2	0					
+ANR	190	PtrMemberAccess	s -> gb		2	1					
+ANR	191	Identifier	s		2	0					
+ANR	192	Identifier	gb		2	1					
+ANR	193	Argument	8		2	1					
+ANR	194	PrimaryExpression	8		2	0					
+ANR	195	IfStatement	if ( h -> svq3_watermark_key )		2	5					
+ANR	196	Condition	h -> svq3_watermark_key	26:12:832:852	2	0	True				
+ANR	197	PtrMemberAccess	h -> svq3_watermark_key		2	0					
+ANR	198	Identifier	h		2	0					
+ANR	199	Identifier	svq3_watermark_key		2	1					
+ANR	200	CompoundStatement		26:12:816:887	2	1					
+ANR	201	IdentifierDeclStatement	uint32_t header = AV_RL32 ( & s -> gb . buffer [ ( get_bits_count ( & s -> gb ) >> 3 ) + 1 ] ) ;	27:12:869:940	2	0	True				
+ANR	202	IdentifierDecl	header = AV_RL32 ( & s -> gb . buffer [ ( get_bits_count ( & s -> gb ) >> 3 ) + 1 ] )		2	0					
+ANR	203	IdentifierDeclType	uint32_t		2	0					
+ANR	204	Identifier	header		2	1					
+ANR	205	AssignmentExpression	header = AV_RL32 ( & s -> gb . buffer [ ( get_bits_count ( & s -> gb ) >> 3 ) + 1 ] )		2	2		=			
+ANR	206	Identifier	header		2	0					
+ANR	207	CallExpression	AV_RL32 ( & s -> gb . buffer [ ( get_bits_count ( & s -> gb ) >> 3 ) + 1 ] )		2	1					
+ANR	208	Callee	AV_RL32		2	0					
+ANR	209	Identifier	AV_RL32		2	0					
+ANR	210	ArgumentList	& s -> gb . buffer [ ( get_bits_count ( & s -> gb ) >> 3 ) + 1 ]		2	1					
+ANR	211	Argument	& s -> gb . buffer [ ( get_bits_count ( & s -> gb ) >> 3 ) + 1 ]		2	0					
+ANR	212	UnaryOperationExpression	& s -> gb . buffer [ ( get_bits_count ( & s -> gb ) >> 3 ) + 1 ]		2	0					
+ANR	213	UnaryOperator	&		2	0					
+ANR	214	ArrayIndexing	s -> gb . buffer [ ( get_bits_count ( & s -> gb ) >> 3 ) + 1 ]		2	1					
+ANR	215	MemberAccess	s -> gb . buffer		2	0					
+ANR	216	PtrMemberAccess	s -> gb		2	0					
+ANR	217	Identifier	s		2	0					
+ANR	218	Identifier	gb		2	1					
+ANR	219	Identifier	buffer		2	1					
+ANR	220	AdditiveExpression	( get_bits_count ( & s -> gb ) >> 3 ) + 1		2	1		+			
+ANR	221	ShiftExpression	get_bits_count ( & s -> gb ) >> 3		2	0		>>			
+ANR	222	CallExpression	get_bits_count ( & s -> gb )		2	0					
+ANR	223	Callee	get_bits_count		2	0					
+ANR	224	Identifier	get_bits_count		2	0					
+ANR	225	ArgumentList	& s -> gb		2	1					
+ANR	226	Argument	& s -> gb		2	0					
+ANR	227	UnaryOperationExpression	& s -> gb		2	0					
+ANR	228	UnaryOperator	&		2	0					
+ANR	229	PtrMemberAccess	s -> gb		2	1					
+ANR	230	Identifier	s		2	0					
+ANR	231	Identifier	gb		2	1					
+ANR	232	PrimaryExpression	3		2	1					
+ANR	233	PrimaryExpression	1		2	1					
+ANR	234	ExpressionStatement	"AV_WL32 ( & s -> gb . buffer [ ( get_bits_count ( & s -> gb ) >> 3 ) + 1 ] , header ^ h -> svq3_watermark_key )"	28:12:954:1039	2	1	True				
+ANR	235	CallExpression	"AV_WL32 ( & s -> gb . buffer [ ( get_bits_count ( & s -> gb ) >> 3 ) + 1 ] , header ^ h -> svq3_watermark_key )"		2	0					
+ANR	236	Callee	AV_WL32		2	0					
+ANR	237	Identifier	AV_WL32		2	0					
+ANR	238	ArgumentList	& s -> gb . buffer [ ( get_bits_count ( & s -> gb ) >> 3 ) + 1 ]		2	1					
+ANR	239	Argument	& s -> gb . buffer [ ( get_bits_count ( & s -> gb ) >> 3 ) + 1 ]		2	0					
+ANR	240	UnaryOperationExpression	& s -> gb . buffer [ ( get_bits_count ( & s -> gb ) >> 3 ) + 1 ]		2	0					
+ANR	241	UnaryOperator	&		2	0					
+ANR	242	ArrayIndexing	s -> gb . buffer [ ( get_bits_count ( & s -> gb ) >> 3 ) + 1 ]		2	1					
+ANR	243	MemberAccess	s -> gb . buffer		2	0					
+ANR	244	PtrMemberAccess	s -> gb		2	0					
+ANR	245	Identifier	s		2	0					
+ANR	246	Identifier	gb		2	1					
+ANR	247	Identifier	buffer		2	1					
+ANR	248	AdditiveExpression	( get_bits_count ( & s -> gb ) >> 3 ) + 1		2	1		+			
+ANR	249	ShiftExpression	get_bits_count ( & s -> gb ) >> 3		2	0		>>			
+ANR	250	CallExpression	get_bits_count ( & s -> gb )		2	0					
+ANR	251	Callee	get_bits_count		2	0					
+ANR	252	Identifier	get_bits_count		2	0					
+ANR	253	ArgumentList	& s -> gb		2	1					
+ANR	254	Argument	& s -> gb		2	0					
+ANR	255	UnaryOperationExpression	& s -> gb		2	0					
+ANR	256	UnaryOperator	&		2	0					
+ANR	257	PtrMemberAccess	s -> gb		2	1					
+ANR	258	Identifier	s		2	0					
+ANR	259	Identifier	gb		2	1					
+ANR	260	PrimaryExpression	3		2	1					
+ANR	261	PrimaryExpression	1		2	1					
+ANR	262	Argument	header ^ h -> svq3_watermark_key		2	1					
+ANR	263	ExclusiveOrExpression	header ^ h -> svq3_watermark_key		2	0		^			
+ANR	264	Identifier	header		2	0					
+ANR	265	PtrMemberAccess	h -> svq3_watermark_key		2	1					
+ANR	266	Identifier	h		2	0					
+ANR	267	Identifier	svq3_watermark_key		2	1					
+ANR	268	IfStatement	if ( length > 0 )		2	6					
+ANR	269	Condition	length > 0	30:12:1063:1072	2	0	True				
+ANR	270	RelationalExpression	length > 0		2	0		>			
+ANR	271	Identifier	length		2	0					
+ANR	272	PrimaryExpression	0		2	1					
+ANR	273	CompoundStatement		29:24:1022:1022	2	1					
+ANR	274	ExpressionStatement	"memcpy ( ( uint8_t * ) & s -> gb . buffer [ get_bits_count ( & s -> gb ) >> 3 ] , & s -> gb . buffer [ s -> gb . size_in_bits >> 3 ] , ( length - 1 ) )"	31:12:1089:1224	2	0	True				
+ANR	275	CallExpression	"memcpy ( ( uint8_t * ) & s -> gb . buffer [ get_bits_count ( & s -> gb ) >> 3 ] , & s -> gb . buffer [ s -> gb . size_in_bits >> 3 ] , ( length - 1 ) )"		2	0					
+ANR	276	Callee	memcpy		2	0					
+ANR	277	Identifier	memcpy		2	0					
+ANR	278	ArgumentList	( uint8_t * ) & s -> gb . buffer [ get_bits_count ( & s -> gb ) >> 3 ]		2	1					
+ANR	279	Argument	( uint8_t * ) & s -> gb . buffer [ get_bits_count ( & s -> gb ) >> 3 ]		2	0					
+ANR	280	CastExpression	( uint8_t * ) & s -> gb . buffer [ get_bits_count ( & s -> gb ) >> 3 ]		2	0					
+ANR	281	CastTarget	uint8_t *		2	0					
+ANR	282	UnaryOperationExpression	& s -> gb . buffer [ get_bits_count ( & s -> gb ) >> 3 ]		2	1					
+ANR	283	UnaryOperator	&		2	0					
+ANR	284	ArrayIndexing	s -> gb . buffer [ get_bits_count ( & s -> gb ) >> 3 ]		2	1					
+ANR	285	MemberAccess	s -> gb . buffer		2	0					
+ANR	286	PtrMemberAccess	s -> gb		2	0					
+ANR	287	Identifier	s		2	0					
+ANR	288	Identifier	gb		2	1					
+ANR	289	Identifier	buffer		2	1					
+ANR	290	ShiftExpression	get_bits_count ( & s -> gb ) >> 3		2	1		>>			
+ANR	291	CallExpression	get_bits_count ( & s -> gb )		2	0					
+ANR	292	Callee	get_bits_count		2	0					
+ANR	293	Identifier	get_bits_count		2	0					
+ANR	294	ArgumentList	& s -> gb		2	1					
+ANR	295	Argument	& s -> gb		2	0					
+ANR	296	UnaryOperationExpression	& s -> gb		2	0					
+ANR	297	UnaryOperator	&		2	0					
+ANR	298	PtrMemberAccess	s -> gb		2	1					
+ANR	299	Identifier	s		2	0					
+ANR	300	Identifier	gb		2	1					
+ANR	301	PrimaryExpression	3		2	1					
+ANR	302	Argument	& s -> gb . buffer [ s -> gb . size_in_bits >> 3 ]		2	1					
+ANR	303	UnaryOperationExpression	& s -> gb . buffer [ s -> gb . size_in_bits >> 3 ]		2	0					
+ANR	304	UnaryOperator	&		2	0					
+ANR	305	ArrayIndexing	s -> gb . buffer [ s -> gb . size_in_bits >> 3 ]		2	1					
+ANR	306	MemberAccess	s -> gb . buffer		2	0					
+ANR	307	PtrMemberAccess	s -> gb		2	0					
+ANR	308	Identifier	s		2	0					
+ANR	309	Identifier	gb		2	1					
+ANR	310	Identifier	buffer		2	1					
+ANR	311	ShiftExpression	s -> gb . size_in_bits >> 3		2	1		>>			
+ANR	312	MemberAccess	s -> gb . size_in_bits		2	0					
+ANR	313	PtrMemberAccess	s -> gb		2	0					
+ANR	314	Identifier	s		2	0					
+ANR	315	Identifier	gb		2	1					
+ANR	316	Identifier	size_in_bits		2	1					
+ANR	317	PrimaryExpression	3		2	1					
+ANR	318	Argument	length - 1		2	2					
+ANR	319	AdditiveExpression	length - 1		2	0		-			
+ANR	320	Identifier	length		2	0					
+ANR	321	PrimaryExpression	1		2	1					
+ANR	322	ExpressionStatement	"skip_bits_long ( & s -> gb , 0 )"	34:8:1244:1269	2	7	True				
+ANR	323	CallExpression	"skip_bits_long ( & s -> gb , 0 )"		2	0					
+ANR	324	Callee	skip_bits_long		2	0					
+ANR	325	Identifier	skip_bits_long		2	0					
+ANR	326	ArgumentList	& s -> gb		2	1					
+ANR	327	Argument	& s -> gb		2	0					
+ANR	328	UnaryOperationExpression	& s -> gb		2	0					
+ANR	329	UnaryOperator	&		2	0					
+ANR	330	PtrMemberAccess	s -> gb		2	1					
+ANR	331	Identifier	s		2	0					
+ANR	332	Identifier	gb		2	1					
+ANR	333	Argument	0		2	1					
+ANR	334	PrimaryExpression	0		2	0					
+ANR	335	IfStatement	if ( ( i = svq3_get_ue_golomb ( & s -> gb ) ) == INVALID_VLC || i >= 3 )		2	8					
+ANR	336	Condition	( i = svq3_get_ue_golomb ( & s -> gb ) ) == INVALID_VLC || i >= 3	37:8:1286:1342	2	0	True				
+ANR	337	OrExpression	( i = svq3_get_ue_golomb ( & s -> gb ) ) == INVALID_VLC || i >= 3		2	0		||			
+ANR	338	EqualityExpression	( i = svq3_get_ue_golomb ( & s -> gb ) ) == INVALID_VLC		2	0		==			
+ANR	339	AssignmentExpression	i = svq3_get_ue_golomb ( & s -> gb )		2	0		=			
+ANR	340	Identifier	i		2	0					
+ANR	341	CallExpression	svq3_get_ue_golomb ( & s -> gb )		2	1					
+ANR	342	Callee	svq3_get_ue_golomb		2	0					
+ANR	343	Identifier	svq3_get_ue_golomb		2	0					
+ANR	344	ArgumentList	& s -> gb		2	1					
+ANR	345	Argument	& s -> gb		2	0					
+ANR	346	UnaryOperationExpression	& s -> gb		2	0					
+ANR	347	UnaryOperator	&		2	0					
+ANR	348	PtrMemberAccess	s -> gb		2	1					
+ANR	349	Identifier	s		2	0					
+ANR	350	Identifier	gb		2	1					
+ANR	351	Identifier	INVALID_VLC		2	1					
+ANR	352	RelationalExpression	i >= 3		2	1		>=			
+ANR	353	Identifier	i		2	0					
+ANR	354	PrimaryExpression	3		2	1					
+ANR	355	CompoundStatement		36:66:1291:1291	2	1					
+ANR	356	ExpressionStatement	"av_log ( h -> s . avctx , AV_LOG_ERROR , ""illegal slice type %d \\n"" , i )"	38:8:1354:1417	2	0	True				
+ANR	357	CallExpression	"av_log ( h -> s . avctx , AV_LOG_ERROR , ""illegal slice type %d \\n"" , i )"		2	0					
+ANR	358	Callee	av_log		2	0					
+ANR	359	Identifier	av_log		2	0					
+ANR	360	ArgumentList	h -> s . avctx		2	1					
+ANR	361	Argument	h -> s . avctx		2	0					
+ANR	362	MemberAccess	h -> s . avctx		2	0					
+ANR	363	PtrMemberAccess	h -> s		2	0					
+ANR	364	Identifier	h		2	0					
+ANR	365	Identifier	s		2	1					
+ANR	366	Identifier	avctx		2	1					
+ANR	367	Argument	AV_LOG_ERROR		2	1					
+ANR	368	Identifier	AV_LOG_ERROR		2	0					
+ANR	369	Argument	"""illegal slice type %d \\n"""		2	2					
+ANR	370	PrimaryExpression	"""illegal slice type %d \\n"""		2	0					
+ANR	371	Argument	i		2	3					
+ANR	372	Identifier	i		2	0					
+ANR	373	ReturnStatement	return - 1 ;	39:8:1427:1436	2	1	True				
+ANR	374	UnaryOperationExpression	- 1		2	0					
+ANR	375	UnaryOperator	-		2	0					
+ANR	376	PrimaryExpression	1		2	1					
+ANR	377	ExpressionStatement	h -> slice_type = golomb_to_pict_type [ i ]	42:4:1449:1487	2	9	True				
+ANR	378	AssignmentExpression	h -> slice_type = golomb_to_pict_type [ i ]		2	0		=			
+ANR	379	PtrMemberAccess	h -> slice_type		2	0					
+ANR	380	Identifier	h		2	0					
+ANR	381	Identifier	slice_type		2	1					
+ANR	382	ArrayIndexing	golomb_to_pict_type [ i ]		2	1					
+ANR	383	Identifier	golomb_to_pict_type		2	0					
+ANR	384	Identifier	i		2	1					
+ANR	385	IfStatement	if ( ( header & 0x9F ) == 2 )		2	10					
+ANR	386	Condition	( header & 0x9F ) == 2	44:8:1498:1517	2	0	True				
+ANR	387	EqualityExpression	( header & 0x9F ) == 2		2	0		==			
+ANR	388	BitAndExpression	header & 0x9F		2	0		&			
+ANR	389	Identifier	header		2	0					
+ANR	390	PrimaryExpression	0x9F		2	1					
+ANR	391	PrimaryExpression	2		2	1					
+ANR	392	CompoundStatement		43:30:1467:1467	2	1					
+ANR	393	ExpressionStatement	i = ( s -> mb_num < 64 ) ? 6 : ( 1 + av_log2 ( s -> mb_num - 1 ) )	45:8:1530:1586	2	0	True				
+ANR	394	AssignmentExpression	i = ( s -> mb_num < 64 ) ? 6 : ( 1 + av_log2 ( s -> mb_num - 1 ) )		2	0		=			
+ANR	395	Identifier	i		2	0					
+ANR	396	ConditionalExpression	( s -> mb_num < 64 ) ? 6 : ( 1 + av_log2 ( s -> mb_num - 1 ) )		2	1					
+ANR	397	Condition	s -> mb_num < 64		2	0					
+ANR	398	RelationalExpression	s -> mb_num < 64		2	0		<			
+ANR	399	PtrMemberAccess	s -> mb_num		2	0					
+ANR	400	Identifier	s		2	0					
+ANR	401	Identifier	mb_num		2	1					
+ANR	402	PrimaryExpression	64		2	1					
+ANR	403	PrimaryExpression	6		2	1					
+ANR	404	AdditiveExpression	1 + av_log2 ( s -> mb_num - 1 )		2	2		+			
+ANR	405	PrimaryExpression	1		2	0					
+ANR	406	CallExpression	av_log2 ( s -> mb_num - 1 )		2	1					
+ANR	407	Callee	av_log2		2	0					
+ANR	408	Identifier	av_log2		2	0					
+ANR	409	ArgumentList	s -> mb_num - 1		2	1					
+ANR	410	Argument	s -> mb_num - 1		2	0					
+ANR	411	AdditiveExpression	s -> mb_num - 1		2	0		-			
+ANR	412	PtrMemberAccess	s -> mb_num		2	0					
+ANR	413	Identifier	s		2	0					
+ANR	414	Identifier	mb_num		2	1					
+ANR	415	PrimaryExpression	1		2	1					
+ANR	416	ExpressionStatement	"s -> mb_skip_run = get_bits ( & s -> gb , i ) - ( s -> mb_x + ( s -> mb_y * s -> mb_width ) )"	46:8:1596:1670	2	1	True				
+ANR	417	AssignmentExpression	"s -> mb_skip_run = get_bits ( & s -> gb , i ) - ( s -> mb_x + ( s -> mb_y * s -> mb_width ) )"		2	0		=			
+ANR	418	PtrMemberAccess	s -> mb_skip_run		2	0					
+ANR	419	Identifier	s		2	0					
+ANR	420	Identifier	mb_skip_run		2	1					
+ANR	421	AdditiveExpression	"get_bits ( & s -> gb , i ) - ( s -> mb_x + ( s -> mb_y * s -> mb_width ) )"		2	1		-			
+ANR	422	CallExpression	"get_bits ( & s -> gb , i )"		2	0					
+ANR	423	Callee	get_bits		2	0					
+ANR	424	Identifier	get_bits		2	0					
+ANR	425	ArgumentList	& s -> gb		2	1					
+ANR	426	Argument	& s -> gb		2	0					
+ANR	427	UnaryOperationExpression	& s -> gb		2	0					
+ANR	428	UnaryOperator	&		2	0					
+ANR	429	PtrMemberAccess	s -> gb		2	1					
+ANR	430	Identifier	s		2	0					
+ANR	431	Identifier	gb		2	1					
+ANR	432	Argument	i		2	1					
+ANR	433	Identifier	i		2	0					
+ANR	434	AdditiveExpression	s -> mb_x + ( s -> mb_y * s -> mb_width )		2	1		+			
+ANR	435	PtrMemberAccess	s -> mb_x		2	0					
+ANR	436	Identifier	s		2	0					
+ANR	437	Identifier	mb_x		2	1					
+ANR	438	MultiplicativeExpression	s -> mb_y * s -> mb_width		2	1		*			
+ANR	439	PtrMemberAccess	s -> mb_y		2	0					
+ANR	440	Identifier	s		2	0					
+ANR	441	Identifier	mb_y		2	1					
+ANR	442	PtrMemberAccess	s -> mb_width		2	1					
+ANR	443	Identifier	s		2	0					
+ANR	444	Identifier	mb_width		2	1					
+ANR	445	ElseStatement	else		2	0					
+ANR	446	CompoundStatement		46:11:1630:1630	2	0					
+ANR	447	ExpressionStatement	skip_bits1 ( & s -> gb )	48:8:1693:1711	2	0	True				
+ANR	448	CallExpression	skip_bits1 ( & s -> gb )		2	0					
+ANR	449	Callee	skip_bits1		2	0					
+ANR	450	Identifier	skip_bits1		2	0					
+ANR	451	ArgumentList	& s -> gb		2	1					
+ANR	452	Argument	& s -> gb		2	0					
+ANR	453	UnaryOperationExpression	& s -> gb		2	0					
+ANR	454	UnaryOperator	&		2	0					
+ANR	455	PtrMemberAccess	s -> gb		2	1					
+ANR	456	Identifier	s		2	0					
+ANR	457	Identifier	gb		2	1					
+ANR	458	ExpressionStatement	s -> mb_skip_run = 0	49:8:1721:1739	2	1	True				
+ANR	459	AssignmentExpression	s -> mb_skip_run = 0		2	0		=			
+ANR	460	PtrMemberAccess	s -> mb_skip_run		2	0					
+ANR	461	Identifier	s		2	0					
+ANR	462	Identifier	mb_skip_run		2	1					
+ANR	463	PrimaryExpression	0		2	1					
+ANR	464	ExpressionStatement	"h -> slice_num = get_bits ( & s -> gb , 8 )"	52:4:1752:1786	2	11	True				
+ANR	465	AssignmentExpression	"h -> slice_num = get_bits ( & s -> gb , 8 )"		2	0		=			
+ANR	466	PtrMemberAccess	h -> slice_num		2	0					
+ANR	467	Identifier	h		2	0					
+ANR	468	Identifier	slice_num		2	1					
+ANR	469	CallExpression	"get_bits ( & s -> gb , 8 )"		2	1					
+ANR	470	Callee	get_bits		2	0					
+ANR	471	Identifier	get_bits		2	0					
+ANR	472	ArgumentList	& s -> gb		2	1					
+ANR	473	Argument	& s -> gb		2	0					
+ANR	474	UnaryOperationExpression	& s -> gb		2	0					
+ANR	475	UnaryOperator	&		2	0					
+ANR	476	PtrMemberAccess	s -> gb		2	1					
+ANR	477	Identifier	s		2	0					
+ANR	478	Identifier	gb		2	1					
+ANR	479	Argument	8		2	1					
+ANR	480	PrimaryExpression	8		2	0					
+ANR	481	ExpressionStatement	"s -> qscale = get_bits ( & s -> gb , 5 )"	53:4:1792:1823	2	12	True				
+ANR	482	AssignmentExpression	"s -> qscale = get_bits ( & s -> gb , 5 )"		2	0		=			
+ANR	483	PtrMemberAccess	s -> qscale		2	0					
+ANR	484	Identifier	s		2	0					
+ANR	485	Identifier	qscale		2	1					
+ANR	486	CallExpression	"get_bits ( & s -> gb , 5 )"		2	1					
+ANR	487	Callee	get_bits		2	0					
+ANR	488	Identifier	get_bits		2	0					
+ANR	489	ArgumentList	& s -> gb		2	1					
+ANR	490	Argument	& s -> gb		2	0					
+ANR	491	UnaryOperationExpression	& s -> gb		2	0					
+ANR	492	UnaryOperator	&		2	0					
+ANR	493	PtrMemberAccess	s -> gb		2	1					
+ANR	494	Identifier	s		2	0					
+ANR	495	Identifier	gb		2	1					
+ANR	496	Argument	5		2	1					
+ANR	497	PrimaryExpression	5		2	0					
+ANR	498	ExpressionStatement	s -> adaptive_quant = get_bits1 ( & s -> gb )	54:4:1829:1866	2	13	True				
+ANR	499	AssignmentExpression	s -> adaptive_quant = get_bits1 ( & s -> gb )		2	0		=			
+ANR	500	PtrMemberAccess	s -> adaptive_quant		2	0					
+ANR	501	Identifier	s		2	0					
+ANR	502	Identifier	adaptive_quant		2	1					
+ANR	503	CallExpression	get_bits1 ( & s -> gb )		2	1					
+ANR	504	Callee	get_bits1		2	0					
+ANR	505	Identifier	get_bits1		2	0					
+ANR	506	ArgumentList	& s -> gb		2	1					
+ANR	507	Argument	& s -> gb		2	0					
+ANR	508	UnaryOperationExpression	& s -> gb		2	0					
+ANR	509	UnaryOperator	&		2	0					
+ANR	510	PtrMemberAccess	s -> gb		2	1					
+ANR	511	Identifier	s		2	0					
+ANR	512	Identifier	gb		2	1					
+ANR	513	ExpressionStatement	skip_bits1 ( & s -> gb )	57:4:1898:1916	2	14	True				
+ANR	514	CallExpression	skip_bits1 ( & s -> gb )		2	0					
+ANR	515	Callee	skip_bits1		2	0					
+ANR	516	Identifier	skip_bits1		2	0					
+ANR	517	ArgumentList	& s -> gb		2	1					
+ANR	518	Argument	& s -> gb		2	0					
+ANR	519	UnaryOperationExpression	& s -> gb		2	0					
+ANR	520	UnaryOperator	&		2	0					
+ANR	521	PtrMemberAccess	s -> gb		2	1					
+ANR	522	Identifier	s		2	0					
+ANR	523	Identifier	gb		2	1					
+ANR	524	IfStatement	if ( h -> unknown_svq3_flag )		2	15					
+ANR	525	Condition	h -> unknown_svq3_flag	59:8:1927:1946	2	0	True				
+ANR	526	PtrMemberAccess	h -> unknown_svq3_flag		2	0					
+ANR	527	Identifier	h		2	0					
+ANR	528	Identifier	unknown_svq3_flag		2	1					
+ANR	529	CompoundStatement		58:30:1896:1896	2	1					
+ANR	530	ExpressionStatement	skip_bits1 ( & s -> gb )	60:8:1959:1977	2	0	True				
+ANR	531	CallExpression	skip_bits1 ( & s -> gb )		2	0					
+ANR	532	Callee	skip_bits1		2	0					
+ANR	533	Identifier	skip_bits1		2	0					
+ANR	534	ArgumentList	& s -> gb		2	1					
+ANR	535	Argument	& s -> gb		2	0					
+ANR	536	UnaryOperationExpression	& s -> gb		2	0					
+ANR	537	UnaryOperator	&		2	0					
+ANR	538	PtrMemberAccess	s -> gb		2	1					
+ANR	539	Identifier	s		2	0					
+ANR	540	Identifier	gb		2	1					
+ANR	541	ExpressionStatement	skip_bits1 ( & s -> gb )	63:4:1990:2008	2	16	True				
+ANR	542	CallExpression	skip_bits1 ( & s -> gb )		2	0					
+ANR	543	Callee	skip_bits1		2	0					
+ANR	544	Identifier	skip_bits1		2	0					
+ANR	545	ArgumentList	& s -> gb		2	1					
+ANR	546	Argument	& s -> gb		2	0					
+ANR	547	UnaryOperationExpression	& s -> gb		2	0					
+ANR	548	UnaryOperator	&		2	0					
+ANR	549	PtrMemberAccess	s -> gb		2	1					
+ANR	550	Identifier	s		2	0					
+ANR	551	Identifier	gb		2	1					
+ANR	552	ExpressionStatement	"skip_bits ( & s -> gb , 2 )"	64:4:2014:2034	2	17	True				
+ANR	553	CallExpression	"skip_bits ( & s -> gb , 2 )"		2	0					
+ANR	554	Callee	skip_bits		2	0					
+ANR	555	Identifier	skip_bits		2	0					
+ANR	556	ArgumentList	& s -> gb		2	1					
+ANR	557	Argument	& s -> gb		2	0					
+ANR	558	UnaryOperationExpression	& s -> gb		2	0					
+ANR	559	UnaryOperator	&		2	0					
+ANR	560	PtrMemberAccess	s -> gb		2	1					
+ANR	561	Identifier	s		2	0					
+ANR	562	Identifier	gb		2	1					
+ANR	563	Argument	2		2	1					
+ANR	564	PrimaryExpression	2		2	0					
+ANR	565	WhileStatement	while ( get_bits1 ( & s -> gb ) )		2	18					
+ANR	566	Condition	get_bits1 ( & s -> gb )	66:11:2048:2064	2	0	True				
+ANR	567	CallExpression	get_bits1 ( & s -> gb )		2	0					
+ANR	568	Callee	get_bits1		2	0					
+ANR	569	Identifier	get_bits1		2	0					
+ANR	570	ArgumentList	& s -> gb		2	1					
+ANR	571	Argument	& s -> gb		2	0					
+ANR	572	UnaryOperationExpression	& s -> gb		2	0					
+ANR	573	UnaryOperator	&		2	0					
+ANR	574	PtrMemberAccess	s -> gb		2	1					
+ANR	575	Identifier	s		2	0					
+ANR	576	Identifier	gb		2	1					
+ANR	577	CompoundStatement		65:30:2014:2014	2	1					
+ANR	578	ExpressionStatement	"skip_bits ( & s -> gb , 8 )"	67:8:2077:2097	2	0	True				
+ANR	579	CallExpression	"skip_bits ( & s -> gb , 8 )"		2	0					
+ANR	580	Callee	skip_bits		2	0					
+ANR	581	Identifier	skip_bits		2	0					
+ANR	582	ArgumentList	& s -> gb		2	1					
+ANR	583	Argument	& s -> gb		2	0					
+ANR	584	UnaryOperationExpression	& s -> gb		2	0					
+ANR	585	UnaryOperator	&		2	0					
+ANR	586	PtrMemberAccess	s -> gb		2	1					
+ANR	587	Identifier	s		2	0					
+ANR	588	Identifier	gb		2	1					
+ANR	589	Argument	8		2	1					
+ANR	590	PrimaryExpression	8		2	0					
+ANR	591	IfStatement	if ( s -> mb_x > 0 )		2	19					
+ANR	592	Condition	s -> mb_x > 0	71:8:2187:2197	2	0	True				
+ANR	593	RelationalExpression	s -> mb_x > 0		2	0		>			
+ANR	594	PtrMemberAccess	s -> mb_x		2	0					
+ANR	595	Identifier	s		2	0					
+ANR	596	Identifier	mb_x		2	1					
+ANR	597	PrimaryExpression	0		2	1					
+ANR	598	CompoundStatement		70:21:2147:2147	2	1					
+ANR	599	ExpressionStatement	"memset ( h -> intra4x4_pred_mode + 8 * h -> mb2br_xy [ mb_xy - 1 ] + 3 , - 1 , 4 * sizeof ( int8_t ) )"	72:8:2210:2294	2	0	True				
+ANR	600	CallExpression	"memset ( h -> intra4x4_pred_mode + 8 * h -> mb2br_xy [ mb_xy - 1 ] + 3 , - 1 , 4 * sizeof ( int8_t ) )"		2	0					
+ANR	601	Callee	memset		2	0					
+ANR	602	Identifier	memset		2	0					
+ANR	603	ArgumentList	h -> intra4x4_pred_mode + 8 * h -> mb2br_xy [ mb_xy - 1 ] + 3		2	1					
+ANR	604	Argument	h -> intra4x4_pred_mode + 8 * h -> mb2br_xy [ mb_xy - 1 ] + 3		2	0					
+ANR	605	AdditiveExpression	h -> intra4x4_pred_mode + 8 * h -> mb2br_xy [ mb_xy - 1 ] + 3		2	0		+			
+ANR	606	PtrMemberAccess	h -> intra4x4_pred_mode		2	0					
+ANR	607	Identifier	h		2	0					
+ANR	608	Identifier	intra4x4_pred_mode		2	1					
+ANR	609	AdditiveExpression	8 * h -> mb2br_xy [ mb_xy - 1 ] + 3		2	1		+			
+ANR	610	MultiplicativeExpression	8 * h -> mb2br_xy [ mb_xy - 1 ]		2	0		*			
+ANR	611	PrimaryExpression	8		2	0					
+ANR	612	ArrayIndexing	h -> mb2br_xy [ mb_xy - 1 ]		2	1					
+ANR	613	PtrMemberAccess	h -> mb2br_xy		2	0					
+ANR	614	Identifier	h		2	0					
+ANR	615	Identifier	mb2br_xy		2	1					
+ANR	616	AdditiveExpression	mb_xy - 1		2	1		-			
+ANR	617	Identifier	mb_xy		2	0					
+ANR	618	PrimaryExpression	1		2	1					
+ANR	619	PrimaryExpression	3		2	1					
+ANR	620	Argument	- 1		2	1					
+ANR	621	UnaryOperationExpression	- 1		2	0					
+ANR	622	UnaryOperator	-		2	0					
+ANR	623	PrimaryExpression	1		2	1					
+ANR	624	Argument	4 * sizeof ( int8_t )		2	2					
+ANR	625	MultiplicativeExpression	4 * sizeof ( int8_t )		2	0		*			
+ANR	626	PrimaryExpression	4		2	0					
+ANR	627	SizeofExpression	sizeof ( int8_t )		2	1					
+ANR	628	Sizeof	sizeof		2	0					
+ANR	629	SizeofOperand	int8_t		2	1					
+ANR	630	ExpressionStatement	"memset ( h -> intra4x4_pred_mode + 8 * h -> mb2br_xy [ mb_xy - s -> mb_x ] , - 1 , 8 * sizeof ( int8_t ) * s -> mb_x )"	73:8:2304:2396	2	1	True				
+ANR	631	CallExpression	"memset ( h -> intra4x4_pred_mode + 8 * h -> mb2br_xy [ mb_xy - s -> mb_x ] , - 1 , 8 * sizeof ( int8_t ) * s -> mb_x )"		2	0					
+ANR	632	Callee	memset		2	0					
+ANR	633	Identifier	memset		2	0					
+ANR	634	ArgumentList	h -> intra4x4_pred_mode + 8 * h -> mb2br_xy [ mb_xy - s -> mb_x ]		2	1					
+ANR	635	Argument	h -> intra4x4_pred_mode + 8 * h -> mb2br_xy [ mb_xy - s -> mb_x ]		2	0					
+ANR	636	AdditiveExpression	h -> intra4x4_pred_mode + 8 * h -> mb2br_xy [ mb_xy - s -> mb_x ]		2	0		+			
+ANR	637	PtrMemberAccess	h -> intra4x4_pred_mode		2	0					
+ANR	638	Identifier	h		2	0					
+ANR	639	Identifier	intra4x4_pred_mode		2	1					
+ANR	640	MultiplicativeExpression	8 * h -> mb2br_xy [ mb_xy - s -> mb_x ]		2	1		*			
+ANR	641	PrimaryExpression	8		2	0					
+ANR	642	ArrayIndexing	h -> mb2br_xy [ mb_xy - s -> mb_x ]		2	1					
+ANR	643	PtrMemberAccess	h -> mb2br_xy		2	0					
+ANR	644	Identifier	h		2	0					
+ANR	645	Identifier	mb2br_xy		2	1					
+ANR	646	AdditiveExpression	mb_xy - s -> mb_x		2	1		-			
+ANR	647	Identifier	mb_xy		2	0					
+ANR	648	PtrMemberAccess	s -> mb_x		2	1					
+ANR	649	Identifier	s		2	0					
+ANR	650	Identifier	mb_x		2	1					
+ANR	651	Argument	- 1		2	1					
+ANR	652	UnaryOperationExpression	- 1		2	0					
+ANR	653	UnaryOperator	-		2	0					
+ANR	654	PrimaryExpression	1		2	1					
+ANR	655	Argument	8 * sizeof ( int8_t ) * s -> mb_x		2	2					
+ANR	656	MultiplicativeExpression	8 * sizeof ( int8_t ) * s -> mb_x		2	0		*			
+ANR	657	PrimaryExpression	8		2	0					
+ANR	658	MultiplicativeExpression	sizeof ( int8_t ) * s -> mb_x		2	1		*			
+ANR	659	SizeofExpression	sizeof ( int8_t )		2	0					
+ANR	660	Sizeof	sizeof		2	0					
+ANR	661	SizeofOperand	int8_t		2	1					
+ANR	662	PtrMemberAccess	s -> mb_x		2	1					
+ANR	663	Identifier	s		2	0					
+ANR	664	Identifier	mb_x		2	1					
+ANR	665	IfStatement	if ( s -> mb_y > 0 )		2	20					
+ANR	666	Condition	s -> mb_y > 0	75:8:2412:2422	2	0	True				
+ANR	667	RelationalExpression	s -> mb_y > 0		2	0		>			
+ANR	668	PtrMemberAccess	s -> mb_y		2	0					
+ANR	669	Identifier	s		2	0					
+ANR	670	Identifier	mb_y		2	1					
+ANR	671	PrimaryExpression	0		2	1					
+ANR	672	CompoundStatement		74:21:2372:2372	2	1					
+ANR	673	ExpressionStatement	"memset ( h -> intra4x4_pred_mode + 8 * h -> mb2br_xy [ mb_xy - s -> mb_stride ] , - 1 , 8 * sizeof ( int8_t ) * ( s -> mb_width - s -> mb_x ) )"	76:8:2435:2546	2	0	True				
+ANR	674	CallExpression	"memset ( h -> intra4x4_pred_mode + 8 * h -> mb2br_xy [ mb_xy - s -> mb_stride ] , - 1 , 8 * sizeof ( int8_t ) * ( s -> mb_width - s -> mb_x ) )"		2	0					
+ANR	675	Callee	memset		2	0					
+ANR	676	Identifier	memset		2	0					
+ANR	677	ArgumentList	h -> intra4x4_pred_mode + 8 * h -> mb2br_xy [ mb_xy - s -> mb_stride ]		2	1					
+ANR	678	Argument	h -> intra4x4_pred_mode + 8 * h -> mb2br_xy [ mb_xy - s -> mb_stride ]		2	0					
+ANR	679	AdditiveExpression	h -> intra4x4_pred_mode + 8 * h -> mb2br_xy [ mb_xy - s -> mb_stride ]		2	0		+			
+ANR	680	PtrMemberAccess	h -> intra4x4_pred_mode		2	0					
+ANR	681	Identifier	h		2	0					
+ANR	682	Identifier	intra4x4_pred_mode		2	1					
+ANR	683	MultiplicativeExpression	8 * h -> mb2br_xy [ mb_xy - s -> mb_stride ]		2	1		*			
+ANR	684	PrimaryExpression	8		2	0					
+ANR	685	ArrayIndexing	h -> mb2br_xy [ mb_xy - s -> mb_stride ]		2	1					
+ANR	686	PtrMemberAccess	h -> mb2br_xy		2	0					
+ANR	687	Identifier	h		2	0					
+ANR	688	Identifier	mb2br_xy		2	1					
+ANR	689	AdditiveExpression	mb_xy - s -> mb_stride		2	1		-			
+ANR	690	Identifier	mb_xy		2	0					
+ANR	691	PtrMemberAccess	s -> mb_stride		2	1					
+ANR	692	Identifier	s		2	0					
+ANR	693	Identifier	mb_stride		2	1					
+ANR	694	Argument	- 1		2	1					
+ANR	695	UnaryOperationExpression	- 1		2	0					
+ANR	696	UnaryOperator	-		2	0					
+ANR	697	PrimaryExpression	1		2	1					
+ANR	698	Argument	8 * sizeof ( int8_t ) * ( s -> mb_width - s -> mb_x )		2	2					
+ANR	699	MultiplicativeExpression	8 * sizeof ( int8_t ) * ( s -> mb_width - s -> mb_x )		2	0		*			
+ANR	700	PrimaryExpression	8		2	0					
+ANR	701	MultiplicativeExpression	sizeof ( int8_t ) * ( s -> mb_width - s -> mb_x )		2	1		*			
+ANR	702	SizeofExpression	sizeof ( int8_t )		2	0					
+ANR	703	Sizeof	sizeof		2	0					
+ANR	704	SizeofOperand	int8_t		2	1					
+ANR	705	AdditiveExpression	s -> mb_width - s -> mb_x		2	1		-			
+ANR	706	PtrMemberAccess	s -> mb_width		2	0					
+ANR	707	Identifier	s		2	0					
+ANR	708	Identifier	mb_width		2	1					
+ANR	709	PtrMemberAccess	s -> mb_x		2	1					
+ANR	710	Identifier	s		2	0					
+ANR	711	Identifier	mb_x		2	1					
+ANR	712	IfStatement	if ( s -> mb_x > 0 )		2	1					
+ANR	713	Condition	s -> mb_x > 0	78:12:2561:2571	2	0	True				
+ANR	714	RelationalExpression	s -> mb_x > 0		2	0		>			
+ANR	715	PtrMemberAccess	s -> mb_x		2	0					
+ANR	716	Identifier	s		2	0					
+ANR	717	Identifier	mb_x		2	1					
+ANR	718	PrimaryExpression	0		2	1					
+ANR	719	CompoundStatement		77:25:2521:2521	2	1					
+ANR	720	ExpressionStatement	h -> intra4x4_pred_mode [ 8 * h -> mb2br_xy [ mb_xy - s -> mb_stride - 1 ] + 3 ] = - 1	79:12:2588:2657	2	0	True				
+ANR	721	AssignmentExpression	h -> intra4x4_pred_mode [ 8 * h -> mb2br_xy [ mb_xy - s -> mb_stride - 1 ] + 3 ] = - 1		2	0		=			
+ANR	722	ArrayIndexing	h -> intra4x4_pred_mode [ 8 * h -> mb2br_xy [ mb_xy - s -> mb_stride - 1 ] + 3 ]		2	0					
+ANR	723	PtrMemberAccess	h -> intra4x4_pred_mode		2	0					
+ANR	724	Identifier	h		2	0					
+ANR	725	Identifier	intra4x4_pred_mode		2	1					
+ANR	726	AdditiveExpression	8 * h -> mb2br_xy [ mb_xy - s -> mb_stride - 1 ] + 3		2	1		+			
+ANR	727	MultiplicativeExpression	8 * h -> mb2br_xy [ mb_xy - s -> mb_stride - 1 ]		2	0		*			
+ANR	728	PrimaryExpression	8		2	0					
+ANR	729	ArrayIndexing	h -> mb2br_xy [ mb_xy - s -> mb_stride - 1 ]		2	1					
+ANR	730	PtrMemberAccess	h -> mb2br_xy		2	0					
+ANR	731	Identifier	h		2	0					
+ANR	732	Identifier	mb2br_xy		2	1					
+ANR	733	AdditiveExpression	mb_xy - s -> mb_stride - 1		2	1		-			
+ANR	734	Identifier	mb_xy		2	0					
+ANR	735	AdditiveExpression	s -> mb_stride - 1		2	1		-			
+ANR	736	PtrMemberAccess	s -> mb_stride		2	0					
+ANR	737	Identifier	s		2	0					
+ANR	738	Identifier	mb_stride		2	1					
+ANR	739	PrimaryExpression	1		2	1					
+ANR	740	PrimaryExpression	3		2	1					
+ANR	741	UnaryOperationExpression	- 1		2	1					
+ANR	742	UnaryOperator	-		2	0					
+ANR	743	PrimaryExpression	1		2	1					
+ANR	744	ReturnStatement	return 0 ;	83:4:2680:2688	2	21	True				
+ANR	745	PrimaryExpression	0		2	0					
+ANR	746	ReturnType	static int		2	1					
+ANR	747	Identifier	svq3_decode_slice_header		2	2					
+ANR	748	ParameterList	H264Context * h		2	3					
+ANR	749	Parameter	H264Context * h	1:36:36:49	2	0	True				
+ANR	750	ParameterType	H264Context *		2	0					
+ANR	751	Identifier	h		2	1					
+ANR	752	CFGEntryNode	ENTRY		2		True				
+ANR	753	CFGExitNode	EXIT		2		True				
+ANR	754	Symbol	h -> unknown_svq3_flag		2						
+ANR	755	Symbol	get_bits		2						
+ANR	756	Symbol	s -> mb_width		2						
+ANR	757	Symbol	* golomb_to_pict_type		2						
+ANR	758	Symbol	h -> s . avctx		2						
+ANR	759	Symbol	show_bits		2						
+ANR	760	Symbol	* * mb_xy		2						
+ANR	761	Symbol	* s -> mb_stride		2						
+ANR	762	Symbol	h -> svq3_watermark_key		2						
+ANR	763	Symbol	* * h -> mb2br_xy		2						
+ANR	764	Symbol	s -> gb		2						
+ANR	765	Symbol	* * h		2						
+ANR	766	Symbol	s -> gb . size_in_bits		2						
+ANR	767	Symbol	get_bits1		2						
+ANR	768	Symbol	h -> s		2						
+ANR	769	Symbol	get_bits_count		2						
+ANR	770	Symbol	s -> mb_x		2						
+ANR	771	Symbol	* * * s		2						
+ANR	772	Symbol	& s -> gb		2						
+ANR	773	Symbol	s -> mb_y		2						
+ANR	774	Symbol	* h -> mb2br_xy		2						
+ANR	775	Symbol	header		2						
+ANR	776	Symbol	* * * h		2						
+ANR	777	Symbol	s -> mb_skip_run		2						
+ANR	778	Symbol	av_log2		2						
+ANR	779	Symbol	golomb_to_pict_type		2						
+ANR	780	Symbol	s -> qscale		2						
+ANR	781	Symbol	mb_xy		2						
+ANR	782	Symbol	s -> mb_stride		2						
+ANR	783	Symbol	* h -> intra4x4_pred_mode		2						
+ANR	784	Symbol	h -> slice_type		2						
+ANR	785	Symbol	* * s		2						
+ANR	786	Symbol	h -> next_slice_index		2						
+ANR	787	Symbol	s -> gb . buffer		2						
+ANR	788	Symbol	s -> adaptive_quant		2						
+ANR	789	Symbol	h -> mb2br_xy		2						
+ANR	790	Symbol	AV_LOG_ERROR		2						
+ANR	791	Symbol	svq3_get_ue_golomb		2						
+ANR	792	Symbol	h		2						
+ANR	793	Symbol	length		2						
+ANR	794	Symbol	i		2						
+ANR	795	Symbol	s -> mb_num		2						
+ANR	796	Symbol	* s -> mb_x		2						
+ANR	797	Symbol	h -> mb_xy		2						
+ANR	798	Symbol	* h		2						
+ANR	799	Symbol	INVALID_VLC		2						
+ANR	800	Symbol	s		2						
+ANR	801	Symbol	* i		2						
+ANR	802	Symbol	h -> intra4x4_pred_mode		2						
+ANR	803	Symbol	AV_RL32		2						
+ANR	804	Symbol	* mb_xy		2						
+ANR	805	Symbol	* s		2						
+ANR	806	Symbol	* * s -> mb_stride		2						
+ANR	807	Symbol	h -> slice_num		2						

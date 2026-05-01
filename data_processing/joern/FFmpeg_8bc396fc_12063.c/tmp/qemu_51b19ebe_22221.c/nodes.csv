@@ -1,0 +1,181 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	5467	File	tmp/qemu_51b19ebe_22221.c								
+ANR	5468	Function	control_out	1:0:0:800							
+ANR	5469	FunctionDef	"control_out (VirtIODevice * vdev , VirtQueue * vq)"		5468	0					
+ANR	5470	CompoundStatement		2:0:59:800	5468	0					
+ANR	5471	IdentifierDeclStatement	VirtQueueElement elem ;	3:4:65:86	5468	0	True				
+ANR	5472	IdentifierDecl	elem		5468	0					
+ANR	5473	IdentifierDeclType	VirtQueueElement		5468	0					
+ANR	5474	Identifier	elem		5468	1					
+ANR	5475	IdentifierDeclStatement	VirtIOSerial * vser ;	4:4:92:110	5468	1	True				
+ANR	5476	IdentifierDecl	* vser		5468	0					
+ANR	5477	IdentifierDeclType	VirtIOSerial *		5468	0					
+ANR	5478	Identifier	vser		5468	1					
+ANR	5479	IdentifierDeclStatement	uint8_t * buf ;	5:4:116:128	5468	2	True				
+ANR	5480	IdentifierDecl	* buf		5468	0					
+ANR	5481	IdentifierDeclType	uint8_t *		5468	0					
+ANR	5482	Identifier	buf		5468	1					
+ANR	5483	IdentifierDeclStatement	size_t len ;	6:4:134:144	5468	3	True				
+ANR	5484	IdentifierDecl	len		5468	0					
+ANR	5485	IdentifierDeclType	size_t		5468	0					
+ANR	5486	Identifier	len		5468	1					
+ANR	5487	ExpressionStatement	vser = VIRTIO_SERIAL ( vdev )	8:4:151:177	5468	4	True				
+ANR	5488	AssignmentExpression	vser = VIRTIO_SERIAL ( vdev )		5468	0		=			
+ANR	5489	Identifier	vser		5468	0					
+ANR	5490	CallExpression	VIRTIO_SERIAL ( vdev )		5468	1					
+ANR	5491	Callee	VIRTIO_SERIAL		5468	0					
+ANR	5492	Identifier	VIRTIO_SERIAL		5468	0					
+ANR	5493	ArgumentList	vdev		5468	1					
+ANR	5494	Argument	vdev		5468	0					
+ANR	5495	Identifier	vdev		5468	0					
+ANR	5496	ExpressionStatement	len = 0	10:4:184:191	5468	5	True				
+ANR	5497	AssignmentExpression	len = 0		5468	0		=			
+ANR	5498	Identifier	len		5468	0					
+ANR	5499	PrimaryExpression	0		5468	1					
+ANR	5500	ExpressionStatement	buf = NULL	11:4:197:207	5468	6	True				
+ANR	5501	AssignmentExpression	buf = NULL		5468	0		=			
+ANR	5502	Identifier	buf		5468	0					
+ANR	5503	Identifier	NULL		5468	1					
+ANR	5504	WhileStatement	"while ( virtqueue_pop ( vq , & elem ) )"		5468	7					
+ANR	5505	Condition	"virtqueue_pop ( vq , & elem )"	12:11:220:243	5468	0	True				
+ANR	5506	CallExpression	"virtqueue_pop ( vq , & elem )"		5468	0					
+ANR	5507	Callee	virtqueue_pop		5468	0					
+ANR	5508	Identifier	virtqueue_pop		5468	0					
+ANR	5509	ArgumentList	vq		5468	1					
+ANR	5510	Argument	vq		5468	0					
+ANR	5511	Identifier	vq		5468	0					
+ANR	5512	Argument	& elem		5468	1					
+ANR	5513	UnaryOperationExpression	& elem		5468	0					
+ANR	5514	UnaryOperator	&		5468	0					
+ANR	5515	Identifier	elem		5468	1					
+ANR	5516	CompoundStatement		12:8:196:210	5468	1					
+ANR	5517	IdentifierDeclStatement	size_t cur_len ;	13:8:256:270	5468	0	True				
+ANR	5518	IdentifierDecl	cur_len		5468	0					
+ANR	5519	IdentifierDeclType	size_t		5468	0					
+ANR	5520	Identifier	cur_len		5468	1					
+ANR	5521	ExpressionStatement	"cur_len = iov_size ( elem . out_sg , elem . out_num )"	15:8:281:326	5468	1	True				
+ANR	5522	AssignmentExpression	"cur_len = iov_size ( elem . out_sg , elem . out_num )"		5468	0		=			
+ANR	5523	Identifier	cur_len		5468	0					
+ANR	5524	CallExpression	"iov_size ( elem . out_sg , elem . out_num )"		5468	1					
+ANR	5525	Callee	iov_size		5468	0					
+ANR	5526	Identifier	iov_size		5468	0					
+ANR	5527	ArgumentList	elem . out_sg		5468	1					
+ANR	5528	Argument	elem . out_sg		5468	0					
+ANR	5529	MemberAccess	elem . out_sg		5468	0					
+ANR	5530	Identifier	elem		5468	0					
+ANR	5531	Identifier	out_sg		5468	1					
+ANR	5532	Argument	elem . out_num		5468	1					
+ANR	5533	MemberAccess	elem . out_num		5468	0					
+ANR	5534	Identifier	elem		5468	0					
+ANR	5535	Identifier	out_num		5468	1					
+ANR	5536	IfStatement	if ( cur_len > len )		5468	2					
+ANR	5537	Condition	cur_len > len	20:12:476:488	5468	0	True				
+ANR	5538	RelationalExpression	cur_len > len		5468	0		>			
+ANR	5539	Identifier	cur_len		5468	0					
+ANR	5540	Identifier	len		5468	1					
+ANR	5541	CompoundStatement		19:27:431:431	5468	1					
+ANR	5542	ExpressionStatement	g_free ( buf )	21:12:505:516	5468	0	True				
+ANR	5543	CallExpression	g_free ( buf )		5468	0					
+ANR	5544	Callee	g_free		5468	0					
+ANR	5545	Identifier	g_free		5468	0					
+ANR	5546	ArgumentList	buf		5468	1					
+ANR	5547	Argument	buf		5468	0					
+ANR	5548	Identifier	buf		5468	0					
+ANR	5549	ExpressionStatement	buf = g_malloc ( cur_len )	23:12:531:554	5468	1	True				
+ANR	5550	AssignmentExpression	buf = g_malloc ( cur_len )		5468	0		=			
+ANR	5551	Identifier	buf		5468	0					
+ANR	5552	CallExpression	g_malloc ( cur_len )		5468	1					
+ANR	5553	Callee	g_malloc		5468	0					
+ANR	5554	Identifier	g_malloc		5468	0					
+ANR	5555	ArgumentList	cur_len		5468	1					
+ANR	5556	Argument	cur_len		5468	0					
+ANR	5557	Identifier	cur_len		5468	0					
+ANR	5558	ExpressionStatement	len = cur_len	24:12:568:581	5468	2	True				
+ANR	5559	AssignmentExpression	len = cur_len		5468	0		=			
+ANR	5560	Identifier	len		5468	0					
+ANR	5561	Identifier	cur_len		5468	1					
+ANR	5562	ExpressionStatement	"iov_to_buf ( elem . out_sg , elem . out_num , 0 , buf , cur_len )"	26:8:601:655	5468	3	True				
+ANR	5563	CallExpression	"iov_to_buf ( elem . out_sg , elem . out_num , 0 , buf , cur_len )"		5468	0					
+ANR	5564	Callee	iov_to_buf		5468	0					
+ANR	5565	Identifier	iov_to_buf		5468	0					
+ANR	5566	ArgumentList	elem . out_sg		5468	1					
+ANR	5567	Argument	elem . out_sg		5468	0					
+ANR	5568	MemberAccess	elem . out_sg		5468	0					
+ANR	5569	Identifier	elem		5468	0					
+ANR	5570	Identifier	out_sg		5468	1					
+ANR	5571	Argument	elem . out_num		5468	1					
+ANR	5572	MemberAccess	elem . out_num		5468	0					
+ANR	5573	Identifier	elem		5468	0					
+ANR	5574	Identifier	out_num		5468	1					
+ANR	5575	Argument	0		5468	2					
+ANR	5576	PrimaryExpression	0		5468	0					
+ANR	5577	Argument	buf		5468	3					
+ANR	5578	Identifier	buf		5468	0					
+ANR	5579	Argument	cur_len		5468	4					
+ANR	5580	Identifier	cur_len		5468	0					
+ANR	5581	ExpressionStatement	"handle_control_message ( vser , buf , cur_len )"	28:8:666:708	5468	4	True				
+ANR	5582	CallExpression	"handle_control_message ( vser , buf , cur_len )"		5468	0					
+ANR	5583	Callee	handle_control_message		5468	0					
+ANR	5584	Identifier	handle_control_message		5468	0					
+ANR	5585	ArgumentList	vser		5468	1					
+ANR	5586	Argument	vser		5468	0					
+ANR	5587	Identifier	vser		5468	0					
+ANR	5588	Argument	buf		5468	1					
+ANR	5589	Identifier	buf		5468	0					
+ANR	5590	Argument	cur_len		5468	2					
+ANR	5591	Identifier	cur_len		5468	0					
+ANR	5592	ExpressionStatement	"virtqueue_push ( vq , & elem , 0 )"	29:8:718:746	5468	5	True				
+ANR	5593	CallExpression	"virtqueue_push ( vq , & elem , 0 )"		5468	0					
+ANR	5594	Callee	virtqueue_push		5468	0					
+ANR	5595	Identifier	virtqueue_push		5468	0					
+ANR	5596	ArgumentList	vq		5468	1					
+ANR	5597	Argument	vq		5468	0					
+ANR	5598	Identifier	vq		5468	0					
+ANR	5599	Argument	& elem		5468	1					
+ANR	5600	UnaryOperationExpression	& elem		5468	0					
+ANR	5601	UnaryOperator	&		5468	0					
+ANR	5602	Identifier	elem		5468	1					
+ANR	5603	Argument	0		5468	2					
+ANR	5604	PrimaryExpression	0		5468	0					
+ANR	5605	ExpressionStatement	g_free ( buf )	31:4:758:769	5468	8	True				
+ANR	5606	CallExpression	g_free ( buf )		5468	0					
+ANR	5607	Callee	g_free		5468	0					
+ANR	5608	Identifier	g_free		5468	0					
+ANR	5609	ArgumentList	buf		5468	1					
+ANR	5610	Argument	buf		5468	0					
+ANR	5611	Identifier	buf		5468	0					
+ANR	5612	ExpressionStatement	"virtio_notify ( vdev , vq )"	32:4:775:798	5468	9	True				
+ANR	5613	CallExpression	"virtio_notify ( vdev , vq )"		5468	0					
+ANR	5614	Callee	virtio_notify		5468	0					
+ANR	5615	Identifier	virtio_notify		5468	0					
+ANR	5616	ArgumentList	vdev		5468	1					
+ANR	5617	Argument	vdev		5468	0					
+ANR	5618	Identifier	vdev		5468	0					
+ANR	5619	Argument	vq		5468	1					
+ANR	5620	Identifier	vq		5468	0					
+ANR	5621	ReturnType	static void		5468	1					
+ANR	5622	Identifier	control_out		5468	2					
+ANR	5623	ParameterList	"VirtIODevice * vdev , VirtQueue * vq"		5468	3					
+ANR	5624	Parameter	VirtIODevice * vdev	1:24:24:41	5468	0	True				
+ANR	5625	ParameterType	VirtIODevice *		5468	0					
+ANR	5626	Identifier	vdev		5468	1					
+ANR	5627	Parameter	VirtQueue * vq	1:44:44:56	5468	1	True				
+ANR	5628	ParameterType	VirtQueue *		5468	0					
+ANR	5629	Identifier	vq		5468	1					
+ANR	5630	CFGEntryNode	ENTRY		5468		True				
+ANR	5631	CFGExitNode	EXIT		5468		True				
+ANR	5632	Symbol	elem		5468						
+ANR	5633	Symbol	NULL		5468						
+ANR	5634	Symbol	& elem		5468						
+ANR	5635	Symbol	vdev		5468						
+ANR	5636	Symbol	iov_size		5468						
+ANR	5637	Symbol	buf		5468						
+ANR	5638	Symbol	g_malloc		5468						
+ANR	5639	Symbol	len		5468						
+ANR	5640	Symbol	VIRTIO_SERIAL		5468						
+ANR	5641	Symbol	cur_len		5468						
+ANR	5642	Symbol	elem . out_num		5468						
+ANR	5643	Symbol	elem . out_sg		5468						
+ANR	5644	Symbol	virtqueue_pop		5468						
+ANR	5645	Symbol	vq		5468						
+ANR	5646	Symbol	vser		5468						

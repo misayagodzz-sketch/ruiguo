@@ -1,0 +1,745 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	234	File	tmp/qemu_d0e7605e_16419.c								
+ANR	235	Function	pflash_cfi02_register	1:0:0:4353							
+ANR	236	FunctionDef	"pflash_cfi02_register (target_phys_addr_t base , ram_addr_t off , BlockDriverState * bs , uint32_t sector_len , int nb_blocs , int nb_mappings , int width , uint16_t id0 , uint16_t id1 , uint16_t id2 , uint16_t id3 , uint16_t unlock_addr0 , uint16_t unlock_addr1)"		235	0					
+ANR	237	CompoundStatement		7:0:420:4353	235	0					
+ANR	238	IdentifierDeclStatement	pflash_t * pfl ;	8:4:426:439	235	0	True				
+ANR	239	IdentifierDecl	* pfl		235	0					
+ANR	240	IdentifierDeclType	pflash_t *		235	0					
+ANR	241	Identifier	pfl		235	1					
+ANR	242	IdentifierDeclStatement	int32_t chip_len ;	9:4:445:461	235	1	True				
+ANR	243	IdentifierDecl	chip_len		235	0					
+ANR	244	IdentifierDeclType	int32_t		235	0					
+ANR	245	Identifier	chip_len		235	1					
+ANR	246	ExpressionStatement	chip_len = sector_len * nb_blocs	11:4:468:500	235	2	True				
+ANR	247	AssignmentExpression	chip_len = sector_len * nb_blocs		235	0		=			
+ANR	248	Identifier	chip_len		235	0					
+ANR	249	MultiplicativeExpression	sector_len * nb_blocs		235	1		*			
+ANR	250	Identifier	sector_len		235	0					
+ANR	251	Identifier	nb_blocs		235	1					
+ANR	252	IfStatement	if ( total_len != ( 8 * 1024 * 1024 ) && total_len != ( 16 * 1024 * 1024 ) && total_len != ( 32 * 1024 * 1024 ) && total_len != ( 64 * 1024 * 1024 ) )		235	3					
+ANR	253	Condition	total_len != ( 8 * 1024 * 1024 ) && total_len != ( 16 * 1024 * 1024 ) && total_len != ( 32 * 1024 * 1024 ) && total_len != ( 64 * 1024 * 1024 )	14:8:543:685	235	0	True				
+ANR	254	AndExpression	total_len != ( 8 * 1024 * 1024 ) && total_len != ( 16 * 1024 * 1024 ) && total_len != ( 32 * 1024 * 1024 ) && total_len != ( 64 * 1024 * 1024 )		235	0		&&			
+ANR	255	EqualityExpression	total_len != ( 8 * 1024 * 1024 )		235	0		!=			
+ANR	256	Identifier	total_len		235	0					
+ANR	257	MultiplicativeExpression	8 * 1024 * 1024		235	1		*			
+ANR	258	PrimaryExpression	8		235	0					
+ANR	259	MultiplicativeExpression	1024 * 1024		235	1		*			
+ANR	260	PrimaryExpression	1024		235	0					
+ANR	261	PrimaryExpression	1024		235	1					
+ANR	262	AndExpression	total_len != ( 16 * 1024 * 1024 ) && total_len != ( 32 * 1024 * 1024 ) && total_len != ( 64 * 1024 * 1024 )		235	1		&&			
+ANR	263	EqualityExpression	total_len != ( 16 * 1024 * 1024 )		235	0		!=			
+ANR	264	Identifier	total_len		235	0					
+ANR	265	MultiplicativeExpression	16 * 1024 * 1024		235	1		*			
+ANR	266	PrimaryExpression	16		235	0					
+ANR	267	MultiplicativeExpression	1024 * 1024		235	1		*			
+ANR	268	PrimaryExpression	1024		235	0					
+ANR	269	PrimaryExpression	1024		235	1					
+ANR	270	AndExpression	total_len != ( 32 * 1024 * 1024 ) && total_len != ( 64 * 1024 * 1024 )		235	1		&&			
+ANR	271	EqualityExpression	total_len != ( 32 * 1024 * 1024 )		235	0		!=			
+ANR	272	Identifier	total_len		235	0					
+ANR	273	MultiplicativeExpression	32 * 1024 * 1024		235	1		*			
+ANR	274	PrimaryExpression	32		235	0					
+ANR	275	MultiplicativeExpression	1024 * 1024		235	1		*			
+ANR	276	PrimaryExpression	1024		235	0					
+ANR	277	PrimaryExpression	1024		235	1					
+ANR	278	EqualityExpression	total_len != ( 64 * 1024 * 1024 )		235	1		!=			
+ANR	279	Identifier	total_len		235	0					
+ANR	280	MultiplicativeExpression	64 * 1024 * 1024		235	1		*			
+ANR	281	PrimaryExpression	64		235	0					
+ANR	282	MultiplicativeExpression	1024 * 1024		235	1		*			
+ANR	283	PrimaryExpression	1024		235	0					
+ANR	284	PrimaryExpression	1024		235	1					
+ANR	285	ReturnStatement	return NULL ;	16:8:696:707	235	1	True				
+ANR	286	Identifier	NULL		235	0					
+ANR	287	ExpressionStatement	pfl = qemu_mallocz ( sizeof ( pflash_t ) )	18:4:720:756	235	4	True				
+ANR	288	AssignmentExpression	pfl = qemu_mallocz ( sizeof ( pflash_t ) )		235	0		=			
+ANR	289	Identifier	pfl		235	0					
+ANR	290	CallExpression	qemu_mallocz ( sizeof ( pflash_t ) )		235	1					
+ANR	291	Callee	qemu_mallocz		235	0					
+ANR	292	Identifier	qemu_mallocz		235	0					
+ANR	293	ArgumentList	sizeof ( pflash_t )		235	1					
+ANR	294	Argument	sizeof ( pflash_t )		235	0					
+ANR	295	SizeofExpression	sizeof ( pflash_t )		235	0					
+ANR	296	Sizeof	sizeof		235	0					
+ANR	297	SizeofOperand	pflash_t		235	1					
+ANR	298	ExpressionStatement	pfl -> storage = qemu_get_ram_ptr ( off )	20:4:804:840	235	5	True				
+ANR	299	AssignmentExpression	pfl -> storage = qemu_get_ram_ptr ( off )		235	0		=			
+ANR	300	PtrMemberAccess	pfl -> storage		235	0					
+ANR	301	Identifier	pfl		235	0					
+ANR	302	Identifier	storage		235	1					
+ANR	303	CallExpression	qemu_get_ram_ptr ( off )		235	1					
+ANR	304	Callee	qemu_get_ram_ptr		235	0					
+ANR	305	Identifier	qemu_get_ram_ptr		235	0					
+ANR	306	ArgumentList	off		235	1					
+ANR	307	Argument	off		235	0					
+ANR	308	Identifier	off		235	0					
+ANR	309	ExpressionStatement	"pfl -> fl_mem = cpu_register_io_memory ( pflash_read_ops , pflash_write_ops , pfl )"	21:4:846:963	235	6	True				
+ANR	310	AssignmentExpression	"pfl -> fl_mem = cpu_register_io_memory ( pflash_read_ops , pflash_write_ops , pfl )"		235	0		=			
+ANR	311	PtrMemberAccess	pfl -> fl_mem		235	0					
+ANR	312	Identifier	pfl		235	0					
+ANR	313	Identifier	fl_mem		235	1					
+ANR	314	CallExpression	"cpu_register_io_memory ( pflash_read_ops , pflash_write_ops , pfl )"		235	1					
+ANR	315	Callee	cpu_register_io_memory		235	0					
+ANR	316	Identifier	cpu_register_io_memory		235	0					
+ANR	317	ArgumentList	pflash_read_ops		235	1					
+ANR	318	Argument	pflash_read_ops		235	0					
+ANR	319	Identifier	pflash_read_ops		235	0					
+ANR	320	Argument	pflash_write_ops		235	1					
+ANR	321	Identifier	pflash_write_ops		235	0					
+ANR	322	Argument	pfl		235	2					
+ANR	323	Identifier	pfl		235	0					
+ANR	324	ExpressionStatement	pfl -> off = off	23:4:969:983	235	7	True				
+ANR	325	AssignmentExpression	pfl -> off = off		235	0		=			
+ANR	326	PtrMemberAccess	pfl -> off		235	0					
+ANR	327	Identifier	pfl		235	0					
+ANR	328	Identifier	off		235	1					
+ANR	329	Identifier	off		235	1					
+ANR	330	ExpressionStatement	pfl -> base = base	24:4:989:1005	235	8	True				
+ANR	331	AssignmentExpression	pfl -> base = base		235	0		=			
+ANR	332	PtrMemberAccess	pfl -> base		235	0					
+ANR	333	Identifier	pfl		235	0					
+ANR	334	Identifier	base		235	1					
+ANR	335	Identifier	base		235	1					
+ANR	336	ExpressionStatement	pfl -> chip_len = chip_len	25:4:1011:1035	235	9	True				
+ANR	337	AssignmentExpression	pfl -> chip_len = chip_len		235	0		=			
+ANR	338	PtrMemberAccess	pfl -> chip_len		235	0					
+ANR	339	Identifier	pfl		235	0					
+ANR	340	Identifier	chip_len		235	1					
+ANR	341	Identifier	chip_len		235	1					
+ANR	342	ExpressionStatement	pfl -> mappings = nb_mappings	26:4:1041:1068	235	10	True				
+ANR	343	AssignmentExpression	pfl -> mappings = nb_mappings		235	0		=			
+ANR	344	PtrMemberAccess	pfl -> mappings		235	0					
+ANR	345	Identifier	pfl		235	0					
+ANR	346	Identifier	mappings		235	1					
+ANR	347	Identifier	nb_mappings		235	1					
+ANR	348	ExpressionStatement	"pflash_register_memory ( pfl , 1 )"	27:4:1074:1104	235	11	True				
+ANR	349	CallExpression	"pflash_register_memory ( pfl , 1 )"		235	0					
+ANR	350	Callee	pflash_register_memory		235	0					
+ANR	351	Identifier	pflash_register_memory		235	0					
+ANR	352	ArgumentList	pfl		235	1					
+ANR	353	Argument	pfl		235	0					
+ANR	354	Identifier	pfl		235	0					
+ANR	355	Argument	1		235	1					
+ANR	356	PrimaryExpression	1		235	0					
+ANR	357	ExpressionStatement	pfl -> bs = bs	28:4:1110:1122	235	12	True				
+ANR	358	AssignmentExpression	pfl -> bs = bs		235	0		=			
+ANR	359	PtrMemberAccess	pfl -> bs		235	0					
+ANR	360	Identifier	pfl		235	0					
+ANR	361	Identifier	bs		235	1					
+ANR	362	Identifier	bs		235	1					
+ANR	363	IfStatement	if ( pfl -> bs )		235	13					
+ANR	364	Condition	pfl -> bs	29:8:1132:1138	235	0	True				
+ANR	365	PtrMemberAccess	pfl -> bs		235	0					
+ANR	366	Identifier	pfl		235	0					
+ANR	367	Identifier	bs		235	1					
+ANR	368	CompoundStatement		23:17:720:720	235	1					
+ANR	369	ExpressionStatement	"bdrv_read ( pfl -> bs , 0 , pfl -> storage , chip_len >> 9 )"	31:8:1196:1246	235	0	True				
+ANR	370	CallExpression	"bdrv_read ( pfl -> bs , 0 , pfl -> storage , chip_len >> 9 )"		235	0					
+ANR	371	Callee	bdrv_read		235	0					
+ANR	372	Identifier	bdrv_read		235	0					
+ANR	373	ArgumentList	pfl -> bs		235	1					
+ANR	374	Argument	pfl -> bs		235	0					
+ANR	375	PtrMemberAccess	pfl -> bs		235	0					
+ANR	376	Identifier	pfl		235	0					
+ANR	377	Identifier	bs		235	1					
+ANR	378	Argument	0		235	1					
+ANR	379	PrimaryExpression	0		235	0					
+ANR	380	Argument	pfl -> storage		235	2					
+ANR	381	PtrMemberAccess	pfl -> storage		235	0					
+ANR	382	Identifier	pfl		235	0					
+ANR	383	Identifier	storage		235	1					
+ANR	384	Argument	chip_len >> 9		235	3					
+ANR	385	ShiftExpression	chip_len >> 9		235	0		>>			
+ANR	386	Identifier	chip_len		235	0					
+ANR	387	PrimaryExpression	9		235	1					
+ANR	388	Statement	*	34:7:1318:1318	235	14	True				
+ANR	389	Statement	the	34:14:1325:1327	235	15	True				
+ANR	390	Statement	same	34:18:1329:1332	235	16	True				
+ANR	391	Statement	way	34:23:1334:1336	235	17	True				
+ANR	392	Statement	the	34:27:1338:1340	235	18	True				
+ANR	393	Statement	hardware	34:31:1342:1349	235	19	True				
+ANR	394	Statement	does	34:40:1351:1354	235	20	True				
+ANR	395	Statement	(	34:45:1356:1356	235	21	True				
+ANR	396	Statement	with	34:46:1357:1360	235	22	True				
+ANR	397	Statement	WP	34:51:1362:1363	235	23	True				
+ANR	398	Statement	pin	34:54:1365:1367	235	24	True				
+ANR	399	Statement	)	34:57:1368:1368	235	25	True				
+ANR	400	Statement	.	34:58:1369:1369	235	26	True				
+ANR	401	Statement	*	35:7:1378:1378	235	27	True				
+ANR	402	Statement	/	35:8:1379:1379	235	28	True				
+ANR	403	ExpressionStatement	pfl -> ro = 1	36:4:1385:1396	235	29	True				
+ANR	404	AssignmentExpression	pfl -> ro = 1		235	0		=			
+ANR	405	PtrMemberAccess	pfl -> ro		235	0					
+ANR	406	Identifier	pfl		235	0					
+ANR	407	Identifier	ro		235	1					
+ANR	408	PrimaryExpression	1		235	1					
+ANR	409	ExpressionStatement	"pfl -> timer = qemu_new_timer ( vm_clock , pflash_timer , pfl )"	40:4:1432:1488	235	30	True				
+ANR	410	AssignmentExpression	"pfl -> timer = qemu_new_timer ( vm_clock , pflash_timer , pfl )"		235	0		=			
+ANR	411	PtrMemberAccess	pfl -> timer		235	0					
+ANR	412	Identifier	pfl		235	0					
+ANR	413	Identifier	timer		235	1					
+ANR	414	CallExpression	"qemu_new_timer ( vm_clock , pflash_timer , pfl )"		235	1					
+ANR	415	Callee	qemu_new_timer		235	0					
+ANR	416	Identifier	qemu_new_timer		235	0					
+ANR	417	ArgumentList	vm_clock		235	1					
+ANR	418	Argument	vm_clock		235	0					
+ANR	419	Identifier	vm_clock		235	0					
+ANR	420	Argument	pflash_timer		235	1					
+ANR	421	Identifier	pflash_timer		235	0					
+ANR	422	Argument	pfl		235	2					
+ANR	423	Identifier	pfl		235	0					
+ANR	424	ExpressionStatement	pfl -> sector_len = sector_len	41:4:1494:1522	235	31	True				
+ANR	425	AssignmentExpression	pfl -> sector_len = sector_len		235	0		=			
+ANR	426	PtrMemberAccess	pfl -> sector_len		235	0					
+ANR	427	Identifier	pfl		235	0					
+ANR	428	Identifier	sector_len		235	1					
+ANR	429	Identifier	sector_len		235	1					
+ANR	430	ExpressionStatement	pfl -> width = width	42:4:1528:1546	235	32	True				
+ANR	431	AssignmentExpression	pfl -> width = width		235	0		=			
+ANR	432	PtrMemberAccess	pfl -> width		235	0					
+ANR	433	Identifier	pfl		235	0					
+ANR	434	Identifier	width		235	1					
+ANR	435	Identifier	width		235	1					
+ANR	436	ExpressionStatement	pfl -> wcycle = 0	43:4:1552:1567	235	33	True				
+ANR	437	AssignmentExpression	pfl -> wcycle = 0		235	0		=			
+ANR	438	PtrMemberAccess	pfl -> wcycle		235	0					
+ANR	439	Identifier	pfl		235	0					
+ANR	440	Identifier	wcycle		235	1					
+ANR	441	PrimaryExpression	0		235	1					
+ANR	442	ExpressionStatement	pfl -> cmd = 0	44:4:1573:1585	235	34	True				
+ANR	443	AssignmentExpression	pfl -> cmd = 0		235	0		=			
+ANR	444	PtrMemberAccess	pfl -> cmd		235	0					
+ANR	445	Identifier	pfl		235	0					
+ANR	446	Identifier	cmd		235	1					
+ANR	447	PrimaryExpression	0		235	1					
+ANR	448	ExpressionStatement	pfl -> status = 0	45:4:1591:1606	235	35	True				
+ANR	449	AssignmentExpression	pfl -> status = 0		235	0		=			
+ANR	450	PtrMemberAccess	pfl -> status		235	0					
+ANR	451	Identifier	pfl		235	0					
+ANR	452	Identifier	status		235	1					
+ANR	453	PrimaryExpression	0		235	1					
+ANR	454	ExpressionStatement	pfl -> ident [ 0 ] = id0	46:4:1612:1631	235	36	True				
+ANR	455	AssignmentExpression	pfl -> ident [ 0 ] = id0		235	0		=			
+ANR	456	ArrayIndexing	pfl -> ident [ 0 ]		235	0					
+ANR	457	PtrMemberAccess	pfl -> ident		235	0					
+ANR	458	Identifier	pfl		235	0					
+ANR	459	Identifier	ident		235	1					
+ANR	460	PrimaryExpression	0		235	1					
+ANR	461	Identifier	id0		235	1					
+ANR	462	ExpressionStatement	pfl -> ident [ 1 ] = id1	47:4:1637:1656	235	37	True				
+ANR	463	AssignmentExpression	pfl -> ident [ 1 ] = id1		235	0		=			
+ANR	464	ArrayIndexing	pfl -> ident [ 1 ]		235	0					
+ANR	465	PtrMemberAccess	pfl -> ident		235	0					
+ANR	466	Identifier	pfl		235	0					
+ANR	467	Identifier	ident		235	1					
+ANR	468	PrimaryExpression	1		235	1					
+ANR	469	Identifier	id1		235	1					
+ANR	470	ExpressionStatement	pfl -> ident [ 2 ] = id2	48:4:1662:1681	235	38	True				
+ANR	471	AssignmentExpression	pfl -> ident [ 2 ] = id2		235	0		=			
+ANR	472	ArrayIndexing	pfl -> ident [ 2 ]		235	0					
+ANR	473	PtrMemberAccess	pfl -> ident		235	0					
+ANR	474	Identifier	pfl		235	0					
+ANR	475	Identifier	ident		235	1					
+ANR	476	PrimaryExpression	2		235	1					
+ANR	477	Identifier	id2		235	1					
+ANR	478	ExpressionStatement	pfl -> ident [ 3 ] = id3	49:4:1687:1706	235	39	True				
+ANR	479	AssignmentExpression	pfl -> ident [ 3 ] = id3		235	0		=			
+ANR	480	ArrayIndexing	pfl -> ident [ 3 ]		235	0					
+ANR	481	PtrMemberAccess	pfl -> ident		235	0					
+ANR	482	Identifier	pfl		235	0					
+ANR	483	Identifier	ident		235	1					
+ANR	484	PrimaryExpression	3		235	1					
+ANR	485	Identifier	id3		235	1					
+ANR	486	ExpressionStatement	pfl -> unlock_addr [ 0 ] = unlock_addr0	50:4:1712:1746	235	40	True				
+ANR	487	AssignmentExpression	pfl -> unlock_addr [ 0 ] = unlock_addr0		235	0		=			
+ANR	488	ArrayIndexing	pfl -> unlock_addr [ 0 ]		235	0					
+ANR	489	PtrMemberAccess	pfl -> unlock_addr		235	0					
+ANR	490	Identifier	pfl		235	0					
+ANR	491	Identifier	unlock_addr		235	1					
+ANR	492	PrimaryExpression	0		235	1					
+ANR	493	Identifier	unlock_addr0		235	1					
+ANR	494	ExpressionStatement	pfl -> unlock_addr [ 1 ] = unlock_addr1	51:4:1752:1786	235	41	True				
+ANR	495	AssignmentExpression	pfl -> unlock_addr [ 1 ] = unlock_addr1		235	0		=			
+ANR	496	ArrayIndexing	pfl -> unlock_addr [ 1 ]		235	0					
+ANR	497	PtrMemberAccess	pfl -> unlock_addr		235	0					
+ANR	498	Identifier	pfl		235	0					
+ANR	499	Identifier	unlock_addr		235	1					
+ANR	500	PrimaryExpression	1		235	1					
+ANR	501	Identifier	unlock_addr1		235	1					
+ANR	502	ExpressionStatement	pfl -> cfi_len = 0x52	53:4:1856:1875	235	42	True				
+ANR	503	AssignmentExpression	pfl -> cfi_len = 0x52		235	0		=			
+ANR	504	PtrMemberAccess	pfl -> cfi_len		235	0					
+ANR	505	Identifier	pfl		235	0					
+ANR	506	Identifier	cfi_len		235	1					
+ANR	507	PrimaryExpression	0x52		235	1					
+ANR	508	ExpressionStatement	pfl -> cfi_table [ 0x10 ] = 'Q'	55:4:1913:1939	235	43	True				
+ANR	509	AssignmentExpression	pfl -> cfi_table [ 0x10 ] = 'Q'		235	0		=			
+ANR	510	ArrayIndexing	pfl -> cfi_table [ 0x10 ]		235	0					
+ANR	511	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	512	Identifier	pfl		235	0					
+ANR	513	Identifier	cfi_table		235	1					
+ANR	514	PrimaryExpression	0x10		235	1					
+ANR	515	PrimaryExpression	'Q'		235	1					
+ANR	516	ExpressionStatement	pfl -> cfi_table [ 0x11 ] = 'R'	56:4:1945:1971	235	44	True				
+ANR	517	AssignmentExpression	pfl -> cfi_table [ 0x11 ] = 'R'		235	0		=			
+ANR	518	ArrayIndexing	pfl -> cfi_table [ 0x11 ]		235	0					
+ANR	519	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	520	Identifier	pfl		235	0					
+ANR	521	Identifier	cfi_table		235	1					
+ANR	522	PrimaryExpression	0x11		235	1					
+ANR	523	PrimaryExpression	'R'		235	1					
+ANR	524	ExpressionStatement	pfl -> cfi_table [ 0x12 ] = 'Y'	57:4:1977:2003	235	45	True				
+ANR	525	AssignmentExpression	pfl -> cfi_table [ 0x12 ] = 'Y'		235	0		=			
+ANR	526	ArrayIndexing	pfl -> cfi_table [ 0x12 ]		235	0					
+ANR	527	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	528	Identifier	pfl		235	0					
+ANR	529	Identifier	cfi_table		235	1					
+ANR	530	PrimaryExpression	0x12		235	1					
+ANR	531	PrimaryExpression	'Y'		235	1					
+ANR	532	ExpressionStatement	pfl -> cfi_table [ 0x13 ] = 0x02	59:4:2045:2072	235	46	True				
+ANR	533	AssignmentExpression	pfl -> cfi_table [ 0x13 ] = 0x02		235	0		=			
+ANR	534	ArrayIndexing	pfl -> cfi_table [ 0x13 ]		235	0					
+ANR	535	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	536	Identifier	pfl		235	0					
+ANR	537	Identifier	cfi_table		235	1					
+ANR	538	PrimaryExpression	0x13		235	1					
+ANR	539	PrimaryExpression	0x02		235	1					
+ANR	540	ExpressionStatement	pfl -> cfi_table [ 0x14 ] = 0x00	60:4:2078:2105	235	47	True				
+ANR	541	AssignmentExpression	pfl -> cfi_table [ 0x14 ] = 0x00		235	0		=			
+ANR	542	ArrayIndexing	pfl -> cfi_table [ 0x14 ]		235	0					
+ANR	543	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	544	Identifier	pfl		235	0					
+ANR	545	Identifier	cfi_table		235	1					
+ANR	546	PrimaryExpression	0x14		235	1					
+ANR	547	PrimaryExpression	0x00		235	1					
+ANR	548	ExpressionStatement	pfl -> cfi_table [ 0x15 ] = 0x31	62:4:2152:2179	235	48	True				
+ANR	549	AssignmentExpression	pfl -> cfi_table [ 0x15 ] = 0x31		235	0		=			
+ANR	550	ArrayIndexing	pfl -> cfi_table [ 0x15 ]		235	0					
+ANR	551	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	552	Identifier	pfl		235	0					
+ANR	553	Identifier	cfi_table		235	1					
+ANR	554	PrimaryExpression	0x15		235	1					
+ANR	555	PrimaryExpression	0x31		235	1					
+ANR	556	ExpressionStatement	pfl -> cfi_table [ 0x16 ] = 0x00	63:4:2185:2212	235	49	True				
+ANR	557	AssignmentExpression	pfl -> cfi_table [ 0x16 ] = 0x00		235	0		=			
+ANR	558	ArrayIndexing	pfl -> cfi_table [ 0x16 ]		235	0					
+ANR	559	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	560	Identifier	pfl		235	0					
+ANR	561	Identifier	cfi_table		235	1					
+ANR	562	PrimaryExpression	0x16		235	1					
+ANR	563	PrimaryExpression	0x00		235	1					
+ANR	564	ExpressionStatement	pfl -> cfi_table [ 0x17 ] = 0x00	65:4:2257:2284	235	50	True				
+ANR	565	AssignmentExpression	pfl -> cfi_table [ 0x17 ] = 0x00		235	0		=			
+ANR	566	ArrayIndexing	pfl -> cfi_table [ 0x17 ]		235	0					
+ANR	567	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	568	Identifier	pfl		235	0					
+ANR	569	Identifier	cfi_table		235	1					
+ANR	570	PrimaryExpression	0x17		235	1					
+ANR	571	PrimaryExpression	0x00		235	1					
+ANR	572	ExpressionStatement	pfl -> cfi_table [ 0x18 ] = 0x00	66:4:2290:2317	235	51	True				
+ANR	573	AssignmentExpression	pfl -> cfi_table [ 0x18 ] = 0x00		235	0		=			
+ANR	574	ArrayIndexing	pfl -> cfi_table [ 0x18 ]		235	0					
+ANR	575	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	576	Identifier	pfl		235	0					
+ANR	577	Identifier	cfi_table		235	1					
+ANR	578	PrimaryExpression	0x18		235	1					
+ANR	579	PrimaryExpression	0x00		235	1					
+ANR	580	ExpressionStatement	pfl -> cfi_table [ 0x19 ] = 0x00	68:4:2365:2392	235	52	True				
+ANR	581	AssignmentExpression	pfl -> cfi_table [ 0x19 ] = 0x00		235	0		=			
+ANR	582	ArrayIndexing	pfl -> cfi_table [ 0x19 ]		235	0					
+ANR	583	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	584	Identifier	pfl		235	0					
+ANR	585	Identifier	cfi_table		235	1					
+ANR	586	PrimaryExpression	0x19		235	1					
+ANR	587	PrimaryExpression	0x00		235	1					
+ANR	588	ExpressionStatement	pfl -> cfi_table [ 0x1A ] = 0x00	69:4:2398:2425	235	53	True				
+ANR	589	AssignmentExpression	pfl -> cfi_table [ 0x1A ] = 0x00		235	0		=			
+ANR	590	ArrayIndexing	pfl -> cfi_table [ 0x1A ]		235	0					
+ANR	591	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	592	Identifier	pfl		235	0					
+ANR	593	Identifier	cfi_table		235	1					
+ANR	594	PrimaryExpression	0x1A		235	1					
+ANR	595	PrimaryExpression	0x00		235	1					
+ANR	596	ExpressionStatement	pfl -> cfi_table [ 0x1B ] = 0x27	71:4:2449:2476	235	54	True				
+ANR	597	AssignmentExpression	pfl -> cfi_table [ 0x1B ] = 0x27		235	0		=			
+ANR	598	ArrayIndexing	pfl -> cfi_table [ 0x1B ]		235	0					
+ANR	599	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	600	Identifier	pfl		235	0					
+ANR	601	Identifier	cfi_table		235	1					
+ANR	602	PrimaryExpression	0x1B		235	1					
+ANR	603	PrimaryExpression	0x27		235	1					
+ANR	604	ExpressionStatement	pfl -> cfi_table [ 0x1C ] = 0x36	73:4:2500:2527	235	55	True				
+ANR	605	AssignmentExpression	pfl -> cfi_table [ 0x1C ] = 0x36		235	0		=			
+ANR	606	ArrayIndexing	pfl -> cfi_table [ 0x1C ]		235	0					
+ANR	607	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	608	Identifier	pfl		235	0					
+ANR	609	Identifier	cfi_table		235	1					
+ANR	610	PrimaryExpression	0x1C		235	1					
+ANR	611	PrimaryExpression	0x36		235	1					
+ANR	612	ExpressionStatement	pfl -> cfi_table [ 0x1D ] = 0x00	75:4:2564:2591	235	56	True				
+ANR	613	AssignmentExpression	pfl -> cfi_table [ 0x1D ] = 0x00		235	0		=			
+ANR	614	ArrayIndexing	pfl -> cfi_table [ 0x1D ]		235	0					
+ANR	615	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	616	Identifier	pfl		235	0					
+ANR	617	Identifier	cfi_table		235	1					
+ANR	618	PrimaryExpression	0x1D		235	1					
+ANR	619	PrimaryExpression	0x00		235	1					
+ANR	620	ExpressionStatement	pfl -> cfi_table [ 0x1E ] = 0x00	77:4:2628:2655	235	57	True				
+ANR	621	AssignmentExpression	pfl -> cfi_table [ 0x1E ] = 0x00		235	0		=			
+ANR	622	ArrayIndexing	pfl -> cfi_table [ 0x1E ]		235	0					
+ANR	623	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	624	Identifier	pfl		235	0					
+ANR	625	Identifier	cfi_table		235	1					
+ANR	626	PrimaryExpression	0x1E		235	1					
+ANR	627	PrimaryExpression	0x00		235	1					
+ANR	628	ExpressionStatement	pfl -> cfi_table [ 0x1F ] = 0x07	79:4:2680:2707	235	58	True				
+ANR	629	AssignmentExpression	pfl -> cfi_table [ 0x1F ] = 0x07		235	0		=			
+ANR	630	ArrayIndexing	pfl -> cfi_table [ 0x1F ]		235	0					
+ANR	631	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	632	Identifier	pfl		235	0					
+ANR	633	Identifier	cfi_table		235	1					
+ANR	634	PrimaryExpression	0x1F		235	1					
+ANR	635	PrimaryExpression	0x07		235	1					
+ANR	636	ExpressionStatement	pfl -> cfi_table [ 0x20 ] = 0x00	81:4:2762:2789	235	59	True				
+ANR	637	AssignmentExpression	pfl -> cfi_table [ 0x20 ] = 0x00		235	0		=			
+ANR	638	ArrayIndexing	pfl -> cfi_table [ 0x20 ]		235	0					
+ANR	639	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	640	Identifier	pfl		235	0					
+ANR	641	Identifier	cfi_table		235	1					
+ANR	642	PrimaryExpression	0x20		235	1					
+ANR	643	PrimaryExpression	0x00		235	1					
+ANR	644	ExpressionStatement	pfl -> cfi_table [ 0x21 ] = 0x09	83:4:2846:2873	235	60	True				
+ANR	645	AssignmentExpression	pfl -> cfi_table [ 0x21 ] = 0x09		235	0		=			
+ANR	646	ArrayIndexing	pfl -> cfi_table [ 0x21 ]		235	0					
+ANR	647	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	648	Identifier	pfl		235	0					
+ANR	649	Identifier	cfi_table		235	1					
+ANR	650	PrimaryExpression	0x21		235	1					
+ANR	651	PrimaryExpression	0x09		235	1					
+ANR	652	ExpressionStatement	pfl -> cfi_table [ 0x22 ] = 0x0C	85:4:2935:2962	235	61	True				
+ANR	653	AssignmentExpression	pfl -> cfi_table [ 0x22 ] = 0x0C		235	0		=			
+ANR	654	ArrayIndexing	pfl -> cfi_table [ 0x22 ]		235	0					
+ANR	655	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	656	Identifier	pfl		235	0					
+ANR	657	Identifier	cfi_table		235	1					
+ANR	658	PrimaryExpression	0x22		235	1					
+ANR	659	PrimaryExpression	0x0C		235	1					
+ANR	660	ExpressionStatement	pfl -> cfi_table [ 0x23 ] = 0x01	87:4:2987:3014	235	62	True				
+ANR	661	AssignmentExpression	pfl -> cfi_table [ 0x23 ] = 0x01		235	0		=			
+ANR	662	ArrayIndexing	pfl -> cfi_table [ 0x23 ]		235	0					
+ANR	663	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	664	Identifier	pfl		235	0					
+ANR	665	Identifier	cfi_table		235	1					
+ANR	666	PrimaryExpression	0x23		235	1					
+ANR	667	PrimaryExpression	0x01		235	1					
+ANR	668	ExpressionStatement	pfl -> cfi_table [ 0x24 ] = 0x00	89:4:3064:3091	235	63	True				
+ANR	669	AssignmentExpression	pfl -> cfi_table [ 0x24 ] = 0x00		235	0		=			
+ANR	670	ArrayIndexing	pfl -> cfi_table [ 0x24 ]		235	0					
+ANR	671	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	672	Identifier	pfl		235	0					
+ANR	673	Identifier	cfi_table		235	1					
+ANR	674	PrimaryExpression	0x24		235	1					
+ANR	675	PrimaryExpression	0x00		235	1					
+ANR	676	ExpressionStatement	pfl -> cfi_table [ 0x25 ] = 0x0A	91:4:3135:3162	235	64	True				
+ANR	677	AssignmentExpression	pfl -> cfi_table [ 0x25 ] = 0x0A		235	0		=			
+ANR	678	ArrayIndexing	pfl -> cfi_table [ 0x25 ]		235	0					
+ANR	679	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	680	Identifier	pfl		235	0					
+ANR	681	Identifier	cfi_table		235	1					
+ANR	682	PrimaryExpression	0x25		235	1					
+ANR	683	PrimaryExpression	0x0A		235	1					
+ANR	684	ExpressionStatement	pfl -> cfi_table [ 0x26 ] = 0x0D	93:4:3205:3232	235	65	True				
+ANR	685	AssignmentExpression	pfl -> cfi_table [ 0x26 ] = 0x0D		235	0		=			
+ANR	686	ArrayIndexing	pfl -> cfi_table [ 0x26 ]		235	0					
+ANR	687	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	688	Identifier	pfl		235	0					
+ANR	689	Identifier	cfi_table		235	1					
+ANR	690	PrimaryExpression	0x26		235	1					
+ANR	691	PrimaryExpression	0x0D		235	1					
+ANR	692	ExpressionStatement	pfl -> cfi_table [ 0x27 ] = ctz32 ( chip_len )	95:4:3260:3298	235	66	True				
+ANR	693	AssignmentExpression	pfl -> cfi_table [ 0x27 ] = ctz32 ( chip_len )		235	0		=			
+ANR	694	ArrayIndexing	pfl -> cfi_table [ 0x27 ]		235	0					
+ANR	695	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	696	Identifier	pfl		235	0					
+ANR	697	Identifier	cfi_table		235	1					
+ANR	698	PrimaryExpression	0x27		235	1					
+ANR	699	CallExpression	ctz32 ( chip_len )		235	1					
+ANR	700	Callee	ctz32		235	0					
+ANR	701	Identifier	ctz32		235	0					
+ANR	702	ArgumentList	chip_len		235	1					
+ANR	703	Argument	chip_len		235	0					
+ANR	704	Identifier	chip_len		235	0					
+ANR	705	ExpressionStatement	pfl -> cfi_table [ 0x28 ] = 0x02	97:4:3351:3378	235	67	True				
+ANR	706	AssignmentExpression	pfl -> cfi_table [ 0x28 ] = 0x02		235	0		=			
+ANR	707	ArrayIndexing	pfl -> cfi_table [ 0x28 ]		235	0					
+ANR	708	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	709	Identifier	pfl		235	0					
+ANR	710	Identifier	cfi_table		235	1					
+ANR	711	PrimaryExpression	0x28		235	1					
+ANR	712	PrimaryExpression	0x02		235	1					
+ANR	713	ExpressionStatement	pfl -> cfi_table [ 0x29 ] = 0x00	98:4:3384:3411	235	68	True				
+ANR	714	AssignmentExpression	pfl -> cfi_table [ 0x29 ] = 0x00		235	0		=			
+ANR	715	ArrayIndexing	pfl -> cfi_table [ 0x29 ]		235	0					
+ANR	716	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	717	Identifier	pfl		235	0					
+ANR	718	Identifier	cfi_table		235	1					
+ANR	719	PrimaryExpression	0x29		235	1					
+ANR	720	PrimaryExpression	0x00		235	1					
+ANR	721	ExpressionStatement	pfl -> cfi_table [ 0x2A ] = 0x00	102:4:3567:3594	235	69	True				
+ANR	722	AssignmentExpression	pfl -> cfi_table [ 0x2A ] = 0x00		235	0		=			
+ANR	723	ArrayIndexing	pfl -> cfi_table [ 0x2A ]		235	0					
+ANR	724	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	725	Identifier	pfl		235	0					
+ANR	726	Identifier	cfi_table		235	1					
+ANR	727	PrimaryExpression	0x2A		235	1					
+ANR	728	PrimaryExpression	0x00		235	1					
+ANR	729	ExpressionStatement	pfl -> cfi_table [ 0x2B ] = 0x00	103:4:3600:3627	235	70	True				
+ANR	730	AssignmentExpression	pfl -> cfi_table [ 0x2B ] = 0x00		235	0		=			
+ANR	731	ArrayIndexing	pfl -> cfi_table [ 0x2B ]		235	0					
+ANR	732	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	733	Identifier	pfl		235	0					
+ANR	734	Identifier	cfi_table		235	1					
+ANR	735	PrimaryExpression	0x2B		235	1					
+ANR	736	PrimaryExpression	0x00		235	1					
+ANR	737	ExpressionStatement	pfl -> cfi_table [ 0x2C ] = 0x01	105:4:3683:3710	235	71	True				
+ANR	738	AssignmentExpression	pfl -> cfi_table [ 0x2C ] = 0x01		235	0		=			
+ANR	739	ArrayIndexing	pfl -> cfi_table [ 0x2C ]		235	0					
+ANR	740	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	741	Identifier	pfl		235	0					
+ANR	742	Identifier	cfi_table		235	1					
+ANR	743	PrimaryExpression	0x2C		235	1					
+ANR	744	PrimaryExpression	0x01		235	1					
+ANR	745	ExpressionStatement	pfl -> cfi_table [ 0x2D ] = nb_blocs - 1	107:4:3747:3782	235	72	True				
+ANR	746	AssignmentExpression	pfl -> cfi_table [ 0x2D ] = nb_blocs - 1		235	0		=			
+ANR	747	ArrayIndexing	pfl -> cfi_table [ 0x2D ]		235	0					
+ANR	748	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	749	Identifier	pfl		235	0					
+ANR	750	Identifier	cfi_table		235	1					
+ANR	751	PrimaryExpression	0x2D		235	1					
+ANR	752	AdditiveExpression	nb_blocs - 1		235	1		-			
+ANR	753	Identifier	nb_blocs		235	0					
+ANR	754	PrimaryExpression	1		235	1					
+ANR	755	ExpressionStatement	pfl -> cfi_table [ 0x2E ] = ( nb_blocs - 1 ) >> 8	108:4:3788:3830	235	73	True				
+ANR	756	AssignmentExpression	pfl -> cfi_table [ 0x2E ] = ( nb_blocs - 1 ) >> 8		235	0		=			
+ANR	757	ArrayIndexing	pfl -> cfi_table [ 0x2E ]		235	0					
+ANR	758	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	759	Identifier	pfl		235	0					
+ANR	760	Identifier	cfi_table		235	1					
+ANR	761	PrimaryExpression	0x2E		235	1					
+ANR	762	ShiftExpression	( nb_blocs - 1 ) >> 8		235	1		>>			
+ANR	763	AdditiveExpression	nb_blocs - 1		235	0		-			
+ANR	764	Identifier	nb_blocs		235	0					
+ANR	765	PrimaryExpression	1		235	1					
+ANR	766	PrimaryExpression	8		235	1					
+ANR	767	ExpressionStatement	pfl -> cfi_table [ 0x2F ] = sector_len >> 8	109:4:3836:3874	235	74	True				
+ANR	768	AssignmentExpression	pfl -> cfi_table [ 0x2F ] = sector_len >> 8		235	0		=			
+ANR	769	ArrayIndexing	pfl -> cfi_table [ 0x2F ]		235	0					
+ANR	770	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	771	Identifier	pfl		235	0					
+ANR	772	Identifier	cfi_table		235	1					
+ANR	773	PrimaryExpression	0x2F		235	1					
+ANR	774	ShiftExpression	sector_len >> 8		235	1		>>			
+ANR	775	Identifier	sector_len		235	0					
+ANR	776	PrimaryExpression	8		235	1					
+ANR	777	ExpressionStatement	pfl -> cfi_table [ 0x30 ] = sector_len >> 16	110:4:3880:3919	235	75	True				
+ANR	778	AssignmentExpression	pfl -> cfi_table [ 0x30 ] = sector_len >> 16		235	0		=			
+ANR	779	ArrayIndexing	pfl -> cfi_table [ 0x30 ]		235	0					
+ANR	780	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	781	Identifier	pfl		235	0					
+ANR	782	Identifier	cfi_table		235	1					
+ANR	783	PrimaryExpression	0x30		235	1					
+ANR	784	ShiftExpression	sector_len >> 16		235	1		>>			
+ANR	785	Identifier	sector_len		235	0					
+ANR	786	PrimaryExpression	16		235	1					
+ANR	787	ExpressionStatement	pfl -> cfi_table [ 0x31 ] = 'P'	113:4:3945:3971	235	76	True				
+ANR	788	AssignmentExpression	pfl -> cfi_table [ 0x31 ] = 'P'		235	0		=			
+ANR	789	ArrayIndexing	pfl -> cfi_table [ 0x31 ]		235	0					
+ANR	790	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	791	Identifier	pfl		235	0					
+ANR	792	Identifier	cfi_table		235	1					
+ANR	793	PrimaryExpression	0x31		235	1					
+ANR	794	PrimaryExpression	'P'		235	1					
+ANR	795	ExpressionStatement	pfl -> cfi_table [ 0x32 ] = 'R'	114:4:3977:4003	235	77	True				
+ANR	796	AssignmentExpression	pfl -> cfi_table [ 0x32 ] = 'R'		235	0		=			
+ANR	797	ArrayIndexing	pfl -> cfi_table [ 0x32 ]		235	0					
+ANR	798	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	799	Identifier	pfl		235	0					
+ANR	800	Identifier	cfi_table		235	1					
+ANR	801	PrimaryExpression	0x32		235	1					
+ANR	802	PrimaryExpression	'R'		235	1					
+ANR	803	ExpressionStatement	pfl -> cfi_table [ 0x33 ] = 'I'	115:4:4009:4035	235	78	True				
+ANR	804	AssignmentExpression	pfl -> cfi_table [ 0x33 ] = 'I'		235	0		=			
+ANR	805	ArrayIndexing	pfl -> cfi_table [ 0x33 ]		235	0					
+ANR	806	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	807	Identifier	pfl		235	0					
+ANR	808	Identifier	cfi_table		235	1					
+ANR	809	PrimaryExpression	0x33		235	1					
+ANR	810	PrimaryExpression	'I'		235	1					
+ANR	811	ExpressionStatement	pfl -> cfi_table [ 0x34 ] = '1'	117:4:4042:4068	235	79	True				
+ANR	812	AssignmentExpression	pfl -> cfi_table [ 0x34 ] = '1'		235	0		=			
+ANR	813	ArrayIndexing	pfl -> cfi_table [ 0x34 ]		235	0					
+ANR	814	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	815	Identifier	pfl		235	0					
+ANR	816	Identifier	cfi_table		235	1					
+ANR	817	PrimaryExpression	0x34		235	1					
+ANR	818	PrimaryExpression	'1'		235	1					
+ANR	819	ExpressionStatement	pfl -> cfi_table [ 0x35 ] = '0'	118:4:4074:4100	235	80	True				
+ANR	820	AssignmentExpression	pfl -> cfi_table [ 0x35 ] = '0'		235	0		=			
+ANR	821	ArrayIndexing	pfl -> cfi_table [ 0x35 ]		235	0					
+ANR	822	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	823	Identifier	pfl		235	0					
+ANR	824	Identifier	cfi_table		235	1					
+ANR	825	PrimaryExpression	0x35		235	1					
+ANR	826	PrimaryExpression	'0'		235	1					
+ANR	827	ExpressionStatement	pfl -> cfi_table [ 0x36 ] = 0x00	120:4:4107:4134	235	81	True				
+ANR	828	AssignmentExpression	pfl -> cfi_table [ 0x36 ] = 0x00		235	0		=			
+ANR	829	ArrayIndexing	pfl -> cfi_table [ 0x36 ]		235	0					
+ANR	830	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	831	Identifier	pfl		235	0					
+ANR	832	Identifier	cfi_table		235	1					
+ANR	833	PrimaryExpression	0x36		235	1					
+ANR	834	PrimaryExpression	0x00		235	1					
+ANR	835	ExpressionStatement	pfl -> cfi_table [ 0x37 ] = 0x00	121:4:4140:4167	235	82	True				
+ANR	836	AssignmentExpression	pfl -> cfi_table [ 0x37 ] = 0x00		235	0		=			
+ANR	837	ArrayIndexing	pfl -> cfi_table [ 0x37 ]		235	0					
+ANR	838	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	839	Identifier	pfl		235	0					
+ANR	840	Identifier	cfi_table		235	1					
+ANR	841	PrimaryExpression	0x37		235	1					
+ANR	842	PrimaryExpression	0x00		235	1					
+ANR	843	ExpressionStatement	pfl -> cfi_table [ 0x38 ] = 0x00	122:4:4173:4200	235	83	True				
+ANR	844	AssignmentExpression	pfl -> cfi_table [ 0x38 ] = 0x00		235	0		=			
+ANR	845	ArrayIndexing	pfl -> cfi_table [ 0x38 ]		235	0					
+ANR	846	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	847	Identifier	pfl		235	0					
+ANR	848	Identifier	cfi_table		235	1					
+ANR	849	PrimaryExpression	0x38		235	1					
+ANR	850	PrimaryExpression	0x00		235	1					
+ANR	851	ExpressionStatement	pfl -> cfi_table [ 0x39 ] = 0x00	123:4:4206:4233	235	84	True				
+ANR	852	AssignmentExpression	pfl -> cfi_table [ 0x39 ] = 0x00		235	0		=			
+ANR	853	ArrayIndexing	pfl -> cfi_table [ 0x39 ]		235	0					
+ANR	854	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	855	Identifier	pfl		235	0					
+ANR	856	Identifier	cfi_table		235	1					
+ANR	857	PrimaryExpression	0x39		235	1					
+ANR	858	PrimaryExpression	0x00		235	1					
+ANR	859	ExpressionStatement	pfl -> cfi_table [ 0x3a ] = 0x00	125:4:4240:4267	235	85	True				
+ANR	860	AssignmentExpression	pfl -> cfi_table [ 0x3a ] = 0x00		235	0		=			
+ANR	861	ArrayIndexing	pfl -> cfi_table [ 0x3a ]		235	0					
+ANR	862	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	863	Identifier	pfl		235	0					
+ANR	864	Identifier	cfi_table		235	1					
+ANR	865	PrimaryExpression	0x3a		235	1					
+ANR	866	PrimaryExpression	0x00		235	1					
+ANR	867	ExpressionStatement	pfl -> cfi_table [ 0x3b ] = 0x00	127:4:4274:4301	235	86	True				
+ANR	868	AssignmentExpression	pfl -> cfi_table [ 0x3b ] = 0x00		235	0		=			
+ANR	869	ArrayIndexing	pfl -> cfi_table [ 0x3b ]		235	0					
+ANR	870	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	871	Identifier	pfl		235	0					
+ANR	872	Identifier	cfi_table		235	1					
+ANR	873	PrimaryExpression	0x3b		235	1					
+ANR	874	PrimaryExpression	0x00		235	1					
+ANR	875	ExpressionStatement	pfl -> cfi_table [ 0x3c ] = 0x00	128:4:4307:4334	235	87	True				
+ANR	876	AssignmentExpression	pfl -> cfi_table [ 0x3c ] = 0x00		235	0		=			
+ANR	877	ArrayIndexing	pfl -> cfi_table [ 0x3c ]		235	0					
+ANR	878	PtrMemberAccess	pfl -> cfi_table		235	0					
+ANR	879	Identifier	pfl		235	0					
+ANR	880	Identifier	cfi_table		235	1					
+ANR	881	PrimaryExpression	0x3c		235	1					
+ANR	882	PrimaryExpression	0x00		235	1					
+ANR	883	ReturnStatement	return pfl ;	130:4:4341:4351	235	88	True				
+ANR	884	Identifier	pfl		235	0					
+ANR	885	ReturnType	pflash_t *		235	1					
+ANR	886	Identifier	pflash_cfi02_register		235	2					
+ANR	887	ParameterList	"target_phys_addr_t base , ram_addr_t off , BlockDriverState * bs , uint32_t sector_len , int nb_blocs , int nb_mappings , int width , uint16_t id0 , uint16_t id1 , uint16_t id2 , uint16_t id3 , uint16_t unlock_addr0 , uint16_t unlock_addr1"		235	3					
+ANR	888	Parameter	target_phys_addr_t base	1:32:32:54	235	0	True				
+ANR	889	ParameterType	target_phys_addr_t		235	0					
+ANR	890	Identifier	base		235	1					
+ANR	891	Parameter	ram_addr_t off	1:57:57:70	235	1	True				
+ANR	892	ParameterType	ram_addr_t		235	0					
+ANR	893	Identifier	off		235	1					
+ANR	894	Parameter	BlockDriverState * bs	2:32:105:124	235	2	True				
+ANR	895	ParameterType	BlockDriverState *		235	0					
+ANR	896	Identifier	bs		235	1					
+ANR	897	Parameter	uint32_t sector_len	2:54:127:145	235	3	True				
+ANR	898	ParameterType	uint32_t		235	0					
+ANR	899	Identifier	sector_len		235	1					
+ANR	900	Parameter	int nb_blocs	3:32:180:191	235	4	True				
+ANR	901	ParameterType	int		235	0					
+ANR	902	Identifier	nb_blocs		235	1					
+ANR	903	Parameter	int nb_mappings	3:46:194:208	235	5	True				
+ANR	904	ParameterType	int		235	0					
+ANR	905	Identifier	nb_mappings		235	1					
+ANR	906	Parameter	int width	3:63:211:219	235	6	True				
+ANR	907	ParameterType	int		235	0					
+ANR	908	Identifier	width		235	1					
+ANR	909	Parameter	uint16_t id0	4:32:254:265	235	7	True				
+ANR	910	ParameterType	uint16_t		235	0					
+ANR	911	Identifier	id0		235	1					
+ANR	912	Parameter	uint16_t id1	4:46:268:279	235	8	True				
+ANR	913	ParameterType	uint16_t		235	0					
+ANR	914	Identifier	id1		235	1					
+ANR	915	Parameter	uint16_t id2	5:32:314:325	235	9	True				
+ANR	916	ParameterType	uint16_t		235	0					
+ANR	917	Identifier	id2		235	1					
+ANR	918	Parameter	uint16_t id3	5:46:328:339	235	10	True				
+ANR	919	ParameterType	uint16_t		235	0					
+ANR	920	Identifier	id3		235	1					
+ANR	921	Parameter	uint16_t unlock_addr0	6:32:374:394	235	11	True				
+ANR	922	ParameterType	uint16_t		235	0					
+ANR	923	Identifier	unlock_addr0		235	1					
+ANR	924	Parameter	uint16_t unlock_addr1	6:55:397:417	235	12	True				
+ANR	925	ParameterType	uint16_t		235	0					
+ANR	926	Identifier	unlock_addr1		235	1					
+ANR	927	CFGEntryNode	ENTRY		235		True				
+ANR	928	CFGExitNode	EXIT		235		True				
+ANR	929	Symbol	cpu_register_io_memory		235						
+ANR	930	Symbol	pfl -> sector_len		235						
+ANR	931	Symbol	chip_len		235						
+ANR	932	Symbol	total_len		235						
+ANR	933	Symbol	pfl -> cfi_len		235						
+ANR	934	Symbol	pfl -> fl_mem		235						
+ANR	935	Symbol	* pfl -> cfi_table		235						
+ANR	936	Symbol	* * pfl		235						
+ANR	937	Symbol	vm_clock		235						
+ANR	938	Symbol	qemu_get_ram_ptr		235						
+ANR	939	Symbol	pfl -> cmd		235						
+ANR	940	Symbol	pfl -> storage		235						
+ANR	941	Symbol	* pfl		235						
+ANR	942	Symbol	pfl -> ident		235						
+ANR	943	Symbol	NULL		235						
+ANR	944	Symbol	* pfl -> unlock_addr		235						
+ANR	945	Symbol	pfl -> timer		235						
+ANR	946	Symbol	unlock_addr0		235						
+ANR	947	Symbol	unlock_addr1		235						
+ANR	948	Symbol	* pfl -> ident		235						
+ANR	949	Symbol	pfl		235						
+ANR	950	Symbol	pfl -> status		235						
+ANR	951	Symbol	pfl -> chip_len		235						
+ANR	952	Symbol	pfl -> unlock_addr		235						
+ANR	953	Symbol	pfl -> bs		235						
+ANR	954	Symbol	nb_mappings		235						
+ANR	955	Symbol	pflash_write_ops		235						
+ANR	956	Symbol	pfl -> width		235						
+ANR	957	Symbol	bs		235						
+ANR	958	Symbol	nb_blocs		235						
+ANR	959	Symbol	pflash_read_ops		235						
+ANR	960	Symbol	qemu_new_timer		235						
+ANR	961	Symbol	pfl -> ro		235						
+ANR	962	Symbol	pfl -> off		235						
+ANR	963	Symbol	ctz32		235						
+ANR	964	Symbol	pflash_timer		235						
+ANR	965	Symbol	pfl -> wcycle		235						
+ANR	966	Symbol	off		235						
+ANR	967	Symbol	pfl -> mappings		235						
+ANR	968	Symbol	id0		235						
+ANR	969	Symbol	pfl -> cfi_table		235						
+ANR	970	Symbol	id2		235						
+ANR	971	Symbol	id1		235						
+ANR	972	Symbol	width		235						
+ANR	973	Symbol	id3		235						
+ANR	974	Symbol	qemu_mallocz		235						
+ANR	975	Symbol	pfl -> base		235						
+ANR	976	Symbol	sector_len		235						
+ANR	977	Symbol	base		235						

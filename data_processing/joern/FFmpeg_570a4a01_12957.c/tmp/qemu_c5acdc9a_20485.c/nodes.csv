@@ -1,0 +1,91 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	4782	File	tmp/qemu_c5acdc9a_20485.c								
+ANR	4783	Function	bdrv_delete	1:0:0:286							
+ANR	4784	FunctionDef	bdrv_delete (BlockDriverState * bs)		4783	0					
+ANR	4785	CompoundStatement		2:0:46:286	4783	0					
+ANR	4786	ExpressionStatement	assert ( ! bs -> job )	3:4:52:68	4783	0	True				
+ANR	4787	CallExpression	assert ( ! bs -> job )		4783	0					
+ANR	4788	Callee	assert		4783	0					
+ANR	4789	Identifier	assert		4783	0					
+ANR	4790	ArgumentList	! bs -> job		4783	1					
+ANR	4791	Argument	! bs -> job		4783	0					
+ANR	4792	UnaryOperationExpression	! bs -> job		4783	0					
+ANR	4793	UnaryOperator	!		4783	0					
+ANR	4794	PtrMemberAccess	bs -> job		4783	1					
+ANR	4795	Identifier	bs		4783	0					
+ANR	4796	Identifier	job		4783	1					
+ANR	4797	ExpressionStatement	assert ( bdrv_op_blocker_is_empty ( bs ) )	4:4:74:110	4783	1	True				
+ANR	4798	CallExpression	assert ( bdrv_op_blocker_is_empty ( bs ) )		4783	0					
+ANR	4799	Callee	assert		4783	0					
+ANR	4800	Identifier	assert		4783	0					
+ANR	4801	ArgumentList	bdrv_op_blocker_is_empty ( bs )		4783	1					
+ANR	4802	Argument	bdrv_op_blocker_is_empty ( bs )		4783	0					
+ANR	4803	CallExpression	bdrv_op_blocker_is_empty ( bs )		4783	0					
+ANR	4804	Callee	bdrv_op_blocker_is_empty		4783	0					
+ANR	4805	Identifier	bdrv_op_blocker_is_empty		4783	0					
+ANR	4806	ArgumentList	bs		4783	1					
+ANR	4807	Argument	bs		4783	0					
+ANR	4808	Identifier	bs		4783	0					
+ANR	4809	ExpressionStatement	assert ( ! bs -> refcnt )	5:4:116:135	4783	2	True				
+ANR	4810	CallExpression	assert ( ! bs -> refcnt )		4783	0					
+ANR	4811	Callee	assert		4783	0					
+ANR	4812	Identifier	assert		4783	0					
+ANR	4813	ArgumentList	! bs -> refcnt		4783	1					
+ANR	4814	Argument	! bs -> refcnt		4783	0					
+ANR	4815	UnaryOperationExpression	! bs -> refcnt		4783	0					
+ANR	4816	UnaryOperator	!		4783	0					
+ANR	4817	PtrMemberAccess	bs -> refcnt		4783	1					
+ANR	4818	Identifier	bs		4783	0					
+ANR	4819	Identifier	refcnt		4783	1					
+ANR	4820	ExpressionStatement	assert ( QLIST_EMPTY ( & bs -> dirty_bitmaps ) )	6:4:141:180	4783	3	True				
+ANR	4821	CallExpression	assert ( QLIST_EMPTY ( & bs -> dirty_bitmaps ) )		4783	0					
+ANR	4822	Callee	assert		4783	0					
+ANR	4823	Identifier	assert		4783	0					
+ANR	4824	ArgumentList	QLIST_EMPTY ( & bs -> dirty_bitmaps )		4783	1					
+ANR	4825	Argument	QLIST_EMPTY ( & bs -> dirty_bitmaps )		4783	0					
+ANR	4826	CallExpression	QLIST_EMPTY ( & bs -> dirty_bitmaps )		4783	0					
+ANR	4827	Callee	QLIST_EMPTY		4783	0					
+ANR	4828	Identifier	QLIST_EMPTY		4783	0					
+ANR	4829	ArgumentList	& bs -> dirty_bitmaps		4783	1					
+ANR	4830	Argument	& bs -> dirty_bitmaps		4783	0					
+ANR	4831	UnaryOperationExpression	& bs -> dirty_bitmaps		4783	0					
+ANR	4832	UnaryOperator	&		4783	0					
+ANR	4833	PtrMemberAccess	bs -> dirty_bitmaps		4783	1					
+ANR	4834	Identifier	bs		4783	0					
+ANR	4835	Identifier	dirty_bitmaps		4783	1					
+ANR	4836	ExpressionStatement	bdrv_close ( bs )	8:4:187:201	4783	4	True				
+ANR	4837	CallExpression	bdrv_close ( bs )		4783	0					
+ANR	4838	Callee	bdrv_close		4783	0					
+ANR	4839	Identifier	bdrv_close		4783	0					
+ANR	4840	ArgumentList	bs		4783	1					
+ANR	4841	Argument	bs		4783	0					
+ANR	4842	Identifier	bs		4783	0					
+ANR	4843	ExpressionStatement	bdrv_make_anon ( bs )	11:4:249:267	4783	5	True				
+ANR	4844	CallExpression	bdrv_make_anon ( bs )		4783	0					
+ANR	4845	Callee	bdrv_make_anon		4783	0					
+ANR	4846	Identifier	bdrv_make_anon		4783	0					
+ANR	4847	ArgumentList	bs		4783	1					
+ANR	4848	Argument	bs		4783	0					
+ANR	4849	Identifier	bs		4783	0					
+ANR	4850	ExpressionStatement	g_free ( bs )	13:4:274:284	4783	6	True				
+ANR	4851	CallExpression	g_free ( bs )		4783	0					
+ANR	4852	Callee	g_free		4783	0					
+ANR	4853	Identifier	g_free		4783	0					
+ANR	4854	ArgumentList	bs		4783	1					
+ANR	4855	Argument	bs		4783	0					
+ANR	4856	Identifier	bs		4783	0					
+ANR	4857	ReturnType	static void		4783	1					
+ANR	4858	Identifier	bdrv_delete		4783	2					
+ANR	4859	ParameterList	BlockDriverState * bs		4783	3					
+ANR	4860	Parameter	BlockDriverState * bs	1:24:24:43	4783	0	True				
+ANR	4861	ParameterType	BlockDriverState *		4783	0					
+ANR	4862	Identifier	bs		4783	1					
+ANR	4863	CFGEntryNode	ENTRY		4783		True				
+ANR	4864	CFGExitNode	EXIT		4783		True				
+ANR	4865	Symbol	bs		4783						
+ANR	4866	Symbol	* bs		4783						
+ANR	4867	Symbol	bdrv_op_blocker_is_empty		4783						
+ANR	4868	Symbol	& bs -> dirty_bitmaps		4783						
+ANR	4869	Symbol	bs -> job		4783						
+ANR	4870	Symbol	QLIST_EMPTY		4783						
+ANR	4871	Symbol	bs -> refcnt		4783						

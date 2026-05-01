@@ -1,0 +1,55 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/FFmpeg_92ea249d_13403.c								
+ANR	2	Function	round_sample	1:0:0:174							
+ANR	3	FunctionDef	round_sample (int64_t * sum)		2	0					
+ANR	4	CompoundStatement		2:0:45:174	2	0					
+ANR	5	IdentifierDeclStatement	int sum1 ;	3:4:51:59	2	0	True				
+ANR	6	IdentifierDecl	sum1		2	0					
+ANR	7	IdentifierDeclType	int		2	0					
+ANR	8	Identifier	sum1		2	1					
+ANR	9	ExpressionStatement	sum1 = ( int ) ( ( * sum ) >> OUT_SHIFT )	4:4:65:98	2	1	True				
+ANR	10	AssignmentExpression	sum1 = ( int ) ( ( * sum ) >> OUT_SHIFT )		2	0		=			
+ANR	11	Identifier	sum1		2	0					
+ANR	12	CastExpression	( int ) ( ( * sum ) >> OUT_SHIFT )		2	1					
+ANR	13	CastTarget	int		2	0					
+ANR	14	ShiftExpression	( * sum ) >> OUT_SHIFT		2	1		>>			
+ANR	15	UnaryOperationExpression	* sum		2	0					
+ANR	16	UnaryOperator	*		2	0					
+ANR	17	Identifier	sum		2	1					
+ANR	18	Identifier	OUT_SHIFT		2	1					
+ANR	19	ExpressionStatement	* sum &= ( 1 << OUT_SHIFT ) - 1	5:4:104:128	2	2	True				
+ANR	20	AssignmentExpression	* sum &= ( 1 << OUT_SHIFT ) - 1		2	0		&=			
+ANR	21	UnaryOperationExpression	* sum		2	0					
+ANR	22	UnaryOperator	*		2	0					
+ANR	23	Identifier	sum		2	1					
+ANR	24	AdditiveExpression	( 1 << OUT_SHIFT ) - 1		2	1		-			
+ANR	25	ShiftExpression	1 << OUT_SHIFT		2	0		<<			
+ANR	26	PrimaryExpression	1		2	0					
+ANR	27	Identifier	OUT_SHIFT		2	1					
+ANR	28	PrimaryExpression	1		2	1					
+ANR	29	ReturnStatement	"return av_clip ( sum1 , OUT_MIN , OUT_MAX ) ;"	6:4:134:172	2	3	True				
+ANR	30	CallExpression	"av_clip ( sum1 , OUT_MIN , OUT_MAX )"		2	0					
+ANR	31	Callee	av_clip		2	0					
+ANR	32	Identifier	av_clip		2	0					
+ANR	33	ArgumentList	sum1		2	1					
+ANR	34	Argument	sum1		2	0					
+ANR	35	Identifier	sum1		2	0					
+ANR	36	Argument	OUT_MIN		2	1					
+ANR	37	Identifier	OUT_MIN		2	0					
+ANR	38	Argument	OUT_MAX		2	2					
+ANR	39	Identifier	OUT_MAX		2	0					
+ANR	40	ReturnType	static inline int		2	1					
+ANR	41	Identifier	round_sample		2	2					
+ANR	42	ParameterList	int64_t * sum		2	3					
+ANR	43	Parameter	int64_t * sum	1:31:31:42	2	0	True				
+ANR	44	ParameterType	int64_t *		2	0					
+ANR	45	Identifier	sum		2	1					
+ANR	46	CFGEntryNode	ENTRY		2		True				
+ANR	47	CFGExitNode	EXIT		2		True				
+ANR	48	Symbol	sum1		2						
+ANR	49	Symbol	* sum		2						
+ANR	50	Symbol	OUT_MIN		2						
+ANR	51	Symbol	OUT_MAX		2						
+ANR	52	Symbol	sum		2						
+ANR	53	Symbol	av_clip		2						
+ANR	54	Symbol	OUT_SHIFT		2						

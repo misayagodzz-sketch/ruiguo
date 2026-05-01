@@ -1,0 +1,425 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	153	File	tmp/qemu_c80d1df5_6977.c								
+ANR	154	Function	gen_op_arith_subf	1:0:0:2267							
+ANR	155	FunctionDef	"gen_op_arith_subf (DisasContext * ctx , TCGv ret , TCGv arg1 , TCGv arg2 , bool add_ca , bool compute_ca , bool compute_ov , bool compute_rc0)"		154	0					
+ANR	156	CompoundStatement		4:0:227:2267	154	0					
+ANR	157	IdentifierDeclStatement	TCGv t0 = ret ;	5:4:233:246	154	0	True				
+ANR	158	IdentifierDecl	t0 = ret		154	0					
+ANR	159	IdentifierDeclType	TCGv		154	0					
+ANR	160	Identifier	t0		154	1					
+ANR	161	AssignmentExpression	t0 = ret		154	2		=			
+ANR	162	Identifier	ret		154	0					
+ANR	163	Identifier	ret		154	1					
+ANR	164	IfStatement	if ( compute_ca || compute_ov )		154	1					
+ANR	165	Condition	compute_ca || compute_ov	7:8:257:280	154	0	True				
+ANR	166	OrExpression	compute_ca || compute_ov		154	0		||			
+ANR	167	Identifier	compute_ca		154	0					
+ANR	168	Identifier	compute_ov		154	1					
+ANR	169	CompoundStatement		4:34:55:55	154	1					
+ANR	170	ExpressionStatement	t0 = tcg_temp_new ( )	8:8:293:312	154	0	True				
+ANR	171	AssignmentExpression	t0 = tcg_temp_new ( )		154	0		=			
+ANR	172	Identifier	t0		154	0					
+ANR	173	CallExpression	tcg_temp_new ( )		154	1					
+ANR	174	Callee	tcg_temp_new		154	0					
+ANR	175	Identifier	tcg_temp_new		154	0					
+ANR	176	ArgumentList			154	1					
+ANR	177	IfStatement	if ( compute_ca )		154	2					
+ANR	178	Condition	compute_ca	11:8:329:338	154	0	True				
+ANR	179	Identifier	compute_ca		154	0					
+ANR	180	CompoundStatement		8:20:113:113	154	1					
+ANR	181	IfStatement	if ( NARROW_MODE ( ctx ) )		154	0					
+ANR	182	Condition	NARROW_MODE ( ctx )	13:12:398:413	154	0	True				
+ANR	183	CallExpression	NARROW_MODE ( ctx )		154	0					
+ANR	184	Callee	NARROW_MODE		154	0					
+ANR	185	Identifier	NARROW_MODE		154	0					
+ANR	186	ArgumentList	ctx		154	1					
+ANR	187	Argument	ctx		154	0					
+ANR	188	Identifier	ctx		154	0					
+ANR	189	CompoundStatement		15:12:427:451	154	1					
+ANR	190	IdentifierDeclStatement	TCGv inv1 = tcg_temp_new ( ) ;	17:12:615:641	154	0	True				
+ANR	191	IdentifierDecl	inv1 = tcg_temp_new ( )		154	0					
+ANR	192	IdentifierDeclType	TCGv		154	0					
+ANR	193	Identifier	inv1		154	1					
+ANR	194	AssignmentExpression	inv1 = tcg_temp_new ( )		154	2		=			
+ANR	195	Identifier	inv1		154	0					
+ANR	196	CallExpression	tcg_temp_new ( )		154	1					
+ANR	197	Callee	tcg_temp_new		154	0					
+ANR	198	Identifier	tcg_temp_new		154	0					
+ANR	199	ArgumentList			154	1					
+ANR	200	IdentifierDeclStatement	TCGv t1 = tcg_temp_new ( ) ;	18:12:655:679	154	1	True				
+ANR	201	IdentifierDecl	t1 = tcg_temp_new ( )		154	0					
+ANR	202	IdentifierDeclType	TCGv		154	0					
+ANR	203	Identifier	t1		154	1					
+ANR	204	AssignmentExpression	t1 = tcg_temp_new ( )		154	2		=			
+ANR	205	Identifier	t1		154	0					
+ANR	206	CallExpression	tcg_temp_new ( )		154	1					
+ANR	207	Callee	tcg_temp_new		154	0					
+ANR	208	Identifier	tcg_temp_new		154	0					
+ANR	209	ArgumentList			154	1					
+ANR	210	ExpressionStatement	"tcg_gen_not_tl ( inv1 , arg1 )"	19:12:693:719	154	2	True				
+ANR	211	CallExpression	"tcg_gen_not_tl ( inv1 , arg1 )"		154	0					
+ANR	212	Callee	tcg_gen_not_tl		154	0					
+ANR	213	Identifier	tcg_gen_not_tl		154	0					
+ANR	214	ArgumentList	inv1		154	1					
+ANR	215	Argument	inv1		154	0					
+ANR	216	Identifier	inv1		154	0					
+ANR	217	Argument	arg1		154	1					
+ANR	218	Identifier	arg1		154	0					
+ANR	219	IfStatement	if ( add_ca )		154	3					
+ANR	220	Condition	add_ca	20:16:737:742	154	0	True				
+ANR	221	Identifier	add_ca		154	0					
+ANR	222	CompoundStatement		17:24:517:517	154	1					
+ANR	223	ExpressionStatement	"tcg_gen_add_tl ( t0 , arg2 , cpu_ca )"	21:16:763:795	154	0	True				
+ANR	224	CallExpression	"tcg_gen_add_tl ( t0 , arg2 , cpu_ca )"		154	0					
+ANR	225	Callee	tcg_gen_add_tl		154	0					
+ANR	226	Identifier	tcg_gen_add_tl		154	0					
+ANR	227	ArgumentList	t0		154	1					
+ANR	228	Argument	t0		154	0					
+ANR	229	Identifier	t0		154	0					
+ANR	230	Argument	arg2		154	1					
+ANR	231	Identifier	arg2		154	0					
+ANR	232	Argument	cpu_ca		154	2					
+ANR	233	Identifier	cpu_ca		154	0					
+ANR	234	ElseStatement	else		154	0					
+ANR	235	CompoundStatement		19:19:588:588	154	0					
+ANR	236	ExpressionStatement	"tcg_gen_addi_tl ( t0 , arg2 , 1 )"	23:16:834:862	154	0	True				
+ANR	237	CallExpression	"tcg_gen_addi_tl ( t0 , arg2 , 1 )"		154	0					
+ANR	238	Callee	tcg_gen_addi_tl		154	0					
+ANR	239	Identifier	tcg_gen_addi_tl		154	0					
+ANR	240	ArgumentList	t0		154	1					
+ANR	241	Argument	t0		154	0					
+ANR	242	Identifier	t0		154	0					
+ANR	243	Argument	arg2		154	1					
+ANR	244	Identifier	arg2		154	0					
+ANR	245	Argument	1		154	2					
+ANR	246	PrimaryExpression	1		154	0					
+ANR	247	ExpressionStatement	"tcg_gen_xor_tl ( t1 , arg2 , inv1 )"	25:12:890:920	154	4	True				
+ANR	248	CallExpression	"tcg_gen_xor_tl ( t1 , arg2 , inv1 )"		154	0					
+ANR	249	Callee	tcg_gen_xor_tl		154	0					
+ANR	250	Identifier	tcg_gen_xor_tl		154	0					
+ANR	251	ArgumentList	t1		154	1					
+ANR	252	Argument	t1		154	0					
+ANR	253	Identifier	t1		154	0					
+ANR	254	Argument	arg2		154	1					
+ANR	255	Identifier	arg2		154	0					
+ANR	256	Argument	inv1		154	2					
+ANR	257	Identifier	inv1		154	0					
+ANR	258	ExpressionStatement	"tcg_gen_add_tl ( t0 , t0 , inv1 )"	26:12:966:994	154	5	True				
+ANR	259	CallExpression	"tcg_gen_add_tl ( t0 , t0 , inv1 )"		154	0					
+ANR	260	Callee	tcg_gen_add_tl		154	0					
+ANR	261	Identifier	tcg_gen_add_tl		154	0					
+ANR	262	ArgumentList	t0		154	1					
+ANR	263	Argument	t0		154	0					
+ANR	264	Identifier	t0		154	0					
+ANR	265	Argument	t0		154	1					
+ANR	266	Identifier	t0		154	0					
+ANR	267	Argument	inv1		154	2					
+ANR	268	Identifier	inv1		154	0					
+ANR	269	ExpressionStatement	"tcg_gen_xor_tl ( cpu_ca , t0 , t1 )"	28:12:1009:1039	154	6	True				
+ANR	270	CallExpression	"tcg_gen_xor_tl ( cpu_ca , t0 , t1 )"		154	0					
+ANR	271	Callee	tcg_gen_xor_tl		154	0					
+ANR	272	Identifier	tcg_gen_xor_tl		154	0					
+ANR	273	ArgumentList	cpu_ca		154	1					
+ANR	274	Argument	cpu_ca		154	0					
+ANR	275	Identifier	cpu_ca		154	0					
+ANR	276	Argument	t0		154	1					
+ANR	277	Identifier	t0		154	0					
+ANR	278	Argument	t1		154	2					
+ANR	279	Identifier	t1		154	0					
+ANR	280	ExpressionStatement	tcg_temp_free ( t1 )	29:12:1089:1106	154	7	True				
+ANR	281	CallExpression	tcg_temp_free ( t1 )		154	0					
+ANR	282	Callee	tcg_temp_free		154	0					
+ANR	283	Identifier	tcg_temp_free		154	0					
+ANR	284	ArgumentList	t1		154	1					
+ANR	285	Argument	t1		154	0					
+ANR	286	Identifier	t1		154	0					
+ANR	287	ExpressionStatement	"tcg_gen_shri_tl ( cpu_ca , cpu_ca , 32 )"	30:12:1120:1155	154	8	True				
+ANR	288	CallExpression	"tcg_gen_shri_tl ( cpu_ca , cpu_ca , 32 )"		154	0					
+ANR	289	Callee	tcg_gen_shri_tl		154	0					
+ANR	290	Identifier	tcg_gen_shri_tl		154	0					
+ANR	291	ArgumentList	cpu_ca		154	1					
+ANR	292	Argument	cpu_ca		154	0					
+ANR	293	Identifier	cpu_ca		154	0					
+ANR	294	Argument	cpu_ca		154	1					
+ANR	295	Identifier	cpu_ca		154	0					
+ANR	296	Argument	32		154	2					
+ANR	297	PrimaryExpression	32		154	0					
+ANR	298	ExpressionStatement	"tcg_gen_andi_tl ( cpu_ca , cpu_ca , 1 )"	31:12:1193:1227	154	9	True				
+ANR	299	CallExpression	"tcg_gen_andi_tl ( cpu_ca , cpu_ca , 1 )"		154	0					
+ANR	300	Callee	tcg_gen_andi_tl		154	0					
+ANR	301	Identifier	tcg_gen_andi_tl		154	0					
+ANR	302	ArgumentList	cpu_ca		154	1					
+ANR	303	Argument	cpu_ca		154	0					
+ANR	304	Identifier	cpu_ca		154	0					
+ANR	305	Argument	cpu_ca		154	1					
+ANR	306	Identifier	cpu_ca		154	0					
+ANR	307	Argument	1		154	2					
+ANR	308	PrimaryExpression	1		154	0					
+ANR	309	ElseStatement	else		154	0					
+ANR	310	IfStatement	if ( add_ca )		154	0					
+ANR	311	Condition	add_ca	32:19:1248:1253	154	0	True				
+ANR	312	Identifier	add_ca		154	0					
+ANR	313	CompoundStatement		30:12:1042:1074	154	1					
+ANR	314	IdentifierDeclStatement	"TCGv zero , inv1 = tcg_temp_new ( ) ;"	33:12:1270:1302	154	0	True				
+ANR	315	IdentifierDecl	zero		154	0					
+ANR	316	IdentifierDeclType	TCGv		154	0					
+ANR	317	Identifier	zero		154	1					
+ANR	318	IdentifierDecl	inv1 = tcg_temp_new ( )		154	1					
+ANR	319	IdentifierDeclType	TCGv		154	0					
+ANR	320	Identifier	inv1		154	1					
+ANR	321	AssignmentExpression	inv1 = tcg_temp_new ( )		154	2		=			
+ANR	322	Identifier	inv1		154	0					
+ANR	323	CallExpression	tcg_temp_new ( )		154	1					
+ANR	324	Callee	tcg_temp_new		154	0					
+ANR	325	Identifier	tcg_temp_new		154	0					
+ANR	326	ArgumentList			154	1					
+ANR	327	ExpressionStatement	"tcg_gen_not_tl ( inv1 , arg1 )"	34:12:1316:1342	154	1	True				
+ANR	328	CallExpression	"tcg_gen_not_tl ( inv1 , arg1 )"		154	0					
+ANR	329	Callee	tcg_gen_not_tl		154	0					
+ANR	330	Identifier	tcg_gen_not_tl		154	0					
+ANR	331	ArgumentList	inv1		154	1					
+ANR	332	Argument	inv1		154	0					
+ANR	333	Identifier	inv1		154	0					
+ANR	334	Argument	arg1		154	1					
+ANR	335	Identifier	arg1		154	0					
+ANR	336	ExpressionStatement	zero = tcg_const_tl ( 0 )	35:12:1356:1378	154	2	True				
+ANR	337	AssignmentExpression	zero = tcg_const_tl ( 0 )		154	0		=			
+ANR	338	Identifier	zero		154	0					
+ANR	339	CallExpression	tcg_const_tl ( 0 )		154	1					
+ANR	340	Callee	tcg_const_tl		154	0					
+ANR	341	Identifier	tcg_const_tl		154	0					
+ANR	342	ArgumentList	0		154	1					
+ANR	343	Argument	0		154	0					
+ANR	344	PrimaryExpression	0		154	0					
+ANR	345	ExpressionStatement	"tcg_gen_add2_tl ( t0 , cpu_ca , arg2 , zero , cpu_ca , zero )"	36:12:1392:1445	154	3	True				
+ANR	346	CallExpression	"tcg_gen_add2_tl ( t0 , cpu_ca , arg2 , zero , cpu_ca , zero )"		154	0					
+ANR	347	Callee	tcg_gen_add2_tl		154	0					
+ANR	348	Identifier	tcg_gen_add2_tl		154	0					
+ANR	349	ArgumentList	t0		154	1					
+ANR	350	Argument	t0		154	0					
+ANR	351	Identifier	t0		154	0					
+ANR	352	Argument	cpu_ca		154	1					
+ANR	353	Identifier	cpu_ca		154	0					
+ANR	354	Argument	arg2		154	2					
+ANR	355	Identifier	arg2		154	0					
+ANR	356	Argument	zero		154	3					
+ANR	357	Identifier	zero		154	0					
+ANR	358	Argument	cpu_ca		154	4					
+ANR	359	Identifier	cpu_ca		154	0					
+ANR	360	Argument	zero		154	5					
+ANR	361	Identifier	zero		154	0					
+ANR	362	ExpressionStatement	"tcg_gen_add2_tl ( t0 , cpu_ca , t0 , cpu_ca , inv1 , zero )"	37:12:1459:1510	154	4	True				
+ANR	363	CallExpression	"tcg_gen_add2_tl ( t0 , cpu_ca , t0 , cpu_ca , inv1 , zero )"		154	0					
+ANR	364	Callee	tcg_gen_add2_tl		154	0					
+ANR	365	Identifier	tcg_gen_add2_tl		154	0					
+ANR	366	ArgumentList	t0		154	1					
+ANR	367	Argument	t0		154	0					
+ANR	368	Identifier	t0		154	0					
+ANR	369	Argument	cpu_ca		154	1					
+ANR	370	Identifier	cpu_ca		154	0					
+ANR	371	Argument	t0		154	2					
+ANR	372	Identifier	t0		154	0					
+ANR	373	Argument	cpu_ca		154	3					
+ANR	374	Identifier	cpu_ca		154	0					
+ANR	375	Argument	inv1		154	4					
+ANR	376	Identifier	inv1		154	0					
+ANR	377	Argument	zero		154	5					
+ANR	378	Identifier	zero		154	0					
+ANR	379	ExpressionStatement	tcg_temp_free ( zero )	38:12:1524:1543	154	5	True				
+ANR	380	CallExpression	tcg_temp_free ( zero )		154	0					
+ANR	381	Callee	tcg_temp_free		154	0					
+ANR	382	Identifier	tcg_temp_free		154	0					
+ANR	383	ArgumentList	zero		154	1					
+ANR	384	Argument	zero		154	0					
+ANR	385	Identifier	zero		154	0					
+ANR	386	ElseStatement	else		154	0					
+ANR	387	CompoundStatement		37:15:1333:1333	154	0					
+ANR	388	ExpressionStatement	"tcg_gen_setcond_tl ( TCG_COND_GEU , cpu_ca , arg2 , arg1 )"	41:12:1575:1627	154	0	True				
+ANR	389	CallExpression	"tcg_gen_setcond_tl ( TCG_COND_GEU , cpu_ca , arg2 , arg1 )"		154	0					
+ANR	390	Callee	tcg_gen_setcond_tl		154	0					
+ANR	391	Identifier	tcg_gen_setcond_tl		154	0					
+ANR	392	ArgumentList	TCG_COND_GEU		154	1					
+ANR	393	Argument	TCG_COND_GEU		154	0					
+ANR	394	Identifier	TCG_COND_GEU		154	0					
+ANR	395	Argument	cpu_ca		154	1					
+ANR	396	Identifier	cpu_ca		154	0					
+ANR	397	Argument	arg2		154	2					
+ANR	398	Identifier	arg2		154	0					
+ANR	399	Argument	arg1		154	3					
+ANR	400	Identifier	arg1		154	0					
+ANR	401	ExpressionStatement	"tcg_gen_sub_tl ( t0 , arg2 , arg1 )"	42:12:1641:1671	154	1	True				
+ANR	402	CallExpression	"tcg_gen_sub_tl ( t0 , arg2 , arg1 )"		154	0					
+ANR	403	Callee	tcg_gen_sub_tl		154	0					
+ANR	404	Identifier	tcg_gen_sub_tl		154	0					
+ANR	405	ArgumentList	t0		154	1					
+ANR	406	Argument	t0		154	0					
+ANR	407	Identifier	t0		154	0					
+ANR	408	Argument	arg2		154	1					
+ANR	409	Identifier	arg2		154	0					
+ANR	410	Argument	arg1		154	2					
+ANR	411	Identifier	arg1		154	0					
+ANR	412	ElseStatement	else		154	0					
+ANR	413	IfStatement	if ( add_ca )		154	0					
+ANR	414	Condition	add_ca	44:15:1698:1703	154	0	True				
+ANR	415	Identifier	add_ca		154	0					
+ANR	416	CompoundStatement		41:23:1478:1478	154	1					
+ANR	417	ExpressionStatement	"tcg_gen_sub_tl ( t0 , arg2 , arg1 )"	47:8:1846:1876	154	0	True				
+ANR	418	CallExpression	"tcg_gen_sub_tl ( t0 , arg2 , arg1 )"		154	0					
+ANR	419	Callee	tcg_gen_sub_tl		154	0					
+ANR	420	Identifier	tcg_gen_sub_tl		154	0					
+ANR	421	ArgumentList	t0		154	1					
+ANR	422	Argument	t0		154	0					
+ANR	423	Identifier	t0		154	0					
+ANR	424	Argument	arg2		154	1					
+ANR	425	Identifier	arg2		154	0					
+ANR	426	Argument	arg1		154	2					
+ANR	427	Identifier	arg1		154	0					
+ANR	428	ExpressionStatement	"tcg_gen_add_tl ( t0 , t0 , cpu_ca )"	48:8:1886:1916	154	1	True				
+ANR	429	CallExpression	"tcg_gen_add_tl ( t0 , t0 , cpu_ca )"		154	0					
+ANR	430	Callee	tcg_gen_add_tl		154	0					
+ANR	431	Identifier	tcg_gen_add_tl		154	0					
+ANR	432	ArgumentList	t0		154	1					
+ANR	433	Argument	t0		154	0					
+ANR	434	Identifier	t0		154	0					
+ANR	435	Argument	t0		154	1					
+ANR	436	Identifier	t0		154	0					
+ANR	437	Argument	cpu_ca		154	2					
+ANR	438	Identifier	cpu_ca		154	0					
+ANR	439	ExpressionStatement	"tcg_gen_subi_tl ( t0 , t0 , 1 )"	49:8:1926:1952	154	2	True				
+ANR	440	CallExpression	"tcg_gen_subi_tl ( t0 , t0 , 1 )"		154	0					
+ANR	441	Callee	tcg_gen_subi_tl		154	0					
+ANR	442	Identifier	tcg_gen_subi_tl		154	0					
+ANR	443	ArgumentList	t0		154	1					
+ANR	444	Argument	t0		154	0					
+ANR	445	Identifier	t0		154	0					
+ANR	446	Argument	t0		154	1					
+ANR	447	Identifier	t0		154	0					
+ANR	448	Argument	1		154	2					
+ANR	449	PrimaryExpression	1		154	0					
+ANR	450	ElseStatement	else		154	0					
+ANR	451	CompoundStatement		47:11:1737:1737	154	0					
+ANR	452	ExpressionStatement	"tcg_gen_sub_tl ( t0 , arg2 , arg1 )"	51:8:1975:2005	154	0	True				
+ANR	453	CallExpression	"tcg_gen_sub_tl ( t0 , arg2 , arg1 )"		154	0					
+ANR	454	Callee	tcg_gen_sub_tl		154	0					
+ANR	455	Identifier	tcg_gen_sub_tl		154	0					
+ANR	456	ArgumentList	t0		154	1					
+ANR	457	Argument	t0		154	0					
+ANR	458	Identifier	t0		154	0					
+ANR	459	Argument	arg2		154	1					
+ANR	460	Identifier	arg2		154	0					
+ANR	461	Argument	arg1		154	2					
+ANR	462	Identifier	arg1		154	0					
+ANR	463	IfStatement	if ( compute_ov )		154	3					
+ANR	464	Condition	compute_ov	54:8:2022:2031	154	0	True				
+ANR	465	Identifier	compute_ov		154	0					
+ANR	466	CompoundStatement		51:20:1806:1806	154	1					
+ANR	467	ExpressionStatement	"gen_op_arith_compute_ov ( ctx , t0 , arg1 , arg2 , 1 )"	55:8:2044:2091	154	0	True				
+ANR	468	CallExpression	"gen_op_arith_compute_ov ( ctx , t0 , arg1 , arg2 , 1 )"		154	0					
+ANR	469	Callee	gen_op_arith_compute_ov		154	0					
+ANR	470	Identifier	gen_op_arith_compute_ov		154	0					
+ANR	471	ArgumentList	ctx		154	1					
+ANR	472	Argument	ctx		154	0					
+ANR	473	Identifier	ctx		154	0					
+ANR	474	Argument	t0		154	1					
+ANR	475	Identifier	t0		154	0					
+ANR	476	Argument	arg1		154	2					
+ANR	477	Identifier	arg1		154	0					
+ANR	478	Argument	arg2		154	3					
+ANR	479	Identifier	arg2		154	0					
+ANR	480	Argument	1		154	4					
+ANR	481	PrimaryExpression	1		154	0					
+ANR	482	IfStatement	if ( unlikely ( compute_rc0 ) )		154	4					
+ANR	483	Condition	unlikely ( compute_rc0 )	57:8:2107:2127	154	0	True				
+ANR	484	CallExpression	unlikely ( compute_rc0 )		154	0					
+ANR	485	Callee	unlikely		154	0					
+ANR	486	Identifier	unlikely		154	0					
+ANR	487	ArgumentList	compute_rc0		154	1					
+ANR	488	Argument	compute_rc0		154	0					
+ANR	489	Identifier	compute_rc0		154	0					
+ANR	490	CompoundStatement		54:31:1902:1902	154	1					
+ANR	491	ExpressionStatement	"gen_set_Rc0 ( ctx , t0 )"	58:8:2140:2160	154	0	True				
+ANR	492	CallExpression	"gen_set_Rc0 ( ctx , t0 )"		154	0					
+ANR	493	Callee	gen_set_Rc0		154	0					
+ANR	494	Identifier	gen_set_Rc0		154	0					
+ANR	495	ArgumentList	ctx		154	1					
+ANR	496	Argument	ctx		154	0					
+ANR	497	Identifier	ctx		154	0					
+ANR	498	Argument	t0		154	1					
+ANR	499	Identifier	t0		154	0					
+ANR	500	IfStatement	"if ( ! TCGV_EQUAL ( t0 , ret ) )"		154	5					
+ANR	501	Condition	"! TCGV_EQUAL ( t0 , ret )"	61:8:2177:2196	154	0	True				
+ANR	502	UnaryOperationExpression	"! TCGV_EQUAL ( t0 , ret )"		154	0					
+ANR	503	UnaryOperator	!		154	0					
+ANR	504	CallExpression	"TCGV_EQUAL ( t0 , ret )"		154	1					
+ANR	505	Callee	TCGV_EQUAL		154	0					
+ANR	506	Identifier	TCGV_EQUAL		154	0					
+ANR	507	ArgumentList	t0		154	1					
+ANR	508	Argument	t0		154	0					
+ANR	509	Identifier	t0		154	0					
+ANR	510	Argument	ret		154	1					
+ANR	511	Identifier	ret		154	0					
+ANR	512	CompoundStatement		58:30:1971:1971	154	1					
+ANR	513	ExpressionStatement	"tcg_gen_mov_tl ( ret , t0 )"	62:8:2209:2232	154	0	True				
+ANR	514	CallExpression	"tcg_gen_mov_tl ( ret , t0 )"		154	0					
+ANR	515	Callee	tcg_gen_mov_tl		154	0					
+ANR	516	Identifier	tcg_gen_mov_tl		154	0					
+ANR	517	ArgumentList	ret		154	1					
+ANR	518	Argument	ret		154	0					
+ANR	519	Identifier	ret		154	0					
+ANR	520	Argument	t0		154	1					
+ANR	521	Identifier	t0		154	0					
+ANR	522	ExpressionStatement	tcg_temp_free ( t0 )	63:8:2242:2259	154	1	True				
+ANR	523	CallExpression	tcg_temp_free ( t0 )		154	0					
+ANR	524	Callee	tcg_temp_free		154	0					
+ANR	525	Identifier	tcg_temp_free		154	0					
+ANR	526	ArgumentList	t0		154	1					
+ANR	527	Argument	t0		154	0					
+ANR	528	Identifier	t0		154	0					
+ANR	529	ReturnType	static inline void		154	1					
+ANR	530	Identifier	gen_op_arith_subf		154	2					
+ANR	531	ParameterList	"DisasContext * ctx , TCGv ret , TCGv arg1 , TCGv arg2 , bool add_ca , bool compute_ca , bool compute_ov , bool compute_rc0"		154	3					
+ANR	532	Parameter	DisasContext * ctx	1:37:37:53	154	0	True				
+ANR	533	ParameterType	DisasContext *		154	0					
+ANR	534	Identifier	ctx		154	1					
+ANR	535	Parameter	TCGv ret	1:56:56:63	154	1	True				
+ANR	536	ParameterType	TCGv		154	0					
+ANR	537	Identifier	ret		154	1					
+ANR	538	Parameter	TCGv arg1	1:66:66:74	154	2	True				
+ANR	539	ParameterType	TCGv		154	0					
+ANR	540	Identifier	arg1		154	1					
+ANR	541	Parameter	TCGv arg2	2:37:114:122	154	3	True				
+ANR	542	ParameterType	TCGv		154	0					
+ANR	543	Identifier	arg2		154	1					
+ANR	544	Parameter	bool add_ca	2:48:125:135	154	4	True				
+ANR	545	ParameterType	bool		154	0					
+ANR	546	Identifier	add_ca		154	1					
+ANR	547	Parameter	bool compute_ca	2:61:138:152	154	5	True				
+ANR	548	ParameterType	bool		154	0					
+ANR	549	Identifier	compute_ca		154	1					
+ANR	550	Parameter	bool compute_ov	3:37:192:206	154	6	True				
+ANR	551	ParameterType	bool		154	0					
+ANR	552	Identifier	compute_ov		154	1					
+ANR	553	Parameter	bool compute_rc0	3:54:209:224	154	7	True				
+ANR	554	ParameterType	bool		154	0					
+ANR	555	Identifier	compute_rc0		154	1					
+ANR	556	CFGEntryNode	ENTRY		154		True				
+ANR	557	CFGExitNode	EXIT		154		True				
+ANR	558	Symbol	ret		154						
+ANR	559	Symbol	compute_rc0		154						
+ANR	560	Symbol	unlikely		154						
+ANR	561	Symbol	compute_ca		154						
+ANR	562	Symbol	cpu_ca		154						
+ANR	563	Symbol	ctx		154						
+ANR	564	Symbol	NARROW_MODE		154						
+ANR	565	Symbol	TCG_COND_GEU		154						
+ANR	566	Symbol	add_ca		154						
+ANR	567	Symbol	compute_ov		154						
+ANR	568	Symbol	tcg_temp_new		154						
+ANR	569	Symbol	TCGV_EQUAL		154						
+ANR	570	Symbol	zero		154						
+ANR	571	Symbol	arg2		154						
+ANR	572	Symbol	inv1		154						
+ANR	573	Symbol	tcg_const_tl		154						
+ANR	574	Symbol	arg1		154						
+ANR	575	Symbol	t0		154						
+ANR	576	Symbol	t1		154						

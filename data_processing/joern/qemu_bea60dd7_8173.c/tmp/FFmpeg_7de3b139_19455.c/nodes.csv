@@ -1,0 +1,826 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/FFmpeg_7de3b139_19455.c								
+ANR	2	Function	sdl_write_header	1:0:0:4174							
+ANR	3	FunctionDef	sdl_write_header (AVFormatContext * s)		2	0					
+ANR	4	CompoundStatement		2:0:48:4174	2	0					
+ANR	5	IdentifierDeclStatement	SDLContext * sdl = s -> priv_data ;	3:4:54:84	2	0	True				
+ANR	6	IdentifierDecl	* sdl = s -> priv_data		2	0					
+ANR	7	IdentifierDeclType	SDLContext *		2	0					
+ANR	8	Identifier	sdl		2	1					
+ANR	9	AssignmentExpression	* sdl = s -> priv_data		2	2		=			
+ANR	10	Identifier	sdl		2	0					
+ANR	11	PtrMemberAccess	s -> priv_data		2	1					
+ANR	12	Identifier	s		2	0					
+ANR	13	Identifier	priv_data		2	1					
+ANR	14	IdentifierDeclStatement	AVStream * st = s -> streams [ 0 ] ;	4:4:90:118	2	1	True				
+ANR	15	IdentifierDecl	* st = s -> streams [ 0 ]		2	0					
+ANR	16	IdentifierDeclType	AVStream *		2	0					
+ANR	17	Identifier	st		2	1					
+ANR	18	AssignmentExpression	* st = s -> streams [ 0 ]		2	2		=			
+ANR	19	Identifier	st		2	0					
+ANR	20	ArrayIndexing	s -> streams [ 0 ]		2	1					
+ANR	21	PtrMemberAccess	s -> streams		2	0					
+ANR	22	Identifier	s		2	0					
+ANR	23	Identifier	streams		2	1					
+ANR	24	PrimaryExpression	0		2	1					
+ANR	25	IdentifierDeclStatement	AVCodecContext * encctx = st -> codec ;	5:4:124:158	2	2	True				
+ANR	26	IdentifierDecl	* encctx = st -> codec		2	0					
+ANR	27	IdentifierDeclType	AVCodecContext *		2	0					
+ANR	28	Identifier	encctx		2	1					
+ANR	29	AssignmentExpression	* encctx = st -> codec		2	2		=			
+ANR	30	Identifier	encctx		2	0					
+ANR	31	PtrMemberAccess	st -> codec		2	1					
+ANR	32	Identifier	st		2	0					
+ANR	33	Identifier	codec		2	1					
+ANR	34	IdentifierDeclStatement	"AVRational sar , dar ;"	6:4:164:183	2	3	True				
+ANR	35	IdentifierDecl	sar		2	0					
+ANR	36	IdentifierDeclType	AVRational		2	0					
+ANR	37	Identifier	sar		2	1					
+ANR	38	IdentifierDecl	dar		2	1					
+ANR	39	IdentifierDeclType	AVRational		2	0					
+ANR	40	Identifier	dar		2	1					
+ANR	41	IdentifierDeclStatement	"int i , ret ;"	7:4:228:238	2	4	True				
+ANR	42	IdentifierDecl	i		2	0					
+ANR	43	IdentifierDeclType	int		2	0					
+ANR	44	Identifier	i		2	1					
+ANR	45	IdentifierDecl	ret		2	1					
+ANR	46	IdentifierDeclType	int		2	0					
+ANR	47	Identifier	ret		2	1					
+ANR	48	IdentifierDeclStatement	int flags = SDL_SWSURFACE | sdl -> window_fullscreen ? SDL_FULLSCREEN : 0 ;	8:4:244:315	2	5	True				
+ANR	49	IdentifierDecl	flags = SDL_SWSURFACE | sdl -> window_fullscreen ? SDL_FULLSCREEN : 0		2	0					
+ANR	50	IdentifierDeclType	int		2	0					
+ANR	51	Identifier	flags		2	1					
+ANR	52	AssignmentExpression	flags = SDL_SWSURFACE | sdl -> window_fullscreen ? SDL_FULLSCREEN : 0		2	2		=			
+ANR	53	Identifier	flags		2	0					
+ANR	54	ConditionalExpression	SDL_SWSURFACE | sdl -> window_fullscreen ? SDL_FULLSCREEN : 0		2	1					
+ANR	55	Condition	SDL_SWSURFACE | sdl -> window_fullscreen		2	0					
+ANR	56	InclusiveOrExpression	SDL_SWSURFACE | sdl -> window_fullscreen		2	0		|			
+ANR	57	Identifier	SDL_SWSURFACE		2	0					
+ANR	58	PtrMemberAccess	sdl -> window_fullscreen		2	1					
+ANR	59	Identifier	sdl		2	0					
+ANR	60	Identifier	window_fullscreen		2	1					
+ANR	61	Identifier	SDL_FULLSCREEN		2	1					
+ANR	62	PrimaryExpression	0		2	2					
+ANR	63	IfStatement	if ( ! sdl -> window_title )		2	6					
+ANR	64	Condition	! sdl -> window_title	10:8:326:343	2	0	True				
+ANR	65	UnaryOperationExpression	! sdl -> window_title		2	0					
+ANR	66	UnaryOperator	!		2	0					
+ANR	67	PtrMemberAccess	sdl -> window_title		2	1					
+ANR	68	Identifier	sdl		2	0					
+ANR	69	Identifier	window_title		2	1					
+ANR	70	ExpressionStatement	sdl -> window_title = av_strdup ( s -> filename )	11:8:354:396	2	1	True				
+ANR	71	AssignmentExpression	sdl -> window_title = av_strdup ( s -> filename )		2	0		=			
+ANR	72	PtrMemberAccess	sdl -> window_title		2	0					
+ANR	73	Identifier	sdl		2	0					
+ANR	74	Identifier	window_title		2	1					
+ANR	75	CallExpression	av_strdup ( s -> filename )		2	1					
+ANR	76	Callee	av_strdup		2	0					
+ANR	77	Identifier	av_strdup		2	0					
+ANR	78	ArgumentList	s -> filename		2	1					
+ANR	79	Argument	s -> filename		2	0					
+ANR	80	PtrMemberAccess	s -> filename		2	0					
+ANR	81	Identifier	s		2	0					
+ANR	82	Identifier	filename		2	1					
+ANR	83	IfStatement	if ( ! sdl -> icon_title )		2	7					
+ANR	84	Condition	! sdl -> icon_title	12:8:406:421	2	0	True				
+ANR	85	UnaryOperationExpression	! sdl -> icon_title		2	0					
+ANR	86	UnaryOperator	!		2	0					
+ANR	87	PtrMemberAccess	sdl -> icon_title		2	1					
+ANR	88	Identifier	sdl		2	0					
+ANR	89	Identifier	icon_title		2	1					
+ANR	90	ExpressionStatement	sdl -> icon_title = av_strdup ( sdl -> window_title )	13:8:432:478	2	1	True				
+ANR	91	AssignmentExpression	sdl -> icon_title = av_strdup ( sdl -> window_title )		2	0		=			
+ANR	92	PtrMemberAccess	sdl -> icon_title		2	0					
+ANR	93	Identifier	sdl		2	0					
+ANR	94	Identifier	icon_title		2	1					
+ANR	95	CallExpression	av_strdup ( sdl -> window_title )		2	1					
+ANR	96	Callee	av_strdup		2	0					
+ANR	97	Identifier	av_strdup		2	0					
+ANR	98	ArgumentList	sdl -> window_title		2	1					
+ANR	99	Argument	sdl -> window_title		2	0					
+ANR	100	PtrMemberAccess	sdl -> window_title		2	0					
+ANR	101	Identifier	sdl		2	0					
+ANR	102	Identifier	window_title		2	1					
+ANR	103	IfStatement	if ( SDL_WasInit ( SDL_INIT_VIDEO ) )		2	8					
+ANR	104	Condition	SDL_WasInit ( SDL_INIT_VIDEO )	15:8:489:515	2	0	True				
+ANR	105	CallExpression	SDL_WasInit ( SDL_INIT_VIDEO )		2	0					
+ANR	106	Callee	SDL_WasInit		2	0					
+ANR	107	Identifier	SDL_WasInit		2	0					
+ANR	108	ArgumentList	SDL_INIT_VIDEO		2	1					
+ANR	109	Argument	SDL_INIT_VIDEO		2	0					
+ANR	110	Identifier	SDL_INIT_VIDEO		2	0					
+ANR	111	CompoundStatement		14:37:469:469	2	1					
+ANR	112	ExpressionStatement	"av_log ( s , AV_LOG_ERROR , ""SDL video subsystem was already inited, aborting\\n"" )"	16:8:528:620	2	0	True				
+ANR	113	CallExpression	"av_log ( s , AV_LOG_ERROR , ""SDL video subsystem was already inited, aborting\\n"" )"		2	0					
+ANR	114	Callee	av_log		2	0					
+ANR	115	Identifier	av_log		2	0					
+ANR	116	ArgumentList	s		2	1					
+ANR	117	Argument	s		2	0					
+ANR	118	Identifier	s		2	0					
+ANR	119	Argument	AV_LOG_ERROR		2	1					
+ANR	120	Identifier	AV_LOG_ERROR		2	0					
+ANR	121	Argument	"""SDL video subsystem was already inited, aborting\\n"""		2	2					
+ANR	122	PrimaryExpression	"""SDL video subsystem was already inited, aborting\\n"""		2	0					
+ANR	123	ExpressionStatement	sdl -> sdl_was_already_inited = 1	18:8:630:661	2	1	True				
+ANR	124	AssignmentExpression	sdl -> sdl_was_already_inited = 1		2	0		=			
+ANR	125	PtrMemberAccess	sdl -> sdl_was_already_inited		2	0					
+ANR	126	Identifier	sdl		2	0					
+ANR	127	Identifier	sdl_was_already_inited		2	1					
+ANR	128	PrimaryExpression	1		2	1					
+ANR	129	ExpressionStatement	ret = AVERROR ( EINVAL )	19:8:671:692	2	2	True				
+ANR	130	AssignmentExpression	ret = AVERROR ( EINVAL )		2	0		=			
+ANR	131	Identifier	ret		2	0					
+ANR	132	CallExpression	AVERROR ( EINVAL )		2	1					
+ANR	133	Callee	AVERROR		2	0					
+ANR	134	Identifier	AVERROR		2	0					
+ANR	135	ArgumentList	EINVAL		2	1					
+ANR	136	Argument	EINVAL		2	0					
+ANR	137	Identifier	EINVAL		2	0					
+ANR	138	GotoStatement	goto fail ;	20:8:702:711	2	3	True				
+ANR	139	Identifier	fail		2	0					
+ANR	140	IfStatement	if ( SDL_Init ( SDL_INIT_VIDEO ) != 0 )		2	9					
+ANR	141	Condition	SDL_Init ( SDL_INIT_VIDEO ) != 0	23:8:728:756	2	0	True				
+ANR	142	EqualityExpression	SDL_Init ( SDL_INIT_VIDEO ) != 0		2	0		!=			
+ANR	143	CallExpression	SDL_Init ( SDL_INIT_VIDEO )		2	0					
+ANR	144	Callee	SDL_Init		2	0					
+ANR	145	Identifier	SDL_Init		2	0					
+ANR	146	ArgumentList	SDL_INIT_VIDEO		2	1					
+ANR	147	Argument	SDL_INIT_VIDEO		2	0					
+ANR	148	Identifier	SDL_INIT_VIDEO		2	0					
+ANR	149	PrimaryExpression	0		2	1					
+ANR	150	CompoundStatement		22:39:710:710	2	1					
+ANR	151	ExpressionStatement	"av_log ( s , AV_LOG_ERROR , ""Unable to initialize SDL: %s\\n"" , SDL_GetError ( ) )"	24:8:769:842	2	0	True				
+ANR	152	CallExpression	"av_log ( s , AV_LOG_ERROR , ""Unable to initialize SDL: %s\\n"" , SDL_GetError ( ) )"		2	0					
+ANR	153	Callee	av_log		2	0					
+ANR	154	Identifier	av_log		2	0					
+ANR	155	ArgumentList	s		2	1					
+ANR	156	Argument	s		2	0					
+ANR	157	Identifier	s		2	0					
+ANR	158	Argument	AV_LOG_ERROR		2	1					
+ANR	159	Identifier	AV_LOG_ERROR		2	0					
+ANR	160	Argument	"""Unable to initialize SDL: %s\\n"""		2	2					
+ANR	161	PrimaryExpression	"""Unable to initialize SDL: %s\\n"""		2	0					
+ANR	162	Argument	SDL_GetError ( )		2	3					
+ANR	163	CallExpression	SDL_GetError ( )		2	0					
+ANR	164	Callee	SDL_GetError		2	0					
+ANR	165	Identifier	SDL_GetError		2	0					
+ANR	166	ArgumentList			2	1					
+ANR	167	ExpressionStatement	ret = AVERROR ( EINVAL )	25:8:852:873	2	1	True				
+ANR	168	AssignmentExpression	ret = AVERROR ( EINVAL )		2	0		=			
+ANR	169	Identifier	ret		2	0					
+ANR	170	CallExpression	AVERROR ( EINVAL )		2	1					
+ANR	171	Callee	AVERROR		2	0					
+ANR	172	Identifier	AVERROR		2	0					
+ANR	173	ArgumentList	EINVAL		2	1					
+ANR	174	Argument	EINVAL		2	0					
+ANR	175	Identifier	EINVAL		2	0					
+ANR	176	GotoStatement	goto fail ;	26:8:883:892	2	2	True				
+ANR	177	Identifier	fail		2	0					
+ANR	178	IfStatement	if ( s -> nb_streams > 1 || encctx -> codec_type != AVMEDIA_TYPE_VIDEO || encctx -> codec_id != AV_CODEC_ID_RAWVIDEO )		2	10					
+ANR	179	Condition	s -> nb_streams > 1 || encctx -> codec_type != AVMEDIA_TYPE_VIDEO || encctx -> codec_id != AV_CODEC_ID_RAWVIDEO	29:11:912:1034	2	0	True				
+ANR	180	OrExpression	s -> nb_streams > 1 || encctx -> codec_type != AVMEDIA_TYPE_VIDEO || encctx -> codec_id != AV_CODEC_ID_RAWVIDEO		2	0		||			
+ANR	181	RelationalExpression	s -> nb_streams > 1		2	0		>			
+ANR	182	PtrMemberAccess	s -> nb_streams		2	0					
+ANR	183	Identifier	s		2	0					
+ANR	184	Identifier	nb_streams		2	1					
+ANR	185	PrimaryExpression	1		2	1					
+ANR	186	OrExpression	encctx -> codec_type != AVMEDIA_TYPE_VIDEO || encctx -> codec_id != AV_CODEC_ID_RAWVIDEO		2	1		||			
+ANR	187	EqualityExpression	encctx -> codec_type != AVMEDIA_TYPE_VIDEO		2	0		!=			
+ANR	188	PtrMemberAccess	encctx -> codec_type		2	0					
+ANR	189	Identifier	encctx		2	0					
+ANR	190	Identifier	codec_type		2	1					
+ANR	191	Identifier	AVMEDIA_TYPE_VIDEO		2	1					
+ANR	192	EqualityExpression	encctx -> codec_id != AV_CODEC_ID_RAWVIDEO		2	1		!=			
+ANR	193	PtrMemberAccess	encctx -> codec_id		2	0					
+ANR	194	Identifier	encctx		2	0					
+ANR	195	Identifier	codec_id		2	1					
+ANR	196	Identifier	AV_CODEC_ID_RAWVIDEO		2	1					
+ANR	197	CompoundStatement		30:55:988:988	2	1					
+ANR	198	ExpressionStatement	"av_log ( s , AV_LOG_ERROR , ""Only supports one rawvideo stream\\n"" )"	32:8:1047:1109	2	0	True				
+ANR	199	CallExpression	"av_log ( s , AV_LOG_ERROR , ""Only supports one rawvideo stream\\n"" )"		2	0					
+ANR	200	Callee	av_log		2	0					
+ANR	201	Identifier	av_log		2	0					
+ANR	202	ArgumentList	s		2	1					
+ANR	203	Argument	s		2	0					
+ANR	204	Identifier	s		2	0					
+ANR	205	Argument	AV_LOG_ERROR		2	1					
+ANR	206	Identifier	AV_LOG_ERROR		2	0					
+ANR	207	Argument	"""Only supports one rawvideo stream\\n"""		2	2					
+ANR	208	PrimaryExpression	"""Only supports one rawvideo stream\\n"""		2	0					
+ANR	209	ExpressionStatement	ret = AVERROR ( EINVAL )	33:8:1119:1140	2	1	True				
+ANR	210	AssignmentExpression	ret = AVERROR ( EINVAL )		2	0		=			
+ANR	211	Identifier	ret		2	0					
+ANR	212	CallExpression	AVERROR ( EINVAL )		2	1					
+ANR	213	Callee	AVERROR		2	0					
+ANR	214	Identifier	AVERROR		2	0					
+ANR	215	ArgumentList	EINVAL		2	1					
+ANR	216	Argument	EINVAL		2	0					
+ANR	217	Identifier	EINVAL		2	0					
+ANR	218	GotoStatement	goto fail ;	34:8:1150:1159	2	2	True				
+ANR	219	Identifier	fail		2	0					
+ANR	220	ForStatement	for ( i = 0 ; sdl_overlay_pix_fmt_map [ i ] . pix_fmt != AV_PIX_FMT_NONE ; i ++ )		2	11					
+ANR	221	ForInit	i = 0 ;	37:9:1177:1182	2	0	True				
+ANR	222	AssignmentExpression	i = 0		2	0		=			
+ANR	223	Identifier	i		2	0					
+ANR	224	PrimaryExpression	0		2	1					
+ANR	225	Condition	sdl_overlay_pix_fmt_map [ i ] . pix_fmt != AV_PIX_FMT_NONE	37:16:1184:1236	2	1	True				
+ANR	226	EqualityExpression	sdl_overlay_pix_fmt_map [ i ] . pix_fmt != AV_PIX_FMT_NONE		2	0		!=			
+ANR	227	MemberAccess	sdl_overlay_pix_fmt_map [ i ] . pix_fmt		2	0					
+ANR	228	ArrayIndexing	sdl_overlay_pix_fmt_map [ i ]		2	0					
+ANR	229	Identifier	sdl_overlay_pix_fmt_map		2	0					
+ANR	230	Identifier	i		2	1					
+ANR	231	Identifier	pix_fmt		2	1					
+ANR	232	Identifier	AV_PIX_FMT_NONE		2	1					
+ANR	233	PostIncDecOperationExpression	i ++	37:71:1239:1241	2	2	True				
+ANR	234	Identifier	i		2	0					
+ANR	235	IncDec	++		2	1					
+ANR	236	CompoundStatement		36:76:1195:1195	2	3					
+ANR	237	IfStatement	if ( sdl_overlay_pix_fmt_map [ i ] . pix_fmt == encctx -> pix_fmt )		2	0					
+ANR	238	Condition	sdl_overlay_pix_fmt_map [ i ] . pix_fmt == encctx -> pix_fmt	38:12:1258:1310	2	0	True				
+ANR	239	EqualityExpression	sdl_overlay_pix_fmt_map [ i ] . pix_fmt == encctx -> pix_fmt		2	0		==			
+ANR	240	MemberAccess	sdl_overlay_pix_fmt_map [ i ] . pix_fmt		2	0					
+ANR	241	ArrayIndexing	sdl_overlay_pix_fmt_map [ i ]		2	0					
+ANR	242	Identifier	sdl_overlay_pix_fmt_map		2	0					
+ANR	243	Identifier	i		2	1					
+ANR	244	Identifier	pix_fmt		2	1					
+ANR	245	PtrMemberAccess	encctx -> pix_fmt		2	1					
+ANR	246	Identifier	encctx		2	0					
+ANR	247	Identifier	pix_fmt		2	1					
+ANR	248	CompoundStatement		37:67:1264:1264	2	1					
+ANR	249	ExpressionStatement	sdl -> overlay_fmt = sdl_overlay_pix_fmt_map [ i ] . overlay_fmt	39:12:1327:1384	2	0	True				
+ANR	250	AssignmentExpression	sdl -> overlay_fmt = sdl_overlay_pix_fmt_map [ i ] . overlay_fmt		2	0		=			
+ANR	251	PtrMemberAccess	sdl -> overlay_fmt		2	0					
+ANR	252	Identifier	sdl		2	0					
+ANR	253	Identifier	overlay_fmt		2	1					
+ANR	254	MemberAccess	sdl_overlay_pix_fmt_map [ i ] . overlay_fmt		2	1					
+ANR	255	ArrayIndexing	sdl_overlay_pix_fmt_map [ i ]		2	0					
+ANR	256	Identifier	sdl_overlay_pix_fmt_map		2	0					
+ANR	257	Identifier	i		2	1					
+ANR	258	Identifier	overlay_fmt		2	1					
+ANR	259	BreakStatement	break ;	40:12:1398:1403	2	1	True				
+ANR	260	IfStatement	if ( ! sdl -> overlay_fmt )		2	12					
+ANR	261	Condition	! sdl -> overlay_fmt	44:8:1430:1446	2	0	True				
+ANR	262	UnaryOperationExpression	! sdl -> overlay_fmt		2	0					
+ANR	263	UnaryOperator	!		2	0					
+ANR	264	PtrMemberAccess	sdl -> overlay_fmt		2	1					
+ANR	265	Identifier	sdl		2	0					
+ANR	266	Identifier	overlay_fmt		2	1					
+ANR	267	CompoundStatement		43:27:1400:1400	2	1					
+ANR	268	ExpressionStatement	"av_log ( s , AV_LOG_ERROR , ""Unsupported pixel format '%s', choose one of yuv420p, yuyv422, or uyvy422\\n"" , av_get_pix_fmt_name ( encctx -> pix_fmt ) )"	45:8:1459:1629	2	0	True				
+ANR	269	CallExpression	"av_log ( s , AV_LOG_ERROR , ""Unsupported pixel format '%s', choose one of yuv420p, yuyv422, or uyvy422\\n"" , av_get_pix_fmt_name ( encctx -> pix_fmt ) )"		2	0					
+ANR	270	Callee	av_log		2	0					
+ANR	271	Identifier	av_log		2	0					
+ANR	272	ArgumentList	s		2	1					
+ANR	273	Argument	s		2	0					
+ANR	274	Identifier	s		2	0					
+ANR	275	Argument	AV_LOG_ERROR		2	1					
+ANR	276	Identifier	AV_LOG_ERROR		2	0					
+ANR	277	Argument	"""Unsupported pixel format '%s', choose one of yuv420p, yuyv422, or uyvy422\\n"""		2	2					
+ANR	278	PrimaryExpression	"""Unsupported pixel format '%s', choose one of yuv420p, yuyv422, or uyvy422\\n"""		2	0					
+ANR	279	Argument	av_get_pix_fmt_name ( encctx -> pix_fmt )		2	3					
+ANR	280	CallExpression	av_get_pix_fmt_name ( encctx -> pix_fmt )		2	0					
+ANR	281	Callee	av_get_pix_fmt_name		2	0					
+ANR	282	Identifier	av_get_pix_fmt_name		2	0					
+ANR	283	ArgumentList	encctx -> pix_fmt		2	1					
+ANR	284	Argument	encctx -> pix_fmt		2	0					
+ANR	285	PtrMemberAccess	encctx -> pix_fmt		2	0					
+ANR	286	Identifier	encctx		2	0					
+ANR	287	Identifier	pix_fmt		2	1					
+ANR	288	ExpressionStatement	ret = AVERROR ( EINVAL )	48:8:1639:1660	2	1	True				
+ANR	289	AssignmentExpression	ret = AVERROR ( EINVAL )		2	0		=			
+ANR	290	Identifier	ret		2	0					
+ANR	291	CallExpression	AVERROR ( EINVAL )		2	1					
+ANR	292	Callee	AVERROR		2	0					
+ANR	293	Identifier	AVERROR		2	0					
+ANR	294	ArgumentList	EINVAL		2	1					
+ANR	295	Argument	EINVAL		2	0					
+ANR	296	Identifier	EINVAL		2	0					
+ANR	297	GotoStatement	goto fail ;	49:8:1670:1679	2	2	True				
+ANR	298	Identifier	fail		2	0					
+ANR	299	ElseStatement	else		2	0					
+ANR	300	CompoundStatement		67:11:2488:2488	2	0					
+ANR	301	IfStatement	if ( sar . num > sar . den )		2	0					
+ANR	302	Condition	sar . num > sar . den	69:12:2551:2567	2	0	True				
+ANR	303	RelationalExpression	sar . num > sar . den		2	0		>			
+ANR	304	MemberAccess	sar . num		2	0					
+ANR	305	Identifier	sar		2	0					
+ANR	306	Identifier	num		2	1					
+ANR	307	MemberAccess	sar . den		2	1					
+ANR	308	Identifier	sar		2	0					
+ANR	309	Identifier	den		2	1					
+ANR	310	CompoundStatement		68:31:2521:2521	2	1					
+ANR	311	ExpressionStatement	sdl -> overlay_width = encctx -> width	70:12:2584:2619	2	0	True				
+ANR	312	AssignmentExpression	sdl -> overlay_width = encctx -> width		2	0		=			
+ANR	313	PtrMemberAccess	sdl -> overlay_width		2	0					
+ANR	314	Identifier	sdl		2	0					
+ANR	315	Identifier	overlay_width		2	1					
+ANR	316	PtrMemberAccess	encctx -> width		2	1					
+ANR	317	Identifier	encctx		2	0					
+ANR	318	Identifier	width		2	1					
+ANR	319	ExpressionStatement	"sdl -> overlay_height = av_rescale ( sdl -> overlay_width , dar . den , dar . num )"	71:12:2633:2703	2	1	True				
+ANR	320	AssignmentExpression	"sdl -> overlay_height = av_rescale ( sdl -> overlay_width , dar . den , dar . num )"		2	0		=			
+ANR	321	PtrMemberAccess	sdl -> overlay_height		2	0					
+ANR	322	Identifier	sdl		2	0					
+ANR	323	Identifier	overlay_height		2	1					
+ANR	324	CallExpression	"av_rescale ( sdl -> overlay_width , dar . den , dar . num )"		2	1					
+ANR	325	Callee	av_rescale		2	0					
+ANR	326	Identifier	av_rescale		2	0					
+ANR	327	ArgumentList	sdl -> overlay_width		2	1					
+ANR	328	Argument	sdl -> overlay_width		2	0					
+ANR	329	PtrMemberAccess	sdl -> overlay_width		2	0					
+ANR	330	Identifier	sdl		2	0					
+ANR	331	Identifier	overlay_width		2	1					
+ANR	332	Argument	dar . den		2	1					
+ANR	333	MemberAccess	dar . den		2	0					
+ANR	334	Identifier	dar		2	0					
+ANR	335	Identifier	den		2	1					
+ANR	336	Argument	dar . num		2	2					
+ANR	337	MemberAccess	dar . num		2	0					
+ANR	338	Identifier	dar		2	0					
+ANR	339	Identifier	num		2	1					
+ANR	340	ElseStatement	else		2	0					
+ANR	341	CompoundStatement		71:15:2671:2671	2	0					
+ANR	342	ExpressionStatement	sdl -> overlay_height = encctx -> height	73:12:2734:2770	2	0	True				
+ANR	343	AssignmentExpression	sdl -> overlay_height = encctx -> height		2	0		=			
+ANR	344	PtrMemberAccess	sdl -> overlay_height		2	0					
+ANR	345	Identifier	sdl		2	0					
+ANR	346	Identifier	overlay_height		2	1					
+ANR	347	PtrMemberAccess	encctx -> height		2	1					
+ANR	348	Identifier	encctx		2	0					
+ANR	349	Identifier	height		2	1					
+ANR	350	ExpressionStatement	"sdl -> overlay_width = av_rescale ( sdl -> overlay_height , dar . num , dar . den )"	74:12:2784:2855	2	1	True				
+ANR	351	AssignmentExpression	"sdl -> overlay_width = av_rescale ( sdl -> overlay_height , dar . num , dar . den )"		2	0		=			
+ANR	352	PtrMemberAccess	sdl -> overlay_width		2	0					
+ANR	353	Identifier	sdl		2	0					
+ANR	354	Identifier	overlay_width		2	1					
+ANR	355	CallExpression	"av_rescale ( sdl -> overlay_height , dar . num , dar . den )"		2	1					
+ANR	356	Callee	av_rescale		2	0					
+ANR	357	Identifier	av_rescale		2	0					
+ANR	358	ArgumentList	sdl -> overlay_height		2	1					
+ANR	359	Argument	sdl -> overlay_height		2	0					
+ANR	360	PtrMemberAccess	sdl -> overlay_height		2	0					
+ANR	361	Identifier	sdl		2	0					
+ANR	362	Identifier	overlay_height		2	1					
+ANR	363	Argument	dar . num		2	1					
+ANR	364	MemberAccess	dar . num		2	0					
+ANR	365	Identifier	dar		2	0					
+ANR	366	Identifier	num		2	1					
+ANR	367	Argument	dar . den		2	2					
+ANR	368	MemberAccess	dar . den		2	0					
+ANR	369	Identifier	dar		2	0					
+ANR	370	Identifier	den		2	1					
+ANR	371	ExpressionStatement	sdl -> window_width = sdl -> overlay_width	76:8:2875:2914	2	1	True				
+ANR	372	AssignmentExpression	sdl -> window_width = sdl -> overlay_width		2	0		=			
+ANR	373	PtrMemberAccess	sdl -> window_width		2	0					
+ANR	374	Identifier	sdl		2	0					
+ANR	375	Identifier	window_width		2	1					
+ANR	376	PtrMemberAccess	sdl -> overlay_width		2	1					
+ANR	377	Identifier	sdl		2	0					
+ANR	378	Identifier	overlay_width		2	1					
+ANR	379	ExpressionStatement	sdl -> window_height = sdl -> overlay_height	77:8:2924:2964	2	2	True				
+ANR	380	AssignmentExpression	sdl -> window_height = sdl -> overlay_height		2	0		=			
+ANR	381	PtrMemberAccess	sdl -> window_height		2	0					
+ANR	382	Identifier	sdl		2	0					
+ANR	383	Identifier	window_height		2	1					
+ANR	384	PtrMemberAccess	sdl -> overlay_height		2	1					
+ANR	385	Identifier	sdl		2	0					
+ANR	386	Identifier	overlay_height		2	1					
+ANR	387	Statement	sar	53:4:1770:1772	2	13	True				
+ANR	388	Statement	=	53:8:1774:1774	2	14	True				
+ANR	389	Statement	st	53:10:1776:1777	2	15	True				
+ANR	390	Statement	->	53:12:1778:1779	2	16	True				
+ANR	391	Statement	sample_aspect_ratio	53:14:1780:1798	2	17	True				
+ANR	392	Statement	.	53:33:1799:1799	2	18	True				
+ANR	393	Statement	num	53:34:1800:1802	2	19	True				
+ANR	394	Statement	?	53:38:1804:1804	2	20	True				
+ANR	395	Statement	st	53:40:1806:1807	2	21	True				
+ANR	396	Statement	->	53:42:1808:1809	2	22	True				
+ANR	397	Label	sample_aspect_ratio :	53:44:1810:1830	2	23	True				
+ANR	398	Identifier	sample_aspect_ratio		2	0					
+ANR	399	Statement	(	53:66:1832:1832	2	24	True				
+ANR	400	Statement	AVRational	53:67:1833:1842	2	25	True				
+ANR	401	Statement	)	53:77:1843:1843	2	26	True				
+ANR	402	CompoundStatement		52:78:1795:1795	2	27					
+ANR	403	Statement	1	53:80:1846:1846	2	0	True				
+ANR	404	Statement	","	53:81:1847:1847	2	1	True				
+ANR	405	Statement	1	53:83:1849:1849	2	2	True				
+ANR	406	ExpressionStatement		53:86:1852:1852	2	28	True				
+ANR	407	Statement	dar	54:4:1858:1860	2	29	True				
+ANR	408	Statement	=	54:8:1862:1862	2	30	True				
+ANR	409	Statement	av_mul_q	54:10:1864:1871	2	31	True				
+ANR	410	Statement	(	54:18:1872:1872	2	32	True				
+ANR	411	Statement	sar	54:19:1873:1875	2	33	True				
+ANR	412	Statement	","	54:22:1876:1876	2	34	True				
+ANR	413	Statement	(	54:24:1878:1878	2	35	True				
+ANR	414	Statement	AVRational	54:25:1879:1888	2	36	True				
+ANR	415	Statement	)	54:35:1889:1889	2	37	True				
+ANR	416	CompoundStatement		53:36:1841:1841	2	38					
+ANR	417	Statement	encctx	54:38:1892:1897	2	0	True				
+ANR	418	Statement	->	54:44:1898:1899	2	1	True				
+ANR	419	Statement	width	54:46:1900:1904	2	2	True				
+ANR	420	Statement	","	54:51:1905:1905	2	3	True				
+ANR	421	Statement	encctx	54:53:1907:1912	2	4	True				
+ANR	422	Statement	->	54:59:1913:1914	2	5	True				
+ANR	423	Statement	height	54:61:1915:1920	2	6	True				
+ANR	424	Statement	)	54:69:1923:1923	2	39	True				
+ANR	425	ExpressionStatement		54:70:1924:1924	2	40	True				
+ANR	426	IfStatement	if ( sdl -> window_width && sdl -> window_height )		2	41					
+ANR	427	Condition	sdl -> window_width && sdl -> window_height	57:8:1997:2035	2	0	True				
+ANR	428	AndExpression	sdl -> window_width && sdl -> window_height		2	0		&&			
+ANR	429	PtrMemberAccess	sdl -> window_width		2	0					
+ANR	430	Identifier	sdl		2	0					
+ANR	431	Identifier	window_width		2	1					
+ANR	432	PtrMemberAccess	sdl -> window_height		2	1					
+ANR	433	Identifier	sdl		2	0					
+ANR	434	Identifier	window_height		2	1					
+ANR	435	CompoundStatement		56:49:1989:1989	2	1					
+ANR	436	Statement	if	59:8:2080:2081	2	0	True				
+ANR	437	Statement	(	59:11:2083:2083	2	1	True				
+ANR	438	Statement	av_cmp_q	59:12:2084:2091	2	2	True				
+ANR	439	Statement	(	59:20:2092:2092	2	3	True				
+ANR	440	Statement	dar	59:21:2093:2095	2	4	True				
+ANR	441	Statement	","	59:24:2096:2096	2	5	True				
+ANR	442	Statement	(	59:26:2098:2098	2	6	True				
+ANR	443	Statement	AVRational	59:27:2099:2108	2	7	True				
+ANR	444	Statement	)	59:37:2109:2109	2	8	True				
+ANR	445	CompoundStatement		58:38:2061:2061	2	9					
+ANR	446	Statement	sdl	59:40:2112:2114	2	0	True				
+ANR	447	Statement	->	59:43:2115:2116	2	1	True				
+ANR	448	Statement	window_width	59:45:2117:2128	2	2	True				
+ANR	449	Statement	","	59:57:2129:2129	2	3	True				
+ANR	450	Statement	sdl	59:59:2131:2133	2	4	True				
+ANR	451	Statement	->	59:62:2134:2135	2	5	True				
+ANR	452	Statement	window_height	59:64:2136:2148	2	6	True				
+ANR	453	Statement	)	59:79:2151:2151	2	10	True				
+ANR	454	Statement	>	59:81:2153:2153	2	11	True				
+ANR	455	Statement	0	59:83:2155:2155	2	12	True				
+ANR	456	Statement	)	59:84:2156:2156	2	13	True				
+ANR	457	CompoundStatement		58:86:2109:2109	2	14					
+ANR	458	ExpressionStatement	sdl -> overlay_width = sdl -> window_width	61:12:2203:2242	2	0	True				
+ANR	459	AssignmentExpression	sdl -> overlay_width = sdl -> window_width		2	0		=			
+ANR	460	PtrMemberAccess	sdl -> overlay_width		2	0					
+ANR	461	Identifier	sdl		2	0					
+ANR	462	Identifier	overlay_width		2	1					
+ANR	463	PtrMemberAccess	sdl -> window_width		2	1					
+ANR	464	Identifier	sdl		2	0					
+ANR	465	Identifier	window_width		2	1					
+ANR	466	ExpressionStatement	"sdl -> overlay_height = av_rescale ( sdl -> overlay_width , dar . den , dar . num )"	62:12:2256:2326	2	1	True				
+ANR	467	AssignmentExpression	"sdl -> overlay_height = av_rescale ( sdl -> overlay_width , dar . den , dar . num )"		2	0		=			
+ANR	468	PtrMemberAccess	sdl -> overlay_height		2	0					
+ANR	469	Identifier	sdl		2	0					
+ANR	470	Identifier	overlay_height		2	1					
+ANR	471	CallExpression	"av_rescale ( sdl -> overlay_width , dar . den , dar . num )"		2	1					
+ANR	472	Callee	av_rescale		2	0					
+ANR	473	Identifier	av_rescale		2	0					
+ANR	474	ArgumentList	sdl -> overlay_width		2	1					
+ANR	475	Argument	sdl -> overlay_width		2	0					
+ANR	476	PtrMemberAccess	sdl -> overlay_width		2	0					
+ANR	477	Identifier	sdl		2	0					
+ANR	478	Identifier	overlay_width		2	1					
+ANR	479	Argument	dar . den		2	1					
+ANR	480	MemberAccess	dar . den		2	0					
+ANR	481	Identifier	dar		2	0					
+ANR	482	Identifier	den		2	1					
+ANR	483	Argument	dar . num		2	2					
+ANR	484	MemberAccess	dar . num		2	0					
+ANR	485	Identifier	dar		2	0					
+ANR	486	Identifier	num		2	1					
+ANR	487	ElseStatement	else		2	0					
+ANR	488	CompoundStatement		62:15:2294:2294	2	0					
+ANR	489	ExpressionStatement	sdl -> overlay_height = sdl -> window_height	65:12:2389:2429	2	0	True				
+ANR	490	AssignmentExpression	sdl -> overlay_height = sdl -> window_height		2	0		=			
+ANR	491	PtrMemberAccess	sdl -> overlay_height		2	0					
+ANR	492	Identifier	sdl		2	0					
+ANR	493	Identifier	overlay_height		2	1					
+ANR	494	PtrMemberAccess	sdl -> window_height		2	1					
+ANR	495	Identifier	sdl		2	0					
+ANR	496	Identifier	window_height		2	1					
+ANR	497	ExpressionStatement	"sdl -> overlay_width = av_rescale ( sdl -> overlay_height , dar . num , dar . den )"	66:12:2443:2514	2	1	True				
+ANR	498	AssignmentExpression	"sdl -> overlay_width = av_rescale ( sdl -> overlay_height , dar . num , dar . den )"		2	0		=			
+ANR	499	PtrMemberAccess	sdl -> overlay_width		2	0					
+ANR	500	Identifier	sdl		2	0					
+ANR	501	Identifier	overlay_width		2	1					
+ANR	502	CallExpression	"av_rescale ( sdl -> overlay_height , dar . num , dar . den )"		2	1					
+ANR	503	Callee	av_rescale		2	0					
+ANR	504	Identifier	av_rescale		2	0					
+ANR	505	ArgumentList	sdl -> overlay_height		2	1					
+ANR	506	Argument	sdl -> overlay_height		2	0					
+ANR	507	PtrMemberAccess	sdl -> overlay_height		2	0					
+ANR	508	Identifier	sdl		2	0					
+ANR	509	Identifier	overlay_height		2	1					
+ANR	510	Argument	dar . num		2	1					
+ANR	511	MemberAccess	dar . num		2	0					
+ANR	512	Identifier	dar		2	0					
+ANR	513	Identifier	num		2	1					
+ANR	514	Argument	dar . den		2	2					
+ANR	515	MemberAccess	dar . den		2	0					
+ANR	516	Identifier	dar		2	0					
+ANR	517	Identifier	den		2	1					
+ANR	518	ExpressionStatement	sdl -> overlay_x = ( sdl -> window_width - sdl -> overlay_width ) / 2	79:4:2976:3039	2	42	True				
+ANR	519	AssignmentExpression	sdl -> overlay_x = ( sdl -> window_width - sdl -> overlay_width ) / 2		2	0		=			
+ANR	520	PtrMemberAccess	sdl -> overlay_x		2	0					
+ANR	521	Identifier	sdl		2	0					
+ANR	522	Identifier	overlay_x		2	1					
+ANR	523	MultiplicativeExpression	( sdl -> window_width - sdl -> overlay_width ) / 2		2	1		/			
+ANR	524	AdditiveExpression	sdl -> window_width - sdl -> overlay_width		2	0		-			
+ANR	525	PtrMemberAccess	sdl -> window_width		2	0					
+ANR	526	Identifier	sdl		2	0					
+ANR	527	Identifier	window_width		2	1					
+ANR	528	PtrMemberAccess	sdl -> overlay_width		2	1					
+ANR	529	Identifier	sdl		2	0					
+ANR	530	Identifier	overlay_width		2	1					
+ANR	531	PrimaryExpression	2		2	1					
+ANR	532	ExpressionStatement	sdl -> overlay_y = ( sdl -> window_height - sdl -> overlay_height ) / 2	80:4:3045:3108	2	43	True				
+ANR	533	AssignmentExpression	sdl -> overlay_y = ( sdl -> window_height - sdl -> overlay_height ) / 2		2	0		=			
+ANR	534	PtrMemberAccess	sdl -> overlay_y		2	0					
+ANR	535	Identifier	sdl		2	0					
+ANR	536	Identifier	overlay_y		2	1					
+ANR	537	MultiplicativeExpression	( sdl -> window_height - sdl -> overlay_height ) / 2		2	1		/			
+ANR	538	AdditiveExpression	sdl -> window_height - sdl -> overlay_height		2	0		-			
+ANR	539	PtrMemberAccess	sdl -> window_height		2	0					
+ANR	540	Identifier	sdl		2	0					
+ANR	541	Identifier	window_height		2	1					
+ANR	542	PtrMemberAccess	sdl -> overlay_height		2	1					
+ANR	543	Identifier	sdl		2	0					
+ANR	544	Identifier	overlay_height		2	1					
+ANR	545	PrimaryExpression	2		2	1					
+ANR	546	ExpressionStatement	"SDL_WM_SetCaption ( sdl -> window_title , sdl -> icon_title )"	82:4:3115:3168	2	44	True				
+ANR	547	CallExpression	"SDL_WM_SetCaption ( sdl -> window_title , sdl -> icon_title )"		2	0					
+ANR	548	Callee	SDL_WM_SetCaption		2	0					
+ANR	549	Identifier	SDL_WM_SetCaption		2	0					
+ANR	550	ArgumentList	sdl -> window_title		2	1					
+ANR	551	Argument	sdl -> window_title		2	0					
+ANR	552	PtrMemberAccess	sdl -> window_title		2	0					
+ANR	553	Identifier	sdl		2	0					
+ANR	554	Identifier	window_title		2	1					
+ANR	555	Argument	sdl -> icon_title		2	1					
+ANR	556	PtrMemberAccess	sdl -> icon_title		2	0					
+ANR	557	Identifier	sdl		2	0					
+ANR	558	Identifier	icon_title		2	1					
+ANR	559	ExpressionStatement	"sdl -> surface = SDL_SetVideoMode ( sdl -> window_width , sdl -> window_height , 24 , flags )"	83:4:3174:3291	2	45	True				
+ANR	560	AssignmentExpression	"sdl -> surface = SDL_SetVideoMode ( sdl -> window_width , sdl -> window_height , 24 , flags )"		2	0		=			
+ANR	561	PtrMemberAccess	sdl -> surface		2	0					
+ANR	562	Identifier	sdl		2	0					
+ANR	563	Identifier	surface		2	1					
+ANR	564	CallExpression	"SDL_SetVideoMode ( sdl -> window_width , sdl -> window_height , 24 , flags )"		2	1					
+ANR	565	Callee	SDL_SetVideoMode		2	0					
+ANR	566	Identifier	SDL_SetVideoMode		2	0					
+ANR	567	ArgumentList	sdl -> window_width		2	1					
+ANR	568	Argument	sdl -> window_width		2	0					
+ANR	569	PtrMemberAccess	sdl -> window_width		2	0					
+ANR	570	Identifier	sdl		2	0					
+ANR	571	Identifier	window_width		2	1					
+ANR	572	Argument	sdl -> window_height		2	1					
+ANR	573	PtrMemberAccess	sdl -> window_height		2	0					
+ANR	574	Identifier	sdl		2	0					
+ANR	575	Identifier	window_height		2	1					
+ANR	576	Argument	24		2	2					
+ANR	577	PrimaryExpression	24		2	0					
+ANR	578	Argument	flags		2	3					
+ANR	579	Identifier	flags		2	0					
+ANR	580	IfStatement	if ( ! sdl -> surface )		2	46					
+ANR	581	Condition	! sdl -> surface	85:8:3301:3313	2	0	True				
+ANR	582	UnaryOperationExpression	! sdl -> surface		2	0					
+ANR	583	UnaryOperator	!		2	0					
+ANR	584	PtrMemberAccess	sdl -> surface		2	1					
+ANR	585	Identifier	sdl		2	0					
+ANR	586	Identifier	surface		2	1					
+ANR	587	CompoundStatement		84:23:3267:3267	2	1					
+ANR	588	ExpressionStatement	"av_log ( s , AV_LOG_ERROR , ""Unable to set video mode: %s\\n"" , SDL_GetError ( ) )"	86:8:3326:3399	2	0	True				
+ANR	589	CallExpression	"av_log ( s , AV_LOG_ERROR , ""Unable to set video mode: %s\\n"" , SDL_GetError ( ) )"		2	0					
+ANR	590	Callee	av_log		2	0					
+ANR	591	Identifier	av_log		2	0					
+ANR	592	ArgumentList	s		2	1					
+ANR	593	Argument	s		2	0					
+ANR	594	Identifier	s		2	0					
+ANR	595	Argument	AV_LOG_ERROR		2	1					
+ANR	596	Identifier	AV_LOG_ERROR		2	0					
+ANR	597	Argument	"""Unable to set video mode: %s\\n"""		2	2					
+ANR	598	PrimaryExpression	"""Unable to set video mode: %s\\n"""		2	0					
+ANR	599	Argument	SDL_GetError ( )		2	3					
+ANR	600	CallExpression	SDL_GetError ( )		2	0					
+ANR	601	Callee	SDL_GetError		2	0					
+ANR	602	Identifier	SDL_GetError		2	0					
+ANR	603	ArgumentList			2	1					
+ANR	604	ExpressionStatement	ret = AVERROR ( EINVAL )	87:8:3409:3430	2	1	True				
+ANR	605	AssignmentExpression	ret = AVERROR ( EINVAL )		2	0		=			
+ANR	606	Identifier	ret		2	0					
+ANR	607	CallExpression	AVERROR ( EINVAL )		2	1					
+ANR	608	Callee	AVERROR		2	0					
+ANR	609	Identifier	AVERROR		2	0					
+ANR	610	ArgumentList	EINVAL		2	1					
+ANR	611	Argument	EINVAL		2	0					
+ANR	612	Identifier	EINVAL		2	0					
+ANR	613	GotoStatement	goto fail ;	88:8:3440:3449	2	2	True				
+ANR	614	Identifier	fail		2	0					
+ANR	615	ExpressionStatement	"sdl -> overlay = SDL_CreateYUVOverlay ( encctx -> width , encctx -> height , sdl -> overlay_fmt , sdl -> surface )"	91:4:3462:3600	2	47	True				
+ANR	616	AssignmentExpression	"sdl -> overlay = SDL_CreateYUVOverlay ( encctx -> width , encctx -> height , sdl -> overlay_fmt , sdl -> surface )"		2	0		=			
+ANR	617	PtrMemberAccess	sdl -> overlay		2	0					
+ANR	618	Identifier	sdl		2	0					
+ANR	619	Identifier	overlay		2	1					
+ANR	620	CallExpression	"SDL_CreateYUVOverlay ( encctx -> width , encctx -> height , sdl -> overlay_fmt , sdl -> surface )"		2	1					
+ANR	621	Callee	SDL_CreateYUVOverlay		2	0					
+ANR	622	Identifier	SDL_CreateYUVOverlay		2	0					
+ANR	623	ArgumentList	encctx -> width		2	1					
+ANR	624	Argument	encctx -> width		2	0					
+ANR	625	PtrMemberAccess	encctx -> width		2	0					
+ANR	626	Identifier	encctx		2	0					
+ANR	627	Identifier	width		2	1					
+ANR	628	Argument	encctx -> height		2	1					
+ANR	629	PtrMemberAccess	encctx -> height		2	0					
+ANR	630	Identifier	encctx		2	0					
+ANR	631	Identifier	height		2	1					
+ANR	632	Argument	sdl -> overlay_fmt		2	2					
+ANR	633	PtrMemberAccess	sdl -> overlay_fmt		2	0					
+ANR	634	Identifier	sdl		2	0					
+ANR	635	Identifier	overlay_fmt		2	1					
+ANR	636	Argument	sdl -> surface		2	3					
+ANR	637	PtrMemberAccess	sdl -> surface		2	0					
+ANR	638	Identifier	sdl		2	0					
+ANR	639	Identifier	surface		2	1					
+ANR	640	IfStatement	if ( ! sdl -> overlay || sdl -> overlay -> pitches [ 0 ] < encctx -> width )		2	48					
+ANR	641	Condition	! sdl -> overlay || sdl -> overlay -> pitches [ 0 ] < encctx -> width	93:8:3610:3666	2	0	True				
+ANR	642	OrExpression	! sdl -> overlay || sdl -> overlay -> pitches [ 0 ] < encctx -> width		2	0		||			
+ANR	643	UnaryOperationExpression	! sdl -> overlay		2	0					
+ANR	644	UnaryOperator	!		2	0					
+ANR	645	PtrMemberAccess	sdl -> overlay		2	1					
+ANR	646	Identifier	sdl		2	0					
+ANR	647	Identifier	overlay		2	1					
+ANR	648	RelationalExpression	sdl -> overlay -> pitches [ 0 ] < encctx -> width		2	1		<			
+ANR	649	ArrayIndexing	sdl -> overlay -> pitches [ 0 ]		2	0					
+ANR	650	PtrMemberAccess	sdl -> overlay -> pitches		2	0					
+ANR	651	PtrMemberAccess	sdl -> overlay		2	0					
+ANR	652	Identifier	sdl		2	0					
+ANR	653	Identifier	overlay		2	1					
+ANR	654	Identifier	pitches		2	1					
+ANR	655	PrimaryExpression	0		2	1					
+ANR	656	PtrMemberAccess	encctx -> width		2	1					
+ANR	657	Identifier	encctx		2	0					
+ANR	658	Identifier	width		2	1					
+ANR	659	CompoundStatement		92:67:3620:3620	2	1					
+ANR	660	ExpressionStatement	"av_log ( s , AV_LOG_ERROR , ""SDL does not support an overlay with size of %dx%d pixels\\n"" , encctx -> width , encctx -> height )"	94:8:3679:3826	2	0	True				
+ANR	661	CallExpression	"av_log ( s , AV_LOG_ERROR , ""SDL does not support an overlay with size of %dx%d pixels\\n"" , encctx -> width , encctx -> height )"		2	0					
+ANR	662	Callee	av_log		2	0					
+ANR	663	Identifier	av_log		2	0					
+ANR	664	ArgumentList	s		2	1					
+ANR	665	Argument	s		2	0					
+ANR	666	Identifier	s		2	0					
+ANR	667	Argument	AV_LOG_ERROR		2	1					
+ANR	668	Identifier	AV_LOG_ERROR		2	0					
+ANR	669	Argument	"""SDL does not support an overlay with size of %dx%d pixels\\n"""		2	2					
+ANR	670	PrimaryExpression	"""SDL does not support an overlay with size of %dx%d pixels\\n"""		2	0					
+ANR	671	Argument	encctx -> width		2	3					
+ANR	672	PtrMemberAccess	encctx -> width		2	0					
+ANR	673	Identifier	encctx		2	0					
+ANR	674	Identifier	width		2	1					
+ANR	675	Argument	encctx -> height		2	4					
+ANR	676	PtrMemberAccess	encctx -> height		2	0					
+ANR	677	Identifier	encctx		2	0					
+ANR	678	Identifier	height		2	1					
+ANR	679	ExpressionStatement	ret = AVERROR ( EINVAL )	97:8:3836:3857	2	1	True				
+ANR	680	AssignmentExpression	ret = AVERROR ( EINVAL )		2	0		=			
+ANR	681	Identifier	ret		2	0					
+ANR	682	CallExpression	AVERROR ( EINVAL )		2	1					
+ANR	683	Callee	AVERROR		2	0					
+ANR	684	Identifier	AVERROR		2	0					
+ANR	685	ArgumentList	EINVAL		2	1					
+ANR	686	Argument	EINVAL		2	0					
+ANR	687	Identifier	EINVAL		2	0					
+ANR	688	GotoStatement	goto fail ;	98:8:3867:3876	2	2	True				
+ANR	689	Identifier	fail		2	0					
+ANR	690	ExpressionStatement	"av_log ( s , AV_LOG_VERBOSE , ""w:%d h:%d fmt:%s sar:%d/%d -> w:%d h:%d\\n"" , encctx -> width , encctx -> height , av_get_pix_fmt_name ( encctx -> pix_fmt ) , sar . num , sar . den , sdl -> overlay_width , sdl -> overlay_height )"	101:4:3889:4109	2	49	True				
+ANR	691	CallExpression	"av_log ( s , AV_LOG_VERBOSE , ""w:%d h:%d fmt:%s sar:%d/%d -> w:%d h:%d\\n"" , encctx -> width , encctx -> height , av_get_pix_fmt_name ( encctx -> pix_fmt ) , sar . num , sar . den , sdl -> overlay_width , sdl -> overlay_height )"		2	0					
+ANR	692	Callee	av_log		2	0					
+ANR	693	Identifier	av_log		2	0					
+ANR	694	ArgumentList	s		2	1					
+ANR	695	Argument	s		2	0					
+ANR	696	Identifier	s		2	0					
+ANR	697	Argument	AV_LOG_VERBOSE		2	1					
+ANR	698	Identifier	AV_LOG_VERBOSE		2	0					
+ANR	699	Argument	"""w:%d h:%d fmt:%s sar:%d/%d -> w:%d h:%d\\n"""		2	2					
+ANR	700	PrimaryExpression	"""w:%d h:%d fmt:%s sar:%d/%d -> w:%d h:%d\\n"""		2	0					
+ANR	701	Argument	encctx -> width		2	3					
+ANR	702	PtrMemberAccess	encctx -> width		2	0					
+ANR	703	Identifier	encctx		2	0					
+ANR	704	Identifier	width		2	1					
+ANR	705	Argument	encctx -> height		2	4					
+ANR	706	PtrMemberAccess	encctx -> height		2	0					
+ANR	707	Identifier	encctx		2	0					
+ANR	708	Identifier	height		2	1					
+ANR	709	Argument	av_get_pix_fmt_name ( encctx -> pix_fmt )		2	5					
+ANR	710	CallExpression	av_get_pix_fmt_name ( encctx -> pix_fmt )		2	0					
+ANR	711	Callee	av_get_pix_fmt_name		2	0					
+ANR	712	Identifier	av_get_pix_fmt_name		2	0					
+ANR	713	ArgumentList	encctx -> pix_fmt		2	1					
+ANR	714	Argument	encctx -> pix_fmt		2	0					
+ANR	715	PtrMemberAccess	encctx -> pix_fmt		2	0					
+ANR	716	Identifier	encctx		2	0					
+ANR	717	Identifier	pix_fmt		2	1					
+ANR	718	Argument	sar . num		2	6					
+ANR	719	MemberAccess	sar . num		2	0					
+ANR	720	Identifier	sar		2	0					
+ANR	721	Identifier	num		2	1					
+ANR	722	Argument	sar . den		2	7					
+ANR	723	MemberAccess	sar . den		2	0					
+ANR	724	Identifier	sar		2	0					
+ANR	725	Identifier	den		2	1					
+ANR	726	Argument	sdl -> overlay_width		2	8					
+ANR	727	PtrMemberAccess	sdl -> overlay_width		2	0					
+ANR	728	Identifier	sdl		2	0					
+ANR	729	Identifier	overlay_width		2	1					
+ANR	730	Argument	sdl -> overlay_height		2	9					
+ANR	731	PtrMemberAccess	sdl -> overlay_height		2	0					
+ANR	732	Identifier	sdl		2	0					
+ANR	733	Identifier	overlay_height		2	1					
+ANR	734	ReturnStatement	return 0 ;	104:4:4115:4123	2	50	True				
+ANR	735	PrimaryExpression	0		2	0					
+ANR	736	Label	fail :	106:0:4126:4130	2	51	True				
+ANR	737	Identifier	fail		2	0					
+ANR	738	ExpressionStatement	sdl_write_trailer ( s )	107:4:4136:4156	2	52	True				
+ANR	739	CallExpression	sdl_write_trailer ( s )		2	0					
+ANR	740	Callee	sdl_write_trailer		2	0					
+ANR	741	Identifier	sdl_write_trailer		2	0					
+ANR	742	ArgumentList	s		2	1					
+ANR	743	Argument	s		2	0					
+ANR	744	Identifier	s		2	0					
+ANR	745	ReturnStatement	return ret ;	108:4:4162:4172	2	53	True				
+ANR	746	Identifier	ret		2	0					
+ANR	747	ReturnType	static int		2	1					
+ANR	748	Identifier	sdl_write_header		2	2					
+ANR	749	ParameterList	AVFormatContext * s		2	3					
+ANR	750	Parameter	AVFormatContext * s	1:28:28:45	2	0	True				
+ANR	751	ParameterType	AVFormatContext *		2	0					
+ANR	752	Identifier	s		2	1					
+ANR	753	CFGEntryNode	ENTRY		2		True				
+ANR	754	CFGExitNode	EXIT		2		True				
+ANR	755	Symbol	sdl_overlay_pix_fmt_map [ i ] . overlay_fmt		2						
+ANR	756	Symbol	* st		2						
+ANR	757	Symbol	av_strdup		2						
+ANR	758	Symbol	encctx -> codec_type		2						
+ANR	759	Symbol	sdl -> overlay_height		2						
+ANR	760	Symbol	s -> streams		2						
+ANR	761	Symbol	sdl -> overlay		2						
+ANR	762	Symbol	* encctx		2						
+ANR	763	Symbol	AVMEDIA_TYPE_VIDEO		2						
+ANR	764	Symbol	dar . num		2						
+ANR	765	Symbol	sdl -> overlay_y		2						
+ANR	766	Symbol	* * sdl		2						
+ANR	767	Symbol	SDL_WasInit		2						
+ANR	768	Symbol	sar . num		2						
+ANR	769	Symbol	SDL_CreateYUVOverlay		2						
+ANR	770	Symbol	dar		2						
+ANR	771	Symbol	sdl -> window_fullscreen		2						
+ANR	772	Symbol	SDL_FULLSCREEN		2						
+ANR	773	Symbol	sar . den		2						
+ANR	774	Symbol	encctx -> height		2						
+ANR	775	Symbol	dar . den		2						
+ANR	776	Symbol	AV_CODEC_ID_RAWVIDEO		2						
+ANR	777	Symbol	* s -> streams		2						
+ANR	778	Symbol	encctx		2						
+ANR	779	Symbol	av_get_pix_fmt_name		2						
+ANR	780	Symbol	s -> priv_data		2						
+ANR	781	Symbol	ret		2						
+ANR	782	Symbol	encctx -> codec_id		2						
+ANR	783	Symbol	sdl -> window_width		2						
+ANR	784	Symbol	* sdl		2						
+ANR	785	Symbol	s -> filename		2						
+ANR	786	Symbol	* * sdl -> overlay		2						
+ANR	787	Symbol	encctx -> pix_fmt		2						
+ANR	788	Symbol	sdl -> overlay_width		2						
+ANR	789	Symbol	AV_LOG_VERBOSE		2						
+ANR	790	Symbol	sdl -> window_height		2						
+ANR	791	Symbol	sdl -> overlay_x		2						
+ANR	792	Symbol	sdl -> icon_title		2						
+ANR	793	Symbol	sdl -> overlay_fmt		2						
+ANR	794	Symbol	sdl		2						
+ANR	795	Symbol	av_rescale		2						
+ANR	796	Symbol	sdl -> surface		2						
+ANR	797	Symbol	encctx -> width		2						
+ANR	798	Symbol	* sdl_overlay_pix_fmt_map		2						
+ANR	799	Symbol	sdl_overlay_pix_fmt_map [ i ] . pix_fmt		2						
+ANR	800	Symbol	SDL_SetVideoMode		2						
+ANR	801	Symbol	flags		2						
+ANR	802	Symbol	SDL_INIT_VIDEO		2						
+ANR	803	Symbol	SDL_GetError		2						
+ANR	804	Symbol	sdl_overlay_pix_fmt_map		2						
+ANR	805	Symbol	* sdl -> overlay		2						
+ANR	806	Symbol	sdl -> sdl_was_already_inited		2						
+ANR	807	Symbol	* * s		2						
+ANR	808	Symbol	SDL_SWSURFACE		2						
+ANR	809	Symbol	s -> nb_streams		2						
+ANR	810	Symbol	st		2						
+ANR	811	Symbol	SDL_Init		2						
+ANR	812	Symbol	AV_LOG_ERROR		2						
+ANR	813	Symbol	sar		2						
+ANR	814	Symbol	i		2						
+ANR	815	Symbol	AV_PIX_FMT_NONE		2						
+ANR	816	Symbol	sdl -> window_title		2						
+ANR	817	Symbol	st -> codec		2						
+ANR	818	Symbol	EINVAL		2						
+ANR	819	Symbol	s		2						
+ANR	820	Symbol	* i		2						
+ANR	821	Symbol	* sdl -> overlay -> pitches		2						
+ANR	822	Symbol	sdl -> overlay -> pitches		2						
+ANR	823	Symbol	* * * sdl		2						
+ANR	824	Symbol	AVERROR		2						
+ANR	825	Symbol	* s		2						

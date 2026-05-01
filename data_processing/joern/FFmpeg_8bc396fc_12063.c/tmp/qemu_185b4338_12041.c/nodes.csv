@@ -1,0 +1,174 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	4146	File	tmp/qemu_185b4338_12041.c								
+ANR	4147	Function	nbd_send_request	1:0:0:738							
+ANR	4148	FunctionDef	"nbd_send_request (int csock , struct nbd_request * request)"		4147	0					
+ANR	4149	CompoundStatement		2:0:65:738	4147	0					
+ANR	4150	IdentifierDeclStatement	uint8_t buf [ 4 + 4 + 8 + 8 + 4 ] ;	3:4:71:101	4147	0	True				
+ANR	4151	IdentifierDecl	buf [ 4 + 4 + 8 + 8 + 4 ]		4147	0					
+ANR	4152	IdentifierDeclType	uint8_t [ 4 + 4 + 8 + 8 + 4 ]		4147	0					
+ANR	4153	Identifier	buf		4147	1					
+ANR	4154	AdditiveExpression	4 + 4 + 8 + 8 + 4		4147	2		+			
+ANR	4155	PrimaryExpression	4		4147	0					
+ANR	4156	AdditiveExpression	4 + 8 + 8 + 4		4147	1		+			
+ANR	4157	PrimaryExpression	4		4147	0					
+ANR	4158	AdditiveExpression	8 + 8 + 4		4147	1		+			
+ANR	4159	PrimaryExpression	8		4147	0					
+ANR	4160	AdditiveExpression	8 + 4		4147	1		+			
+ANR	4161	PrimaryExpression	8		4147	0					
+ANR	4162	PrimaryExpression	4		4147	1					
+ANR	4163	ExpressionStatement	"cpu_to_be32w ( ( uint32_t * ) buf , NBD_REQUEST_MAGIC )"	5:4:108:155	4147	1	True				
+ANR	4164	CallExpression	"cpu_to_be32w ( ( uint32_t * ) buf , NBD_REQUEST_MAGIC )"		4147	0					
+ANR	4165	Callee	cpu_to_be32w		4147	0					
+ANR	4166	Identifier	cpu_to_be32w		4147	0					
+ANR	4167	ArgumentList	( uint32_t * ) buf		4147	1					
+ANR	4168	Argument	( uint32_t * ) buf		4147	0					
+ANR	4169	CastExpression	( uint32_t * ) buf		4147	0					
+ANR	4170	CastTarget	uint32_t *		4147	0					
+ANR	4171	Identifier	buf		4147	1					
+ANR	4172	Argument	NBD_REQUEST_MAGIC		4147	1					
+ANR	4173	Identifier	NBD_REQUEST_MAGIC		4147	0					
+ANR	4174	ExpressionStatement	"cpu_to_be32w ( ( uint32_t * ) ( buf + 4 ) , request -> type )"	6:4:161:210	4147	2	True				
+ANR	4175	CallExpression	"cpu_to_be32w ( ( uint32_t * ) ( buf + 4 ) , request -> type )"		4147	0					
+ANR	4176	Callee	cpu_to_be32w		4147	0					
+ANR	4177	Identifier	cpu_to_be32w		4147	0					
+ANR	4178	ArgumentList	( uint32_t * ) ( buf + 4 )		4147	1					
+ANR	4179	Argument	( uint32_t * ) ( buf + 4 )		4147	0					
+ANR	4180	CastExpression	( uint32_t * ) ( buf + 4 )		4147	0					
+ANR	4181	CastTarget	uint32_t *		4147	0					
+ANR	4182	AdditiveExpression	buf + 4		4147	1		+			
+ANR	4183	Identifier	buf		4147	0					
+ANR	4184	PrimaryExpression	4		4147	1					
+ANR	4185	Argument	request -> type		4147	1					
+ANR	4186	PtrMemberAccess	request -> type		4147	0					
+ANR	4187	Identifier	request		4147	0					
+ANR	4188	Identifier	type		4147	1					
+ANR	4189	ExpressionStatement	"cpu_to_be64w ( ( uint64_t * ) ( buf + 8 ) , request -> handle )"	7:4:216:267	4147	3	True				
+ANR	4190	CallExpression	"cpu_to_be64w ( ( uint64_t * ) ( buf + 8 ) , request -> handle )"		4147	0					
+ANR	4191	Callee	cpu_to_be64w		4147	0					
+ANR	4192	Identifier	cpu_to_be64w		4147	0					
+ANR	4193	ArgumentList	( uint64_t * ) ( buf + 8 )		4147	1					
+ANR	4194	Argument	( uint64_t * ) ( buf + 8 )		4147	0					
+ANR	4195	CastExpression	( uint64_t * ) ( buf + 8 )		4147	0					
+ANR	4196	CastTarget	uint64_t *		4147	0					
+ANR	4197	AdditiveExpression	buf + 8		4147	1		+			
+ANR	4198	Identifier	buf		4147	0					
+ANR	4199	PrimaryExpression	8		4147	1					
+ANR	4200	Argument	request -> handle		4147	1					
+ANR	4201	PtrMemberAccess	request -> handle		4147	0					
+ANR	4202	Identifier	request		4147	0					
+ANR	4203	Identifier	handle		4147	1					
+ANR	4204	ExpressionStatement	"cpu_to_be64w ( ( uint64_t * ) ( buf + 16 ) , request -> from )"	8:4:273:323	4147	4	True				
+ANR	4205	CallExpression	"cpu_to_be64w ( ( uint64_t * ) ( buf + 16 ) , request -> from )"		4147	0					
+ANR	4206	Callee	cpu_to_be64w		4147	0					
+ANR	4207	Identifier	cpu_to_be64w		4147	0					
+ANR	4208	ArgumentList	( uint64_t * ) ( buf + 16 )		4147	1					
+ANR	4209	Argument	( uint64_t * ) ( buf + 16 )		4147	0					
+ANR	4210	CastExpression	( uint64_t * ) ( buf + 16 )		4147	0					
+ANR	4211	CastTarget	uint64_t *		4147	0					
+ANR	4212	AdditiveExpression	buf + 16		4147	1		+			
+ANR	4213	Identifier	buf		4147	0					
+ANR	4214	PrimaryExpression	16		4147	1					
+ANR	4215	Argument	request -> from		4147	1					
+ANR	4216	PtrMemberAccess	request -> from		4147	0					
+ANR	4217	Identifier	request		4147	0					
+ANR	4218	Identifier	from		4147	1					
+ANR	4219	ExpressionStatement	"cpu_to_be32w ( ( uint32_t * ) ( buf + 24 ) , request -> len )"	9:4:329:378	4147	5	True				
+ANR	4220	CallExpression	"cpu_to_be32w ( ( uint32_t * ) ( buf + 24 ) , request -> len )"		4147	0					
+ANR	4221	Callee	cpu_to_be32w		4147	0					
+ANR	4222	Identifier	cpu_to_be32w		4147	0					
+ANR	4223	ArgumentList	( uint32_t * ) ( buf + 24 )		4147	1					
+ANR	4224	Argument	( uint32_t * ) ( buf + 24 )		4147	0					
+ANR	4225	CastExpression	( uint32_t * ) ( buf + 24 )		4147	0					
+ANR	4226	CastTarget	uint32_t *		4147	0					
+ANR	4227	AdditiveExpression	buf + 24		4147	1		+			
+ANR	4228	Identifier	buf		4147	0					
+ANR	4229	PrimaryExpression	24		4147	1					
+ANR	4230	Argument	request -> len		4147	1					
+ANR	4231	PtrMemberAccess	request -> len		4147	0					
+ANR	4232	Identifier	request		4147	0					
+ANR	4233	Identifier	len		4147	1					
+ANR	4234	Statement	TRACE	11:4:385:389	4147	6	True				
+ANR	4235	Statement	(	11:9:390:390	4147	7	True				
+ANR	4236	Statement	"""Sending request to client: """	11:10:391:419	4147	8	True				
+ANR	4237	Statement	"""{ .from = %"""	12:10:431:443	4147	9	True				
+ANR	4238	Statement	PRIu64	12:24:445:450	4147	10	True				
+ANR	4239	Statement	""", .len = %u, .handle = %"""	12:30:451:476	4147	11	True				
+ANR	4240	Statement	PRIu64	12:57:478:483	4147	12	True				
+ANR	4241	Statement	""", .type=%i}"""	12:63:484:496	4147	13	True				
+ANR	4242	Statement	","	12:76:497:497	4147	14	True				
+ANR	4243	Statement	request	13:10:509:515	4147	15	True				
+ANR	4244	Statement	->	13:17:516:517	4147	16	True				
+ANR	4245	Statement	from	13:19:518:521	4147	17	True				
+ANR	4246	Statement	","	13:23:522:522	4147	18	True				
+ANR	4247	Statement	request	13:25:524:530	4147	19	True				
+ANR	4248	Statement	->	13:32:531:532	4147	20	True				
+ANR	4249	Statement	len	13:34:533:535	4147	21	True				
+ANR	4250	Statement	","	13:37:536:536	4147	22	True				
+ANR	4251	Statement	request	13:39:538:544	4147	23	True				
+ANR	4252	Statement	->	13:46:545:546	4147	24	True				
+ANR	4253	Statement	handle	13:48:547:552	4147	25	True				
+ANR	4254	Statement	","	13:54:553:553	4147	26	True				
+ANR	4255	Statement	request	13:56:555:561	4147	27	True				
+ANR	4256	Statement	->	13:63:562:563	4147	28	True				
+ANR	4257	Statement	type	13:65:564:567	4147	29	True				
+ANR	4258	Statement	)	13:69:568:568	4147	30	True				
+ANR	4259	ExpressionStatement		13:70:569:569	4147	31	True				
+ANR	4260	IfStatement	"if ( write_sync ( csock , buf , sizeof ( buf ) ) != sizeof ( buf ) )"		4147	32					
+ANR	4261	Condition	"write_sync ( csock , buf , sizeof ( buf ) ) != sizeof ( buf )"	15:8:580:629	4147	0	True				
+ANR	4262	EqualityExpression	"write_sync ( csock , buf , sizeof ( buf ) ) != sizeof ( buf )"		4147	0		!=			
+ANR	4263	CallExpression	"write_sync ( csock , buf , sizeof ( buf ) )"		4147	0					
+ANR	4264	Callee	write_sync		4147	0					
+ANR	4265	Identifier	write_sync		4147	0					
+ANR	4266	ArgumentList	csock		4147	1					
+ANR	4267	Argument	csock		4147	0					
+ANR	4268	Identifier	csock		4147	0					
+ANR	4269	Argument	buf		4147	1					
+ANR	4270	Identifier	buf		4147	0					
+ANR	4271	Argument	sizeof ( buf )		4147	2					
+ANR	4272	SizeofExpression	sizeof ( buf )		4147	0					
+ANR	4273	Sizeof	sizeof		4147	0					
+ANR	4274	SizeofOperand	buf		4147	1					
+ANR	4275	SizeofExpression	sizeof ( buf )		4147	1					
+ANR	4276	Sizeof	sizeof		4147	0					
+ANR	4277	SizeofOperand	buf		4147	1					
+ANR	4278	CompoundStatement		14:60:566:566	4147	1					
+ANR	4279	ExpressionStatement	"LOG ( ""writing to socket failed"" )"	16:8:642:673	4147	0	True				
+ANR	4280	CallExpression	"LOG ( ""writing to socket failed"" )"		4147	0					
+ANR	4281	Callee	LOG		4147	0					
+ANR	4282	Identifier	LOG		4147	0					
+ANR	4283	ArgumentList	"""writing to socket failed"""		4147	1					
+ANR	4284	Argument	"""writing to socket failed"""		4147	0					
+ANR	4285	PrimaryExpression	"""writing to socket failed"""		4147	0					
+ANR	4286	ExpressionStatement	errno = EINVAL	17:8:683:697	4147	1	True				
+ANR	4287	AssignmentExpression	errno = EINVAL		4147	0		=			
+ANR	4288	Identifier	errno		4147	0					
+ANR	4289	Identifier	EINVAL		4147	1					
+ANR	4290	ReturnStatement	return - 1 ;	18:8:707:716	4147	2	True				
+ANR	4291	UnaryOperationExpression	- 1		4147	0					
+ANR	4292	UnaryOperator	-		4147	0					
+ANR	4293	PrimaryExpression	1		4147	1					
+ANR	4294	ReturnStatement	return 0 ;	20:4:728:736	4147	33	True				
+ANR	4295	PrimaryExpression	0		4147	0					
+ANR	4296	ReturnType	ssize_t		4147	1					
+ANR	4297	Identifier	nbd_send_request		4147	2					
+ANR	4298	ParameterList	"int csock , struct nbd_request * request"		4147	3					
+ANR	4299	Parameter	int csock	1:25:25:33	4147	0	True				
+ANR	4300	ParameterType	int		4147	0					
+ANR	4301	Identifier	csock		4147	1					
+ANR	4302	Parameter	struct nbd_request * request	1:36:36:62	4147	1	True				
+ANR	4303	ParameterType	struct nbd_request *		4147	0					
+ANR	4304	Identifier	request		4147	1					
+ANR	4305	CFGEntryNode	ENTRY		4147		True				
+ANR	4306	CFGExitNode	EXIT		4147		True				
+ANR	4307	Symbol	EINVAL		4147						
+ANR	4308	Symbol	request		4147						
+ANR	4309	Symbol	buf		4147						
+ANR	4310	Symbol	request -> type		4147						
+ANR	4311	Symbol	errno		4147						
+ANR	4312	Symbol	request -> handle		4147						
+ANR	4313	Symbol	* request		4147						
+ANR	4314	Symbol	request -> len		4147						
+ANR	4315	Symbol	NBD_REQUEST_MAGIC		4147						
+ANR	4316	Symbol	request -> from		4147						
+ANR	4317	Symbol	csock		4147						
+ANR	4318	Symbol	write_sync		4147						

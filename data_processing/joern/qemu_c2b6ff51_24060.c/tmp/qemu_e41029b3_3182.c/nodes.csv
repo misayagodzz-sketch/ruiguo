@@ -1,0 +1,226 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	389	File	tmp/qemu_e41029b3_3182.c								
+ANR	390	Function	gen_lswi	1:0:0:766							
+ANR	391	FunctionDef	gen_lswi (DisasContext * ctx)		390	0					
+ANR	392	CompoundStatement		2:0:40:766	390	0					
+ANR	393	IdentifierDeclStatement	TCGv t0 ;	3:4:46:53	390	0	True				
+ANR	394	IdentifierDecl	t0		390	0					
+ANR	395	IdentifierDeclType	TCGv		390	0					
+ANR	396	Identifier	t0		390	1					
+ANR	397	IdentifierDeclStatement	"TCGv_i32 t1 , t2 ;"	4:4:59:74	390	1	True				
+ANR	398	IdentifierDecl	t1		390	0					
+ANR	399	IdentifierDeclType	TCGv_i32		390	0					
+ANR	400	Identifier	t1		390	1					
+ANR	401	IdentifierDecl	t2		390	1					
+ANR	402	IdentifierDeclType	TCGv_i32		390	0					
+ANR	403	Identifier	t2		390	1					
+ANR	404	IdentifierDeclStatement	int nb = NB ( ctx -> opcode ) ;	5:4:80:104	390	2	True				
+ANR	405	IdentifierDecl	nb = NB ( ctx -> opcode )		390	0					
+ANR	406	IdentifierDeclType	int		390	0					
+ANR	407	Identifier	nb		390	1					
+ANR	408	AssignmentExpression	nb = NB ( ctx -> opcode )		390	2		=			
+ANR	409	Identifier	nb		390	0					
+ANR	410	CallExpression	NB ( ctx -> opcode )		390	1					
+ANR	411	Callee	NB		390	0					
+ANR	412	Identifier	NB		390	0					
+ANR	413	ArgumentList	ctx -> opcode		390	1					
+ANR	414	Argument	ctx -> opcode		390	0					
+ANR	415	PtrMemberAccess	ctx -> opcode		390	0					
+ANR	416	Identifier	ctx		390	0					
+ANR	417	Identifier	opcode		390	1					
+ANR	418	IdentifierDeclStatement	int start = rD ( ctx -> opcode ) ;	6:4:110:137	390	3	True				
+ANR	419	IdentifierDecl	start = rD ( ctx -> opcode )		390	0					
+ANR	420	IdentifierDeclType	int		390	0					
+ANR	421	Identifier	start		390	1					
+ANR	422	AssignmentExpression	start = rD ( ctx -> opcode )		390	2		=			
+ANR	423	Identifier	start		390	0					
+ANR	424	CallExpression	rD ( ctx -> opcode )		390	1					
+ANR	425	Callee	rD		390	0					
+ANR	426	Identifier	rD		390	0					
+ANR	427	ArgumentList	ctx -> opcode		390	1					
+ANR	428	Argument	ctx -> opcode		390	0					
+ANR	429	PtrMemberAccess	ctx -> opcode		390	0					
+ANR	430	Identifier	ctx		390	0					
+ANR	431	Identifier	opcode		390	1					
+ANR	432	IdentifierDeclStatement	int ra = rA ( ctx -> opcode ) ;	7:4:143:167	390	4	True				
+ANR	433	IdentifierDecl	ra = rA ( ctx -> opcode )		390	0					
+ANR	434	IdentifierDeclType	int		390	0					
+ANR	435	Identifier	ra		390	1					
+ANR	436	AssignmentExpression	ra = rA ( ctx -> opcode )		390	2		=			
+ANR	437	Identifier	ra		390	0					
+ANR	438	CallExpression	rA ( ctx -> opcode )		390	1					
+ANR	439	Callee	rA		390	0					
+ANR	440	Identifier	rA		390	0					
+ANR	441	ArgumentList	ctx -> opcode		390	1					
+ANR	442	Argument	ctx -> opcode		390	0					
+ANR	443	PtrMemberAccess	ctx -> opcode		390	0					
+ANR	444	Identifier	ctx		390	0					
+ANR	445	Identifier	opcode		390	1					
+ANR	446	IdentifierDeclStatement	int nr ;	8:4:173:179	390	5	True				
+ANR	447	IdentifierDecl	nr		390	0					
+ANR	448	IdentifierDeclType	int		390	0					
+ANR	449	Identifier	nr		390	1					
+ANR	450	IfStatement	if ( nb == 0 )		390	6					
+ANR	451	Condition	nb == 0	10:8:190:196	390	0	True				
+ANR	452	EqualityExpression	nb == 0		390	0		==			
+ANR	453	Identifier	nb		390	0					
+ANR	454	PrimaryExpression	0		390	1					
+ANR	455	ExpressionStatement	nb = 32	11:8:207:214	390	1	True				
+ANR	456	AssignmentExpression	nb = 32		390	0		=			
+ANR	457	Identifier	nb		390	0					
+ANR	458	PrimaryExpression	32		390	1					
+ANR	459	ExpressionStatement	nr = ( nb + 3 ) / 4	12:4:220:237	390	7	True				
+ANR	460	AssignmentExpression	nr = ( nb + 3 ) / 4		390	0		=			
+ANR	461	Identifier	nr		390	0					
+ANR	462	MultiplicativeExpression	( nb + 3 ) / 4		390	1		/			
+ANR	463	AdditiveExpression	nb + 3		390	0		+			
+ANR	464	Identifier	nb		390	0					
+ANR	465	PrimaryExpression	3		390	1					
+ANR	466	PrimaryExpression	4		390	1					
+ANR	467	IfStatement	"if ( unlikely ( lsw_reg_in_range ( start , nr , ra ) ) )"		390	8					
+ANR	468	Condition	"unlikely ( lsw_reg_in_range ( start , nr , ra ) )"	13:8:247:287	390	0	True				
+ANR	469	CallExpression	"unlikely ( lsw_reg_in_range ( start , nr , ra ) )"		390	0					
+ANR	470	Callee	unlikely		390	0					
+ANR	471	Identifier	unlikely		390	0					
+ANR	472	ArgumentList	"lsw_reg_in_range ( start , nr , ra )"		390	1					
+ANR	473	Argument	"lsw_reg_in_range ( start , nr , ra )"		390	0					
+ANR	474	CallExpression	"lsw_reg_in_range ( start , nr , ra )"		390	0					
+ANR	475	Callee	lsw_reg_in_range		390	0					
+ANR	476	Identifier	lsw_reg_in_range		390	0					
+ANR	477	ArgumentList	start		390	1					
+ANR	478	Argument	start		390	0					
+ANR	479	Identifier	start		390	0					
+ANR	480	Argument	nr		390	1					
+ANR	481	Identifier	nr		390	0					
+ANR	482	Argument	ra		390	2					
+ANR	483	Identifier	ra		390	0					
+ANR	484	CompoundStatement		12:51:249:249	390	1					
+ANR	485	ExpressionStatement	"gen_inval_exception ( ctx , POWERPC_EXCP_INVAL_LSWX )"	14:8:300:349	390	0	True				
+ANR	486	CallExpression	"gen_inval_exception ( ctx , POWERPC_EXCP_INVAL_LSWX )"		390	0					
+ANR	487	Callee	gen_inval_exception		390	0					
+ANR	488	Identifier	gen_inval_exception		390	0					
+ANR	489	ArgumentList	ctx		390	1					
+ANR	490	Argument	ctx		390	0					
+ANR	491	Identifier	ctx		390	0					
+ANR	492	Argument	POWERPC_EXCP_INVAL_LSWX		390	1					
+ANR	493	Identifier	POWERPC_EXCP_INVAL_LSWX		390	0					
+ANR	494	ReturnStatement	return ;	15:8:359:365	390	1	True				
+ANR	495	ExpressionStatement	"gen_set_access_type ( ctx , ACCESS_INT )"	17:4:377:413	390	9	True				
+ANR	496	CallExpression	"gen_set_access_type ( ctx , ACCESS_INT )"		390	0					
+ANR	497	Callee	gen_set_access_type		390	0					
+ANR	498	Identifier	gen_set_access_type		390	0					
+ANR	499	ArgumentList	ctx		390	1					
+ANR	500	Argument	ctx		390	0					
+ANR	501	Identifier	ctx		390	0					
+ANR	502	Argument	ACCESS_INT		390	1					
+ANR	503	Identifier	ACCESS_INT		390	0					
+ANR	504	ExpressionStatement	"gen_update_nip ( ctx , ctx -> nip - 4 )"	19:4:497:530	390	10	True				
+ANR	505	CallExpression	"gen_update_nip ( ctx , ctx -> nip - 4 )"		390	0					
+ANR	506	Callee	gen_update_nip		390	0					
+ANR	507	Identifier	gen_update_nip		390	0					
+ANR	508	ArgumentList	ctx		390	1					
+ANR	509	Argument	ctx		390	0					
+ANR	510	Identifier	ctx		390	0					
+ANR	511	Argument	ctx -> nip - 4		390	1					
+ANR	512	AdditiveExpression	ctx -> nip - 4		390	0		-			
+ANR	513	PtrMemberAccess	ctx -> nip		390	0					
+ANR	514	Identifier	ctx		390	0					
+ANR	515	Identifier	nip		390	1					
+ANR	516	PrimaryExpression	4		390	1					
+ANR	517	ExpressionStatement	t0 = tcg_temp_new ( )	20:4:536:555	390	11	True				
+ANR	518	AssignmentExpression	t0 = tcg_temp_new ( )		390	0		=			
+ANR	519	Identifier	t0		390	0					
+ANR	520	CallExpression	tcg_temp_new ( )		390	1					
+ANR	521	Callee	tcg_temp_new		390	0					
+ANR	522	Identifier	tcg_temp_new		390	0					
+ANR	523	ArgumentList			390	1					
+ANR	524	ExpressionStatement	"gen_addr_register ( ctx , t0 )"	21:4:561:587	390	12	True				
+ANR	525	CallExpression	"gen_addr_register ( ctx , t0 )"		390	0					
+ANR	526	Callee	gen_addr_register		390	0					
+ANR	527	Identifier	gen_addr_register		390	0					
+ANR	528	ArgumentList	ctx		390	1					
+ANR	529	Argument	ctx		390	0					
+ANR	530	Identifier	ctx		390	0					
+ANR	531	Argument	t0		390	1					
+ANR	532	Identifier	t0		390	0					
+ANR	533	ExpressionStatement	t1 = tcg_const_i32 ( nb )	22:4:593:615	390	13	True				
+ANR	534	AssignmentExpression	t1 = tcg_const_i32 ( nb )		390	0		=			
+ANR	535	Identifier	t1		390	0					
+ANR	536	CallExpression	tcg_const_i32 ( nb )		390	1					
+ANR	537	Callee	tcg_const_i32		390	0					
+ANR	538	Identifier	tcg_const_i32		390	0					
+ANR	539	ArgumentList	nb		390	1					
+ANR	540	Argument	nb		390	0					
+ANR	541	Identifier	nb		390	0					
+ANR	542	ExpressionStatement	t2 = tcg_const_i32 ( start )	23:4:621:646	390	14	True				
+ANR	543	AssignmentExpression	t2 = tcg_const_i32 ( start )		390	0		=			
+ANR	544	Identifier	t2		390	0					
+ANR	545	CallExpression	tcg_const_i32 ( start )		390	1					
+ANR	546	Callee	tcg_const_i32		390	0					
+ANR	547	Identifier	tcg_const_i32		390	0					
+ANR	548	ArgumentList	start		390	1					
+ANR	549	Argument	start		390	0					
+ANR	550	Identifier	start		390	0					
+ANR	551	ExpressionStatement	"gen_helper_lsw ( cpu_env , t0 , t1 , t2 )"	24:4:652:687	390	15	True				
+ANR	552	CallExpression	"gen_helper_lsw ( cpu_env , t0 , t1 , t2 )"		390	0					
+ANR	553	Callee	gen_helper_lsw		390	0					
+ANR	554	Identifier	gen_helper_lsw		390	0					
+ANR	555	ArgumentList	cpu_env		390	1					
+ANR	556	Argument	cpu_env		390	0					
+ANR	557	Identifier	cpu_env		390	0					
+ANR	558	Argument	t0		390	1					
+ANR	559	Identifier	t0		390	0					
+ANR	560	Argument	t1		390	2					
+ANR	561	Identifier	t1		390	0					
+ANR	562	Argument	t2		390	3					
+ANR	563	Identifier	t2		390	0					
+ANR	564	ExpressionStatement	tcg_temp_free ( t0 )	25:4:693:710	390	16	True				
+ANR	565	CallExpression	tcg_temp_free ( t0 )		390	0					
+ANR	566	Callee	tcg_temp_free		390	0					
+ANR	567	Identifier	tcg_temp_free		390	0					
+ANR	568	ArgumentList	t0		390	1					
+ANR	569	Argument	t0		390	0					
+ANR	570	Identifier	t0		390	0					
+ANR	571	ExpressionStatement	tcg_temp_free_i32 ( t1 )	26:4:716:737	390	17	True				
+ANR	572	CallExpression	tcg_temp_free_i32 ( t1 )		390	0					
+ANR	573	Callee	tcg_temp_free_i32		390	0					
+ANR	574	Identifier	tcg_temp_free_i32		390	0					
+ANR	575	ArgumentList	t1		390	1					
+ANR	576	Argument	t1		390	0					
+ANR	577	Identifier	t1		390	0					
+ANR	578	ExpressionStatement	tcg_temp_free_i32 ( t2 )	27:4:743:764	390	18	True				
+ANR	579	CallExpression	tcg_temp_free_i32 ( t2 )		390	0					
+ANR	580	Callee	tcg_temp_free_i32		390	0					
+ANR	581	Identifier	tcg_temp_free_i32		390	0					
+ANR	582	ArgumentList	t2		390	1					
+ANR	583	Argument	t2		390	0					
+ANR	584	Identifier	t2		390	0					
+ANR	585	ReturnType	static void		390	1					
+ANR	586	Identifier	gen_lswi		390	2					
+ANR	587	ParameterList	DisasContext * ctx		390	3					
+ANR	588	Parameter	DisasContext * ctx	1:21:21:37	390	0	True				
+ANR	589	ParameterType	DisasContext *		390	0					
+ANR	590	Identifier	ctx		390	1					
+ANR	591	CFGEntryNode	ENTRY		390		True				
+ANR	592	CFGExitNode	EXIT		390		True				
+ANR	593	Symbol	unlikely		390						
+ANR	594	Symbol	ctx -> opcode		390						
+ANR	595	Symbol	POWERPC_EXCP_INVAL_LSWX		390						
+ANR	596	Symbol	nr		390						
+ANR	597	Symbol	ctx		390						
+ANR	598	Symbol	start		390						
+ANR	599	Symbol	tcg_temp_new		390						
+ANR	600	Symbol	* ctx		390						
+ANR	601	Symbol	lsw_reg_in_range		390						
+ANR	602	Symbol	ra		390						
+ANR	603	Symbol	rA		390						
+ANR	604	Symbol	tcg_const_i32		390						
+ANR	605	Symbol	rD		390						
+ANR	606	Symbol	cpu_env		390						
+ANR	607	Symbol	nb		390						
+ANR	608	Symbol	NB		390						
+ANR	609	Symbol	t0		390						
+ANR	610	Symbol	t1		390						
+ANR	611	Symbol	t2		390						
+ANR	612	Symbol	ctx -> nip		390						
+ANR	613	Symbol	ACCESS_INT		390						

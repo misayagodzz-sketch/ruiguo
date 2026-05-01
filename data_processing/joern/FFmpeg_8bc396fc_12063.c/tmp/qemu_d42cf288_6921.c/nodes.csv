@@ -1,0 +1,91 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	7213	File	tmp/qemu_d42cf288_6921.c								
+ANR	7214	Function	bdrv_drained_begin	1:0:0:391							
+ANR	7215	FunctionDef	bdrv_drained_begin (BlockDriverState * bs)		7214	0					
+ANR	7216	CompoundStatement		2:0:46:391	7214	0					
+ANR	7217	IfStatement	if ( ! bs -> quiesce_counter ++ )		7214	0					
+ANR	7218	Condition	! bs -> quiesce_counter ++	3:8:56:77	7214	0	True				
+ANR	7219	UnaryOperationExpression	! bs -> quiesce_counter ++		7214	0					
+ANR	7220	UnaryOperator	!		7214	0					
+ANR	7221	PostIncDecOperationExpression	bs -> quiesce_counter ++		7214	1					
+ANR	7222	PtrMemberAccess	bs -> quiesce_counter		7214	0					
+ANR	7223	Identifier	bs		7214	0					
+ANR	7224	Identifier	quiesce_counter		7214	1					
+ANR	7225	IncDec	++		7214	1					
+ANR	7226	CompoundStatement		2:32:33:33	7214	1					
+ANR	7227	ExpressionStatement	aio_disable_external ( bdrv_get_aio_context ( bs ) )	4:8:90:136	7214	0	True				
+ANR	7228	CallExpression	aio_disable_external ( bdrv_get_aio_context ( bs ) )		7214	0					
+ANR	7229	Callee	aio_disable_external		7214	0					
+ANR	7230	Identifier	aio_disable_external		7214	0					
+ANR	7231	ArgumentList	bdrv_get_aio_context ( bs )		7214	1					
+ANR	7232	Argument	bdrv_get_aio_context ( bs )		7214	0					
+ANR	7233	CallExpression	bdrv_get_aio_context ( bs )		7214	0					
+ANR	7234	Callee	bdrv_get_aio_context		7214	0					
+ANR	7235	Identifier	bdrv_get_aio_context		7214	0					
+ANR	7236	ArgumentList	bs		7214	1					
+ANR	7237	Argument	bs		7214	0					
+ANR	7238	Identifier	bs		7214	0					
+ANR	7239	ExpressionStatement	bdrv_parent_drained_begin ( bs )	5:8:146:175	7214	1	True				
+ANR	7240	CallExpression	bdrv_parent_drained_begin ( bs )		7214	0					
+ANR	7241	Callee	bdrv_parent_drained_begin		7214	0					
+ANR	7242	Identifier	bdrv_parent_drained_begin		7214	0					
+ANR	7243	ArgumentList	bs		7214	1					
+ANR	7244	Argument	bs		7214	0					
+ANR	7245	Identifier	bs		7214	0					
+ANR	7246	ExpressionStatement	bdrv_io_unplugged_begin ( bs )	8:4:188:215	7214	1	True				
+ANR	7247	CallExpression	bdrv_io_unplugged_begin ( bs )		7214	0					
+ANR	7248	Callee	bdrv_io_unplugged_begin		7214	0					
+ANR	7249	Identifier	bdrv_io_unplugged_begin		7214	0					
+ANR	7250	ArgumentList	bs		7214	1					
+ANR	7251	Argument	bs		7214	0					
+ANR	7252	Identifier	bs		7214	0					
+ANR	7253	ExpressionStatement	bdrv_drain_recurse ( bs )	9:4:221:243	7214	2	True				
+ANR	7254	CallExpression	bdrv_drain_recurse ( bs )		7214	0					
+ANR	7255	Callee	bdrv_drain_recurse		7214	0					
+ANR	7256	Identifier	bdrv_drain_recurse		7214	0					
+ANR	7257	ArgumentList	bs		7214	1					
+ANR	7258	Argument	bs		7214	0					
+ANR	7259	Identifier	bs		7214	0					
+ANR	7260	IfStatement	if ( qemu_in_coroutine ( ) )		7214	3					
+ANR	7261	Condition	qemu_in_coroutine ( )	10:8:253:271	7214	0	True				
+ANR	7262	CallExpression	qemu_in_coroutine ( )		7214	0					
+ANR	7263	Callee	qemu_in_coroutine		7214	0					
+ANR	7264	Identifier	qemu_in_coroutine		7214	0					
+ANR	7265	ArgumentList			7214	1					
+ANR	7266	CompoundStatement		9:29:227:227	7214	1					
+ANR	7267	ExpressionStatement	bdrv_co_yield_to_drain ( bs )	11:8:284:310	7214	0	True				
+ANR	7268	CallExpression	bdrv_co_yield_to_drain ( bs )		7214	0					
+ANR	7269	Callee	bdrv_co_yield_to_drain		7214	0					
+ANR	7270	Identifier	bdrv_co_yield_to_drain		7214	0					
+ANR	7271	ArgumentList	bs		7214	1					
+ANR	7272	Argument	bs		7214	0					
+ANR	7273	Identifier	bs		7214	0					
+ANR	7274	ElseStatement	else		7214	0					
+ANR	7275	CompoundStatement		11:11:276:276	7214	0					
+ANR	7276	ExpressionStatement	bdrv_drain_poll ( bs )	13:8:333:352	7214	0	True				
+ANR	7277	CallExpression	bdrv_drain_poll ( bs )		7214	0					
+ANR	7278	Callee	bdrv_drain_poll		7214	0					
+ANR	7279	Identifier	bdrv_drain_poll		7214	0					
+ANR	7280	ArgumentList	bs		7214	1					
+ANR	7281	Argument	bs		7214	0					
+ANR	7282	Identifier	bs		7214	0					
+ANR	7283	ExpressionStatement	bdrv_io_unplugged_end ( bs )	15:4:364:389	7214	4	True				
+ANR	7284	CallExpression	bdrv_io_unplugged_end ( bs )		7214	0					
+ANR	7285	Callee	bdrv_io_unplugged_end		7214	0					
+ANR	7286	Identifier	bdrv_io_unplugged_end		7214	0					
+ANR	7287	ArgumentList	bs		7214	1					
+ANR	7288	Argument	bs		7214	0					
+ANR	7289	Identifier	bs		7214	0					
+ANR	7290	ReturnType	void		7214	1					
+ANR	7291	Identifier	bdrv_drained_begin		7214	2					
+ANR	7292	ParameterList	BlockDriverState * bs		7214	3					
+ANR	7293	Parameter	BlockDriverState * bs	1:24:24:43	7214	0	True				
+ANR	7294	ParameterType	BlockDriverState *		7214	0					
+ANR	7295	Identifier	bs		7214	1					
+ANR	7296	CFGEntryNode	ENTRY		7214		True				
+ANR	7297	CFGExitNode	EXIT		7214		True				
+ANR	7298	Symbol	bs		7214						
+ANR	7299	Symbol	bdrv_get_aio_context		7214						
+ANR	7300	Symbol	qemu_in_coroutine		7214						
+ANR	7301	Symbol	bs -> quiesce_counter		7214						
+ANR	7302	Symbol	* bs		7214						

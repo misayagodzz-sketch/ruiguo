@@ -1,0 +1,896 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/qemu_a8a358bf_4727.c								
+ANR	2	Function	cpu_x86_find_by_name	1:0:0:4248							
+ANR	3	FunctionDef	"cpu_x86_find_by_name (x86_def_t * x86_cpu_def , const char * cpu_model)"		2	0					
+ANR	4	CompoundStatement		2:0:79:4248	2	0					
+ANR	5	IdentifierDeclStatement	unsigned int i ;	3:4:85:99	2	0	True				
+ANR	6	IdentifierDecl	i		2	0					
+ANR	7	IdentifierDeclType	unsigned int		2	0					
+ANR	8	Identifier	i		2	1					
+ANR	9	IdentifierDeclStatement	x86_def_t * def ;	4:4:105:119	2	1	True				
+ANR	10	IdentifierDecl	* def		2	0					
+ANR	11	IdentifierDeclType	x86_def_t *		2	0					
+ANR	12	Identifier	def		2	1					
+ANR	13	IdentifierDeclStatement	char * s = strdup ( cpu_model ) ;	6:4:126:153	2	2	True				
+ANR	14	IdentifierDecl	* s = strdup ( cpu_model )		2	0					
+ANR	15	IdentifierDeclType	char *		2	0					
+ANR	16	Identifier	s		2	1					
+ANR	17	AssignmentExpression	* s = strdup ( cpu_model )		2	2		=			
+ANR	18	Identifier	s		2	0					
+ANR	19	CallExpression	strdup ( cpu_model )		2	1					
+ANR	20	Callee	strdup		2	0					
+ANR	21	Identifier	strdup		2	0					
+ANR	22	ArgumentList	cpu_model		2	1					
+ANR	23	Argument	cpu_model		2	0					
+ANR	24	Identifier	cpu_model		2	0					
+ANR	25	IdentifierDeclStatement	"char * featurestr , * name = strtok ( s , "","" ) ;"	7:4:159:199	2	3	True				
+ANR	26	IdentifierDecl	* featurestr		2	0					
+ANR	27	IdentifierDeclType	char *		2	0					
+ANR	28	Identifier	featurestr		2	1					
+ANR	29	IdentifierDecl	"* name = strtok ( s , "","" )"		2	1					
+ANR	30	IdentifierDeclType	char *		2	0					
+ANR	31	Identifier	name		2	1					
+ANR	32	AssignmentExpression	"* name = strtok ( s , "","" )"		2	2		=			
+ANR	33	Identifier	name		2	0					
+ANR	34	CallExpression	"strtok ( s , "","" )"		2	1					
+ANR	35	Callee	strtok		2	0					
+ANR	36	Identifier	strtok		2	0					
+ANR	37	ArgumentList	s		2	1					
+ANR	38	Argument	s		2	0					
+ANR	39	Identifier	s		2	0					
+ANR	40	Argument	""","""		2	1					
+ANR	41	PrimaryExpression	""","""		2	0					
+ANR	42	IdentifierDeclStatement	"uint32_t plus_features = 0 , plus_ext_features = 0 , plus_ext2_features = 0 , plus_ext3_features = 0 ;"	8:4:205:302	2	4	True				
+ANR	43	IdentifierDecl	plus_features = 0		2	0					
+ANR	44	IdentifierDeclType	uint32_t		2	0					
+ANR	45	Identifier	plus_features		2	1					
+ANR	46	AssignmentExpression	plus_features = 0		2	2		=			
+ANR	47	Identifier	plus_features		2	0					
+ANR	48	PrimaryExpression	0		2	1					
+ANR	49	IdentifierDecl	plus_ext_features = 0		2	1					
+ANR	50	IdentifierDeclType	uint32_t		2	0					
+ANR	51	Identifier	plus_ext_features		2	1					
+ANR	52	AssignmentExpression	plus_ext_features = 0		2	2		=			
+ANR	53	Identifier	plus_ext_features		2	0					
+ANR	54	PrimaryExpression	0		2	1					
+ANR	55	IdentifierDecl	plus_ext2_features = 0		2	2					
+ANR	56	IdentifierDeclType	uint32_t		2	0					
+ANR	57	Identifier	plus_ext2_features		2	1					
+ANR	58	AssignmentExpression	plus_ext2_features = 0		2	2		=			
+ANR	59	Identifier	plus_ext2_features		2	0					
+ANR	60	PrimaryExpression	0		2	1					
+ANR	61	IdentifierDecl	plus_ext3_features = 0		2	3					
+ANR	62	IdentifierDeclType	uint32_t		2	0					
+ANR	63	Identifier	plus_ext3_features		2	1					
+ANR	64	AssignmentExpression	plus_ext3_features = 0		2	2		=			
+ANR	65	Identifier	plus_ext3_features		2	0					
+ANR	66	PrimaryExpression	0		2	1					
+ANR	67	IdentifierDeclStatement	"uint32_t minus_features = 0 , minus_ext_features = 0 , minus_ext2_features = 0 , minus_ext3_features = 0 ;"	9:4:308:409	2	5	True				
+ANR	68	IdentifierDecl	minus_features = 0		2	0					
+ANR	69	IdentifierDeclType	uint32_t		2	0					
+ANR	70	Identifier	minus_features		2	1					
+ANR	71	AssignmentExpression	minus_features = 0		2	2		=			
+ANR	72	Identifier	minus_features		2	0					
+ANR	73	PrimaryExpression	0		2	1					
+ANR	74	IdentifierDecl	minus_ext_features = 0		2	1					
+ANR	75	IdentifierDeclType	uint32_t		2	0					
+ANR	76	Identifier	minus_ext_features		2	1					
+ANR	77	AssignmentExpression	minus_ext_features = 0		2	2		=			
+ANR	78	Identifier	minus_ext_features		2	0					
+ANR	79	PrimaryExpression	0		2	1					
+ANR	80	IdentifierDecl	minus_ext2_features = 0		2	2					
+ANR	81	IdentifierDeclType	uint32_t		2	0					
+ANR	82	Identifier	minus_ext2_features		2	1					
+ANR	83	AssignmentExpression	minus_ext2_features = 0		2	2		=			
+ANR	84	Identifier	minus_ext2_features		2	0					
+ANR	85	PrimaryExpression	0		2	1					
+ANR	86	IdentifierDecl	minus_ext3_features = 0		2	3					
+ANR	87	IdentifierDeclType	uint32_t		2	0					
+ANR	88	Identifier	minus_ext3_features		2	1					
+ANR	89	AssignmentExpression	minus_ext3_features = 0		2	2		=			
+ANR	90	Identifier	minus_ext3_features		2	0					
+ANR	91	PrimaryExpression	0		2	1					
+ANR	92	IdentifierDeclStatement	"int family = - 1 , model = - 1 , stepping = - 1 ;"	10:4:415:457	2	6	True				
+ANR	93	IdentifierDecl	family = - 1		2	0					
+ANR	94	IdentifierDeclType	int		2	0					
+ANR	95	Identifier	family		2	1					
+ANR	96	AssignmentExpression	family = - 1		2	2		=			
+ANR	97	Identifier	family		2	0					
+ANR	98	UnaryOperationExpression	- 1		2	1					
+ANR	99	UnaryOperator	-		2	0					
+ANR	100	PrimaryExpression	1		2	1					
+ANR	101	IdentifierDecl	model = - 1		2	1					
+ANR	102	IdentifierDeclType	int		2	0					
+ANR	103	Identifier	model		2	1					
+ANR	104	AssignmentExpression	model = - 1		2	2		=			
+ANR	105	Identifier	model		2	0					
+ANR	106	UnaryOperationExpression	- 1		2	1					
+ANR	107	UnaryOperator	-		2	0					
+ANR	108	PrimaryExpression	1		2	1					
+ANR	109	IdentifierDecl	stepping = - 1		2	2					
+ANR	110	IdentifierDeclType	int		2	0					
+ANR	111	Identifier	stepping		2	1					
+ANR	112	AssignmentExpression	stepping = - 1		2	2		=			
+ANR	113	Identifier	stepping		2	0					
+ANR	114	UnaryOperationExpression	- 1		2	1					
+ANR	115	UnaryOperator	-		2	0					
+ANR	116	PrimaryExpression	1		2	1					
+ANR	117	ExpressionStatement	def = NULL	12:4:464:474	2	7	True				
+ANR	118	AssignmentExpression	def = NULL		2	0		=			
+ANR	119	Identifier	def		2	0					
+ANR	120	Identifier	NULL		2	1					
+ANR	121	ForStatement	for ( i = 0 ; i < ARRAY_SIZE ( x86_defs ) ; i ++ )		2	8					
+ANR	122	ForInit	i = 0 ;	13:9:485:490	2	0	True				
+ANR	123	AssignmentExpression	i = 0		2	0		=			
+ANR	124	Identifier	i		2	0					
+ANR	125	PrimaryExpression	0		2	1					
+ANR	126	Condition	i < ARRAY_SIZE ( x86_defs )	13:16:492:515	2	1	True				
+ANR	127	RelationalExpression	i < ARRAY_SIZE ( x86_defs )		2	0		<			
+ANR	128	Identifier	i		2	0					
+ANR	129	CallExpression	ARRAY_SIZE ( x86_defs )		2	1					
+ANR	130	Callee	ARRAY_SIZE		2	0					
+ANR	131	Identifier	ARRAY_SIZE		2	0					
+ANR	132	ArgumentList	x86_defs		2	1					
+ANR	133	Argument	x86_defs		2	0					
+ANR	134	Identifier	x86_defs		2	0					
+ANR	135	PostIncDecOperationExpression	i ++	13:42:518:520	2	2	True				
+ANR	136	Identifier	i		2	0					
+ANR	137	IncDec	++		2	1					
+ANR	138	CompoundStatement		12:47:443:443	2	3					
+ANR	139	IfStatement	"if ( strcmp ( name , x86_defs [ i ] . name ) == 0 )"		2	0					
+ANR	140	Condition	"strcmp ( name , x86_defs [ i ] . name ) == 0"	14:12:537:571	2	0	True				
+ANR	141	EqualityExpression	"strcmp ( name , x86_defs [ i ] . name ) == 0"		2	0		==			
+ANR	142	CallExpression	"strcmp ( name , x86_defs [ i ] . name )"		2	0					
+ANR	143	Callee	strcmp		2	0					
+ANR	144	Identifier	strcmp		2	0					
+ANR	145	ArgumentList	name		2	1					
+ANR	146	Argument	name		2	0					
+ANR	147	Identifier	name		2	0					
+ANR	148	Argument	x86_defs [ i ] . name		2	1					
+ANR	149	MemberAccess	x86_defs [ i ] . name		2	0					
+ANR	150	ArrayIndexing	x86_defs [ i ]		2	0					
+ANR	151	Identifier	x86_defs		2	0					
+ANR	152	Identifier	i		2	1					
+ANR	153	Identifier	name		2	1					
+ANR	154	PrimaryExpression	0		2	1					
+ANR	155	CompoundStatement		13:49:494:494	2	1					
+ANR	156	ExpressionStatement	def = & x86_defs [ i ]	15:12:588:606	2	0	True				
+ANR	157	AssignmentExpression	def = & x86_defs [ i ]		2	0		=			
+ANR	158	Identifier	def		2	0					
+ANR	159	UnaryOperationExpression	& x86_defs [ i ]		2	1					
+ANR	160	UnaryOperator	&		2	0					
+ANR	161	ArrayIndexing	x86_defs [ i ]		2	1					
+ANR	162	Identifier	x86_defs		2	0					
+ANR	163	Identifier	i		2	1					
+ANR	164	BreakStatement	break ;	16:12:620:625	2	1	True				
+ANR	165	IfStatement	"if ( kvm_enabled ( ) && strcmp ( name , ""host"" ) == 0 )"		2	9					
+ANR	166	Condition	"kvm_enabled ( ) && strcmp ( name , ""host"" ) == 0"	19:8:651:692	2	0	True				
+ANR	167	AndExpression	"kvm_enabled ( ) && strcmp ( name , ""host"" ) == 0"		2	0		&&			
+ANR	168	CallExpression	kvm_enabled ( )		2	0					
+ANR	169	Callee	kvm_enabled		2	0					
+ANR	170	Identifier	kvm_enabled		2	0					
+ANR	171	ArgumentList			2	1					
+ANR	172	EqualityExpression	"strcmp ( name , ""host"" ) == 0"		2	1		==			
+ANR	173	CallExpression	"strcmp ( name , ""host"" )"		2	0					
+ANR	174	Callee	strcmp		2	0					
+ANR	175	Identifier	strcmp		2	0					
+ANR	176	ArgumentList	name		2	1					
+ANR	177	Argument	name		2	0					
+ANR	178	Identifier	name		2	0					
+ANR	179	Argument	"""host"""		2	1					
+ANR	180	PrimaryExpression	"""host"""		2	0					
+ANR	181	PrimaryExpression	0		2	1					
+ANR	182	CompoundStatement		18:52:615:615	2	1					
+ANR	183	ExpressionStatement	cpu_x86_fill_host ( x86_cpu_def )	20:8:705:735	2	0	True				
+ANR	184	CallExpression	cpu_x86_fill_host ( x86_cpu_def )		2	0					
+ANR	185	Callee	cpu_x86_fill_host		2	0					
+ANR	186	Identifier	cpu_x86_fill_host		2	0					
+ANR	187	ArgumentList	x86_cpu_def		2	1					
+ANR	188	Argument	x86_cpu_def		2	0					
+ANR	189	Identifier	x86_cpu_def		2	0					
+ANR	190	ElseStatement	else		2	0					
+ANR	191	IfStatement	if ( ! def )		2	0					
+ANR	192	Condition	! def	21:15:752:755	2	0	True				
+ANR	193	UnaryOperationExpression	! def		2	0					
+ANR	194	UnaryOperator	!		2	0					
+ANR	195	Identifier	def		2	1					
+ANR	196	CompoundStatement		20:21:678:678	2	1					
+ANR	197	GotoStatement	goto error ;	22:8:768:778	2	0	True				
+ANR	198	Identifier	error		2	0					
+ANR	199	ElseStatement	else		2	0					
+ANR	200	CompoundStatement		22:11:711:711	2	0					
+ANR	201	ExpressionStatement	"memcpy ( x86_cpu_def , def , sizeof ( * def ) )"	24:8:801:839	2	0	True				
+ANR	202	CallExpression	"memcpy ( x86_cpu_def , def , sizeof ( * def ) )"		2	0					
+ANR	203	Callee	memcpy		2	0					
+ANR	204	Identifier	memcpy		2	0					
+ANR	205	ArgumentList	x86_cpu_def		2	1					
+ANR	206	Argument	x86_cpu_def		2	0					
+ANR	207	Identifier	x86_cpu_def		2	0					
+ANR	208	Argument	def		2	1					
+ANR	209	Identifier	def		2	0					
+ANR	210	Argument	sizeof ( * def )		2	2					
+ANR	211	SizeofExpression	sizeof ( * def )		2	0					
+ANR	212	Sizeof	sizeof		2	0					
+ANR	213	UnaryOperationExpression	* def		2	1					
+ANR	214	UnaryOperator	*		2	0					
+ANR	215	Identifier	def		2	1					
+ANR	216	ExpressionStatement	"add_flagname_to_bitmaps ( ""hypervisor"" , & plus_features , & plus_ext_features , & plus_ext2_features , & plus_ext3_features )"	27:4:852:975	2	10	True				
+ANR	217	CallExpression	"add_flagname_to_bitmaps ( ""hypervisor"" , & plus_features , & plus_ext_features , & plus_ext2_features , & plus_ext3_features )"		2	0					
+ANR	218	Callee	add_flagname_to_bitmaps		2	0					
+ANR	219	Identifier	add_flagname_to_bitmaps		2	0					
+ANR	220	ArgumentList	"""hypervisor"""		2	1					
+ANR	221	Argument	"""hypervisor"""		2	0					
+ANR	222	PrimaryExpression	"""hypervisor"""		2	0					
+ANR	223	Argument	& plus_features		2	1					
+ANR	224	UnaryOperationExpression	& plus_features		2	0					
+ANR	225	UnaryOperator	&		2	0					
+ANR	226	Identifier	plus_features		2	1					
+ANR	227	Argument	& plus_ext_features		2	2					
+ANR	228	UnaryOperationExpression	& plus_ext_features		2	0					
+ANR	229	UnaryOperator	&		2	0					
+ANR	230	Identifier	plus_ext_features		2	1					
+ANR	231	Argument	& plus_ext2_features		2	3					
+ANR	232	UnaryOperationExpression	& plus_ext2_features		2	0					
+ANR	233	UnaryOperator	&		2	0					
+ANR	234	Identifier	plus_ext2_features		2	1					
+ANR	235	Argument	& plus_ext3_features		2	4					
+ANR	236	UnaryOperationExpression	& plus_ext3_features		2	0					
+ANR	237	UnaryOperator	&		2	0					
+ANR	238	Identifier	plus_ext3_features		2	1					
+ANR	239	ExpressionStatement	"featurestr = strtok ( NULL , "","" )"	30:4:982:1012	2	11	True				
+ANR	240	AssignmentExpression	"featurestr = strtok ( NULL , "","" )"		2	0		=			
+ANR	241	Identifier	featurestr		2	0					
+ANR	242	CallExpression	"strtok ( NULL , "","" )"		2	1					
+ANR	243	Callee	strtok		2	0					
+ANR	244	Identifier	strtok		2	0					
+ANR	245	ArgumentList	NULL		2	1					
+ANR	246	Argument	NULL		2	0					
+ANR	247	Identifier	NULL		2	0					
+ANR	248	Argument	""","""		2	1					
+ANR	249	PrimaryExpression	""","""		2	0					
+ANR	250	WhileStatement	while ( featurestr )		2	12					
+ANR	251	Condition	featurestr	32:11:1026:1035	2	0	True				
+ANR	252	Identifier	featurestr		2	0					
+ANR	253	CompoundStatement		32:8:968:977	2	1					
+ANR	254	IdentifierDeclStatement	char * val ;	33:8:1048:1057	2	0	True				
+ANR	255	IdentifierDecl	* val		2	0					
+ANR	256	IdentifierDeclType	char *		2	0					
+ANR	257	Identifier	val		2	1					
+ANR	258	IfStatement	if ( featurestr [ 0 ] == '+' )		2	1					
+ANR	259	Condition	featurestr [ 0 ] == '+'	34:12:1071:1090	2	0	True				
+ANR	260	EqualityExpression	featurestr [ 0 ] == '+'		2	0		==			
+ANR	261	ArrayIndexing	featurestr [ 0 ]		2	0					
+ANR	262	Identifier	featurestr		2	0					
+ANR	263	PrimaryExpression	0		2	1					
+ANR	264	PrimaryExpression	'+'		2	1					
+ANR	265	CompoundStatement		33:34:1013:1013	2	1					
+ANR	266	ExpressionStatement	"add_flagname_to_bitmaps ( featurestr + 1 , & plus_features , & plus_ext_features , & plus_ext2_features , & plus_ext3_features )"	35:12:1107:1224	2	0	True				
+ANR	267	CallExpression	"add_flagname_to_bitmaps ( featurestr + 1 , & plus_features , & plus_ext_features , & plus_ext2_features , & plus_ext3_features )"		2	0					
+ANR	268	Callee	add_flagname_to_bitmaps		2	0					
+ANR	269	Identifier	add_flagname_to_bitmaps		2	0					
+ANR	270	ArgumentList	featurestr + 1		2	1					
+ANR	271	Argument	featurestr + 1		2	0					
+ANR	272	AdditiveExpression	featurestr + 1		2	0		+			
+ANR	273	Identifier	featurestr		2	0					
+ANR	274	PrimaryExpression	1		2	1					
+ANR	275	Argument	& plus_features		2	1					
+ANR	276	UnaryOperationExpression	& plus_features		2	0					
+ANR	277	UnaryOperator	&		2	0					
+ANR	278	Identifier	plus_features		2	1					
+ANR	279	Argument	& plus_ext_features		2	2					
+ANR	280	UnaryOperationExpression	& plus_ext_features		2	0					
+ANR	281	UnaryOperator	&		2	0					
+ANR	282	Identifier	plus_ext_features		2	1					
+ANR	283	Argument	& plus_ext2_features		2	3					
+ANR	284	UnaryOperationExpression	& plus_ext2_features		2	0					
+ANR	285	UnaryOperator	&		2	0					
+ANR	286	Identifier	plus_ext2_features		2	1					
+ANR	287	Argument	& plus_ext3_features		2	4					
+ANR	288	UnaryOperationExpression	& plus_ext3_features		2	0					
+ANR	289	UnaryOperator	&		2	0					
+ANR	290	Identifier	plus_ext3_features		2	1					
+ANR	291	ElseStatement	else		2	0					
+ANR	292	IfStatement	if ( featurestr [ 0 ] == '-' )		2	0					
+ANR	293	Condition	featurestr [ 0 ] == '-'	36:19:1245:1264	2	0	True				
+ANR	294	EqualityExpression	featurestr [ 0 ] == '-'		2	0		==			
+ANR	295	ArrayIndexing	featurestr [ 0 ]		2	0					
+ANR	296	Identifier	featurestr		2	0					
+ANR	297	PrimaryExpression	0		2	1					
+ANR	298	PrimaryExpression	'-'		2	1					
+ANR	299	CompoundStatement		35:41:1187:1187	2	1					
+ANR	300	ExpressionStatement	"add_flagname_to_bitmaps ( featurestr + 1 , & minus_features , & minus_ext_features , & minus_ext2_features , & minus_ext3_features )"	37:12:1281:1402	2	0	True				
+ANR	301	CallExpression	"add_flagname_to_bitmaps ( featurestr + 1 , & minus_features , & minus_ext_features , & minus_ext2_features , & minus_ext3_features )"		2	0					
+ANR	302	Callee	add_flagname_to_bitmaps		2	0					
+ANR	303	Identifier	add_flagname_to_bitmaps		2	0					
+ANR	304	ArgumentList	featurestr + 1		2	1					
+ANR	305	Argument	featurestr + 1		2	0					
+ANR	306	AdditiveExpression	featurestr + 1		2	0		+			
+ANR	307	Identifier	featurestr		2	0					
+ANR	308	PrimaryExpression	1		2	1					
+ANR	309	Argument	& minus_features		2	1					
+ANR	310	UnaryOperationExpression	& minus_features		2	0					
+ANR	311	UnaryOperator	&		2	0					
+ANR	312	Identifier	minus_features		2	1					
+ANR	313	Argument	& minus_ext_features		2	2					
+ANR	314	UnaryOperationExpression	& minus_ext_features		2	0					
+ANR	315	UnaryOperator	&		2	0					
+ANR	316	Identifier	minus_ext_features		2	1					
+ANR	317	Argument	& minus_ext2_features		2	3					
+ANR	318	UnaryOperationExpression	& minus_ext2_features		2	0					
+ANR	319	UnaryOperator	&		2	0					
+ANR	320	Identifier	minus_ext2_features		2	1					
+ANR	321	Argument	& minus_ext3_features		2	4					
+ANR	322	UnaryOperationExpression	& minus_ext3_features		2	0					
+ANR	323	UnaryOperator	&		2	0					
+ANR	324	Identifier	minus_ext3_features		2	1					
+ANR	325	ElseStatement	else		2	0					
+ANR	326	IfStatement	"if ( ( val = strchr ( featurestr , '=' ) ) )"		2	0					
+ANR	327	Condition	"val = strchr ( featurestr , '=' )"	38:19:1423:1453	2	0	True				
+ANR	328	AssignmentExpression	"val = strchr ( featurestr , '=' )"		2	0		=			
+ANR	329	Identifier	val		2	0					
+ANR	330	CallExpression	"strchr ( featurestr , '=' )"		2	1					
+ANR	331	Callee	strchr		2	0					
+ANR	332	Identifier	strchr		2	0					
+ANR	333	ArgumentList	featurestr		2	1					
+ANR	334	Argument	featurestr		2	0					
+ANR	335	Identifier	featurestr		2	0					
+ANR	336	Argument	'='		2	1					
+ANR	337	PrimaryExpression	'='		2	0					
+ANR	338	CompoundStatement		37:52:1376:1376	2	1					
+ANR	339	ExpressionStatement	* val = 0	39:12:1470:1478	2	0	True				
+ANR	340	AssignmentExpression	* val = 0		2	0		=			
+ANR	341	UnaryOperationExpression	* val		2	0					
+ANR	342	UnaryOperator	*		2	0					
+ANR	343	Identifier	val		2	1					
+ANR	344	PrimaryExpression	0		2	1					
+ANR	345	ExpressionStatement	val ++	39:22:1480:1485	2	1	True				
+ANR	346	PostIncDecOperationExpression	val ++		2	0					
+ANR	347	Identifier	val		2	0					
+ANR	348	IncDec	++		2	1					
+ANR	349	IfStatement	"if ( ! strcmp ( featurestr , ""family"" ) )"		2	2					
+ANR	350	Condition	"! strcmp ( featurestr , ""family"" )"	40:16:1503:1531	2	0	True				
+ANR	351	UnaryOperationExpression	"! strcmp ( featurestr , ""family"" )"		2	0					
+ANR	352	UnaryOperator	!		2	0					
+ANR	353	CallExpression	"strcmp ( featurestr , ""family"" )"		2	1					
+ANR	354	Callee	strcmp		2	0					
+ANR	355	Identifier	strcmp		2	0					
+ANR	356	ArgumentList	featurestr		2	1					
+ANR	357	Argument	featurestr		2	0					
+ANR	358	Identifier	featurestr		2	0					
+ANR	359	Argument	"""family"""		2	1					
+ANR	360	PrimaryExpression	"""family"""		2	0					
+ANR	361	CompoundStatement		40:16:1472:1481	2	1					
+ANR	362	IdentifierDeclStatement	char * err ;	41:16:1552:1561	2	0	True				
+ANR	363	IdentifierDecl	* err		2	0					
+ANR	364	IdentifierDeclType	char *		2	0					
+ANR	365	Identifier	err		2	1					
+ANR	366	ExpressionStatement	"family = strtol ( val , & err , 10 )"	42:16:1579:1609	2	1	True				
+ANR	367	AssignmentExpression	"family = strtol ( val , & err , 10 )"		2	0		=			
+ANR	368	Identifier	family		2	0					
+ANR	369	CallExpression	"strtol ( val , & err , 10 )"		2	1					
+ANR	370	Callee	strtol		2	0					
+ANR	371	Identifier	strtol		2	0					
+ANR	372	ArgumentList	val		2	1					
+ANR	373	Argument	val		2	0					
+ANR	374	Identifier	val		2	0					
+ANR	375	Argument	& err		2	1					
+ANR	376	UnaryOperationExpression	& err		2	0					
+ANR	377	UnaryOperator	&		2	0					
+ANR	378	Identifier	err		2	1					
+ANR	379	Argument	10		2	2					
+ANR	380	PrimaryExpression	10		2	0					
+ANR	381	IfStatement	if ( ! * val || * err || family < 0 )		2	2					
+ANR	382	Condition	! * val || * err || family < 0	43:20:1631:1657	2	0	True				
+ANR	383	OrExpression	! * val || * err || family < 0		2	0		||			
+ANR	384	UnaryOperationExpression	! * val		2	0					
+ANR	385	UnaryOperator	!		2	0					
+ANR	386	UnaryOperationExpression	* val		2	1					
+ANR	387	UnaryOperator	*		2	0					
+ANR	388	Identifier	val		2	1					
+ANR	389	OrExpression	* err || family < 0		2	1		||			
+ANR	390	UnaryOperationExpression	* err		2	0					
+ANR	391	UnaryOperator	*		2	0					
+ANR	392	Identifier	err		2	1					
+ANR	393	RelationalExpression	family < 0		2	1		<			
+ANR	394	Identifier	family		2	0					
+ANR	395	PrimaryExpression	0		2	1					
+ANR	396	CompoundStatement		42:49:1580:1580	2	1					
+ANR	397	ExpressionStatement	"fprintf ( stderr , ""bad numerical value %s\\n"" , val )"	44:20:1682:1730	2	0	True				
+ANR	398	CallExpression	"fprintf ( stderr , ""bad numerical value %s\\n"" , val )"		2	0					
+ANR	399	Callee	fprintf		2	0					
+ANR	400	Identifier	fprintf		2	0					
+ANR	401	ArgumentList	stderr		2	1					
+ANR	402	Argument	stderr		2	0					
+ANR	403	Identifier	stderr		2	0					
+ANR	404	Argument	"""bad numerical value %s\\n"""		2	1					
+ANR	405	PrimaryExpression	"""bad numerical value %s\\n"""		2	0					
+ANR	406	Argument	val		2	2					
+ANR	407	Identifier	val		2	0					
+ANR	408	GotoStatement	goto error ;	45:20:1752:1762	2	1	True				
+ANR	409	Identifier	error		2	0					
+ANR	410	ExpressionStatement	x86_cpu_def -> family = family	47:16:1798:1826	2	3	True				
+ANR	411	AssignmentExpression	x86_cpu_def -> family = family		2	0		=			
+ANR	412	PtrMemberAccess	x86_cpu_def -> family		2	0					
+ANR	413	Identifier	x86_cpu_def		2	0					
+ANR	414	Identifier	family		2	1					
+ANR	415	Identifier	family		2	1					
+ANR	416	ElseStatement	else		2	0					
+ANR	417	IfStatement	"if ( ! strcmp ( featurestr , ""model"" ) )"		2	0					
+ANR	418	Condition	"! strcmp ( featurestr , ""model"" )"	48:23:1851:1878	2	0	True				
+ANR	419	UnaryOperationExpression	"! strcmp ( featurestr , ""model"" )"		2	0					
+ANR	420	UnaryOperator	!		2	0					
+ANR	421	CallExpression	"strcmp ( featurestr , ""model"" )"		2	1					
+ANR	422	Callee	strcmp		2	0					
+ANR	423	Identifier	strcmp		2	0					
+ANR	424	ArgumentList	featurestr		2	1					
+ANR	425	Argument	featurestr		2	0					
+ANR	426	Identifier	featurestr		2	0					
+ANR	427	Argument	"""model"""		2	1					
+ANR	428	PrimaryExpression	"""model"""		2	0					
+ANR	429	CompoundStatement		48:16:1819:1828	2	1					
+ANR	430	IdentifierDeclStatement	char * err ;	49:16:1899:1908	2	0	True				
+ANR	431	IdentifierDecl	* err		2	0					
+ANR	432	IdentifierDeclType	char *		2	0					
+ANR	433	Identifier	err		2	1					
+ANR	434	ExpressionStatement	"model = strtol ( val , & err , 10 )"	50:16:1926:1955	2	1	True				
+ANR	435	AssignmentExpression	"model = strtol ( val , & err , 10 )"		2	0		=			
+ANR	436	Identifier	model		2	0					
+ANR	437	CallExpression	"strtol ( val , & err , 10 )"		2	1					
+ANR	438	Callee	strtol		2	0					
+ANR	439	Identifier	strtol		2	0					
+ANR	440	ArgumentList	val		2	1					
+ANR	441	Argument	val		2	0					
+ANR	442	Identifier	val		2	0					
+ANR	443	Argument	& err		2	1					
+ANR	444	UnaryOperationExpression	& err		2	0					
+ANR	445	UnaryOperator	&		2	0					
+ANR	446	Identifier	err		2	1					
+ANR	447	Argument	10		2	2					
+ANR	448	PrimaryExpression	10		2	0					
+ANR	449	IfStatement	if ( ! * val || * err || model < 0 || model > 0xff )		2	2					
+ANR	450	Condition	! * val || * err || model < 0 || model > 0xff	51:20:1977:2018	2	0	True				
+ANR	451	OrExpression	! * val || * err || model < 0 || model > 0xff		2	0		||			
+ANR	452	UnaryOperationExpression	! * val		2	0					
+ANR	453	UnaryOperator	!		2	0					
+ANR	454	UnaryOperationExpression	* val		2	1					
+ANR	455	UnaryOperator	*		2	0					
+ANR	456	Identifier	val		2	1					
+ANR	457	OrExpression	* err || model < 0 || model > 0xff		2	1		||			
+ANR	458	UnaryOperationExpression	* err		2	0					
+ANR	459	UnaryOperator	*		2	0					
+ANR	460	Identifier	err		2	1					
+ANR	461	OrExpression	model < 0 || model > 0xff		2	1		||			
+ANR	462	RelationalExpression	model < 0		2	0		<			
+ANR	463	Identifier	model		2	0					
+ANR	464	PrimaryExpression	0		2	1					
+ANR	465	RelationalExpression	model > 0xff		2	1		>			
+ANR	466	Identifier	model		2	0					
+ANR	467	PrimaryExpression	0xff		2	1					
+ANR	468	CompoundStatement		50:64:1941:1941	2	1					
+ANR	469	ExpressionStatement	"fprintf ( stderr , ""bad numerical value %s\\n"" , val )"	52:20:2043:2091	2	0	True				
+ANR	470	CallExpression	"fprintf ( stderr , ""bad numerical value %s\\n"" , val )"		2	0					
+ANR	471	Callee	fprintf		2	0					
+ANR	472	Identifier	fprintf		2	0					
+ANR	473	ArgumentList	stderr		2	1					
+ANR	474	Argument	stderr		2	0					
+ANR	475	Identifier	stderr		2	0					
+ANR	476	Argument	"""bad numerical value %s\\n"""		2	1					
+ANR	477	PrimaryExpression	"""bad numerical value %s\\n"""		2	0					
+ANR	478	Argument	val		2	2					
+ANR	479	Identifier	val		2	0					
+ANR	480	GotoStatement	goto error ;	53:20:2113:2123	2	1	True				
+ANR	481	Identifier	error		2	0					
+ANR	482	ExpressionStatement	x86_cpu_def -> model = model	55:16:2159:2185	2	3	True				
+ANR	483	AssignmentExpression	x86_cpu_def -> model = model		2	0		=			
+ANR	484	PtrMemberAccess	x86_cpu_def -> model		2	0					
+ANR	485	Identifier	x86_cpu_def		2	0					
+ANR	486	Identifier	model		2	1					
+ANR	487	Identifier	model		2	1					
+ANR	488	ElseStatement	else		2	0					
+ANR	489	IfStatement	"if ( ! strcmp ( featurestr , ""stepping"" ) )"		2	0					
+ANR	490	Condition	"! strcmp ( featurestr , ""stepping"" )"	56:23:2210:2240	2	0	True				
+ANR	491	UnaryOperationExpression	"! strcmp ( featurestr , ""stepping"" )"		2	0					
+ANR	492	UnaryOperator	!		2	0					
+ANR	493	CallExpression	"strcmp ( featurestr , ""stepping"" )"		2	1					
+ANR	494	Callee	strcmp		2	0					
+ANR	495	Identifier	strcmp		2	0					
+ANR	496	ArgumentList	featurestr		2	1					
+ANR	497	Argument	featurestr		2	0					
+ANR	498	Identifier	featurestr		2	0					
+ANR	499	Argument	"""stepping"""		2	1					
+ANR	500	PrimaryExpression	"""stepping"""		2	0					
+ANR	501	CompoundStatement		56:16:2181:2190	2	1					
+ANR	502	IdentifierDeclStatement	char * err ;	57:16:2261:2270	2	0	True				
+ANR	503	IdentifierDecl	* err		2	0					
+ANR	504	IdentifierDeclType	char *		2	0					
+ANR	505	Identifier	err		2	1					
+ANR	506	ExpressionStatement	"stepping = strtol ( val , & err , 10 )"	58:16:2288:2320	2	1	True				
+ANR	507	AssignmentExpression	"stepping = strtol ( val , & err , 10 )"		2	0		=			
+ANR	508	Identifier	stepping		2	0					
+ANR	509	CallExpression	"strtol ( val , & err , 10 )"		2	1					
+ANR	510	Callee	strtol		2	0					
+ANR	511	Identifier	strtol		2	0					
+ANR	512	ArgumentList	val		2	1					
+ANR	513	Argument	val		2	0					
+ANR	514	Identifier	val		2	0					
+ANR	515	Argument	& err		2	1					
+ANR	516	UnaryOperationExpression	& err		2	0					
+ANR	517	UnaryOperator	&		2	0					
+ANR	518	Identifier	err		2	1					
+ANR	519	Argument	10		2	2					
+ANR	520	PrimaryExpression	10		2	0					
+ANR	521	IfStatement	if ( ! * val || * err || stepping < 0 || stepping > 0xf )		2	2					
+ANR	522	Condition	! * val || * err || stepping < 0 || stepping > 0xf	59:20:2342:2388	2	0	True				
+ANR	523	OrExpression	! * val || * err || stepping < 0 || stepping > 0xf		2	0		||			
+ANR	524	UnaryOperationExpression	! * val		2	0					
+ANR	525	UnaryOperator	!		2	0					
+ANR	526	UnaryOperationExpression	* val		2	1					
+ANR	527	UnaryOperator	*		2	0					
+ANR	528	Identifier	val		2	1					
+ANR	529	OrExpression	* err || stepping < 0 || stepping > 0xf		2	1		||			
+ANR	530	UnaryOperationExpression	* err		2	0					
+ANR	531	UnaryOperator	*		2	0					
+ANR	532	Identifier	err		2	1					
+ANR	533	OrExpression	stepping < 0 || stepping > 0xf		2	1		||			
+ANR	534	RelationalExpression	stepping < 0		2	0		<			
+ANR	535	Identifier	stepping		2	0					
+ANR	536	PrimaryExpression	0		2	1					
+ANR	537	RelationalExpression	stepping > 0xf		2	1		>			
+ANR	538	Identifier	stepping		2	0					
+ANR	539	PrimaryExpression	0xf		2	1					
+ANR	540	CompoundStatement		58:69:2311:2311	2	1					
+ANR	541	ExpressionStatement	"fprintf ( stderr , ""bad numerical value %s\\n"" , val )"	60:20:2413:2461	2	0	True				
+ANR	542	CallExpression	"fprintf ( stderr , ""bad numerical value %s\\n"" , val )"		2	0					
+ANR	543	Callee	fprintf		2	0					
+ANR	544	Identifier	fprintf		2	0					
+ANR	545	ArgumentList	stderr		2	1					
+ANR	546	Argument	stderr		2	0					
+ANR	547	Identifier	stderr		2	0					
+ANR	548	Argument	"""bad numerical value %s\\n"""		2	1					
+ANR	549	PrimaryExpression	"""bad numerical value %s\\n"""		2	0					
+ANR	550	Argument	val		2	2					
+ANR	551	Identifier	val		2	0					
+ANR	552	GotoStatement	goto error ;	61:20:2483:2493	2	1	True				
+ANR	553	Identifier	error		2	0					
+ANR	554	ExpressionStatement	x86_cpu_def -> stepping = stepping	63:16:2529:2561	2	3	True				
+ANR	555	AssignmentExpression	x86_cpu_def -> stepping = stepping		2	0		=			
+ANR	556	PtrMemberAccess	x86_cpu_def -> stepping		2	0					
+ANR	557	Identifier	x86_cpu_def		2	0					
+ANR	558	Identifier	stepping		2	1					
+ANR	559	Identifier	stepping		2	1					
+ANR	560	ElseStatement	else		2	0					
+ANR	561	IfStatement	"if ( ! strcmp ( featurestr , ""vendor"" ) )"		2	0					
+ANR	562	Condition	"! strcmp ( featurestr , ""vendor"" )"	64:23:2586:2614	2	0	True				
+ANR	563	UnaryOperationExpression	"! strcmp ( featurestr , ""vendor"" )"		2	0					
+ANR	564	UnaryOperator	!		2	0					
+ANR	565	CallExpression	"strcmp ( featurestr , ""vendor"" )"		2	1					
+ANR	566	Callee	strcmp		2	0					
+ANR	567	Identifier	strcmp		2	0					
+ANR	568	ArgumentList	featurestr		2	1					
+ANR	569	Argument	featurestr		2	0					
+ANR	570	Identifier	featurestr		2	0					
+ANR	571	Argument	"""vendor"""		2	1					
+ANR	572	PrimaryExpression	"""vendor"""		2	0					
+ANR	573	CompoundStatement		63:54:2537:2537	2	1					
+ANR	574	IfStatement	if ( strlen ( val ) != 12 )		2	0					
+ANR	575	Condition	strlen ( val ) != 12	65:20:2639:2655	2	0	True				
+ANR	576	EqualityExpression	strlen ( val ) != 12		2	0		!=			
+ANR	577	CallExpression	strlen ( val )		2	0					
+ANR	578	Callee	strlen		2	0					
+ANR	579	Identifier	strlen		2	0					
+ANR	580	ArgumentList	val		2	1					
+ANR	581	Argument	val		2	0					
+ANR	582	Identifier	val		2	0					
+ANR	583	PrimaryExpression	12		2	1					
+ANR	584	CompoundStatement		64:39:2578:2578	2	1					
+ANR	585	ExpressionStatement	"fprintf ( stderr , ""vendor string must be 12 chars long\\n"" )"	66:20:2680:2736	2	0	True				
+ANR	586	CallExpression	"fprintf ( stderr , ""vendor string must be 12 chars long\\n"" )"		2	0					
+ANR	587	Callee	fprintf		2	0					
+ANR	588	Identifier	fprintf		2	0					
+ANR	589	ArgumentList	stderr		2	1					
+ANR	590	Argument	stderr		2	0					
+ANR	591	Identifier	stderr		2	0					
+ANR	592	Argument	"""vendor string must be 12 chars long\\n"""		2	1					
+ANR	593	PrimaryExpression	"""vendor string must be 12 chars long\\n"""		2	0					
+ANR	594	GotoStatement	goto error ;	67:20:2758:2768	2	1	True				
+ANR	595	Identifier	error		2	0					
+ANR	596	ExpressionStatement	x86_cpu_def -> vendor1 = 0	69:16:2804:2828	2	1	True				
+ANR	597	AssignmentExpression	x86_cpu_def -> vendor1 = 0		2	0		=			
+ANR	598	PtrMemberAccess	x86_cpu_def -> vendor1		2	0					
+ANR	599	Identifier	x86_cpu_def		2	0					
+ANR	600	Identifier	vendor1		2	1					
+ANR	601	PrimaryExpression	0		2	1					
+ANR	602	ExpressionStatement	x86_cpu_def -> vendor2 = 0	70:16:2846:2870	2	2	True				
+ANR	603	AssignmentExpression	x86_cpu_def -> vendor2 = 0		2	0		=			
+ANR	604	PtrMemberAccess	x86_cpu_def -> vendor2		2	0					
+ANR	605	Identifier	x86_cpu_def		2	0					
+ANR	606	Identifier	vendor2		2	1					
+ANR	607	PrimaryExpression	0		2	1					
+ANR	608	ExpressionStatement	x86_cpu_def -> vendor3 = 0	71:16:2888:2912	2	3	True				
+ANR	609	AssignmentExpression	x86_cpu_def -> vendor3 = 0		2	0		=			
+ANR	610	PtrMemberAccess	x86_cpu_def -> vendor3		2	0					
+ANR	611	Identifier	x86_cpu_def		2	0					
+ANR	612	Identifier	vendor3		2	1					
+ANR	613	PrimaryExpression	0		2	1					
+ANR	614	ForStatement	for ( i = 0 ; i < 4 ; i ++ )		2	4					
+ANR	615	ForInit	i = 0 ;	72:20:2934:2939	2	0	True				
+ANR	616	AssignmentExpression	i = 0		2	0		=			
+ANR	617	Identifier	i		2	0					
+ANR	618	PrimaryExpression	0		2	1					
+ANR	619	Condition	i < 4	72:27:2941:2945	2	1	True				
+ANR	620	RelationalExpression	i < 4		2	0		<			
+ANR	621	Identifier	i		2	0					
+ANR	622	PrimaryExpression	4		2	1					
+ANR	623	PostIncDecOperationExpression	i ++	72:34:2948:2950	2	2	True				
+ANR	624	Identifier	i		2	0					
+ANR	625	IncDec	++		2	1					
+ANR	626	CompoundStatement		71:39:2873:2873	2	3					
+ANR	627	ExpressionStatement	x86_cpu_def -> vendor1 |= ( ( uint8_t ) val [ i ] ) << ( 8 * i )	73:20:2975:3031	2	0	True				
+ANR	628	AssignmentExpression	x86_cpu_def -> vendor1 |= ( ( uint8_t ) val [ i ] ) << ( 8 * i )		2	0		|=			
+ANR	629	PtrMemberAccess	x86_cpu_def -> vendor1		2	0					
+ANR	630	Identifier	x86_cpu_def		2	0					
+ANR	631	Identifier	vendor1		2	1					
+ANR	632	ShiftExpression	( ( uint8_t ) val [ i ] ) << ( 8 * i )		2	1		<<			
+ANR	633	CastExpression	( uint8_t ) val [ i ]		2	0					
+ANR	634	CastTarget	uint8_t		2	0					
+ANR	635	ArrayIndexing	val [ i ]		2	1					
+ANR	636	Identifier	val		2	0					
+ANR	637	Identifier	i		2	1					
+ANR	638	MultiplicativeExpression	8 * i		2	1		*			
+ANR	639	PrimaryExpression	8		2	0					
+ANR	640	Identifier	i		2	1					
+ANR	641	ExpressionStatement	x86_cpu_def -> vendor2 |= ( ( uint8_t ) val [ i + 4 ] ) << ( 8 * i )	74:20:3053:3109	2	1	True				
+ANR	642	AssignmentExpression	x86_cpu_def -> vendor2 |= ( ( uint8_t ) val [ i + 4 ] ) << ( 8 * i )		2	0		|=			
+ANR	643	PtrMemberAccess	x86_cpu_def -> vendor2		2	0					
+ANR	644	Identifier	x86_cpu_def		2	0					
+ANR	645	Identifier	vendor2		2	1					
+ANR	646	ShiftExpression	( ( uint8_t ) val [ i + 4 ] ) << ( 8 * i )		2	1		<<			
+ANR	647	CastExpression	( uint8_t ) val [ i + 4 ]		2	0					
+ANR	648	CastTarget	uint8_t		2	0					
+ANR	649	ArrayIndexing	val [ i + 4 ]		2	1					
+ANR	650	Identifier	val		2	0					
+ANR	651	AdditiveExpression	i + 4		2	1		+			
+ANR	652	Identifier	i		2	0					
+ANR	653	PrimaryExpression	4		2	1					
+ANR	654	MultiplicativeExpression	8 * i		2	1		*			
+ANR	655	PrimaryExpression	8		2	0					
+ANR	656	Identifier	i		2	1					
+ANR	657	ExpressionStatement	x86_cpu_def -> vendor3 |= ( ( uint8_t ) val [ i + 8 ] ) << ( 8 * i )	75:20:3131:3187	2	2	True				
+ANR	658	AssignmentExpression	x86_cpu_def -> vendor3 |= ( ( uint8_t ) val [ i + 8 ] ) << ( 8 * i )		2	0		|=			
+ANR	659	PtrMemberAccess	x86_cpu_def -> vendor3		2	0					
+ANR	660	Identifier	x86_cpu_def		2	0					
+ANR	661	Identifier	vendor3		2	1					
+ANR	662	ShiftExpression	( ( uint8_t ) val [ i + 8 ] ) << ( 8 * i )		2	1		<<			
+ANR	663	CastExpression	( uint8_t ) val [ i + 8 ]		2	0					
+ANR	664	CastTarget	uint8_t		2	0					
+ANR	665	ArrayIndexing	val [ i + 8 ]		2	1					
+ANR	666	Identifier	val		2	0					
+ANR	667	AdditiveExpression	i + 8		2	1		+			
+ANR	668	Identifier	i		2	0					
+ANR	669	PrimaryExpression	8		2	1					
+ANR	670	MultiplicativeExpression	8 * i		2	1		*			
+ANR	671	PrimaryExpression	8		2	0					
+ANR	672	Identifier	i		2	1					
+ANR	673	ExpressionStatement	x86_cpu_def -> vendor_override = 1	77:16:3223:3255	2	5	True				
+ANR	674	AssignmentExpression	x86_cpu_def -> vendor_override = 1		2	0		=			
+ANR	675	PtrMemberAccess	x86_cpu_def -> vendor_override		2	0					
+ANR	676	Identifier	x86_cpu_def		2	0					
+ANR	677	Identifier	vendor_override		2	1					
+ANR	678	PrimaryExpression	1		2	1					
+ANR	679	ElseStatement	else		2	0					
+ANR	680	IfStatement	"if ( ! strcmp ( featurestr , ""model_id"" ) )"		2	0					
+ANR	681	Condition	"! strcmp ( featurestr , ""model_id"" )"	78:23:3280:3310	2	0	True				
+ANR	682	UnaryOperationExpression	"! strcmp ( featurestr , ""model_id"" )"		2	0					
+ANR	683	UnaryOperator	!		2	0					
+ANR	684	CallExpression	"strcmp ( featurestr , ""model_id"" )"		2	1					
+ANR	685	Callee	strcmp		2	0					
+ANR	686	Identifier	strcmp		2	0					
+ANR	687	ArgumentList	featurestr		2	1					
+ANR	688	Argument	featurestr		2	0					
+ANR	689	Identifier	featurestr		2	0					
+ANR	690	Argument	"""model_id"""		2	1					
+ANR	691	PrimaryExpression	"""model_id"""		2	0					
+ANR	692	CompoundStatement		77:56:3233:3233	2	1					
+ANR	693	ExpressionStatement	"pstrcpy ( x86_cpu_def -> model_id , sizeof ( x86_cpu_def -> model_id ) , val )"	79:16:3331:3421	2	0	True				
+ANR	694	CallExpression	"pstrcpy ( x86_cpu_def -> model_id , sizeof ( x86_cpu_def -> model_id ) , val )"		2	0					
+ANR	695	Callee	pstrcpy		2	0					
+ANR	696	Identifier	pstrcpy		2	0					
+ANR	697	ArgumentList	x86_cpu_def -> model_id		2	1					
+ANR	698	Argument	x86_cpu_def -> model_id		2	0					
+ANR	699	PtrMemberAccess	x86_cpu_def -> model_id		2	0					
+ANR	700	Identifier	x86_cpu_def		2	0					
+ANR	701	Identifier	model_id		2	1					
+ANR	702	Argument	sizeof ( x86_cpu_def -> model_id )		2	1					
+ANR	703	SizeofExpression	sizeof ( x86_cpu_def -> model_id )		2	0					
+ANR	704	Sizeof	sizeof		2	0					
+ANR	705	PtrMemberAccess	x86_cpu_def -> model_id		2	1					
+ANR	706	Identifier	x86_cpu_def		2	0					
+ANR	707	Identifier	model_id		2	1					
+ANR	708	Argument	val		2	2					
+ANR	709	Identifier	val		2	0					
+ANR	710	ElseStatement	else		2	0					
+ANR	711	CompoundStatement		80:19:3362:3362	2	0					
+ANR	712	ExpressionStatement	"fprintf ( stderr , ""unrecognized feature %s\\n"" , featurestr )"	82:16:3460:3516	2	0	True				
+ANR	713	CallExpression	"fprintf ( stderr , ""unrecognized feature %s\\n"" , featurestr )"		2	0					
+ANR	714	Callee	fprintf		2	0					
+ANR	715	Identifier	fprintf		2	0					
+ANR	716	ArgumentList	stderr		2	1					
+ANR	717	Argument	stderr		2	0					
+ANR	718	Identifier	stderr		2	0					
+ANR	719	Argument	"""unrecognized feature %s\\n"""		2	1					
+ANR	720	PrimaryExpression	"""unrecognized feature %s\\n"""		2	0					
+ANR	721	Argument	featurestr		2	2					
+ANR	722	Identifier	featurestr		2	0					
+ANR	723	GotoStatement	goto error ;	83:16:3534:3544	2	1	True				
+ANR	724	Identifier	error		2	0					
+ANR	725	ElseStatement	else		2	0					
+ANR	726	CompoundStatement		84:15:3495:3495	2	0					
+ANR	727	ExpressionStatement	"fprintf ( stderr , ""feature string `%s' not in format (+feature|-feature|feature=xyz)\\n"" , featurestr )"	86:12:3589:3687	2	0	True				
+ANR	728	CallExpression	"fprintf ( stderr , ""feature string `%s' not in format (+feature|-feature|feature=xyz)\\n"" , featurestr )"		2	0					
+ANR	729	Callee	fprintf		2	0					
+ANR	730	Identifier	fprintf		2	0					
+ANR	731	ArgumentList	stderr		2	1					
+ANR	732	Argument	stderr		2	0					
+ANR	733	Identifier	stderr		2	0					
+ANR	734	Argument	"""feature string `%s' not in format (+feature|-feature|feature=xyz)\\n"""		2	1					
+ANR	735	PrimaryExpression	"""feature string `%s' not in format (+feature|-feature|feature=xyz)\\n"""		2	0					
+ANR	736	Argument	featurestr		2	2					
+ANR	737	Identifier	featurestr		2	0					
+ANR	738	GotoStatement	goto error ;	87:12:3701:3711	2	1	True				
+ANR	739	Identifier	error		2	0					
+ANR	740	ExpressionStatement	"featurestr = strtok ( NULL , "","" )"	89:8:3731:3761	2	2	True				
+ANR	741	AssignmentExpression	"featurestr = strtok ( NULL , "","" )"		2	0		=			
+ANR	742	Identifier	featurestr		2	0					
+ANR	743	CallExpression	"strtok ( NULL , "","" )"		2	1					
+ANR	744	Callee	strtok		2	0					
+ANR	745	Identifier	strtok		2	0					
+ANR	746	ArgumentList	NULL		2	1					
+ANR	747	Argument	NULL		2	0					
+ANR	748	Identifier	NULL		2	0					
+ANR	749	Argument	""","""		2	1					
+ANR	750	PrimaryExpression	""","""		2	0					
+ANR	751	ExpressionStatement	x86_cpu_def -> features |= plus_features	91:4:3773:3811	2	13	True				
+ANR	752	AssignmentExpression	x86_cpu_def -> features |= plus_features		2	0		|=			
+ANR	753	PtrMemberAccess	x86_cpu_def -> features		2	0					
+ANR	754	Identifier	x86_cpu_def		2	0					
+ANR	755	Identifier	features		2	1					
+ANR	756	Identifier	plus_features		2	1					
+ANR	757	ExpressionStatement	x86_cpu_def -> ext_features |= plus_ext_features	92:4:3817:3863	2	14	True				
+ANR	758	AssignmentExpression	x86_cpu_def -> ext_features |= plus_ext_features		2	0		|=			
+ANR	759	PtrMemberAccess	x86_cpu_def -> ext_features		2	0					
+ANR	760	Identifier	x86_cpu_def		2	0					
+ANR	761	Identifier	ext_features		2	1					
+ANR	762	Identifier	plus_ext_features		2	1					
+ANR	763	ExpressionStatement	x86_cpu_def -> ext2_features |= plus_ext2_features	93:4:3869:3917	2	15	True				
+ANR	764	AssignmentExpression	x86_cpu_def -> ext2_features |= plus_ext2_features		2	0		|=			
+ANR	765	PtrMemberAccess	x86_cpu_def -> ext2_features		2	0					
+ANR	766	Identifier	x86_cpu_def		2	0					
+ANR	767	Identifier	ext2_features		2	1					
+ANR	768	Identifier	plus_ext2_features		2	1					
+ANR	769	ExpressionStatement	x86_cpu_def -> ext3_features |= plus_ext3_features	94:4:3923:3971	2	16	True				
+ANR	770	AssignmentExpression	x86_cpu_def -> ext3_features |= plus_ext3_features		2	0		|=			
+ANR	771	PtrMemberAccess	x86_cpu_def -> ext3_features		2	0					
+ANR	772	Identifier	x86_cpu_def		2	0					
+ANR	773	Identifier	ext3_features		2	1					
+ANR	774	Identifier	plus_ext3_features		2	1					
+ANR	775	ExpressionStatement	x86_cpu_def -> features &= ~minus_features	95:4:3977:4017	2	17	True				
+ANR	776	AssignmentExpression	x86_cpu_def -> features &= ~minus_features		2	0		&=			
+ANR	777	PtrMemberAccess	x86_cpu_def -> features		2	0					
+ANR	778	Identifier	x86_cpu_def		2	0					
+ANR	779	Identifier	features		2	1					
+ANR	780	Identifier	~minus_features		2	1					
+ANR	781	ExpressionStatement	x86_cpu_def -> ext_features &= ~minus_ext_features	96:4:4023:4071	2	18	True				
+ANR	782	AssignmentExpression	x86_cpu_def -> ext_features &= ~minus_ext_features		2	0		&=			
+ANR	783	PtrMemberAccess	x86_cpu_def -> ext_features		2	0					
+ANR	784	Identifier	x86_cpu_def		2	0					
+ANR	785	Identifier	ext_features		2	1					
+ANR	786	Identifier	~minus_ext_features		2	1					
+ANR	787	ExpressionStatement	x86_cpu_def -> ext2_features &= ~minus_ext2_features	97:4:4077:4127	2	19	True				
+ANR	788	AssignmentExpression	x86_cpu_def -> ext2_features &= ~minus_ext2_features		2	0		&=			
+ANR	789	PtrMemberAccess	x86_cpu_def -> ext2_features		2	0					
+ANR	790	Identifier	x86_cpu_def		2	0					
+ANR	791	Identifier	ext2_features		2	1					
+ANR	792	Identifier	~minus_ext2_features		2	1					
+ANR	793	ExpressionStatement	x86_cpu_def -> ext3_features &= ~minus_ext3_features	98:4:4133:4183	2	20	True				
+ANR	794	AssignmentExpression	x86_cpu_def -> ext3_features &= ~minus_ext3_features		2	0		&=			
+ANR	795	PtrMemberAccess	x86_cpu_def -> ext3_features		2	0					
+ANR	796	Identifier	x86_cpu_def		2	0					
+ANR	797	Identifier	ext3_features		2	1					
+ANR	798	Identifier	~minus_ext3_features		2	1					
+ANR	799	ExpressionStatement	free ( s )	99:4:4189:4196	2	21	True				
+ANR	800	CallExpression	free ( s )		2	0					
+ANR	801	Callee	free		2	0					
+ANR	802	Identifier	free		2	0					
+ANR	803	ArgumentList	s		2	1					
+ANR	804	Argument	s		2	0					
+ANR	805	Identifier	s		2	0					
+ANR	806	ReturnStatement	return 0 ;	100:4:4202:4210	2	22	True				
+ANR	807	PrimaryExpression	0		2	0					
+ANR	808	Label	error :	102:0:4213:4218	2	23	True				
+ANR	809	Identifier	error		2	0					
+ANR	810	ExpressionStatement	free ( s )	103:4:4224:4231	2	24	True				
+ANR	811	CallExpression	free ( s )		2	0					
+ANR	812	Callee	free		2	0					
+ANR	813	Identifier	free		2	0					
+ANR	814	ArgumentList	s		2	1					
+ANR	815	Argument	s		2	0					
+ANR	816	Identifier	s		2	0					
+ANR	817	ReturnStatement	return - 1 ;	104:4:4237:4246	2	25	True				
+ANR	818	UnaryOperationExpression	- 1		2	0					
+ANR	819	UnaryOperator	-		2	0					
+ANR	820	PrimaryExpression	1		2	1					
+ANR	821	ReturnType	static int		2	1					
+ANR	822	Identifier	cpu_x86_find_by_name		2	2					
+ANR	823	ParameterList	"x86_def_t * x86_cpu_def , const char * cpu_model"		2	3					
+ANR	824	Parameter	x86_def_t * x86_cpu_def	1:32:32:53	2	0	True				
+ANR	825	ParameterType	x86_def_t *		2	0					
+ANR	826	Identifier	x86_cpu_def		2	1					
+ANR	827	Parameter	const char * cpu_model	1:56:56:76	2	1	True				
+ANR	828	ParameterType	const char *		2	0					
+ANR	829	Identifier	cpu_model		2	1					
+ANR	830	CFGEntryNode	ENTRY		2		True				
+ANR	831	CFGExitNode	EXIT		2		True				
+ANR	832	Symbol	& minus_ext3_features		2						
+ANR	833	Symbol	def		2						
+ANR	834	Symbol	~minus_ext3_features		2						
+ANR	835	Symbol	x86_cpu_def -> vendor3		2						
+ANR	836	Symbol	strchr		2						
+ANR	837	Symbol	x86_cpu_def -> vendor2		2						
+ANR	838	Symbol	x86_cpu_def -> vendor1		2						
+ANR	839	Symbol	stepping		2						
+ANR	840	Symbol	x86_cpu_def -> ext2_features		2						
+ANR	841	Symbol	strlen		2						
+ANR	842	Symbol	x86_defs [ i ] . name		2						
+ANR	843	Symbol	* x86_cpu_def		2						
+ANR	844	Symbol	plus_ext3_features		2						
+ANR	845	Symbol	x86_cpu_def -> model_id		2						
+ANR	846	Symbol	minus_ext2_features		2						
+ANR	847	Symbol	plus_features		2						
+ANR	848	Symbol	model		2						
+ANR	849	Symbol	ARRAY_SIZE		2						
+ANR	850	Symbol	strcmp		2						
+ANR	851	Symbol	val		2						
+ANR	852	Symbol	plus_ext2_features		2						
+ANR	853	Symbol	NULL		2						
+ANR	854	Symbol	plus_ext_features		2						
+ANR	855	Symbol	minus_ext_features		2						
+ANR	856	Symbol	minus_ext3_features		2						
+ANR	857	Symbol	strtok		2						
+ANR	858	Symbol	& plus_ext_features		2						
+ANR	859	Symbol	stderr		2						
+ANR	860	Symbol	x86_cpu_def		2						
+ANR	861	Symbol	~minus_ext2_features		2						
+ANR	862	Symbol	& minus_ext_features		2						
+ANR	863	Symbol	* err		2						
+ANR	864	Symbol	name		2						
+ANR	865	Symbol	& plus_ext2_features		2						
+ANR	866	Symbol	minus_features		2						
+ANR	867	Symbol	x86_cpu_def -> vendor_override		2						
+ANR	868	Symbol	x86_cpu_def -> family		2						
+ANR	869	Symbol	~minus_features		2						
+ANR	870	Symbol	* val		2						
+ANR	871	Symbol	& err		2						
+ANR	872	Symbol	& minus_features		2						
+ANR	873	Symbol	x86_defs		2						
+ANR	874	Symbol	* def		2						
+ANR	875	Symbol	x86_cpu_def -> ext3_features		2						
+ANR	876	Symbol	strtol		2						
+ANR	877	Symbol	cpu_model		2						
+ANR	878	Symbol	kvm_enabled		2						
+ANR	879	Symbol	& minus_ext2_features		2						
+ANR	880	Symbol	& plus_ext3_features		2						
+ANR	881	Symbol	err		2						
+ANR	882	Symbol	x86_cpu_def -> ext_features		2						
+ANR	883	Symbol	i		2						
+ANR	884	Symbol	& plus_features		2						
+ANR	885	Symbol	* featurestr		2						
+ANR	886	Symbol	s		2						
+ANR	887	Symbol	* i		2						
+ANR	888	Symbol	x86_cpu_def -> features		2						
+ANR	889	Symbol	~minus_ext_features		2						
+ANR	890	Symbol	strdup		2						
+ANR	891	Symbol	x86_cpu_def -> stepping		2						
+ANR	892	Symbol	family		2						
+ANR	893	Symbol	* x86_defs		2						
+ANR	894	Symbol	x86_cpu_def -> model		2						
+ANR	895	Symbol	featurestr		2						

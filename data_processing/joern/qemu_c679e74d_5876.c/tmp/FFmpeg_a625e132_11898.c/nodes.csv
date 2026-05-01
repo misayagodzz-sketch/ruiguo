@@ -1,0 +1,218 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/FFmpeg_a625e132_11898.c								
+ANR	2	Function	filter_mb_edgev	1:0:0:809							
+ANR	3	FunctionDef	"filter_mb_edgev (uint8_t * pix , int stride , int16_t bS [ 4 ] , unsigned int qp , H264Context * h)"		2	0					
+ANR	4	CompoundStatement		1:120:120:809	2	0					
+ANR	5	IdentifierDeclStatement	const int qp_bd_offset = 6 * ( h -> sps . bit_depth_luma - 8 ) ;	2:4:126:182	2	0	True				
+ANR	6	IdentifierDecl	qp_bd_offset = 6 * ( h -> sps . bit_depth_luma - 8 )		2	0					
+ANR	7	IdentifierDeclType	const int		2	0					
+ANR	8	Identifier	qp_bd_offset		2	1					
+ANR	9	AssignmentExpression	qp_bd_offset = 6 * ( h -> sps . bit_depth_luma - 8 )		2	2		=			
+ANR	10	Identifier	qp_bd_offset		2	0					
+ANR	11	MultiplicativeExpression	6 * ( h -> sps . bit_depth_luma - 8 )		2	1		*			
+ANR	12	PrimaryExpression	6		2	0					
+ANR	13	AdditiveExpression	h -> sps . bit_depth_luma - 8		2	1		-			
+ANR	14	MemberAccess	h -> sps . bit_depth_luma		2	0					
+ANR	15	PtrMemberAccess	h -> sps		2	0					
+ANR	16	Identifier	h		2	0					
+ANR	17	Identifier	sps		2	1					
+ANR	18	Identifier	bit_depth_luma		2	1					
+ANR	19	PrimaryExpression	8		2	1					
+ANR	20	IdentifierDeclStatement	const unsigned int index_a = qp - qp_bd_offset + h -> slice_alpha_c0_offset ;	3:4:188:261	2	1	True				
+ANR	21	IdentifierDecl	index_a = qp - qp_bd_offset + h -> slice_alpha_c0_offset		2	0					
+ANR	22	IdentifierDeclType	const unsigned int		2	0					
+ANR	23	Identifier	index_a		2	1					
+ANR	24	AssignmentExpression	index_a = qp - qp_bd_offset + h -> slice_alpha_c0_offset		2	2		=			
+ANR	25	Identifier	index_a		2	0					
+ANR	26	AdditiveExpression	qp - qp_bd_offset + h -> slice_alpha_c0_offset		2	1		-			
+ANR	27	Identifier	qp		2	0					
+ANR	28	AdditiveExpression	qp_bd_offset + h -> slice_alpha_c0_offset		2	1		+			
+ANR	29	Identifier	qp_bd_offset		2	0					
+ANR	30	PtrMemberAccess	h -> slice_alpha_c0_offset		2	1					
+ANR	31	Identifier	h		2	0					
+ANR	32	Identifier	slice_alpha_c0_offset		2	1					
+ANR	33	IdentifierDeclStatement	const int alpha = alpha_table [ index_a ] ;	4:4:267:305	2	2	True				
+ANR	34	IdentifierDecl	alpha = alpha_table [ index_a ]		2	0					
+ANR	35	IdentifierDeclType	const int		2	0					
+ANR	36	Identifier	alpha		2	1					
+ANR	37	AssignmentExpression	alpha = alpha_table [ index_a ]		2	2		=			
+ANR	38	Identifier	alpha		2	0					
+ANR	39	ArrayIndexing	alpha_table [ index_a ]		2	1					
+ANR	40	Identifier	alpha_table		2	0					
+ANR	41	Identifier	index_a		2	1					
+ANR	42	IdentifierDeclStatement	const int beta = beta_table [ qp - qp_bd_offset + h -> slice_beta_offset ] ;	5:4:311:381	2	3	True				
+ANR	43	IdentifierDecl	beta = beta_table [ qp - qp_bd_offset + h -> slice_beta_offset ]		2	0					
+ANR	44	IdentifierDeclType	const int		2	0					
+ANR	45	Identifier	beta		2	1					
+ANR	46	AssignmentExpression	beta = beta_table [ qp - qp_bd_offset + h -> slice_beta_offset ]		2	2		=			
+ANR	47	Identifier	beta		2	0					
+ANR	48	ArrayIndexing	beta_table [ qp - qp_bd_offset + h -> slice_beta_offset ]		2	1					
+ANR	49	Identifier	beta_table		2	0					
+ANR	50	AdditiveExpression	qp - qp_bd_offset + h -> slice_beta_offset		2	1		-			
+ANR	51	Identifier	qp		2	0					
+ANR	52	AdditiveExpression	qp_bd_offset + h -> slice_beta_offset		2	1		+			
+ANR	53	Identifier	qp_bd_offset		2	0					
+ANR	54	PtrMemberAccess	h -> slice_beta_offset		2	1					
+ANR	55	Identifier	h		2	0					
+ANR	56	Identifier	slice_beta_offset		2	1					
+ANR	57	IfStatement	if ( alpha == 0 || beta == 0 )		2	4					
+ANR	58	Condition	alpha == 0 || beta == 0	6:8:391:412	2	0	True				
+ANR	59	OrExpression	alpha == 0 || beta == 0		2	0		||			
+ANR	60	EqualityExpression	alpha == 0		2	0		==			
+ANR	61	Identifier	alpha		2	0					
+ANR	62	PrimaryExpression	0		2	1					
+ANR	63	EqualityExpression	beta == 0		2	1		==			
+ANR	64	Identifier	beta		2	0					
+ANR	65	PrimaryExpression	0		2	1					
+ANR	66	ReturnStatement	return ;	6:32:415:421	2	1	True				
+ANR	67	IfStatement	if ( bS [ 0 ] < 4 )		2	5					
+ANR	68	Condition	bS [ 0 ] < 4	8:8:432:440	2	0	True				
+ANR	69	RelationalExpression	bS [ 0 ] < 4		2	0		<			
+ANR	70	ArrayIndexing	bS [ 0 ]		2	0					
+ANR	71	Identifier	bS		2	0					
+ANR	72	PrimaryExpression	0		2	1					
+ANR	73	PrimaryExpression	4		2	1					
+ANR	74	CompoundStatement		9:8:333:345	2	1					
+ANR	75	IdentifierDeclStatement	int8_t tc [ 4 ] ;	9:8:454:466	2	0	True				
+ANR	76	IdentifierDecl	tc [ 4 ]		2	0					
+ANR	77	IdentifierDeclType	int8_t [ 4 ]		2	0					
+ANR	78	Identifier	tc		2	1					
+ANR	79	PrimaryExpression	4		2	2					
+ANR	80	ExpressionStatement	tc [ 0 ] = tc0_table [ index_a ] [ bS [ 0 ] ]	10:8:476:509	2	1	True				
+ANR	81	AssignmentExpression	tc [ 0 ] = tc0_table [ index_a ] [ bS [ 0 ] ]		2	0		=			
+ANR	82	ArrayIndexing	tc [ 0 ]		2	0					
+ANR	83	Identifier	tc		2	0					
+ANR	84	PrimaryExpression	0		2	1					
+ANR	85	ArrayIndexing	tc0_table [ index_a ] [ bS [ 0 ] ]		2	1					
+ANR	86	ArrayIndexing	tc0_table [ index_a ]		2	0					
+ANR	87	Identifier	tc0_table		2	0					
+ANR	88	Identifier	index_a		2	1					
+ANR	89	ArrayIndexing	bS [ 0 ]		2	1					
+ANR	90	Identifier	bS		2	0					
+ANR	91	PrimaryExpression	0		2	1					
+ANR	92	ExpressionStatement	tc [ 1 ] = tc0_table [ index_a ] [ bS [ 1 ] ]	11:8:519:552	2	2	True				
+ANR	93	AssignmentExpression	tc [ 1 ] = tc0_table [ index_a ] [ bS [ 1 ] ]		2	0		=			
+ANR	94	ArrayIndexing	tc [ 1 ]		2	0					
+ANR	95	Identifier	tc		2	0					
+ANR	96	PrimaryExpression	1		2	1					
+ANR	97	ArrayIndexing	tc0_table [ index_a ] [ bS [ 1 ] ]		2	1					
+ANR	98	ArrayIndexing	tc0_table [ index_a ]		2	0					
+ANR	99	Identifier	tc0_table		2	0					
+ANR	100	Identifier	index_a		2	1					
+ANR	101	ArrayIndexing	bS [ 1 ]		2	1					
+ANR	102	Identifier	bS		2	0					
+ANR	103	PrimaryExpression	1		2	1					
+ANR	104	ExpressionStatement	tc [ 2 ] = tc0_table [ index_a ] [ bS [ 2 ] ]	12:8:562:595	2	3	True				
+ANR	105	AssignmentExpression	tc [ 2 ] = tc0_table [ index_a ] [ bS [ 2 ] ]		2	0		=			
+ANR	106	ArrayIndexing	tc [ 2 ]		2	0					
+ANR	107	Identifier	tc		2	0					
+ANR	108	PrimaryExpression	2		2	1					
+ANR	109	ArrayIndexing	tc0_table [ index_a ] [ bS [ 2 ] ]		2	1					
+ANR	110	ArrayIndexing	tc0_table [ index_a ]		2	0					
+ANR	111	Identifier	tc0_table		2	0					
+ANR	112	Identifier	index_a		2	1					
+ANR	113	ArrayIndexing	bS [ 2 ]		2	1					
+ANR	114	Identifier	bS		2	0					
+ANR	115	PrimaryExpression	2		2	1					
+ANR	116	ExpressionStatement	tc [ 3 ] = tc0_table [ index_a ] [ bS [ 3 ] ]	13:8:605:638	2	4	True				
+ANR	117	AssignmentExpression	tc [ 3 ] = tc0_table [ index_a ] [ bS [ 3 ] ]		2	0		=			
+ANR	118	ArrayIndexing	tc [ 3 ]		2	0					
+ANR	119	Identifier	tc		2	0					
+ANR	120	PrimaryExpression	3		2	1					
+ANR	121	ArrayIndexing	tc0_table [ index_a ] [ bS [ 3 ] ]		2	1					
+ANR	122	ArrayIndexing	tc0_table [ index_a ]		2	0					
+ANR	123	Identifier	tc0_table		2	0					
+ANR	124	Identifier	index_a		2	1					
+ANR	125	ArrayIndexing	bS [ 3 ]		2	1					
+ANR	126	Identifier	bS		2	0					
+ANR	127	PrimaryExpression	3		2	1					
+ANR	128	ExpressionStatement	"h -> h264dsp . h264_h_loop_filter_luma ( pix , stride , alpha , beta , tc )"	14:8:648:712	2	5	True				
+ANR	129	CallExpression	"h -> h264dsp . h264_h_loop_filter_luma ( pix , stride , alpha , beta , tc )"		2	0					
+ANR	130	Callee	h -> h264dsp . h264_h_loop_filter_luma		2	0					
+ANR	131	MemberAccess	h -> h264dsp . h264_h_loop_filter_luma		2	0					
+ANR	132	PtrMemberAccess	h -> h264dsp		2	0					
+ANR	133	Identifier	h		2	0					
+ANR	134	Identifier	h264dsp		2	1					
+ANR	135	Identifier	h264_h_loop_filter_luma		2	1					
+ANR	136	ArgumentList	pix		2	1					
+ANR	137	Argument	pix		2	0					
+ANR	138	Identifier	pix		2	0					
+ANR	139	Argument	stride		2	1					
+ANR	140	Identifier	stride		2	0					
+ANR	141	Argument	alpha		2	2					
+ANR	142	Identifier	alpha		2	0					
+ANR	143	Argument	beta		2	3					
+ANR	144	Identifier	beta		2	0					
+ANR	145	Argument	tc		2	4					
+ANR	146	Identifier	tc		2	0					
+ANR	147	ElseStatement	else		2	0					
+ANR	148	CompoundStatement		15:11:604:604	2	0					
+ANR	149	ExpressionStatement	"h -> h264dsp . h264_h_loop_filter_luma_intra ( pix , stride , alpha , beta )"	16:8:735:801	2	0	True				
+ANR	150	CallExpression	"h -> h264dsp . h264_h_loop_filter_luma_intra ( pix , stride , alpha , beta )"		2	0					
+ANR	151	Callee	h -> h264dsp . h264_h_loop_filter_luma_intra		2	0					
+ANR	152	MemberAccess	h -> h264dsp . h264_h_loop_filter_luma_intra		2	0					
+ANR	153	PtrMemberAccess	h -> h264dsp		2	0					
+ANR	154	Identifier	h		2	0					
+ANR	155	Identifier	h264dsp		2	1					
+ANR	156	Identifier	h264_h_loop_filter_luma_intra		2	1					
+ANR	157	ArgumentList	pix		2	1					
+ANR	158	Argument	pix		2	0					
+ANR	159	Identifier	pix		2	0					
+ANR	160	Argument	stride		2	1					
+ANR	161	Identifier	stride		2	0					
+ANR	162	Argument	alpha		2	2					
+ANR	163	Identifier	alpha		2	0					
+ANR	164	Argument	beta		2	3					
+ANR	165	Identifier	beta		2	0					
+ANR	166	ReturnType	static void av_always_inline		2	1					
+ANR	167	Identifier	filter_mb_edgev		2	2					
+ANR	168	ParameterList	"uint8_t * pix , int stride , int16_t bS [ 4 ] , unsigned int qp , H264Context * h"		2	3					
+ANR	169	Parameter	uint8_t * pix	1:46:46:57	2	0	True				
+ANR	170	ParameterType	uint8_t *		2	0					
+ANR	171	Identifier	pix		2	1					
+ANR	172	Parameter	int stride	1:60:60:69	2	1	True				
+ANR	173	ParameterType	int		2	0					
+ANR	174	Identifier	stride		2	1					
+ANR	175	Parameter	int16_t bS [ 4 ]	1:72:72:84	2	2	True				
+ANR	176	ParameterType	int16_t [ 4 ]		2	0					
+ANR	177	Identifier	bS		2	1					
+ANR	178	Parameter	unsigned int qp	1:87:87:101	2	3	True				
+ANR	179	ParameterType	unsigned int		2	0					
+ANR	180	Identifier	qp		2	1					
+ANR	181	Parameter	H264Context * h	1:104:104:117	2	4	True				
+ANR	182	ParameterType	H264Context *		2	0					
+ANR	183	Identifier	h		2	1					
+ANR	184	CFGEntryNode	ENTRY		2		True				
+ANR	185	CFGExitNode	EXIT		2		True				
+ANR	186	Symbol	* h -> slice_beta_offset		2						
+ANR	187	Symbol	* qp		2						
+ANR	188	Symbol	* index_a		2						
+ANR	189	Symbol	* qp_bd_offset		2						
+ANR	190	Symbol	stride		2						
+ANR	191	Symbol	h -> h264dsp		2						
+ANR	192	Symbol	* * tc0_table		2						
+ANR	193	Symbol	h -> slice_alpha_c0_offset		2						
+ANR	194	Symbol	alpha		2						
+ANR	195	Symbol	qp_bd_offset		2						
+ANR	196	Symbol	alpha_table		2						
+ANR	197	Symbol	* tc0_table		2						
+ANR	198	Symbol	* alpha_table		2						
+ANR	199	Symbol	pix		2						
+ANR	200	Symbol	beta		2						
+ANR	201	Symbol	tc0_table		2						
+ANR	202	Symbol	qp		2						
+ANR	203	Symbol	* * bS		2						
+ANR	204	Symbol	h -> sps . bit_depth_luma		2						
+ANR	205	Symbol	index_a		2						
+ANR	206	Symbol	* * h		2						
+ANR	207	Symbol	h		2						
+ANR	208	Symbol	tc		2						
+ANR	209	Symbol	* * index_a		2						
+ANR	210	Symbol	bS		2						
+ANR	211	Symbol	beta_table		2						
+ANR	212	Symbol	* h		2						
+ANR	213	Symbol	* bS		2						
+ANR	214	Symbol	* tc		2						
+ANR	215	Symbol	h -> sps		2						
+ANR	216	Symbol	* beta_table		2						
+ANR	217	Symbol	h -> slice_beta_offset		2						

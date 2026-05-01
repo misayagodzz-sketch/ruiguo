@@ -1,0 +1,293 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/FFmpeg_55a72738_7652.c								
+ANR	2	Function	metadata_parse	1:0:0:1298							
+ANR	3	FunctionDef	metadata_parse (FLACContext * s)		2	0					
+ANR	4	CompoundStatement		2:0:42:1298	2	0					
+ANR	5	IdentifierDeclStatement	"int i , metadata_last , metadata_type , metadata_size ;"	3:4:48:98	2	0	True				
+ANR	6	IdentifierDecl	i		2	0					
+ANR	7	IdentifierDeclType	int		2	0					
+ANR	8	Identifier	i		2	1					
+ANR	9	IdentifierDecl	metadata_last		2	1					
+ANR	10	IdentifierDeclType	int		2	0					
+ANR	11	Identifier	metadata_last		2	1					
+ANR	12	IdentifierDecl	metadata_type		2	2					
+ANR	13	IdentifierDeclType	int		2	0					
+ANR	14	Identifier	metadata_type		2	1					
+ANR	15	IdentifierDecl	metadata_size		2	3					
+ANR	16	IdentifierDeclType	int		2	0					
+ANR	17	Identifier	metadata_size		2	1					
+ANR	18	IdentifierDeclStatement	int initial_pos = get_bits_count ( & s -> gb ) ;	4:4:104:143	2	1	True				
+ANR	19	IdentifierDecl	initial_pos = get_bits_count ( & s -> gb )		2	0					
+ANR	20	IdentifierDeclType	int		2	0					
+ANR	21	Identifier	initial_pos		2	1					
+ANR	22	AssignmentExpression	initial_pos = get_bits_count ( & s -> gb )		2	2		=			
+ANR	23	Identifier	initial_pos		2	0					
+ANR	24	CallExpression	get_bits_count ( & s -> gb )		2	1					
+ANR	25	Callee	get_bits_count		2	0					
+ANR	26	Identifier	get_bits_count		2	0					
+ANR	27	ArgumentList	& s -> gb		2	1					
+ANR	28	Argument	& s -> gb		2	0					
+ANR	29	UnaryOperationExpression	& s -> gb		2	0					
+ANR	30	UnaryOperator	&		2	0					
+ANR	31	PtrMemberAccess	s -> gb		2	1					
+ANR	32	Identifier	s		2	0					
+ANR	33	Identifier	gb		2	1					
+ANR	34	IfStatement	"if ( show_bits_long ( & s -> gb , 32 ) == MKBETAG ( 'f' , 'L' , 'a' , 'C' ) )"		2	2					
+ANR	35	Condition	"show_bits_long ( & s -> gb , 32 ) == MKBETAG ( 'f' , 'L' , 'a' , 'C' )"	6:8:154:207	2	0	True				
+ANR	36	EqualityExpression	"show_bits_long ( & s -> gb , 32 ) == MKBETAG ( 'f' , 'L' , 'a' , 'C' )"		2	0		==			
+ANR	37	CallExpression	"show_bits_long ( & s -> gb , 32 )"		2	0					
+ANR	38	Callee	show_bits_long		2	0					
+ANR	39	Identifier	show_bits_long		2	0					
+ANR	40	ArgumentList	& s -> gb		2	1					
+ANR	41	Argument	& s -> gb		2	0					
+ANR	42	UnaryOperationExpression	& s -> gb		2	0					
+ANR	43	UnaryOperator	&		2	0					
+ANR	44	PtrMemberAccess	s -> gb		2	1					
+ANR	45	Identifier	s		2	0					
+ANR	46	Identifier	gb		2	1					
+ANR	47	Argument	32		2	1					
+ANR	48	PrimaryExpression	32		2	0					
+ANR	49	CallExpression	"MKBETAG ( 'f' , 'L' , 'a' , 'C' )"		2	1					
+ANR	50	Callee	MKBETAG		2	0					
+ANR	51	Identifier	MKBETAG		2	0					
+ANR	52	ArgumentList	'f'		2	1					
+ANR	53	Argument	'f'		2	0					
+ANR	54	PrimaryExpression	'f'		2	0					
+ANR	55	Argument	'L'		2	1					
+ANR	56	PrimaryExpression	'L'		2	0					
+ANR	57	Argument	'a'		2	2					
+ANR	58	PrimaryExpression	'a'		2	0					
+ANR	59	Argument	'C'		2	3					
+ANR	60	PrimaryExpression	'C'		2	0					
+ANR	61	CompoundStatement		5:64:167:167	2	1					
+ANR	62	ExpressionStatement	"skip_bits_long ( & s -> gb , 32 )"	7:8:220:246	2	0	True				
+ANR	63	CallExpression	"skip_bits_long ( & s -> gb , 32 )"		2	0					
+ANR	64	Callee	skip_bits_long		2	0					
+ANR	65	Identifier	skip_bits_long		2	0					
+ANR	66	ArgumentList	& s -> gb		2	1					
+ANR	67	Argument	& s -> gb		2	0					
+ANR	68	UnaryOperationExpression	& s -> gb		2	0					
+ANR	69	UnaryOperator	&		2	0					
+ANR	70	PtrMemberAccess	s -> gb		2	1					
+ANR	71	Identifier	s		2	0					
+ANR	72	Identifier	gb		2	1					
+ANR	73	Argument	32		2	1					
+ANR	74	PrimaryExpression	32		2	0					
+ANR	75	DoStatement	do		2	1					
+ANR	76	CompoundStatement		8:11:217:217	2	0					
+ANR	77	ExpressionStatement	metadata_last = get_bits1 ( & s -> gb )	10:12:274:307	2	0	True				
+ANR	78	AssignmentExpression	metadata_last = get_bits1 ( & s -> gb )		2	0		=			
+ANR	79	Identifier	metadata_last		2	0					
+ANR	80	CallExpression	get_bits1 ( & s -> gb )		2	1					
+ANR	81	Callee	get_bits1		2	0					
+ANR	82	Identifier	get_bits1		2	0					
+ANR	83	ArgumentList	& s -> gb		2	1					
+ANR	84	Argument	& s -> gb		2	0					
+ANR	85	UnaryOperationExpression	& s -> gb		2	0					
+ANR	86	UnaryOperator	&		2	0					
+ANR	87	PtrMemberAccess	s -> gb		2	1					
+ANR	88	Identifier	s		2	0					
+ANR	89	Identifier	gb		2	1					
+ANR	90	ExpressionStatement	"metadata_type = get_bits ( & s -> gb , 7 )"	11:12:321:356	2	1	True				
+ANR	91	AssignmentExpression	"metadata_type = get_bits ( & s -> gb , 7 )"		2	0		=			
+ANR	92	Identifier	metadata_type		2	0					
+ANR	93	CallExpression	"get_bits ( & s -> gb , 7 )"		2	1					
+ANR	94	Callee	get_bits		2	0					
+ANR	95	Identifier	get_bits		2	0					
+ANR	96	ArgumentList	& s -> gb		2	1					
+ANR	97	Argument	& s -> gb		2	0					
+ANR	98	UnaryOperationExpression	& s -> gb		2	0					
+ANR	99	UnaryOperator	&		2	0					
+ANR	100	PtrMemberAccess	s -> gb		2	1					
+ANR	101	Identifier	s		2	0					
+ANR	102	Identifier	gb		2	1					
+ANR	103	Argument	7		2	1					
+ANR	104	PrimaryExpression	7		2	0					
+ANR	105	ExpressionStatement	"metadata_size = get_bits_long ( & s -> gb , 24 )"	12:12:370:411	2	2	True				
+ANR	106	AssignmentExpression	"metadata_size = get_bits_long ( & s -> gb , 24 )"		2	0		=			
+ANR	107	Identifier	metadata_size		2	0					
+ANR	108	CallExpression	"get_bits_long ( & s -> gb , 24 )"		2	1					
+ANR	109	Callee	get_bits_long		2	0					
+ANR	110	Identifier	get_bits_long		2	0					
+ANR	111	ArgumentList	& s -> gb		2	1					
+ANR	112	Argument	& s -> gb		2	0					
+ANR	113	UnaryOperationExpression	& s -> gb		2	0					
+ANR	114	UnaryOperator	&		2	0					
+ANR	115	PtrMemberAccess	s -> gb		2	1					
+ANR	116	Identifier	s		2	0					
+ANR	117	Identifier	gb		2	1					
+ANR	118	Argument	24		2	1					
+ANR	119	PrimaryExpression	24		2	0					
+ANR	120	IfStatement	if ( get_bits_count ( & s -> gb ) + 8 * metadata_size > s -> gb . size_in_bits )		2	3					
+ANR	121	Condition	get_bits_count ( & s -> gb ) + 8 * metadata_size > s -> gb . size_in_bits	14:16:430:490	2	0	True				
+ANR	122	RelationalExpression	get_bits_count ( & s -> gb ) + 8 * metadata_size > s -> gb . size_in_bits		2	0		>			
+ANR	123	AdditiveExpression	get_bits_count ( & s -> gb ) + 8 * metadata_size		2	0		+			
+ANR	124	CallExpression	get_bits_count ( & s -> gb )		2	0					
+ANR	125	Callee	get_bits_count		2	0					
+ANR	126	Identifier	get_bits_count		2	0					
+ANR	127	ArgumentList	& s -> gb		2	1					
+ANR	128	Argument	& s -> gb		2	0					
+ANR	129	UnaryOperationExpression	& s -> gb		2	0					
+ANR	130	UnaryOperator	&		2	0					
+ANR	131	PtrMemberAccess	s -> gb		2	1					
+ANR	132	Identifier	s		2	0					
+ANR	133	Identifier	gb		2	1					
+ANR	134	MultiplicativeExpression	8 * metadata_size		2	1		*			
+ANR	135	PrimaryExpression	8		2	0					
+ANR	136	Identifier	metadata_size		2	1					
+ANR	137	MemberAccess	s -> gb . size_in_bits		2	1					
+ANR	138	PtrMemberAccess	s -> gb		2	0					
+ANR	139	Identifier	s		2	0					
+ANR	140	Identifier	gb		2	1					
+ANR	141	Identifier	size_in_bits		2	1					
+ANR	142	CompoundStatement		13:79:450:450	2	1					
+ANR	143	ExpressionStatement	"skip_bits_long ( & s -> gb , initial_pos - get_bits_count ( & s -> gb ) )"	15:16:511:571	2	0	True				
+ANR	144	CallExpression	"skip_bits_long ( & s -> gb , initial_pos - get_bits_count ( & s -> gb ) )"		2	0					
+ANR	145	Callee	skip_bits_long		2	0					
+ANR	146	Identifier	skip_bits_long		2	0					
+ANR	147	ArgumentList	& s -> gb		2	1					
+ANR	148	Argument	& s -> gb		2	0					
+ANR	149	UnaryOperationExpression	& s -> gb		2	0					
+ANR	150	UnaryOperator	&		2	0					
+ANR	151	PtrMemberAccess	s -> gb		2	1					
+ANR	152	Identifier	s		2	0					
+ANR	153	Identifier	gb		2	1					
+ANR	154	Argument	initial_pos - get_bits_count ( & s -> gb )		2	1					
+ANR	155	AdditiveExpression	initial_pos - get_bits_count ( & s -> gb )		2	0		-			
+ANR	156	Identifier	initial_pos		2	0					
+ANR	157	CallExpression	get_bits_count ( & s -> gb )		2	1					
+ANR	158	Callee	get_bits_count		2	0					
+ANR	159	Identifier	get_bits_count		2	0					
+ANR	160	ArgumentList	& s -> gb		2	1					
+ANR	161	Argument	& s -> gb		2	0					
+ANR	162	UnaryOperationExpression	& s -> gb		2	0					
+ANR	163	UnaryOperator	&		2	0					
+ANR	164	PtrMemberAccess	s -> gb		2	1					
+ANR	165	Identifier	s		2	0					
+ANR	166	Identifier	gb		2	1					
+ANR	167	BreakStatement	break ;	16:16:589:594	2	1	True				
+ANR	168	IfStatement	if ( metadata_size )		2	4					
+ANR	169	Condition	metadata_size	19:16:627:639	2	0	True				
+ANR	170	Identifier	metadata_size		2	0					
+ANR	171	CompoundStatement		18:31:599:599	2	1					
+ANR	172	SwitchStatement	switch ( metadata_type )		2	0					
+ANR	173	Condition	metadata_type	20:24:668:680	2	0	True				
+ANR	174	Identifier	metadata_type		2	0					
+ANR	175	CompoundStatement		19:39:640:640	2	1					
+ANR	176	Label	case FLAC_METADATA_TYPE_STREAMINFO :	21:16:701:735	2	0	True				
+ANR	177	Identifier	FLAC_METADATA_TYPE_STREAMINFO		2	0					
+ANR	178	IfStatement	if ( ! s -> got_streaminfo )		2	1					
+ANR	179	Condition	! s -> got_streaminfo	22:24:761:778	2	0	True				
+ANR	180	UnaryOperationExpression	! s -> got_streaminfo		2	0					
+ANR	181	UnaryOperator	!		2	0					
+ANR	182	PtrMemberAccess	s -> got_streaminfo		2	1					
+ANR	183	Identifier	s		2	0					
+ANR	184	Identifier	got_streaminfo		2	1					
+ANR	185	CompoundStatement		21:44:738:738	2	1					
+ANR	186	ExpressionStatement	"ff_flac_parse_streaminfo ( s -> avctx , ( FLACStreaminfo * ) s , s -> gb . buffer + get_bits_count ( & s -> gb ) / 8 )"	23:24:807:950	2	0	True				
+ANR	187	CallExpression	"ff_flac_parse_streaminfo ( s -> avctx , ( FLACStreaminfo * ) s , s -> gb . buffer + get_bits_count ( & s -> gb ) / 8 )"		2	0					
+ANR	188	Callee	ff_flac_parse_streaminfo		2	0					
+ANR	189	Identifier	ff_flac_parse_streaminfo		2	0					
+ANR	190	ArgumentList	s -> avctx		2	1					
+ANR	191	Argument	s -> avctx		2	0					
+ANR	192	PtrMemberAccess	s -> avctx		2	0					
+ANR	193	Identifier	s		2	0					
+ANR	194	Identifier	avctx		2	1					
+ANR	195	Argument	( FLACStreaminfo * ) s		2	1					
+ANR	196	CastExpression	( FLACStreaminfo * ) s		2	0					
+ANR	197	CastTarget	FLACStreaminfo *		2	0					
+ANR	198	Identifier	s		2	1					
+ANR	199	Argument	s -> gb . buffer + get_bits_count ( & s -> gb ) / 8		2	2					
+ANR	200	AdditiveExpression	s -> gb . buffer + get_bits_count ( & s -> gb ) / 8		2	0		+			
+ANR	201	MemberAccess	s -> gb . buffer		2	0					
+ANR	202	PtrMemberAccess	s -> gb		2	0					
+ANR	203	Identifier	s		2	0					
+ANR	204	Identifier	gb		2	1					
+ANR	205	Identifier	buffer		2	1					
+ANR	206	MultiplicativeExpression	get_bits_count ( & s -> gb ) / 8		2	1		/			
+ANR	207	CallExpression	get_bits_count ( & s -> gb )		2	0					
+ANR	208	Callee	get_bits_count		2	0					
+ANR	209	Identifier	get_bits_count		2	0					
+ANR	210	ArgumentList	& s -> gb		2	1					
+ANR	211	Argument	& s -> gb		2	0					
+ANR	212	UnaryOperationExpression	& s -> gb		2	0					
+ANR	213	UnaryOperator	&		2	0					
+ANR	214	PtrMemberAccess	s -> gb		2	1					
+ANR	215	Identifier	s		2	0					
+ANR	216	Identifier	gb		2	1					
+ANR	217	PrimaryExpression	8		2	1					
+ANR	218	ExpressionStatement	allocate_buffers ( s )	25:24:976:995	2	1	True				
+ANR	219	CallExpression	allocate_buffers ( s )		2	0					
+ANR	220	Callee	allocate_buffers		2	0					
+ANR	221	Identifier	allocate_buffers		2	0					
+ANR	222	ArgumentList	s		2	1					
+ANR	223	Argument	s		2	0					
+ANR	224	Identifier	s		2	0					
+ANR	225	ExpressionStatement	s -> got_streaminfo = 1	26:24:1021:1042	2	2	True				
+ANR	226	AssignmentExpression	s -> got_streaminfo = 1		2	0		=			
+ANR	227	PtrMemberAccess	s -> got_streaminfo		2	0					
+ANR	228	Identifier	s		2	0					
+ANR	229	Identifier	got_streaminfo		2	1					
+ANR	230	PrimaryExpression	1		2	1					
+ANR	231	Label	default :	28:16:1082:1089	2	2	True				
+ANR	232	Identifier	default		2	0					
+ANR	233	ForStatement	for ( i = 0 ; i < metadata_size ; i ++ )		2	3					
+ANR	234	ForInit	i = 0 ;	29:25:1116:1121	2	0	True				
+ANR	235	AssignmentExpression	i = 0		2	0		=			
+ANR	236	Identifier	i		2	0					
+ANR	237	PrimaryExpression	0		2	1					
+ANR	238	Condition	i < metadata_size	29:32:1123:1139	2	1	True				
+ANR	239	RelationalExpression	i < metadata_size		2	0		<			
+ANR	240	Identifier	i		2	0					
+ANR	241	Identifier	metadata_size		2	1					
+ANR	242	PostIncDecOperationExpression	i ++	29:51:1142:1144	2	2	True				
+ANR	243	Identifier	i		2	0					
+ANR	244	IncDec	++		2	1					
+ANR	245	ExpressionStatement	"skip_bits ( & s -> gb , 8 )"	30:24:1171:1191	2	3	True				
+ANR	246	CallExpression	"skip_bits ( & s -> gb , 8 )"		2	0					
+ANR	247	Callee	skip_bits		2	0					
+ANR	248	Identifier	skip_bits		2	0					
+ANR	249	ArgumentList	& s -> gb		2	1					
+ANR	250	Argument	& s -> gb		2	0					
+ANR	251	UnaryOperationExpression	& s -> gb		2	0					
+ANR	252	UnaryOperator	&		2	0					
+ANR	253	PtrMemberAccess	s -> gb		2	1					
+ANR	254	Identifier	s		2	0					
+ANR	255	Identifier	gb		2	1					
+ANR	256	Argument	8		2	1					
+ANR	257	PrimaryExpression	8		2	0					
+ANR	258	Condition	! metadata_last	33:17:1242:1255	2	1	True				
+ANR	259	UnaryOperationExpression	! metadata_last		2	0					
+ANR	260	UnaryOperator	!		2	0					
+ANR	261	Identifier	metadata_last		2	1					
+ANR	262	ReturnStatement	return 1 ;	35:8:1268:1276	2	2	True				
+ANR	263	PrimaryExpression	1		2	0					
+ANR	264	ReturnStatement	return 0 ;	37:4:1288:1296	2	3	True				
+ANR	265	PrimaryExpression	0		2	0					
+ANR	266	ReturnType	static int		2	1					
+ANR	267	Identifier	metadata_parse		2	2					
+ANR	268	ParameterList	FLACContext * s		2	3					
+ANR	269	Parameter	FLACContext * s	1:26:26:39	2	0	True				
+ANR	270	ParameterType	FLACContext *		2	0					
+ANR	271	Identifier	s		2	1					
+ANR	272	CFGEntryNode	ENTRY		2		True				
+ANR	273	CFGExitNode	EXIT		2		True				
+ANR	274	Symbol	s -> gb		2						
+ANR	275	Symbol	MKBETAG		2						
+ANR	276	Symbol	metadata_type		2						
+ANR	277	Symbol	get_bits		2						
+ANR	278	Symbol	s -> gb . size_in_bits		2						
+ANR	279	Symbol	get_bits1		2						
+ANR	280	Symbol	i		2						
+ANR	281	Symbol	get_bits_count		2						
+ANR	282	Symbol	show_bits_long		2						
+ANR	283	Symbol	metadata_last		2						
+ANR	284	Symbol	& s -> gb		2						
+ANR	285	Symbol	initial_pos		2						
+ANR	286	Symbol	s		2						
+ANR	287	Symbol	get_bits_long		2						
+ANR	288	Symbol	metadata_size		2						
+ANR	289	Symbol	s -> got_streaminfo		2						
+ANR	290	Symbol	s -> avctx		2						
+ANR	291	Symbol	* s		2						
+ANR	292	Symbol	s -> gb . buffer		2						

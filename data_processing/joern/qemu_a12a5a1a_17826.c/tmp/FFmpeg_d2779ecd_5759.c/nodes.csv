@@ -1,0 +1,50 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/FFmpeg_d2779ecd_5759.c								
+ANR	2	DeclStmt									
+ANR	3	Decl							MpegEncContext	MpegEncContext *	s
+ANR	4	DeclStmt									
+ANR	5	Decl							GetBitContext	GetBitContext *	gb
+ANR	6	DeclStmt									
+ANR	7	Decl							int	int	i
+ANR	8	Decl							int	int	j
+ANR	9	DeclStmt									
+ANR	10	Decl							int	int	mb_pos
+ANR	11	DeclStmt									
+ANR	12	Decl							int	int	cbp
+ANR	13	DeclStmt									
+ANR	14	Decl							int	int	mqdiff
+ANR	15	Decl							int	int	mquant
+ANR	16	DeclStmt									
+ANR	17	Decl							int	int	ttmb
+ANR	18	DeclStmt									
+ANR	19	Decl							int	int	status
+ANR	20	DeclStmt									
+ANR	21	Decl							const int	const int [ 6 ]	size_table
+ANR	22	Decl							const int	const int [ 6 ]	offset_table
+ANR	23	DeclStmt									
+ANR	24	Decl							int	int	mb_has_coeffs
+ANR	25	DeclStmt									
+ANR	26	Decl							int	int	dmv_x
+ANR	27	Decl							int	int	dmv_y
+ANR	28	DeclStmt									
+ANR	29	Decl							int	int	index
+ANR	30	Decl							int	int	index1
+ANR	31	DeclStmt									
+ANR	32	Decl							int	int	val
+ANR	33	Decl							int	int	sign
+ANR	34	DeclStmt									
+ANR	35	Decl							int	int	first_block
+ANR	36	DeclStmt									
+ANR	37	Decl							int	int	dst_idx
+ANR	38	Decl							int	int	off
+ANR	39	DeclStmt									
+ANR	40	Decl							int	int	skipped
+ANR	41	Decl							int	int	fourmv
+ANR	42	DeclStmt									
+ANR	43	Decl							int	int	intra_count
+ANR	44	Decl							int	int	coded_inter
+ANR	45	DeclStmt									
+ANR	46	Decl							int	int [ 6 ]	is_intra
+ANR	47	Decl							int	int [ 6 ]	is_coded
+ANR	48	DeclStmt									
+ANR	49	Decl							int	int	intrapred

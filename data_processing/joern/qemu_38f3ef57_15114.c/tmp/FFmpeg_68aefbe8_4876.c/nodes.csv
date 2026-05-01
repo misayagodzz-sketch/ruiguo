@@ -1,0 +1,46 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	808	File	tmp/FFmpeg_68aefbe8_4876.c								
+ANR	809	Function	get_video_clock	1:0:0:223							
+ANR	810	FunctionDef	get_video_clock (VideoState * is)		809	0					
+ANR	811	CompoundStatement		2:0:46:223	809	0					
+ANR	812	IfStatement	if ( is -> paused )		809	0					
+ANR	813	Condition	is -> paused	3:8:56:65	809	0	True				
+ANR	814	PtrMemberAccess	is -> paused		809	0					
+ANR	815	Identifier	is		809	0					
+ANR	816	Identifier	paused		809	1					
+ANR	817	CompoundStatement		2:20:21:21	809	1					
+ANR	818	ReturnStatement	return is -> video_current_pts ;	4:8:78:106	809	0	True				
+ANR	819	PtrMemberAccess	is -> video_current_pts		809	0					
+ANR	820	Identifier	is		809	0					
+ANR	821	Identifier	video_current_pts		809	1					
+ANR	822	ElseStatement	else		809	0					
+ANR	823	CompoundStatement		4:11:72:72	809	0					
+ANR	824	ReturnStatement	return is -> video_current_pts + ( av_gettime ( ) - is -> video_current_pts_time ) / 1000000.0 ;	6:8:129:215	809	0	True				
+ANR	825	AdditiveExpression	is -> video_current_pts + ( av_gettime ( ) - is -> video_current_pts_time ) / 1000000.0		809	0		+			
+ANR	826	PtrMemberAccess	is -> video_current_pts		809	0					
+ANR	827	Identifier	is		809	0					
+ANR	828	Identifier	video_current_pts		809	1					
+ANR	829	MultiplicativeExpression	( av_gettime ( ) - is -> video_current_pts_time ) / 1000000.0		809	1		/			
+ANR	830	AdditiveExpression	av_gettime ( ) - is -> video_current_pts_time		809	0		-			
+ANR	831	CallExpression	av_gettime ( )		809	0					
+ANR	832	Callee	av_gettime		809	0					
+ANR	833	Identifier	av_gettime		809	0					
+ANR	834	ArgumentList			809	1					
+ANR	835	PtrMemberAccess	is -> video_current_pts_time		809	1					
+ANR	836	Identifier	is		809	0					
+ANR	837	Identifier	video_current_pts_time		809	1					
+ANR	838	PrimaryExpression	1000000.0		809	1					
+ANR	839	ReturnType	static double		809	1					
+ANR	840	Identifier	get_video_clock		809	2					
+ANR	841	ParameterList	VideoState * is		809	3					
+ANR	842	Parameter	VideoState * is	1:30:30:43	809	0	True				
+ANR	843	ParameterType	VideoState *		809	0					
+ANR	844	Identifier	is		809	1					
+ANR	845	CFGEntryNode	ENTRY		809		True				
+ANR	846	CFGExitNode	EXIT		809		True				
+ANR	847	Symbol	* is		809						
+ANR	848	Symbol	is -> video_current_pts		809						
+ANR	849	Symbol	is -> video_current_pts_time		809						
+ANR	850	Symbol	is		809						
+ANR	851	Symbol	av_gettime		809						
+ANR	852	Symbol	is -> paused		809						

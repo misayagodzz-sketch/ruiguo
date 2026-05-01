@@ -1,0 +1,109 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	2635	File	tmp/FFmpeg_8108551a_18934.c								
+ANR	2636	Function	gif_write	1:0:0:413							
+ANR	2637	FunctionDef	"gif_write (ByteIOContext * pb , AVImageInfo * info)"		2636	0					
+ANR	2638	CompoundStatement		2:0:52:413	2636	0					
+ANR	2639	ExpressionStatement	"gif_image_write_header ( pb , info -> width , info -> height , ( uint32_t * ) info -> pict . data [ 1 ] )"	3:4:58:171	2636	0	True				
+ANR	2640	CallExpression	"gif_image_write_header ( pb , info -> width , info -> height , ( uint32_t * ) info -> pict . data [ 1 ] )"		2636	0					
+ANR	2641	Callee	gif_image_write_header		2636	0					
+ANR	2642	Identifier	gif_image_write_header		2636	0					
+ANR	2643	ArgumentList	pb		2636	1					
+ANR	2644	Argument	pb		2636	0					
+ANR	2645	Identifier	pb		2636	0					
+ANR	2646	Argument	info -> width		2636	1					
+ANR	2647	PtrMemberAccess	info -> width		2636	0					
+ANR	2648	Identifier	info		2636	0					
+ANR	2649	Identifier	width		2636	1					
+ANR	2650	Argument	info -> height		2636	2					
+ANR	2651	PtrMemberAccess	info -> height		2636	0					
+ANR	2652	Identifier	info		2636	0					
+ANR	2653	Identifier	height		2636	1					
+ANR	2654	Argument	( uint32_t * ) info -> pict . data [ 1 ]		2636	3					
+ANR	2655	CastExpression	( uint32_t * ) info -> pict . data [ 1 ]		2636	0					
+ANR	2656	CastTarget	uint32_t *		2636	0					
+ANR	2657	ArrayIndexing	info -> pict . data [ 1 ]		2636	1					
+ANR	2658	MemberAccess	info -> pict . data		2636	0					
+ANR	2659	PtrMemberAccess	info -> pict		2636	0					
+ANR	2660	Identifier	info		2636	0					
+ANR	2661	Identifier	pict		2636	1					
+ANR	2662	Identifier	data		2636	1					
+ANR	2663	PrimaryExpression	1		2636	1					
+ANR	2664	ExpressionStatement	"gif_image_write_image ( pb , 0 , 0 , info -> width , info -> height , info -> pict . data [ 0 ] , info -> pict . linesize [ 0 ] , PIX_FMT_PAL8 )"	5:4:177:347	2636	1	True				
+ANR	2665	CallExpression	"gif_image_write_image ( pb , 0 , 0 , info -> width , info -> height , info -> pict . data [ 0 ] , info -> pict . linesize [ 0 ] , PIX_FMT_PAL8 )"		2636	0					
+ANR	2666	Callee	gif_image_write_image		2636	0					
+ANR	2667	Identifier	gif_image_write_image		2636	0					
+ANR	2668	ArgumentList	pb		2636	1					
+ANR	2669	Argument	pb		2636	0					
+ANR	2670	Identifier	pb		2636	0					
+ANR	2671	Argument	0		2636	1					
+ANR	2672	PrimaryExpression	0		2636	0					
+ANR	2673	Argument	0		2636	2					
+ANR	2674	PrimaryExpression	0		2636	0					
+ANR	2675	Argument	info -> width		2636	3					
+ANR	2676	PtrMemberAccess	info -> width		2636	0					
+ANR	2677	Identifier	info		2636	0					
+ANR	2678	Identifier	width		2636	1					
+ANR	2679	Argument	info -> height		2636	4					
+ANR	2680	PtrMemberAccess	info -> height		2636	0					
+ANR	2681	Identifier	info		2636	0					
+ANR	2682	Identifier	height		2636	1					
+ANR	2683	Argument	info -> pict . data [ 0 ]		2636	5					
+ANR	2684	ArrayIndexing	info -> pict . data [ 0 ]		2636	0					
+ANR	2685	MemberAccess	info -> pict . data		2636	0					
+ANR	2686	PtrMemberAccess	info -> pict		2636	0					
+ANR	2687	Identifier	info		2636	0					
+ANR	2688	Identifier	pict		2636	1					
+ANR	2689	Identifier	data		2636	1					
+ANR	2690	PrimaryExpression	0		2636	1					
+ANR	2691	Argument	info -> pict . linesize [ 0 ]		2636	6					
+ANR	2692	ArrayIndexing	info -> pict . linesize [ 0 ]		2636	0					
+ANR	2693	MemberAccess	info -> pict . linesize		2636	0					
+ANR	2694	PtrMemberAccess	info -> pict		2636	0					
+ANR	2695	Identifier	info		2636	0					
+ANR	2696	Identifier	pict		2636	1					
+ANR	2697	Identifier	linesize		2636	1					
+ANR	2698	PrimaryExpression	0		2636	1					
+ANR	2699	Argument	PIX_FMT_PAL8		2636	7					
+ANR	2700	Identifier	PIX_FMT_PAL8		2636	0					
+ANR	2701	ExpressionStatement	"put_byte ( pb , 0x3b )"	8:4:353:371	2636	2	True				
+ANR	2702	CallExpression	"put_byte ( pb , 0x3b )"		2636	0					
+ANR	2703	Callee	put_byte		2636	0					
+ANR	2704	Identifier	put_byte		2636	0					
+ANR	2705	ArgumentList	pb		2636	1					
+ANR	2706	Argument	pb		2636	0					
+ANR	2707	Identifier	pb		2636	0					
+ANR	2708	Argument	0x3b		2636	1					
+ANR	2709	PrimaryExpression	0x3b		2636	0					
+ANR	2710	ExpressionStatement	put_flush_packet ( pb )	9:4:377:397	2636	3	True				
+ANR	2711	CallExpression	put_flush_packet ( pb )		2636	0					
+ANR	2712	Callee	put_flush_packet		2636	0					
+ANR	2713	Identifier	put_flush_packet		2636	0					
+ANR	2714	ArgumentList	pb		2636	1					
+ANR	2715	Argument	pb		2636	0					
+ANR	2716	Identifier	pb		2636	0					
+ANR	2717	ReturnStatement	return 0 ;	10:4:403:411	2636	4	True				
+ANR	2718	PrimaryExpression	0		2636	0					
+ANR	2719	ReturnType	int		2636	1					
+ANR	2720	Identifier	gif_write		2636	2					
+ANR	2721	ParameterList	"ByteIOContext * pb , AVImageInfo * info"		2636	3					
+ANR	2722	Parameter	ByteIOContext * pb	1:14:14:30	2636	0	True				
+ANR	2723	ParameterType	ByteIOContext *		2636	0					
+ANR	2724	Identifier	pb		2636	1					
+ANR	2725	Parameter	AVImageInfo * info	1:33:33:49	2636	1	True				
+ANR	2726	ParameterType	AVImageInfo *		2636	0					
+ANR	2727	Identifier	info		2636	1					
+ANR	2728	CFGEntryNode	ENTRY		2636		True				
+ANR	2729	CFGExitNode	EXIT		2636		True				
+ANR	2730	Symbol	info -> width		2636						
+ANR	2731	Symbol	* * info		2636						
+ANR	2732	Symbol	info -> pict . data		2636						
+ANR	2733	Symbol	PIX_FMT_PAL8		2636						
+ANR	2734	Symbol	* info -> pict		2636						
+ANR	2735	Symbol	* info -> pict . data		2636						
+ANR	2736	Symbol	info -> height		2636						
+ANR	2737	Symbol	pb		2636						
+ANR	2738	Symbol	* info -> pict . linesize		2636						
+ANR	2739	Symbol	info -> pict		2636						
+ANR	2740	Symbol	info -> pict . linesize		2636						
+ANR	2741	Symbol	* info		2636						
+ANR	2742	Symbol	info		2636						

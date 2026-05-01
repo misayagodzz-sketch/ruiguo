@@ -1,0 +1,317 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/qemu_dd26eb43_8553.c								
+ANR	2	Function	sd_app_command	1:0:0:2770							
+ANR	3	FunctionDef	"sd_app_command (SDState * sd , SDRequest req)"		2	0					
+ANR	4	CompoundStatement		3:0:100:2770	2	0					
+ANR	5	ExpressionStatement	"DPRINTF ( ""ACMD%d 0x%08x\\n"" , req . cmd , req . arg )"	4:4:106:150	2	0	True				
+ANR	6	CallExpression	"DPRINTF ( ""ACMD%d 0x%08x\\n"" , req . cmd , req . arg )"		2	0					
+ANR	7	Callee	DPRINTF		2	0					
+ANR	8	Identifier	DPRINTF		2	0					
+ANR	9	ArgumentList	"""ACMD%d 0x%08x\\n"""		2	1					
+ANR	10	Argument	"""ACMD%d 0x%08x\\n"""		2	0					
+ANR	11	PrimaryExpression	"""ACMD%d 0x%08x\\n"""		2	0					
+ANR	12	Argument	req . cmd		2	1					
+ANR	13	MemberAccess	req . cmd		2	0					
+ANR	14	Identifier	req		2	0					
+ANR	15	Identifier	cmd		2	1					
+ANR	16	Argument	req . arg		2	2					
+ANR	17	MemberAccess	req . arg		2	0					
+ANR	18	Identifier	req		2	0					
+ANR	19	Identifier	arg		2	1					
+ANR	20	ExpressionStatement	sd -> card_status |= APP_CMD	5:4:156:182	2	1	True				
+ANR	21	AssignmentExpression	sd -> card_status |= APP_CMD		2	0		|=			
+ANR	22	PtrMemberAccess	sd -> card_status		2	0					
+ANR	23	Identifier	sd		2	0					
+ANR	24	Identifier	card_status		2	1					
+ANR	25	Identifier	APP_CMD		2	1					
+ANR	26	SwitchStatement	switch ( req . cmd )		2	2					
+ANR	27	Condition	req . cmd	6:12:196:202	2	0	True				
+ANR	28	MemberAccess	req . cmd		2	0					
+ANR	29	Identifier	req		2	0					
+ANR	30	Identifier	cmd		2	1					
+ANR	31	CompoundStatement		4:21:104:104	2	1					
+ANR	32	Label	case 6 :	7:4:211:217	2	0	True				
+ANR	33	SwitchStatement	switch ( sd -> state )		2	1					
+ANR	34	Condition	sd -> state	8:16:263:271	2	0	True				
+ANR	35	PtrMemberAccess	sd -> state		2	0					
+ANR	36	Identifier	sd		2	0					
+ANR	37	Identifier	state		2	1					
+ANR	38	CompoundStatement		6:27:173:173	2	1					
+ANR	39	Label	case sd_transfer_state :	9:8:284:306	2	0	True				
+ANR	40	Identifier	sd_transfer_state		2	0					
+ANR	41	ExpressionStatement	sd -> sd_status [ 0 ] &= 0x3f	10:12:320:344	2	1	True				
+ANR	42	AssignmentExpression	sd -> sd_status [ 0 ] &= 0x3f		2	0		&=			
+ANR	43	ArrayIndexing	sd -> sd_status [ 0 ]		2	0					
+ANR	44	PtrMemberAccess	sd -> sd_status		2	0					
+ANR	45	Identifier	sd		2	0					
+ANR	46	Identifier	sd_status		2	1					
+ANR	47	PrimaryExpression	0		2	1					
+ANR	48	PrimaryExpression	0x3f		2	1					
+ANR	49	ExpressionStatement	sd -> sd_status [ 0 ] |= ( req . arg & 0x03 ) << 6	11:12:358:399	2	2	True				
+ANR	50	AssignmentExpression	sd -> sd_status [ 0 ] |= ( req . arg & 0x03 ) << 6		2	0		|=			
+ANR	51	ArrayIndexing	sd -> sd_status [ 0 ]		2	0					
+ANR	52	PtrMemberAccess	sd -> sd_status		2	0					
+ANR	53	Identifier	sd		2	0					
+ANR	54	Identifier	sd_status		2	1					
+ANR	55	PrimaryExpression	0		2	1					
+ANR	56	ShiftExpression	( req . arg & 0x03 ) << 6		2	1		<<			
+ANR	57	BitAndExpression	req . arg & 0x03		2	0		&			
+ANR	58	MemberAccess	req . arg		2	0					
+ANR	59	Identifier	req		2	0					
+ANR	60	Identifier	arg		2	1					
+ANR	61	PrimaryExpression	0x03		2	1					
+ANR	62	PrimaryExpression	6		2	1					
+ANR	63	ReturnStatement	return sd_r1 ;	12:12:413:425	2	3	True				
+ANR	64	Identifier	sd_r1		2	0					
+ANR	65	Label	default :	14:8:436:443	2	4	True				
+ANR	66	Identifier	default		2	0					
+ANR	67	BreakStatement	break ;	15:12:457:462	2	5	True				
+ANR	68	BreakStatement	break ;	17:8:482:487	2	2	True				
+ANR	69	Label	case 13 :	19:4:494:501	2	3	True				
+ANR	70	SwitchStatement	switch ( sd -> state )		2	4					
+ANR	71	Condition	sd -> state	20:16:543:551	2	0	True				
+ANR	72	PtrMemberAccess	sd -> state		2	0					
+ANR	73	Identifier	sd		2	0					
+ANR	74	Identifier	state		2	1					
+ANR	75	CompoundStatement		18:27:453:453	2	1					
+ANR	76	Label	case sd_transfer_state :	21:8:564:586	2	0	True				
+ANR	77	Identifier	sd_transfer_state		2	0					
+ANR	78	ExpressionStatement	sd -> state = sd_sendingdata_state	22:12:600:632	2	1	True				
+ANR	79	AssignmentExpression	sd -> state = sd_sendingdata_state		2	0		=			
+ANR	80	PtrMemberAccess	sd -> state		2	0					
+ANR	81	Identifier	sd		2	0					
+ANR	82	Identifier	state		2	1					
+ANR	83	Identifier	sd_sendingdata_state		2	1					
+ANR	84	ExpressionStatement	sd -> data_start = 0	23:12:646:664	2	2	True				
+ANR	85	AssignmentExpression	sd -> data_start = 0		2	0		=			
+ANR	86	PtrMemberAccess	sd -> data_start		2	0					
+ANR	87	Identifier	sd		2	0					
+ANR	88	Identifier	data_start		2	1					
+ANR	89	PrimaryExpression	0		2	1					
+ANR	90	ExpressionStatement	sd -> data_offset = 0	24:12:678:697	2	3	True				
+ANR	91	AssignmentExpression	sd -> data_offset = 0		2	0		=			
+ANR	92	PtrMemberAccess	sd -> data_offset		2	0					
+ANR	93	Identifier	sd		2	0					
+ANR	94	Identifier	data_offset		2	1					
+ANR	95	PrimaryExpression	0		2	1					
+ANR	96	ReturnStatement	return sd_r1 ;	25:12:711:723	2	4	True				
+ANR	97	Identifier	sd_r1		2	0					
+ANR	98	Label	default :	27:8:734:741	2	5	True				
+ANR	99	Identifier	default		2	0					
+ANR	100	BreakStatement	break ;	28:12:755:760	2	6	True				
+ANR	101	BreakStatement	break ;	30:8:780:785	2	5	True				
+ANR	102	Label	case 22 :	32:4:792:799	2	6	True				
+ANR	103	SwitchStatement	switch ( sd -> state )		2	7					
+ANR	104	Condition	sd -> state	33:16:850:858	2	0	True				
+ANR	105	PtrMemberAccess	sd -> state		2	0					
+ANR	106	Identifier	sd		2	0					
+ANR	107	Identifier	state		2	1					
+ANR	108	CompoundStatement		31:27:760:760	2	1					
+ANR	109	Label	case sd_transfer_state :	34:8:871:893	2	0	True				
+ANR	110	Identifier	sd_transfer_state		2	0					
+ANR	111	ExpressionStatement	* ( uint32_t * ) sd -> data = sd -> blk_written	35:12:907:947	2	1	True				
+ANR	112	AssignmentExpression	* ( uint32_t * ) sd -> data = sd -> blk_written		2	0		=			
+ANR	113	UnaryOperationExpression	* ( uint32_t * ) sd -> data		2	0					
+ANR	114	UnaryOperator	*		2	0					
+ANR	115	CastExpression	( uint32_t * ) sd -> data		2	1					
+ANR	116	CastTarget	uint32_t *		2	0					
+ANR	117	PtrMemberAccess	sd -> data		2	1					
+ANR	118	Identifier	sd		2	0					
+ANR	119	Identifier	data		2	1					
+ANR	120	PtrMemberAccess	sd -> blk_written		2	1					
+ANR	121	Identifier	sd		2	0					
+ANR	122	Identifier	blk_written		2	1					
+ANR	123	ExpressionStatement	sd -> state = sd_sendingdata_state	37:12:962:994	2	2	True				
+ANR	124	AssignmentExpression	sd -> state = sd_sendingdata_state		2	0		=			
+ANR	125	PtrMemberAccess	sd -> state		2	0					
+ANR	126	Identifier	sd		2	0					
+ANR	127	Identifier	state		2	1					
+ANR	128	Identifier	sd_sendingdata_state		2	1					
+ANR	129	ExpressionStatement	sd -> data_start = 0	38:12:1008:1026	2	3	True				
+ANR	130	AssignmentExpression	sd -> data_start = 0		2	0		=			
+ANR	131	PtrMemberAccess	sd -> data_start		2	0					
+ANR	132	Identifier	sd		2	0					
+ANR	133	Identifier	data_start		2	1					
+ANR	134	PrimaryExpression	0		2	1					
+ANR	135	ExpressionStatement	sd -> data_offset = 0	39:12:1040:1059	2	4	True				
+ANR	136	AssignmentExpression	sd -> data_offset = 0		2	0		=			
+ANR	137	PtrMemberAccess	sd -> data_offset		2	0					
+ANR	138	Identifier	sd		2	0					
+ANR	139	Identifier	data_offset		2	1					
+ANR	140	PrimaryExpression	0		2	1					
+ANR	141	ReturnStatement	return sd_r1 ;	40:12:1073:1085	2	5	True				
+ANR	142	Identifier	sd_r1		2	0					
+ANR	143	Label	default :	42:8:1096:1103	2	6	True				
+ANR	144	Identifier	default		2	0					
+ANR	145	BreakStatement	break ;	43:12:1117:1122	2	7	True				
+ANR	146	BreakStatement	break ;	45:8:1142:1147	2	8	True				
+ANR	147	Label	case 23 :	47:4:1154:1161	2	9	True				
+ANR	148	SwitchStatement	switch ( sd -> state )		2	10					
+ANR	149	Condition	sd -> state	48:16:1216:1224	2	0	True				
+ANR	150	PtrMemberAccess	sd -> state		2	0					
+ANR	151	Identifier	sd		2	0					
+ANR	152	Identifier	state		2	1					
+ANR	153	CompoundStatement		46:27:1126:1126	2	1					
+ANR	154	Label	case sd_transfer_state :	49:8:1237:1259	2	0	True				
+ANR	155	Identifier	sd_transfer_state		2	0					
+ANR	156	ReturnStatement	return sd_r1 ;	50:12:1273:1285	2	1	True				
+ANR	157	Identifier	sd_r1		2	0					
+ANR	158	Label	default :	52:8:1296:1303	2	2	True				
+ANR	159	Identifier	default		2	0					
+ANR	160	BreakStatement	break ;	53:12:1317:1322	2	3	True				
+ANR	161	BreakStatement	break ;	55:8:1342:1347	2	11	True				
+ANR	162	Label	case 41 :	57:4:1354:1361	2	12	True				
+ANR	163	IfStatement	if ( sd -> spi )		2	13					
+ANR	164	Condition	sd -> spi	58:12:1404:1410	2	0	True				
+ANR	165	PtrMemberAccess	sd -> spi		2	0					
+ANR	166	Identifier	sd		2	0					
+ANR	167	Identifier	spi		2	1					
+ANR	168	CompoundStatement		56:21:1312:1312	2	1					
+ANR	169	ExpressionStatement	sd -> state = sd_transfer_state	60:12:1457:1486	2	0	True				
+ANR	170	AssignmentExpression	sd -> state = sd_transfer_state		2	0		=			
+ANR	171	PtrMemberAccess	sd -> state		2	0					
+ANR	172	Identifier	sd		2	0					
+ANR	173	Identifier	state		2	1					
+ANR	174	Identifier	sd_transfer_state		2	1					
+ANR	175	ReturnStatement	return sd_r1 ;	61:12:1500:1512	2	1	True				
+ANR	176	Identifier	sd_r1		2	0					
+ANR	177	SwitchStatement	switch ( sd -> state )		2	14					
+ANR	178	Condition	sd -> state	63:16:1540:1548	2	0	True				
+ANR	179	PtrMemberAccess	sd -> state		2	0					
+ANR	180	Identifier	sd		2	0					
+ANR	181	Identifier	state		2	1					
+ANR	182	CompoundStatement		61:27:1450:1450	2	1					
+ANR	183	Label	case sd_idle_state :	64:8:1561:1579	2	0	True				
+ANR	184	Identifier	sd_idle_state		2	0					
+ANR	185	IfStatement	if ( req . arg & ACMD41_ENQUIRY_MASK )		2	1					
+ANR	186	Condition	req . arg & ACMD41_ENQUIRY_MASK	70:16:1831:1859	2	0	True				
+ANR	187	BitAndExpression	req . arg & ACMD41_ENQUIRY_MASK		2	0		&			
+ANR	188	MemberAccess	req . arg		2	0					
+ANR	189	Identifier	req		2	0					
+ANR	190	Identifier	arg		2	1					
+ANR	191	Identifier	ACMD41_ENQUIRY_MASK		2	1					
+ANR	192	CompoundStatement		68:47:1761:1761	2	1					
+ANR	193	ExpressionStatement	sd -> state = sd_ready_state	71:16:1880:1906	2	0	True				
+ANR	194	AssignmentExpression	sd -> state = sd_ready_state		2	0		=			
+ANR	195	PtrMemberAccess	sd -> state		2	0					
+ANR	196	Identifier	sd		2	0					
+ANR	197	Identifier	state		2	1					
+ANR	198	Identifier	sd_ready_state		2	1					
+ANR	199	ReturnStatement	return sd_r3 ;	74:12:1935:1947	2	2	True				
+ANR	200	Identifier	sd_r3		2	0					
+ANR	201	Label	default :	76:8:1958:1965	2	3	True				
+ANR	202	Identifier	default		2	0					
+ANR	203	BreakStatement	break ;	77:12:1979:1984	2	4	True				
+ANR	204	BreakStatement	break ;	79:8:2004:2009	2	15	True				
+ANR	205	Label	case 42 :	81:4:2016:2023	2	16	True				
+ANR	206	SwitchStatement	switch ( sd -> state )		2	17					
+ANR	207	Condition	sd -> state	82:16:2075:2083	2	0	True				
+ANR	208	PtrMemberAccess	sd -> state		2	0					
+ANR	209	Identifier	sd		2	0					
+ANR	210	Identifier	state		2	1					
+ANR	211	CompoundStatement		80:27:1985:1985	2	1					
+ANR	212	Label	case sd_transfer_state :	83:8:2096:2118	2	0	True				
+ANR	213	Identifier	sd_transfer_state		2	0					
+ANR	214	ReturnStatement	return sd_r1 ;	85:12:2200:2212	2	1	True				
+ANR	215	Identifier	sd_r1		2	0					
+ANR	216	Label	default :	87:8:2223:2230	2	2	True				
+ANR	217	Identifier	default		2	0					
+ANR	218	BreakStatement	break ;	88:12:2244:2249	2	3	True				
+ANR	219	BreakStatement	break ;	90:8:2269:2274	2	18	True				
+ANR	220	Label	case 51 :	92:4:2281:2288	2	19	True				
+ANR	221	SwitchStatement	switch ( sd -> state )		2	20					
+ANR	222	Condition	sd -> state	93:16:2329:2337	2	0	True				
+ANR	223	PtrMemberAccess	sd -> state		2	0					
+ANR	224	Identifier	sd		2	0					
+ANR	225	Identifier	state		2	1					
+ANR	226	CompoundStatement		91:27:2239:2239	2	1					
+ANR	227	Label	case sd_transfer_state :	94:8:2350:2372	2	0	True				
+ANR	228	Identifier	sd_transfer_state		2	0					
+ANR	229	ExpressionStatement	sd -> state = sd_sendingdata_state	95:12:2386:2418	2	1	True				
+ANR	230	AssignmentExpression	sd -> state = sd_sendingdata_state		2	0		=			
+ANR	231	PtrMemberAccess	sd -> state		2	0					
+ANR	232	Identifier	sd		2	0					
+ANR	233	Identifier	state		2	1					
+ANR	234	Identifier	sd_sendingdata_state		2	1					
+ANR	235	ExpressionStatement	sd -> data_start = 0	96:12:2432:2450	2	2	True				
+ANR	236	AssignmentExpression	sd -> data_start = 0		2	0		=			
+ANR	237	PtrMemberAccess	sd -> data_start		2	0					
+ANR	238	Identifier	sd		2	0					
+ANR	239	Identifier	data_start		2	1					
+ANR	240	PrimaryExpression	0		2	1					
+ANR	241	ExpressionStatement	sd -> data_offset = 0	97:12:2464:2483	2	3	True				
+ANR	242	AssignmentExpression	sd -> data_offset = 0		2	0		=			
+ANR	243	PtrMemberAccess	sd -> data_offset		2	0					
+ANR	244	Identifier	sd		2	0					
+ANR	245	Identifier	data_offset		2	1					
+ANR	246	PrimaryExpression	0		2	1					
+ANR	247	ReturnStatement	return sd_r1 ;	98:12:2497:2509	2	4	True				
+ANR	248	Identifier	sd_r1		2	0					
+ANR	249	Label	default :	100:8:2520:2527	2	5	True				
+ANR	250	Identifier	default		2	0					
+ANR	251	BreakStatement	break ;	101:12:2541:2546	2	6	True				
+ANR	252	BreakStatement	break ;	103:8:2566:2571	2	21	True				
+ANR	253	Label	default :	105:4:2578:2585	2	22	True				
+ANR	254	Identifier	default		2	0					
+ANR	255	ReturnStatement	"return sd_normal_command ( sd , req ) ;"	107:8:2642:2675	2	23	True				
+ANR	256	CallExpression	"sd_normal_command ( sd , req )"		2	0					
+ANR	257	Callee	sd_normal_command		2	0					
+ANR	258	Identifier	sd_normal_command		2	0					
+ANR	259	ArgumentList	sd		2	1					
+ANR	260	Argument	sd		2	0					
+ANR	261	Identifier	sd		2	0					
+ANR	262	Argument	req		2	1					
+ANR	263	Identifier	req		2	0					
+ANR	264	ExpressionStatement	"fprintf ( stderr , ""SD: ACMD%i in a wrong state\\n"" , req . cmd )"	110:4:2688:2745	2	3	True				
+ANR	265	CallExpression	"fprintf ( stderr , ""SD: ACMD%i in a wrong state\\n"" , req . cmd )"		2	0					
+ANR	266	Callee	fprintf		2	0					
+ANR	267	Identifier	fprintf		2	0					
+ANR	268	ArgumentList	stderr		2	1					
+ANR	269	Argument	stderr		2	0					
+ANR	270	Identifier	stderr		2	0					
+ANR	271	Argument	"""SD: ACMD%i in a wrong state\\n"""		2	1					
+ANR	272	PrimaryExpression	"""SD: ACMD%i in a wrong state\\n"""		2	0					
+ANR	273	Argument	req . cmd		2	2					
+ANR	274	MemberAccess	req . cmd		2	0					
+ANR	275	Identifier	req		2	0					
+ANR	276	Identifier	cmd		2	1					
+ANR	277	ReturnStatement	return sd_illegal ;	111:4:2751:2768	2	4	True				
+ANR	278	Identifier	sd_illegal		2	0					
+ANR	279	ReturnType	static sd_rsp_type_t		2	1					
+ANR	280	Identifier	sd_app_command		2	2					
+ANR	281	ParameterList	"SDState * sd , SDRequest req"		2	3					
+ANR	282	Parameter	SDState * sd	1:36:36:46	2	0	True				
+ANR	283	ParameterType	SDState *		2	0					
+ANR	284	Identifier	sd		2	1					
+ANR	285	Parameter	SDRequest req	2:36:85:97	2	1	True				
+ANR	286	ParameterType	SDRequest		2	0					
+ANR	287	Identifier	req		2	1					
+ANR	288	CFGEntryNode	ENTRY		2		True				
+ANR	289	CFGExitNode	EXIT		2		True				
+ANR	290	Symbol	sd -> data_offset		2						
+ANR	291	Symbol	req . arg		2						
+ANR	292	Symbol	* sd -> sd_status		2						
+ANR	293	Symbol	sd_transfer_state		2						
+ANR	294	Symbol	APP_CMD		2						
+ANR	295	Symbol	sd		2						
+ANR	296	Symbol	* ( uint32_t * ) sd -> data		2						
+ANR	297	Symbol	sd -> spi		2						
+ANR	298	Symbol	* sd		2						
+ANR	299	Symbol	sd -> card_status		2						
+ANR	300	Symbol	ACMD41_ENQUIRY_MASK		2						
+ANR	301	Symbol	sd_normal_command		2						
+ANR	302	Symbol	sd -> blk_written		2						
+ANR	303	Symbol	req		2						
+ANR	304	Symbol	sd_sendingdata_state		2						
+ANR	305	Symbol	req . cmd		2						
+ANR	306	Symbol	sd -> state		2						
+ANR	307	Symbol	sd -> data_start		2						
+ANR	308	Symbol	sd_illegal		2						
+ANR	309	Symbol	sd_r3		2						
+ANR	310	Symbol	stderr		2						
+ANR	311	Symbol	sd_ready_state		2						
+ANR	312	Symbol	sd_r1		2						
+ANR	313	Symbol	sd -> sd_status		2						
+ANR	314	Symbol	* sd -> data		2						
+ANR	315	Symbol	* * sd		2						
+ANR	316	Symbol	sd -> data		2						

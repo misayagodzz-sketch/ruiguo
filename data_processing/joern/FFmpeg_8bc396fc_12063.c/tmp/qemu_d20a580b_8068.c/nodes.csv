@@ -1,0 +1,115 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	7099	File	tmp/qemu_d20a580b_8068.c								
+ANR	7100	Function	spice_update_buttons	1:0:0:696							
+ANR	7101	FunctionDef	"spice_update_buttons (QemuSpicePointer * pointer , int wheel , uint32_t button_mask)"		7100	0					
+ANR	7102	CompoundStatement		3:0:126:696	7100	0					
+ANR	7103	Statement	static	4:4:132:137	7100	0	True				
+ANR	7104	Statement	uint32_t	4:11:139:146	7100	1	True				
+ANR	7105	Statement	bmap	4:20:148:151	7100	2	True				
+ANR	7106	Statement	[	4:24:152:152	7100	3	True				
+ANR	7107	Statement	INPUT_BUTTON__MAX	4:25:153:169	7100	4	True				
+ANR	7108	Statement	]	4:42:170:170	7100	5	True				
+ANR	7109	Statement	=	4:44:172:172	7100	6	True				
+ANR	7110	CompoundStatement		2:46:47:47	7100	7					
+ANR	7111	Statement	[	5:8:184:184	7100	0	True				
+ANR	7112	Statement	INPUT_BUTTON_LEFT	5:9:185:201	7100	1	True				
+ANR	7113	Statement	]	5:26:202:202	7100	2	True				
+ANR	7114	Statement	=	5:35:211:211	7100	3	True				
+ANR	7115	Statement	0x01	5:37:213:216	7100	4	True				
+ANR	7116	Statement	","	5:41:217:217	7100	5	True				
+ANR	7117	Statement	[	6:8:227:227	7100	6	True				
+ANR	7118	Statement	INPUT_BUTTON_MIDDLE	6:9:228:246	7100	7	True				
+ANR	7119	Statement	]	6:28:247:247	7100	8	True				
+ANR	7120	Statement	=	6:35:254:254	7100	9	True				
+ANR	7121	Statement	0x04	6:37:256:259	7100	10	True				
+ANR	7122	Statement	","	6:41:260:260	7100	11	True				
+ANR	7123	Statement	[	7:8:270:270	7100	12	True				
+ANR	7124	Statement	INPUT_BUTTON_RIGHT	7:9:271:288	7100	13	True				
+ANR	7125	Statement	]	7:27:289:289	7100	14	True				
+ANR	7126	Statement	=	7:35:297:297	7100	15	True				
+ANR	7127	Statement	0x02	7:37:299:302	7100	16	True				
+ANR	7128	Statement	","	7:41:303:303	7100	17	True				
+ANR	7129	Statement	[	8:8:313:313	7100	18	True				
+ANR	7130	Statement	INPUT_BUTTON_WHEEL_UP	8:9:314:334	7100	19	True				
+ANR	7131	Statement	]	8:30:335:335	7100	20	True				
+ANR	7132	Statement	=	8:35:340:340	7100	21	True				
+ANR	7133	Statement	0x10	8:37:342:345	7100	22	True				
+ANR	7134	Statement	","	8:41:346:346	7100	23	True				
+ANR	7135	Statement	[	9:8:356:356	7100	24	True				
+ANR	7136	Statement	INPUT_BUTTON_WHEEL_DOWN	9:9:357:379	7100	25	True				
+ANR	7137	Statement	]	9:32:380:380	7100	26	True				
+ANR	7138	Statement	=	9:35:383:383	7100	27	True				
+ANR	7139	Statement	0x20	9:37:385:388	7100	28	True				
+ANR	7140	Statement	","	9:41:389:389	7100	29	True				
+ANR	7141	ExpressionStatement		10:5:396:396	7100	8	True				
+ANR	7142	IfStatement	if ( wheel < 0 )		7100	9					
+ANR	7143	Condition	wheel < 0	12:8:407:415	7100	0	True				
+ANR	7144	RelationalExpression	wheel < 0		7100	0		<			
+ANR	7145	Identifier	wheel		7100	0					
+ANR	7146	PrimaryExpression	0		7100	1					
+ANR	7147	CompoundStatement		10:19:291:291	7100	1					
+ANR	7148	ExpressionStatement	button_mask |= 0x10	13:8:428:447	7100	0	True				
+ANR	7149	AssignmentExpression	button_mask |= 0x10		7100	0		|=			
+ANR	7150	Identifier	button_mask		7100	0					
+ANR	7151	PrimaryExpression	0x10		7100	1					
+ANR	7152	IfStatement	if ( wheel > 0 )		7100	10					
+ANR	7153	Condition	wheel > 0	15:8:463:471	7100	0	True				
+ANR	7154	RelationalExpression	wheel > 0		7100	0		>			
+ANR	7155	Identifier	wheel		7100	0					
+ANR	7156	PrimaryExpression	0		7100	1					
+ANR	7157	CompoundStatement		13:19:347:347	7100	1					
+ANR	7158	ExpressionStatement	button_mask |= 0x20	16:8:484:503	7100	0	True				
+ANR	7159	AssignmentExpression	button_mask |= 0x20		7100	0		|=			
+ANR	7160	Identifier	button_mask		7100	0					
+ANR	7161	PrimaryExpression	0x20		7100	1					
+ANR	7162	IfStatement	if ( pointer -> last_bmask == button_mask )		7100	11					
+ANR	7163	Condition	pointer -> last_bmask == button_mask	19:8:520:553	7100	0	True				
+ANR	7164	EqualityExpression	pointer -> last_bmask == button_mask		7100	0		==			
+ANR	7165	PtrMemberAccess	pointer -> last_bmask		7100	0					
+ANR	7166	Identifier	pointer		7100	0					
+ANR	7167	Identifier	last_bmask		7100	1					
+ANR	7168	Identifier	button_mask		7100	1					
+ANR	7169	CompoundStatement		17:44:429:429	7100	1					
+ANR	7170	ReturnStatement	return ;	20:8:566:572	7100	0	True				
+ANR	7171	ExpressionStatement	"qemu_input_update_buttons ( NULL , bmap , pointer -> last_bmask , button_mask )"	22:4:584:655	7100	12	True				
+ANR	7172	CallExpression	"qemu_input_update_buttons ( NULL , bmap , pointer -> last_bmask , button_mask )"		7100	0					
+ANR	7173	Callee	qemu_input_update_buttons		7100	0					
+ANR	7174	Identifier	qemu_input_update_buttons		7100	0					
+ANR	7175	ArgumentList	NULL		7100	1					
+ANR	7176	Argument	NULL		7100	0					
+ANR	7177	Identifier	NULL		7100	0					
+ANR	7178	Argument	bmap		7100	1					
+ANR	7179	Identifier	bmap		7100	0					
+ANR	7180	Argument	pointer -> last_bmask		7100	2					
+ANR	7181	PtrMemberAccess	pointer -> last_bmask		7100	0					
+ANR	7182	Identifier	pointer		7100	0					
+ANR	7183	Identifier	last_bmask		7100	1					
+ANR	7184	Argument	button_mask		7100	3					
+ANR	7185	Identifier	button_mask		7100	0					
+ANR	7186	ExpressionStatement	pointer -> last_bmask = button_mask	23:4:661:694	7100	13	True				
+ANR	7187	AssignmentExpression	pointer -> last_bmask = button_mask		7100	0		=			
+ANR	7188	PtrMemberAccess	pointer -> last_bmask		7100	0					
+ANR	7189	Identifier	pointer		7100	0					
+ANR	7190	Identifier	last_bmask		7100	1					
+ANR	7191	Identifier	button_mask		7100	1					
+ANR	7192	ReturnType	static void		7100	1					
+ANR	7193	Identifier	spice_update_buttons		7100	2					
+ANR	7194	ParameterList	"QemuSpicePointer * pointer , int wheel , uint32_t button_mask"		7100	3					
+ANR	7195	Parameter	QemuSpicePointer * pointer	1:33:33:57	7100	0	True				
+ANR	7196	ParameterType	QemuSpicePointer *		7100	0					
+ANR	7197	Identifier	pointer		7100	1					
+ANR	7198	Parameter	int wheel	2:33:93:101	7100	1	True				
+ANR	7199	ParameterType	int		7100	0					
+ANR	7200	Identifier	wheel		7100	1					
+ANR	7201	Parameter	uint32_t button_mask	2:44:104:123	7100	2	True				
+ANR	7202	ParameterType	uint32_t		7100	0					
+ANR	7203	Identifier	button_mask		7100	1					
+ANR	7204	CFGEntryNode	ENTRY		7100		True				
+ANR	7205	CFGExitNode	EXIT		7100		True				
+ANR	7206	Symbol	pointer		7100						
+ANR	7207	Symbol	NULL		7100						
+ANR	7208	Symbol	bmap		7100						
+ANR	7209	Symbol	wheel		7100						
+ANR	7210	Symbol	button_mask		7100						
+ANR	7211	Symbol	* pointer		7100						
+ANR	7212	Symbol	pointer -> last_bmask		7100						

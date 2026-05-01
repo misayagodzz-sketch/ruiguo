@@ -1,0 +1,195 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	195	File	tmp/qemu_96165b9e_9578.c								
+ANR	196	Function	gdbserver_open	1:0:0:681							
+ANR	197	FunctionDef	gdbserver_open (int port)		196	0					
+ANR	198	CompoundStatement		2:0:36:681	196	0					
+ANR	199	IdentifierDeclStatement	struct sockaddr_in sockaddr ;	3:4:42:69	196	0	True				
+ANR	200	IdentifierDecl	sockaddr		196	0					
+ANR	201	IdentifierDeclType	struct sockaddr_in		196	0					
+ANR	202	Identifier	sockaddr		196	1					
+ANR	203	IdentifierDeclStatement	"int fd , ret ;"	4:4:75:86	196	1	True				
+ANR	204	IdentifierDecl	fd		196	0					
+ANR	205	IdentifierDeclType	int		196	0					
+ANR	206	Identifier	fd		196	1					
+ANR	207	IdentifierDecl	ret		196	1					
+ANR	208	IdentifierDeclType	int		196	0					
+ANR	209	Identifier	ret		196	1					
+ANR	210	ExpressionStatement	"fd = socket ( PF_INET , SOCK_STREAM , 0 )"	6:4:93:129	196	2	True				
+ANR	211	AssignmentExpression	"fd = socket ( PF_INET , SOCK_STREAM , 0 )"		196	0		=			
+ANR	212	Identifier	fd		196	0					
+ANR	213	CallExpression	"socket ( PF_INET , SOCK_STREAM , 0 )"		196	1					
+ANR	214	Callee	socket		196	0					
+ANR	215	Identifier	socket		196	0					
+ANR	216	ArgumentList	PF_INET		196	1					
+ANR	217	Argument	PF_INET		196	0					
+ANR	218	Identifier	PF_INET		196	0					
+ANR	219	Argument	SOCK_STREAM		196	1					
+ANR	220	Identifier	SOCK_STREAM		196	0					
+ANR	221	Argument	0		196	2					
+ANR	222	PrimaryExpression	0		196	0					
+ANR	223	IfStatement	if ( fd < 0 )		196	3					
+ANR	224	Condition	fd < 0	7:8:139:144	196	0	True				
+ANR	225	RelationalExpression	fd < 0		196	0		<			
+ANR	226	Identifier	fd		196	0					
+ANR	227	PrimaryExpression	0		196	1					
+ANR	228	CompoundStatement		6:16:110:110	196	1					
+ANR	229	ExpressionStatement	"perror ( ""socket"" )"	8:8:157:173	196	0	True				
+ANR	230	CallExpression	"perror ( ""socket"" )"		196	0					
+ANR	231	Callee	perror		196	0					
+ANR	232	Identifier	perror		196	0					
+ANR	233	ArgumentList	"""socket"""		196	1					
+ANR	234	Argument	"""socket"""		196	0					
+ANR	235	PrimaryExpression	"""socket"""		196	0					
+ANR	236	ReturnStatement	return - 1 ;	9:8:183:192	196	1	True				
+ANR	237	UnaryOperationExpression	- 1		196	0					
+ANR	238	UnaryOperator	-		196	0					
+ANR	239	PrimaryExpression	1		196	1					
+ANR	240	ExpressionStatement	"fcntl ( fd , F_SETFD , FD_CLOEXEC )"	12:4:219:249	196	4	True				
+ANR	241	CallExpression	"fcntl ( fd , F_SETFD , FD_CLOEXEC )"		196	0					
+ANR	242	Callee	fcntl		196	0					
+ANR	243	Identifier	fcntl		196	0					
+ANR	244	ArgumentList	fd		196	1					
+ANR	245	Argument	fd		196	0					
+ANR	246	Identifier	fd		196	0					
+ANR	247	Argument	F_SETFD		196	1					
+ANR	248	Identifier	F_SETFD		196	0					
+ANR	249	Argument	FD_CLOEXEC		196	2					
+ANR	250	Identifier	FD_CLOEXEC		196	0					
+ANR	251	ExpressionStatement	socket_set_fast_reuse ( fd )	15:4:263:288	196	5	True				
+ANR	252	CallExpression	socket_set_fast_reuse ( fd )		196	0					
+ANR	253	Callee	socket_set_fast_reuse		196	0					
+ANR	254	Identifier	socket_set_fast_reuse		196	0					
+ANR	255	ArgumentList	fd		196	1					
+ANR	256	Argument	fd		196	0					
+ANR	257	Identifier	fd		196	0					
+ANR	258	ExpressionStatement	sockaddr . sin_family = AF_INET	17:4:295:324	196	6	True				
+ANR	259	AssignmentExpression	sockaddr . sin_family = AF_INET		196	0		=			
+ANR	260	MemberAccess	sockaddr . sin_family		196	0					
+ANR	261	Identifier	sockaddr		196	0					
+ANR	262	Identifier	sin_family		196	1					
+ANR	263	Identifier	AF_INET		196	1					
+ANR	264	ExpressionStatement	sockaddr . sin_port = htons ( port )	18:4:330:361	196	7	True				
+ANR	265	AssignmentExpression	sockaddr . sin_port = htons ( port )		196	0		=			
+ANR	266	MemberAccess	sockaddr . sin_port		196	0					
+ANR	267	Identifier	sockaddr		196	0					
+ANR	268	Identifier	sin_port		196	1					
+ANR	269	CallExpression	htons ( port )		196	1					
+ANR	270	Callee	htons		196	0					
+ANR	271	Identifier	htons		196	0					
+ANR	272	ArgumentList	port		196	1					
+ANR	273	Argument	port		196	0					
+ANR	274	Identifier	port		196	0					
+ANR	275	ExpressionStatement	sockaddr . sin_addr . s_addr = 0	19:4:367:395	196	8	True				
+ANR	276	AssignmentExpression	sockaddr . sin_addr . s_addr = 0		196	0		=			
+ANR	277	MemberAccess	sockaddr . sin_addr . s_addr		196	0					
+ANR	278	MemberAccess	sockaddr . sin_addr		196	0					
+ANR	279	Identifier	sockaddr		196	0					
+ANR	280	Identifier	sin_addr		196	1					
+ANR	281	Identifier	s_addr		196	1					
+ANR	282	PrimaryExpression	0		196	1					
+ANR	283	ExpressionStatement	"ret = bind ( fd , ( struct sockaddr * ) & sockaddr , sizeof ( sockaddr ) )"	20:4:401:463	196	9	True				
+ANR	284	AssignmentExpression	"ret = bind ( fd , ( struct sockaddr * ) & sockaddr , sizeof ( sockaddr ) )"		196	0		=			
+ANR	285	Identifier	ret		196	0					
+ANR	286	CallExpression	"bind ( fd , ( struct sockaddr * ) & sockaddr , sizeof ( sockaddr ) )"		196	1					
+ANR	287	Callee	bind		196	0					
+ANR	288	Identifier	bind		196	0					
+ANR	289	ArgumentList	fd		196	1					
+ANR	290	Argument	fd		196	0					
+ANR	291	Identifier	fd		196	0					
+ANR	292	Argument	( struct sockaddr * ) & sockaddr		196	1					
+ANR	293	CastExpression	( struct sockaddr * ) & sockaddr		196	0					
+ANR	294	CastTarget	struct sockaddr *		196	0					
+ANR	295	UnaryOperationExpression	& sockaddr		196	1					
+ANR	296	UnaryOperator	&		196	0					
+ANR	297	Identifier	sockaddr		196	1					
+ANR	298	Argument	sizeof ( sockaddr )		196	2					
+ANR	299	SizeofExpression	sizeof ( sockaddr )		196	0					
+ANR	300	Sizeof	sizeof		196	0					
+ANR	301	SizeofOperand	sockaddr		196	1					
+ANR	302	IfStatement	if ( ret < 0 )		196	10					
+ANR	303	Condition	ret < 0	21:8:473:479	196	0	True				
+ANR	304	RelationalExpression	ret < 0		196	0		<			
+ANR	305	Identifier	ret		196	0					
+ANR	306	PrimaryExpression	0		196	1					
+ANR	307	CompoundStatement		20:17:445:445	196	1					
+ANR	308	ExpressionStatement	"perror ( ""bind"" )"	22:8:492:506	196	0	True				
+ANR	309	CallExpression	"perror ( ""bind"" )"		196	0					
+ANR	310	Callee	perror		196	0					
+ANR	311	Identifier	perror		196	0					
+ANR	312	ArgumentList	"""bind"""		196	1					
+ANR	313	Argument	"""bind"""		196	0					
+ANR	314	PrimaryExpression	"""bind"""		196	0					
+ANR	315	ExpressionStatement	close ( fd )	23:8:516:525	196	1	True				
+ANR	316	CallExpression	close ( fd )		196	0					
+ANR	317	Callee	close		196	0					
+ANR	318	Identifier	close		196	0					
+ANR	319	ArgumentList	fd		196	1					
+ANR	320	Argument	fd		196	0					
+ANR	321	Identifier	fd		196	0					
+ANR	322	ReturnStatement	return - 1 ;	24:8:535:544	196	2	True				
+ANR	323	UnaryOperationExpression	- 1		196	0					
+ANR	324	UnaryOperator	-		196	0					
+ANR	325	PrimaryExpression	1		196	1					
+ANR	326	ExpressionStatement	"ret = listen ( fd , 0 )"	26:4:556:575	196	11	True				
+ANR	327	AssignmentExpression	"ret = listen ( fd , 0 )"		196	0		=			
+ANR	328	Identifier	ret		196	0					
+ANR	329	CallExpression	"listen ( fd , 0 )"		196	1					
+ANR	330	Callee	listen		196	0					
+ANR	331	Identifier	listen		196	0					
+ANR	332	ArgumentList	fd		196	1					
+ANR	333	Argument	fd		196	0					
+ANR	334	Identifier	fd		196	0					
+ANR	335	Argument	0		196	1					
+ANR	336	PrimaryExpression	0		196	0					
+ANR	337	IfStatement	if ( ret < 0 )		196	12					
+ANR	338	Condition	ret < 0	27:8:585:591	196	0	True				
+ANR	339	RelationalExpression	ret < 0		196	0		<			
+ANR	340	Identifier	ret		196	0					
+ANR	341	PrimaryExpression	0		196	1					
+ANR	342	CompoundStatement		26:17:557:557	196	1					
+ANR	343	ExpressionStatement	"perror ( ""listen"" )"	28:8:604:620	196	0	True				
+ANR	344	CallExpression	"perror ( ""listen"" )"		196	0					
+ANR	345	Callee	perror		196	0					
+ANR	346	Identifier	perror		196	0					
+ANR	347	ArgumentList	"""listen"""		196	1					
+ANR	348	Argument	"""listen"""		196	0					
+ANR	349	PrimaryExpression	"""listen"""		196	0					
+ANR	350	ExpressionStatement	close ( fd )	29:8:630:639	196	1	True				
+ANR	351	CallExpression	close ( fd )		196	0					
+ANR	352	Callee	close		196	0					
+ANR	353	Identifier	close		196	0					
+ANR	354	ArgumentList	fd		196	1					
+ANR	355	Argument	fd		196	0					
+ANR	356	Identifier	fd		196	0					
+ANR	357	ReturnStatement	return - 1 ;	30:8:649:658	196	2	True				
+ANR	358	UnaryOperationExpression	- 1		196	0					
+ANR	359	UnaryOperator	-		196	0					
+ANR	360	PrimaryExpression	1		196	1					
+ANR	361	ReturnStatement	return fd ;	32:4:670:679	196	13	True				
+ANR	362	Identifier	fd		196	0					
+ANR	363	ReturnType	static int		196	1					
+ANR	364	Identifier	gdbserver_open		196	2					
+ANR	365	ParameterList	int port		196	3					
+ANR	366	Parameter	int port	1:26:26:33	196	0	True				
+ANR	367	ParameterType	int		196	0					
+ANR	368	Identifier	port		196	1					
+ANR	369	CFGEntryNode	ENTRY		196		True				
+ANR	370	CFGExitNode	EXIT		196		True				
+ANR	371	Symbol	ret		196						
+ANR	372	Symbol	sockaddr . sin_family		196						
+ANR	373	Symbol	F_SETFD		196						
+ANR	374	Symbol	htons		196						
+ANR	375	Symbol	sockaddr		196						
+ANR	376	Symbol	FD_CLOEXEC		196						
+ANR	377	Symbol	AF_INET		196						
+ANR	378	Symbol	listen		196						
+ANR	379	Symbol	sockaddr . sin_port		196						
+ANR	380	Symbol	sockaddr . sin_addr . s_addr		196						
+ANR	381	Symbol	SOCK_STREAM		196						
+ANR	382	Symbol	bind		196						
+ANR	383	Symbol	port		196						
+ANR	384	Symbol	sockaddr . sin_addr		196						
+ANR	385	Symbol	socket		196						
+ANR	386	Symbol	fd		196						
+ANR	387	Symbol	PF_INET		196						
+ANR	388	Symbol	& sockaddr		196						

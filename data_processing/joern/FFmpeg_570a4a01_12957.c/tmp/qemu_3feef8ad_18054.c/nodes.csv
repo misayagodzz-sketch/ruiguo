@@ -1,0 +1,189 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	3776	File	tmp/qemu_3feef8ad_18054.c								
+ANR	3777	Function	h_get_term_char	1:0:0:686							
+ANR	3778	FunctionDef	"h_get_term_char (CPUState * env , sPAPREnvironment * spapr , target_ulong opcode , target_ulong * args)"		3777	0					
+ANR	3779	CompoundStatement		3:0:153:686	3777	0					
+ANR	3780	IdentifierDeclStatement	target_ulong reg = args [ 0 ] ;	4:4:159:185	3777	0	True				
+ANR	3781	IdentifierDecl	reg = args [ 0 ]		3777	0					
+ANR	3782	IdentifierDeclType	target_ulong		3777	0					
+ANR	3783	Identifier	reg		3777	1					
+ANR	3784	AssignmentExpression	reg = args [ 0 ]		3777	2		=			
+ANR	3785	Identifier	reg		3777	0					
+ANR	3786	ArrayIndexing	args [ 0 ]		3777	1					
+ANR	3787	Identifier	args		3777	0					
+ANR	3788	PrimaryExpression	0		3777	1					
+ANR	3789	IdentifierDeclStatement	target_ulong * len = args + 0 ;	5:4:191:219	3777	1	True				
+ANR	3790	IdentifierDecl	* len = args + 0		3777	0					
+ANR	3791	IdentifierDeclType	target_ulong *		3777	0					
+ANR	3792	Identifier	len		3777	1					
+ANR	3793	AssignmentExpression	* len = args + 0		3777	2		=			
+ANR	3794	Identifier	len		3777	0					
+ANR	3795	AdditiveExpression	args + 0		3777	1		+			
+ANR	3796	Identifier	args		3777	0					
+ANR	3797	PrimaryExpression	0		3777	1					
+ANR	3798	IdentifierDeclStatement	target_ulong * char0_7 = args + 1 ;	6:4:225:257	3777	2	True				
+ANR	3799	IdentifierDecl	* char0_7 = args + 1		3777	0					
+ANR	3800	IdentifierDeclType	target_ulong *		3777	0					
+ANR	3801	Identifier	char0_7		3777	1					
+ANR	3802	AssignmentExpression	* char0_7 = args + 1		3777	2		=			
+ANR	3803	Identifier	char0_7		3777	0					
+ANR	3804	AdditiveExpression	args + 1		3777	1		+			
+ANR	3805	Identifier	args		3777	0					
+ANR	3806	PrimaryExpression	1		3777	1					
+ANR	3807	IdentifierDeclStatement	target_ulong * char8_15 = args + 2 ;	7:4:263:296	3777	3	True				
+ANR	3808	IdentifierDecl	* char8_15 = args + 2		3777	0					
+ANR	3809	IdentifierDeclType	target_ulong *		3777	0					
+ANR	3810	Identifier	char8_15		3777	1					
+ANR	3811	AssignmentExpression	* char8_15 = args + 2		3777	2		=			
+ANR	3812	Identifier	char8_15		3777	0					
+ANR	3813	AdditiveExpression	args + 2		3777	1		+			
+ANR	3814	Identifier	args		3777	0					
+ANR	3815	PrimaryExpression	2		3777	1					
+ANR	3816	IdentifierDeclStatement	"VIOsPAPRDevice * sdev = spapr_vio_find_by_reg ( spapr -> vio_bus , reg ) ;"	8:4:302:367	3777	4	True				
+ANR	3817	IdentifierDecl	"* sdev = spapr_vio_find_by_reg ( spapr -> vio_bus , reg )"		3777	0					
+ANR	3818	IdentifierDeclType	VIOsPAPRDevice *		3777	0					
+ANR	3819	Identifier	sdev		3777	1					
+ANR	3820	AssignmentExpression	"* sdev = spapr_vio_find_by_reg ( spapr -> vio_bus , reg )"		3777	2		=			
+ANR	3821	Identifier	sdev		3777	0					
+ANR	3822	CallExpression	"spapr_vio_find_by_reg ( spapr -> vio_bus , reg )"		3777	1					
+ANR	3823	Callee	spapr_vio_find_by_reg		3777	0					
+ANR	3824	Identifier	spapr_vio_find_by_reg		3777	0					
+ANR	3825	ArgumentList	spapr -> vio_bus		3777	1					
+ANR	3826	Argument	spapr -> vio_bus		3777	0					
+ANR	3827	PtrMemberAccess	spapr -> vio_bus		3777	0					
+ANR	3828	Identifier	spapr		3777	0					
+ANR	3829	Identifier	vio_bus		3777	1					
+ANR	3830	Argument	reg		3777	1					
+ANR	3831	Identifier	reg		3777	0					
+ANR	3832	IdentifierDeclStatement	uint8_t buf [ 16 ] ;	9:4:373:388	3777	5	True				
+ANR	3833	IdentifierDecl	buf [ 16 ]		3777	0					
+ANR	3834	IdentifierDeclType	uint8_t [ 16 ]		3777	0					
+ANR	3835	Identifier	buf		3777	1					
+ANR	3836	PrimaryExpression	16		3777	2					
+ANR	3837	IfStatement	if ( ! sdev )		3777	6					
+ANR	3838	Condition	! sdev	11:8:399:403	3777	0	True				
+ANR	3839	UnaryOperationExpression	! sdev		3777	0					
+ANR	3840	UnaryOperator	!		3777	0					
+ANR	3841	Identifier	sdev		3777	1					
+ANR	3842	CompoundStatement		9:15:252:252	3777	1					
+ANR	3843	ReturnStatement	return H_PARAMETER ;	12:8:416:434	3777	0	True				
+ANR	3844	Identifier	H_PARAMETER		3777	0					
+ANR	3845	ExpressionStatement	"* len = vty_getchars ( sdev , buf , sizeof ( buf ) )"	15:4:447:490	3777	7	True				
+ANR	3846	AssignmentExpression	"* len = vty_getchars ( sdev , buf , sizeof ( buf ) )"		3777	0		=			
+ANR	3847	UnaryOperationExpression	* len		3777	0					
+ANR	3848	UnaryOperator	*		3777	0					
+ANR	3849	Identifier	len		3777	1					
+ANR	3850	CallExpression	"vty_getchars ( sdev , buf , sizeof ( buf ) )"		3777	1					
+ANR	3851	Callee	vty_getchars		3777	0					
+ANR	3852	Identifier	vty_getchars		3777	0					
+ANR	3853	ArgumentList	sdev		3777	1					
+ANR	3854	Argument	sdev		3777	0					
+ANR	3855	Identifier	sdev		3777	0					
+ANR	3856	Argument	buf		3777	1					
+ANR	3857	Identifier	buf		3777	0					
+ANR	3858	Argument	sizeof ( buf )		3777	2					
+ANR	3859	SizeofExpression	sizeof ( buf )		3777	0					
+ANR	3860	Sizeof	sizeof		3777	0					
+ANR	3861	SizeofOperand	buf		3777	1					
+ANR	3862	IfStatement	if ( * len < 16 )		3777	8					
+ANR	3863	Condition	* len < 16	16:8:500:508	3777	0	True				
+ANR	3864	RelationalExpression	* len < 16		3777	0		<			
+ANR	3865	UnaryOperationExpression	* len		3777	0					
+ANR	3866	UnaryOperator	*		3777	0					
+ANR	3867	Identifier	len		3777	1					
+ANR	3868	PrimaryExpression	16		3777	1					
+ANR	3869	CompoundStatement		14:19:357:357	3777	1					
+ANR	3870	ExpressionStatement	"memset ( buf + * len , 0 , 16 - * len )"	17:8:521:553	3777	0	True				
+ANR	3871	CallExpression	"memset ( buf + * len , 0 , 16 - * len )"		3777	0					
+ANR	3872	Callee	memset		3777	0					
+ANR	3873	Identifier	memset		3777	0					
+ANR	3874	ArgumentList	buf + * len		3777	1					
+ANR	3875	Argument	buf + * len		3777	0					
+ANR	3876	AdditiveExpression	buf + * len		3777	0		+			
+ANR	3877	Identifier	buf		3777	0					
+ANR	3878	UnaryOperationExpression	* len		3777	1					
+ANR	3879	UnaryOperator	*		3777	0					
+ANR	3880	Identifier	len		3777	1					
+ANR	3881	Argument	0		3777	1					
+ANR	3882	PrimaryExpression	0		3777	0					
+ANR	3883	Argument	16 - * len		3777	2					
+ANR	3884	AdditiveExpression	16 - * len		3777	0		-			
+ANR	3885	PrimaryExpression	16		3777	0					
+ANR	3886	UnaryOperationExpression	* len		3777	1					
+ANR	3887	UnaryOperator	*		3777	0					
+ANR	3888	Identifier	len		3777	1					
+ANR	3889	ExpressionStatement	* char0_7 = be64_to_cpu ( * ( ( uint64_t * ) buf ) )	20:4:566:608	3777	9	True				
+ANR	3890	AssignmentExpression	* char0_7 = be64_to_cpu ( * ( ( uint64_t * ) buf ) )		3777	0		=			
+ANR	3891	UnaryOperationExpression	* char0_7		3777	0					
+ANR	3892	UnaryOperator	*		3777	0					
+ANR	3893	Identifier	char0_7		3777	1					
+ANR	3894	CallExpression	be64_to_cpu ( * ( ( uint64_t * ) buf ) )		3777	1					
+ANR	3895	Callee	be64_to_cpu		3777	0					
+ANR	3896	Identifier	be64_to_cpu		3777	0					
+ANR	3897	ArgumentList	* ( ( uint64_t * ) buf )		3777	1					
+ANR	3898	Argument	* ( ( uint64_t * ) buf )		3777	0					
+ANR	3899	UnaryOperationExpression	* ( ( uint64_t * ) buf )		3777	0					
+ANR	3900	UnaryOperator	*		3777	0					
+ANR	3901	CastExpression	( uint64_t * ) buf		3777	1					
+ANR	3902	CastTarget	uint64_t *		3777	0					
+ANR	3903	Identifier	buf		3777	1					
+ANR	3904	ExpressionStatement	* char8_15 = be64_to_cpu ( * ( ( uint64_t * ) buf + 1 ) )	21:4:614:661	3777	10	True				
+ANR	3905	AssignmentExpression	* char8_15 = be64_to_cpu ( * ( ( uint64_t * ) buf + 1 ) )		3777	0		=			
+ANR	3906	UnaryOperationExpression	* char8_15		3777	0					
+ANR	3907	UnaryOperator	*		3777	0					
+ANR	3908	Identifier	char8_15		3777	1					
+ANR	3909	CallExpression	be64_to_cpu ( * ( ( uint64_t * ) buf + 1 ) )		3777	1					
+ANR	3910	Callee	be64_to_cpu		3777	0					
+ANR	3911	Identifier	be64_to_cpu		3777	0					
+ANR	3912	ArgumentList	* ( ( uint64_t * ) buf + 1 )		3777	1					
+ANR	3913	Argument	* ( ( uint64_t * ) buf + 1 )		3777	0					
+ANR	3914	UnaryOperationExpression	* ( ( uint64_t * ) buf + 1 )		3777	0					
+ANR	3915	UnaryOperator	*		3777	0					
+ANR	3916	AdditiveExpression	( uint64_t * ) buf + 1		3777	1		+			
+ANR	3917	CastExpression	( uint64_t * ) buf		3777	0					
+ANR	3918	CastTarget	uint64_t *		3777	0					
+ANR	3919	Identifier	buf		3777	1					
+ANR	3920	PrimaryExpression	1		3777	1					
+ANR	3921	ReturnStatement	return H_SUCCESS ;	23:4:668:684	3777	11	True				
+ANR	3922	Identifier	H_SUCCESS		3777	0					
+ANR	3923	ReturnType	static target_ulong		3777	1					
+ANR	3924	Identifier	h_get_term_char		3777	2					
+ANR	3925	ParameterList	"CPUState * env , sPAPREnvironment * spapr , target_ulong opcode , target_ulong * args"		3777	3					
+ANR	3926	Parameter	CPUState * env	1:36:36:48	3777	0	True				
+ANR	3927	ParameterType	CPUState *		3777	0					
+ANR	3928	Identifier	env		3777	1					
+ANR	3929	Parameter	sPAPREnvironment * spapr	1:51:51:73	3777	1	True				
+ANR	3930	ParameterType	sPAPREnvironment *		3777	0					
+ANR	3931	Identifier	spapr		3777	1					
+ANR	3932	Parameter	target_ulong opcode	2:36:112:130	3777	2	True				
+ANR	3933	ParameterType	target_ulong		3777	0					
+ANR	3934	Identifier	opcode		3777	1					
+ANR	3935	Parameter	target_ulong * args	2:57:133:150	3777	3	True				
+ANR	3936	ParameterType	target_ulong *		3777	0					
+ANR	3937	Identifier	args		3777	1					
+ANR	3938	CFGEntryNode	ENTRY		3777		True				
+ANR	3939	CFGExitNode	EXIT		3777		True				
+ANR	3940	Symbol	spapr -> vio_bus		3777						
+ANR	3941	Symbol	char8_15		3777						
+ANR	3942	Symbol	* buf		3777						
+ANR	3943	Symbol	H_SUCCESS		3777						
+ANR	3944	Symbol	vty_getchars		3777						
+ANR	3945	Symbol	spapr_vio_find_by_reg		3777						
+ANR	3946	Symbol	* char8_15		3777						
+ANR	3947	Symbol	env		3777						
+ANR	3948	Symbol	opcode		3777						
+ANR	3949	Symbol	spapr		3777						
+ANR	3950	Symbol	* args		3777						
+ANR	3951	Symbol	args		3777						
+ANR	3952	Symbol	* char0_7		3777						
+ANR	3953	Symbol	buf		3777						
+ANR	3954	Symbol	len		3777						
+ANR	3955	Symbol	reg		3777						
+ANR	3956	Symbol	* ( ( uint64_t * ) buf )		3777						
+ANR	3957	Symbol	sdev		3777						
+ANR	3958	Symbol	H_PARAMETER		3777						
+ANR	3959	Symbol	* ( ( uint64_t * ) buf + 1 )		3777						
+ANR	3960	Symbol	* spapr		3777						
+ANR	3961	Symbol	char0_7		3777						
+ANR	3962	Symbol	* len		3777						
+ANR	3963	Symbol	be64_to_cpu		3777						

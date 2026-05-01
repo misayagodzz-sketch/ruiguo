@@ -1,0 +1,64 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1067	File	tmp/qemu_537b41f5_2078.c								
+ANR	1068	Function	unix_socket_outgoing	1:0:0:239							
+ANR	1069	FunctionDef	unix_socket_outgoing (const char * path)		1068	0					
+ANR	1070	CompoundStatement		2:0:43:239	1068	0					
+ANR	1071	IdentifierDeclStatement	Error * local_err = NULL ;	3:4:49:72	1068	0	True				
+ANR	1072	IdentifierDecl	* local_err = NULL		1068	0					
+ANR	1073	IdentifierDeclType	Error *		1068	0					
+ANR	1074	Identifier	local_err		1068	1					
+ANR	1075	AssignmentExpression	* local_err = NULL		1068	2		=			
+ANR	1076	Identifier	NULL		1068	0					
+ANR	1077	Identifier	NULL		1068	1					
+ANR	1078	IdentifierDeclStatement	"int fd = unix_connect ( path , & local_err ) ;"	4:4:78:117	1068	1	True				
+ANR	1079	IdentifierDecl	"fd = unix_connect ( path , & local_err )"		1068	0					
+ANR	1080	IdentifierDeclType	int		1068	0					
+ANR	1081	Identifier	fd		1068	1					
+ANR	1082	AssignmentExpression	"fd = unix_connect ( path , & local_err )"		1068	2		=			
+ANR	1083	Identifier	fd		1068	0					
+ANR	1084	CallExpression	"unix_connect ( path , & local_err )"		1068	1					
+ANR	1085	Callee	unix_connect		1068	0					
+ANR	1086	Identifier	unix_connect		1068	0					
+ANR	1087	ArgumentList	path		1068	1					
+ANR	1088	Argument	path		1068	0					
+ANR	1089	Identifier	path		1068	0					
+ANR	1090	Argument	& local_err		1068	1					
+ANR	1091	UnaryOperationExpression	& local_err		1068	0					
+ANR	1092	UnaryOperator	&		1068	0					
+ANR	1093	Identifier	local_err		1068	1					
+ANR	1094	IfStatement	if ( local_err != NULL )		1068	2					
+ANR	1095	Condition	local_err != NULL	6:8:128:144	1068	0	True				
+ANR	1096	EqualityExpression	local_err != NULL		1068	0		!=			
+ANR	1097	Identifier	local_err		1068	0					
+ANR	1098	Identifier	NULL		1068	1					
+ANR	1099	CompoundStatement		5:27:103:103	1068	1					
+ANR	1100	ExpressionStatement	qerror_report_err ( local_err )	7:8:157:185	1068	0	True				
+ANR	1101	CallExpression	qerror_report_err ( local_err )		1068	0					
+ANR	1102	Callee	qerror_report_err		1068	0					
+ANR	1103	Identifier	qerror_report_err		1068	0					
+ANR	1104	ArgumentList	local_err		1068	1					
+ANR	1105	Argument	local_err		1068	0					
+ANR	1106	Identifier	local_err		1068	0					
+ANR	1107	ExpressionStatement	error_free ( local_err )	8:8:195:216	1068	1	True				
+ANR	1108	CallExpression	error_free ( local_err )		1068	0					
+ANR	1109	Callee	error_free		1068	0					
+ANR	1110	Identifier	error_free		1068	0					
+ANR	1111	ArgumentList	local_err		1068	1					
+ANR	1112	Argument	local_err		1068	0					
+ANR	1113	Identifier	local_err		1068	0					
+ANR	1114	ReturnStatement	return fd ;	10:4:228:237	1068	3	True				
+ANR	1115	Identifier	fd		1068	0					
+ANR	1116	ReturnType	int		1068	1					
+ANR	1117	Identifier	unix_socket_outgoing		1068	2					
+ANR	1118	ParameterList	const char * path		1068	3					
+ANR	1119	Parameter	const char * path	1:25:25:40	1068	0	True				
+ANR	1120	ParameterType	const char *		1068	0					
+ANR	1121	Identifier	path		1068	1					
+ANR	1122	CFGEntryNode	ENTRY		1068		True				
+ANR	1123	CFGExitNode	EXIT		1068		True				
+ANR	1124	Symbol	path		1068						
+ANR	1125	Symbol	NULL		1068						
+ANR	1126	Symbol	& local_err		1068						
+ANR	1127	Symbol	fd		1068						
+ANR	1128	Symbol	local_err		1068						
+ANR	1129	Symbol	unix_connect		1068						

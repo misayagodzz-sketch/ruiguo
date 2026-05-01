@@ -1,0 +1,77 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/qemu_72cf2d4f_19097.c								
+ANR	2	Function	qdev_free	1:0:0:305							
+ANR	3	FunctionDef	qdev_free (DeviceState * dev)		2	0					
+ANR	4	CompoundStatement		2:0:33:305	2	0					
+ANR	5	IfStatement	if ( dev -> info -> vmsd )		2	0					
+ANR	6	Condition	dev -> info -> vmsd	4:8:100:114	2	0	True				
+ANR	7	PtrMemberAccess	dev -> info -> vmsd		2	0					
+ANR	8	PtrMemberAccess	dev -> info		2	0					
+ANR	9	Identifier	dev		2	0					
+ANR	10	Identifier	info		2	1					
+ANR	11	Identifier	vmsd		2	1					
+ANR	12	ExpressionStatement	"vmstate_unregister ( dev -> info -> vmsd , dev )"	5:8:125:165	2	1	True				
+ANR	13	CallExpression	"vmstate_unregister ( dev -> info -> vmsd , dev )"		2	0					
+ANR	14	Callee	vmstate_unregister		2	0					
+ANR	15	Identifier	vmstate_unregister		2	0					
+ANR	16	ArgumentList	dev -> info -> vmsd		2	1					
+ANR	17	Argument	dev -> info -> vmsd		2	0					
+ANR	18	PtrMemberAccess	dev -> info -> vmsd		2	0					
+ANR	19	PtrMemberAccess	dev -> info		2	0					
+ANR	20	Identifier	dev		2	0					
+ANR	21	Identifier	info		2	1					
+ANR	22	Identifier	vmsd		2	1					
+ANR	23	Argument	dev		2	1					
+ANR	24	Identifier	dev		2	0					
+ANR	25	IfStatement	if ( dev -> info -> reset )		2	1					
+ANR	26	Condition	dev -> info -> reset	7:8:182:197	2	0	True				
+ANR	27	PtrMemberAccess	dev -> info -> reset		2	0					
+ANR	28	PtrMemberAccess	dev -> info		2	0					
+ANR	29	Identifier	dev		2	0					
+ANR	30	Identifier	info		2	1					
+ANR	31	Identifier	reset		2	1					
+ANR	32	ExpressionStatement	"qemu_unregister_reset ( dev -> info -> reset , dev )"	8:8:208:252	2	1	True				
+ANR	33	CallExpression	"qemu_unregister_reset ( dev -> info -> reset , dev )"		2	0					
+ANR	34	Callee	qemu_unregister_reset		2	0					
+ANR	35	Identifier	qemu_unregister_reset		2	0					
+ANR	36	ArgumentList	dev -> info -> reset		2	1					
+ANR	37	Argument	dev -> info -> reset		2	0					
+ANR	38	PtrMemberAccess	dev -> info -> reset		2	0					
+ANR	39	PtrMemberAccess	dev -> info		2	0					
+ANR	40	Identifier	dev		2	0					
+ANR	41	Identifier	info		2	1					
+ANR	42	Identifier	reset		2	1					
+ANR	43	Argument	dev		2	1					
+ANR	44	Identifier	dev		2	0					
+ANR	45	ExpressionStatement	"LIST_REMOVE ( dev , sibling )"	9:4:258:283	2	2	True				
+ANR	46	CallExpression	"LIST_REMOVE ( dev , sibling )"		2	0					
+ANR	47	Callee	LIST_REMOVE		2	0					
+ANR	48	Identifier	LIST_REMOVE		2	0					
+ANR	49	ArgumentList	dev		2	1					
+ANR	50	Argument	dev		2	0					
+ANR	51	Identifier	dev		2	0					
+ANR	52	Argument	sibling		2	1					
+ANR	53	Identifier	sibling		2	0					
+ANR	54	ExpressionStatement	qemu_free ( dev )	10:4:289:303	2	3	True				
+ANR	55	CallExpression	qemu_free ( dev )		2	0					
+ANR	56	Callee	qemu_free		2	0					
+ANR	57	Identifier	qemu_free		2	0					
+ANR	58	ArgumentList	dev		2	1					
+ANR	59	Argument	dev		2	0					
+ANR	60	Identifier	dev		2	0					
+ANR	61	ReturnType	void		2	1					
+ANR	62	Identifier	qdev_free		2	2					
+ANR	63	ParameterList	DeviceState * dev		2	3					
+ANR	64	Parameter	DeviceState * dev	1:15:15:30	2	0	True				
+ANR	65	ParameterType	DeviceState *		2	0					
+ANR	66	Identifier	dev		2	1					
+ANR	67	CFGEntryNode	ENTRY		2		True				
+ANR	68	CFGExitNode	EXIT		2		True				
+ANR	69	Symbol	* dev		2						
+ANR	70	Symbol	* dev -> info		2						
+ANR	71	Symbol	sibling		2						
+ANR	72	Symbol	dev		2						
+ANR	73	Symbol	dev -> info -> reset		2						
+ANR	74	Symbol	* * dev		2						
+ANR	75	Symbol	dev -> info -> vmsd		2						
+ANR	76	Symbol	dev -> info		2						

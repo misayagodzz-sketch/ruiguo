@@ -1,0 +1,622 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1199	File	tmp/qemu_a8170e5e_328.c								
+ANR	1200	Function	gic_dist_readb	1:0:0:3379							
+ANR	1201	FunctionDef	"gic_dist_readb (void * opaque , target_phys_addr_t offset)"		1200	0					
+ANR	1202	CompoundStatement		2:0:72:3379	1200	0					
+ANR	1203	IdentifierDeclStatement	GICState * s = ( GICState * ) opaque ;	3:4:78:110	1200	0	True				
+ANR	1204	IdentifierDecl	* s = ( GICState * ) opaque		1200	0					
+ANR	1205	IdentifierDeclType	GICState *		1200	0					
+ANR	1206	Identifier	s		1200	1					
+ANR	1207	AssignmentExpression	* s = ( GICState * ) opaque		1200	2		=			
+ANR	1208	Identifier	s		1200	0					
+ANR	1209	CastExpression	( GICState * ) opaque		1200	1					
+ANR	1210	CastTarget	GICState *		1200	0					
+ANR	1211	Identifier	opaque		1200	1					
+ANR	1212	IdentifierDeclStatement	uint32_t res ;	4:4:116:128	1200	1	True				
+ANR	1213	IdentifierDecl	res		1200	0					
+ANR	1214	IdentifierDeclType	uint32_t		1200	0					
+ANR	1215	Identifier	res		1200	1					
+ANR	1216	IdentifierDeclStatement	int irq ;	5:4:134:141	1200	2	True				
+ANR	1217	IdentifierDecl	irq		1200	0					
+ANR	1218	IdentifierDeclType	int		1200	0					
+ANR	1219	Identifier	irq		1200	1					
+ANR	1220	IdentifierDeclStatement	int i ;	6:4:147:152	1200	3	True				
+ANR	1221	IdentifierDecl	i		1200	0					
+ANR	1222	IdentifierDeclType	int		1200	0					
+ANR	1223	Identifier	i		1200	1					
+ANR	1224	IdentifierDeclStatement	int cpu ;	7:4:158:165	1200	4	True				
+ANR	1225	IdentifierDecl	cpu		1200	0					
+ANR	1226	IdentifierDeclType	int		1200	0					
+ANR	1227	Identifier	cpu		1200	1					
+ANR	1228	IdentifierDeclStatement	int cm ;	8:4:171:177	1200	5	True				
+ANR	1229	IdentifierDecl	cm		1200	0					
+ANR	1230	IdentifierDeclType	int		1200	0					
+ANR	1231	Identifier	cm		1200	1					
+ANR	1232	IdentifierDeclStatement	int mask ;	9:4:183:191	1200	6	True				
+ANR	1233	IdentifierDecl	mask		1200	0					
+ANR	1234	IdentifierDeclType	int		1200	0					
+ANR	1235	Identifier	mask		1200	1					
+ANR	1236	ExpressionStatement	cpu = gic_get_current_cpu ( s )	11:4:198:226	1200	7	True				
+ANR	1237	AssignmentExpression	cpu = gic_get_current_cpu ( s )		1200	0		=			
+ANR	1238	Identifier	cpu		1200	0					
+ANR	1239	CallExpression	gic_get_current_cpu ( s )		1200	1					
+ANR	1240	Callee	gic_get_current_cpu		1200	0					
+ANR	1241	Identifier	gic_get_current_cpu		1200	0					
+ANR	1242	ArgumentList	s		1200	1					
+ANR	1243	Argument	s		1200	0					
+ANR	1244	Identifier	s		1200	0					
+ANR	1245	ExpressionStatement	cm = 1 << cpu	12:4:232:245	1200	8	True				
+ANR	1246	AssignmentExpression	cm = 1 << cpu		1200	0		=			
+ANR	1247	Identifier	cm		1200	0					
+ANR	1248	ShiftExpression	1 << cpu		1200	1		<<			
+ANR	1249	PrimaryExpression	1		1200	0					
+ANR	1250	Identifier	cpu		1200	1					
+ANR	1251	IfStatement	if ( offset < 0x100 )		1200	9					
+ANR	1252	Condition	offset < 0x100	13:8:255:268	1200	0	True				
+ANR	1253	RelationalExpression	offset < 0x100		1200	0		<			
+ANR	1254	Identifier	offset		1200	0					
+ANR	1255	PrimaryExpression	0x100		1200	1					
+ANR	1256	CompoundStatement		12:24:198:198	1200	1					
+ANR	1257	IfStatement	if ( offset == 0 )		1200	0					
+ANR	1258	Condition	offset == 0	14:12:285:295	1200	0	True				
+ANR	1259	EqualityExpression	offset == 0		1200	0		==			
+ANR	1260	Identifier	offset		1200	0					
+ANR	1261	PrimaryExpression	0		1200	1					
+ANR	1262	ReturnStatement	return s -> enabled ;	15:12:310:327	1200	1	True				
+ANR	1263	PtrMemberAccess	s -> enabled		1200	0					
+ANR	1264	Identifier	s		1200	0					
+ANR	1265	Identifier	enabled		1200	1					
+ANR	1266	IfStatement	if ( offset == 4 )		1200	1					
+ANR	1267	Condition	offset == 4	16:12:341:351	1200	0	True				
+ANR	1268	EqualityExpression	offset == 4		1200	0		==			
+ANR	1269	Identifier	offset		1200	0					
+ANR	1270	PrimaryExpression	4		1200	1					
+ANR	1271	ReturnStatement	return ( ( s -> num_irq / 32 ) - 1 ) | ( ( NUM_CPU ( s ) - 1 ) << 5 ) ;	17:12:366:422	1200	1	True				
+ANR	1272	InclusiveOrExpression	( ( s -> num_irq / 32 ) - 1 ) | ( ( NUM_CPU ( s ) - 1 ) << 5 )		1200	0		|			
+ANR	1273	AdditiveExpression	( s -> num_irq / 32 ) - 1		1200	0		-			
+ANR	1274	MultiplicativeExpression	s -> num_irq / 32		1200	0		/			
+ANR	1275	PtrMemberAccess	s -> num_irq		1200	0					
+ANR	1276	Identifier	s		1200	0					
+ANR	1277	Identifier	num_irq		1200	1					
+ANR	1278	PrimaryExpression	32		1200	1					
+ANR	1279	PrimaryExpression	1		1200	1					
+ANR	1280	ShiftExpression	( NUM_CPU ( s ) - 1 ) << 5		1200	1		<<			
+ANR	1281	AdditiveExpression	NUM_CPU ( s ) - 1		1200	0		-			
+ANR	1282	CallExpression	NUM_CPU ( s )		1200	0					
+ANR	1283	Callee	NUM_CPU		1200	0					
+ANR	1284	Identifier	NUM_CPU		1200	0					
+ANR	1285	ArgumentList	s		1200	1					
+ANR	1286	Argument	s		1200	0					
+ANR	1287	Identifier	s		1200	0					
+ANR	1288	PrimaryExpression	1		1200	1					
+ANR	1289	PrimaryExpression	5		1200	1					
+ANR	1290	IfStatement	if ( offset < 0x08 )		1200	2					
+ANR	1291	Condition	offset < 0x08	18:12:436:448	1200	0	True				
+ANR	1292	RelationalExpression	offset < 0x08		1200	0		<			
+ANR	1293	Identifier	offset		1200	0					
+ANR	1294	PrimaryExpression	0x08		1200	1					
+ANR	1295	ReturnStatement	return 0 ;	19:12:463:471	1200	1	True				
+ANR	1296	PrimaryExpression	0		1200	0					
+ANR	1297	IfStatement	if ( offset >= 0x80 )		1200	3					
+ANR	1298	Condition	offset >= 0x80	20:12:485:498	1200	0	True				
+ANR	1299	RelationalExpression	offset >= 0x80		1200	0		>=			
+ANR	1300	Identifier	offset		1200	0					
+ANR	1301	PrimaryExpression	0x80		1200	1					
+ANR	1302	CompoundStatement		19:28:428:428	1200	1					
+ANR	1303	ReturnStatement	return 0 ;	22:12:561:569	1200	0	True				
+ANR	1304	PrimaryExpression	0		1200	0					
+ANR	1305	GotoStatement	goto bad_reg ;	24:8:589:601	1200	4	True				
+ANR	1306	Identifier	bad_reg		1200	0					
+ANR	1307	ElseStatement	else		1200	0					
+ANR	1308	IfStatement	if ( offset < 0x200 )		1200	0					
+ANR	1309	Condition	offset < 0x200	25:15:618:631	1200	0	True				
+ANR	1310	RelationalExpression	offset < 0x200		1200	0		<			
+ANR	1311	Identifier	offset		1200	0					
+ANR	1312	PrimaryExpression	0x200		1200	1					
+ANR	1313	CompoundStatement		24:31:561:561	1200	1					
+ANR	1314	IfStatement	if ( offset < 0x180 )		1200	0					
+ANR	1315	Condition	offset < 0x180	27:12:691:704	1200	0	True				
+ANR	1316	RelationalExpression	offset < 0x180		1200	0		<			
+ANR	1317	Identifier	offset		1200	0					
+ANR	1318	PrimaryExpression	0x180		1200	1					
+ANR	1319	ExpressionStatement	irq = ( offset - 0x100 ) * 8	28:12:719:745	1200	1	True				
+ANR	1320	AssignmentExpression	irq = ( offset - 0x100 ) * 8		1200	0		=			
+ANR	1321	Identifier	irq		1200	0					
+ANR	1322	MultiplicativeExpression	( offset - 0x100 ) * 8		1200	1		*			
+ANR	1323	AdditiveExpression	offset - 0x100		1200	0		-			
+ANR	1324	Identifier	offset		1200	0					
+ANR	1325	PrimaryExpression	0x100		1200	1					
+ANR	1326	PrimaryExpression	8		1200	1					
+ANR	1327	ElseStatement	else		1200	0					
+ANR	1328	ExpressionStatement	irq = ( offset - 0x180 ) * 8	30:12:772:798	1200	0	True				
+ANR	1329	AssignmentExpression	irq = ( offset - 0x180 ) * 8		1200	0		=			
+ANR	1330	Identifier	irq		1200	0					
+ANR	1331	MultiplicativeExpression	( offset - 0x180 ) * 8		1200	1		*			
+ANR	1332	AdditiveExpression	offset - 0x180		1200	0		-			
+ANR	1333	Identifier	offset		1200	0					
+ANR	1334	PrimaryExpression	0x180		1200	1					
+ANR	1335	PrimaryExpression	8		1200	1					
+ANR	1336	ExpressionStatement	irq += GIC_BASE_IRQ	31:8:808:827	1200	1	True				
+ANR	1337	AssignmentExpression	irq += GIC_BASE_IRQ		1200	0		+=			
+ANR	1338	Identifier	irq		1200	0					
+ANR	1339	Identifier	GIC_BASE_IRQ		1200	1					
+ANR	1340	IfStatement	if ( irq >= s -> num_irq )		1200	2					
+ANR	1341	Condition	irq >= s -> num_irq	32:12:841:857	1200	0	True				
+ANR	1342	RelationalExpression	irq >= s -> num_irq		1200	0		>=			
+ANR	1343	Identifier	irq		1200	0					
+ANR	1344	PtrMemberAccess	s -> num_irq		1200	1					
+ANR	1345	Identifier	s		1200	0					
+ANR	1346	Identifier	num_irq		1200	1					
+ANR	1347	GotoStatement	goto bad_reg ;	33:12:872:884	1200	1	True				
+ANR	1348	Identifier	bad_reg		1200	0					
+ANR	1349	ExpressionStatement	res = 0	34:8:894:901	1200	3	True				
+ANR	1350	AssignmentExpression	res = 0		1200	0		=			
+ANR	1351	Identifier	res		1200	0					
+ANR	1352	PrimaryExpression	0		1200	1					
+ANR	1353	ForStatement	for ( i = 0 ; i < 8 ; i ++ )		1200	4					
+ANR	1354	ForInit	i = 0 ;	35:13:916:921	1200	0	True				
+ANR	1355	AssignmentExpression	i = 0		1200	0		=			
+ANR	1356	Identifier	i		1200	0					
+ANR	1357	PrimaryExpression	0		1200	1					
+ANR	1358	Condition	i < 8	35:20:923:927	1200	1	True				
+ANR	1359	RelationalExpression	i < 8		1200	0		<			
+ANR	1360	Identifier	i		1200	0					
+ANR	1361	PrimaryExpression	8		1200	1					
+ANR	1362	PostIncDecOperationExpression	i ++	35:27:930:932	1200	2	True				
+ANR	1363	Identifier	i		1200	0					
+ANR	1364	IncDec	++		1200	1					
+ANR	1365	CompoundStatement		34:32:862:862	1200	3					
+ANR	1366	IfStatement	"if ( GIC_TEST_ENABLED ( irq + i , cm ) )"		1200	0					
+ANR	1367	Condition	"GIC_TEST_ENABLED ( irq + i , cm )"	36:16:953:981	1200	0	True				
+ANR	1368	CallExpression	"GIC_TEST_ENABLED ( irq + i , cm )"		1200	0					
+ANR	1369	Callee	GIC_TEST_ENABLED		1200	0					
+ANR	1370	Identifier	GIC_TEST_ENABLED		1200	0					
+ANR	1371	ArgumentList	irq + i		1200	1					
+ANR	1372	Argument	irq + i		1200	0					
+ANR	1373	AdditiveExpression	irq + i		1200	0		+			
+ANR	1374	Identifier	irq		1200	0					
+ANR	1375	Identifier	i		1200	1					
+ANR	1376	Argument	cm		1200	1					
+ANR	1377	Identifier	cm		1200	0					
+ANR	1378	CompoundStatement		35:47:911:911	1200	1					
+ANR	1379	ExpressionStatement	res |= ( 1 << i )	37:16:1002:1017	1200	0	True				
+ANR	1380	AssignmentExpression	res |= ( 1 << i )		1200	0		|=			
+ANR	1381	Identifier	res		1200	0					
+ANR	1382	ShiftExpression	1 << i		1200	1		<<			
+ANR	1383	PrimaryExpression	1		1200	0					
+ANR	1384	Identifier	i		1200	1					
+ANR	1385	ElseStatement	else		1200	0					
+ANR	1386	IfStatement	if ( offset < 0x300 )		1200	0					
+ANR	1387	Condition	offset < 0x300	40:15:1058:1071	1200	0	True				
+ANR	1388	RelationalExpression	offset < 0x300		1200	0		<			
+ANR	1389	Identifier	offset		1200	0					
+ANR	1390	PrimaryExpression	0x300		1200	1					
+ANR	1391	CompoundStatement		39:31:1001:1001	1200	1					
+ANR	1392	IfStatement	if ( offset < 0x280 )		1200	0					
+ANR	1393	Condition	offset < 0x280	42:12:1132:1145	1200	0	True				
+ANR	1394	RelationalExpression	offset < 0x280		1200	0		<			
+ANR	1395	Identifier	offset		1200	0					
+ANR	1396	PrimaryExpression	0x280		1200	1					
+ANR	1397	ExpressionStatement	irq = ( offset - 0x200 ) * 8	43:12:1160:1186	1200	1	True				
+ANR	1398	AssignmentExpression	irq = ( offset - 0x200 ) * 8		1200	0		=			
+ANR	1399	Identifier	irq		1200	0					
+ANR	1400	MultiplicativeExpression	( offset - 0x200 ) * 8		1200	1		*			
+ANR	1401	AdditiveExpression	offset - 0x200		1200	0		-			
+ANR	1402	Identifier	offset		1200	0					
+ANR	1403	PrimaryExpression	0x200		1200	1					
+ANR	1404	PrimaryExpression	8		1200	1					
+ANR	1405	ElseStatement	else		1200	0					
+ANR	1406	ExpressionStatement	irq = ( offset - 0x280 ) * 8	45:12:1213:1239	1200	0	True				
+ANR	1407	AssignmentExpression	irq = ( offset - 0x280 ) * 8		1200	0		=			
+ANR	1408	Identifier	irq		1200	0					
+ANR	1409	MultiplicativeExpression	( offset - 0x280 ) * 8		1200	1		*			
+ANR	1410	AdditiveExpression	offset - 0x280		1200	0		-			
+ANR	1411	Identifier	offset		1200	0					
+ANR	1412	PrimaryExpression	0x280		1200	1					
+ANR	1413	PrimaryExpression	8		1200	1					
+ANR	1414	ExpressionStatement	irq += GIC_BASE_IRQ	46:8:1249:1268	1200	1	True				
+ANR	1415	AssignmentExpression	irq += GIC_BASE_IRQ		1200	0		+=			
+ANR	1416	Identifier	irq		1200	0					
+ANR	1417	Identifier	GIC_BASE_IRQ		1200	1					
+ANR	1418	IfStatement	if ( irq >= s -> num_irq )		1200	2					
+ANR	1419	Condition	irq >= s -> num_irq	47:12:1282:1298	1200	0	True				
+ANR	1420	RelationalExpression	irq >= s -> num_irq		1200	0		>=			
+ANR	1421	Identifier	irq		1200	0					
+ANR	1422	PtrMemberAccess	s -> num_irq		1200	1					
+ANR	1423	Identifier	s		1200	0					
+ANR	1424	Identifier	num_irq		1200	1					
+ANR	1425	GotoStatement	goto bad_reg ;	48:12:1313:1325	1200	1	True				
+ANR	1426	Identifier	bad_reg		1200	0					
+ANR	1427	ExpressionStatement	res = 0	49:8:1335:1342	1200	3	True				
+ANR	1428	AssignmentExpression	res = 0		1200	0		=			
+ANR	1429	Identifier	res		1200	0					
+ANR	1430	PrimaryExpression	0		1200	1					
+ANR	1431	ExpressionStatement	mask = ( irq < GIC_INTERNAL ) ? cm : ALL_CPU_MASK	50:8:1352:1400	1200	4	True				
+ANR	1432	AssignmentExpression	mask = ( irq < GIC_INTERNAL ) ? cm : ALL_CPU_MASK		1200	0		=			
+ANR	1433	Identifier	mask		1200	0					
+ANR	1434	ConditionalExpression	( irq < GIC_INTERNAL ) ? cm : ALL_CPU_MASK		1200	1					
+ANR	1435	Condition	irq < GIC_INTERNAL		1200	0					
+ANR	1436	RelationalExpression	irq < GIC_INTERNAL		1200	0		<			
+ANR	1437	Identifier	irq		1200	0					
+ANR	1438	Identifier	GIC_INTERNAL		1200	1					
+ANR	1439	Identifier	cm		1200	1					
+ANR	1440	Identifier	ALL_CPU_MASK		1200	2					
+ANR	1441	ForStatement	for ( i = 0 ; i < 8 ; i ++ )		1200	5					
+ANR	1442	ForInit	i = 0 ;	51:13:1415:1420	1200	0	True				
+ANR	1443	AssignmentExpression	i = 0		1200	0		=			
+ANR	1444	Identifier	i		1200	0					
+ANR	1445	PrimaryExpression	0		1200	1					
+ANR	1446	Condition	i < 8	51:20:1422:1426	1200	1	True				
+ANR	1447	RelationalExpression	i < 8		1200	0		<			
+ANR	1448	Identifier	i		1200	0					
+ANR	1449	PrimaryExpression	8		1200	1					
+ANR	1450	PostIncDecOperationExpression	i ++	51:27:1429:1431	1200	2	True				
+ANR	1451	Identifier	i		1200	0					
+ANR	1452	IncDec	++		1200	1					
+ANR	1453	CompoundStatement		50:32:1361:1361	1200	3					
+ANR	1454	IfStatement	"if ( GIC_TEST_PENDING ( irq + i , mask ) )"		1200	0					
+ANR	1455	Condition	"GIC_TEST_PENDING ( irq + i , mask )"	52:16:1452:1482	1200	0	True				
+ANR	1456	CallExpression	"GIC_TEST_PENDING ( irq + i , mask )"		1200	0					
+ANR	1457	Callee	GIC_TEST_PENDING		1200	0					
+ANR	1458	Identifier	GIC_TEST_PENDING		1200	0					
+ANR	1459	ArgumentList	irq + i		1200	1					
+ANR	1460	Argument	irq + i		1200	0					
+ANR	1461	AdditiveExpression	irq + i		1200	0		+			
+ANR	1462	Identifier	irq		1200	0					
+ANR	1463	Identifier	i		1200	1					
+ANR	1464	Argument	mask		1200	1					
+ANR	1465	Identifier	mask		1200	0					
+ANR	1466	CompoundStatement		51:49:1412:1412	1200	1					
+ANR	1467	ExpressionStatement	res |= ( 1 << i )	53:16:1503:1518	1200	0	True				
+ANR	1468	AssignmentExpression	res |= ( 1 << i )		1200	0		|=			
+ANR	1469	Identifier	res		1200	0					
+ANR	1470	ShiftExpression	1 << i		1200	1		<<			
+ANR	1471	PrimaryExpression	1		1200	0					
+ANR	1472	Identifier	i		1200	1					
+ANR	1473	ElseStatement	else		1200	0					
+ANR	1474	IfStatement	if ( offset < 0x400 )		1200	0					
+ANR	1475	Condition	offset < 0x400	56:15:1559:1572	1200	0	True				
+ANR	1476	RelationalExpression	offset < 0x400		1200	0		<			
+ANR	1477	Identifier	offset		1200	0					
+ANR	1478	PrimaryExpression	0x400		1200	1					
+ANR	1479	CompoundStatement		55:31:1502:1502	1200	1					
+ANR	1480	ExpressionStatement	irq = ( offset - 0x300 ) * 8 + GIC_BASE_IRQ	58:8:1618:1659	1200	0	True				
+ANR	1481	AssignmentExpression	irq = ( offset - 0x300 ) * 8 + GIC_BASE_IRQ		1200	0		=			
+ANR	1482	Identifier	irq		1200	0					
+ANR	1483	AdditiveExpression	( offset - 0x300 ) * 8 + GIC_BASE_IRQ		1200	1		+			
+ANR	1484	MultiplicativeExpression	( offset - 0x300 ) * 8		1200	0		*			
+ANR	1485	AdditiveExpression	offset - 0x300		1200	0		-			
+ANR	1486	Identifier	offset		1200	0					
+ANR	1487	PrimaryExpression	0x300		1200	1					
+ANR	1488	PrimaryExpression	8		1200	1					
+ANR	1489	Identifier	GIC_BASE_IRQ		1200	1					
+ANR	1490	IfStatement	if ( irq >= s -> num_irq )		1200	1					
+ANR	1491	Condition	irq >= s -> num_irq	59:12:1673:1689	1200	0	True				
+ANR	1492	RelationalExpression	irq >= s -> num_irq		1200	0		>=			
+ANR	1493	Identifier	irq		1200	0					
+ANR	1494	PtrMemberAccess	s -> num_irq		1200	1					
+ANR	1495	Identifier	s		1200	0					
+ANR	1496	Identifier	num_irq		1200	1					
+ANR	1497	GotoStatement	goto bad_reg ;	60:12:1704:1716	1200	1	True				
+ANR	1498	Identifier	bad_reg		1200	0					
+ANR	1499	ExpressionStatement	res = 0	61:8:1726:1733	1200	2	True				
+ANR	1500	AssignmentExpression	res = 0		1200	0		=			
+ANR	1501	Identifier	res		1200	0					
+ANR	1502	PrimaryExpression	0		1200	1					
+ANR	1503	ExpressionStatement	mask = ( irq < GIC_INTERNAL ) ? cm : ALL_CPU_MASK	62:8:1743:1791	1200	3	True				
+ANR	1504	AssignmentExpression	mask = ( irq < GIC_INTERNAL ) ? cm : ALL_CPU_MASK		1200	0		=			
+ANR	1505	Identifier	mask		1200	0					
+ANR	1506	ConditionalExpression	( irq < GIC_INTERNAL ) ? cm : ALL_CPU_MASK		1200	1					
+ANR	1507	Condition	irq < GIC_INTERNAL		1200	0					
+ANR	1508	RelationalExpression	irq < GIC_INTERNAL		1200	0		<			
+ANR	1509	Identifier	irq		1200	0					
+ANR	1510	Identifier	GIC_INTERNAL		1200	1					
+ANR	1511	Identifier	cm		1200	1					
+ANR	1512	Identifier	ALL_CPU_MASK		1200	2					
+ANR	1513	ForStatement	for ( i = 0 ; i < 8 ; i ++ )		1200	4					
+ANR	1514	ForInit	i = 0 ;	63:13:1806:1811	1200	0	True				
+ANR	1515	AssignmentExpression	i = 0		1200	0		=			
+ANR	1516	Identifier	i		1200	0					
+ANR	1517	PrimaryExpression	0		1200	1					
+ANR	1518	Condition	i < 8	63:20:1813:1817	1200	1	True				
+ANR	1519	RelationalExpression	i < 8		1200	0		<			
+ANR	1520	Identifier	i		1200	0					
+ANR	1521	PrimaryExpression	8		1200	1					
+ANR	1522	PostIncDecOperationExpression	i ++	63:27:1820:1822	1200	2	True				
+ANR	1523	Identifier	i		1200	0					
+ANR	1524	IncDec	++		1200	1					
+ANR	1525	CompoundStatement		62:32:1752:1752	1200	3					
+ANR	1526	IfStatement	"if ( GIC_TEST_ACTIVE ( irq + i , mask ) )"		1200	0					
+ANR	1527	Condition	"GIC_TEST_ACTIVE ( irq + i , mask )"	64:16:1843:1872	1200	0	True				
+ANR	1528	CallExpression	"GIC_TEST_ACTIVE ( irq + i , mask )"		1200	0					
+ANR	1529	Callee	GIC_TEST_ACTIVE		1200	0					
+ANR	1530	Identifier	GIC_TEST_ACTIVE		1200	0					
+ANR	1531	ArgumentList	irq + i		1200	1					
+ANR	1532	Argument	irq + i		1200	0					
+ANR	1533	AdditiveExpression	irq + i		1200	0		+			
+ANR	1534	Identifier	irq		1200	0					
+ANR	1535	Identifier	i		1200	1					
+ANR	1536	Argument	mask		1200	1					
+ANR	1537	Identifier	mask		1200	0					
+ANR	1538	CompoundStatement		63:48:1802:1802	1200	1					
+ANR	1539	ExpressionStatement	res |= ( 1 << i )	65:16:1893:1908	1200	0	True				
+ANR	1540	AssignmentExpression	res |= ( 1 << i )		1200	0		|=			
+ANR	1541	Identifier	res		1200	0					
+ANR	1542	ShiftExpression	1 << i		1200	1		<<			
+ANR	1543	PrimaryExpression	1		1200	0					
+ANR	1544	Identifier	i		1200	1					
+ANR	1545	ElseStatement	else		1200	0					
+ANR	1546	IfStatement	if ( offset < 0x800 )		1200	0					
+ANR	1547	Condition	offset < 0x800	68:15:1949:1962	1200	0	True				
+ANR	1548	RelationalExpression	offset < 0x800		1200	0		<			
+ANR	1549	Identifier	offset		1200	0					
+ANR	1550	PrimaryExpression	0x800		1200	1					
+ANR	1551	CompoundStatement		67:31:1892:1892	1200	1					
+ANR	1552	ExpressionStatement	irq = ( offset - 0x400 ) + GIC_BASE_IRQ	70:8:2010:2047	1200	0	True				
+ANR	1553	AssignmentExpression	irq = ( offset - 0x400 ) + GIC_BASE_IRQ		1200	0		=			
+ANR	1554	Identifier	irq		1200	0					
+ANR	1555	AdditiveExpression	( offset - 0x400 ) + GIC_BASE_IRQ		1200	1		+			
+ANR	1556	AdditiveExpression	offset - 0x400		1200	0		-			
+ANR	1557	Identifier	offset		1200	0					
+ANR	1558	PrimaryExpression	0x400		1200	1					
+ANR	1559	Identifier	GIC_BASE_IRQ		1200	1					
+ANR	1560	IfStatement	if ( irq >= s -> num_irq )		1200	1					
+ANR	1561	Condition	irq >= s -> num_irq	71:12:2061:2077	1200	0	True				
+ANR	1562	RelationalExpression	irq >= s -> num_irq		1200	0		>=			
+ANR	1563	Identifier	irq		1200	0					
+ANR	1564	PtrMemberAccess	s -> num_irq		1200	1					
+ANR	1565	Identifier	s		1200	0					
+ANR	1566	Identifier	num_irq		1200	1					
+ANR	1567	GotoStatement	goto bad_reg ;	72:12:2092:2104	1200	1	True				
+ANR	1568	Identifier	bad_reg		1200	0					
+ANR	1569	ExpressionStatement	"res = GIC_GET_PRIORITY ( irq , cpu )"	73:8:2114:2146	1200	2	True				
+ANR	1570	AssignmentExpression	"res = GIC_GET_PRIORITY ( irq , cpu )"		1200	0		=			
+ANR	1571	Identifier	res		1200	0					
+ANR	1572	CallExpression	"GIC_GET_PRIORITY ( irq , cpu )"		1200	1					
+ANR	1573	Callee	GIC_GET_PRIORITY		1200	0					
+ANR	1574	Identifier	GIC_GET_PRIORITY		1200	0					
+ANR	1575	ArgumentList	irq		1200	1					
+ANR	1576	Argument	irq		1200	0					
+ANR	1577	Identifier	irq		1200	0					
+ANR	1578	Argument	cpu		1200	1					
+ANR	1579	Identifier	cpu		1200	0					
+ANR	1580	ElseStatement	else		1200	0					
+ANR	1581	IfStatement	if ( offset < 0xc00 )		1200	0					
+ANR	1582	Condition	offset < 0xc00	74:15:2163:2176	1200	0	True				
+ANR	1583	RelationalExpression	offset < 0xc00		1200	0		<			
+ANR	1584	Identifier	offset		1200	0					
+ANR	1585	PrimaryExpression	0xc00		1200	1					
+ANR	1586	CompoundStatement		73:31:2106:2106	1200	1					
+ANR	1587	IfStatement	if ( s -> num_cpu == 1 && s -> revision != REV_11MPCORE )		1200	0					
+ANR	1588	Condition	s -> num_cpu == 1 && s -> revision != REV_11MPCORE	76:12:2230:2275	1200	0	True				
+ANR	1589	AndExpression	s -> num_cpu == 1 && s -> revision != REV_11MPCORE		1200	0		&&			
+ANR	1590	EqualityExpression	s -> num_cpu == 1		1200	0		==			
+ANR	1591	PtrMemberAccess	s -> num_cpu		1200	0					
+ANR	1592	Identifier	s		1200	0					
+ANR	1593	Identifier	num_cpu		1200	1					
+ANR	1594	PrimaryExpression	1		1200	1					
+ANR	1595	EqualityExpression	s -> revision != REV_11MPCORE		1200	1		!=			
+ANR	1596	PtrMemberAccess	s -> revision		1200	0					
+ANR	1597	Identifier	s		1200	0					
+ANR	1598	Identifier	revision		1200	1					
+ANR	1599	Identifier	REV_11MPCORE		1200	1					
+ANR	1600	CompoundStatement		75:60:2205:2205	1200	1					
+ANR	1601	ExpressionStatement	res = 0	78:12:2345:2352	1200	0	True				
+ANR	1602	AssignmentExpression	res = 0		1200	0		=			
+ANR	1603	Identifier	res		1200	0					
+ANR	1604	PrimaryExpression	0		1200	1					
+ANR	1605	ElseStatement	else		1200	0					
+ANR	1606	CompoundStatement		78:15:2296:2296	1200	0					
+ANR	1607	ExpressionStatement	irq = ( offset - 0x800 ) + GIC_BASE_IRQ	80:12:2383:2420	1200	0	True				
+ANR	1608	AssignmentExpression	irq = ( offset - 0x800 ) + GIC_BASE_IRQ		1200	0		=			
+ANR	1609	Identifier	irq		1200	0					
+ANR	1610	AdditiveExpression	( offset - 0x800 ) + GIC_BASE_IRQ		1200	1		+			
+ANR	1611	AdditiveExpression	offset - 0x800		1200	0		-			
+ANR	1612	Identifier	offset		1200	0					
+ANR	1613	PrimaryExpression	0x800		1200	1					
+ANR	1614	Identifier	GIC_BASE_IRQ		1200	1					
+ANR	1615	IfStatement	if ( irq >= s -> num_irq )		1200	1					
+ANR	1616	Condition	irq >= s -> num_irq	81:16:2438:2454	1200	0	True				
+ANR	1617	RelationalExpression	irq >= s -> num_irq		1200	0		>=			
+ANR	1618	Identifier	irq		1200	0					
+ANR	1619	PtrMemberAccess	s -> num_irq		1200	1					
+ANR	1620	Identifier	s		1200	0					
+ANR	1621	Identifier	num_irq		1200	1					
+ANR	1622	CompoundStatement		80:35:2384:2384	1200	1					
+ANR	1623	GotoStatement	goto bad_reg ;	82:16:2475:2487	1200	0	True				
+ANR	1624	Identifier	bad_reg		1200	0					
+ANR	1625	IfStatement	if ( irq >= 29 && irq <= 31 )		1200	2					
+ANR	1626	Condition	irq >= 29 && irq <= 31	84:16:2519:2540	1200	0	True				
+ANR	1627	AndExpression	irq >= 29 && irq <= 31		1200	0		&&			
+ANR	1628	RelationalExpression	irq >= 29		1200	0		>=			
+ANR	1629	Identifier	irq		1200	0					
+ANR	1630	PrimaryExpression	29		1200	1					
+ANR	1631	RelationalExpression	irq <= 31		1200	1		<=			
+ANR	1632	Identifier	irq		1200	0					
+ANR	1633	PrimaryExpression	31		1200	1					
+ANR	1634	CompoundStatement		83:40:2470:2470	1200	1					
+ANR	1635	ExpressionStatement	res = cm	85:16:2561:2569	1200	0	True				
+ANR	1636	AssignmentExpression	res = cm		1200	0		=			
+ANR	1637	Identifier	res		1200	0					
+ANR	1638	Identifier	cm		1200	1					
+ANR	1639	ElseStatement	else		1200	0					
+ANR	1640	CompoundStatement		85:19:2517:2517	1200	0					
+ANR	1641	ExpressionStatement	res = GIC_TARGET ( irq )	87:16:2608:2629	1200	0	True				
+ANR	1642	AssignmentExpression	res = GIC_TARGET ( irq )		1200	0		=			
+ANR	1643	Identifier	res		1200	0					
+ANR	1644	CallExpression	GIC_TARGET ( irq )		1200	1					
+ANR	1645	Callee	GIC_TARGET		1200	0					
+ANR	1646	Identifier	GIC_TARGET		1200	0					
+ANR	1647	ArgumentList	irq		1200	1					
+ANR	1648	Argument	irq		1200	0					
+ANR	1649	Identifier	irq		1200	0					
+ANR	1650	ElseStatement	else		1200	0					
+ANR	1651	IfStatement	if ( offset < 0xf00 )		1200	0					
+ANR	1652	Condition	offset < 0xf00	90:15:2670:2683	1200	0	True				
+ANR	1653	RelationalExpression	offset < 0xf00		1200	0		<			
+ANR	1654	Identifier	offset		1200	0					
+ANR	1655	PrimaryExpression	0xf00		1200	1					
+ANR	1656	CompoundStatement		89:31:2613:2613	1200	1					
+ANR	1657	ExpressionStatement	irq = ( offset - 0xc00 ) * 2 + GIC_BASE_IRQ	92:8:2736:2777	1200	0	True				
+ANR	1658	AssignmentExpression	irq = ( offset - 0xc00 ) * 2 + GIC_BASE_IRQ		1200	0		=			
+ANR	1659	Identifier	irq		1200	0					
+ANR	1660	AdditiveExpression	( offset - 0xc00 ) * 2 + GIC_BASE_IRQ		1200	1		+			
+ANR	1661	MultiplicativeExpression	( offset - 0xc00 ) * 2		1200	0		*			
+ANR	1662	AdditiveExpression	offset - 0xc00		1200	0		-			
+ANR	1663	Identifier	offset		1200	0					
+ANR	1664	PrimaryExpression	0xc00		1200	1					
+ANR	1665	PrimaryExpression	2		1200	1					
+ANR	1666	Identifier	GIC_BASE_IRQ		1200	1					
+ANR	1667	IfStatement	if ( irq >= s -> num_irq )		1200	1					
+ANR	1668	Condition	irq >= s -> num_irq	93:12:2791:2807	1200	0	True				
+ANR	1669	RelationalExpression	irq >= s -> num_irq		1200	0		>=			
+ANR	1670	Identifier	irq		1200	0					
+ANR	1671	PtrMemberAccess	s -> num_irq		1200	1					
+ANR	1672	Identifier	s		1200	0					
+ANR	1673	Identifier	num_irq		1200	1					
+ANR	1674	GotoStatement	goto bad_reg ;	94:12:2822:2834	1200	1	True				
+ANR	1675	Identifier	bad_reg		1200	0					
+ANR	1676	ExpressionStatement	res = 0	95:8:2844:2851	1200	2	True				
+ANR	1677	AssignmentExpression	res = 0		1200	0		=			
+ANR	1678	Identifier	res		1200	0					
+ANR	1679	PrimaryExpression	0		1200	1					
+ANR	1680	ForStatement	for ( i = 0 ; i < 4 ; i ++ )		1200	3					
+ANR	1681	ForInit	i = 0 ;	96:13:2866:2871	1200	0	True				
+ANR	1682	AssignmentExpression	i = 0		1200	0		=			
+ANR	1683	Identifier	i		1200	0					
+ANR	1684	PrimaryExpression	0		1200	1					
+ANR	1685	Condition	i < 4	96:20:2873:2877	1200	1	True				
+ANR	1686	RelationalExpression	i < 4		1200	0		<			
+ANR	1687	Identifier	i		1200	0					
+ANR	1688	PrimaryExpression	4		1200	1					
+ANR	1689	PostIncDecOperationExpression	i ++	96:27:2880:2882	1200	2	True				
+ANR	1690	Identifier	i		1200	0					
+ANR	1691	IncDec	++		1200	1					
+ANR	1692	CompoundStatement		95:32:2812:2812	1200	3					
+ANR	1693	IfStatement	if ( GIC_TEST_MODEL ( irq + i ) )		1200	0					
+ANR	1694	Condition	GIC_TEST_MODEL ( irq + i )	97:16:2903:2925	1200	0	True				
+ANR	1695	CallExpression	GIC_TEST_MODEL ( irq + i )		1200	0					
+ANR	1696	Callee	GIC_TEST_MODEL		1200	0					
+ANR	1697	Identifier	GIC_TEST_MODEL		1200	0					
+ANR	1698	ArgumentList	irq + i		1200	1					
+ANR	1699	Argument	irq + i		1200	0					
+ANR	1700	AdditiveExpression	irq + i		1200	0		+			
+ANR	1701	Identifier	irq		1200	0					
+ANR	1702	Identifier	i		1200	1					
+ANR	1703	ExpressionStatement	res |= ( 1 << ( i * 2 ) )	98:16:2944:2965	1200	1	True				
+ANR	1704	AssignmentExpression	res |= ( 1 << ( i * 2 ) )		1200	0		|=			
+ANR	1705	Identifier	res		1200	0					
+ANR	1706	ShiftExpression	1 << ( i * 2 )		1200	1		<<			
+ANR	1707	PrimaryExpression	1		1200	0					
+ANR	1708	MultiplicativeExpression	i * 2		1200	1		*			
+ANR	1709	Identifier	i		1200	0					
+ANR	1710	PrimaryExpression	2		1200	1					
+ANR	1711	IfStatement	if ( GIC_TEST_TRIGGER ( irq + i ) )		1200	1					
+ANR	1712	Condition	GIC_TEST_TRIGGER ( irq + i )	99:16:2983:3007	1200	0	True				
+ANR	1713	CallExpression	GIC_TEST_TRIGGER ( irq + i )		1200	0					
+ANR	1714	Callee	GIC_TEST_TRIGGER		1200	0					
+ANR	1715	Identifier	GIC_TEST_TRIGGER		1200	0					
+ANR	1716	ArgumentList	irq + i		1200	1					
+ANR	1717	Argument	irq + i		1200	0					
+ANR	1718	AdditiveExpression	irq + i		1200	0		+			
+ANR	1719	Identifier	irq		1200	0					
+ANR	1720	Identifier	i		1200	1					
+ANR	1721	ExpressionStatement	res |= ( 2 << ( i * 2 ) )	100:16:3026:3047	1200	1	True				
+ANR	1722	AssignmentExpression	res |= ( 2 << ( i * 2 ) )		1200	0		|=			
+ANR	1723	Identifier	res		1200	0					
+ANR	1724	ShiftExpression	2 << ( i * 2 )		1200	1		<<			
+ANR	1725	PrimaryExpression	2		1200	0					
+ANR	1726	MultiplicativeExpression	i * 2		1200	1		*			
+ANR	1727	Identifier	i		1200	0					
+ANR	1728	PrimaryExpression	2		1200	1					
+ANR	1729	ElseStatement	else		1200	0					
+ANR	1730	IfStatement	if ( offset < 0xfe0 )		1200	0					
+ANR	1731	Condition	offset < 0xfe0	102:15:3074:3087	1200	0	True				
+ANR	1732	RelationalExpression	offset < 0xfe0		1200	0		<			
+ANR	1733	Identifier	offset		1200	0					
+ANR	1734	PrimaryExpression	0xfe0		1200	1					
+ANR	1735	CompoundStatement		101:31:3017:3017	1200	1					
+ANR	1736	GotoStatement	goto bad_reg ;	103:8:3100:3112	1200	0	True				
+ANR	1737	Identifier	bad_reg		1200	0					
+ANR	1738	ElseStatement	else		1200	0					
+ANR	1739	CompoundStatement		103:33:3074:3074	1200	0					
+ANR	1740	IfStatement	if ( offset & 3 )		1200	0					
+ANR	1741	Condition	offset & 3	105:12:3161:3170	1200	0	True				
+ANR	1742	BitAndExpression	offset & 3		1200	0		&			
+ANR	1743	Identifier	offset		1200	0					
+ANR	1744	PrimaryExpression	3		1200	1					
+ANR	1745	CompoundStatement		104:24:3100:3100	1200	1					
+ANR	1746	ExpressionStatement	res = 0	106:12:3187:3194	1200	0	True				
+ANR	1747	AssignmentExpression	res = 0		1200	0		=			
+ANR	1748	Identifier	res		1200	0					
+ANR	1749	PrimaryExpression	0		1200	1					
+ANR	1750	ElseStatement	else		1200	0					
+ANR	1751	CompoundStatement		106:15:3138:3138	1200	0					
+ANR	1752	ExpressionStatement	res = gic_id [ ( offset - 0xfe0 ) >> 2 ]	108:12:3225:3260	1200	0	True				
+ANR	1753	AssignmentExpression	res = gic_id [ ( offset - 0xfe0 ) >> 2 ]		1200	0		=			
+ANR	1754	Identifier	res		1200	0					
+ANR	1755	ArrayIndexing	gic_id [ ( offset - 0xfe0 ) >> 2 ]		1200	1					
+ANR	1756	Identifier	gic_id		1200	0					
+ANR	1757	ShiftExpression	( offset - 0xfe0 ) >> 2		1200	1		>>			
+ANR	1758	AdditiveExpression	offset - 0xfe0		1200	0		-			
+ANR	1759	Identifier	offset		1200	0					
+ANR	1760	PrimaryExpression	0xfe0		1200	1					
+ANR	1761	PrimaryExpression	2		1200	1					
+ANR	1762	ReturnStatement	return res ;	111:4:3282:3292	1200	10	True				
+ANR	1763	Identifier	res		1200	0					
+ANR	1764	Label	bad_reg :	112:0:3294:3301	1200	11	True				
+ANR	1765	Identifier	bad_reg		1200	0					
+ANR	1766	ExpressionStatement	"hw_error ( ""gic_dist_readb: Bad offset %x\\n"" , ( int ) offset )"	113:4:3307:3363	1200	12	True				
+ANR	1767	CallExpression	"hw_error ( ""gic_dist_readb: Bad offset %x\\n"" , ( int ) offset )"		1200	0					
+ANR	1768	Callee	hw_error		1200	0					
+ANR	1769	Identifier	hw_error		1200	0					
+ANR	1770	ArgumentList	"""gic_dist_readb: Bad offset %x\\n"""		1200	1					
+ANR	1771	Argument	"""gic_dist_readb: Bad offset %x\\n"""		1200	0					
+ANR	1772	PrimaryExpression	"""gic_dist_readb: Bad offset %x\\n"""		1200	0					
+ANR	1773	Argument	( int ) offset		1200	1					
+ANR	1774	CastExpression	( int ) offset		1200	0					
+ANR	1775	CastTarget	int		1200	0					
+ANR	1776	Identifier	offset		1200	1					
+ANR	1777	ReturnStatement	return 0 ;	114:4:3369:3377	1200	13	True				
+ANR	1778	PrimaryExpression	0		1200	0					
+ANR	1779	ReturnType	static uint32_t		1200	1					
+ANR	1780	Identifier	gic_dist_readb		1200	2					
+ANR	1781	ParameterList	"void * opaque , target_phys_addr_t offset"		1200	3					
+ANR	1782	Parameter	void * opaque	1:31:31:42	1200	0	True				
+ANR	1783	ParameterType	void *		1200	0					
+ANR	1784	Identifier	opaque		1200	1					
+ANR	1785	Parameter	target_phys_addr_t offset	1:45:45:69	1200	1	True				
+ANR	1786	ParameterType	target_phys_addr_t		1200	0					
+ANR	1787	Identifier	offset		1200	1					
+ANR	1788	CFGEntryNode	ENTRY		1200		True				
+ANR	1789	CFGExitNode	EXIT		1200		True				
+ANR	1790	Symbol	s -> enabled		1200						
+ANR	1791	Symbol	s -> num_irq		1200						
+ANR	1792	Symbol	s -> num_cpu		1200						
+ANR	1793	Symbol	GIC_BASE_IRQ		1200						
+ANR	1794	Symbol	gic_get_current_cpu		1200						
+ANR	1795	Symbol	GIC_TEST_TRIGGER		1200						
+ANR	1796	Symbol	GIC_TEST_ENABLED		1200						
+ANR	1797	Symbol	GIC_TEST_ACTIVE		1200						
+ANR	1798	Symbol	mask		1200						
+ANR	1799	Symbol	gic_id		1200						
+ANR	1800	Symbol	res		1200						
+ANR	1801	Symbol	opaque		1200						
+ANR	1802	Symbol	offset		1200						
+ANR	1803	Symbol	GIC_INTERNAL		1200						
+ANR	1804	Symbol	GIC_TEST_PENDING		1200						
+ANR	1805	Symbol	GIC_TEST_MODEL		1200						
+ANR	1806	Symbol	irq		1200						
+ANR	1807	Symbol	i		1200						
+ANR	1808	Symbol	cpu		1200						
+ANR	1809	Symbol	cm		1200						
+ANR	1810	Symbol	GIC_GET_PRIORITY		1200						
+ANR	1811	Symbol	s -> revision		1200						
+ANR	1812	Symbol	REV_11MPCORE		1200						
+ANR	1813	Symbol	s		1200						
+ANR	1814	Symbol	NUM_CPU		1200						
+ANR	1815	Symbol	* offset		1200						
+ANR	1816	Symbol	* s		1200						
+ANR	1817	Symbol	GIC_TARGET		1200						
+ANR	1818	Symbol	* gic_id		1200						
+ANR	1819	Symbol	ALL_CPU_MASK		1200						

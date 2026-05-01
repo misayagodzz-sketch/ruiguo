@@ -1,0 +1,787 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/qemu_4652b8f3_7192.c								
+ANR	2	Function	qcow2_co_pwritev	1:0:0:4748							
+ANR	3	FunctionDef	"qcow2_co_pwritev (BlockDriverState * bs , uint64_t offset , uint64_t bytes , QEMUIOVector * qiov , int flags)"		2	0					
+ANR	4	CompoundStatement		4:0:209:4748	2	0					
+ANR	5	IdentifierDeclStatement	BDRVQcow2State * s = bs -> opaque ;	5:4:215:245	2	0	True				
+ANR	6	IdentifierDecl	* s = bs -> opaque		2	0					
+ANR	7	IdentifierDeclType	BDRVQcow2State *		2	0					
+ANR	8	Identifier	s		2	1					
+ANR	9	AssignmentExpression	* s = bs -> opaque		2	2		=			
+ANR	10	Identifier	s		2	0					
+ANR	11	PtrMemberAccess	bs -> opaque		2	1					
+ANR	12	Identifier	bs		2	0					
+ANR	13	Identifier	opaque		2	1					
+ANR	14	IdentifierDeclStatement	int offset_in_cluster ;	6:4:251:272	2	1	True				
+ANR	15	IdentifierDecl	offset_in_cluster		2	0					
+ANR	16	IdentifierDeclType	int		2	0					
+ANR	17	Identifier	offset_in_cluster		2	1					
+ANR	18	IdentifierDeclStatement	int ret ;	7:4:278:285	2	2	True				
+ANR	19	IdentifierDecl	ret		2	0					
+ANR	20	IdentifierDeclType	int		2	0					
+ANR	21	Identifier	ret		2	1					
+ANR	22	IdentifierDeclStatement	unsigned int cur_bytes ;	8:4:291:313	2	3	True				
+ANR	23	IdentifierDecl	cur_bytes		2	0					
+ANR	24	IdentifierDeclType	unsigned int		2	0					
+ANR	25	Identifier	cur_bytes		2	1					
+ANR	26	IdentifierDeclStatement	uint64_t cluster_offset ;	9:4:364:387	2	4	True				
+ANR	27	IdentifierDecl	cluster_offset		2	0					
+ANR	28	IdentifierDeclType	uint64_t		2	0					
+ANR	29	Identifier	cluster_offset		2	1					
+ANR	30	IdentifierDeclStatement	QEMUIOVector hd_qiov ;	10:4:393:413	2	5	True				
+ANR	31	IdentifierDecl	hd_qiov		2	0					
+ANR	32	IdentifierDeclType	QEMUIOVector		2	0					
+ANR	33	Identifier	hd_qiov		2	1					
+ANR	34	IdentifierDeclStatement	uint64_t bytes_done = 0 ;	11:4:419:442	2	6	True				
+ANR	35	IdentifierDecl	bytes_done = 0		2	0					
+ANR	36	IdentifierDeclType	uint64_t		2	0					
+ANR	37	Identifier	bytes_done		2	1					
+ANR	38	AssignmentExpression	bytes_done = 0		2	2		=			
+ANR	39	Identifier	bytes_done		2	0					
+ANR	40	PrimaryExpression	0		2	1					
+ANR	41	IdentifierDeclStatement	uint8_t * cluster_data = NULL ;	12:4:448:476	2	7	True				
+ANR	42	IdentifierDecl	* cluster_data = NULL		2	0					
+ANR	43	IdentifierDeclType	uint8_t *		2	0					
+ANR	44	Identifier	cluster_data		2	1					
+ANR	45	AssignmentExpression	* cluster_data = NULL		2	2		=			
+ANR	46	Identifier	NULL		2	0					
+ANR	47	Identifier	NULL		2	1					
+ANR	48	IdentifierDeclStatement	QCowL2Meta * l2meta = NULL ;	13:4:482:507	2	8	True				
+ANR	49	IdentifierDecl	* l2meta = NULL		2	0					
+ANR	50	IdentifierDeclType	QCowL2Meta *		2	0					
+ANR	51	Identifier	l2meta		2	1					
+ANR	52	AssignmentExpression	* l2meta = NULL		2	2		=			
+ANR	53	Identifier	NULL		2	0					
+ANR	54	Identifier	NULL		2	1					
+ANR	55	ExpressionStatement	"trace_qcow2_writev_start_req ( qemu_coroutine_self ( ) , offset , bytes )"	15:4:514:580	2	9	True				
+ANR	56	CallExpression	"trace_qcow2_writev_start_req ( qemu_coroutine_self ( ) , offset , bytes )"		2	0					
+ANR	57	Callee	trace_qcow2_writev_start_req		2	0					
+ANR	58	Identifier	trace_qcow2_writev_start_req		2	0					
+ANR	59	ArgumentList	qemu_coroutine_self ( )		2	1					
+ANR	60	Argument	qemu_coroutine_self ( )		2	0					
+ANR	61	CallExpression	qemu_coroutine_self ( )		2	0					
+ANR	62	Callee	qemu_coroutine_self		2	0					
+ANR	63	Identifier	qemu_coroutine_self		2	0					
+ANR	64	ArgumentList			2	1					
+ANR	65	Argument	offset		2	1					
+ANR	66	Identifier	offset		2	0					
+ANR	67	Argument	bytes		2	2					
+ANR	68	Identifier	bytes		2	0					
+ANR	69	ExpressionStatement	"qemu_iovec_init ( & hd_qiov , qiov -> niov )"	17:4:587:624	2	10	True				
+ANR	70	CallExpression	"qemu_iovec_init ( & hd_qiov , qiov -> niov )"		2	0					
+ANR	71	Callee	qemu_iovec_init		2	0					
+ANR	72	Identifier	qemu_iovec_init		2	0					
+ANR	73	ArgumentList	& hd_qiov		2	1					
+ANR	74	Argument	& hd_qiov		2	0					
+ANR	75	UnaryOperationExpression	& hd_qiov		2	0					
+ANR	76	UnaryOperator	&		2	0					
+ANR	77	Identifier	hd_qiov		2	1					
+ANR	78	Argument	qiov -> niov		2	1					
+ANR	79	PtrMemberAccess	qiov -> niov		2	0					
+ANR	80	Identifier	qiov		2	0					
+ANR	81	Identifier	niov		2	1					
+ANR	82	ExpressionStatement	s -> cluster_cache_offset = - 1	19:4:631:659	2	11	True				
+ANR	83	AssignmentExpression	s -> cluster_cache_offset = - 1		2	0		=			
+ANR	84	PtrMemberAccess	s -> cluster_cache_offset		2	0					
+ANR	85	Identifier	s		2	0					
+ANR	86	Identifier	cluster_cache_offset		2	1					
+ANR	87	UnaryOperationExpression	- 1		2	1					
+ANR	88	UnaryOperator	-		2	0					
+ANR	89	PrimaryExpression	1		2	1					
+ANR	90	ExpressionStatement	qemu_co_mutex_lock ( & s -> lock )	21:4:697:725	2	12	True				
+ANR	91	CallExpression	qemu_co_mutex_lock ( & s -> lock )		2	0					
+ANR	92	Callee	qemu_co_mutex_lock		2	0					
+ANR	93	Identifier	qemu_co_mutex_lock		2	0					
+ANR	94	ArgumentList	& s -> lock		2	1					
+ANR	95	Argument	& s -> lock		2	0					
+ANR	96	UnaryOperationExpression	& s -> lock		2	0					
+ANR	97	UnaryOperator	&		2	0					
+ANR	98	PtrMemberAccess	s -> lock		2	1					
+ANR	99	Identifier	s		2	0					
+ANR	100	Identifier	lock		2	1					
+ANR	101	WhileStatement	while ( bytes != 0 )		2	13					
+ANR	102	Condition	bytes != 0	23:11:739:748	2	0	True				
+ANR	103	EqualityExpression	bytes != 0		2	0		!=			
+ANR	104	Identifier	bytes		2	0					
+ANR	105	PrimaryExpression	0		2	1					
+ANR	106	CompoundStatement		20:23:541:541	2	1					
+ANR	107	ExpressionStatement	l2meta = NULL	25:8:762:775	2	0	True				
+ANR	108	AssignmentExpression	l2meta = NULL		2	0		=			
+ANR	109	Identifier	l2meta		2	0					
+ANR	110	Identifier	NULL		2	1					
+ANR	111	ExpressionStatement	trace_qcow2_writev_start_part ( qemu_coroutine_self ( ) )	27:8:786:838	2	1	True				
+ANR	112	CallExpression	trace_qcow2_writev_start_part ( qemu_coroutine_self ( ) )		2	0					
+ANR	113	Callee	trace_qcow2_writev_start_part		2	0					
+ANR	114	Identifier	trace_qcow2_writev_start_part		2	0					
+ANR	115	ArgumentList	qemu_coroutine_self ( )		2	1					
+ANR	116	Argument	qemu_coroutine_self ( )		2	0					
+ANR	117	CallExpression	qemu_coroutine_self ( )		2	0					
+ANR	118	Callee	qemu_coroutine_self		2	0					
+ANR	119	Identifier	qemu_coroutine_self		2	0					
+ANR	120	ArgumentList			2	1					
+ANR	121	ExpressionStatement	"offset_in_cluster = offset_into_cluster ( s , offset )"	28:8:848:898	2	2	True				
+ANR	122	AssignmentExpression	"offset_in_cluster = offset_into_cluster ( s , offset )"		2	0		=			
+ANR	123	Identifier	offset_in_cluster		2	0					
+ANR	124	CallExpression	"offset_into_cluster ( s , offset )"		2	1					
+ANR	125	Callee	offset_into_cluster		2	0					
+ANR	126	Identifier	offset_into_cluster		2	0					
+ANR	127	ArgumentList	s		2	1					
+ANR	128	Argument	s		2	0					
+ANR	129	Identifier	s		2	0					
+ANR	130	Argument	offset		2	1					
+ANR	131	Identifier	offset		2	0					
+ANR	132	ExpressionStatement	"cur_bytes = MIN ( bytes , INT_MAX )"	29:8:908:939	2	3	True				
+ANR	133	AssignmentExpression	"cur_bytes = MIN ( bytes , INT_MAX )"		2	0		=			
+ANR	134	Identifier	cur_bytes		2	0					
+ANR	135	CallExpression	"MIN ( bytes , INT_MAX )"		2	1					
+ANR	136	Callee	MIN		2	0					
+ANR	137	Identifier	MIN		2	0					
+ANR	138	ArgumentList	bytes		2	1					
+ANR	139	Argument	bytes		2	0					
+ANR	140	Identifier	bytes		2	0					
+ANR	141	Argument	INT_MAX		2	1					
+ANR	142	Identifier	INT_MAX		2	0					
+ANR	143	IfStatement	if ( bs -> encrypted )		2	4					
+ANR	144	Condition	bs -> encrypted	30:12:953:965	2	0	True				
+ANR	145	PtrMemberAccess	bs -> encrypted		2	0					
+ANR	146	Identifier	bs		2	0					
+ANR	147	Identifier	encrypted		2	1					
+ANR	148	CompoundStatement		27:27:758:758	2	1					
+ANR	149	ExpressionStatement	"cur_bytes = MIN ( cur_bytes , QCOW_MAX_CRYPT_CLUSTERS * s -> cluster_size - offset_in_cluster )"	31:12:982:1127	2	0	True				
+ANR	150	AssignmentExpression	"cur_bytes = MIN ( cur_bytes , QCOW_MAX_CRYPT_CLUSTERS * s -> cluster_size - offset_in_cluster )"		2	0		=			
+ANR	151	Identifier	cur_bytes		2	0					
+ANR	152	CallExpression	"MIN ( cur_bytes , QCOW_MAX_CRYPT_CLUSTERS * s -> cluster_size - offset_in_cluster )"		2	1					
+ANR	153	Callee	MIN		2	0					
+ANR	154	Identifier	MIN		2	0					
+ANR	155	ArgumentList	cur_bytes		2	1					
+ANR	156	Argument	cur_bytes		2	0					
+ANR	157	Identifier	cur_bytes		2	0					
+ANR	158	Argument	QCOW_MAX_CRYPT_CLUSTERS * s -> cluster_size - offset_in_cluster		2	1					
+ANR	159	AdditiveExpression	QCOW_MAX_CRYPT_CLUSTERS * s -> cluster_size - offset_in_cluster		2	0		-			
+ANR	160	MultiplicativeExpression	QCOW_MAX_CRYPT_CLUSTERS * s -> cluster_size		2	0		*			
+ANR	161	Identifier	QCOW_MAX_CRYPT_CLUSTERS		2	0					
+ANR	162	PtrMemberAccess	s -> cluster_size		2	1					
+ANR	163	Identifier	s		2	0					
+ANR	164	Identifier	cluster_size		2	1					
+ANR	165	Identifier	offset_in_cluster		2	1					
+ANR	166	ExpressionStatement	"ret = qcow2_alloc_cluster_offset ( bs , offset , & cur_bytes , & cluster_offset , & l2meta )"	36:8:1148:1271	2	5	True				
+ANR	167	AssignmentExpression	"ret = qcow2_alloc_cluster_offset ( bs , offset , & cur_bytes , & cluster_offset , & l2meta )"		2	0		=			
+ANR	168	Identifier	ret		2	0					
+ANR	169	CallExpression	"qcow2_alloc_cluster_offset ( bs , offset , & cur_bytes , & cluster_offset , & l2meta )"		2	1					
+ANR	170	Callee	qcow2_alloc_cluster_offset		2	0					
+ANR	171	Identifier	qcow2_alloc_cluster_offset		2	0					
+ANR	172	ArgumentList	bs		2	1					
+ANR	173	Argument	bs		2	0					
+ANR	174	Identifier	bs		2	0					
+ANR	175	Argument	offset		2	1					
+ANR	176	Identifier	offset		2	0					
+ANR	177	Argument	& cur_bytes		2	2					
+ANR	178	UnaryOperationExpression	& cur_bytes		2	0					
+ANR	179	UnaryOperator	&		2	0					
+ANR	180	Identifier	cur_bytes		2	1					
+ANR	181	Argument	& cluster_offset		2	3					
+ANR	182	UnaryOperationExpression	& cluster_offset		2	0					
+ANR	183	UnaryOperator	&		2	0					
+ANR	184	Identifier	cluster_offset		2	1					
+ANR	185	Argument	& l2meta		2	4					
+ANR	186	UnaryOperationExpression	& l2meta		2	0					
+ANR	187	UnaryOperator	&		2	0					
+ANR	188	Identifier	l2meta		2	1					
+ANR	189	IfStatement	if ( ret < 0 )		2	6					
+ANR	190	Condition	ret < 0	38:12:1285:1291	2	0	True				
+ANR	191	RelationalExpression	ret < 0		2	0		<			
+ANR	192	Identifier	ret		2	0					
+ANR	193	PrimaryExpression	0		2	1					
+ANR	194	CompoundStatement		35:21:1084:1084	2	1					
+ANR	195	GotoStatement	goto fail ;	39:12:1308:1317	2	0	True				
+ANR	196	Identifier	fail		2	0					
+ANR	197	ExpressionStatement	assert ( ( cluster_offset & 511 ) == 0 )	42:8:1338:1373	2	7	True				
+ANR	198	CallExpression	assert ( ( cluster_offset & 511 ) == 0 )		2	0					
+ANR	199	Callee	assert		2	0					
+ANR	200	Identifier	assert		2	0					
+ANR	201	ArgumentList	( cluster_offset & 511 ) == 0		2	1					
+ANR	202	Argument	( cluster_offset & 511 ) == 0		2	0					
+ANR	203	EqualityExpression	( cluster_offset & 511 ) == 0		2	0		==			
+ANR	204	BitAndExpression	cluster_offset & 511		2	0		&			
+ANR	205	Identifier	cluster_offset		2	0					
+ANR	206	PrimaryExpression	511		2	1					
+ANR	207	PrimaryExpression	0		2	1					
+ANR	208	ExpressionStatement	qemu_iovec_reset ( & hd_qiov )	44:8:1384:1410	2	8	True				
+ANR	209	CallExpression	qemu_iovec_reset ( & hd_qiov )		2	0					
+ANR	210	Callee	qemu_iovec_reset		2	0					
+ANR	211	Identifier	qemu_iovec_reset		2	0					
+ANR	212	ArgumentList	& hd_qiov		2	1					
+ANR	213	Argument	& hd_qiov		2	0					
+ANR	214	UnaryOperationExpression	& hd_qiov		2	0					
+ANR	215	UnaryOperator	&		2	0					
+ANR	216	Identifier	hd_qiov		2	1					
+ANR	217	ExpressionStatement	"qemu_iovec_concat ( & hd_qiov , qiov , bytes_done , cur_bytes )"	45:8:1420:1476	2	9	True				
+ANR	218	CallExpression	"qemu_iovec_concat ( & hd_qiov , qiov , bytes_done , cur_bytes )"		2	0					
+ANR	219	Callee	qemu_iovec_concat		2	0					
+ANR	220	Identifier	qemu_iovec_concat		2	0					
+ANR	221	ArgumentList	& hd_qiov		2	1					
+ANR	222	Argument	& hd_qiov		2	0					
+ANR	223	UnaryOperationExpression	& hd_qiov		2	0					
+ANR	224	UnaryOperator	&		2	0					
+ANR	225	Identifier	hd_qiov		2	1					
+ANR	226	Argument	qiov		2	1					
+ANR	227	Identifier	qiov		2	0					
+ANR	228	Argument	bytes_done		2	2					
+ANR	229	Identifier	bytes_done		2	0					
+ANR	230	Argument	cur_bytes		2	3					
+ANR	231	Identifier	cur_bytes		2	0					
+ANR	232	IfStatement	if ( bs -> encrypted )		2	10					
+ANR	233	Condition	bs -> encrypted	47:12:1491:1503	2	0	True				
+ANR	234	PtrMemberAccess	bs -> encrypted		2	0					
+ANR	235	Identifier	bs		2	0					
+ANR	236	Identifier	encrypted		2	1					
+ANR	237	CompoundStatement		45:12:1310:1327	2	1					
+ANR	238	IdentifierDeclStatement	Error * err = NULL ;	48:12:1520:1537	2	0	True				
+ANR	239	IdentifierDecl	* err = NULL		2	0					
+ANR	240	IdentifierDeclType	Error *		2	0					
+ANR	241	Identifier	err		2	1					
+ANR	242	AssignmentExpression	* err = NULL		2	2		=			
+ANR	243	Identifier	NULL		2	0					
+ANR	244	Identifier	NULL		2	1					
+ANR	245	ExpressionStatement	assert ( s -> crypto )	49:12:1551:1568	2	1	True				
+ANR	246	CallExpression	assert ( s -> crypto )		2	0					
+ANR	247	Callee	assert		2	0					
+ANR	248	Identifier	assert		2	0					
+ANR	249	ArgumentList	s -> crypto		2	1					
+ANR	250	Argument	s -> crypto		2	0					
+ANR	251	PtrMemberAccess	s -> crypto		2	0					
+ANR	252	Identifier	s		2	0					
+ANR	253	Identifier	crypto		2	1					
+ANR	254	IfStatement	if ( ! cluster_data )		2	2					
+ANR	255	Condition	! cluster_data	50:16:1586:1598	2	0	True				
+ANR	256	UnaryOperationExpression	! cluster_data		2	0					
+ANR	257	UnaryOperator	!		2	0					
+ANR	258	Identifier	cluster_data		2	1					
+ANR	259	CompoundStatement		47:31:1391:1391	2	1					
+ANR	260	ExpressionStatement	"cluster_data = qemu_try_blockalign ( bs -> file -> bs , QCOW_MAX_CRYPT_CLUSTERS * s -> cluster_size )"	51:16:1619:1812	2	0	True				
+ANR	261	AssignmentExpression	"cluster_data = qemu_try_blockalign ( bs -> file -> bs , QCOW_MAX_CRYPT_CLUSTERS * s -> cluster_size )"		2	0		=			
+ANR	262	Identifier	cluster_data		2	0					
+ANR	263	CallExpression	"qemu_try_blockalign ( bs -> file -> bs , QCOW_MAX_CRYPT_CLUSTERS * s -> cluster_size )"		2	1					
+ANR	264	Callee	qemu_try_blockalign		2	0					
+ANR	265	Identifier	qemu_try_blockalign		2	0					
+ANR	266	ArgumentList	bs -> file -> bs		2	1					
+ANR	267	Argument	bs -> file -> bs		2	0					
+ANR	268	PtrMemberAccess	bs -> file -> bs		2	0					
+ANR	269	PtrMemberAccess	bs -> file		2	0					
+ANR	270	Identifier	bs		2	0					
+ANR	271	Identifier	file		2	1					
+ANR	272	Identifier	bs		2	1					
+ANR	273	Argument	QCOW_MAX_CRYPT_CLUSTERS * s -> cluster_size		2	1					
+ANR	274	MultiplicativeExpression	QCOW_MAX_CRYPT_CLUSTERS * s -> cluster_size		2	0		*			
+ANR	275	Identifier	QCOW_MAX_CRYPT_CLUSTERS		2	0					
+ANR	276	PtrMemberAccess	s -> cluster_size		2	1					
+ANR	277	Identifier	s		2	0					
+ANR	278	Identifier	cluster_size		2	1					
+ANR	279	IfStatement	if ( cluster_data == NULL )		2	1					
+ANR	280	Condition	cluster_data == NULL	54:20:1834:1853	2	0	True				
+ANR	281	EqualityExpression	cluster_data == NULL		2	0		==			
+ANR	282	Identifier	cluster_data		2	0					
+ANR	283	Identifier	NULL		2	1					
+ANR	284	CompoundStatement		51:42:1646:1646	2	1					
+ANR	285	ExpressionStatement	ret = - ENOMEM	55:20:1878:1891	2	0	True				
+ANR	286	AssignmentExpression	ret = - ENOMEM		2	0		=			
+ANR	287	Identifier	ret		2	0					
+ANR	288	UnaryOperationExpression	- ENOMEM		2	1					
+ANR	289	UnaryOperator	-		2	0					
+ANR	290	Identifier	ENOMEM		2	1					
+ANR	291	GotoStatement	goto fail ;	56:20:1913:1922	2	1	True				
+ANR	292	Identifier	fail		2	0					
+ANR	293	ExpressionStatement	assert ( hd_qiov . size <= QCOW_MAX_CRYPT_CLUSTERS * s -> cluster_size )	60:12:1969:2053	2	3	True				
+ANR	294	CallExpression	assert ( hd_qiov . size <= QCOW_MAX_CRYPT_CLUSTERS * s -> cluster_size )		2	0					
+ANR	295	Callee	assert		2	0					
+ANR	296	Identifier	assert		2	0					
+ANR	297	ArgumentList	hd_qiov . size <= QCOW_MAX_CRYPT_CLUSTERS * s -> cluster_size		2	1					
+ANR	298	Argument	hd_qiov . size <= QCOW_MAX_CRYPT_CLUSTERS * s -> cluster_size		2	0					
+ANR	299	RelationalExpression	hd_qiov . size <= QCOW_MAX_CRYPT_CLUSTERS * s -> cluster_size		2	0		<=			
+ANR	300	MemberAccess	hd_qiov . size		2	0					
+ANR	301	Identifier	hd_qiov		2	0					
+ANR	302	Identifier	size		2	1					
+ANR	303	MultiplicativeExpression	QCOW_MAX_CRYPT_CLUSTERS * s -> cluster_size		2	1		*			
+ANR	304	Identifier	QCOW_MAX_CRYPT_CLUSTERS		2	0					
+ANR	305	PtrMemberAccess	s -> cluster_size		2	1					
+ANR	306	Identifier	s		2	0					
+ANR	307	Identifier	cluster_size		2	1					
+ANR	308	ExpressionStatement	"qemu_iovec_to_buf ( & hd_qiov , 0 , cluster_data , hd_qiov . size )"	62:12:2067:2125	2	4	True				
+ANR	309	CallExpression	"qemu_iovec_to_buf ( & hd_qiov , 0 , cluster_data , hd_qiov . size )"		2	0					
+ANR	310	Callee	qemu_iovec_to_buf		2	0					
+ANR	311	Identifier	qemu_iovec_to_buf		2	0					
+ANR	312	ArgumentList	& hd_qiov		2	1					
+ANR	313	Argument	& hd_qiov		2	0					
+ANR	314	UnaryOperationExpression	& hd_qiov		2	0					
+ANR	315	UnaryOperator	&		2	0					
+ANR	316	Identifier	hd_qiov		2	1					
+ANR	317	Argument	0		2	1					
+ANR	318	PrimaryExpression	0		2	0					
+ANR	319	Argument	cluster_data		2	2					
+ANR	320	Identifier	cluster_data		2	0					
+ANR	321	Argument	hd_qiov . size		2	3					
+ANR	322	MemberAccess	hd_qiov . size		2	0					
+ANR	323	Identifier	hd_qiov		2	0					
+ANR	324	Identifier	size		2	1					
+ANR	325	IfStatement	"if ( qcrypto_block_encrypt ( s -> crypto , offset >> BDRV_SECTOR_BITS , cluster_data , cur_bytes , & err ) < 0 )"		2	5					
+ANR	326	Condition	"qcrypto_block_encrypt ( s -> crypto , offset >> BDRV_SECTOR_BITS , cluster_data , cur_bytes , & err ) < 0"	64:16:2144:2314	2	0	True				
+ANR	327	RelationalExpression	"qcrypto_block_encrypt ( s -> crypto , offset >> BDRV_SECTOR_BITS , cluster_data , cur_bytes , & err ) < 0"		2	0		<			
+ANR	328	CallExpression	"qcrypto_block_encrypt ( s -> crypto , offset >> BDRV_SECTOR_BITS , cluster_data , cur_bytes , & err )"		2	0					
+ANR	329	Callee	qcrypto_block_encrypt		2	0					
+ANR	330	Identifier	qcrypto_block_encrypt		2	0					
+ANR	331	ArgumentList	s -> crypto		2	1					
+ANR	332	Argument	s -> crypto		2	0					
+ANR	333	PtrMemberAccess	s -> crypto		2	0					
+ANR	334	Identifier	s		2	0					
+ANR	335	Identifier	crypto		2	1					
+ANR	336	Argument	offset >> BDRV_SECTOR_BITS		2	1					
+ANR	337	ShiftExpression	offset >> BDRV_SECTOR_BITS		2	0		>>			
+ANR	338	Identifier	offset		2	0					
+ANR	339	Identifier	BDRV_SECTOR_BITS		2	1					
+ANR	340	Argument	cluster_data		2	2					
+ANR	341	Identifier	cluster_data		2	0					
+ANR	342	Argument	cur_bytes		2	3					
+ANR	343	Identifier	cur_bytes		2	0					
+ANR	344	Argument	& err		2	4					
+ANR	345	UnaryOperationExpression	& err		2	0					
+ANR	346	UnaryOperator	&		2	0					
+ANR	347	Identifier	err		2	1					
+ANR	348	PrimaryExpression	0		2	1					
+ANR	349	CompoundStatement		63:60:2107:2107	2	1					
+ANR	350	ExpressionStatement	error_free ( err )	67:16:2335:2350	2	0	True				
+ANR	351	CallExpression	error_free ( err )		2	0					
+ANR	352	Callee	error_free		2	0					
+ANR	353	Identifier	error_free		2	0					
+ANR	354	ArgumentList	err		2	1					
+ANR	355	Argument	err		2	0					
+ANR	356	Identifier	err		2	0					
+ANR	357	ExpressionStatement	ret = - EIO	68:16:2368:2378	2	1	True				
+ANR	358	AssignmentExpression	ret = - EIO		2	0		=			
+ANR	359	Identifier	ret		2	0					
+ANR	360	UnaryOperationExpression	- EIO		2	1					
+ANR	361	UnaryOperator	-		2	0					
+ANR	362	Identifier	EIO		2	1					
+ANR	363	GotoStatement	goto fail ;	69:16:2396:2405	2	2	True				
+ANR	364	Identifier	fail		2	0					
+ANR	365	ExpressionStatement	qemu_iovec_reset ( & hd_qiov )	72:12:2434:2460	2	6	True				
+ANR	366	CallExpression	qemu_iovec_reset ( & hd_qiov )		2	0					
+ANR	367	Callee	qemu_iovec_reset		2	0					
+ANR	368	Identifier	qemu_iovec_reset		2	0					
+ANR	369	ArgumentList	& hd_qiov		2	1					
+ANR	370	Argument	& hd_qiov		2	0					
+ANR	371	UnaryOperationExpression	& hd_qiov		2	0					
+ANR	372	UnaryOperator	&		2	0					
+ANR	373	Identifier	hd_qiov		2	1					
+ANR	374	ExpressionStatement	"qemu_iovec_add ( & hd_qiov , cluster_data , cur_bytes )"	73:12:2474:2523	2	7	True				
+ANR	375	CallExpression	"qemu_iovec_add ( & hd_qiov , cluster_data , cur_bytes )"		2	0					
+ANR	376	Callee	qemu_iovec_add		2	0					
+ANR	377	Identifier	qemu_iovec_add		2	0					
+ANR	378	ArgumentList	& hd_qiov		2	1					
+ANR	379	Argument	& hd_qiov		2	0					
+ANR	380	UnaryOperationExpression	& hd_qiov		2	0					
+ANR	381	UnaryOperator	&		2	0					
+ANR	382	Identifier	hd_qiov		2	1					
+ANR	383	Argument	cluster_data		2	1					
+ANR	384	Identifier	cluster_data		2	0					
+ANR	385	Argument	cur_bytes		2	2					
+ANR	386	Identifier	cur_bytes		2	0					
+ANR	387	ExpressionStatement	"ret = qcow2_pre_write_overlap_check ( bs , 0 , cluster_offset + offset_in_cluster , cur_bytes )"	76:8:2544:2649	2	11	True				
+ANR	388	AssignmentExpression	"ret = qcow2_pre_write_overlap_check ( bs , 0 , cluster_offset + offset_in_cluster , cur_bytes )"		2	0		=			
+ANR	389	Identifier	ret		2	0					
+ANR	390	CallExpression	"qcow2_pre_write_overlap_check ( bs , 0 , cluster_offset + offset_in_cluster , cur_bytes )"		2	1					
+ANR	391	Callee	qcow2_pre_write_overlap_check		2	0					
+ANR	392	Identifier	qcow2_pre_write_overlap_check		2	0					
+ANR	393	ArgumentList	bs		2	1					
+ANR	394	Argument	bs		2	0					
+ANR	395	Identifier	bs		2	0					
+ANR	396	Argument	0		2	1					
+ANR	397	PrimaryExpression	0		2	0					
+ANR	398	Argument	cluster_offset + offset_in_cluster		2	2					
+ANR	399	AdditiveExpression	cluster_offset + offset_in_cluster		2	0		+			
+ANR	400	Identifier	cluster_offset		2	0					
+ANR	401	Identifier	offset_in_cluster		2	1					
+ANR	402	Argument	cur_bytes		2	3					
+ANR	403	Identifier	cur_bytes		2	0					
+ANR	404	IfStatement	if ( ret < 0 )		2	12					
+ANR	405	Condition	ret < 0	78:12:2663:2669	2	0	True				
+ANR	406	RelationalExpression	ret < 0		2	0		<			
+ANR	407	Identifier	ret		2	0					
+ANR	408	PrimaryExpression	0		2	1					
+ANR	409	CompoundStatement		75:21:2462:2462	2	1					
+ANR	410	GotoStatement	goto fail ;	79:12:2686:2695	2	0	True				
+ANR	411	Identifier	fail		2	0					
+ANR	412	IfStatement	"if ( ! merge_cow ( offset , cur_bytes , & hd_qiov , l2meta ) )"		2	13					
+ANR	413	Condition	"! merge_cow ( offset , cur_bytes , & hd_qiov , l2meta )"	86:12:2961:3007	2	0	True				
+ANR	414	UnaryOperationExpression	"! merge_cow ( offset , cur_bytes , & hd_qiov , l2meta )"		2	0					
+ANR	415	UnaryOperator	!		2	0					
+ANR	416	CallExpression	"merge_cow ( offset , cur_bytes , & hd_qiov , l2meta )"		2	1					
+ANR	417	Callee	merge_cow		2	0					
+ANR	418	Identifier	merge_cow		2	0					
+ANR	419	ArgumentList	offset		2	1					
+ANR	420	Argument	offset		2	0					
+ANR	421	Identifier	offset		2	0					
+ANR	422	Argument	cur_bytes		2	1					
+ANR	423	Identifier	cur_bytes		2	0					
+ANR	424	Argument	& hd_qiov		2	2					
+ANR	425	UnaryOperationExpression	& hd_qiov		2	0					
+ANR	426	UnaryOperator	&		2	0					
+ANR	427	Identifier	hd_qiov		2	1					
+ANR	428	Argument	l2meta		2	3					
+ANR	429	Identifier	l2meta		2	0					
+ANR	430	CompoundStatement		83:61:2800:2800	2	1					
+ANR	431	ExpressionStatement	qemu_co_mutex_unlock ( & s -> lock )	87:12:3024:3054	2	0	True				
+ANR	432	CallExpression	qemu_co_mutex_unlock ( & s -> lock )		2	0					
+ANR	433	Callee	qemu_co_mutex_unlock		2	0					
+ANR	434	Identifier	qemu_co_mutex_unlock		2	0					
+ANR	435	ArgumentList	& s -> lock		2	1					
+ANR	436	Argument	& s -> lock		2	0					
+ANR	437	UnaryOperationExpression	& s -> lock		2	0					
+ANR	438	UnaryOperator	&		2	0					
+ANR	439	PtrMemberAccess	s -> lock		2	1					
+ANR	440	Identifier	s		2	0					
+ANR	441	Identifier	lock		2	1					
+ANR	442	ExpressionStatement	"BLKDBG_EVENT ( bs -> file , BLKDBG_WRITE_AIO )"	88:12:3068:3108	2	1	True				
+ANR	443	CallExpression	"BLKDBG_EVENT ( bs -> file , BLKDBG_WRITE_AIO )"		2	0					
+ANR	444	Callee	BLKDBG_EVENT		2	0					
+ANR	445	Identifier	BLKDBG_EVENT		2	0					
+ANR	446	ArgumentList	bs -> file		2	1					
+ANR	447	Argument	bs -> file		2	0					
+ANR	448	PtrMemberAccess	bs -> file		2	0					
+ANR	449	Identifier	bs		2	0					
+ANR	450	Identifier	file		2	1					
+ANR	451	Argument	BLKDBG_WRITE_AIO		2	1					
+ANR	452	Identifier	BLKDBG_WRITE_AIO		2	0					
+ANR	453	ExpressionStatement	"trace_qcow2_writev_data ( qemu_coroutine_self ( ) , cluster_offset + offset_in_cluster )"	89:12:3122:3240	2	2	True				
+ANR	454	CallExpression	"trace_qcow2_writev_data ( qemu_coroutine_self ( ) , cluster_offset + offset_in_cluster )"		2	0					
+ANR	455	Callee	trace_qcow2_writev_data		2	0					
+ANR	456	Identifier	trace_qcow2_writev_data		2	0					
+ANR	457	ArgumentList	qemu_coroutine_self ( )		2	1					
+ANR	458	Argument	qemu_coroutine_self ( )		2	0					
+ANR	459	CallExpression	qemu_coroutine_self ( )		2	0					
+ANR	460	Callee	qemu_coroutine_self		2	0					
+ANR	461	Identifier	qemu_coroutine_self		2	0					
+ANR	462	ArgumentList			2	1					
+ANR	463	Argument	cluster_offset + offset_in_cluster		2	1					
+ANR	464	AdditiveExpression	cluster_offset + offset_in_cluster		2	0		+			
+ANR	465	Identifier	cluster_offset		2	0					
+ANR	466	Identifier	offset_in_cluster		2	1					
+ANR	467	ExpressionStatement	"ret = bdrv_co_pwritev ( bs -> file , cluster_offset + offset_in_cluster , cur_bytes , & hd_qiov , 0 )"	91:12:3254:3413	2	3	True				
+ANR	468	AssignmentExpression	"ret = bdrv_co_pwritev ( bs -> file , cluster_offset + offset_in_cluster , cur_bytes , & hd_qiov , 0 )"		2	0		=			
+ANR	469	Identifier	ret		2	0					
+ANR	470	CallExpression	"bdrv_co_pwritev ( bs -> file , cluster_offset + offset_in_cluster , cur_bytes , & hd_qiov , 0 )"		2	1					
+ANR	471	Callee	bdrv_co_pwritev		2	0					
+ANR	472	Identifier	bdrv_co_pwritev		2	0					
+ANR	473	ArgumentList	bs -> file		2	1					
+ANR	474	Argument	bs -> file		2	0					
+ANR	475	PtrMemberAccess	bs -> file		2	0					
+ANR	476	Identifier	bs		2	0					
+ANR	477	Identifier	file		2	1					
+ANR	478	Argument	cluster_offset + offset_in_cluster		2	1					
+ANR	479	AdditiveExpression	cluster_offset + offset_in_cluster		2	0		+			
+ANR	480	Identifier	cluster_offset		2	0					
+ANR	481	Identifier	offset_in_cluster		2	1					
+ANR	482	Argument	cur_bytes		2	2					
+ANR	483	Identifier	cur_bytes		2	0					
+ANR	484	Argument	& hd_qiov		2	3					
+ANR	485	UnaryOperationExpression	& hd_qiov		2	0					
+ANR	486	UnaryOperator	&		2	0					
+ANR	487	Identifier	hd_qiov		2	1					
+ANR	488	Argument	0		2	4					
+ANR	489	PrimaryExpression	0		2	0					
+ANR	490	ExpressionStatement	qemu_co_mutex_lock ( & s -> lock )	94:12:3427:3455	2	4	True				
+ANR	491	CallExpression	qemu_co_mutex_lock ( & s -> lock )		2	0					
+ANR	492	Callee	qemu_co_mutex_lock		2	0					
+ANR	493	Identifier	qemu_co_mutex_lock		2	0					
+ANR	494	ArgumentList	& s -> lock		2	1					
+ANR	495	Argument	& s -> lock		2	0					
+ANR	496	UnaryOperationExpression	& s -> lock		2	0					
+ANR	497	UnaryOperator	&		2	0					
+ANR	498	PtrMemberAccess	s -> lock		2	1					
+ANR	499	Identifier	s		2	0					
+ANR	500	Identifier	lock		2	1					
+ANR	501	IfStatement	if ( ret < 0 )		2	5					
+ANR	502	Condition	ret < 0	95:16:3473:3479	2	0	True				
+ANR	503	RelationalExpression	ret < 0		2	0		<			
+ANR	504	Identifier	ret		2	0					
+ANR	505	PrimaryExpression	0		2	1					
+ANR	506	CompoundStatement		92:25:3272:3272	2	1					
+ANR	507	GotoStatement	goto fail ;	96:16:3500:3509	2	0	True				
+ANR	508	Identifier	fail		2	0					
+ANR	509	WhileStatement	while ( l2meta != NULL )		2	14					
+ANR	510	Condition	l2meta != NULL	100:15:3551:3564	2	0	True				
+ANR	511	EqualityExpression	l2meta != NULL		2	0		!=			
+ANR	512	Identifier	l2meta		2	0					
+ANR	513	Identifier	NULL		2	1					
+ANR	514	CompoundStatement		98:12:3371:3387	2	1					
+ANR	515	IdentifierDeclStatement	QCowL2Meta * next ;	101:12:3581:3597	2	0	True				
+ANR	516	IdentifierDecl	* next		2	0					
+ANR	517	IdentifierDeclType	QCowL2Meta *		2	0					
+ANR	518	Identifier	next		2	1					
+ANR	519	ExpressionStatement	"ret = qcow2_alloc_cluster_link_l2 ( bs , l2meta )"	103:12:3612:3657	2	1	True				
+ANR	520	AssignmentExpression	"ret = qcow2_alloc_cluster_link_l2 ( bs , l2meta )"		2	0		=			
+ANR	521	Identifier	ret		2	0					
+ANR	522	CallExpression	"qcow2_alloc_cluster_link_l2 ( bs , l2meta )"		2	1					
+ANR	523	Callee	qcow2_alloc_cluster_link_l2		2	0					
+ANR	524	Identifier	qcow2_alloc_cluster_link_l2		2	0					
+ANR	525	ArgumentList	bs		2	1					
+ANR	526	Argument	bs		2	0					
+ANR	527	Identifier	bs		2	0					
+ANR	528	Argument	l2meta		2	1					
+ANR	529	Identifier	l2meta		2	0					
+ANR	530	IfStatement	if ( ret < 0 )		2	2					
+ANR	531	Condition	ret < 0	104:16:3675:3681	2	0	True				
+ANR	532	RelationalExpression	ret < 0		2	0		<			
+ANR	533	Identifier	ret		2	0					
+ANR	534	PrimaryExpression	0		2	1					
+ANR	535	CompoundStatement		101:25:3474:3474	2	1					
+ANR	536	GotoStatement	goto fail ;	105:16:3702:3711	2	0	True				
+ANR	537	Identifier	fail		2	0					
+ANR	538	IfStatement	if ( l2meta -> nb_clusters != 0 )		2	3					
+ANR	539	Condition	l2meta -> nb_clusters != 0	109:16:3812:3835	2	0	True				
+ANR	540	EqualityExpression	l2meta -> nb_clusters != 0		2	0		!=			
+ANR	541	PtrMemberAccess	l2meta -> nb_clusters		2	0					
+ANR	542	Identifier	l2meta		2	0					
+ANR	543	Identifier	nb_clusters		2	1					
+ANR	544	PrimaryExpression	0		2	1					
+ANR	545	CompoundStatement		106:42:3628:3628	2	1					
+ANR	546	ExpressionStatement	"QLIST_REMOVE ( l2meta , next_in_flight )"	110:16:3856:3892	2	0	True				
+ANR	547	CallExpression	"QLIST_REMOVE ( l2meta , next_in_flight )"		2	0					
+ANR	548	Callee	QLIST_REMOVE		2	0					
+ANR	549	Identifier	QLIST_REMOVE		2	0					
+ANR	550	ArgumentList	l2meta		2	1					
+ANR	551	Argument	l2meta		2	0					
+ANR	552	Identifier	l2meta		2	0					
+ANR	553	Argument	next_in_flight		2	1					
+ANR	554	Identifier	next_in_flight		2	0					
+ANR	555	ExpressionStatement	qemu_co_queue_restart_all ( & l2meta -> dependent_requests )	113:12:3921:3975	2	4	True				
+ANR	556	CallExpression	qemu_co_queue_restart_all ( & l2meta -> dependent_requests )		2	0					
+ANR	557	Callee	qemu_co_queue_restart_all		2	0					
+ANR	558	Identifier	qemu_co_queue_restart_all		2	0					
+ANR	559	ArgumentList	& l2meta -> dependent_requests		2	1					
+ANR	560	Argument	& l2meta -> dependent_requests		2	0					
+ANR	561	UnaryOperationExpression	& l2meta -> dependent_requests		2	0					
+ANR	562	UnaryOperator	&		2	0					
+ANR	563	PtrMemberAccess	l2meta -> dependent_requests		2	1					
+ANR	564	Identifier	l2meta		2	0					
+ANR	565	Identifier	dependent_requests		2	1					
+ANR	566	ExpressionStatement	next = l2meta -> next	115:12:3990:4009	2	5	True				
+ANR	567	AssignmentExpression	next = l2meta -> next		2	0		=			
+ANR	568	Identifier	next		2	0					
+ANR	569	PtrMemberAccess	l2meta -> next		2	1					
+ANR	570	Identifier	l2meta		2	0					
+ANR	571	Identifier	next		2	1					
+ANR	572	ExpressionStatement	g_free ( l2meta )	116:12:4023:4037	2	6	True				
+ANR	573	CallExpression	g_free ( l2meta )		2	0					
+ANR	574	Callee	g_free		2	0					
+ANR	575	Identifier	g_free		2	0					
+ANR	576	ArgumentList	l2meta		2	1					
+ANR	577	Argument	l2meta		2	0					
+ANR	578	Identifier	l2meta		2	0					
+ANR	579	ExpressionStatement	l2meta = next	117:12:4051:4064	2	7	True				
+ANR	580	AssignmentExpression	l2meta = next		2	0		=			
+ANR	581	Identifier	l2meta		2	0					
+ANR	582	Identifier	next		2	1					
+ANR	583	ExpressionStatement	bytes -= cur_bytes	120:8:4085:4103	2	15	True				
+ANR	584	AssignmentExpression	bytes -= cur_bytes		2	0		-=			
+ANR	585	Identifier	bytes		2	0					
+ANR	586	Identifier	cur_bytes		2	1					
+ANR	587	ExpressionStatement	offset += cur_bytes	121:8:4113:4132	2	16	True				
+ANR	588	AssignmentExpression	offset += cur_bytes		2	0		+=			
+ANR	589	Identifier	offset		2	0					
+ANR	590	Identifier	cur_bytes		2	1					
+ANR	591	ExpressionStatement	bytes_done += cur_bytes	122:8:4142:4165	2	17	True				
+ANR	592	AssignmentExpression	bytes_done += cur_bytes		2	0		+=			
+ANR	593	Identifier	bytes_done		2	0					
+ANR	594	Identifier	cur_bytes		2	1					
+ANR	595	ExpressionStatement	"trace_qcow2_writev_done_part ( qemu_coroutine_self ( ) , cur_bytes )"	123:8:4175:4237	2	18	True				
+ANR	596	CallExpression	"trace_qcow2_writev_done_part ( qemu_coroutine_self ( ) , cur_bytes )"		2	0					
+ANR	597	Callee	trace_qcow2_writev_done_part		2	0					
+ANR	598	Identifier	trace_qcow2_writev_done_part		2	0					
+ANR	599	ArgumentList	qemu_coroutine_self ( )		2	1					
+ANR	600	Argument	qemu_coroutine_self ( )		2	0					
+ANR	601	CallExpression	qemu_coroutine_self ( )		2	0					
+ANR	602	Callee	qemu_coroutine_self		2	0					
+ANR	603	Identifier	qemu_coroutine_self		2	0					
+ANR	604	ArgumentList			2	1					
+ANR	605	Argument	cur_bytes		2	1					
+ANR	606	Identifier	cur_bytes		2	0					
+ANR	607	ExpressionStatement	ret = 0	125:4:4249:4256	2	14	True				
+ANR	608	AssignmentExpression	ret = 0		2	0		=			
+ANR	609	Identifier	ret		2	0					
+ANR	610	PrimaryExpression	0		2	1					
+ANR	611	Label	fail :	127:0:4259:4263	2	15	True				
+ANR	612	Identifier	fail		2	0					
+ANR	613	ExpressionStatement	qemu_co_mutex_unlock ( & s -> lock )	128:4:4269:4299	2	16	True				
+ANR	614	CallExpression	qemu_co_mutex_unlock ( & s -> lock )		2	0					
+ANR	615	Callee	qemu_co_mutex_unlock		2	0					
+ANR	616	Identifier	qemu_co_mutex_unlock		2	0					
+ANR	617	ArgumentList	& s -> lock		2	1					
+ANR	618	Argument	& s -> lock		2	0					
+ANR	619	UnaryOperationExpression	& s -> lock		2	0					
+ANR	620	UnaryOperator	&		2	0					
+ANR	621	PtrMemberAccess	s -> lock		2	1					
+ANR	622	Identifier	s		2	0					
+ANR	623	Identifier	lock		2	1					
+ANR	624	WhileStatement	while ( l2meta != NULL )		2	17					
+ANR	625	Condition	l2meta != NULL	130:11:4313:4326	2	0	True				
+ANR	626	EqualityExpression	l2meta != NULL		2	0		!=			
+ANR	627	Identifier	l2meta		2	0					
+ANR	628	Identifier	NULL		2	1					
+ANR	629	CompoundStatement		128:8:4129:4145	2	1					
+ANR	630	IdentifierDeclStatement	QCowL2Meta * next ;	131:8:4339:4355	2	0	True				
+ANR	631	IdentifierDecl	* next		2	0					
+ANR	632	IdentifierDeclType	QCowL2Meta *		2	0					
+ANR	633	Identifier	next		2	1					
+ANR	634	IfStatement	if ( l2meta -> nb_clusters != 0 )		2	1					
+ANR	635	Condition	l2meta -> nb_clusters != 0	133:12:4370:4393	2	0	True				
+ANR	636	EqualityExpression	l2meta -> nb_clusters != 0		2	0		!=			
+ANR	637	PtrMemberAccess	l2meta -> nb_clusters		2	0					
+ANR	638	Identifier	l2meta		2	0					
+ANR	639	Identifier	nb_clusters		2	1					
+ANR	640	PrimaryExpression	0		2	1					
+ANR	641	CompoundStatement		130:38:4186:4186	2	1					
+ANR	642	ExpressionStatement	"QLIST_REMOVE ( l2meta , next_in_flight )"	134:12:4410:4446	2	0	True				
+ANR	643	CallExpression	"QLIST_REMOVE ( l2meta , next_in_flight )"		2	0					
+ANR	644	Callee	QLIST_REMOVE		2	0					
+ANR	645	Identifier	QLIST_REMOVE		2	0					
+ANR	646	ArgumentList	l2meta		2	1					
+ANR	647	Argument	l2meta		2	0					
+ANR	648	Identifier	l2meta		2	0					
+ANR	649	Argument	next_in_flight		2	1					
+ANR	650	Identifier	next_in_flight		2	0					
+ANR	651	ExpressionStatement	qemu_co_queue_restart_all ( & l2meta -> dependent_requests )	136:8:4466:4520	2	2	True				
+ANR	652	CallExpression	qemu_co_queue_restart_all ( & l2meta -> dependent_requests )		2	0					
+ANR	653	Callee	qemu_co_queue_restart_all		2	0					
+ANR	654	Identifier	qemu_co_queue_restart_all		2	0					
+ANR	655	ArgumentList	& l2meta -> dependent_requests		2	1					
+ANR	656	Argument	& l2meta -> dependent_requests		2	0					
+ANR	657	UnaryOperationExpression	& l2meta -> dependent_requests		2	0					
+ANR	658	UnaryOperator	&		2	0					
+ANR	659	PtrMemberAccess	l2meta -> dependent_requests		2	1					
+ANR	660	Identifier	l2meta		2	0					
+ANR	661	Identifier	dependent_requests		2	1					
+ANR	662	ExpressionStatement	next = l2meta -> next	138:8:4531:4550	2	3	True				
+ANR	663	AssignmentExpression	next = l2meta -> next		2	0		=			
+ANR	664	Identifier	next		2	0					
+ANR	665	PtrMemberAccess	l2meta -> next		2	1					
+ANR	666	Identifier	l2meta		2	0					
+ANR	667	Identifier	next		2	1					
+ANR	668	ExpressionStatement	g_free ( l2meta )	139:8:4560:4574	2	4	True				
+ANR	669	CallExpression	g_free ( l2meta )		2	0					
+ANR	670	Callee	g_free		2	0					
+ANR	671	Identifier	g_free		2	0					
+ANR	672	ArgumentList	l2meta		2	1					
+ANR	673	Argument	l2meta		2	0					
+ANR	674	Identifier	l2meta		2	0					
+ANR	675	ExpressionStatement	l2meta = next	140:8:4584:4597	2	5	True				
+ANR	676	AssignmentExpression	l2meta = next		2	0		=			
+ANR	677	Identifier	l2meta		2	0					
+ANR	678	Identifier	next		2	1					
+ANR	679	ExpressionStatement	qemu_iovec_destroy ( & hd_qiov )	143:4:4610:4638	2	18	True				
+ANR	680	CallExpression	qemu_iovec_destroy ( & hd_qiov )		2	0					
+ANR	681	Callee	qemu_iovec_destroy		2	0					
+ANR	682	Identifier	qemu_iovec_destroy		2	0					
+ANR	683	ArgumentList	& hd_qiov		2	1					
+ANR	684	Argument	& hd_qiov		2	0					
+ANR	685	UnaryOperationExpression	& hd_qiov		2	0					
+ANR	686	UnaryOperator	&		2	0					
+ANR	687	Identifier	hd_qiov		2	1					
+ANR	688	ExpressionStatement	qemu_vfree ( cluster_data )	144:4:4644:4668	2	19	True				
+ANR	689	CallExpression	qemu_vfree ( cluster_data )		2	0					
+ANR	690	Callee	qemu_vfree		2	0					
+ANR	691	Identifier	qemu_vfree		2	0					
+ANR	692	ArgumentList	cluster_data		2	1					
+ANR	693	Argument	cluster_data		2	0					
+ANR	694	Identifier	cluster_data		2	0					
+ANR	695	ExpressionStatement	"trace_qcow2_writev_done_req ( qemu_coroutine_self ( ) , ret )"	145:4:4674:4729	2	20	True				
+ANR	696	CallExpression	"trace_qcow2_writev_done_req ( qemu_coroutine_self ( ) , ret )"		2	0					
+ANR	697	Callee	trace_qcow2_writev_done_req		2	0					
+ANR	698	Identifier	trace_qcow2_writev_done_req		2	0					
+ANR	699	ArgumentList	qemu_coroutine_self ( )		2	1					
+ANR	700	Argument	qemu_coroutine_self ( )		2	0					
+ANR	701	CallExpression	qemu_coroutine_self ( )		2	0					
+ANR	702	Callee	qemu_coroutine_self		2	0					
+ANR	703	Identifier	qemu_coroutine_self		2	0					
+ANR	704	ArgumentList			2	1					
+ANR	705	Argument	ret		2	1					
+ANR	706	Identifier	ret		2	0					
+ANR	707	ReturnStatement	return ret ;	147:4:4736:4746	2	21	True				
+ANR	708	Identifier	ret		2	0					
+ANR	709	ReturnType	static coroutine_fn int		2	1					
+ANR	710	Identifier	qcow2_co_pwritev		2	2					
+ANR	711	ParameterList	"BlockDriverState * bs , uint64_t offset , uint64_t bytes , QEMUIOVector * qiov , int flags"		2	3					
+ANR	712	Parameter	BlockDriverState * bs	1:41:41:60	2	0	True				
+ANR	713	ParameterType	BlockDriverState *		2	0					
+ANR	714	Identifier	bs		2	1					
+ANR	715	Parameter	uint64_t offset	1:63:63:77	2	1	True				
+ANR	716	ParameterType	uint64_t		2	0					
+ANR	717	Identifier	offset		2	1					
+ANR	718	Parameter	uint64_t bytes	2:41:121:134	2	2	True				
+ANR	719	ParameterType	uint64_t		2	0					
+ANR	720	Identifier	bytes		2	1					
+ANR	721	Parameter	QEMUIOVector * qiov	2:57:137:154	2	3	True				
+ANR	722	ParameterType	QEMUIOVector *		2	0					
+ANR	723	Identifier	qiov		2	1					
+ANR	724	Parameter	int flags	3:41:198:206	2	4	True				
+ANR	725	ParameterType	int		2	0					
+ANR	726	Identifier	flags		2	1					
+ANR	727	CFGEntryNode	ENTRY		2		True				
+ANR	728	CFGExitNode	EXIT		2		True				
+ANR	729	Symbol	ENOMEM		2						
+ANR	730	Symbol	& hd_qiov		2						
+ANR	731	Symbol	cluster_data		2						
+ANR	732	Symbol	bs -> file		2						
+ANR	733	Symbol	* bs -> file		2						
+ANR	734	Symbol	qcow2_alloc_cluster_offset		2						
+ANR	735	Symbol	BLKDBG_WRITE_AIO		2						
+ANR	736	Symbol	cur_bytes		2						
+ANR	737	Symbol	s -> cluster_size		2						
+ANR	738	Symbol	s -> crypto		2						
+ANR	739	Symbol	* bs		2						
+ANR	740	Symbol	* qiov		2						
+ANR	741	Symbol	qemu_coroutine_self		2						
+ANR	742	Symbol	bs -> file -> bs		2						
+ANR	743	Symbol	qcow2_alloc_cluster_link_l2		2						
+ANR	744	Symbol	ret		2						
+ANR	745	Symbol	NULL		2						
+ANR	746	Symbol	offset		2						
+ANR	747	Symbol	EIO		2						
+ANR	748	Symbol	qiov -> niov		2						
+ANR	749	Symbol	bytes_done		2						
+ANR	750	Symbol	& s -> lock		2						
+ANR	751	Symbol	QCOW_MAX_CRYPT_CLUSTERS		2						
+ANR	752	Symbol	l2meta -> next		2						
+ANR	753	Symbol	MIN		2						
+ANR	754	Symbol	& l2meta -> dependent_requests		2						
+ANR	755	Symbol	* * bs		2						
+ANR	756	Symbol	next		2						
+ANR	757	Symbol	offset_into_cluster		2						
+ANR	758	Symbol	qcow2_pre_write_overlap_check		2						
+ANR	759	Symbol	flags		2						
+ANR	760	Symbol	qiov		2						
+ANR	761	Symbol	hd_qiov . size		2						
+ANR	762	Symbol	& err		2						
+ANR	763	Symbol	bs		2						
+ANR	764	Symbol	cluster_offset		2						
+ANR	765	Symbol	INT_MAX		2						
+ANR	766	Symbol	qemu_try_blockalign		2						
+ANR	767	Symbol	s -> cluster_cache_offset		2						
+ANR	768	Symbol	bs -> opaque		2						
+ANR	769	Symbol	err		2						
+ANR	770	Symbol	next_in_flight		2						
+ANR	771	Symbol	BDRV_SECTOR_BITS		2						
+ANR	772	Symbol	qcrypto_block_encrypt		2						
+ANR	773	Symbol	l2meta -> nb_clusters		2						
+ANR	774	Symbol	bdrv_co_pwritev		2						
+ANR	775	Symbol	s		2						
+ANR	776	Symbol	& cluster_offset		2						
+ANR	777	Symbol	& cur_bytes		2						
+ANR	778	Symbol	l2meta		2						
+ANR	779	Symbol	bytes		2						
+ANR	780	Symbol	& l2meta		2						
+ANR	781	Symbol	* l2meta		2						
+ANR	782	Symbol	offset_in_cluster		2						
+ANR	783	Symbol	bs -> encrypted		2						
+ANR	784	Symbol	merge_cow		2						
+ANR	785	Symbol	* s		2						
+ANR	786	Symbol	hd_qiov		2						

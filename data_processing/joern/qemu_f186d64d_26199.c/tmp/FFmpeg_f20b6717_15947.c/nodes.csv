@@ -1,0 +1,421 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/FFmpeg_f20b6717_15947.c								
+ANR	2	Function	ff_aac_encode_tns_info	1:0:0:1322							
+ANR	3	FunctionDef	"ff_aac_encode_tns_info (AACEncContext * s , SingleChannelElement * sce)"		2	0					
+ANR	4	CompoundStatement		2:0:73:1322	2	0					
+ANR	5	IdentifierDeclStatement	"int i , w , filt , coef_len , coef_compress ;"	3:4:79:118	2	0	True				
+ANR	6	IdentifierDecl	i		2	0					
+ANR	7	IdentifierDeclType	int		2	0					
+ANR	8	Identifier	i		2	1					
+ANR	9	IdentifierDecl	w		2	1					
+ANR	10	IdentifierDeclType	int		2	0					
+ANR	11	Identifier	w		2	1					
+ANR	12	IdentifierDecl	filt		2	2					
+ANR	13	IdentifierDeclType	int		2	0					
+ANR	14	Identifier	filt		2	1					
+ANR	15	IdentifierDecl	coef_len		2	3					
+ANR	16	IdentifierDeclType	int		2	0					
+ANR	17	Identifier	coef_len		2	1					
+ANR	18	IdentifierDecl	coef_compress		2	4					
+ANR	19	IdentifierDeclType	int		2	0					
+ANR	20	Identifier	coef_compress		2	1					
+ANR	21	IdentifierDeclStatement	const int coef_res = MAX_LPC_PRECISION == 4 ? 1 : 0 ;	4:4:124:175	2	1	True				
+ANR	22	IdentifierDecl	coef_res = MAX_LPC_PRECISION == 4 ? 1 : 0		2	0					
+ANR	23	IdentifierDeclType	const int		2	0					
+ANR	24	Identifier	coef_res		2	1					
+ANR	25	AssignmentExpression	coef_res = MAX_LPC_PRECISION == 4 ? 1 : 0		2	2		=			
+ANR	26	Identifier	coef_res		2	0					
+ANR	27	ConditionalExpression	MAX_LPC_PRECISION == 4 ? 1 : 0		2	1					
+ANR	28	Condition	MAX_LPC_PRECISION == 4		2	0					
+ANR	29	EqualityExpression	MAX_LPC_PRECISION == 4		2	0		==			
+ANR	30	Identifier	MAX_LPC_PRECISION		2	0					
+ANR	31	PrimaryExpression	4		2	1					
+ANR	32	PrimaryExpression	1		2	1					
+ANR	33	PrimaryExpression	0		2	2					
+ANR	34	IdentifierDeclStatement	const int is8 = sce -> ics . window_sequence [ 0 ] == EIGHT_SHORT_SEQUENCE ;	5:4:181:248	2	2	True				
+ANR	35	IdentifierDecl	is8 = sce -> ics . window_sequence [ 0 ] == EIGHT_SHORT_SEQUENCE		2	0					
+ANR	36	IdentifierDeclType	const int		2	0					
+ANR	37	Identifier	is8		2	1					
+ANR	38	AssignmentExpression	is8 = sce -> ics . window_sequence [ 0 ] == EIGHT_SHORT_SEQUENCE		2	2		=			
+ANR	39	Identifier	is8		2	0					
+ANR	40	EqualityExpression	sce -> ics . window_sequence [ 0 ] == EIGHT_SHORT_SEQUENCE		2	1		==			
+ANR	41	ArrayIndexing	sce -> ics . window_sequence [ 0 ]		2	0					
+ANR	42	MemberAccess	sce -> ics . window_sequence		2	0					
+ANR	43	PtrMemberAccess	sce -> ics		2	0					
+ANR	44	Identifier	sce		2	0					
+ANR	45	Identifier	ics		2	1					
+ANR	46	Identifier	window_sequence		2	1					
+ANR	47	PrimaryExpression	0		2	1					
+ANR	48	Identifier	EIGHT_SHORT_SEQUENCE		2	1					
+ANR	49	ExpressionStatement	"put_bits ( & s -> pb , 1 , ! ! sce -> tns . present )"	7:4:255:294	2	3	True				
+ANR	50	CallExpression	"put_bits ( & s -> pb , 1 , ! ! sce -> tns . present )"		2	0					
+ANR	51	Callee	put_bits		2	0					
+ANR	52	Identifier	put_bits		2	0					
+ANR	53	ArgumentList	& s -> pb		2	1					
+ANR	54	Argument	& s -> pb		2	0					
+ANR	55	UnaryOperationExpression	& s -> pb		2	0					
+ANR	56	UnaryOperator	&		2	0					
+ANR	57	PtrMemberAccess	s -> pb		2	1					
+ANR	58	Identifier	s		2	0					
+ANR	59	Identifier	pb		2	1					
+ANR	60	Argument	1		2	1					
+ANR	61	PrimaryExpression	1		2	0					
+ANR	62	Argument	! ! sce -> tns . present		2	2					
+ANR	63	UnaryOperationExpression	! ! sce -> tns . present		2	0					
+ANR	64	UnaryOperator	!		2	0					
+ANR	65	UnaryOperationExpression	! sce -> tns . present		2	1					
+ANR	66	UnaryOperator	!		2	0					
+ANR	67	MemberAccess	sce -> tns . present		2	1					
+ANR	68	PtrMemberAccess	sce -> tns		2	0					
+ANR	69	Identifier	sce		2	0					
+ANR	70	Identifier	tns		2	1					
+ANR	71	Identifier	present		2	1					
+ANR	72	IfStatement	if ( ! sce -> tns . present )		2	4					
+ANR	73	Condition	! sce -> tns . present	9:8:305:321	2	0	True				
+ANR	74	UnaryOperationExpression	! sce -> tns . present		2	0					
+ANR	75	UnaryOperator	!		2	0					
+ANR	76	MemberAccess	sce -> tns . present		2	1					
+ANR	77	PtrMemberAccess	sce -> tns		2	0					
+ANR	78	Identifier	sce		2	0					
+ANR	79	Identifier	tns		2	1					
+ANR	80	Identifier	present		2	1					
+ANR	81	ReturnStatement	return ;	10:8:332:338	2	1	True				
+ANR	82	ForStatement	for ( i = 0 ; i < sce -> ics . num_windows ; i ++ )		2	5					
+ANR	83	ForInit	i = 0 ;	12:9:350:355	2	0	True				
+ANR	84	AssignmentExpression	i = 0		2	0		=			
+ANR	85	Identifier	i		2	0					
+ANR	86	PrimaryExpression	0		2	1					
+ANR	87	Condition	i < sce -> ics . num_windows	12:16:357:380	2	1	True				
+ANR	88	RelationalExpression	i < sce -> ics . num_windows		2	0		<			
+ANR	89	Identifier	i		2	0					
+ANR	90	MemberAccess	sce -> ics . num_windows		2	1					
+ANR	91	PtrMemberAccess	sce -> ics		2	0					
+ANR	92	Identifier	sce		2	0					
+ANR	93	Identifier	ics		2	1					
+ANR	94	Identifier	num_windows		2	1					
+ANR	95	PostIncDecOperationExpression	i ++	12:42:383:385	2	2	True				
+ANR	96	Identifier	i		2	0					
+ANR	97	IncDec	++		2	1					
+ANR	98	CompoundStatement		11:47:314:314	2	3					
+ANR	99	ExpressionStatement	"put_bits ( & s -> pb , 2 - is8 , sce -> tns . n_filt [ i ] )"	13:8:398:443	2	0	True				
+ANR	100	CallExpression	"put_bits ( & s -> pb , 2 - is8 , sce -> tns . n_filt [ i ] )"		2	0					
+ANR	101	Callee	put_bits		2	0					
+ANR	102	Identifier	put_bits		2	0					
+ANR	103	ArgumentList	& s -> pb		2	1					
+ANR	104	Argument	& s -> pb		2	0					
+ANR	105	UnaryOperationExpression	& s -> pb		2	0					
+ANR	106	UnaryOperator	&		2	0					
+ANR	107	PtrMemberAccess	s -> pb		2	1					
+ANR	108	Identifier	s		2	0					
+ANR	109	Identifier	pb		2	1					
+ANR	110	Argument	2 - is8		2	1					
+ANR	111	AdditiveExpression	2 - is8		2	0		-			
+ANR	112	PrimaryExpression	2		2	0					
+ANR	113	Identifier	is8		2	1					
+ANR	114	Argument	sce -> tns . n_filt [ i ]		2	2					
+ANR	115	ArrayIndexing	sce -> tns . n_filt [ i ]		2	0					
+ANR	116	MemberAccess	sce -> tns . n_filt		2	0					
+ANR	117	PtrMemberAccess	sce -> tns		2	0					
+ANR	118	Identifier	sce		2	0					
+ANR	119	Identifier	tns		2	1					
+ANR	120	Identifier	n_filt		2	1					
+ANR	121	Identifier	i		2	1					
+ANR	122	IfStatement	if ( sce -> tns . n_filt [ i ] )		2	1					
+ANR	123	Condition	sce -> tns . n_filt [ i ]	14:12:457:474	2	0	True				
+ANR	124	ArrayIndexing	sce -> tns . n_filt [ i ]		2	0					
+ANR	125	MemberAccess	sce -> tns . n_filt		2	0					
+ANR	126	PtrMemberAccess	sce -> tns		2	0					
+ANR	127	Identifier	sce		2	0					
+ANR	128	Identifier	tns		2	1					
+ANR	129	Identifier	n_filt		2	1					
+ANR	130	Identifier	i		2	1					
+ANR	131	CompoundStatement		13:32:403:403	2	1					
+ANR	132	ExpressionStatement	"put_bits ( & s -> pb , 1 , ! ! coef_res )"	15:12:491:522	2	0	True				
+ANR	133	CallExpression	"put_bits ( & s -> pb , 1 , ! ! coef_res )"		2	0					
+ANR	134	Callee	put_bits		2	0					
+ANR	135	Identifier	put_bits		2	0					
+ANR	136	ArgumentList	& s -> pb		2	1					
+ANR	137	Argument	& s -> pb		2	0					
+ANR	138	UnaryOperationExpression	& s -> pb		2	0					
+ANR	139	UnaryOperator	&		2	0					
+ANR	140	PtrMemberAccess	s -> pb		2	1					
+ANR	141	Identifier	s		2	0					
+ANR	142	Identifier	pb		2	1					
+ANR	143	Argument	1		2	1					
+ANR	144	PrimaryExpression	1		2	0					
+ANR	145	Argument	! ! coef_res		2	2					
+ANR	146	UnaryOperationExpression	! ! coef_res		2	0					
+ANR	147	UnaryOperator	!		2	0					
+ANR	148	UnaryOperationExpression	! coef_res		2	1					
+ANR	149	UnaryOperator	!		2	0					
+ANR	150	Identifier	coef_res		2	1					
+ANR	151	ForStatement	for ( filt = 0 ; filt < sce -> tns . n_filt [ i ] ; filt ++ )		2	1					
+ANR	152	ForInit	filt = 0 ;	16:17:541:549	2	0	True				
+ANR	153	AssignmentExpression	filt = 0		2	0		=			
+ANR	154	Identifier	filt		2	0					
+ANR	155	PrimaryExpression	0		2	1					
+ANR	156	Condition	filt < sce -> tns . n_filt [ i ]	16:27:551:575	2	1	True				
+ANR	157	RelationalExpression	filt < sce -> tns . n_filt [ i ]		2	0		<			
+ANR	158	Identifier	filt		2	0					
+ANR	159	ArrayIndexing	sce -> tns . n_filt [ i ]		2	1					
+ANR	160	MemberAccess	sce -> tns . n_filt		2	0					
+ANR	161	PtrMemberAccess	sce -> tns		2	0					
+ANR	162	Identifier	sce		2	0					
+ANR	163	Identifier	tns		2	1					
+ANR	164	Identifier	n_filt		2	1					
+ANR	165	Identifier	i		2	1					
+ANR	166	PostIncDecOperationExpression	filt ++	16:54:578:583	2	2	True				
+ANR	167	Identifier	filt		2	0					
+ANR	168	IncDec	++		2	1					
+ANR	169	CompoundStatement		15:62:512:512	2	3					
+ANR	170	ExpressionStatement	"put_bits ( & s -> pb , 6 - 2 * is8 , sce -> tns . length [ i ] [ filt ] )"	17:16:604:659	2	0	True				
+ANR	171	CallExpression	"put_bits ( & s -> pb , 6 - 2 * is8 , sce -> tns . length [ i ] [ filt ] )"		2	0					
+ANR	172	Callee	put_bits		2	0					
+ANR	173	Identifier	put_bits		2	0					
+ANR	174	ArgumentList	& s -> pb		2	1					
+ANR	175	Argument	& s -> pb		2	0					
+ANR	176	UnaryOperationExpression	& s -> pb		2	0					
+ANR	177	UnaryOperator	&		2	0					
+ANR	178	PtrMemberAccess	s -> pb		2	1					
+ANR	179	Identifier	s		2	0					
+ANR	180	Identifier	pb		2	1					
+ANR	181	Argument	6 - 2 * is8		2	1					
+ANR	182	AdditiveExpression	6 - 2 * is8		2	0		-			
+ANR	183	PrimaryExpression	6		2	0					
+ANR	184	MultiplicativeExpression	2 * is8		2	1		*			
+ANR	185	PrimaryExpression	2		2	0					
+ANR	186	Identifier	is8		2	1					
+ANR	187	Argument	sce -> tns . length [ i ] [ filt ]		2	2					
+ANR	188	ArrayIndexing	sce -> tns . length [ i ] [ filt ]		2	0					
+ANR	189	ArrayIndexing	sce -> tns . length [ i ]		2	0					
+ANR	190	MemberAccess	sce -> tns . length		2	0					
+ANR	191	PtrMemberAccess	sce -> tns		2	0					
+ANR	192	Identifier	sce		2	0					
+ANR	193	Identifier	tns		2	1					
+ANR	194	Identifier	length		2	1					
+ANR	195	Identifier	i		2	1					
+ANR	196	Identifier	filt		2	1					
+ANR	197	ExpressionStatement	"put_bits ( & s -> pb , 5 - 2 * is8 , sce -> tns . order [ i ] [ filt ] )"	18:16:677:731	2	1	True				
+ANR	198	CallExpression	"put_bits ( & s -> pb , 5 - 2 * is8 , sce -> tns . order [ i ] [ filt ] )"		2	0					
+ANR	199	Callee	put_bits		2	0					
+ANR	200	Identifier	put_bits		2	0					
+ANR	201	ArgumentList	& s -> pb		2	1					
+ANR	202	Argument	& s -> pb		2	0					
+ANR	203	UnaryOperationExpression	& s -> pb		2	0					
+ANR	204	UnaryOperator	&		2	0					
+ANR	205	PtrMemberAccess	s -> pb		2	1					
+ANR	206	Identifier	s		2	0					
+ANR	207	Identifier	pb		2	1					
+ANR	208	Argument	5 - 2 * is8		2	1					
+ANR	209	AdditiveExpression	5 - 2 * is8		2	0		-			
+ANR	210	PrimaryExpression	5		2	0					
+ANR	211	MultiplicativeExpression	2 * is8		2	1		*			
+ANR	212	PrimaryExpression	2		2	0					
+ANR	213	Identifier	is8		2	1					
+ANR	214	Argument	sce -> tns . order [ i ] [ filt ]		2	2					
+ANR	215	ArrayIndexing	sce -> tns . order [ i ] [ filt ]		2	0					
+ANR	216	ArrayIndexing	sce -> tns . order [ i ]		2	0					
+ANR	217	MemberAccess	sce -> tns . order		2	0					
+ANR	218	PtrMemberAccess	sce -> tns		2	0					
+ANR	219	Identifier	sce		2	0					
+ANR	220	Identifier	tns		2	1					
+ANR	221	Identifier	order		2	1					
+ANR	222	Identifier	i		2	1					
+ANR	223	Identifier	filt		2	1					
+ANR	224	IfStatement	if ( sce -> tns . order [ i ] [ filt ] )		2	2					
+ANR	225	Condition	sce -> tns . order [ i ] [ filt ]	19:20:753:775	2	0	True				
+ANR	226	ArrayIndexing	sce -> tns . order [ i ] [ filt ]		2	0					
+ANR	227	ArrayIndexing	sce -> tns . order [ i ]		2	0					
+ANR	228	MemberAccess	sce -> tns . order		2	0					
+ANR	229	PtrMemberAccess	sce -> tns		2	0					
+ANR	230	Identifier	sce		2	0					
+ANR	231	Identifier	tns		2	1					
+ANR	232	Identifier	order		2	1					
+ANR	233	Identifier	i		2	1					
+ANR	234	Identifier	filt		2	1					
+ANR	235	CompoundStatement		18:45:704:704	2	1					
+ANR	236	ExpressionStatement	"coef_compress = compress_coef ( sce -> tns . coef_idx [ i ] [ filt ] , sce -> tns . order [ i ] [ filt ] )"	20:20:800:932	2	0	True				
+ANR	237	AssignmentExpression	"coef_compress = compress_coef ( sce -> tns . coef_idx [ i ] [ filt ] , sce -> tns . order [ i ] [ filt ] )"		2	0		=			
+ANR	238	Identifier	coef_compress		2	0					
+ANR	239	CallExpression	"compress_coef ( sce -> tns . coef_idx [ i ] [ filt ] , sce -> tns . order [ i ] [ filt ] )"		2	1					
+ANR	240	Callee	compress_coef		2	0					
+ANR	241	Identifier	compress_coef		2	0					
+ANR	242	ArgumentList	sce -> tns . coef_idx [ i ] [ filt ]		2	1					
+ANR	243	Argument	sce -> tns . coef_idx [ i ] [ filt ]		2	0					
+ANR	244	ArrayIndexing	sce -> tns . coef_idx [ i ] [ filt ]		2	0					
+ANR	245	ArrayIndexing	sce -> tns . coef_idx [ i ]		2	0					
+ANR	246	MemberAccess	sce -> tns . coef_idx		2	0					
+ANR	247	PtrMemberAccess	sce -> tns		2	0					
+ANR	248	Identifier	sce		2	0					
+ANR	249	Identifier	tns		2	1					
+ANR	250	Identifier	coef_idx		2	1					
+ANR	251	Identifier	i		2	1					
+ANR	252	Identifier	filt		2	1					
+ANR	253	Argument	sce -> tns . order [ i ] [ filt ]		2	1					
+ANR	254	ArrayIndexing	sce -> tns . order [ i ] [ filt ]		2	0					
+ANR	255	ArrayIndexing	sce -> tns . order [ i ]		2	0					
+ANR	256	MemberAccess	sce -> tns . order		2	0					
+ANR	257	PtrMemberAccess	sce -> tns		2	0					
+ANR	258	Identifier	sce		2	0					
+ANR	259	Identifier	tns		2	1					
+ANR	260	Identifier	order		2	1					
+ANR	261	Identifier	i		2	1					
+ANR	262	Identifier	filt		2	1					
+ANR	263	ExpressionStatement	"put_bits ( & s -> pb , 1 , ! ! sce -> tns . direction [ i ] [ filt ] )"	22:20:954:1004	2	1	True				
+ANR	264	CallExpression	"put_bits ( & s -> pb , 1 , ! ! sce -> tns . direction [ i ] [ filt ] )"		2	0					
+ANR	265	Callee	put_bits		2	0					
+ANR	266	Identifier	put_bits		2	0					
+ANR	267	ArgumentList	& s -> pb		2	1					
+ANR	268	Argument	& s -> pb		2	0					
+ANR	269	UnaryOperationExpression	& s -> pb		2	0					
+ANR	270	UnaryOperator	&		2	0					
+ANR	271	PtrMemberAccess	s -> pb		2	1					
+ANR	272	Identifier	s		2	0					
+ANR	273	Identifier	pb		2	1					
+ANR	274	Argument	1		2	1					
+ANR	275	PrimaryExpression	1		2	0					
+ANR	276	Argument	! ! sce -> tns . direction [ i ] [ filt ]		2	2					
+ANR	277	UnaryOperationExpression	! ! sce -> tns . direction [ i ] [ filt ]		2	0					
+ANR	278	UnaryOperator	!		2	0					
+ANR	279	UnaryOperationExpression	! sce -> tns . direction [ i ] [ filt ]		2	1					
+ANR	280	UnaryOperator	!		2	0					
+ANR	281	ArrayIndexing	sce -> tns . direction [ i ] [ filt ]		2	1					
+ANR	282	ArrayIndexing	sce -> tns . direction [ i ]		2	0					
+ANR	283	MemberAccess	sce -> tns . direction		2	0					
+ANR	284	PtrMemberAccess	sce -> tns		2	0					
+ANR	285	Identifier	sce		2	0					
+ANR	286	Identifier	tns		2	1					
+ANR	287	Identifier	direction		2	1					
+ANR	288	Identifier	i		2	1					
+ANR	289	Identifier	filt		2	1					
+ANR	290	ExpressionStatement	"put_bits ( & s -> pb , 1 , ! ! coef_compress )"	23:20:1026:1062	2	2	True				
+ANR	291	CallExpression	"put_bits ( & s -> pb , 1 , ! ! coef_compress )"		2	0					
+ANR	292	Callee	put_bits		2	0					
+ANR	293	Identifier	put_bits		2	0					
+ANR	294	ArgumentList	& s -> pb		2	1					
+ANR	295	Argument	& s -> pb		2	0					
+ANR	296	UnaryOperationExpression	& s -> pb		2	0					
+ANR	297	UnaryOperator	&		2	0					
+ANR	298	PtrMemberAccess	s -> pb		2	1					
+ANR	299	Identifier	s		2	0					
+ANR	300	Identifier	pb		2	1					
+ANR	301	Argument	1		2	1					
+ANR	302	PrimaryExpression	1		2	0					
+ANR	303	Argument	! ! coef_compress		2	2					
+ANR	304	UnaryOperationExpression	! ! coef_compress		2	0					
+ANR	305	UnaryOperator	!		2	0					
+ANR	306	UnaryOperationExpression	! coef_compress		2	1					
+ANR	307	UnaryOperator	!		2	0					
+ANR	308	Identifier	coef_compress		2	1					
+ANR	309	ExpressionStatement	coef_len = coef_res + 3 - coef_compress	24:20:1084:1123	2	3	True				
+ANR	310	AssignmentExpression	coef_len = coef_res + 3 - coef_compress		2	0		=			
+ANR	311	Identifier	coef_len		2	0					
+ANR	312	AdditiveExpression	coef_res + 3 - coef_compress		2	1		+			
+ANR	313	Identifier	coef_res		2	0					
+ANR	314	AdditiveExpression	3 - coef_compress		2	1		-			
+ANR	315	PrimaryExpression	3		2	0					
+ANR	316	Identifier	coef_compress		2	1					
+ANR	317	ForStatement	for ( w = 0 ; w < sce -> tns . order [ i ] [ filt ] ; w ++ )		2	4					
+ANR	318	ForInit	w = 0 ;	25:25:1150:1155	2	0	True				
+ANR	319	AssignmentExpression	w = 0		2	0		=			
+ANR	320	Identifier	w		2	0					
+ANR	321	PrimaryExpression	0		2	1					
+ANR	322	Condition	w < sce -> tns . order [ i ] [ filt ]	25:32:1157:1183	2	1	True				
+ANR	323	RelationalExpression	w < sce -> tns . order [ i ] [ filt ]		2	0		<			
+ANR	324	Identifier	w		2	0					
+ANR	325	ArrayIndexing	sce -> tns . order [ i ] [ filt ]		2	1					
+ANR	326	ArrayIndexing	sce -> tns . order [ i ]		2	0					
+ANR	327	MemberAccess	sce -> tns . order		2	0					
+ANR	328	PtrMemberAccess	sce -> tns		2	0					
+ANR	329	Identifier	sce		2	0					
+ANR	330	Identifier	tns		2	1					
+ANR	331	Identifier	order		2	1					
+ANR	332	Identifier	i		2	1					
+ANR	333	Identifier	filt		2	1					
+ANR	334	PostIncDecOperationExpression	w ++	25:61:1186:1188	2	2	True				
+ANR	335	Identifier	w		2	0					
+ANR	336	IncDec	++		2	1					
+ANR	337	ExpressionStatement	"put_bits ( & s -> pb , coef_len , sce -> tns . coef_idx [ i ] [ filt ] [ w ] )"	26:24:1215:1272	2	3	True				
+ANR	338	CallExpression	"put_bits ( & s -> pb , coef_len , sce -> tns . coef_idx [ i ] [ filt ] [ w ] )"		2	0					
+ANR	339	Callee	put_bits		2	0					
+ANR	340	Identifier	put_bits		2	0					
+ANR	341	ArgumentList	& s -> pb		2	1					
+ANR	342	Argument	& s -> pb		2	0					
+ANR	343	UnaryOperationExpression	& s -> pb		2	0					
+ANR	344	UnaryOperator	&		2	0					
+ANR	345	PtrMemberAccess	s -> pb		2	1					
+ANR	346	Identifier	s		2	0					
+ANR	347	Identifier	pb		2	1					
+ANR	348	Argument	coef_len		2	1					
+ANR	349	Identifier	coef_len		2	0					
+ANR	350	Argument	sce -> tns . coef_idx [ i ] [ filt ] [ w ]		2	2					
+ANR	351	ArrayIndexing	sce -> tns . coef_idx [ i ] [ filt ] [ w ]		2	0					
+ANR	352	ArrayIndexing	sce -> tns . coef_idx [ i ] [ filt ]		2	0					
+ANR	353	ArrayIndexing	sce -> tns . coef_idx [ i ]		2	0					
+ANR	354	MemberAccess	sce -> tns . coef_idx		2	0					
+ANR	355	PtrMemberAccess	sce -> tns		2	0					
+ANR	356	Identifier	sce		2	0					
+ANR	357	Identifier	tns		2	1					
+ANR	358	Identifier	coef_idx		2	1					
+ANR	359	Identifier	i		2	1					
+ANR	360	Identifier	filt		2	1					
+ANR	361	Identifier	w		2	1					
+ANR	362	ReturnType	void		2	1					
+ANR	363	Identifier	ff_aac_encode_tns_info		2	2					
+ANR	364	ParameterList	"AACEncContext * s , SingleChannelElement * sce"		2	3					
+ANR	365	Parameter	AACEncContext * s	1:28:28:43	2	0	True				
+ANR	366	ParameterType	AACEncContext *		2	0					
+ANR	367	Identifier	s		2	1					
+ANR	368	Parameter	SingleChannelElement * sce	1:46:46:70	2	1	True				
+ANR	369	ParameterType	SingleChannelElement *		2	0					
+ANR	370	Identifier	sce		2	1					
+ANR	371	CFGEntryNode	ENTRY		2		True				
+ANR	372	CFGExitNode	EXIT		2		True				
+ANR	373	Symbol	sce -> ics . num_windows		2						
+ANR	374	Symbol	* w		2						
+ANR	375	Symbol	sce -> ics		2						
+ANR	376	Symbol	coef_compress		2						
+ANR	377	Symbol	* * sce -> tns . coef_idx		2						
+ANR	378	Symbol	is8		2						
+ANR	379	Symbol	sce -> tns . order		2						
+ANR	380	Symbol	* sce -> tns . direction		2						
+ANR	381	Symbol	MAX_LPC_PRECISION		2						
+ANR	382	Symbol	* * sce -> tns . length		2						
+ANR	383	Symbol	sce -> tns . coef_idx		2						
+ANR	384	Symbol	* * * sce		2						
+ANR	385	Symbol	sce		2						
+ANR	386	Symbol	* sce -> ics . window_sequence		2						
+ANR	387	Symbol	* sce -> ics		2						
+ANR	388	Symbol	sce -> tns . length		2						
+ANR	389	Symbol	compress_coef		2						
+ANR	390	Symbol	* sce -> tns . n_filt		2						
+ANR	391	Symbol	sce -> ics . window_sequence		2						
+ANR	392	Symbol	* filt		2						
+ANR	393	Symbol	* * filt		2						
+ANR	394	Symbol	* sce -> tns . length		2						
+ANR	395	Symbol	* * i		2						
+ANR	396	Symbol	sce -> tns		2						
+ANR	397	Symbol	filt		2						
+ANR	398	Symbol	coef_res		2						
+ANR	399	Symbol	* sce -> tns . coef_idx		2						
+ANR	400	Symbol	* * * sce -> tns		2						
+ANR	401	Symbol	sce -> tns . present		2						
+ANR	402	Symbol	coef_len		2						
+ANR	403	Symbol	i		2						
+ANR	404	Symbol	* * sce		2						
+ANR	405	Symbol	* * * * sce		2						
+ANR	406	Symbol	* * * sce -> tns . coef_idx		2						
+ANR	407	Symbol	EIGHT_SHORT_SEQUENCE		2						
+ANR	408	Symbol	* sce -> tns . order		2						
+ANR	409	Symbol	sce -> tns . direction		2						
+ANR	410	Symbol	s		2						
+ANR	411	Symbol	sce -> tns . n_filt		2						
+ANR	412	Symbol	* i		2						
+ANR	413	Symbol	& s -> pb		2						
+ANR	414	Symbol	w		2						
+ANR	415	Symbol	* * sce -> tns		2						
+ANR	416	Symbol	* * sce -> tns . direction		2						
+ANR	417	Symbol	* * * i		2						
+ANR	418	Symbol	* sce -> tns		2						
+ANR	419	Symbol	* * sce -> tns . order		2						
+ANR	420	Symbol	* sce		2						

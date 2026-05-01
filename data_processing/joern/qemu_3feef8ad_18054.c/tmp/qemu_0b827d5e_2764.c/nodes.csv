@@ -1,0 +1,328 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	3195	File	tmp/qemu_0b827d5e_2764.c								
+ANR	3196	Function	migration_completion	1:0:0:2509							
+ANR	3197	FunctionDef	"migration_completion (MigrationState * s , int current_active_state , bool * old_vm_running , int64_t * start_time)"		3196	0					
+ANR	3198	CompoundStatement		4:0:187:2509	3196	0					
+ANR	3199	IdentifierDeclStatement	int ret ;	5:4:193:200	3196	0	True				
+ANR	3200	IdentifierDecl	ret		3196	0					
+ANR	3201	IdentifierDeclType	int		3196	0					
+ANR	3202	Identifier	ret		3196	1					
+ANR	3203	IfStatement	if ( s -> state == MIGRATION_STATUS_ACTIVE )		3196	1					
+ANR	3204	Condition	s -> state == MIGRATION_STATUS_ACTIVE	7:8:211:245	3196	0	True				
+ANR	3205	EqualityExpression	s -> state == MIGRATION_STATUS_ACTIVE		3196	0		==			
+ANR	3206	PtrMemberAccess	s -> state		3196	0					
+ANR	3207	Identifier	s		3196	0					
+ANR	3208	Identifier	state		3196	1					
+ANR	3209	Identifier	MIGRATION_STATUS_ACTIVE		3196	1					
+ANR	3210	CompoundStatement		4:45:60:60	3196	1					
+ANR	3211	ExpressionStatement	qemu_mutex_lock_iothread ( )	8:8:258:284	3196	0	True				
+ANR	3212	CallExpression	qemu_mutex_lock_iothread ( )		3196	0					
+ANR	3213	Callee	qemu_mutex_lock_iothread		3196	0					
+ANR	3214	Identifier	qemu_mutex_lock_iothread		3196	0					
+ANR	3215	ArgumentList			3196	1					
+ANR	3216	ExpressionStatement	* start_time = qemu_clock_get_ms ( QEMU_CLOCK_REALTIME )	9:8:294:346	3196	1	True				
+ANR	3217	AssignmentExpression	* start_time = qemu_clock_get_ms ( QEMU_CLOCK_REALTIME )		3196	0		=			
+ANR	3218	UnaryOperationExpression	* start_time		3196	0					
+ANR	3219	UnaryOperator	*		3196	0					
+ANR	3220	Identifier	start_time		3196	1					
+ANR	3221	CallExpression	qemu_clock_get_ms ( QEMU_CLOCK_REALTIME )		3196	1					
+ANR	3222	Callee	qemu_clock_get_ms		3196	0					
+ANR	3223	Identifier	qemu_clock_get_ms		3196	0					
+ANR	3224	ArgumentList	QEMU_CLOCK_REALTIME		3196	1					
+ANR	3225	Argument	QEMU_CLOCK_REALTIME		3196	0					
+ANR	3226	Identifier	QEMU_CLOCK_REALTIME		3196	0					
+ANR	3227	ExpressionStatement	qemu_system_wakeup_request ( QEMU_WAKEUP_REASON_OTHER )	10:8:356:408	3196	2	True				
+ANR	3228	CallExpression	qemu_system_wakeup_request ( QEMU_WAKEUP_REASON_OTHER )		3196	0					
+ANR	3229	Callee	qemu_system_wakeup_request		3196	0					
+ANR	3230	Identifier	qemu_system_wakeup_request		3196	0					
+ANR	3231	ArgumentList	QEMU_WAKEUP_REASON_OTHER		3196	1					
+ANR	3232	Argument	QEMU_WAKEUP_REASON_OTHER		3196	0					
+ANR	3233	Identifier	QEMU_WAKEUP_REASON_OTHER		3196	0					
+ANR	3234	ExpressionStatement	* old_vm_running = runstate_is_running ( )	11:8:418:457	3196	3	True				
+ANR	3235	AssignmentExpression	* old_vm_running = runstate_is_running ( )		3196	0		=			
+ANR	3236	UnaryOperationExpression	* old_vm_running		3196	0					
+ANR	3237	UnaryOperator	*		3196	0					
+ANR	3238	Identifier	old_vm_running		3196	1					
+ANR	3239	CallExpression	runstate_is_running ( )		3196	1					
+ANR	3240	Callee	runstate_is_running		3196	0					
+ANR	3241	Identifier	runstate_is_running		3196	0					
+ANR	3242	ArgumentList			3196	1					
+ANR	3243	ExpressionStatement	ret = global_state_store ( )	12:8:467:493	3196	4	True				
+ANR	3244	AssignmentExpression	ret = global_state_store ( )		3196	0		=			
+ANR	3245	Identifier	ret		3196	0					
+ANR	3246	CallExpression	global_state_store ( )		3196	1					
+ANR	3247	Callee	global_state_store		3196	0					
+ANR	3248	Identifier	global_state_store		3196	0					
+ANR	3249	ArgumentList			3196	1					
+ANR	3250	IfStatement	if ( ! ret )		3196	5					
+ANR	3251	Condition	! ret	14:12:508:511	3196	0	True				
+ANR	3252	UnaryOperationExpression	! ret		3196	0					
+ANR	3253	UnaryOperator	!		3196	0					
+ANR	3254	Identifier	ret		3196	1					
+ANR	3255	CompoundStatement		11:18:326:326	3196	1					
+ANR	3256	ExpressionStatement	ret = vm_stop_force_state ( RUN_STATE_FINISH_MIGRATE )	15:12:528:579	3196	0	True				
+ANR	3257	AssignmentExpression	ret = vm_stop_force_state ( RUN_STATE_FINISH_MIGRATE )		3196	0		=			
+ANR	3258	Identifier	ret		3196	0					
+ANR	3259	CallExpression	vm_stop_force_state ( RUN_STATE_FINISH_MIGRATE )		3196	1					
+ANR	3260	Callee	vm_stop_force_state		3196	0					
+ANR	3261	Identifier	vm_stop_force_state		3196	0					
+ANR	3262	ArgumentList	RUN_STATE_FINISH_MIGRATE		3196	1					
+ANR	3263	Argument	RUN_STATE_FINISH_MIGRATE		3196	0					
+ANR	3264	Identifier	RUN_STATE_FINISH_MIGRATE		3196	0					
+ANR	3265	IfStatement	if ( ret >= 0 )		3196	1					
+ANR	3266	Condition	ret >= 0	16:16:597:604	3196	0	True				
+ANR	3267	RelationalExpression	ret >= 0		3196	0		>=			
+ANR	3268	Identifier	ret		3196	0					
+ANR	3269	PrimaryExpression	0		3196	1					
+ANR	3270	CompoundStatement		13:26:419:419	3196	1					
+ANR	3271	ExpressionStatement	ret = bdrv_inactivate_all ( )	17:16:625:652	3196	0	True				
+ANR	3272	AssignmentExpression	ret = bdrv_inactivate_all ( )		3196	0		=			
+ANR	3273	Identifier	ret		3196	0					
+ANR	3274	CallExpression	bdrv_inactivate_all ( )		3196	1					
+ANR	3275	Callee	bdrv_inactivate_all		3196	0					
+ANR	3276	Identifier	bdrv_inactivate_all		3196	0					
+ANR	3277	ArgumentList			3196	1					
+ANR	3278	IfStatement	if ( ret >= 0 )		3196	2					
+ANR	3279	Condition	ret >= 0	19:16:684:691	3196	0	True				
+ANR	3280	RelationalExpression	ret >= 0		3196	0		>=			
+ANR	3281	Identifier	ret		3196	0					
+ANR	3282	PrimaryExpression	0		3196	1					
+ANR	3283	CompoundStatement		16:26:506:506	3196	1					
+ANR	3284	ExpressionStatement	"qemu_file_set_rate_limit ( s -> to_dst_file , INT64_MAX )"	20:16:712:763	3196	0	True				
+ANR	3285	CallExpression	"qemu_file_set_rate_limit ( s -> to_dst_file , INT64_MAX )"		3196	0					
+ANR	3286	Callee	qemu_file_set_rate_limit		3196	0					
+ANR	3287	Identifier	qemu_file_set_rate_limit		3196	0					
+ANR	3288	ArgumentList	s -> to_dst_file		3196	1					
+ANR	3289	Argument	s -> to_dst_file		3196	0					
+ANR	3290	PtrMemberAccess	s -> to_dst_file		3196	0					
+ANR	3291	Identifier	s		3196	0					
+ANR	3292	Identifier	to_dst_file		3196	1					
+ANR	3293	Argument	INT64_MAX		3196	1					
+ANR	3294	Identifier	INT64_MAX		3196	0					
+ANR	3295	ExpressionStatement	"qemu_savevm_state_complete_precopy ( s -> to_dst_file , false )"	21:16:781:838	3196	1	True				
+ANR	3296	CallExpression	"qemu_savevm_state_complete_precopy ( s -> to_dst_file , false )"		3196	0					
+ANR	3297	Callee	qemu_savevm_state_complete_precopy		3196	0					
+ANR	3298	Identifier	qemu_savevm_state_complete_precopy		3196	0					
+ANR	3299	ArgumentList	s -> to_dst_file		3196	1					
+ANR	3300	Argument	s -> to_dst_file		3196	0					
+ANR	3301	PtrMemberAccess	s -> to_dst_file		3196	0					
+ANR	3302	Identifier	s		3196	0					
+ANR	3303	Identifier	to_dst_file		3196	1					
+ANR	3304	Argument	false		3196	1					
+ANR	3305	Identifier	false		3196	0					
+ANR	3306	ExpressionStatement	qemu_mutex_unlock_iothread ( )	24:8:872:900	3196	6	True				
+ANR	3307	CallExpression	qemu_mutex_unlock_iothread ( )		3196	0					
+ANR	3308	Callee	qemu_mutex_unlock_iothread		3196	0					
+ANR	3309	Identifier	qemu_mutex_unlock_iothread		3196	0					
+ANR	3310	ArgumentList			3196	1					
+ANR	3311	IfStatement	if ( ret < 0 )		3196	7					
+ANR	3312	Condition	ret < 0	26:12:915:921	3196	0	True				
+ANR	3313	RelationalExpression	ret < 0		3196	0		<			
+ANR	3314	Identifier	ret		3196	0					
+ANR	3315	PrimaryExpression	0		3196	1					
+ANR	3316	CompoundStatement		23:21:736:736	3196	1					
+ANR	3317	GotoStatement	goto fail ;	27:12:938:947	3196	0	True				
+ANR	3318	Identifier	fail		3196	0					
+ANR	3319	ElseStatement	else		3196	0					
+ANR	3320	IfStatement	if ( s -> state == MIGRATION_STATUS_POSTCOPY_ACTIVE )		3196	0					
+ANR	3321	Condition	s -> state == MIGRATION_STATUS_POSTCOPY_ACTIVE	29:15:974:1017	3196	0	True				
+ANR	3322	EqualityExpression	s -> state == MIGRATION_STATUS_POSTCOPY_ACTIVE		3196	0		==			
+ANR	3323	PtrMemberAccess	s -> state		3196	0					
+ANR	3324	Identifier	s		3196	0					
+ANR	3325	Identifier	state		3196	1					
+ANR	3326	Identifier	MIGRATION_STATUS_POSTCOPY_ACTIVE		3196	1					
+ANR	3327	CompoundStatement		26:61:832:832	3196	1					
+ANR	3328	ExpressionStatement	trace_migration_completion_postcopy_end ( )	30:8:1030:1071	3196	0	True				
+ANR	3329	CallExpression	trace_migration_completion_postcopy_end ( )		3196	0					
+ANR	3330	Callee	trace_migration_completion_postcopy_end		3196	0					
+ANR	3331	Identifier	trace_migration_completion_postcopy_end		3196	0					
+ANR	3332	ArgumentList			3196	1					
+ANR	3333	ExpressionStatement	qemu_savevm_state_complete_postcopy ( s -> to_dst_file )	32:8:1082:1133	3196	1	True				
+ANR	3334	CallExpression	qemu_savevm_state_complete_postcopy ( s -> to_dst_file )		3196	0					
+ANR	3335	Callee	qemu_savevm_state_complete_postcopy		3196	0					
+ANR	3336	Identifier	qemu_savevm_state_complete_postcopy		3196	0					
+ANR	3337	ArgumentList	s -> to_dst_file		3196	1					
+ANR	3338	Argument	s -> to_dst_file		3196	0					
+ANR	3339	PtrMemberAccess	s -> to_dst_file		3196	0					
+ANR	3340	Identifier	s		3196	0					
+ANR	3341	Identifier	to_dst_file		3196	1					
+ANR	3342	ExpressionStatement	trace_migration_completion_postcopy_end_after_complete ( )	33:8:1143:1199	3196	2	True				
+ANR	3343	CallExpression	trace_migration_completion_postcopy_end_after_complete ( )		3196	0					
+ANR	3344	Callee	trace_migration_completion_postcopy_end_after_complete		3196	0					
+ANR	3345	Identifier	trace_migration_completion_postcopy_end_after_complete		3196	0					
+ANR	3346	ArgumentList			3196	1					
+ANR	3347	IfStatement	if ( migrate_postcopy_ram ( ) )		3196	2					
+ANR	3348	Condition	migrate_postcopy_ram ( )	43:8:1509:1530	3196	0	True				
+ANR	3349	CallExpression	migrate_postcopy_ram ( )		3196	0					
+ANR	3350	Callee	migrate_postcopy_ram		3196	0					
+ANR	3351	Identifier	migrate_postcopy_ram		3196	0					
+ANR	3352	ArgumentList			3196	1					
+ANR	3353	CompoundStatement		41:8:1355:1367	3196	1					
+ANR	3354	IdentifierDeclStatement	int rp_error ;	44:8:1543:1555	3196	0	True				
+ANR	3355	IdentifierDecl	rp_error		3196	0					
+ANR	3356	IdentifierDeclType	int		3196	0					
+ANR	3357	Identifier	rp_error		3196	1					
+ANR	3358	ExpressionStatement	trace_migration_completion_postcopy_end_before_rp ( )	45:8:1565:1616	3196	1	True				
+ANR	3359	CallExpression	trace_migration_completion_postcopy_end_before_rp ( )		3196	0					
+ANR	3360	Callee	trace_migration_completion_postcopy_end_before_rp		3196	0					
+ANR	3361	Identifier	trace_migration_completion_postcopy_end_before_rp		3196	0					
+ANR	3362	ArgumentList			3196	1					
+ANR	3363	ExpressionStatement	rp_error = await_return_path_close_on_source ( s )	46:8:1626:1673	3196	2	True				
+ANR	3364	AssignmentExpression	rp_error = await_return_path_close_on_source ( s )		3196	0		=			
+ANR	3365	Identifier	rp_error		3196	0					
+ANR	3366	CallExpression	await_return_path_close_on_source ( s )		3196	1					
+ANR	3367	Callee	await_return_path_close_on_source		3196	0					
+ANR	3368	Identifier	await_return_path_close_on_source		3196	0					
+ANR	3369	ArgumentList	s		3196	1					
+ANR	3370	Argument	s		3196	0					
+ANR	3371	Identifier	s		3196	0					
+ANR	3372	ExpressionStatement	trace_migration_completion_postcopy_end_after_rp ( rp_error )	47:8:1683:1741	3196	3	True				
+ANR	3373	CallExpression	trace_migration_completion_postcopy_end_after_rp ( rp_error )		3196	0					
+ANR	3374	Callee	trace_migration_completion_postcopy_end_after_rp		3196	0					
+ANR	3375	Identifier	trace_migration_completion_postcopy_end_after_rp		3196	0					
+ANR	3376	ArgumentList	rp_error		3196	1					
+ANR	3377	Argument	rp_error		3196	0					
+ANR	3378	Identifier	rp_error		3196	0					
+ANR	3379	IfStatement	if ( rp_error )		3196	4					
+ANR	3380	Condition	rp_error	48:12:1755:1762	3196	0	True				
+ANR	3381	Identifier	rp_error		3196	0					
+ANR	3382	CompoundStatement		45:22:1577:1577	3196	1					
+ANR	3383	GotoStatement	goto fail_invalidate ;	49:12:1779:1799	3196	0	True				
+ANR	3384	Identifier	fail_invalidate		3196	0					
+ANR	3385	IfStatement	if ( qemu_file_get_error ( s -> to_dst_file ) )		3196	3					
+ANR	3386	Condition	qemu_file_get_error ( s -> to_dst_file )	53:8:1826:1860	3196	0	True				
+ANR	3387	CallExpression	qemu_file_get_error ( s -> to_dst_file )		3196	0					
+ANR	3388	Callee	qemu_file_get_error		3196	0					
+ANR	3389	Identifier	qemu_file_get_error		3196	0					
+ANR	3390	ArgumentList	s -> to_dst_file		3196	1					
+ANR	3391	Argument	s -> to_dst_file		3196	0					
+ANR	3392	PtrMemberAccess	s -> to_dst_file		3196	0					
+ANR	3393	Identifier	s		3196	0					
+ANR	3394	Identifier	to_dst_file		3196	1					
+ANR	3395	CompoundStatement		50:45:1675:1675	3196	1					
+ANR	3396	ExpressionStatement	trace_migration_completion_file_err ( )	54:8:1873:1910	3196	0	True				
+ANR	3397	CallExpression	trace_migration_completion_file_err ( )		3196	0					
+ANR	3398	Callee	trace_migration_completion_file_err		3196	0					
+ANR	3399	Identifier	trace_migration_completion_file_err		3196	0					
+ANR	3400	ArgumentList			3196	1					
+ANR	3401	GotoStatement	goto fail_invalidate ;	55:8:1920:1940	3196	1	True				
+ANR	3402	Identifier	fail_invalidate		3196	0					
+ANR	3403	ExpressionStatement	"migrate_set_state ( & s -> state , current_active_state , MIGRATION_STATUS_COMPLETED )"	58:4:1953:2053	3196	4	True				
+ANR	3404	CallExpression	"migrate_set_state ( & s -> state , current_active_state , MIGRATION_STATUS_COMPLETED )"		3196	0					
+ANR	3405	Callee	migrate_set_state		3196	0					
+ANR	3406	Identifier	migrate_set_state		3196	0					
+ANR	3407	ArgumentList	& s -> state		3196	1					
+ANR	3408	Argument	& s -> state		3196	0					
+ANR	3409	UnaryOperationExpression	& s -> state		3196	0					
+ANR	3410	UnaryOperator	&		3196	0					
+ANR	3411	PtrMemberAccess	s -> state		3196	1					
+ANR	3412	Identifier	s		3196	0					
+ANR	3413	Identifier	state		3196	1					
+ANR	3414	Argument	current_active_state		3196	1					
+ANR	3415	Identifier	current_active_state		3196	0					
+ANR	3416	Argument	MIGRATION_STATUS_COMPLETED		3196	2					
+ANR	3417	Identifier	MIGRATION_STATUS_COMPLETED		3196	0					
+ANR	3418	ReturnStatement	return ;	60:4:2059:2065	3196	5	True				
+ANR	3419	Label	fail_invalidate :	62:0:2068:2083	3196	6	True				
+ANR	3420	Identifier	fail_invalidate		3196	0					
+ANR	3421	IfStatement	if ( s -> state == MIGRATION_STATUS_ACTIVE )		3196	7					
+ANR	3422	Condition	s -> state == MIGRATION_STATUS_ACTIVE	66:8:2197:2231	3196	0	True				
+ANR	3423	EqualityExpression	s -> state == MIGRATION_STATUS_ACTIVE		3196	0		==			
+ANR	3424	PtrMemberAccess	s -> state		3196	0					
+ANR	3425	Identifier	s		3196	0					
+ANR	3426	Identifier	state		3196	1					
+ANR	3427	Identifier	MIGRATION_STATUS_ACTIVE		3196	1					
+ANR	3428	CompoundStatement		64:8:2056:2079	3196	1					
+ANR	3429	IdentifierDeclStatement	Error * local_err = NULL ;	67:8:2244:2267	3196	0	True				
+ANR	3430	IdentifierDecl	* local_err = NULL		3196	0					
+ANR	3431	IdentifierDeclType	Error *		3196	0					
+ANR	3432	Identifier	local_err		3196	1					
+ANR	3433	AssignmentExpression	* local_err = NULL		3196	2		=			
+ANR	3434	Identifier	NULL		3196	0					
+ANR	3435	Identifier	NULL		3196	1					
+ANR	3436	ExpressionStatement	bdrv_invalidate_cache_all ( & local_err )	69:8:2278:2315	3196	1	True				
+ANR	3437	CallExpression	bdrv_invalidate_cache_all ( & local_err )		3196	0					
+ANR	3438	Callee	bdrv_invalidate_cache_all		3196	0					
+ANR	3439	Identifier	bdrv_invalidate_cache_all		3196	0					
+ANR	3440	ArgumentList	& local_err		3196	1					
+ANR	3441	Argument	& local_err		3196	0					
+ANR	3442	UnaryOperationExpression	& local_err		3196	0					
+ANR	3443	UnaryOperator	&		3196	0					
+ANR	3444	Identifier	local_err		3196	1					
+ANR	3445	IfStatement	if ( local_err )		3196	2					
+ANR	3446	Condition	local_err	70:12:2329:2337	3196	0	True				
+ANR	3447	Identifier	local_err		3196	0					
+ANR	3448	CompoundStatement		67:23:2152:2152	3196	1					
+ANR	3449	ExpressionStatement	error_report_err ( local_err )	71:12:2354:2381	3196	0	True				
+ANR	3450	CallExpression	error_report_err ( local_err )		3196	0					
+ANR	3451	Callee	error_report_err		3196	0					
+ANR	3452	Identifier	error_report_err		3196	0					
+ANR	3453	ArgumentList	local_err		3196	1					
+ANR	3454	Argument	local_err		3196	0					
+ANR	3455	Identifier	local_err		3196	0					
+ANR	3456	Label	fail :	75:0:2400:2404	3196	8	True				
+ANR	3457	Identifier	fail		3196	0					
+ANR	3458	ExpressionStatement	"migrate_set_state ( & s -> state , current_active_state , MIGRATION_STATUS_FAILED )"	76:4:2410:2507	3196	9	True				
+ANR	3459	CallExpression	"migrate_set_state ( & s -> state , current_active_state , MIGRATION_STATUS_FAILED )"		3196	0					
+ANR	3460	Callee	migrate_set_state		3196	0					
+ANR	3461	Identifier	migrate_set_state		3196	0					
+ANR	3462	ArgumentList	& s -> state		3196	1					
+ANR	3463	Argument	& s -> state		3196	0					
+ANR	3464	UnaryOperationExpression	& s -> state		3196	0					
+ANR	3465	UnaryOperator	&		3196	0					
+ANR	3466	PtrMemberAccess	s -> state		3196	1					
+ANR	3467	Identifier	s		3196	0					
+ANR	3468	Identifier	state		3196	1					
+ANR	3469	Argument	current_active_state		3196	1					
+ANR	3470	Identifier	current_active_state		3196	0					
+ANR	3471	Argument	MIGRATION_STATUS_FAILED		3196	2					
+ANR	3472	Identifier	MIGRATION_STATUS_FAILED		3196	0					
+ANR	3473	ReturnType	static void		3196	1					
+ANR	3474	Identifier	migration_completion		3196	2					
+ANR	3475	ParameterList	"MigrationState * s , int current_active_state , bool * old_vm_running , int64_t * start_time"		3196	3					
+ANR	3476	Parameter	MigrationState * s	1:33:33:49	3196	0	True				
+ANR	3477	ParameterType	MigrationState *		3196	0					
+ANR	3478	Identifier	s		3196	1					
+ANR	3479	Parameter	int current_active_state	1:52:52:75	3196	1	True				
+ANR	3480	ParameterType	int		3196	0					
+ANR	3481	Identifier	current_active_state		3196	1					
+ANR	3482	Parameter	bool * old_vm_running	2:33:111:130	3196	2	True				
+ANR	3483	ParameterType	bool *		3196	0					
+ANR	3484	Identifier	old_vm_running		3196	1					
+ANR	3485	Parameter	int64_t * start_time	3:33:166:184	3196	3	True				
+ANR	3486	ParameterType	int64_t *		3196	0					
+ANR	3487	Identifier	start_time		3196	1					
+ANR	3488	CFGEntryNode	ENTRY		3196		True				
+ANR	3489	CFGExitNode	EXIT		3196		True				
+ANR	3490	Symbol	vm_stop_force_state		3196						
+ANR	3491	Symbol	bdrv_inactivate_all		3196						
+ANR	3492	Symbol	MIGRATION_STATUS_FAILED		3196						
+ANR	3493	Symbol	MIGRATION_STATUS_COMPLETED		3196						
+ANR	3494	Symbol	MIGRATION_STATUS_ACTIVE		3196						
+ANR	3495	Symbol	INT64_MAX		3196						
+ANR	3496	Symbol	* old_vm_running		3196						
+ANR	3497	Symbol	& s -> state		3196						
+ANR	3498	Symbol	runstate_is_running		3196						
+ANR	3499	Symbol	& local_err		3196						
+ANR	3500	Symbol	QEMU_CLOCK_REALTIME		3196						
+ANR	3501	Symbol	global_state_store		3196						
+ANR	3502	Symbol	ret		3196						
+ANR	3503	Symbol	await_return_path_close_on_source		3196						
+ANR	3504	Symbol	NULL		3196						
+ANR	3505	Symbol	s -> to_dst_file		3196						
+ANR	3506	Symbol	rp_error		3196						
+ANR	3507	Symbol	s -> state		3196						
+ANR	3508	Symbol	qemu_clock_get_ms		3196						
+ANR	3509	Symbol	false		3196						
+ANR	3510	Symbol	QEMU_WAKEUP_REASON_OTHER		3196						
+ANR	3511	Symbol	start_time		3196						
+ANR	3512	Symbol	s		3196						
+ANR	3513	Symbol	MIGRATION_STATUS_POSTCOPY_ACTIVE		3196						
+ANR	3514	Symbol	qemu_file_get_error		3196						
+ANR	3515	Symbol	* start_time		3196						
+ANR	3516	Symbol	RUN_STATE_FINISH_MIGRATE		3196						
+ANR	3517	Symbol	migrate_postcopy_ram		3196						
+ANR	3518	Symbol	current_active_state		3196						
+ANR	3519	Symbol	* s		3196						
+ANR	3520	Symbol	old_vm_running		3196						
+ANR	3521	Symbol	local_err		3196						

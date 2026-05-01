@@ -1,0 +1,706 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	2490	File	tmp/FFmpeg_8d0a2180_13740.c								
+ANR	2491	Function	ff_jni_exception_get_summary	1:0:0:3242							
+ANR	2492	FunctionDef	"ff_jni_exception_get_summary (JNIEnv * env , jthrowable exception , char * * error , void * log_ctx)"		2491	0					
+ANR	2493	CompoundStatement		2:0:97:3242	2491	0					
+ANR	2494	IdentifierDeclStatement	int ret = 0 ;	3:4:103:114	2491	0	True				
+ANR	2495	IdentifierDecl	ret = 0		2491	0					
+ANR	2496	IdentifierDeclType	int		2491	0					
+ANR	2497	Identifier	ret		2491	1					
+ANR	2498	AssignmentExpression	ret = 0		2491	2		=			
+ANR	2499	Identifier	ret		2491	0					
+ANR	2500	PrimaryExpression	0		2491	1					
+ANR	2501	IdentifierDeclStatement	AVBPrint bp ;	5:4:121:132	2491	1	True				
+ANR	2502	IdentifierDecl	bp		2491	0					
+ANR	2503	IdentifierDeclType	AVBPrint		2491	0					
+ANR	2504	Identifier	bp		2491	1					
+ANR	2505	IdentifierDeclStatement	char * name = NULL ;	7:4:139:156	2491	2	True				
+ANR	2506	IdentifierDecl	* name = NULL		2491	0					
+ANR	2507	IdentifierDeclType	char *		2491	0					
+ANR	2508	Identifier	name		2491	1					
+ANR	2509	AssignmentExpression	* name = NULL		2491	2		=			
+ANR	2510	Identifier	NULL		2491	0					
+ANR	2511	Identifier	NULL		2491	1					
+ANR	2512	IdentifierDeclStatement	char * message = NULL ;	8:4:162:182	2491	3	True				
+ANR	2513	IdentifierDecl	* message = NULL		2491	0					
+ANR	2514	IdentifierDeclType	char *		2491	0					
+ANR	2515	Identifier	message		2491	1					
+ANR	2516	AssignmentExpression	* message = NULL		2491	2		=			
+ANR	2517	Identifier	NULL		2491	0					
+ANR	2518	Identifier	NULL		2491	1					
+ANR	2519	IdentifierDeclStatement	jclass class_class = NULL ;	10:4:189:214	2491	4	True				
+ANR	2520	IdentifierDecl	class_class = NULL		2491	0					
+ANR	2521	IdentifierDeclType	jclass		2491	0					
+ANR	2522	Identifier	class_class		2491	1					
+ANR	2523	AssignmentExpression	class_class = NULL		2491	2		=			
+ANR	2524	Identifier	NULL		2491	0					
+ANR	2525	Identifier	NULL		2491	1					
+ANR	2526	IdentifierDeclStatement	jmethodID get_name_id = NULL ;	11:4:220:248	2491	5	True				
+ANR	2527	IdentifierDecl	get_name_id = NULL		2491	0					
+ANR	2528	IdentifierDeclType	jmethodID		2491	0					
+ANR	2529	Identifier	get_name_id		2491	1					
+ANR	2530	AssignmentExpression	get_name_id = NULL		2491	2		=			
+ANR	2531	Identifier	NULL		2491	0					
+ANR	2532	Identifier	NULL		2491	1					
+ANR	2533	IdentifierDeclStatement	jclass exception_class = NULL ;	13:4:255:284	2491	6	True				
+ANR	2534	IdentifierDecl	exception_class = NULL		2491	0					
+ANR	2535	IdentifierDeclType	jclass		2491	0					
+ANR	2536	Identifier	exception_class		2491	1					
+ANR	2537	AssignmentExpression	exception_class = NULL		2491	2		=			
+ANR	2538	Identifier	NULL		2491	0					
+ANR	2539	Identifier	NULL		2491	1					
+ANR	2540	IdentifierDeclStatement	jmethodID get_message_id = NULL ;	14:4:290:321	2491	7	True				
+ANR	2541	IdentifierDecl	get_message_id = NULL		2491	0					
+ANR	2542	IdentifierDeclType	jmethodID		2491	0					
+ANR	2543	Identifier	get_message_id		2491	1					
+ANR	2544	AssignmentExpression	get_message_id = NULL		2491	2		=			
+ANR	2545	Identifier	NULL		2491	0					
+ANR	2546	Identifier	NULL		2491	1					
+ANR	2547	IdentifierDeclStatement	jstring string ;	16:4:328:342	2491	8	True				
+ANR	2548	IdentifierDecl	string		2491	0					
+ANR	2549	IdentifierDeclType	jstring		2491	0					
+ANR	2550	Identifier	string		2491	1					
+ANR	2551	ExpressionStatement	"av_bprint_init ( & bp , 0 , AV_BPRINT_SIZE_AUTOMATIC )"	18:4:349:397	2491	9	True				
+ANR	2552	CallExpression	"av_bprint_init ( & bp , 0 , AV_BPRINT_SIZE_AUTOMATIC )"		2491	0					
+ANR	2553	Callee	av_bprint_init		2491	0					
+ANR	2554	Identifier	av_bprint_init		2491	0					
+ANR	2555	ArgumentList	& bp		2491	1					
+ANR	2556	Argument	& bp		2491	0					
+ANR	2557	UnaryOperationExpression	& bp		2491	0					
+ANR	2558	UnaryOperator	&		2491	0					
+ANR	2559	Identifier	bp		2491	1					
+ANR	2560	Argument	0		2491	1					
+ANR	2561	PrimaryExpression	0		2491	0					
+ANR	2562	Argument	AV_BPRINT_SIZE_AUTOMATIC		2491	2					
+ANR	2563	Identifier	AV_BPRINT_SIZE_AUTOMATIC		2491	0					
+ANR	2564	ExpressionStatement	"exception_class = ( * env ) -> GetObjectClass ( env , exception )"	20:4:404:460	2491	10	True				
+ANR	2565	AssignmentExpression	"exception_class = ( * env ) -> GetObjectClass ( env , exception )"		2491	0		=			
+ANR	2566	Identifier	exception_class		2491	0					
+ANR	2567	CallExpression	"( * env ) -> GetObjectClass ( env , exception )"		2491	1					
+ANR	2568	Callee	( * env ) -> GetObjectClass		2491	0					
+ANR	2569	PtrMemberAccess	( * env ) -> GetObjectClass		2491	0					
+ANR	2570	UnaryOperationExpression	* env		2491	0					
+ANR	2571	UnaryOperator	*		2491	0					
+ANR	2572	Identifier	env		2491	1					
+ANR	2573	Identifier	GetObjectClass		2491	1					
+ANR	2574	ArgumentList	env		2491	1					
+ANR	2575	Argument	env		2491	0					
+ANR	2576	Identifier	env		2491	0					
+ANR	2577	Argument	exception		2491	1					
+ANR	2578	Identifier	exception		2491	0					
+ANR	2579	IfStatement	if ( ( * env ) -> ExceptionCheck ( env ) )		2491	11					
+ANR	2580	Condition	( * env ) -> ExceptionCheck ( env )	21:8:470:496	2491	0	True				
+ANR	2581	CallExpression	( * env ) -> ExceptionCheck ( env )		2491	0					
+ANR	2582	Callee	( * env ) -> ExceptionCheck		2491	0					
+ANR	2583	PtrMemberAccess	( * env ) -> ExceptionCheck		2491	0					
+ANR	2584	UnaryOperationExpression	* env		2491	0					
+ANR	2585	UnaryOperator	*		2491	0					
+ANR	2586	Identifier	env		2491	1					
+ANR	2587	Identifier	ExceptionCheck		2491	1					
+ANR	2588	ArgumentList	env		2491	1					
+ANR	2589	Argument	env		2491	0					
+ANR	2590	Identifier	env		2491	0					
+ANR	2591	CompoundStatement		20:37:401:401	2491	1					
+ANR	2592	ExpressionStatement	( * env ) -> ExceptionClear ( env )	22:8:509:536	2491	0	True				
+ANR	2593	CallExpression	( * env ) -> ExceptionClear ( env )		2491	0					
+ANR	2594	Callee	( * env ) -> ExceptionClear		2491	0					
+ANR	2595	PtrMemberAccess	( * env ) -> ExceptionClear		2491	0					
+ANR	2596	UnaryOperationExpression	* env		2491	0					
+ANR	2597	UnaryOperator	*		2491	0					
+ANR	2598	Identifier	env		2491	1					
+ANR	2599	Identifier	ExceptionClear		2491	1					
+ANR	2600	ArgumentList	env		2491	1					
+ANR	2601	Argument	env		2491	0					
+ANR	2602	Identifier	env		2491	0					
+ANR	2603	ExpressionStatement	"av_log ( log_ctx , AV_LOG_ERROR , ""Could not find Throwable class\\n"" )"	23:8:546:611	2491	1	True				
+ANR	2604	CallExpression	"av_log ( log_ctx , AV_LOG_ERROR , ""Could not find Throwable class\\n"" )"		2491	0					
+ANR	2605	Callee	av_log		2491	0					
+ANR	2606	Identifier	av_log		2491	0					
+ANR	2607	ArgumentList	log_ctx		2491	1					
+ANR	2608	Argument	log_ctx		2491	0					
+ANR	2609	Identifier	log_ctx		2491	0					
+ANR	2610	Argument	AV_LOG_ERROR		2491	1					
+ANR	2611	Identifier	AV_LOG_ERROR		2491	0					
+ANR	2612	Argument	"""Could not find Throwable class\\n"""		2491	2					
+ANR	2613	PrimaryExpression	"""Could not find Throwable class\\n"""		2491	0					
+ANR	2614	ExpressionStatement	ret = AVERROR_EXTERNAL	24:8:621:643	2491	2	True				
+ANR	2615	AssignmentExpression	ret = AVERROR_EXTERNAL		2491	0		=			
+ANR	2616	Identifier	ret		2491	0					
+ANR	2617	Identifier	AVERROR_EXTERNAL		2491	1					
+ANR	2618	GotoStatement	goto done ;	25:8:653:662	2491	3	True				
+ANR	2619	Identifier	done		2491	0					
+ANR	2620	ExpressionStatement	"class_class = ( * env ) -> GetObjectClass ( env , exception_class )"	28:4:675:733	2491	12	True				
+ANR	2621	AssignmentExpression	"class_class = ( * env ) -> GetObjectClass ( env , exception_class )"		2491	0		=			
+ANR	2622	Identifier	class_class		2491	0					
+ANR	2623	CallExpression	"( * env ) -> GetObjectClass ( env , exception_class )"		2491	1					
+ANR	2624	Callee	( * env ) -> GetObjectClass		2491	0					
+ANR	2625	PtrMemberAccess	( * env ) -> GetObjectClass		2491	0					
+ANR	2626	UnaryOperationExpression	* env		2491	0					
+ANR	2627	UnaryOperator	*		2491	0					
+ANR	2628	Identifier	env		2491	1					
+ANR	2629	Identifier	GetObjectClass		2491	1					
+ANR	2630	ArgumentList	env		2491	1					
+ANR	2631	Argument	env		2491	0					
+ANR	2632	Identifier	env		2491	0					
+ANR	2633	Argument	exception_class		2491	1					
+ANR	2634	Identifier	exception_class		2491	0					
+ANR	2635	IfStatement	if ( ( * env ) -> ExceptionCheck ( env ) )		2491	13					
+ANR	2636	Condition	( * env ) -> ExceptionCheck ( env )	29:8:743:769	2491	0	True				
+ANR	2637	CallExpression	( * env ) -> ExceptionCheck ( env )		2491	0					
+ANR	2638	Callee	( * env ) -> ExceptionCheck		2491	0					
+ANR	2639	PtrMemberAccess	( * env ) -> ExceptionCheck		2491	0					
+ANR	2640	UnaryOperationExpression	* env		2491	0					
+ANR	2641	UnaryOperator	*		2491	0					
+ANR	2642	Identifier	env		2491	1					
+ANR	2643	Identifier	ExceptionCheck		2491	1					
+ANR	2644	ArgumentList	env		2491	1					
+ANR	2645	Argument	env		2491	0					
+ANR	2646	Identifier	env		2491	0					
+ANR	2647	CompoundStatement		28:37:674:674	2491	1					
+ANR	2648	ExpressionStatement	( * env ) -> ExceptionClear ( env )	30:8:782:809	2491	0	True				
+ANR	2649	CallExpression	( * env ) -> ExceptionClear ( env )		2491	0					
+ANR	2650	Callee	( * env ) -> ExceptionClear		2491	0					
+ANR	2651	PtrMemberAccess	( * env ) -> ExceptionClear		2491	0					
+ANR	2652	UnaryOperationExpression	* env		2491	0					
+ANR	2653	UnaryOperator	*		2491	0					
+ANR	2654	Identifier	env		2491	1					
+ANR	2655	Identifier	ExceptionClear		2491	1					
+ANR	2656	ArgumentList	env		2491	1					
+ANR	2657	Argument	env		2491	0					
+ANR	2658	Identifier	env		2491	0					
+ANR	2659	ExpressionStatement	"av_log ( log_ctx , AV_LOG_ERROR , ""Could not find Throwable class's class\\n"" )"	31:8:819:892	2491	1	True				
+ANR	2660	CallExpression	"av_log ( log_ctx , AV_LOG_ERROR , ""Could not find Throwable class's class\\n"" )"		2491	0					
+ANR	2661	Callee	av_log		2491	0					
+ANR	2662	Identifier	av_log		2491	0					
+ANR	2663	ArgumentList	log_ctx		2491	1					
+ANR	2664	Argument	log_ctx		2491	0					
+ANR	2665	Identifier	log_ctx		2491	0					
+ANR	2666	Argument	AV_LOG_ERROR		2491	1					
+ANR	2667	Identifier	AV_LOG_ERROR		2491	0					
+ANR	2668	Argument	"""Could not find Throwable class's class\\n"""		2491	2					
+ANR	2669	PrimaryExpression	"""Could not find Throwable class's class\\n"""		2491	0					
+ANR	2670	ExpressionStatement	ret = AVERROR_EXTERNAL	32:8:902:924	2491	2	True				
+ANR	2671	AssignmentExpression	ret = AVERROR_EXTERNAL		2491	0		=			
+ANR	2672	Identifier	ret		2491	0					
+ANR	2673	Identifier	AVERROR_EXTERNAL		2491	1					
+ANR	2674	GotoStatement	goto done ;	33:8:934:943	2491	3	True				
+ANR	2675	Identifier	done		2491	0					
+ANR	2676	ExpressionStatement	"get_name_id = ( * env ) -> GetMethodID ( env , class_class , ""getName"" , ""()Ljava/lang/String;"" )"	36:4:956:1042	2491	14	True				
+ANR	2677	AssignmentExpression	"get_name_id = ( * env ) -> GetMethodID ( env , class_class , ""getName"" , ""()Ljava/lang/String;"" )"		2491	0		=			
+ANR	2678	Identifier	get_name_id		2491	0					
+ANR	2679	CallExpression	"( * env ) -> GetMethodID ( env , class_class , ""getName"" , ""()Ljava/lang/String;"" )"		2491	1					
+ANR	2680	Callee	( * env ) -> GetMethodID		2491	0					
+ANR	2681	PtrMemberAccess	( * env ) -> GetMethodID		2491	0					
+ANR	2682	UnaryOperationExpression	* env		2491	0					
+ANR	2683	UnaryOperator	*		2491	0					
+ANR	2684	Identifier	env		2491	1					
+ANR	2685	Identifier	GetMethodID		2491	1					
+ANR	2686	ArgumentList	env		2491	1					
+ANR	2687	Argument	env		2491	0					
+ANR	2688	Identifier	env		2491	0					
+ANR	2689	Argument	class_class		2491	1					
+ANR	2690	Identifier	class_class		2491	0					
+ANR	2691	Argument	"""getName"""		2491	2					
+ANR	2692	PrimaryExpression	"""getName"""		2491	0					
+ANR	2693	Argument	"""()Ljava/lang/String;"""		2491	3					
+ANR	2694	PrimaryExpression	"""()Ljava/lang/String;"""		2491	0					
+ANR	2695	IfStatement	if ( ( * env ) -> ExceptionCheck ( env ) )		2491	15					
+ANR	2696	Condition	( * env ) -> ExceptionCheck ( env )	37:8:1052:1078	2491	0	True				
+ANR	2697	CallExpression	( * env ) -> ExceptionCheck ( env )		2491	0					
+ANR	2698	Callee	( * env ) -> ExceptionCheck		2491	0					
+ANR	2699	PtrMemberAccess	( * env ) -> ExceptionCheck		2491	0					
+ANR	2700	UnaryOperationExpression	* env		2491	0					
+ANR	2701	UnaryOperator	*		2491	0					
+ANR	2702	Identifier	env		2491	1					
+ANR	2703	Identifier	ExceptionCheck		2491	1					
+ANR	2704	ArgumentList	env		2491	1					
+ANR	2705	Argument	env		2491	0					
+ANR	2706	Identifier	env		2491	0					
+ANR	2707	CompoundStatement		36:37:983:983	2491	1					
+ANR	2708	ExpressionStatement	( * env ) -> ExceptionClear ( env )	38:8:1091:1118	2491	0	True				
+ANR	2709	CallExpression	( * env ) -> ExceptionClear ( env )		2491	0					
+ANR	2710	Callee	( * env ) -> ExceptionClear		2491	0					
+ANR	2711	PtrMemberAccess	( * env ) -> ExceptionClear		2491	0					
+ANR	2712	UnaryOperationExpression	* env		2491	0					
+ANR	2713	UnaryOperator	*		2491	0					
+ANR	2714	Identifier	env		2491	1					
+ANR	2715	Identifier	ExceptionClear		2491	1					
+ANR	2716	ArgumentList	env		2491	1					
+ANR	2717	Argument	env		2491	0					
+ANR	2718	Identifier	env		2491	0					
+ANR	2719	ExpressionStatement	"av_log ( log_ctx , AV_LOG_ERROR , ""Could not find method Class.getName()\\n"" )"	39:8:1128:1200	2491	1	True				
+ANR	2720	CallExpression	"av_log ( log_ctx , AV_LOG_ERROR , ""Could not find method Class.getName()\\n"" )"		2491	0					
+ANR	2721	Callee	av_log		2491	0					
+ANR	2722	Identifier	av_log		2491	0					
+ANR	2723	ArgumentList	log_ctx		2491	1					
+ANR	2724	Argument	log_ctx		2491	0					
+ANR	2725	Identifier	log_ctx		2491	0					
+ANR	2726	Argument	AV_LOG_ERROR		2491	1					
+ANR	2727	Identifier	AV_LOG_ERROR		2491	0					
+ANR	2728	Argument	"""Could not find method Class.getName()\\n"""		2491	2					
+ANR	2729	PrimaryExpression	"""Could not find method Class.getName()\\n"""		2491	0					
+ANR	2730	ExpressionStatement	ret = AVERROR_EXTERNAL	40:8:1210:1232	2491	2	True				
+ANR	2731	AssignmentExpression	ret = AVERROR_EXTERNAL		2491	0		=			
+ANR	2732	Identifier	ret		2491	0					
+ANR	2733	Identifier	AVERROR_EXTERNAL		2491	1					
+ANR	2734	GotoStatement	goto done ;	41:8:1242:1251	2491	3	True				
+ANR	2735	Identifier	done		2491	0					
+ANR	2736	ExpressionStatement	"string = ( * env ) -> CallObjectMethod ( env , exception_class , get_name_id )"	44:4:1264:1332	2491	16	True				
+ANR	2737	AssignmentExpression	"string = ( * env ) -> CallObjectMethod ( env , exception_class , get_name_id )"		2491	0		=			
+ANR	2738	Identifier	string		2491	0					
+ANR	2739	CallExpression	"( * env ) -> CallObjectMethod ( env , exception_class , get_name_id )"		2491	1					
+ANR	2740	Callee	( * env ) -> CallObjectMethod		2491	0					
+ANR	2741	PtrMemberAccess	( * env ) -> CallObjectMethod		2491	0					
+ANR	2742	UnaryOperationExpression	* env		2491	0					
+ANR	2743	UnaryOperator	*		2491	0					
+ANR	2744	Identifier	env		2491	1					
+ANR	2745	Identifier	CallObjectMethod		2491	1					
+ANR	2746	ArgumentList	env		2491	1					
+ANR	2747	Argument	env		2491	0					
+ANR	2748	Identifier	env		2491	0					
+ANR	2749	Argument	exception_class		2491	1					
+ANR	2750	Identifier	exception_class		2491	0					
+ANR	2751	Argument	get_name_id		2491	2					
+ANR	2752	Identifier	get_name_id		2491	0					
+ANR	2753	IfStatement	if ( ( * env ) -> ExceptionCheck ( env ) )		2491	17					
+ANR	2754	Condition	( * env ) -> ExceptionCheck ( env )	45:8:1342:1368	2491	0	True				
+ANR	2755	CallExpression	( * env ) -> ExceptionCheck ( env )		2491	0					
+ANR	2756	Callee	( * env ) -> ExceptionCheck		2491	0					
+ANR	2757	PtrMemberAccess	( * env ) -> ExceptionCheck		2491	0					
+ANR	2758	UnaryOperationExpression	* env		2491	0					
+ANR	2759	UnaryOperator	*		2491	0					
+ANR	2760	Identifier	env		2491	1					
+ANR	2761	Identifier	ExceptionCheck		2491	1					
+ANR	2762	ArgumentList	env		2491	1					
+ANR	2763	Argument	env		2491	0					
+ANR	2764	Identifier	env		2491	0					
+ANR	2765	CompoundStatement		44:37:1273:1273	2491	1					
+ANR	2766	ExpressionStatement	( * env ) -> ExceptionClear ( env )	46:8:1381:1408	2491	0	True				
+ANR	2767	CallExpression	( * env ) -> ExceptionClear ( env )		2491	0					
+ANR	2768	Callee	( * env ) -> ExceptionClear		2491	0					
+ANR	2769	PtrMemberAccess	( * env ) -> ExceptionClear		2491	0					
+ANR	2770	UnaryOperationExpression	* env		2491	0					
+ANR	2771	UnaryOperator	*		2491	0					
+ANR	2772	Identifier	env		2491	1					
+ANR	2773	Identifier	ExceptionClear		2491	1					
+ANR	2774	ArgumentList	env		2491	1					
+ANR	2775	Argument	env		2491	0					
+ANR	2776	Identifier	env		2491	0					
+ANR	2777	ExpressionStatement	"av_log ( log_ctx , AV_LOG_ERROR , ""Class.getName() threw an exception\\n"" )"	47:8:1418:1487	2491	1	True				
+ANR	2778	CallExpression	"av_log ( log_ctx , AV_LOG_ERROR , ""Class.getName() threw an exception\\n"" )"		2491	0					
+ANR	2779	Callee	av_log		2491	0					
+ANR	2780	Identifier	av_log		2491	0					
+ANR	2781	ArgumentList	log_ctx		2491	1					
+ANR	2782	Argument	log_ctx		2491	0					
+ANR	2783	Identifier	log_ctx		2491	0					
+ANR	2784	Argument	AV_LOG_ERROR		2491	1					
+ANR	2785	Identifier	AV_LOG_ERROR		2491	0					
+ANR	2786	Argument	"""Class.getName() threw an exception\\n"""		2491	2					
+ANR	2787	PrimaryExpression	"""Class.getName() threw an exception\\n"""		2491	0					
+ANR	2788	ExpressionStatement	ret = AVERROR_EXTERNAL	48:8:1497:1519	2491	2	True				
+ANR	2789	AssignmentExpression	ret = AVERROR_EXTERNAL		2491	0		=			
+ANR	2790	Identifier	ret		2491	0					
+ANR	2791	Identifier	AVERROR_EXTERNAL		2491	1					
+ANR	2792	GotoStatement	goto done ;	49:8:1529:1538	2491	3	True				
+ANR	2793	Identifier	done		2491	0					
+ANR	2794	IfStatement	if ( string )		2491	18					
+ANR	2795	Condition	string	52:8:1555:1560	2491	0	True				
+ANR	2796	Identifier	string		2491	0					
+ANR	2797	CompoundStatement		51:16:1465:1465	2491	1					
+ANR	2798	ExpressionStatement	"name = ff_jni_jstring_to_utf_chars ( env , string , log_ctx )"	53:8:1573:1629	2491	0	True				
+ANR	2799	AssignmentExpression	"name = ff_jni_jstring_to_utf_chars ( env , string , log_ctx )"		2491	0		=			
+ANR	2800	Identifier	name		2491	0					
+ANR	2801	CallExpression	"ff_jni_jstring_to_utf_chars ( env , string , log_ctx )"		2491	1					
+ANR	2802	Callee	ff_jni_jstring_to_utf_chars		2491	0					
+ANR	2803	Identifier	ff_jni_jstring_to_utf_chars		2491	0					
+ANR	2804	ArgumentList	env		2491	1					
+ANR	2805	Argument	env		2491	0					
+ANR	2806	Identifier	env		2491	0					
+ANR	2807	Argument	string		2491	1					
+ANR	2808	Identifier	string		2491	0					
+ANR	2809	Argument	log_ctx		2491	2					
+ANR	2810	Identifier	log_ctx		2491	0					
+ANR	2811	ExpressionStatement	"( * env ) -> DeleteLocalRef ( env , string )"	54:8:1639:1674	2491	1	True				
+ANR	2812	CallExpression	"( * env ) -> DeleteLocalRef ( env , string )"		2491	0					
+ANR	2813	Callee	( * env ) -> DeleteLocalRef		2491	0					
+ANR	2814	PtrMemberAccess	( * env ) -> DeleteLocalRef		2491	0					
+ANR	2815	UnaryOperationExpression	* env		2491	0					
+ANR	2816	UnaryOperator	*		2491	0					
+ANR	2817	Identifier	env		2491	1					
+ANR	2818	Identifier	DeleteLocalRef		2491	1					
+ANR	2819	ArgumentList	env		2491	1					
+ANR	2820	Argument	env		2491	0					
+ANR	2821	Identifier	env		2491	0					
+ANR	2822	Argument	string		2491	1					
+ANR	2823	Identifier	string		2491	0					
+ANR	2824	ExpressionStatement	string = NULL	55:8:1684:1697	2491	2	True				
+ANR	2825	AssignmentExpression	string = NULL		2491	0		=			
+ANR	2826	Identifier	string		2491	0					
+ANR	2827	Identifier	NULL		2491	1					
+ANR	2828	ExpressionStatement	"get_message_id = ( * env ) -> GetMethodID ( env , exception_class , ""getMessage"" , ""()Ljava/lang/String;"" )"	58:4:1710:1806	2491	19	True				
+ANR	2829	AssignmentExpression	"get_message_id = ( * env ) -> GetMethodID ( env , exception_class , ""getMessage"" , ""()Ljava/lang/String;"" )"		2491	0		=			
+ANR	2830	Identifier	get_message_id		2491	0					
+ANR	2831	CallExpression	"( * env ) -> GetMethodID ( env , exception_class , ""getMessage"" , ""()Ljava/lang/String;"" )"		2491	1					
+ANR	2832	Callee	( * env ) -> GetMethodID		2491	0					
+ANR	2833	PtrMemberAccess	( * env ) -> GetMethodID		2491	0					
+ANR	2834	UnaryOperationExpression	* env		2491	0					
+ANR	2835	UnaryOperator	*		2491	0					
+ANR	2836	Identifier	env		2491	1					
+ANR	2837	Identifier	GetMethodID		2491	1					
+ANR	2838	ArgumentList	env		2491	1					
+ANR	2839	Argument	env		2491	0					
+ANR	2840	Identifier	env		2491	0					
+ANR	2841	Argument	exception_class		2491	1					
+ANR	2842	Identifier	exception_class		2491	0					
+ANR	2843	Argument	"""getMessage"""		2491	2					
+ANR	2844	PrimaryExpression	"""getMessage"""		2491	0					
+ANR	2845	Argument	"""()Ljava/lang/String;"""		2491	3					
+ANR	2846	PrimaryExpression	"""()Ljava/lang/String;"""		2491	0					
+ANR	2847	IfStatement	if ( ( * env ) -> ExceptionCheck ( env ) )		2491	20					
+ANR	2848	Condition	( * env ) -> ExceptionCheck ( env )	59:8:1816:1842	2491	0	True				
+ANR	2849	CallExpression	( * env ) -> ExceptionCheck ( env )		2491	0					
+ANR	2850	Callee	( * env ) -> ExceptionCheck		2491	0					
+ANR	2851	PtrMemberAccess	( * env ) -> ExceptionCheck		2491	0					
+ANR	2852	UnaryOperationExpression	* env		2491	0					
+ANR	2853	UnaryOperator	*		2491	0					
+ANR	2854	Identifier	env		2491	1					
+ANR	2855	Identifier	ExceptionCheck		2491	1					
+ANR	2856	ArgumentList	env		2491	1					
+ANR	2857	Argument	env		2491	0					
+ANR	2858	Identifier	env		2491	0					
+ANR	2859	CompoundStatement		58:37:1747:1747	2491	1					
+ANR	2860	ExpressionStatement	( * env ) -> ExceptionClear ( env )	60:8:1855:1882	2491	0	True				
+ANR	2861	CallExpression	( * env ) -> ExceptionClear ( env )		2491	0					
+ANR	2862	Callee	( * env ) -> ExceptionClear		2491	0					
+ANR	2863	PtrMemberAccess	( * env ) -> ExceptionClear		2491	0					
+ANR	2864	UnaryOperationExpression	* env		2491	0					
+ANR	2865	UnaryOperator	*		2491	0					
+ANR	2866	Identifier	env		2491	1					
+ANR	2867	Identifier	ExceptionClear		2491	1					
+ANR	2868	ArgumentList	env		2491	1					
+ANR	2869	Argument	env		2491	0					
+ANR	2870	Identifier	env		2491	0					
+ANR	2871	ExpressionStatement	"av_log ( log_ctx , AV_LOG_ERROR , ""Could not find method java/lang/Throwable.getMessage()\\n"" )"	61:8:1892:1981	2491	1	True				
+ANR	2872	CallExpression	"av_log ( log_ctx , AV_LOG_ERROR , ""Could not find method java/lang/Throwable.getMessage()\\n"" )"		2491	0					
+ANR	2873	Callee	av_log		2491	0					
+ANR	2874	Identifier	av_log		2491	0					
+ANR	2875	ArgumentList	log_ctx		2491	1					
+ANR	2876	Argument	log_ctx		2491	0					
+ANR	2877	Identifier	log_ctx		2491	0					
+ANR	2878	Argument	AV_LOG_ERROR		2491	1					
+ANR	2879	Identifier	AV_LOG_ERROR		2491	0					
+ANR	2880	Argument	"""Could not find method java/lang/Throwable.getMessage()\\n"""		2491	2					
+ANR	2881	PrimaryExpression	"""Could not find method java/lang/Throwable.getMessage()\\n"""		2491	0					
+ANR	2882	ExpressionStatement	ret = AVERROR_EXTERNAL	62:8:1991:2013	2491	2	True				
+ANR	2883	AssignmentExpression	ret = AVERROR_EXTERNAL		2491	0		=			
+ANR	2884	Identifier	ret		2491	0					
+ANR	2885	Identifier	AVERROR_EXTERNAL		2491	1					
+ANR	2886	GotoStatement	goto done ;	63:8:2023:2032	2491	3	True				
+ANR	2887	Identifier	done		2491	0					
+ANR	2888	ExpressionStatement	"string = ( * env ) -> CallObjectMethod ( env , exception , get_message_id )"	66:4:2045:2110	2491	21	True				
+ANR	2889	AssignmentExpression	"string = ( * env ) -> CallObjectMethod ( env , exception , get_message_id )"		2491	0		=			
+ANR	2890	Identifier	string		2491	0					
+ANR	2891	CallExpression	"( * env ) -> CallObjectMethod ( env , exception , get_message_id )"		2491	1					
+ANR	2892	Callee	( * env ) -> CallObjectMethod		2491	0					
+ANR	2893	PtrMemberAccess	( * env ) -> CallObjectMethod		2491	0					
+ANR	2894	UnaryOperationExpression	* env		2491	0					
+ANR	2895	UnaryOperator	*		2491	0					
+ANR	2896	Identifier	env		2491	1					
+ANR	2897	Identifier	CallObjectMethod		2491	1					
+ANR	2898	ArgumentList	env		2491	1					
+ANR	2899	Argument	env		2491	0					
+ANR	2900	Identifier	env		2491	0					
+ANR	2901	Argument	exception		2491	1					
+ANR	2902	Identifier	exception		2491	0					
+ANR	2903	Argument	get_message_id		2491	2					
+ANR	2904	Identifier	get_message_id		2491	0					
+ANR	2905	IfStatement	if ( ( * env ) -> ExceptionCheck ( env ) )		2491	22					
+ANR	2906	Condition	( * env ) -> ExceptionCheck ( env )	67:8:2120:2146	2491	0	True				
+ANR	2907	CallExpression	( * env ) -> ExceptionCheck ( env )		2491	0					
+ANR	2908	Callee	( * env ) -> ExceptionCheck		2491	0					
+ANR	2909	PtrMemberAccess	( * env ) -> ExceptionCheck		2491	0					
+ANR	2910	UnaryOperationExpression	* env		2491	0					
+ANR	2911	UnaryOperator	*		2491	0					
+ANR	2912	Identifier	env		2491	1					
+ANR	2913	Identifier	ExceptionCheck		2491	1					
+ANR	2914	ArgumentList	env		2491	1					
+ANR	2915	Argument	env		2491	0					
+ANR	2916	Identifier	env		2491	0					
+ANR	2917	CompoundStatement		66:37:2051:2051	2491	1					
+ANR	2918	ExpressionStatement	( * env ) -> ExceptionClear ( env )	68:8:2159:2186	2491	0	True				
+ANR	2919	CallExpression	( * env ) -> ExceptionClear ( env )		2491	0					
+ANR	2920	Callee	( * env ) -> ExceptionClear		2491	0					
+ANR	2921	PtrMemberAccess	( * env ) -> ExceptionClear		2491	0					
+ANR	2922	UnaryOperationExpression	* env		2491	0					
+ANR	2923	UnaryOperator	*		2491	0					
+ANR	2924	Identifier	env		2491	1					
+ANR	2925	Identifier	ExceptionClear		2491	1					
+ANR	2926	ArgumentList	env		2491	1					
+ANR	2927	Argument	env		2491	0					
+ANR	2928	Identifier	env		2491	0					
+ANR	2929	ExpressionStatement	"av_log ( log_ctx , AV_LOG_ERROR , ""Throwable.getMessage() threw an exception\\n"" )"	69:8:2196:2272	2491	1	True				
+ANR	2930	CallExpression	"av_log ( log_ctx , AV_LOG_ERROR , ""Throwable.getMessage() threw an exception\\n"" )"		2491	0					
+ANR	2931	Callee	av_log		2491	0					
+ANR	2932	Identifier	av_log		2491	0					
+ANR	2933	ArgumentList	log_ctx		2491	1					
+ANR	2934	Argument	log_ctx		2491	0					
+ANR	2935	Identifier	log_ctx		2491	0					
+ANR	2936	Argument	AV_LOG_ERROR		2491	1					
+ANR	2937	Identifier	AV_LOG_ERROR		2491	0					
+ANR	2938	Argument	"""Throwable.getMessage() threw an exception\\n"""		2491	2					
+ANR	2939	PrimaryExpression	"""Throwable.getMessage() threw an exception\\n"""		2491	0					
+ANR	2940	ExpressionStatement	ret = AVERROR_EXTERNAL	70:8:2282:2304	2491	2	True				
+ANR	2941	AssignmentExpression	ret = AVERROR_EXTERNAL		2491	0		=			
+ANR	2942	Identifier	ret		2491	0					
+ANR	2943	Identifier	AVERROR_EXTERNAL		2491	1					
+ANR	2944	GotoStatement	goto done ;	71:8:2314:2323	2491	3	True				
+ANR	2945	Identifier	done		2491	0					
+ANR	2946	IfStatement	if ( string )		2491	23					
+ANR	2947	Condition	string	74:8:2340:2345	2491	0	True				
+ANR	2948	Identifier	string		2491	0					
+ANR	2949	CompoundStatement		73:16:2250:2250	2491	1					
+ANR	2950	ExpressionStatement	"message = ff_jni_jstring_to_utf_chars ( env , string , log_ctx )"	75:8:2358:2417	2491	0	True				
+ANR	2951	AssignmentExpression	"message = ff_jni_jstring_to_utf_chars ( env , string , log_ctx )"		2491	0		=			
+ANR	2952	Identifier	message		2491	0					
+ANR	2953	CallExpression	"ff_jni_jstring_to_utf_chars ( env , string , log_ctx )"		2491	1					
+ANR	2954	Callee	ff_jni_jstring_to_utf_chars		2491	0					
+ANR	2955	Identifier	ff_jni_jstring_to_utf_chars		2491	0					
+ANR	2956	ArgumentList	env		2491	1					
+ANR	2957	Argument	env		2491	0					
+ANR	2958	Identifier	env		2491	0					
+ANR	2959	Argument	string		2491	1					
+ANR	2960	Identifier	string		2491	0					
+ANR	2961	Argument	log_ctx		2491	2					
+ANR	2962	Identifier	log_ctx		2491	0					
+ANR	2963	ExpressionStatement	"( * env ) -> DeleteLocalRef ( env , string )"	76:8:2427:2462	2491	1	True				
+ANR	2964	CallExpression	"( * env ) -> DeleteLocalRef ( env , string )"		2491	0					
+ANR	2965	Callee	( * env ) -> DeleteLocalRef		2491	0					
+ANR	2966	PtrMemberAccess	( * env ) -> DeleteLocalRef		2491	0					
+ANR	2967	UnaryOperationExpression	* env		2491	0					
+ANR	2968	UnaryOperator	*		2491	0					
+ANR	2969	Identifier	env		2491	1					
+ANR	2970	Identifier	DeleteLocalRef		2491	1					
+ANR	2971	ArgumentList	env		2491	1					
+ANR	2972	Argument	env		2491	0					
+ANR	2973	Identifier	env		2491	0					
+ANR	2974	Argument	string		2491	1					
+ANR	2975	Identifier	string		2491	0					
+ANR	2976	ExpressionStatement	string = NULL	77:8:2472:2485	2491	2	True				
+ANR	2977	AssignmentExpression	string = NULL		2491	0		=			
+ANR	2978	Identifier	string		2491	0					
+ANR	2979	Identifier	NULL		2491	1					
+ANR	2980	IfStatement	if ( name && message )		2491	24					
+ANR	2981	Condition	name && message	80:8:2502:2516	2491	0	True				
+ANR	2982	AndExpression	name && message		2491	0		&&			
+ANR	2983	Identifier	name		2491	0					
+ANR	2984	Identifier	message		2491	1					
+ANR	2985	CompoundStatement		79:25:2421:2421	2491	1					
+ANR	2986	ExpressionStatement	"av_bprintf ( & bp , ""%s: %s"" , name , message )"	81:8:2529:2569	2491	0	True				
+ANR	2987	CallExpression	"av_bprintf ( & bp , ""%s: %s"" , name , message )"		2491	0					
+ANR	2988	Callee	av_bprintf		2491	0					
+ANR	2989	Identifier	av_bprintf		2491	0					
+ANR	2990	ArgumentList	& bp		2491	1					
+ANR	2991	Argument	& bp		2491	0					
+ANR	2992	UnaryOperationExpression	& bp		2491	0					
+ANR	2993	UnaryOperator	&		2491	0					
+ANR	2994	Identifier	bp		2491	1					
+ANR	2995	Argument	"""%s: %s"""		2491	1					
+ANR	2996	PrimaryExpression	"""%s: %s"""		2491	0					
+ANR	2997	Argument	name		2491	2					
+ANR	2998	Identifier	name		2491	0					
+ANR	2999	Argument	message		2491	3					
+ANR	3000	Identifier	message		2491	0					
+ANR	3001	ElseStatement	else		2491	0					
+ANR	3002	IfStatement	if ( name && ! message )		2491	0					
+ANR	3003	Condition	name && ! message	82:15:2586:2601	2491	0	True				
+ANR	3004	AndExpression	name && ! message		2491	0		&&			
+ANR	3005	Identifier	name		2491	0					
+ANR	3006	UnaryOperationExpression	! message		2491	1					
+ANR	3007	UnaryOperator	!		2491	0					
+ANR	3008	Identifier	message		2491	1					
+ANR	3009	CompoundStatement		81:33:2506:2506	2491	1					
+ANR	3010	ExpressionStatement	"av_bprintf ( & bp , ""%s occurred"" , name )"	83:8:2614:2650	2491	0	True				
+ANR	3011	CallExpression	"av_bprintf ( & bp , ""%s occurred"" , name )"		2491	0					
+ANR	3012	Callee	av_bprintf		2491	0					
+ANR	3013	Identifier	av_bprintf		2491	0					
+ANR	3014	ArgumentList	& bp		2491	1					
+ANR	3015	Argument	& bp		2491	0					
+ANR	3016	UnaryOperationExpression	& bp		2491	0					
+ANR	3017	UnaryOperator	&		2491	0					
+ANR	3018	Identifier	bp		2491	1					
+ANR	3019	Argument	"""%s occurred"""		2491	1					
+ANR	3020	PrimaryExpression	"""%s occurred"""		2491	0					
+ANR	3021	Argument	name		2491	2					
+ANR	3022	Identifier	name		2491	0					
+ANR	3023	ElseStatement	else		2491	0					
+ANR	3024	IfStatement	if ( ! name && message )		2491	0					
+ANR	3025	Condition	! name && message	84:15:2667:2682	2491	0	True				
+ANR	3026	AndExpression	! name && message		2491	0		&&			
+ANR	3027	UnaryOperationExpression	! name		2491	0					
+ANR	3028	UnaryOperator	!		2491	0					
+ANR	3029	Identifier	name		2491	1					
+ANR	3030	Identifier	message		2491	1					
+ANR	3031	CompoundStatement		83:33:2587:2587	2491	1					
+ANR	3032	ExpressionStatement	"av_bprintf ( & bp , ""Exception: %s"" , message )"	85:8:2695:2736	2491	0	True				
+ANR	3033	CallExpression	"av_bprintf ( & bp , ""Exception: %s"" , message )"		2491	0					
+ANR	3034	Callee	av_bprintf		2491	0					
+ANR	3035	Identifier	av_bprintf		2491	0					
+ANR	3036	ArgumentList	& bp		2491	1					
+ANR	3037	Argument	& bp		2491	0					
+ANR	3038	UnaryOperationExpression	& bp		2491	0					
+ANR	3039	UnaryOperator	&		2491	0					
+ANR	3040	Identifier	bp		2491	1					
+ANR	3041	Argument	"""Exception: %s"""		2491	1					
+ANR	3042	PrimaryExpression	"""Exception: %s"""		2491	0					
+ANR	3043	Argument	message		2491	2					
+ANR	3044	Identifier	message		2491	0					
+ANR	3045	ElseStatement	else		2491	0					
+ANR	3046	CompoundStatement		85:11:2651:2651	2491	0					
+ANR	3047	ExpressionStatement	"av_log ( log_ctx , AV_LOG_WARNING , ""Could not retreive exception name and message\\n"" )"	87:8:2759:2841	2491	0	True				
+ANR	3048	CallExpression	"av_log ( log_ctx , AV_LOG_WARNING , ""Could not retreive exception name and message\\n"" )"		2491	0					
+ANR	3049	Callee	av_log		2491	0					
+ANR	3050	Identifier	av_log		2491	0					
+ANR	3051	ArgumentList	log_ctx		2491	1					
+ANR	3052	Argument	log_ctx		2491	0					
+ANR	3053	Identifier	log_ctx		2491	0					
+ANR	3054	Argument	AV_LOG_WARNING		2491	1					
+ANR	3055	Identifier	AV_LOG_WARNING		2491	0					
+ANR	3056	Argument	"""Could not retreive exception name and message\\n"""		2491	2					
+ANR	3057	PrimaryExpression	"""Could not retreive exception name and message\\n"""		2491	0					
+ANR	3058	ExpressionStatement	"av_bprintf ( & bp , ""Exception occurred"" )"	88:8:2851:2888	2491	1	True				
+ANR	3059	CallExpression	"av_bprintf ( & bp , ""Exception occurred"" )"		2491	0					
+ANR	3060	Callee	av_bprintf		2491	0					
+ANR	3061	Identifier	av_bprintf		2491	0					
+ANR	3062	ArgumentList	& bp		2491	1					
+ANR	3063	Argument	& bp		2491	0					
+ANR	3064	UnaryOperationExpression	& bp		2491	0					
+ANR	3065	UnaryOperator	&		2491	0					
+ANR	3066	Identifier	bp		2491	1					
+ANR	3067	Argument	"""Exception occurred"""		2491	1					
+ANR	3068	PrimaryExpression	"""Exception occurred"""		2491	0					
+ANR	3069	ExpressionStatement	"ret = av_bprint_finalize ( & bp , error )"	91:4:2901:2937	2491	25	True				
+ANR	3070	AssignmentExpression	"ret = av_bprint_finalize ( & bp , error )"		2491	0		=			
+ANR	3071	Identifier	ret		2491	0					
+ANR	3072	CallExpression	"av_bprint_finalize ( & bp , error )"		2491	1					
+ANR	3073	Callee	av_bprint_finalize		2491	0					
+ANR	3074	Identifier	av_bprint_finalize		2491	0					
+ANR	3075	ArgumentList	& bp		2491	1					
+ANR	3076	Argument	& bp		2491	0					
+ANR	3077	UnaryOperationExpression	& bp		2491	0					
+ANR	3078	UnaryOperator	&		2491	0					
+ANR	3079	Identifier	bp		2491	1					
+ANR	3080	Argument	error		2491	1					
+ANR	3081	Identifier	error		2491	0					
+ANR	3082	Label	done :	92:0:2939:2943	2491	26	True				
+ANR	3083	Identifier	done		2491	0					
+ANR	3084	ExpressionStatement	av_free ( name )	94:4:2950:2963	2491	27	True				
+ANR	3085	CallExpression	av_free ( name )		2491	0					
+ANR	3086	Callee	av_free		2491	0					
+ANR	3087	Identifier	av_free		2491	0					
+ANR	3088	ArgumentList	name		2491	1					
+ANR	3089	Argument	name		2491	0					
+ANR	3090	Identifier	name		2491	0					
+ANR	3091	ExpressionStatement	av_free ( message )	95:4:2969:2985	2491	28	True				
+ANR	3092	CallExpression	av_free ( message )		2491	0					
+ANR	3093	Callee	av_free		2491	0					
+ANR	3094	Identifier	av_free		2491	0					
+ANR	3095	ArgumentList	message		2491	1					
+ANR	3096	Argument	message		2491	0					
+ANR	3097	Identifier	message		2491	0					
+ANR	3098	IfStatement	if ( class_class )		2491	29					
+ANR	3099	Condition	class_class	97:8:2996:3006	2491	0	True				
+ANR	3100	Identifier	class_class		2491	0					
+ANR	3101	CompoundStatement		96:21:2911:2911	2491	1					
+ANR	3102	ExpressionStatement	"( * env ) -> DeleteLocalRef ( env , class_class )"	98:8:3019:3059	2491	0	True				
+ANR	3103	CallExpression	"( * env ) -> DeleteLocalRef ( env , class_class )"		2491	0					
+ANR	3104	Callee	( * env ) -> DeleteLocalRef		2491	0					
+ANR	3105	PtrMemberAccess	( * env ) -> DeleteLocalRef		2491	0					
+ANR	3106	UnaryOperationExpression	* env		2491	0					
+ANR	3107	UnaryOperator	*		2491	0					
+ANR	3108	Identifier	env		2491	1					
+ANR	3109	Identifier	DeleteLocalRef		2491	1					
+ANR	3110	ArgumentList	env		2491	1					
+ANR	3111	Argument	env		2491	0					
+ANR	3112	Identifier	env		2491	0					
+ANR	3113	Argument	class_class		2491	1					
+ANR	3114	Identifier	class_class		2491	0					
+ANR	3115	IfStatement	if ( exception_class )		2491	30					
+ANR	3116	Condition	exception_class	101:8:3076:3090	2491	0	True				
+ANR	3117	Identifier	exception_class		2491	0					
+ANR	3118	CompoundStatement		100:25:2995:2995	2491	1					
+ANR	3119	ExpressionStatement	"( * env ) -> DeleteLocalRef ( env , exception_class )"	102:8:3103:3147	2491	0	True				
+ANR	3120	CallExpression	"( * env ) -> DeleteLocalRef ( env , exception_class )"		2491	0					
+ANR	3121	Callee	( * env ) -> DeleteLocalRef		2491	0					
+ANR	3122	PtrMemberAccess	( * env ) -> DeleteLocalRef		2491	0					
+ANR	3123	UnaryOperationExpression	* env		2491	0					
+ANR	3124	UnaryOperator	*		2491	0					
+ANR	3125	Identifier	env		2491	1					
+ANR	3126	Identifier	DeleteLocalRef		2491	1					
+ANR	3127	ArgumentList	env		2491	1					
+ANR	3128	Argument	env		2491	0					
+ANR	3129	Identifier	env		2491	0					
+ANR	3130	Argument	exception_class		2491	1					
+ANR	3131	Identifier	exception_class		2491	0					
+ANR	3132	IfStatement	if ( string )		2491	31					
+ANR	3133	Condition	string	105:8:3164:3169	2491	0	True				
+ANR	3134	Identifier	string		2491	0					
+ANR	3135	CompoundStatement		104:16:3074:3074	2491	1					
+ANR	3136	ExpressionStatement	"( * env ) -> DeleteLocalRef ( env , string )"	106:8:3182:3217	2491	0	True				
+ANR	3137	CallExpression	"( * env ) -> DeleteLocalRef ( env , string )"		2491	0					
+ANR	3138	Callee	( * env ) -> DeleteLocalRef		2491	0					
+ANR	3139	PtrMemberAccess	( * env ) -> DeleteLocalRef		2491	0					
+ANR	3140	UnaryOperationExpression	* env		2491	0					
+ANR	3141	UnaryOperator	*		2491	0					
+ANR	3142	Identifier	env		2491	1					
+ANR	3143	Identifier	DeleteLocalRef		2491	1					
+ANR	3144	ArgumentList	env		2491	1					
+ANR	3145	Argument	env		2491	0					
+ANR	3146	Identifier	env		2491	0					
+ANR	3147	Argument	string		2491	1					
+ANR	3148	Identifier	string		2491	0					
+ANR	3149	ReturnStatement	return ret ;	109:4:3230:3240	2491	32	True				
+ANR	3150	Identifier	ret		2491	0					
+ANR	3151	ReturnType	int		2491	1					
+ANR	3152	Identifier	ff_jni_exception_get_summary		2491	2					
+ANR	3153	ParameterList	"JNIEnv * env , jthrowable exception , char * * error , void * log_ctx"		2491	3					
+ANR	3154	Parameter	JNIEnv * env	1:33:33:43	2491	0	True				
+ANR	3155	ParameterType	JNIEnv *		2491	0					
+ANR	3156	Identifier	env		2491	1					
+ANR	3157	Parameter	jthrowable exception	1:46:46:65	2491	1	True				
+ANR	3158	ParameterType	jthrowable		2491	0					
+ANR	3159	Identifier	exception		2491	1					
+ANR	3160	Parameter	char * * error	1:68:68:79	2491	2	True				
+ANR	3161	ParameterType	char * *		2491	0					
+ANR	3162	Identifier	error		2491	1					
+ANR	3163	Parameter	void * log_ctx	1:82:82:94	2491	3	True				
+ANR	3164	ParameterType	void *		2491	0					
+ANR	3165	Identifier	log_ctx		2491	1					
+ANR	3166	CFGEntryNode	ENTRY		2491		True				
+ANR	3167	CFGExitNode	EXIT		2491		True				
+ANR	3168	Symbol	exception		2491						
+ANR	3169	Symbol	class_class		2491						
+ANR	3170	Symbol	* * env		2491						
+ANR	3171	Symbol	string		2491						
+ANR	3172	Symbol	exception_class		2491						
+ANR	3173	Symbol	error		2491						
+ANR	3174	Symbol	bp		2491						
+ANR	3175	Symbol	log_ctx		2491						
+ANR	3176	Symbol	av_bprint_finalize		2491						
+ANR	3177	Symbol	( * env ) -> GetObjectClass		2491						
+ANR	3178	Symbol	get_name_id		2491						
+ANR	3179	Symbol	AV_BPRINT_SIZE_AUTOMATIC		2491						
+ANR	3180	Symbol	get_message_id		2491						
+ANR	3181	Symbol	& bp		2491						
+ANR	3182	Symbol	ret		2491						
+ANR	3183	Symbol	( * env ) -> GetMethodID		2491						
+ANR	3184	Symbol	NULL		2491						
+ANR	3185	Symbol	AV_LOG_ERROR		2491						
+ANR	3186	Symbol	ff_jni_jstring_to_utf_chars		2491						
+ANR	3187	Symbol	* env		2491						
+ANR	3188	Symbol	env		2491						
+ANR	3189	Symbol	message		2491						
+ANR	3190	Symbol	( * env ) -> ExceptionCheck		2491						
+ANR	3191	Symbol	AVERROR_EXTERNAL		2491						
+ANR	3192	Symbol	( * env ) -> CallObjectMethod		2491						
+ANR	3193	Symbol	name		2491						
+ANR	3194	Symbol	AV_LOG_WARNING		2491						

@@ -1,0 +1,135 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1820	File	tmp/qemu_d4cd4502_16533.c								
+ANR	1821	Function	xen_pt_bar_reg_init	1:0:0:631							
+ANR	1822	FunctionDef	"xen_pt_bar_reg_init (XenPCIPassthroughState * s , XenPTRegInfo * reg , uint32_t real_offset , uint32_t * data)"		1821	0					
+ANR	1823	CompoundStatement		3:0:146:631	1821	0					
+ANR	1824	IdentifierDeclStatement	uint32_t reg_field = 0 ;	4:4:152:174	1821	0	True				
+ANR	1825	IdentifierDecl	reg_field = 0		1821	0					
+ANR	1826	IdentifierDeclType	uint32_t		1821	0					
+ANR	1827	Identifier	reg_field		1821	1					
+ANR	1828	AssignmentExpression	reg_field = 0		1821	2		=			
+ANR	1829	Identifier	reg_field		1821	0					
+ANR	1830	PrimaryExpression	0		1821	1					
+ANR	1831	IdentifierDeclStatement	int index ;	5:4:180:189	1821	1	True				
+ANR	1832	IdentifierDecl	index		1821	0					
+ANR	1833	IdentifierDeclType	int		1821	0					
+ANR	1834	Identifier	index		1821	1					
+ANR	1835	ExpressionStatement	index = xen_pt_bar_offset_to_index ( reg -> offset )	7:4:196:243	1821	2	True				
+ANR	1836	AssignmentExpression	index = xen_pt_bar_offset_to_index ( reg -> offset )		1821	0		=			
+ANR	1837	Identifier	index		1821	0					
+ANR	1838	CallExpression	xen_pt_bar_offset_to_index ( reg -> offset )		1821	1					
+ANR	1839	Callee	xen_pt_bar_offset_to_index		1821	0					
+ANR	1840	Identifier	xen_pt_bar_offset_to_index		1821	0					
+ANR	1841	ArgumentList	reg -> offset		1821	1					
+ANR	1842	Argument	reg -> offset		1821	0					
+ANR	1843	PtrMemberAccess	reg -> offset		1821	0					
+ANR	1844	Identifier	reg		1821	0					
+ANR	1845	Identifier	offset		1821	1					
+ANR	1846	IfStatement	if ( index < 0 || index >= PCI_NUM_REGIONS )		1821	3					
+ANR	1847	Condition	index < 0 || index >= PCI_NUM_REGIONS	8:8:253:289	1821	0	True				
+ANR	1848	OrExpression	index < 0 || index >= PCI_NUM_REGIONS		1821	0		||			
+ANR	1849	RelationalExpression	index < 0		1821	0		<			
+ANR	1850	Identifier	index		1821	0					
+ANR	1851	PrimaryExpression	0		1821	1					
+ANR	1852	RelationalExpression	index >= PCI_NUM_REGIONS		1821	1		>=			
+ANR	1853	Identifier	index		1821	0					
+ANR	1854	Identifier	PCI_NUM_REGIONS		1821	1					
+ANR	1855	CompoundStatement		6:47:145:145	1821	1					
+ANR	1856	ExpressionStatement	"XEN_PT_ERR ( & s -> dev , ""Internal error: Invalid BAR index [%d].\\n"" , index )"	9:8:302:373	1821	0	True				
+ANR	1857	CallExpression	"XEN_PT_ERR ( & s -> dev , ""Internal error: Invalid BAR index [%d].\\n"" , index )"		1821	0					
+ANR	1858	Callee	XEN_PT_ERR		1821	0					
+ANR	1859	Identifier	XEN_PT_ERR		1821	0					
+ANR	1860	ArgumentList	& s -> dev		1821	1					
+ANR	1861	Argument	& s -> dev		1821	0					
+ANR	1862	UnaryOperationExpression	& s -> dev		1821	0					
+ANR	1863	UnaryOperator	&		1821	0					
+ANR	1864	PtrMemberAccess	s -> dev		1821	1					
+ANR	1865	Identifier	s		1821	0					
+ANR	1866	Identifier	dev		1821	1					
+ANR	1867	Argument	"""Internal error: Invalid BAR index [%d].\\n"""		1821	1					
+ANR	1868	PrimaryExpression	"""Internal error: Invalid BAR index [%d].\\n"""		1821	0					
+ANR	1869	Argument	index		1821	2					
+ANR	1870	Identifier	index		1821	0					
+ANR	1871	ReturnStatement	return - 1 ;	10:8:383:392	1821	1	True				
+ANR	1872	UnaryOperationExpression	- 1		1821	0					
+ANR	1873	UnaryOperator	-		1821	0					
+ANR	1874	PrimaryExpression	1		1821	1					
+ANR	1875	ExpressionStatement	"s -> bases [ index ] . bar_flag = xen_pt_bar_reg_parse ( s , reg )"	14:4:428:483	1821	4	True				
+ANR	1876	AssignmentExpression	"s -> bases [ index ] . bar_flag = xen_pt_bar_reg_parse ( s , reg )"		1821	0		=			
+ANR	1877	MemberAccess	s -> bases [ index ] . bar_flag		1821	0					
+ANR	1878	ArrayIndexing	s -> bases [ index ]		1821	0					
+ANR	1879	PtrMemberAccess	s -> bases		1821	0					
+ANR	1880	Identifier	s		1821	0					
+ANR	1881	Identifier	bases		1821	1					
+ANR	1882	Identifier	index		1821	1					
+ANR	1883	Identifier	bar_flag		1821	1					
+ANR	1884	CallExpression	"xen_pt_bar_reg_parse ( s , reg )"		1821	1					
+ANR	1885	Callee	xen_pt_bar_reg_parse		1821	0					
+ANR	1886	Identifier	xen_pt_bar_reg_parse		1821	0					
+ANR	1887	ArgumentList	s		1821	1					
+ANR	1888	Argument	s		1821	0					
+ANR	1889	Identifier	s		1821	0					
+ANR	1890	Argument	reg		1821	1					
+ANR	1891	Identifier	reg		1821	0					
+ANR	1892	IfStatement	if ( s -> bases [ index ] . bar_flag == XEN_PT_BAR_FLAG_UNUSED )		1821	5					
+ANR	1893	Condition	s -> bases [ index ] . bar_flag == XEN_PT_BAR_FLAG_UNUSED	15:8:493:542	1821	0	True				
+ANR	1894	EqualityExpression	s -> bases [ index ] . bar_flag == XEN_PT_BAR_FLAG_UNUSED		1821	0		==			
+ANR	1895	MemberAccess	s -> bases [ index ] . bar_flag		1821	0					
+ANR	1896	ArrayIndexing	s -> bases [ index ]		1821	0					
+ANR	1897	PtrMemberAccess	s -> bases		1821	0					
+ANR	1898	Identifier	s		1821	0					
+ANR	1899	Identifier	bases		1821	1					
+ANR	1900	Identifier	index		1821	1					
+ANR	1901	Identifier	bar_flag		1821	1					
+ANR	1902	Identifier	XEN_PT_BAR_FLAG_UNUSED		1821	1					
+ANR	1903	CompoundStatement		13:60:398:398	1821	1					
+ANR	1904	ExpressionStatement	reg_field = XEN_PT_INVALID_REG	16:8:555:585	1821	0	True				
+ANR	1905	AssignmentExpression	reg_field = XEN_PT_INVALID_REG		1821	0		=			
+ANR	1906	Identifier	reg_field		1821	0					
+ANR	1907	Identifier	XEN_PT_INVALID_REG		1821	1					
+ANR	1908	ExpressionStatement	* data = reg_field	19:4:598:615	1821	6	True				
+ANR	1909	AssignmentExpression	* data = reg_field		1821	0		=			
+ANR	1910	UnaryOperationExpression	* data		1821	0					
+ANR	1911	UnaryOperator	*		1821	0					
+ANR	1912	Identifier	data		1821	1					
+ANR	1913	Identifier	reg_field		1821	1					
+ANR	1914	ReturnStatement	return 0 ;	20:4:621:629	1821	7	True				
+ANR	1915	PrimaryExpression	0		1821	0					
+ANR	1916	ReturnType	static int		1821	1					
+ANR	1917	Identifier	xen_pt_bar_reg_init		1821	2					
+ANR	1918	ParameterList	"XenPCIPassthroughState * s , XenPTRegInfo * reg , uint32_t real_offset , uint32_t * data"		1821	3					
+ANR	1919	Parameter	XenPCIPassthroughState * s	1:31:31:55	1821	0	True				
+ANR	1920	ParameterType	XenPCIPassthroughState *		1821	0					
+ANR	1921	Identifier	s		1821	1					
+ANR	1922	Parameter	XenPTRegInfo * reg	1:58:58:74	1821	1	True				
+ANR	1923	ParameterType	XenPTRegInfo *		1821	0					
+ANR	1924	Identifier	reg		1821	1					
+ANR	1925	Parameter	uint32_t real_offset	2:31:108:127	1821	2	True				
+ANR	1926	ParameterType	uint32_t		1821	0					
+ANR	1927	Identifier	real_offset		1821	1					
+ANR	1928	Parameter	uint32_t * data	2:53:130:143	1821	3	True				
+ANR	1929	ParameterType	uint32_t *		1821	0					
+ANR	1930	Identifier	data		1821	1					
+ANR	1931	CFGEntryNode	ENTRY		1821		True				
+ANR	1932	CFGExitNode	EXIT		1821		True				
+ANR	1933	Symbol	data		1821						
+ANR	1934	Symbol	reg -> offset		1821						
+ANR	1935	Symbol	* index		1821						
+ANR	1936	Symbol	index		1821						
+ANR	1937	Symbol	& s -> dev		1821						
+ANR	1938	Symbol	XEN_PT_BAR_FLAG_UNUSED		1821						
+ANR	1939	Symbol	s -> bases		1821						
+ANR	1940	Symbol	xen_pt_bar_reg_parse		1821						
+ANR	1941	Symbol	real_offset		1821						
+ANR	1942	Symbol	XEN_PT_INVALID_REG		1821						
+ANR	1943	Symbol	s		1821						
+ANR	1944	Symbol	reg_field		1821						
+ANR	1945	Symbol	reg		1821						
+ANR	1946	Symbol	xen_pt_bar_offset_to_index		1821						
+ANR	1947	Symbol	s -> bases [ index ] . bar_flag		1821						
+ANR	1948	Symbol	* * s		1821						
+ANR	1949	Symbol	PCI_NUM_REGIONS		1821						
+ANR	1950	Symbol	* s -> bases		1821						
+ANR	1951	Symbol	* s		1821						
+ANR	1952	Symbol	* data		1821						
+ANR	1953	Symbol	* reg		1821						

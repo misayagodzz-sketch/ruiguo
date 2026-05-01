@@ -1,0 +1,158 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/qemu_3fd3c4b3_13095.c								
+ANR	2	Function	ram_save_target_page	1:0:0:1138							
+ANR	3	FunctionDef	"ram_save_target_page (MigrationState * ms , QEMUFile * f , RAMBlock * block , ram_addr_t offset , bool last_stage , uint64_t * bytes_transferred , ram_addr_t dirty_ram_abs)"		2	0					
+ANR	4	CompoundStatement		6:0:301:1138	2	0					
+ANR	5	IdentifierDeclStatement	int res = 0 ;	7:4:307:318	2	0	True				
+ANR	6	IdentifierDecl	res = 0		2	0					
+ANR	7	IdentifierDeclType	int		2	0					
+ANR	8	Identifier	res		2	1					
+ANR	9	AssignmentExpression	res = 0		2	2		=			
+ANR	10	Identifier	res		2	0					
+ANR	11	PrimaryExpression	0		2	1					
+ANR	12	IfStatement	if ( migration_bitmap_clear_dirty ( dirty_ram_abs ) )		2	1					
+ANR	13	Condition	migration_bitmap_clear_dirty ( dirty_ram_abs )	10:8:385:427	2	0	True				
+ANR	14	CallExpression	migration_bitmap_clear_dirty ( dirty_ram_abs )		2	0					
+ANR	15	Callee	migration_bitmap_clear_dirty		2	0					
+ANR	16	Identifier	migration_bitmap_clear_dirty		2	0					
+ANR	17	ArgumentList	dirty_ram_abs		2	1					
+ANR	18	Argument	dirty_ram_abs		2	0					
+ANR	19	Identifier	dirty_ram_abs		2	0					
+ANR	20	CompoundStatement		6:8:138:162	2	1					
+ANR	21	IdentifierDeclStatement	unsigned long * unsentmap ;	11:8:440:464	2	0	True				
+ANR	22	IdentifierDecl	* unsentmap		2	0					
+ANR	23	IdentifierDeclType	unsigned long *		2	0					
+ANR	24	Identifier	unsentmap		2	1					
+ANR	25	IfStatement	if ( compression_switch && migrate_use_compression ( ) )		2	1					
+ANR	26	Condition	compression_switch && migrate_use_compression ( )	12:12:478:524	2	0	True				
+ANR	27	AndExpression	compression_switch && migrate_use_compression ( )		2	0		&&			
+ANR	28	Identifier	compression_switch		2	0					
+ANR	29	CallExpression	migrate_use_compression ( )		2	1					
+ANR	30	Callee	migrate_use_compression		2	0					
+ANR	31	Identifier	migrate_use_compression		2	0					
+ANR	32	ArgumentList			2	1					
+ANR	33	CompoundStatement		7:61:225:225	2	1					
+ANR	34	ExpressionStatement	"res = ram_save_compressed_page ( f , block , offset , last_stage , bytes_transferred )"	13:12:541:706	2	0	True				
+ANR	35	AssignmentExpression	"res = ram_save_compressed_page ( f , block , offset , last_stage , bytes_transferred )"		2	0		=			
+ANR	36	Identifier	res		2	0					
+ANR	37	CallExpression	"ram_save_compressed_page ( f , block , offset , last_stage , bytes_transferred )"		2	1					
+ANR	38	Callee	ram_save_compressed_page		2	0					
+ANR	39	Identifier	ram_save_compressed_page		2	0					
+ANR	40	ArgumentList	f		2	1					
+ANR	41	Argument	f		2	0					
+ANR	42	Identifier	f		2	0					
+ANR	43	Argument	block		2	1					
+ANR	44	Identifier	block		2	0					
+ANR	45	Argument	offset		2	2					
+ANR	46	Identifier	offset		2	0					
+ANR	47	Argument	last_stage		2	3					
+ANR	48	Identifier	last_stage		2	0					
+ANR	49	Argument	bytes_transferred		2	4					
+ANR	50	Identifier	bytes_transferred		2	0					
+ANR	51	ElseStatement	else		2	0					
+ANR	52	CompoundStatement		11:15:421:421	2	0					
+ANR	53	ExpressionStatement	"res = ram_save_page ( f , block , offset , last_stage , bytes_transferred )"	17:12:737:837	2	0	True				
+ANR	54	AssignmentExpression	"res = ram_save_page ( f , block , offset , last_stage , bytes_transferred )"		2	0		=			
+ANR	55	Identifier	res		2	0					
+ANR	56	CallExpression	"ram_save_page ( f , block , offset , last_stage , bytes_transferred )"		2	1					
+ANR	57	Callee	ram_save_page		2	0					
+ANR	58	Identifier	ram_save_page		2	0					
+ANR	59	ArgumentList	f		2	1					
+ANR	60	Argument	f		2	0					
+ANR	61	Identifier	f		2	0					
+ANR	62	Argument	block		2	1					
+ANR	63	Identifier	block		2	0					
+ANR	64	Argument	offset		2	2					
+ANR	65	Identifier	offset		2	0					
+ANR	66	Argument	last_stage		2	3					
+ANR	67	Identifier	last_stage		2	0					
+ANR	68	Argument	bytes_transferred		2	4					
+ANR	69	Identifier	bytes_transferred		2	0					
+ANR	70	IfStatement	if ( res < 0 )		2	2					
+ANR	71	Condition	res < 0	21:12:862:868	2	0	True				
+ANR	72	RelationalExpression	res < 0		2	0		<			
+ANR	73	Identifier	res		2	0					
+ANR	74	PrimaryExpression	0		2	1					
+ANR	75	CompoundStatement		16:21:569:569	2	1					
+ANR	76	ReturnStatement	return res ;	22:12:885:895	2	0	True				
+ANR	77	Identifier	res		2	0					
+ANR	78	ExpressionStatement	unsentmap = atomic_rcu_read ( & migration_bitmap_rcu ) -> unsentmap	24:8:915:976	2	3	True				
+ANR	79	AssignmentExpression	unsentmap = atomic_rcu_read ( & migration_bitmap_rcu ) -> unsentmap		2	0		=			
+ANR	80	Identifier	unsentmap		2	0					
+ANR	81	PtrMemberAccess	atomic_rcu_read ( & migration_bitmap_rcu ) -> unsentmap		2	1					
+ANR	82	CallExpression	atomic_rcu_read ( & migration_bitmap_rcu )		2	0					
+ANR	83	Callee	atomic_rcu_read		2	0					
+ANR	84	Identifier	atomic_rcu_read		2	0					
+ANR	85	ArgumentList	& migration_bitmap_rcu		2	1					
+ANR	86	Argument	& migration_bitmap_rcu		2	0					
+ANR	87	UnaryOperationExpression	& migration_bitmap_rcu		2	0					
+ANR	88	UnaryOperator	&		2	0					
+ANR	89	Identifier	migration_bitmap_rcu		2	1					
+ANR	90	Identifier	unsentmap		2	1					
+ANR	91	IfStatement	if ( unsentmap )		2	4					
+ANR	92	Condition	unsentmap	25:12:990:998	2	0	True				
+ANR	93	Identifier	unsentmap		2	0					
+ANR	94	CompoundStatement		20:23:699:699	2	1					
+ANR	95	ExpressionStatement	"clear_bit ( dirty_ram_abs >> TARGET_PAGE_BITS , unsentmap )"	26:12:1015:1070	2	0	True				
+ANR	96	CallExpression	"clear_bit ( dirty_ram_abs >> TARGET_PAGE_BITS , unsentmap )"		2	0					
+ANR	97	Callee	clear_bit		2	0					
+ANR	98	Identifier	clear_bit		2	0					
+ANR	99	ArgumentList	dirty_ram_abs >> TARGET_PAGE_BITS		2	1					
+ANR	100	Argument	dirty_ram_abs >> TARGET_PAGE_BITS		2	0					
+ANR	101	ShiftExpression	dirty_ram_abs >> TARGET_PAGE_BITS		2	0		>>			
+ANR	102	Identifier	dirty_ram_abs		2	0					
+ANR	103	Identifier	TARGET_PAGE_BITS		2	1					
+ANR	104	Argument	unsentmap		2	1					
+ANR	105	Identifier	unsentmap		2	0					
+ANR	106	ExpressionStatement	last_sent_block = block	28:8:1090:1113	2	5	True				
+ANR	107	AssignmentExpression	last_sent_block = block		2	0		=			
+ANR	108	Identifier	last_sent_block		2	0					
+ANR	109	Identifier	block		2	1					
+ANR	110	ReturnStatement	return res ;	31:4:1126:1136	2	2	True				
+ANR	111	Identifier	res		2	0					
+ANR	112	ReturnType	static int		2	1					
+ANR	113	Identifier	ram_save_target_page		2	2					
+ANR	114	ParameterList	"MigrationState * ms , QEMUFile * f , RAMBlock * block , ram_addr_t offset , bool last_stage , uint64_t * bytes_transferred , ram_addr_t dirty_ram_abs"		2	3					
+ANR	115	Parameter	MigrationState * ms	1:32:32:49	2	0	True				
+ANR	116	ParameterType	MigrationState *		2	0					
+ANR	117	Identifier	ms		2	1					
+ANR	118	Parameter	QEMUFile * f	1:52:52:62	2	1	True				
+ANR	119	ParameterType	QEMUFile *		2	0					
+ANR	120	Identifier	f		2	1					
+ANR	121	Parameter	RAMBlock * block	2:32:97:111	2	2	True				
+ANR	122	ParameterType	RAMBlock *		2	0					
+ANR	123	Identifier	block		2	1					
+ANR	124	Parameter	ram_addr_t offset	2:49:114:130	2	3	True				
+ANR	125	ParameterType	ram_addr_t		2	0					
+ANR	126	Identifier	offset		2	1					
+ANR	127	Parameter	bool last_stage	3:32:165:179	2	4	True				
+ANR	128	ParameterType	bool		2	0					
+ANR	129	Identifier	last_stage		2	1					
+ANR	130	Parameter	uint64_t * bytes_transferred	4:32:214:240	2	5	True				
+ANR	131	ParameterType	uint64_t *		2	0					
+ANR	132	Identifier	bytes_transferred		2	1					
+ANR	133	Parameter	ram_addr_t dirty_ram_abs	5:32:275:298	2	6	True				
+ANR	134	ParameterType	ram_addr_t		2	0					
+ANR	135	Identifier	dirty_ram_abs		2	1					
+ANR	136	CFGEntryNode	ENTRY		2		True				
+ANR	137	CFGExitNode	EXIT		2		True				
+ANR	138	Symbol	bytes_transferred		2						
+ANR	139	Symbol	* atomic_rcu_read		2						
+ANR	140	Symbol	res		2						
+ANR	141	Symbol	offset		2						
+ANR	142	Symbol	ms		2						
+ANR	143	Symbol	f		2						
+ANR	144	Symbol	TARGET_PAGE_BITS		2						
+ANR	145	Symbol	compression_switch		2						
+ANR	146	Symbol	dirty_ram_abs		2						
+ANR	147	Symbol	ram_save_compressed_page		2						
+ANR	148	Symbol	atomic_rcu_read		2						
+ANR	149	Symbol	ram_save_page		2						
+ANR	150	Symbol	last_sent_block		2						
+ANR	151	Symbol	migration_bitmap_clear_dirty		2						
+ANR	152	Symbol	atomic_rcu_read ( & migration_bitmap_rcu ) -> unsentmap		2						
+ANR	153	Symbol	unsentmap		2						
+ANR	154	Symbol	block		2						
+ANR	155	Symbol	migrate_use_compression		2						
+ANR	156	Symbol	& migration_bitmap_rcu		2						
+ANR	157	Symbol	last_stage		2						

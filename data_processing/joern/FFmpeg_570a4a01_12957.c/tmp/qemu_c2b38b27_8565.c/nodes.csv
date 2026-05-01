@@ -1,0 +1,113 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	4670	File	tmp/qemu_c2b38b27_8565.c								
+ANR	4671	Function	timerlist_expired	1:0:0:523							
+ANR	4672	FunctionDef	timerlist_expired (QEMUTimerList * timer_list)		4671	0					
+ANR	4673	CompoundStatement		2:0:50:523	4671	0					
+ANR	4674	IdentifierDeclStatement	int64_t expire_time ;	3:4:56:75	4671	0	True				
+ANR	4675	IdentifierDecl	expire_time		4671	0					
+ANR	4676	IdentifierDeclType	int64_t		4671	0					
+ANR	4677	Identifier	expire_time		4671	1					
+ANR	4678	IfStatement	if ( ! atomic_read ( & timer_list -> active_timers ) )		4671	1					
+ANR	4679	Condition	! atomic_read ( & timer_list -> active_timers )	5:8:86:125	4671	0	True				
+ANR	4680	UnaryOperationExpression	! atomic_read ( & timer_list -> active_timers )		4671	0					
+ANR	4681	UnaryOperator	!		4671	0					
+ANR	4682	CallExpression	atomic_read ( & timer_list -> active_timers )		4671	1					
+ANR	4683	Callee	atomic_read		4671	0					
+ANR	4684	Identifier	atomic_read		4671	0					
+ANR	4685	ArgumentList	& timer_list -> active_timers		4671	1					
+ANR	4686	Argument	& timer_list -> active_timers		4671	0					
+ANR	4687	UnaryOperationExpression	& timer_list -> active_timers		4671	0					
+ANR	4688	UnaryOperator	&		4671	0					
+ANR	4689	PtrMemberAccess	timer_list -> active_timers		4671	1					
+ANR	4690	Identifier	timer_list		4671	0					
+ANR	4691	Identifier	active_timers		4671	1					
+ANR	4692	CompoundStatement		4:50:77:77	4671	1					
+ANR	4693	ReturnStatement	return false ;	6:8:138:150	4671	0	True				
+ANR	4694	Identifier	false		4671	0					
+ANR	4695	ExpressionStatement	qemu_mutex_lock ( & timer_list -> active_timers_lock )	9:4:163:211	4671	2	True				
+ANR	4696	CallExpression	qemu_mutex_lock ( & timer_list -> active_timers_lock )		4671	0					
+ANR	4697	Callee	qemu_mutex_lock		4671	0					
+ANR	4698	Identifier	qemu_mutex_lock		4671	0					
+ANR	4699	ArgumentList	& timer_list -> active_timers_lock		4671	1					
+ANR	4700	Argument	& timer_list -> active_timers_lock		4671	0					
+ANR	4701	UnaryOperationExpression	& timer_list -> active_timers_lock		4671	0					
+ANR	4702	UnaryOperator	&		4671	0					
+ANR	4703	PtrMemberAccess	timer_list -> active_timers_lock		4671	1					
+ANR	4704	Identifier	timer_list		4671	0					
+ANR	4705	Identifier	active_timers_lock		4671	1					
+ANR	4706	IfStatement	if ( ! timer_list -> active_timers )		4671	3					
+ANR	4707	Condition	! timer_list -> active_timers	10:8:221:246	4671	0	True				
+ANR	4708	UnaryOperationExpression	! timer_list -> active_timers		4671	0					
+ANR	4709	UnaryOperator	!		4671	0					
+ANR	4710	PtrMemberAccess	timer_list -> active_timers		4671	1					
+ANR	4711	Identifier	timer_list		4671	0					
+ANR	4712	Identifier	active_timers		4671	1					
+ANR	4713	CompoundStatement		9:36:198:198	4671	1					
+ANR	4714	ExpressionStatement	qemu_mutex_unlock ( & timer_list -> active_timers_lock )	11:8:259:309	4671	0	True				
+ANR	4715	CallExpression	qemu_mutex_unlock ( & timer_list -> active_timers_lock )		4671	0					
+ANR	4716	Callee	qemu_mutex_unlock		4671	0					
+ANR	4717	Identifier	qemu_mutex_unlock		4671	0					
+ANR	4718	ArgumentList	& timer_list -> active_timers_lock		4671	1					
+ANR	4719	Argument	& timer_list -> active_timers_lock		4671	0					
+ANR	4720	UnaryOperationExpression	& timer_list -> active_timers_lock		4671	0					
+ANR	4721	UnaryOperator	&		4671	0					
+ANR	4722	PtrMemberAccess	timer_list -> active_timers_lock		4671	1					
+ANR	4723	Identifier	timer_list		4671	0					
+ANR	4724	Identifier	active_timers_lock		4671	1					
+ANR	4725	ReturnStatement	return false ;	12:8:319:331	4671	1	True				
+ANR	4726	Identifier	false		4671	0					
+ANR	4727	ExpressionStatement	expire_time = timer_list -> active_timers -> expire_time	14:4:343:395	4671	4	True				
+ANR	4728	AssignmentExpression	expire_time = timer_list -> active_timers -> expire_time		4671	0		=			
+ANR	4729	Identifier	expire_time		4671	0					
+ANR	4730	PtrMemberAccess	timer_list -> active_timers -> expire_time		4671	1					
+ANR	4731	PtrMemberAccess	timer_list -> active_timers		4671	0					
+ANR	4732	Identifier	timer_list		4671	0					
+ANR	4733	Identifier	active_timers		4671	1					
+ANR	4734	Identifier	expire_time		4671	1					
+ANR	4735	ExpressionStatement	qemu_mutex_unlock ( & timer_list -> active_timers_lock )	15:4:401:451	4671	5	True				
+ANR	4736	CallExpression	qemu_mutex_unlock ( & timer_list -> active_timers_lock )		4671	0					
+ANR	4737	Callee	qemu_mutex_unlock		4671	0					
+ANR	4738	Identifier	qemu_mutex_unlock		4671	0					
+ANR	4739	ArgumentList	& timer_list -> active_timers_lock		4671	1					
+ANR	4740	Argument	& timer_list -> active_timers_lock		4671	0					
+ANR	4741	UnaryOperationExpression	& timer_list -> active_timers_lock		4671	0					
+ANR	4742	UnaryOperator	&		4671	0					
+ANR	4743	PtrMemberAccess	timer_list -> active_timers_lock		4671	1					
+ANR	4744	Identifier	timer_list		4671	0					
+ANR	4745	Identifier	active_timers_lock		4671	1					
+ANR	4746	ReturnStatement	return expire_time < qemu_clock_get_ns ( timer_list -> clock -> type ) ;	17:4:458:521	4671	6	True				
+ANR	4747	RelationalExpression	expire_time < qemu_clock_get_ns ( timer_list -> clock -> type )		4671	0		<			
+ANR	4748	Identifier	expire_time		4671	0					
+ANR	4749	CallExpression	qemu_clock_get_ns ( timer_list -> clock -> type )		4671	1					
+ANR	4750	Callee	qemu_clock_get_ns		4671	0					
+ANR	4751	Identifier	qemu_clock_get_ns		4671	0					
+ANR	4752	ArgumentList	timer_list -> clock -> type		4671	1					
+ANR	4753	Argument	timer_list -> clock -> type		4671	0					
+ANR	4754	PtrMemberAccess	timer_list -> clock -> type		4671	0					
+ANR	4755	PtrMemberAccess	timer_list -> clock		4671	0					
+ANR	4756	Identifier	timer_list		4671	0					
+ANR	4757	Identifier	clock		4671	1					
+ANR	4758	Identifier	type		4671	1					
+ANR	4759	ReturnType	bool		4671	1					
+ANR	4760	Identifier	timerlist_expired		4671	2					
+ANR	4761	ParameterList	QEMUTimerList * timer_list		4671	3					
+ANR	4762	Parameter	QEMUTimerList * timer_list	1:23:23:47	4671	0	True				
+ANR	4763	ParameterType	QEMUTimerList *		4671	0					
+ANR	4764	Identifier	timer_list		4671	1					
+ANR	4765	CFGEntryNode	ENTRY		4671		True				
+ANR	4766	CFGExitNode	EXIT		4671		True				
+ANR	4767	Symbol	atomic_read		4671						
+ANR	4768	Symbol	timer_list -> active_timers		4671						
+ANR	4769	Symbol	qemu_clock_get_ns		4671						
+ANR	4770	Symbol	& timer_list -> active_timers		4671						
+ANR	4771	Symbol	* * timer_list		4671						
+ANR	4772	Symbol	false		4671						
+ANR	4773	Symbol	timer_list -> clock -> type		4671						
+ANR	4774	Symbol	expire_time		4671						
+ANR	4775	Symbol	* timer_list -> active_timers		4671						
+ANR	4776	Symbol	timer_list -> active_timers -> expire_time		4671						
+ANR	4777	Symbol	* timer_list		4671						
+ANR	4778	Symbol	& timer_list -> active_timers_lock		4671						
+ANR	4779	Symbol	timer_list		4671						
+ANR	4780	Symbol	* timer_list -> clock		4671						
+ANR	4781	Symbol	timer_list -> clock		4671						

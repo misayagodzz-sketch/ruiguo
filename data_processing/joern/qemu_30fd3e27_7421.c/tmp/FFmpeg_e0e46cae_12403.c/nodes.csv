@@ -1,0 +1,453 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	153	File	tmp/FFmpeg_e0e46cae_12403.c								
+ANR	154	Function	put_vp8_epel_h_altivec_core	1:0:0:1614							
+ANR	155	FunctionDef	"put_vp8_epel_h_altivec_core (uint8_t * dst , int dst_stride , uint8_t * src , int src_stride , int h , int mx , int w , int is6tap)"		154	0					
+ANR	156	CompoundStatement		4:0:193:1614	154	0					
+ANR	157	ExpressionStatement	LOAD_H_SUBPEL_FILTER ( mx - 1 )	5:4:199:225	154	0	True				
+ANR	158	CallExpression	LOAD_H_SUBPEL_FILTER ( mx - 1 )		154	0					
+ANR	159	Callee	LOAD_H_SUBPEL_FILTER		154	0					
+ANR	160	Identifier	LOAD_H_SUBPEL_FILTER		154	0					
+ANR	161	ArgumentList	mx - 1		154	1					
+ANR	162	Argument	mx - 1		154	0					
+ANR	163	AdditiveExpression	mx - 1		154	0		-			
+ANR	164	Identifier	mx		154	0					
+ANR	165	PrimaryExpression	1		154	1					
+ANR	166	IdentifierDeclStatement	"vec_u8 align_vec0 , align_vec8 , permh0 , permh8 , filt ;"	6:4:231:282	154	1	True				
+ANR	167	IdentifierDecl	align_vec0		154	0					
+ANR	168	IdentifierDeclType	vec_u8		154	0					
+ANR	169	Identifier	align_vec0		154	1					
+ANR	170	IdentifierDecl	align_vec8		154	1					
+ANR	171	IdentifierDeclType	vec_u8		154	0					
+ANR	172	Identifier	align_vec8		154	1					
+ANR	173	IdentifierDecl	permh0		154	2					
+ANR	174	IdentifierDeclType	vec_u8		154	0					
+ANR	175	Identifier	permh0		154	1					
+ANR	176	IdentifierDecl	permh8		154	3					
+ANR	177	IdentifierDeclType	vec_u8		154	0					
+ANR	178	Identifier	permh8		154	1					
+ANR	179	IdentifierDecl	filt		154	4					
+ANR	180	IdentifierDeclType	vec_u8		154	0					
+ANR	181	Identifier	filt		154	1					
+ANR	182	IdentifierDeclStatement	"vec_u8 perm_6tap0 , perm_6tap8 , perml0 , perml8 ;"	7:4:288:333	154	2	True				
+ANR	183	IdentifierDecl	perm_6tap0		154	0					
+ANR	184	IdentifierDeclType	vec_u8		154	0					
+ANR	185	Identifier	perm_6tap0		154	1					
+ANR	186	IdentifierDecl	perm_6tap8		154	1					
+ANR	187	IdentifierDeclType	vec_u8		154	0					
+ANR	188	Identifier	perm_6tap8		154	1					
+ANR	189	IdentifierDecl	perml0		154	2					
+ANR	190	IdentifierDeclType	vec_u8		154	0					
+ANR	191	Identifier	perml0		154	1					
+ANR	192	IdentifierDecl	perml8		154	3					
+ANR	193	IdentifierDeclType	vec_u8		154	0					
+ANR	194	Identifier	perml8		154	1					
+ANR	195	IdentifierDeclStatement	"vec_u8 a , b , pixh , pixl , outer ;"	8:4:339:369	154	3	True				
+ANR	196	IdentifierDecl	a		154	0					
+ANR	197	IdentifierDeclType	vec_u8		154	0					
+ANR	198	Identifier	a		154	1					
+ANR	199	IdentifierDecl	b		154	1					
+ANR	200	IdentifierDeclType	vec_u8		154	0					
+ANR	201	Identifier	b		154	1					
+ANR	202	IdentifierDecl	pixh		154	2					
+ANR	203	IdentifierDeclType	vec_u8		154	0					
+ANR	204	Identifier	pixh		154	1					
+ANR	205	IdentifierDecl	pixl		154	3					
+ANR	206	IdentifierDeclType	vec_u8		154	0					
+ANR	207	Identifier	pixl		154	1					
+ANR	208	IdentifierDecl	outer		154	4					
+ANR	209	IdentifierDeclType	vec_u8		154	0					
+ANR	210	Identifier	outer		154	1					
+ANR	211	IdentifierDeclStatement	"vec_s16 f16h , f16l ;"	9:4:375:393	154	4	True				
+ANR	212	IdentifierDecl	f16h		154	0					
+ANR	213	IdentifierDeclType	vec_s16		154	0					
+ANR	214	Identifier	f16h		154	1					
+ANR	215	IdentifierDecl	f16l		154	1					
+ANR	216	IdentifierDeclType	vec_s16		154	0					
+ANR	217	Identifier	f16l		154	1					
+ANR	218	IdentifierDeclStatement	"vec_s32 filth , filtl ;"	10:4:399:419	154	5	True				
+ANR	219	IdentifierDecl	filth		154	0					
+ANR	220	IdentifierDeclType	vec_s32		154	0					
+ANR	221	Identifier	filth		154	1					
+ANR	222	IdentifierDecl	filtl		154	1					
+ANR	223	IdentifierDeclType	vec_s32		154	0					
+ANR	224	Identifier	filtl		154	1					
+ANR	225	IdentifierDeclStatement	"vec_u8 perm_inner = { 1 , 2 , 3 , 4 , 2 , 3 , 4 , 5 , 3 , 4 , 5 , 6 , 4 , 5 , 6 , 7 } ;"	12:4:426:484	154	6	True				
+ANR	226	IdentifierDecl	"perm_inner = { 1 , 2 , 3 , 4 , 2 , 3 , 4 , 5 , 3 , 4 , 5 , 6 , 4 , 5 , 6 , 7 }"		154	0					
+ANR	227	IdentifierDeclType	vec_u8		154	0					
+ANR	228	Identifier	perm_inner		154	1					
+ANR	229	AssignmentExpression	"perm_inner = { 1 , 2 , 3 , 4 , 2 , 3 , 4 , 5 , 3 , 4 , 5 , 6 , 4 , 5 , 6 , 7 }"		154	2		=			
+ANR	230	Identifier	perm_inner		154	0					
+ANR	231	InitializerList	1		154	1					
+ANR	232	PrimaryExpression	1		154	0					
+ANR	233	PrimaryExpression	2		154	1					
+ANR	234	PrimaryExpression	3		154	2					
+ANR	235	PrimaryExpression	4		154	3					
+ANR	236	PrimaryExpression	2		154	4					
+ANR	237	PrimaryExpression	3		154	5					
+ANR	238	PrimaryExpression	4		154	6					
+ANR	239	PrimaryExpression	5		154	7					
+ANR	240	PrimaryExpression	3		154	8					
+ANR	241	PrimaryExpression	4		154	9					
+ANR	242	PrimaryExpression	5		154	10					
+ANR	243	PrimaryExpression	6		154	11					
+ANR	244	PrimaryExpression	4		154	12					
+ANR	245	PrimaryExpression	5		154	13					
+ANR	246	PrimaryExpression	6		154	14					
+ANR	247	PrimaryExpression	7		154	15					
+ANR	248	IdentifierDeclStatement	"vec_u8 perm_outer = { 4 , 9 , 0 , 5 , 5 , 10 , 1 , 6 , 6 , 11 , 2 , 7 , 7 , 12 , 3 , 8 } ;"	13:4:490:555	154	7	True				
+ANR	249	IdentifierDecl	"perm_outer = { 4 , 9 , 0 , 5 , 5 , 10 , 1 , 6 , 6 , 11 , 2 , 7 , 7 , 12 , 3 , 8 }"		154	0					
+ANR	250	IdentifierDeclType	vec_u8		154	0					
+ANR	251	Identifier	perm_outer		154	1					
+ANR	252	AssignmentExpression	"perm_outer = { 4 , 9 , 0 , 5 , 5 , 10 , 1 , 6 , 6 , 11 , 2 , 7 , 7 , 12 , 3 , 8 }"		154	2		=			
+ANR	253	Identifier	perm_outer		154	0					
+ANR	254	InitializerList	4		154	1					
+ANR	255	PrimaryExpression	4		154	0					
+ANR	256	PrimaryExpression	9		154	1					
+ANR	257	PrimaryExpression	0		154	2					
+ANR	258	PrimaryExpression	5		154	3					
+ANR	259	PrimaryExpression	5		154	4					
+ANR	260	PrimaryExpression	10		154	5					
+ANR	261	PrimaryExpression	1		154	6					
+ANR	262	PrimaryExpression	6		154	7					
+ANR	263	PrimaryExpression	6		154	8					
+ANR	264	PrimaryExpression	11		154	9					
+ANR	265	PrimaryExpression	2		154	10					
+ANR	266	PrimaryExpression	7		154	11					
+ANR	267	PrimaryExpression	7		154	12					
+ANR	268	PrimaryExpression	12		154	13					
+ANR	269	PrimaryExpression	3		154	14					
+ANR	270	PrimaryExpression	8		154	15					
+ANR	271	IdentifierDeclStatement	"vec_s32 c64 = vec_sl ( vec_splat_s32 ( 1 ) , vec_splat_u32 ( 6 ) ) ;"	14:4:561:617	154	8	True				
+ANR	272	IdentifierDecl	"c64 = vec_sl ( vec_splat_s32 ( 1 ) , vec_splat_u32 ( 6 ) )"		154	0					
+ANR	273	IdentifierDeclType	vec_s32		154	0					
+ANR	274	Identifier	c64		154	1					
+ANR	275	AssignmentExpression	"c64 = vec_sl ( vec_splat_s32 ( 1 ) , vec_splat_u32 ( 6 ) )"		154	2		=			
+ANR	276	Identifier	c64		154	0					
+ANR	277	CallExpression	"vec_sl ( vec_splat_s32 ( 1 ) , vec_splat_u32 ( 6 ) )"		154	1					
+ANR	278	Callee	vec_sl		154	0					
+ANR	279	Identifier	vec_sl		154	0					
+ANR	280	ArgumentList	vec_splat_s32 ( 1 )		154	1					
+ANR	281	Argument	vec_splat_s32 ( 1 )		154	0					
+ANR	282	CallExpression	vec_splat_s32 ( 1 )		154	0					
+ANR	283	Callee	vec_splat_s32		154	0					
+ANR	284	Identifier	vec_splat_s32		154	0					
+ANR	285	ArgumentList	1		154	1					
+ANR	286	Argument	1		154	0					
+ANR	287	PrimaryExpression	1		154	0					
+ANR	288	Argument	vec_splat_u32 ( 6 )		154	1					
+ANR	289	CallExpression	vec_splat_u32 ( 6 )		154	0					
+ANR	290	Callee	vec_splat_u32		154	0					
+ANR	291	Identifier	vec_splat_u32		154	0					
+ANR	292	ArgumentList	6		154	1					
+ANR	293	Argument	6		154	0					
+ANR	294	PrimaryExpression	6		154	0					
+ANR	295	IdentifierDeclStatement	vec_u16 c7 = vec_splat_u16 ( 7 ) ;	15:4:623:653	154	9	True				
+ANR	296	IdentifierDecl	c7 = vec_splat_u16 ( 7 )		154	0					
+ANR	297	IdentifierDeclType	vec_u16		154	0					
+ANR	298	Identifier	c7		154	1					
+ANR	299	AssignmentExpression	c7 = vec_splat_u16 ( 7 )		154	2		=			
+ANR	300	Identifier	c7		154	0					
+ANR	301	CallExpression	vec_splat_u16 ( 7 )		154	1					
+ANR	302	Callee	vec_splat_u16		154	0					
+ANR	303	Identifier	vec_splat_u16		154	0					
+ANR	304	ArgumentList	7		154	1					
+ANR	305	Argument	7		154	0					
+ANR	306	PrimaryExpression	7		154	0					
+ANR	307	ExpressionStatement	"align_vec0 = vec_lvsl ( - 2 , src )"	17:4:660:691	154	10	True				
+ANR	308	AssignmentExpression	"align_vec0 = vec_lvsl ( - 2 , src )"		154	0		=			
+ANR	309	Identifier	align_vec0		154	0					
+ANR	310	CallExpression	"vec_lvsl ( - 2 , src )"		154	1					
+ANR	311	Callee	vec_lvsl		154	0					
+ANR	312	Identifier	vec_lvsl		154	0					
+ANR	313	ArgumentList	- 2		154	1					
+ANR	314	Argument	- 2		154	0					
+ANR	315	UnaryOperationExpression	- 2		154	0					
+ANR	316	UnaryOperator	-		154	0					
+ANR	317	PrimaryExpression	2		154	1					
+ANR	318	Argument	src		154	1					
+ANR	319	Identifier	src		154	0					
+ANR	320	ExpressionStatement	"align_vec8 = vec_lvsl ( 8 - 2 , src )"	18:4:697:728	154	11	True				
+ANR	321	AssignmentExpression	"align_vec8 = vec_lvsl ( 8 - 2 , src )"		154	0		=			
+ANR	322	Identifier	align_vec8		154	0					
+ANR	323	CallExpression	"vec_lvsl ( 8 - 2 , src )"		154	1					
+ANR	324	Callee	vec_lvsl		154	0					
+ANR	325	Identifier	vec_lvsl		154	0					
+ANR	326	ArgumentList	8 - 2		154	1					
+ANR	327	Argument	8 - 2		154	0					
+ANR	328	AdditiveExpression	8 - 2		154	0		-			
+ANR	329	PrimaryExpression	8		154	0					
+ANR	330	PrimaryExpression	2		154	1					
+ANR	331	Argument	src		154	1					
+ANR	332	Identifier	src		154	0					
+ANR	333	ExpressionStatement	"permh0 = vec_perm ( align_vec0 , align_vec0 , perm_inner )"	20:4:735:792	154	12	True				
+ANR	334	AssignmentExpression	"permh0 = vec_perm ( align_vec0 , align_vec0 , perm_inner )"		154	0		=			
+ANR	335	Identifier	permh0		154	0					
+ANR	336	CallExpression	"vec_perm ( align_vec0 , align_vec0 , perm_inner )"		154	1					
+ANR	337	Callee	vec_perm		154	0					
+ANR	338	Identifier	vec_perm		154	0					
+ANR	339	ArgumentList	align_vec0		154	1					
+ANR	340	Argument	align_vec0		154	0					
+ANR	341	Identifier	align_vec0		154	0					
+ANR	342	Argument	align_vec0		154	1					
+ANR	343	Identifier	align_vec0		154	0					
+ANR	344	Argument	perm_inner		154	2					
+ANR	345	Identifier	perm_inner		154	0					
+ANR	346	ExpressionStatement	"permh8 = vec_perm ( align_vec8 , align_vec8 , perm_inner )"	21:4:798:855	154	13	True				
+ANR	347	AssignmentExpression	"permh8 = vec_perm ( align_vec8 , align_vec8 , perm_inner )"		154	0		=			
+ANR	348	Identifier	permh8		154	0					
+ANR	349	CallExpression	"vec_perm ( align_vec8 , align_vec8 , perm_inner )"		154	1					
+ANR	350	Callee	vec_perm		154	0					
+ANR	351	Identifier	vec_perm		154	0					
+ANR	352	ArgumentList	align_vec8		154	1					
+ANR	353	Argument	align_vec8		154	0					
+ANR	354	Identifier	align_vec8		154	0					
+ANR	355	Argument	align_vec8		154	1					
+ANR	356	Identifier	align_vec8		154	0					
+ANR	357	Argument	perm_inner		154	2					
+ANR	358	Identifier	perm_inner		154	0					
+ANR	359	ExpressionStatement	"perm_inner = vec_add ( perm_inner , vec_splat_u8 ( 4 ) )"	22:4:861:910	154	14	True				
+ANR	360	AssignmentExpression	"perm_inner = vec_add ( perm_inner , vec_splat_u8 ( 4 ) )"		154	0		=			
+ANR	361	Identifier	perm_inner		154	0					
+ANR	362	CallExpression	"vec_add ( perm_inner , vec_splat_u8 ( 4 ) )"		154	1					
+ANR	363	Callee	vec_add		154	0					
+ANR	364	Identifier	vec_add		154	0					
+ANR	365	ArgumentList	perm_inner		154	1					
+ANR	366	Argument	perm_inner		154	0					
+ANR	367	Identifier	perm_inner		154	0					
+ANR	368	Argument	vec_splat_u8 ( 4 )		154	1					
+ANR	369	CallExpression	vec_splat_u8 ( 4 )		154	0					
+ANR	370	Callee	vec_splat_u8		154	0					
+ANR	371	Identifier	vec_splat_u8		154	0					
+ANR	372	ArgumentList	4		154	1					
+ANR	373	Argument	4		154	0					
+ANR	374	PrimaryExpression	4		154	0					
+ANR	375	ExpressionStatement	"perml0 = vec_perm ( align_vec0 , align_vec0 , perm_inner )"	23:4:916:973	154	15	True				
+ANR	376	AssignmentExpression	"perml0 = vec_perm ( align_vec0 , align_vec0 , perm_inner )"		154	0		=			
+ANR	377	Identifier	perml0		154	0					
+ANR	378	CallExpression	"vec_perm ( align_vec0 , align_vec0 , perm_inner )"		154	1					
+ANR	379	Callee	vec_perm		154	0					
+ANR	380	Identifier	vec_perm		154	0					
+ANR	381	ArgumentList	align_vec0		154	1					
+ANR	382	Argument	align_vec0		154	0					
+ANR	383	Identifier	align_vec0		154	0					
+ANR	384	Argument	align_vec0		154	1					
+ANR	385	Identifier	align_vec0		154	0					
+ANR	386	Argument	perm_inner		154	2					
+ANR	387	Identifier	perm_inner		154	0					
+ANR	388	ExpressionStatement	"perml8 = vec_perm ( align_vec8 , align_vec8 , perm_inner )"	24:4:979:1036	154	16	True				
+ANR	389	AssignmentExpression	"perml8 = vec_perm ( align_vec8 , align_vec8 , perm_inner )"		154	0		=			
+ANR	390	Identifier	perml8		154	0					
+ANR	391	CallExpression	"vec_perm ( align_vec8 , align_vec8 , perm_inner )"		154	1					
+ANR	392	Callee	vec_perm		154	0					
+ANR	393	Identifier	vec_perm		154	0					
+ANR	394	ArgumentList	align_vec8		154	1					
+ANR	395	Argument	align_vec8		154	0					
+ANR	396	Identifier	align_vec8		154	0					
+ANR	397	Argument	align_vec8		154	1					
+ANR	398	Identifier	align_vec8		154	0					
+ANR	399	Argument	perm_inner		154	2					
+ANR	400	Identifier	perm_inner		154	0					
+ANR	401	ExpressionStatement	"perm_6tap0 = vec_perm ( align_vec0 , align_vec0 , perm_outer )"	25:4:1042:1099	154	17	True				
+ANR	402	AssignmentExpression	"perm_6tap0 = vec_perm ( align_vec0 , align_vec0 , perm_outer )"		154	0		=			
+ANR	403	Identifier	perm_6tap0		154	0					
+ANR	404	CallExpression	"vec_perm ( align_vec0 , align_vec0 , perm_outer )"		154	1					
+ANR	405	Callee	vec_perm		154	0					
+ANR	406	Identifier	vec_perm		154	0					
+ANR	407	ArgumentList	align_vec0		154	1					
+ANR	408	Argument	align_vec0		154	0					
+ANR	409	Identifier	align_vec0		154	0					
+ANR	410	Argument	align_vec0		154	1					
+ANR	411	Identifier	align_vec0		154	0					
+ANR	412	Argument	perm_outer		154	2					
+ANR	413	Identifier	perm_outer		154	0					
+ANR	414	ExpressionStatement	"perm_6tap8 = vec_perm ( align_vec8 , align_vec8 , perm_outer )"	26:4:1105:1162	154	18	True				
+ANR	415	AssignmentExpression	"perm_6tap8 = vec_perm ( align_vec8 , align_vec8 , perm_outer )"		154	0		=			
+ANR	416	Identifier	perm_6tap8		154	0					
+ANR	417	CallExpression	"vec_perm ( align_vec8 , align_vec8 , perm_outer )"		154	1					
+ANR	418	Callee	vec_perm		154	0					
+ANR	419	Identifier	vec_perm		154	0					
+ANR	420	ArgumentList	align_vec8		154	1					
+ANR	421	Argument	align_vec8		154	0					
+ANR	422	Identifier	align_vec8		154	0					
+ANR	423	Argument	align_vec8		154	1					
+ANR	424	Identifier	align_vec8		154	0					
+ANR	425	Argument	perm_outer		154	2					
+ANR	426	Identifier	perm_outer		154	0					
+ANR	427	WhileStatement	while ( h -- > 0 )		154	19					
+ANR	428	Condition	h -- > 0	28:11:1176:1182	154	0	True				
+ANR	429	RelationalExpression	h -- > 0		154	0		>			
+ANR	430	PostIncDecOperationExpression	h --		154	0					
+ANR	431	Identifier	h		154	0					
+ANR	432	IncDec	--		154	1					
+ANR	433	PrimaryExpression	0		154	1					
+ANR	434	CompoundStatement		25:20:991:991	154	1					
+ANR	435	ExpressionStatement	"FILTER_H ( f16h , 0 )"	29:8:1195:1212	154	0	True				
+ANR	436	CallExpression	"FILTER_H ( f16h , 0 )"		154	0					
+ANR	437	Callee	FILTER_H		154	0					
+ANR	438	Identifier	FILTER_H		154	0					
+ANR	439	ArgumentList	f16h		154	1					
+ANR	440	Argument	f16h		154	0					
+ANR	441	Identifier	f16h		154	0					
+ANR	442	Argument	0		154	1					
+ANR	443	PrimaryExpression	0		154	0					
+ANR	444	IfStatement	if ( w == 16 )		154	1					
+ANR	445	Condition	w == 16	31:12:1227:1233	154	0	True				
+ANR	446	EqualityExpression	w == 16		154	0		==			
+ANR	447	Identifier	w		154	0					
+ANR	448	PrimaryExpression	16		154	1					
+ANR	449	CompoundStatement		28:21:1042:1042	154	1					
+ANR	450	ExpressionStatement	"FILTER_H ( f16l , 8 )"	32:12:1250:1267	154	0	True				
+ANR	451	CallExpression	"FILTER_H ( f16l , 8 )"		154	0					
+ANR	452	Callee	FILTER_H		154	0					
+ANR	453	Identifier	FILTER_H		154	0					
+ANR	454	ArgumentList	f16l		154	1					
+ANR	455	Argument	f16l		154	0					
+ANR	456	Identifier	f16l		154	0					
+ANR	457	Argument	8		154	1					
+ANR	458	PrimaryExpression	8		154	0					
+ANR	459	ExpressionStatement	"filt = vec_packsu ( f16h , f16l )"	33:12:1281:1310	154	1	True				
+ANR	460	AssignmentExpression	"filt = vec_packsu ( f16h , f16l )"		154	0		=			
+ANR	461	Identifier	filt		154	0					
+ANR	462	CallExpression	"vec_packsu ( f16h , f16l )"		154	1					
+ANR	463	Callee	vec_packsu		154	0					
+ANR	464	Identifier	vec_packsu		154	0					
+ANR	465	ArgumentList	f16h		154	1					
+ANR	466	Argument	f16h		154	0					
+ANR	467	Identifier	f16h		154	0					
+ANR	468	Argument	f16l		154	1					
+ANR	469	Identifier	f16l		154	0					
+ANR	470	ExpressionStatement	"vec_st ( filt , 0 , dst )"	34:12:1324:1344	154	2	True				
+ANR	471	CallExpression	"vec_st ( filt , 0 , dst )"		154	0					
+ANR	472	Callee	vec_st		154	0					
+ANR	473	Identifier	vec_st		154	0					
+ANR	474	ArgumentList	filt		154	1					
+ANR	475	Argument	filt		154	0					
+ANR	476	Identifier	filt		154	0					
+ANR	477	Argument	0		154	1					
+ANR	478	PrimaryExpression	0		154	0					
+ANR	479	Argument	dst		154	2					
+ANR	480	Identifier	dst		154	0					
+ANR	481	ElseStatement	else		154	0					
+ANR	482	CompoundStatement		32:15:1167:1167	154	0					
+ANR	483	ExpressionStatement	"filt = vec_packsu ( f16h , f16h )"	36:12:1375:1404	154	0	True				
+ANR	484	AssignmentExpression	"filt = vec_packsu ( f16h , f16h )"		154	0		=			
+ANR	485	Identifier	filt		154	0					
+ANR	486	CallExpression	"vec_packsu ( f16h , f16h )"		154	1					
+ANR	487	Callee	vec_packsu		154	0					
+ANR	488	Identifier	vec_packsu		154	0					
+ANR	489	ArgumentList	f16h		154	1					
+ANR	490	Argument	f16h		154	0					
+ANR	491	Identifier	f16h		154	0					
+ANR	492	Argument	f16h		154	1					
+ANR	493	Identifier	f16h		154	0					
+ANR	494	ExpressionStatement	"vec_ste ( ( vec_u32 ) filt , 0 , ( uint32_t * ) dst )"	37:12:1418:1459	154	1	True				
+ANR	495	CallExpression	"vec_ste ( ( vec_u32 ) filt , 0 , ( uint32_t * ) dst )"		154	0					
+ANR	496	Callee	vec_ste		154	0					
+ANR	497	Identifier	vec_ste		154	0					
+ANR	498	ArgumentList	( vec_u32 ) filt		154	1					
+ANR	499	Argument	( vec_u32 ) filt		154	0					
+ANR	500	CastExpression	( vec_u32 ) filt		154	0					
+ANR	501	CastTarget	vec_u32		154	0					
+ANR	502	Identifier	filt		154	1					
+ANR	503	Argument	0		154	1					
+ANR	504	PrimaryExpression	0		154	0					
+ANR	505	Argument	( uint32_t * ) dst		154	2					
+ANR	506	CastExpression	( uint32_t * ) dst		154	0					
+ANR	507	CastTarget	uint32_t *		154	0					
+ANR	508	Identifier	dst		154	1					
+ANR	509	IfStatement	if ( w == 8 )		154	2					
+ANR	510	Condition	w == 8	38:16:1477:1482	154	0	True				
+ANR	511	EqualityExpression	w == 8		154	0		==			
+ANR	512	Identifier	w		154	0					
+ANR	513	PrimaryExpression	8		154	1					
+ANR	514	ExpressionStatement	"vec_ste ( ( vec_u32 ) filt , 4 , ( uint32_t * ) dst )"	39:16:1501:1542	154	1	True				
+ANR	515	CallExpression	"vec_ste ( ( vec_u32 ) filt , 4 , ( uint32_t * ) dst )"		154	0					
+ANR	516	Callee	vec_ste		154	0					
+ANR	517	Identifier	vec_ste		154	0					
+ANR	518	ArgumentList	( vec_u32 ) filt		154	1					
+ANR	519	Argument	( vec_u32 ) filt		154	0					
+ANR	520	CastExpression	( vec_u32 ) filt		154	0					
+ANR	521	CastTarget	vec_u32		154	0					
+ANR	522	Identifier	filt		154	1					
+ANR	523	Argument	4		154	1					
+ANR	524	PrimaryExpression	4		154	0					
+ANR	525	Argument	( uint32_t * ) dst		154	2					
+ANR	526	CastExpression	( uint32_t * ) dst		154	0					
+ANR	527	CastTarget	uint32_t *		154	0					
+ANR	528	Identifier	dst		154	1					
+ANR	529	ExpressionStatement	src += src_stride	41:8:1562:1579	154	2	True				
+ANR	530	AssignmentExpression	src += src_stride		154	0		+=			
+ANR	531	Identifier	src		154	0					
+ANR	532	Identifier	src_stride		154	1					
+ANR	533	ExpressionStatement	dst += dst_stride	42:8:1589:1606	154	3	True				
+ANR	534	AssignmentExpression	dst += dst_stride		154	0		+=			
+ANR	535	Identifier	dst		154	0					
+ANR	536	Identifier	dst_stride		154	1					
+ANR	537	ReturnType	void		154	1					
+ANR	538	Identifier	put_vp8_epel_h_altivec_core		154	2					
+ANR	539	ParameterList	"uint8_t * dst , int dst_stride , uint8_t * src , int src_stride , int h , int mx , int w , int is6tap"		154	3					
+ANR	540	Parameter	uint8_t * dst	1:33:33:44	154	0	True				
+ANR	541	ParameterType	uint8_t *		154	0					
+ANR	542	Identifier	dst		154	1					
+ANR	543	Parameter	int dst_stride	1:47:47:60	154	1	True				
+ANR	544	ParameterType	int		154	0					
+ANR	545	Identifier	dst_stride		154	1					
+ANR	546	Parameter	uint8_t * src	2:33:96:107	154	2	True				
+ANR	547	ParameterType	uint8_t *		154	0					
+ANR	548	Identifier	src		154	1					
+ANR	549	Parameter	int src_stride	2:47:110:123	154	3	True				
+ANR	550	ParameterType	int		154	0					
+ANR	551	Identifier	src_stride		154	1					
+ANR	552	Parameter	int h	3:33:159:163	154	4	True				
+ANR	553	ParameterType	int		154	0					
+ANR	554	Identifier	h		154	1					
+ANR	555	Parameter	int mx	3:40:166:171	154	5	True				
+ANR	556	ParameterType	int		154	0					
+ANR	557	Identifier	mx		154	1					
+ANR	558	Parameter	int w	3:48:174:178	154	6	True				
+ANR	559	ParameterType	int		154	0					
+ANR	560	Identifier	w		154	1					
+ANR	561	Parameter	int is6tap	3:55:181:190	154	7	True				
+ANR	562	ParameterType	int		154	0					
+ANR	563	Identifier	is6tap		154	1					
+ANR	564	CFGEntryNode	ENTRY		154		True				
+ANR	565	CFGExitNode	EXIT		154		True				
+ANR	566	Symbol	align_vec0		154						
+ANR	567	Symbol	perm_inner		154						
+ANR	568	Symbol	dst		154						
+ANR	569	Symbol	src_stride		154						
+ANR	570	Symbol	vec_perm		154						
+ANR	571	Symbol	vec_packsu		154						
+ANR	572	Symbol	align_vec8		154						
+ANR	573	Symbol	vec_splat_u8		154						
+ANR	574	Symbol	is6tap		154						
+ANR	575	Symbol	filtl		154						
+ANR	576	Symbol	f16h		154						
+ANR	577	Symbol	vec_lvsl		154						
+ANR	578	Symbol	perml0		154						
+ANR	579	Symbol	pixl		154						
+ANR	580	Symbol	permh0		154						
+ANR	581	Symbol	pixh		154						
+ANR	582	Symbol	perml8		154						
+ANR	583	Symbol	c64		154						
+ANR	584	Symbol	a		154						
+ANR	585	Symbol	b		154						
+ANR	586	Symbol	permh8		154						
+ANR	587	Symbol	filt		154						
+ANR	588	Symbol	src		154						
+ANR	589	Symbol	perm_6tap8		154						
+ANR	590	Symbol	dst_stride		154						
+ANR	591	Symbol	h		154						
+ANR	592	Symbol	outer		154						
+ANR	593	Symbol	vec_splat_u32		154						
+ANR	594	Symbol	mx		154						
+ANR	595	Symbol	perm_6tap0		154						
+ANR	596	Symbol	f16l		154						
+ANR	597	Symbol	vec_add		154						
+ANR	598	Symbol	vec_splat_s32		154						
+ANR	599	Symbol	perm_outer		154						
+ANR	600	Symbol	filth		154						
+ANR	601	Symbol	c7		154						
+ANR	602	Symbol	w		154						
+ANR	603	Symbol	vec_splat_u16		154						
+ANR	604	Symbol	vec_sl		154						

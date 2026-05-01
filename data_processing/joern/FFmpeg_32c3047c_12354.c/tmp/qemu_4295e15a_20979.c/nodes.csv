@@ -1,0 +1,56 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	98	File	tmp/qemu_4295e15a_20979.c								
+ANR	99	Function	qxl_spice_destroy_surfaces	1:0:0:350							
+ANR	100	FunctionDef	"qxl_spice_destroy_surfaces (PCIQXLDevice * qxl , qxl_async_io async)"		99	0					
+ANR	101	CompoundStatement		2:0:78:350	99	0					
+ANR	102	IfStatement	if ( async )		99	0					
+ANR	103	Condition	async	3:8:88:92	99	0	True				
+ANR	104	Identifier	async		99	0					
+ANR	105	CompoundStatement		2:15:16:16	99	1					
+ANR	106	ExpressionStatement	abort ( )	5:8:139:146	99	0	True				
+ANR	107	CallExpression	abort ( )		99	0					
+ANR	108	Callee	abort		99	0					
+ANR	109	Identifier	abort		99	0					
+ANR	110	ArgumentList			99	1					
+ANR	111	ElseStatement	else		99	0					
+ANR	112	CompoundStatement		8:11:153:153	99	0					
+ANR	113	ExpressionStatement	qxl -> ssd . worker -> destroy_surfaces ( qxl -> ssd . worker )	10:8:242:292	99	0	True				
+ANR	114	CallExpression	qxl -> ssd . worker -> destroy_surfaces ( qxl -> ssd . worker )		99	0					
+ANR	115	Callee	qxl -> ssd . worker -> destroy_surfaces		99	0					
+ANR	116	PtrMemberAccess	qxl -> ssd . worker -> destroy_surfaces		99	0					
+ANR	117	MemberAccess	qxl -> ssd . worker		99	0					
+ANR	118	PtrMemberAccess	qxl -> ssd		99	0					
+ANR	119	Identifier	qxl		99	0					
+ANR	120	Identifier	ssd		99	1					
+ANR	121	Identifier	worker		99	1					
+ANR	122	Identifier	destroy_surfaces		99	1					
+ANR	123	ArgumentList	qxl -> ssd . worker		99	1					
+ANR	124	Argument	qxl -> ssd . worker		99	0					
+ANR	125	MemberAccess	qxl -> ssd . worker		99	0					
+ANR	126	PtrMemberAccess	qxl -> ssd		99	0					
+ANR	127	Identifier	qxl		99	0					
+ANR	128	Identifier	ssd		99	1					
+ANR	129	Identifier	worker		99	1					
+ANR	130	ExpressionStatement	qxl_spice_destroy_surfaces_complete ( qxl )	11:8:302:342	99	1	True				
+ANR	131	CallExpression	qxl_spice_destroy_surfaces_complete ( qxl )		99	0					
+ANR	132	Callee	qxl_spice_destroy_surfaces_complete		99	0					
+ANR	133	Identifier	qxl_spice_destroy_surfaces_complete		99	0					
+ANR	134	ArgumentList	qxl		99	1					
+ANR	135	Argument	qxl		99	0					
+ANR	136	Identifier	qxl		99	0					
+ANR	137	ReturnType	static void		99	1					
+ANR	138	Identifier	qxl_spice_destroy_surfaces		99	2					
+ANR	139	ParameterList	"PCIQXLDevice * qxl , qxl_async_io async"		99	3					
+ANR	140	Parameter	PCIQXLDevice * qxl	1:39:39:55	99	0	True				
+ANR	141	ParameterType	PCIQXLDevice *		99	0					
+ANR	142	Identifier	qxl		99	1					
+ANR	143	Parameter	qxl_async_io async	1:58:58:75	99	1	True				
+ANR	144	ParameterType	qxl_async_io		99	0					
+ANR	145	Identifier	async		99	1					
+ANR	146	CFGEntryNode	ENTRY		99		True				
+ANR	147	CFGExitNode	EXIT		99		True				
+ANR	148	Symbol	async		99						
+ANR	149	Symbol	qxl		99						
+ANR	150	Symbol	qxl -> ssd		99						
+ANR	151	Symbol	qxl -> ssd . worker		99						
+ANR	152	Symbol	* qxl		99						

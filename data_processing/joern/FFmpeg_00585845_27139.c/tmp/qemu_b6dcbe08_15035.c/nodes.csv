@@ -1,0 +1,496 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/qemu_b6dcbe08_15035.c								
+ANR	2	Function	ppc405ep_init	1:0:0:2633							
+ANR	3	FunctionDef	"ppc405ep_init (target_phys_addr_t ram_bases [ 2 ] , target_phys_addr_t ram_sizes [ 2 ] , uint32_t sysclk , qemu_irq * * picp , int do_init)"		2	0					
+ANR	4	CompoundStatement		5:0:213:2633	2	0					
+ANR	5	IdentifierDeclStatement	"clk_setup_t clk_setup [ PPC405EP_CLK_NB ] , tlb_clk_setup ;"	6:4:219:272	2	0	True				
+ANR	6	IdentifierDecl	clk_setup [ PPC405EP_CLK_NB ]		2	0					
+ANR	7	IdentifierDeclType	clk_setup_t [ PPC405EP_CLK_NB ]		2	0					
+ANR	8	Identifier	clk_setup		2	1					
+ANR	9	Identifier	PPC405EP_CLK_NB		2	2					
+ANR	10	IdentifierDecl	tlb_clk_setup		2	1					
+ANR	11	IdentifierDeclType	clk_setup_t		2	0					
+ANR	12	Identifier	tlb_clk_setup		2	1					
+ANR	13	IdentifierDeclStatement	"qemu_irq dma_irqs [ 4 ] , gpt_irqs [ 5 ] , mal_irqs [ 4 ] ;"	7:4:278:324	2	1	True				
+ANR	14	IdentifierDecl	dma_irqs [ 4 ]		2	0					
+ANR	15	IdentifierDeclType	qemu_irq [ 4 ]		2	0					
+ANR	16	Identifier	dma_irqs		2	1					
+ANR	17	PrimaryExpression	4		2	2					
+ANR	18	IdentifierDecl	gpt_irqs [ 5 ]		2	1					
+ANR	19	IdentifierDeclType	qemu_irq [ 5 ]		2	0					
+ANR	20	Identifier	gpt_irqs		2	1					
+ANR	21	PrimaryExpression	5		2	2					
+ANR	22	IdentifierDecl	mal_irqs [ 4 ]		2	2					
+ANR	23	IdentifierDeclType	qemu_irq [ 4 ]		2	0					
+ANR	24	Identifier	mal_irqs		2	1					
+ANR	25	PrimaryExpression	4		2	2					
+ANR	26	IdentifierDeclStatement	CPUState * env ;	8:4:330:343	2	2	True				
+ANR	27	IdentifierDecl	* env		2	0					
+ANR	28	IdentifierDeclType	CPUState *		2	0					
+ANR	29	Identifier	env		2	1					
+ANR	30	IdentifierDeclStatement	"qemu_irq * pic , * irqs ;"	9:4:349:369	2	3	True				
+ANR	31	IdentifierDecl	* pic		2	0					
+ANR	32	IdentifierDeclType	qemu_irq *		2	0					
+ANR	33	Identifier	pic		2	1					
+ANR	34	IdentifierDecl	* irqs		2	1					
+ANR	35	IdentifierDeclType	qemu_irq *		2	0					
+ANR	36	Identifier	irqs		2	1					
+ANR	37	ExpressionStatement	"memset ( clk_setup , 0 , sizeof ( clk_setup ) )"	11:4:376:415	2	4	True				
+ANR	38	CallExpression	"memset ( clk_setup , 0 , sizeof ( clk_setup ) )"		2	0					
+ANR	39	Callee	memset		2	0					
+ANR	40	Identifier	memset		2	0					
+ANR	41	ArgumentList	clk_setup		2	1					
+ANR	42	Argument	clk_setup		2	0					
+ANR	43	Identifier	clk_setup		2	0					
+ANR	44	Argument	0		2	1					
+ANR	45	PrimaryExpression	0		2	0					
+ANR	46	Argument	sizeof ( clk_setup )		2	2					
+ANR	47	SizeofExpression	sizeof ( clk_setup )		2	0					
+ANR	48	Sizeof	sizeof		2	0					
+ANR	49	SizeofOperand	clk_setup		2	1					
+ANR	50	ExpressionStatement	"env = ppc4xx_init ( ""405ep"" , & clk_setup [ PPC405EP_CPU_CLK ] , & tlb_clk_setup , sysclk )"	13:4:441:543	2	5	True				
+ANR	51	AssignmentExpression	"env = ppc4xx_init ( ""405ep"" , & clk_setup [ PPC405EP_CPU_CLK ] , & tlb_clk_setup , sysclk )"		2	0		=			
+ANR	52	Identifier	env		2	0					
+ANR	53	CallExpression	"ppc4xx_init ( ""405ep"" , & clk_setup [ PPC405EP_CPU_CLK ] , & tlb_clk_setup , sysclk )"		2	1					
+ANR	54	Callee	ppc4xx_init		2	0					
+ANR	55	Identifier	ppc4xx_init		2	0					
+ANR	56	ArgumentList	"""405ep"""		2	1					
+ANR	57	Argument	"""405ep"""		2	0					
+ANR	58	PrimaryExpression	"""405ep"""		2	0					
+ANR	59	Argument	& clk_setup [ PPC405EP_CPU_CLK ]		2	1					
+ANR	60	UnaryOperationExpression	& clk_setup [ PPC405EP_CPU_CLK ]		2	0					
+ANR	61	UnaryOperator	&		2	0					
+ANR	62	ArrayIndexing	clk_setup [ PPC405EP_CPU_CLK ]		2	1					
+ANR	63	Identifier	clk_setup		2	0					
+ANR	64	Identifier	PPC405EP_CPU_CLK		2	1					
+ANR	65	Argument	& tlb_clk_setup		2	2					
+ANR	66	UnaryOperationExpression	& tlb_clk_setup		2	0					
+ANR	67	UnaryOperator	&		2	0					
+ANR	68	Identifier	tlb_clk_setup		2	1					
+ANR	69	Argument	sysclk		2	3					
+ANR	70	Identifier	sysclk		2	0					
+ANR	71	ExpressionStatement	clk_setup [ PPC405EP_CPU_CLK ] . cb = tlb_clk_setup . cb	15:4:549:598	2	6	True				
+ANR	72	AssignmentExpression	clk_setup [ PPC405EP_CPU_CLK ] . cb = tlb_clk_setup . cb		2	0		=			
+ANR	73	MemberAccess	clk_setup [ PPC405EP_CPU_CLK ] . cb		2	0					
+ANR	74	ArrayIndexing	clk_setup [ PPC405EP_CPU_CLK ]		2	0					
+ANR	75	Identifier	clk_setup		2	0					
+ANR	76	Identifier	PPC405EP_CPU_CLK		2	1					
+ANR	77	Identifier	cb		2	1					
+ANR	78	MemberAccess	tlb_clk_setup . cb		2	1					
+ANR	79	Identifier	tlb_clk_setup		2	0					
+ANR	80	Identifier	cb		2	1					
+ANR	81	ExpressionStatement	clk_setup [ PPC405EP_CPU_CLK ] . opaque = tlb_clk_setup . opaque	16:4:604:661	2	7	True				
+ANR	82	AssignmentExpression	clk_setup [ PPC405EP_CPU_CLK ] . opaque = tlb_clk_setup . opaque		2	0		=			
+ANR	83	MemberAccess	clk_setup [ PPC405EP_CPU_CLK ] . opaque		2	0					
+ANR	84	ArrayIndexing	clk_setup [ PPC405EP_CPU_CLK ]		2	0					
+ANR	85	Identifier	clk_setup		2	0					
+ANR	86	Identifier	PPC405EP_CPU_CLK		2	1					
+ANR	87	Identifier	opaque		2	1					
+ANR	88	MemberAccess	tlb_clk_setup . opaque		2	1					
+ANR	89	Identifier	tlb_clk_setup		2	0					
+ANR	90	Identifier	opaque		2	1					
+ANR	91	ExpressionStatement	ppc4xx_plb_init ( env )	20:4:764:784	2	8	True				
+ANR	92	CallExpression	ppc4xx_plb_init ( env )		2	0					
+ANR	93	Callee	ppc4xx_plb_init		2	0					
+ANR	94	Identifier	ppc4xx_plb_init		2	0					
+ANR	95	ArgumentList	env		2	1					
+ANR	96	Argument	env		2	0					
+ANR	97	Identifier	env		2	0					
+ANR	98	ExpressionStatement	ppc4xx_pob_init ( env )	22:4:818:838	2	9	True				
+ANR	99	CallExpression	ppc4xx_pob_init ( env )		2	0					
+ANR	100	Callee	ppc4xx_pob_init		2	0					
+ANR	101	Identifier	ppc4xx_pob_init		2	0					
+ANR	102	ArgumentList	env		2	1					
+ANR	103	Argument	env		2	0					
+ANR	104	Identifier	env		2	0					
+ANR	105	ExpressionStatement	ppc4xx_opba_init ( 0xef600600 )	24:4:867:895	2	10	True				
+ANR	106	CallExpression	ppc4xx_opba_init ( 0xef600600 )		2	0					
+ANR	107	Callee	ppc4xx_opba_init		2	0					
+ANR	108	Identifier	ppc4xx_opba_init		2	0					
+ANR	109	ArgumentList	0xef600600		2	1					
+ANR	110	Argument	0xef600600		2	0					
+ANR	111	PrimaryExpression	0xef600600		2	0					
+ANR	112	ExpressionStatement	irqs = g_malloc0 ( sizeof ( qemu_irq ) * PPCUIC_OUTPUT_NB )	26:4:942:995	2	11	True				
+ANR	113	AssignmentExpression	irqs = g_malloc0 ( sizeof ( qemu_irq ) * PPCUIC_OUTPUT_NB )		2	0		=			
+ANR	114	Identifier	irqs		2	0					
+ANR	115	CallExpression	g_malloc0 ( sizeof ( qemu_irq ) * PPCUIC_OUTPUT_NB )		2	1					
+ANR	116	Callee	g_malloc0		2	0					
+ANR	117	Identifier	g_malloc0		2	0					
+ANR	118	ArgumentList	sizeof ( qemu_irq ) * PPCUIC_OUTPUT_NB		2	1					
+ANR	119	Argument	sizeof ( qemu_irq ) * PPCUIC_OUTPUT_NB		2	0					
+ANR	120	MultiplicativeExpression	sizeof ( qemu_irq ) * PPCUIC_OUTPUT_NB		2	0		*			
+ANR	121	SizeofExpression	sizeof ( qemu_irq )		2	0					
+ANR	122	Sizeof	sizeof		2	0					
+ANR	123	SizeofOperand	qemu_irq		2	1					
+ANR	124	Identifier	PPCUIC_OUTPUT_NB		2	1					
+ANR	125	ExpressionStatement	irqs [ PPCUIC_OUTPUT_INT ] = ( ( qemu_irq * ) env -> irq_inputs ) [ PPC40x_INPUT_INT ]	27:4:1001:1082	2	12	True				
+ANR	126	AssignmentExpression	irqs [ PPCUIC_OUTPUT_INT ] = ( ( qemu_irq * ) env -> irq_inputs ) [ PPC40x_INPUT_INT ]		2	0		=			
+ANR	127	ArrayIndexing	irqs [ PPCUIC_OUTPUT_INT ]		2	0					
+ANR	128	Identifier	irqs		2	0					
+ANR	129	Identifier	PPCUIC_OUTPUT_INT		2	1					
+ANR	130	ArrayIndexing	( ( qemu_irq * ) env -> irq_inputs ) [ PPC40x_INPUT_INT ]		2	1					
+ANR	131	CastExpression	( qemu_irq * ) env -> irq_inputs		2	0					
+ANR	132	CastTarget	qemu_irq *		2	0					
+ANR	133	PtrMemberAccess	env -> irq_inputs		2	1					
+ANR	134	Identifier	env		2	0					
+ANR	135	Identifier	irq_inputs		2	1					
+ANR	136	Identifier	PPC40x_INPUT_INT		2	1					
+ANR	137	ExpressionStatement	irqs [ PPCUIC_OUTPUT_CINT ] = ( ( qemu_irq * ) env -> irq_inputs ) [ PPC40x_INPUT_CINT ]	29:4:1088:1171	2	13	True				
+ANR	138	AssignmentExpression	irqs [ PPCUIC_OUTPUT_CINT ] = ( ( qemu_irq * ) env -> irq_inputs ) [ PPC40x_INPUT_CINT ]		2	0		=			
+ANR	139	ArrayIndexing	irqs [ PPCUIC_OUTPUT_CINT ]		2	0					
+ANR	140	Identifier	irqs		2	0					
+ANR	141	Identifier	PPCUIC_OUTPUT_CINT		2	1					
+ANR	142	ArrayIndexing	( ( qemu_irq * ) env -> irq_inputs ) [ PPC40x_INPUT_CINT ]		2	1					
+ANR	143	CastExpression	( qemu_irq * ) env -> irq_inputs		2	0					
+ANR	144	CastTarget	qemu_irq *		2	0					
+ANR	145	PtrMemberAccess	env -> irq_inputs		2	1					
+ANR	146	Identifier	env		2	0					
+ANR	147	Identifier	irq_inputs		2	1					
+ANR	148	Identifier	PPC40x_INPUT_CINT		2	1					
+ANR	149	ExpressionStatement	"pic = ppcuic_init ( env , irqs , 0x0C0 , 0 , 1 )"	31:4:1177:1218	2	14	True				
+ANR	150	AssignmentExpression	"pic = ppcuic_init ( env , irqs , 0x0C0 , 0 , 1 )"		2	0		=			
+ANR	151	Identifier	pic		2	0					
+ANR	152	CallExpression	"ppcuic_init ( env , irqs , 0x0C0 , 0 , 1 )"		2	1					
+ANR	153	Callee	ppcuic_init		2	0					
+ANR	154	Identifier	ppcuic_init		2	0					
+ANR	155	ArgumentList	env		2	1					
+ANR	156	Argument	env		2	0					
+ANR	157	Identifier	env		2	0					
+ANR	158	Argument	irqs		2	1					
+ANR	159	Identifier	irqs		2	0					
+ANR	160	Argument	0x0C0		2	2					
+ANR	161	PrimaryExpression	0x0C0		2	0					
+ANR	162	Argument	0		2	3					
+ANR	163	PrimaryExpression	0		2	0					
+ANR	164	Argument	1		2	4					
+ANR	165	PrimaryExpression	1		2	0					
+ANR	166	ExpressionStatement	* picp = pic	32:4:1224:1235	2	15	True				
+ANR	167	AssignmentExpression	* picp = pic		2	0		=			
+ANR	168	UnaryOperationExpression	* picp		2	0					
+ANR	169	UnaryOperator	*		2	0					
+ANR	170	Identifier	picp		2	1					
+ANR	171	Identifier	pic		2	1					
+ANR	172	ExpressionStatement	"ppc4xx_sdram_init ( env , pic [ 17 ] , 2 , ram_bases , ram_sizes , do_init )"	35:4:1306:1371	2	16	True				
+ANR	173	CallExpression	"ppc4xx_sdram_init ( env , pic [ 17 ] , 2 , ram_bases , ram_sizes , do_init )"		2	0					
+ANR	174	Callee	ppc4xx_sdram_init		2	0					
+ANR	175	Identifier	ppc4xx_sdram_init		2	0					
+ANR	176	ArgumentList	env		2	1					
+ANR	177	Argument	env		2	0					
+ANR	178	Identifier	env		2	0					
+ANR	179	Argument	pic [ 17 ]		2	1					
+ANR	180	ArrayIndexing	pic [ 17 ]		2	0					
+ANR	181	Identifier	pic		2	0					
+ANR	182	PrimaryExpression	17		2	1					
+ANR	183	Argument	2		2	2					
+ANR	184	PrimaryExpression	2		2	0					
+ANR	185	Argument	ram_bases		2	3					
+ANR	186	Identifier	ram_bases		2	0					
+ANR	187	Argument	ram_sizes		2	4					
+ANR	188	Identifier	ram_sizes		2	0					
+ANR	189	Argument	do_init		2	5					
+ANR	190	Identifier	do_init		2	0					
+ANR	191	ExpressionStatement	ppc405_ebc_init ( env )	37:4:1411:1431	2	17	True				
+ANR	192	CallExpression	ppc405_ebc_init ( env )		2	0					
+ANR	193	Callee	ppc405_ebc_init		2	0					
+ANR	194	Identifier	ppc405_ebc_init		2	0					
+ANR	195	ArgumentList	env		2	1					
+ANR	196	Argument	env		2	0					
+ANR	197	Identifier	env		2	0					
+ANR	198	ExpressionStatement	dma_irqs [ 0 ] = pic [ 5 ]	39:4:1462:1482	2	18	True				
+ANR	199	AssignmentExpression	dma_irqs [ 0 ] = pic [ 5 ]		2	0		=			
+ANR	200	ArrayIndexing	dma_irqs [ 0 ]		2	0					
+ANR	201	Identifier	dma_irqs		2	0					
+ANR	202	PrimaryExpression	0		2	1					
+ANR	203	ArrayIndexing	pic [ 5 ]		2	1					
+ANR	204	Identifier	pic		2	0					
+ANR	205	PrimaryExpression	5		2	1					
+ANR	206	ExpressionStatement	dma_irqs [ 1 ] = pic [ 6 ]	40:4:1488:1508	2	19	True				
+ANR	207	AssignmentExpression	dma_irqs [ 1 ] = pic [ 6 ]		2	0		=			
+ANR	208	ArrayIndexing	dma_irqs [ 1 ]		2	0					
+ANR	209	Identifier	dma_irqs		2	0					
+ANR	210	PrimaryExpression	1		2	1					
+ANR	211	ArrayIndexing	pic [ 6 ]		2	1					
+ANR	212	Identifier	pic		2	0					
+ANR	213	PrimaryExpression	6		2	1					
+ANR	214	ExpressionStatement	dma_irqs [ 2 ] = pic [ 7 ]	41:4:1514:1534	2	20	True				
+ANR	215	AssignmentExpression	dma_irqs [ 2 ] = pic [ 7 ]		2	0		=			
+ANR	216	ArrayIndexing	dma_irqs [ 2 ]		2	0					
+ANR	217	Identifier	dma_irqs		2	0					
+ANR	218	PrimaryExpression	2		2	1					
+ANR	219	ArrayIndexing	pic [ 7 ]		2	1					
+ANR	220	Identifier	pic		2	0					
+ANR	221	PrimaryExpression	7		2	1					
+ANR	222	ExpressionStatement	dma_irqs [ 3 ] = pic [ 8 ]	42:4:1540:1560	2	21	True				
+ANR	223	AssignmentExpression	dma_irqs [ 3 ] = pic [ 8 ]		2	0		=			
+ANR	224	ArrayIndexing	dma_irqs [ 3 ]		2	0					
+ANR	225	Identifier	dma_irqs		2	0					
+ANR	226	PrimaryExpression	3		2	1					
+ANR	227	ArrayIndexing	pic [ 8 ]		2	1					
+ANR	228	Identifier	pic		2	0					
+ANR	229	PrimaryExpression	8		2	1					
+ANR	230	ExpressionStatement	"ppc405_dma_init ( env , dma_irqs )"	43:4:1566:1596	2	22	True				
+ANR	231	CallExpression	"ppc405_dma_init ( env , dma_irqs )"		2	0					
+ANR	232	Callee	ppc405_dma_init		2	0					
+ANR	233	Identifier	ppc405_dma_init		2	0					
+ANR	234	ArgumentList	env		2	1					
+ANR	235	Argument	env		2	0					
+ANR	236	Identifier	env		2	0					
+ANR	237	Argument	dma_irqs		2	1					
+ANR	238	Identifier	dma_irqs		2	0					
+ANR	239	ExpressionStatement	"ppc405_i2c_init ( 0xef600500 , pic [ 2 ] )"	45:4:1627:1662	2	23	True				
+ANR	240	CallExpression	"ppc405_i2c_init ( 0xef600500 , pic [ 2 ] )"		2	0					
+ANR	241	Callee	ppc405_i2c_init		2	0					
+ANR	242	Identifier	ppc405_i2c_init		2	0					
+ANR	243	ArgumentList	0xef600500		2	1					
+ANR	244	Argument	0xef600500		2	0					
+ANR	245	PrimaryExpression	0xef600500		2	0					
+ANR	246	Argument	pic [ 2 ]		2	1					
+ANR	247	ArrayIndexing	pic [ 2 ]		2	0					
+ANR	248	Identifier	pic		2	0					
+ANR	249	PrimaryExpression	2		2	1					
+ANR	250	ExpressionStatement	ppc405_gpio_init ( 0xef600700 )	47:4:1683:1711	2	24	True				
+ANR	251	CallExpression	ppc405_gpio_init ( 0xef600700 )		2	0					
+ANR	252	Callee	ppc405_gpio_init		2	0					
+ANR	253	Identifier	ppc405_gpio_init		2	0					
+ANR	254	ArgumentList	0xef600700		2	1					
+ANR	255	Argument	0xef600700		2	0					
+ANR	256	PrimaryExpression	0xef600700		2	0					
+ANR	257	IfStatement	if ( serial_hds [ 0 ] != NULL )		2	25					
+ANR	258	Condition	serial_hds [ 0 ] != NULL	49:8:1744:1764	2	0	True				
+ANR	259	EqualityExpression	serial_hds [ 0 ] != NULL		2	0		!=			
+ANR	260	ArrayIndexing	serial_hds [ 0 ]		2	0					
+ANR	261	Identifier	serial_hds		2	0					
+ANR	262	PrimaryExpression	0		2	1					
+ANR	263	Identifier	NULL		2	1					
+ANR	264	CompoundStatement		45:31:1553:1553	2	1					
+ANR	265	ExpressionStatement	"serial_mm_init ( 0xef600300 , 0 , pic [ 0 ] , PPC_SERIAL_MM_BAUDBASE , serial_hds [ 0 ] , 1 , 1 )"	50:8:1777:1882	2	0	True				
+ANR	266	CallExpression	"serial_mm_init ( 0xef600300 , 0 , pic [ 0 ] , PPC_SERIAL_MM_BAUDBASE , serial_hds [ 0 ] , 1 , 1 )"		2	0					
+ANR	267	Callee	serial_mm_init		2	0					
+ANR	268	Identifier	serial_mm_init		2	0					
+ANR	269	ArgumentList	0xef600300		2	1					
+ANR	270	Argument	0xef600300		2	0					
+ANR	271	PrimaryExpression	0xef600300		2	0					
+ANR	272	Argument	0		2	1					
+ANR	273	PrimaryExpression	0		2	0					
+ANR	274	Argument	pic [ 0 ]		2	2					
+ANR	275	ArrayIndexing	pic [ 0 ]		2	0					
+ANR	276	Identifier	pic		2	0					
+ANR	277	PrimaryExpression	0		2	1					
+ANR	278	Argument	PPC_SERIAL_MM_BAUDBASE		2	3					
+ANR	279	Identifier	PPC_SERIAL_MM_BAUDBASE		2	0					
+ANR	280	Argument	serial_hds [ 0 ]		2	4					
+ANR	281	ArrayIndexing	serial_hds [ 0 ]		2	0					
+ANR	282	Identifier	serial_hds		2	0					
+ANR	283	PrimaryExpression	0		2	1					
+ANR	284	Argument	1		2	5					
+ANR	285	PrimaryExpression	1		2	0					
+ANR	286	Argument	1		2	6					
+ANR	287	PrimaryExpression	1		2	0					
+ANR	288	IfStatement	if ( serial_hds [ 1 ] != NULL )		2	26					
+ANR	289	Condition	serial_hds [ 1 ] != NULL	53:8:1898:1918	2	0	True				
+ANR	290	EqualityExpression	serial_hds [ 1 ] != NULL		2	0		!=			
+ANR	291	ArrayIndexing	serial_hds [ 1 ]		2	0					
+ANR	292	Identifier	serial_hds		2	0					
+ANR	293	PrimaryExpression	1		2	1					
+ANR	294	Identifier	NULL		2	1					
+ANR	295	CompoundStatement		49:31:1707:1707	2	1					
+ANR	296	ExpressionStatement	"serial_mm_init ( 0xef600400 , 0 , pic [ 1 ] , PPC_SERIAL_MM_BAUDBASE , serial_hds [ 1 ] , 1 , 1 )"	54:8:1931:2036	2	0	True				
+ANR	297	CallExpression	"serial_mm_init ( 0xef600400 , 0 , pic [ 1 ] , PPC_SERIAL_MM_BAUDBASE , serial_hds [ 1 ] , 1 , 1 )"		2	0					
+ANR	298	Callee	serial_mm_init		2	0					
+ANR	299	Identifier	serial_mm_init		2	0					
+ANR	300	ArgumentList	0xef600400		2	1					
+ANR	301	Argument	0xef600400		2	0					
+ANR	302	PrimaryExpression	0xef600400		2	0					
+ANR	303	Argument	0		2	1					
+ANR	304	PrimaryExpression	0		2	0					
+ANR	305	Argument	pic [ 1 ]		2	2					
+ANR	306	ArrayIndexing	pic [ 1 ]		2	0					
+ANR	307	Identifier	pic		2	0					
+ANR	308	PrimaryExpression	1		2	1					
+ANR	309	Argument	PPC_SERIAL_MM_BAUDBASE		2	3					
+ANR	310	Identifier	PPC_SERIAL_MM_BAUDBASE		2	0					
+ANR	311	Argument	serial_hds [ 1 ]		2	4					
+ANR	312	ArrayIndexing	serial_hds [ 1 ]		2	0					
+ANR	313	Identifier	serial_hds		2	0					
+ANR	314	PrimaryExpression	1		2	1					
+ANR	315	Argument	1		2	5					
+ANR	316	PrimaryExpression	1		2	0					
+ANR	317	Argument	1		2	6					
+ANR	318	PrimaryExpression	1		2	0					
+ANR	319	ExpressionStatement	ppc405_ocm_init ( env )	58:4:2062:2082	2	27	True				
+ANR	320	CallExpression	ppc405_ocm_init ( env )		2	0					
+ANR	321	Callee	ppc405_ocm_init		2	0					
+ANR	322	Identifier	ppc405_ocm_init		2	0					
+ANR	323	ArgumentList	env		2	1					
+ANR	324	Argument	env		2	0					
+ANR	325	Identifier	env		2	0					
+ANR	326	ExpressionStatement	gpt_irqs [ 0 ] = pic [ 19 ]	60:4:2102:2123	2	28	True				
+ANR	327	AssignmentExpression	gpt_irqs [ 0 ] = pic [ 19 ]		2	0		=			
+ANR	328	ArrayIndexing	gpt_irqs [ 0 ]		2	0					
+ANR	329	Identifier	gpt_irqs		2	0					
+ANR	330	PrimaryExpression	0		2	1					
+ANR	331	ArrayIndexing	pic [ 19 ]		2	1					
+ANR	332	Identifier	pic		2	0					
+ANR	333	PrimaryExpression	19		2	1					
+ANR	334	ExpressionStatement	gpt_irqs [ 1 ] = pic [ 20 ]	61:4:2129:2150	2	29	True				
+ANR	335	AssignmentExpression	gpt_irqs [ 1 ] = pic [ 20 ]		2	0		=			
+ANR	336	ArrayIndexing	gpt_irqs [ 1 ]		2	0					
+ANR	337	Identifier	gpt_irqs		2	0					
+ANR	338	PrimaryExpression	1		2	1					
+ANR	339	ArrayIndexing	pic [ 20 ]		2	1					
+ANR	340	Identifier	pic		2	0					
+ANR	341	PrimaryExpression	20		2	1					
+ANR	342	ExpressionStatement	gpt_irqs [ 2 ] = pic [ 21 ]	62:4:2156:2177	2	30	True				
+ANR	343	AssignmentExpression	gpt_irqs [ 2 ] = pic [ 21 ]		2	0		=			
+ANR	344	ArrayIndexing	gpt_irqs [ 2 ]		2	0					
+ANR	345	Identifier	gpt_irqs		2	0					
+ANR	346	PrimaryExpression	2		2	1					
+ANR	347	ArrayIndexing	pic [ 21 ]		2	1					
+ANR	348	Identifier	pic		2	0					
+ANR	349	PrimaryExpression	21		2	1					
+ANR	350	ExpressionStatement	gpt_irqs [ 3 ] = pic [ 22 ]	63:4:2183:2204	2	31	True				
+ANR	351	AssignmentExpression	gpt_irqs [ 3 ] = pic [ 22 ]		2	0		=			
+ANR	352	ArrayIndexing	gpt_irqs [ 3 ]		2	0					
+ANR	353	Identifier	gpt_irqs		2	0					
+ANR	354	PrimaryExpression	3		2	1					
+ANR	355	ArrayIndexing	pic [ 22 ]		2	1					
+ANR	356	Identifier	pic		2	0					
+ANR	357	PrimaryExpression	22		2	1					
+ANR	358	ExpressionStatement	gpt_irqs [ 4 ] = pic [ 23 ]	64:4:2210:2231	2	32	True				
+ANR	359	AssignmentExpression	gpt_irqs [ 4 ] = pic [ 23 ]		2	0		=			
+ANR	360	ArrayIndexing	gpt_irqs [ 4 ]		2	0					
+ANR	361	Identifier	gpt_irqs		2	0					
+ANR	362	PrimaryExpression	4		2	1					
+ANR	363	ArrayIndexing	pic [ 23 ]		2	1					
+ANR	364	Identifier	pic		2	0					
+ANR	365	PrimaryExpression	23		2	1					
+ANR	366	ExpressionStatement	"ppc4xx_gpt_init ( 0xef600000 , gpt_irqs )"	65:4:2237:2274	2	33	True				
+ANR	367	CallExpression	"ppc4xx_gpt_init ( 0xef600000 , gpt_irqs )"		2	0					
+ANR	368	Callee	ppc4xx_gpt_init		2	0					
+ANR	369	Identifier	ppc4xx_gpt_init		2	0					
+ANR	370	ArgumentList	0xef600000		2	1					
+ANR	371	Argument	0xef600000		2	0					
+ANR	372	PrimaryExpression	0xef600000		2	0					
+ANR	373	Argument	gpt_irqs		2	1					
+ANR	374	Identifier	gpt_irqs		2	0					
+ANR	375	ExpressionStatement	mal_irqs [ 0 ] = pic [ 11 ]	69:4:2348:2369	2	34	True				
+ANR	376	AssignmentExpression	mal_irqs [ 0 ] = pic [ 11 ]		2	0		=			
+ANR	377	ArrayIndexing	mal_irqs [ 0 ]		2	0					
+ANR	378	Identifier	mal_irqs		2	0					
+ANR	379	PrimaryExpression	0		2	1					
+ANR	380	ArrayIndexing	pic [ 11 ]		2	1					
+ANR	381	Identifier	pic		2	0					
+ANR	382	PrimaryExpression	11		2	1					
+ANR	383	ExpressionStatement	mal_irqs [ 1 ] = pic [ 12 ]	70:4:2375:2396	2	35	True				
+ANR	384	AssignmentExpression	mal_irqs [ 1 ] = pic [ 12 ]		2	0		=			
+ANR	385	ArrayIndexing	mal_irqs [ 1 ]		2	0					
+ANR	386	Identifier	mal_irqs		2	0					
+ANR	387	PrimaryExpression	1		2	1					
+ANR	388	ArrayIndexing	pic [ 12 ]		2	1					
+ANR	389	Identifier	pic		2	0					
+ANR	390	PrimaryExpression	12		2	1					
+ANR	391	ExpressionStatement	mal_irqs [ 2 ] = pic [ 13 ]	71:4:2402:2423	2	36	True				
+ANR	392	AssignmentExpression	mal_irqs [ 2 ] = pic [ 13 ]		2	0		=			
+ANR	393	ArrayIndexing	mal_irqs [ 2 ]		2	0					
+ANR	394	Identifier	mal_irqs		2	0					
+ANR	395	PrimaryExpression	2		2	1					
+ANR	396	ArrayIndexing	pic [ 13 ]		2	1					
+ANR	397	Identifier	pic		2	0					
+ANR	398	PrimaryExpression	13		2	1					
+ANR	399	ExpressionStatement	mal_irqs [ 3 ] = pic [ 14 ]	72:4:2429:2450	2	37	True				
+ANR	400	AssignmentExpression	mal_irqs [ 3 ] = pic [ 14 ]		2	0		=			
+ANR	401	ArrayIndexing	mal_irqs [ 3 ]		2	0					
+ANR	402	Identifier	mal_irqs		2	0					
+ANR	403	PrimaryExpression	3		2	1					
+ANR	404	ArrayIndexing	pic [ 14 ]		2	1					
+ANR	405	Identifier	pic		2	0					
+ANR	406	PrimaryExpression	14		2	1					
+ANR	407	ExpressionStatement	"ppc405_mal_init ( env , mal_irqs )"	73:4:2456:2486	2	38	True				
+ANR	408	CallExpression	"ppc405_mal_init ( env , mal_irqs )"		2	0					
+ANR	409	Callee	ppc405_mal_init		2	0					
+ANR	410	Identifier	ppc405_mal_init		2	0					
+ANR	411	ArgumentList	env		2	1					
+ANR	412	Argument	env		2	0					
+ANR	413	Identifier	env		2	0					
+ANR	414	Argument	mal_irqs		2	1					
+ANR	415	Identifier	mal_irqs		2	0					
+ANR	416	ExpressionStatement	"ppc405ep_cpc_init ( env , clk_setup , sysclk )"	77:4:2573:2614	2	39	True				
+ANR	417	CallExpression	"ppc405ep_cpc_init ( env , clk_setup , sysclk )"		2	0					
+ANR	418	Callee	ppc405ep_cpc_init		2	0					
+ANR	419	Identifier	ppc405ep_cpc_init		2	0					
+ANR	420	ArgumentList	env		2	1					
+ANR	421	Argument	env		2	0					
+ANR	422	Identifier	env		2	0					
+ANR	423	Argument	clk_setup		2	1					
+ANR	424	Identifier	clk_setup		2	0					
+ANR	425	Argument	sysclk		2	2					
+ANR	426	Identifier	sysclk		2	0					
+ANR	427	ReturnStatement	return env ;	79:4:2621:2631	2	40	True				
+ANR	428	Identifier	env		2	0					
+ANR	429	ReturnType	CPUState *		2	1					
+ANR	430	Identifier	ppc405ep_init		2	2					
+ANR	431	ParameterList	"target_phys_addr_t ram_bases [ 2 ] , target_phys_addr_t ram_sizes [ 2 ] , uint32_t sysclk , qemu_irq * * picp , int do_init"		2	3					
+ANR	432	Parameter	target_phys_addr_t ram_bases [ 2 ]	1:25:25:55	2	0	True				
+ANR	433	ParameterType	target_phys_addr_t [ 2 ]		2	0					
+ANR	434	Identifier	ram_bases		2	1					
+ANR	435	Parameter	target_phys_addr_t ram_sizes [ 2 ]	2:25:83:113	2	1	True				
+ANR	436	ParameterType	target_phys_addr_t [ 2 ]		2	0					
+ANR	437	Identifier	ram_sizes		2	1					
+ANR	438	Parameter	uint32_t sysclk	3:25:141:155	2	2	True				
+ANR	439	ParameterType	uint32_t		2	0					
+ANR	440	Identifier	sysclk		2	1					
+ANR	441	Parameter	qemu_irq * * picp	3:42:158:172	2	3	True				
+ANR	442	ParameterType	qemu_irq * *		2	0					
+ANR	443	Identifier	picp		2	1					
+ANR	444	Parameter	int do_init	4:25:200:210	2	4	True				
+ANR	445	ParameterType	int		2	0					
+ANR	446	Identifier	do_init		2	1					
+ANR	447	CFGEntryNode	ENTRY		2		True				
+ANR	448	CFGExitNode	EXIT		2		True				
+ANR	449	Symbol	* PPCUIC_OUTPUT_CINT		2						
+ANR	450	Symbol	do_init		2						
+ANR	451	Symbol	PPCUIC_OUTPUT_NB		2						
+ANR	452	Symbol	* * env		2						
+ANR	453	Symbol	ram_sizes		2						
+ANR	454	Symbol	* PPC40x_INPUT_CINT		2						
+ANR	455	Symbol	tlb_clk_setup . opaque		2						
+ANR	456	Symbol	mal_irqs		2						
+ANR	457	Symbol	* env -> irq_inputs		2						
+ANR	458	Symbol	clk_setup [ PPC405EP_CPU_CLK ] . opaque		2						
+ANR	459	Symbol	pic		2						
+ANR	460	Symbol	picp		2						
+ANR	461	Symbol	PPC405EP_CPU_CLK		2						
+ANR	462	Symbol	* PPCUIC_OUTPUT_INT		2						
+ANR	463	Symbol	dma_irqs		2						
+ANR	464	Symbol	* irqs		2						
+ANR	465	Symbol	* gpt_irqs		2						
+ANR	466	Symbol	ppc4xx_init		2						
+ANR	467	Symbol	ram_bases		2						
+ANR	468	Symbol	PPCUIC_OUTPUT_INT		2						
+ANR	469	Symbol	tlb_clk_setup . cb		2						
+ANR	470	Symbol	* dma_irqs		2						
+ANR	471	Symbol	* PPC40x_INPUT_INT		2						
+ANR	472	Symbol	PPC40x_INPUT_CINT		2						
+ANR	473	Symbol	PPCUIC_OUTPUT_CINT		2						
+ANR	474	Symbol	NULL		2						
+ANR	475	Symbol	tlb_clk_setup		2						
+ANR	476	Symbol	clk_setup [ PPC405EP_CPU_CLK ] . cb		2						
+ANR	477	Symbol	* mal_irqs		2						
+ANR	478	Symbol	* env		2						
+ANR	479	Symbol	sysclk		2						
+ANR	480	Symbol	PPC40x_INPUT_INT		2						
+ANR	481	Symbol	& tlb_clk_setup		2						
+ANR	482	Symbol	env		2						
+ANR	483	Symbol	gpt_irqs		2						
+ANR	484	Symbol	* clk_setup		2						
+ANR	485	Symbol	PPC_SERIAL_MM_BAUDBASE		2						
+ANR	486	Symbol	* serial_hds		2						
+ANR	487	Symbol	clk_setup		2						
+ANR	488	Symbol	env -> irq_inputs		2						
+ANR	489	Symbol	* pic		2						
+ANR	490	Symbol	ppcuic_init		2						
+ANR	491	Symbol	irqs		2						
+ANR	492	Symbol	g_malloc0		2						
+ANR	493	Symbol	serial_hds		2						
+ANR	494	Symbol	* PPC405EP_CPU_CLK		2						
+ANR	495	Symbol	* picp		2						

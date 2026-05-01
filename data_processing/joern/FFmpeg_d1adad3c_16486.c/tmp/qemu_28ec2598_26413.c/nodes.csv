@@ -1,0 +1,143 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/qemu_28ec2598_26413.c								
+ANR	2	Function	object_create	1:0:0:559							
+ANR	3	FunctionDef	"object_create (QemuOpts * opts , void * opaque)"		2	0					
+ANR	4	CompoundStatement		2:0:55:559	2	0					
+ANR	5	IdentifierDeclStatement	"const char * type = qemu_opt_get ( opts , ""qom-type"" ) ;"	3:4:61:110	2	0	True				
+ANR	6	IdentifierDecl	"* type = qemu_opt_get ( opts , ""qom-type"" )"		2	0					
+ANR	7	IdentifierDeclType	const char *		2	0					
+ANR	8	Identifier	type		2	1					
+ANR	9	AssignmentExpression	"* type = qemu_opt_get ( opts , ""qom-type"" )"		2	2		=			
+ANR	10	Identifier	type		2	0					
+ANR	11	CallExpression	"qemu_opt_get ( opts , ""qom-type"" )"		2	1					
+ANR	12	Callee	qemu_opt_get		2	0					
+ANR	13	Identifier	qemu_opt_get		2	0					
+ANR	14	ArgumentList	opts		2	1					
+ANR	15	Argument	opts		2	0					
+ANR	16	Identifier	opts		2	0					
+ANR	17	Argument	"""qom-type"""		2	1					
+ANR	18	PrimaryExpression	"""qom-type"""		2	0					
+ANR	19	IdentifierDeclStatement	const char * id = qemu_opts_id ( opts ) ;	4:4:116:151	2	1	True				
+ANR	20	IdentifierDecl	* id = qemu_opts_id ( opts )		2	0					
+ANR	21	IdentifierDeclType	const char *		2	0					
+ANR	22	Identifier	id		2	1					
+ANR	23	AssignmentExpression	* id = qemu_opts_id ( opts )		2	2		=			
+ANR	24	Identifier	id		2	0					
+ANR	25	CallExpression	qemu_opts_id ( opts )		2	1					
+ANR	26	Callee	qemu_opts_id		2	0					
+ANR	27	Identifier	qemu_opts_id		2	0					
+ANR	28	ArgumentList	opts		2	1					
+ANR	29	Argument	opts		2	0					
+ANR	30	Identifier	opts		2	0					
+ANR	31	IdentifierDeclStatement	Object * obj ;	5:4:157:168	2	2	True				
+ANR	32	IdentifierDecl	* obj		2	0					
+ANR	33	IdentifierDeclType	Object *		2	0					
+ANR	34	Identifier	obj		2	1					
+ANR	35	ExpressionStatement	g_assert ( type != NULL )	7:4:175:197	2	3	True				
+ANR	36	CallExpression	g_assert ( type != NULL )		2	0					
+ANR	37	Callee	g_assert		2	0					
+ANR	38	Identifier	g_assert		2	0					
+ANR	39	ArgumentList	type != NULL		2	1					
+ANR	40	Argument	type != NULL		2	0					
+ANR	41	EqualityExpression	type != NULL		2	0		!=			
+ANR	42	Identifier	type		2	0					
+ANR	43	Identifier	NULL		2	1					
+ANR	44	IfStatement	if ( id == NULL )		2	4					
+ANR	45	Condition	id == NULL	9:8:208:217	2	0	True				
+ANR	46	EqualityExpression	id == NULL		2	0		==			
+ANR	47	Identifier	id		2	0					
+ANR	48	Identifier	NULL		2	1					
+ANR	49	CompoundStatement		8:20:164:164	2	1					
+ANR	50	ExpressionStatement	"qerror_report ( QERR_MISSING_PARAMETER , ""id"" )"	10:8:230:273	2	0	True				
+ANR	51	CallExpression	"qerror_report ( QERR_MISSING_PARAMETER , ""id"" )"		2	0					
+ANR	52	Callee	qerror_report		2	0					
+ANR	53	Identifier	qerror_report		2	0					
+ANR	54	ArgumentList	QERR_MISSING_PARAMETER		2	1					
+ANR	55	Argument	QERR_MISSING_PARAMETER		2	0					
+ANR	56	Identifier	QERR_MISSING_PARAMETER		2	0					
+ANR	57	Argument	"""id"""		2	1					
+ANR	58	PrimaryExpression	"""id"""		2	0					
+ANR	59	ReturnStatement	return - 1 ;	11:8:283:292	2	1	True				
+ANR	60	UnaryOperationExpression	- 1		2	0					
+ANR	61	UnaryOperator	-		2	0					
+ANR	62	PrimaryExpression	1		2	1					
+ANR	63	ExpressionStatement	obj = object_new ( type )	14:4:305:327	2	5	True				
+ANR	64	AssignmentExpression	obj = object_new ( type )		2	0		=			
+ANR	65	Identifier	obj		2	0					
+ANR	66	CallExpression	object_new ( type )		2	1					
+ANR	67	Callee	object_new		2	0					
+ANR	68	Identifier	object_new		2	0					
+ANR	69	ArgumentList	type		2	1					
+ANR	70	Argument	type		2	0					
+ANR	71	Identifier	type		2	0					
+ANR	72	IfStatement	"if ( qemu_opt_foreach ( opts , object_set_property , obj , 1 ) < 0 )"		2	6					
+ANR	73	Condition	"qemu_opt_foreach ( opts , object_set_property , obj , 1 ) < 0"	15:8:337:391	2	0	True				
+ANR	74	RelationalExpression	"qemu_opt_foreach ( opts , object_set_property , obj , 1 ) < 0"		2	0		<			
+ANR	75	CallExpression	"qemu_opt_foreach ( opts , object_set_property , obj , 1 )"		2	0					
+ANR	76	Callee	qemu_opt_foreach		2	0					
+ANR	77	Identifier	qemu_opt_foreach		2	0					
+ANR	78	ArgumentList	opts		2	1					
+ANR	79	Argument	opts		2	0					
+ANR	80	Identifier	opts		2	0					
+ANR	81	Argument	object_set_property		2	1					
+ANR	82	Identifier	object_set_property		2	0					
+ANR	83	Argument	obj		2	2					
+ANR	84	Identifier	obj		2	0					
+ANR	85	Argument	1		2	3					
+ANR	86	PrimaryExpression	1		2	0					
+ANR	87	PrimaryExpression	0		2	1					
+ANR	88	CompoundStatement		14:65:338:338	2	1					
+ANR	89	ReturnStatement	return - 1 ;	16:8:404:413	2	0	True				
+ANR	90	UnaryOperationExpression	- 1		2	0					
+ANR	91	UnaryOperator	-		2	0					
+ANR	92	PrimaryExpression	1		2	1					
+ANR	93	ExpressionStatement	"object_property_add_child ( container_get ( object_get_root ( ) , ""/objects"" ) , id , obj , NULL )"	19:4:426:542	2	7	True				
+ANR	94	CallExpression	"object_property_add_child ( container_get ( object_get_root ( ) , ""/objects"" ) , id , obj , NULL )"		2	0					
+ANR	95	Callee	object_property_add_child		2	0					
+ANR	96	Identifier	object_property_add_child		2	0					
+ANR	97	ArgumentList	"container_get ( object_get_root ( ) , ""/objects"" )"		2	1					
+ANR	98	Argument	"container_get ( object_get_root ( ) , ""/objects"" )"		2	0					
+ANR	99	CallExpression	"container_get ( object_get_root ( ) , ""/objects"" )"		2	0					
+ANR	100	Callee	container_get		2	0					
+ANR	101	Identifier	container_get		2	0					
+ANR	102	ArgumentList	object_get_root ( )		2	1					
+ANR	103	Argument	object_get_root ( )		2	0					
+ANR	104	CallExpression	object_get_root ( )		2	0					
+ANR	105	Callee	object_get_root		2	0					
+ANR	106	Identifier	object_get_root		2	0					
+ANR	107	ArgumentList			2	1					
+ANR	108	Argument	"""/objects"""		2	1					
+ANR	109	PrimaryExpression	"""/objects"""		2	0					
+ANR	110	Argument	id		2	1					
+ANR	111	Identifier	id		2	0					
+ANR	112	Argument	obj		2	2					
+ANR	113	Identifier	obj		2	0					
+ANR	114	Argument	NULL		2	3					
+ANR	115	Identifier	NULL		2	0					
+ANR	116	ReturnStatement	return 0 ;	22:4:549:557	2	8	True				
+ANR	117	PrimaryExpression	0		2	0					
+ANR	118	ReturnType	static int		2	1					
+ANR	119	Identifier	object_create		2	2					
+ANR	120	ParameterList	"QemuOpts * opts , void * opaque"		2	3					
+ANR	121	Parameter	QemuOpts * opts	1:25:25:38	2	0	True				
+ANR	122	ParameterType	QemuOpts *		2	0					
+ANR	123	Identifier	opts		2	1					
+ANR	124	Parameter	void * opaque	1:41:41:52	2	1	True				
+ANR	125	ParameterType	void *		2	0					
+ANR	126	Identifier	opaque		2	1					
+ANR	127	CFGEntryNode	ENTRY		2		True				
+ANR	128	CFGExitNode	EXIT		2		True				
+ANR	129	Symbol	opaque		2						
+ANR	130	Symbol	NULL		2						
+ANR	131	Symbol	object_set_property		2						
+ANR	132	Symbol	object_get_root		2						
+ANR	133	Symbol	qemu_opt_get		2						
+ANR	134	Symbol	type		2						
+ANR	135	Symbol	QERR_MISSING_PARAMETER		2						
+ANR	136	Symbol	qemu_opt_foreach		2						
+ANR	137	Symbol	opts		2						
+ANR	138	Symbol	obj		2						
+ANR	139	Symbol	container_get		2						
+ANR	140	Symbol	id		2						
+ANR	141	Symbol	object_new		2						
+ANR	142	Symbol	qemu_opts_id		2						

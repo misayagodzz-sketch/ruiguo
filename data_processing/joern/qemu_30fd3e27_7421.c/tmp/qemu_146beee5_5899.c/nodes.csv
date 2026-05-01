@@ -1,0 +1,115 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	953	File	tmp/qemu_146beee5_5899.c								
+ANR	954	Function	piix4_initfn	1:0:0:493							
+ANR	955	FunctionDef	piix4_initfn (PCIDevice * dev)		954	0					
+ANR	956	CompoundStatement		2:0:40:493	954	0					
+ANR	957	IdentifierDeclStatement	"PIIX4State * d = DO_UPCAST ( PIIX4State , dev , dev ) ;"	3:4:46:93	954	0	True				
+ANR	958	IdentifierDecl	"* d = DO_UPCAST ( PIIX4State , dev , dev )"		954	0					
+ANR	959	IdentifierDeclType	PIIX4State *		954	0					
+ANR	960	Identifier	d		954	1					
+ANR	961	AssignmentExpression	"* d = DO_UPCAST ( PIIX4State , dev , dev )"		954	2		=			
+ANR	962	Identifier	d		954	0					
+ANR	963	CallExpression	"DO_UPCAST ( PIIX4State , dev , dev )"		954	1					
+ANR	964	Callee	DO_UPCAST		954	0					
+ANR	965	Identifier	DO_UPCAST		954	0					
+ANR	966	ArgumentList	PIIX4State		954	1					
+ANR	967	Argument	PIIX4State		954	0					
+ANR	968	Identifier	PIIX4State		954	0					
+ANR	969	Argument	dev		954	1					
+ANR	970	Identifier	dev		954	0					
+ANR	971	Argument	dev		954	2					
+ANR	972	Identifier	dev		954	0					
+ANR	973	IdentifierDeclStatement	uint8_t * pci_conf ;	4:4:99:116	954	1	True				
+ANR	974	IdentifierDecl	* pci_conf		954	0					
+ANR	975	IdentifierDeclType	uint8_t *		954	0					
+ANR	976	Identifier	pci_conf		954	1					
+ANR	977	ExpressionStatement	isa_bus_new ( & d -> dev . qdev )	6:4:123:148	954	2	True				
+ANR	978	CallExpression	isa_bus_new ( & d -> dev . qdev )		954	0					
+ANR	979	Callee	isa_bus_new		954	0					
+ANR	980	Identifier	isa_bus_new		954	0					
+ANR	981	ArgumentList	& d -> dev . qdev		954	1					
+ANR	982	Argument	& d -> dev . qdev		954	0					
+ANR	983	UnaryOperationExpression	& d -> dev . qdev		954	0					
+ANR	984	UnaryOperator	&		954	0					
+ANR	985	MemberAccess	d -> dev . qdev		954	1					
+ANR	986	PtrMemberAccess	d -> dev		954	0					
+ANR	987	Identifier	d		954	0					
+ANR	988	Identifier	dev		954	1					
+ANR	989	Identifier	qdev		954	1					
+ANR	990	ExpressionStatement	pci_conf = d -> dev . config	8:4:155:179	954	3	True				
+ANR	991	AssignmentExpression	pci_conf = d -> dev . config		954	0		=			
+ANR	992	Identifier	pci_conf		954	0					
+ANR	993	MemberAccess	d -> dev . config		954	1					
+ANR	994	PtrMemberAccess	d -> dev		954	0					
+ANR	995	Identifier	d		954	0					
+ANR	996	Identifier	dev		954	1					
+ANR	997	Identifier	config		954	1					
+ANR	998	ExpressionStatement	"pci_config_set_vendor_id ( pci_conf , PCI_VENDOR_ID_INTEL )"	9:4:185:240	954	4	True				
+ANR	999	CallExpression	"pci_config_set_vendor_id ( pci_conf , PCI_VENDOR_ID_INTEL )"		954	0					
+ANR	1000	Callee	pci_config_set_vendor_id		954	0					
+ANR	1001	Identifier	pci_config_set_vendor_id		954	0					
+ANR	1002	ArgumentList	pci_conf		954	1					
+ANR	1003	Argument	pci_conf		954	0					
+ANR	1004	Identifier	pci_conf		954	0					
+ANR	1005	Argument	PCI_VENDOR_ID_INTEL		954	1					
+ANR	1006	Identifier	PCI_VENDOR_ID_INTEL		954	0					
+ANR	1007	ExpressionStatement	"pci_config_set_device_id ( pci_conf , PCI_DEVICE_ID_INTEL_82371AB_0 )"	10:4:246:311	954	5	True				
+ANR	1008	CallExpression	"pci_config_set_device_id ( pci_conf , PCI_DEVICE_ID_INTEL_82371AB_0 )"		954	0					
+ANR	1009	Callee	pci_config_set_device_id		954	0					
+ANR	1010	Identifier	pci_config_set_device_id		954	0					
+ANR	1011	ArgumentList	pci_conf		954	1					
+ANR	1012	Argument	pci_conf		954	0					
+ANR	1013	Identifier	pci_conf		954	0					
+ANR	1014	Argument	PCI_DEVICE_ID_INTEL_82371AB_0		954	1					
+ANR	1015	Identifier	PCI_DEVICE_ID_INTEL_82371AB_0		954	0					
+ANR	1016	ExpressionStatement	"pci_config_set_class ( pci_conf , PCI_CLASS_BRIDGE_ISA )"	11:4:358:410	954	6	True				
+ANR	1017	CallExpression	"pci_config_set_class ( pci_conf , PCI_CLASS_BRIDGE_ISA )"		954	0					
+ANR	1018	Callee	pci_config_set_class		954	0					
+ANR	1019	Identifier	pci_config_set_class		954	0					
+ANR	1020	ArgumentList	pci_conf		954	1					
+ANR	1021	Argument	pci_conf		954	0					
+ANR	1022	Identifier	pci_conf		954	0					
+ANR	1023	Argument	PCI_CLASS_BRIDGE_ISA		954	1					
+ANR	1024	Identifier	PCI_CLASS_BRIDGE_ISA		954	0					
+ANR	1025	ExpressionStatement	piix4_dev = & d -> dev	13:4:417:436	954	7	True				
+ANR	1026	AssignmentExpression	piix4_dev = & d -> dev		954	0		=			
+ANR	1027	Identifier	piix4_dev		954	0					
+ANR	1028	UnaryOperationExpression	& d -> dev		954	1					
+ANR	1029	UnaryOperator	&		954	0					
+ANR	1030	PtrMemberAccess	d -> dev		954	1					
+ANR	1031	Identifier	d		954	0					
+ANR	1032	Identifier	dev		954	1					
+ANR	1033	ExpressionStatement	"qemu_register_reset ( piix4_reset , d )"	14:4:442:477	954	8	True				
+ANR	1034	CallExpression	"qemu_register_reset ( piix4_reset , d )"		954	0					
+ANR	1035	Callee	qemu_register_reset		954	0					
+ANR	1036	Identifier	qemu_register_reset		954	0					
+ANR	1037	ArgumentList	piix4_reset		954	1					
+ANR	1038	Argument	piix4_reset		954	0					
+ANR	1039	Identifier	piix4_reset		954	0					
+ANR	1040	Argument	d		954	1					
+ANR	1041	Identifier	d		954	0					
+ANR	1042	ReturnStatement	return 0 ;	15:4:483:491	954	9	True				
+ANR	1043	PrimaryExpression	0		954	0					
+ANR	1044	ReturnType	static int		954	1					
+ANR	1045	Identifier	piix4_initfn		954	2					
+ANR	1046	ParameterList	PCIDevice * dev		954	3					
+ANR	1047	Parameter	PCIDevice * dev	1:24:24:37	954	0	True				
+ANR	1048	ParameterType	PCIDevice *		954	0					
+ANR	1049	Identifier	dev		954	1					
+ANR	1050	CFGEntryNode	ENTRY		954		True				
+ANR	1051	CFGExitNode	EXIT		954		True				
+ANR	1052	Symbol	d -> dev		954						
+ANR	1053	Symbol	DO_UPCAST		954						
+ANR	1054	Symbol	d		954						
+ANR	1055	Symbol	& d -> dev . qdev		954						
+ANR	1056	Symbol	PCI_DEVICE_ID_INTEL_82371AB_0		954						
+ANR	1057	Symbol	PCI_CLASS_BRIDGE_ISA		954						
+ANR	1058	Symbol	& d -> dev		954						
+ANR	1059	Symbol	piix4_dev		954						
+ANR	1060	Symbol	* d		954						
+ANR	1061	Symbol	pci_conf		954						
+ANR	1062	Symbol	PIIX4State		954						
+ANR	1063	Symbol	d -> dev . config		954						
+ANR	1064	Symbol	dev		954						
+ANR	1065	Symbol	PCI_VENDOR_ID_INTEL		954						
+ANR	1066	Symbol	piix4_reset		954						

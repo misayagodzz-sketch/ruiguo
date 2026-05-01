@@ -1,0 +1,234 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/qemu_bf55b7af_8662.c								
+ANR	2	Function	s390_translate_iommu	1:0:0:1199							
+ANR	3	FunctionDef	"s390_translate_iommu (MemoryRegion * mr , hwaddr addr , bool is_write)"		2	0					
+ANR	4	CompoundStatement		3:0:130:1199	2	0					
+ANR	5	IdentifierDeclStatement	uint64_t pte ;	4:4:136:148	2	0	True				
+ANR	6	IdentifierDecl	pte		2	0					
+ANR	7	IdentifierDeclType	uint64_t		2	0					
+ANR	8	Identifier	pte		2	1					
+ANR	9	IdentifierDeclStatement	uint32_t flags ;	5:4:154:168	2	1	True				
+ANR	10	IdentifierDecl	flags		2	0					
+ANR	11	IdentifierDeclType	uint32_t		2	0					
+ANR	12	Identifier	flags		2	1					
+ANR	13	IdentifierDeclStatement	"S390PCIIOMMU * iommu = container_of ( mr , S390PCIIOMMU , iommu_mr ) ;"	6:4:174:236	2	2	True				
+ANR	14	IdentifierDecl	"* iommu = container_of ( mr , S390PCIIOMMU , iommu_mr )"		2	0					
+ANR	15	IdentifierDeclType	S390PCIIOMMU *		2	0					
+ANR	16	Identifier	iommu		2	1					
+ANR	17	AssignmentExpression	"* iommu = container_of ( mr , S390PCIIOMMU , iommu_mr )"		2	2		=			
+ANR	18	Identifier	iommu		2	0					
+ANR	19	CallExpression	"container_of ( mr , S390PCIIOMMU , iommu_mr )"		2	1					
+ANR	20	Callee	container_of		2	0					
+ANR	21	Identifier	container_of		2	0					
+ANR	22	ArgumentList	mr		2	1					
+ANR	23	Argument	mr		2	0					
+ANR	24	Identifier	mr		2	0					
+ANR	25	Argument	S390PCIIOMMU		2	1					
+ANR	26	Identifier	S390PCIIOMMU		2	0					
+ANR	27	Argument	iommu_mr		2	2					
+ANR	28	Identifier	iommu_mr		2	0					
+ANR	29	Statement	IOMMUTLBEntry	7:4:242:254	2	3	True				
+ANR	30	Statement	ret	7:18:256:258	2	4	True				
+ANR	31	Statement	=	7:22:260:260	2	5	True				
+ANR	32	CompoundStatement		5:24:131:131	2	6					
+ANR	33	Statement	.	8:8:272:272	2	0	True				
+ANR	34	Statement	target_as	8:9:273:281	2	1	True				
+ANR	35	Statement	=	8:19:283:283	2	2	True				
+ANR	36	Statement	&	8:21:285:285	2	3	True				
+ANR	37	Statement	address_space_memory	8:22:286:305	2	4	True				
+ANR	38	Statement	","	8:42:306:306	2	5	True				
+ANR	39	Statement	.	9:8:316:316	2	6	True				
+ANR	40	Statement	iova	9:9:317:320	2	7	True				
+ANR	41	Statement	=	9:14:322:322	2	8	True				
+ANR	42	Statement	0	9:16:324:324	2	9	True				
+ANR	43	Statement	","	9:17:325:325	2	10	True				
+ANR	44	Statement	.	10:8:335:335	2	11	True				
+ANR	45	Statement	translated_addr	10:9:336:350	2	12	True				
+ANR	46	Statement	=	10:25:352:352	2	13	True				
+ANR	47	Statement	0	10:27:354:354	2	14	True				
+ANR	48	Statement	","	10:28:355:355	2	15	True				
+ANR	49	Statement	.	11:8:365:365	2	16	True				
+ANR	50	Statement	addr_mask	11:9:366:374	2	17	True				
+ANR	51	Statement	=	11:19:376:376	2	18	True				
+ANR	52	Statement	~	11:21:378:378	2	19	True				
+ANR	53	Statement	(	11:22:379:379	2	20	True				
+ANR	54	Statement	hwaddr	11:23:380:385	2	21	True				
+ANR	55	Statement	)	11:29:386:386	2	22	True				
+ANR	56	Statement	0	11:30:387:387	2	23	True				
+ANR	57	Statement	","	11:31:388:388	2	24	True				
+ANR	58	Statement	.	12:8:398:398	2	25	True				
+ANR	59	Statement	perm	12:9:399:402	2	26	True				
+ANR	60	Statement	=	12:14:404:404	2	27	True				
+ANR	61	Statement	IOMMU_NONE	12:16:406:415	2	28	True				
+ANR	62	Statement	","	12:26:416:416	2	29	True				
+ANR	63	ExpressionStatement		13:5:423:423	2	7	True				
+ANR	64	SwitchStatement	switch ( iommu -> pbdev -> state )		2	8					
+ANR	65	Condition	iommu -> pbdev -> state	15:12:438:456	2	0	True				
+ANR	66	PtrMemberAccess	iommu -> pbdev -> state		2	0					
+ANR	67	PtrMemberAccess	iommu -> pbdev		2	0					
+ANR	68	Identifier	iommu		2	0					
+ANR	69	Identifier	pbdev		2	1					
+ANR	70	Identifier	state		2	1					
+ANR	71	CompoundStatement		13:33:328:328	2	1					
+ANR	72	Label	case ZPCI_FS_ENABLED :	16:4:465:485	2	0	True				
+ANR	73	Identifier	ZPCI_FS_ENABLED		2	0					
+ANR	74	Label	case ZPCI_FS_BLOCKED :	17:4:491:511	2	1	True				
+ANR	75	Identifier	ZPCI_FS_BLOCKED		2	0					
+ANR	76	IfStatement	if ( ! iommu -> enabled )		2	2					
+ANR	77	Condition	! iommu -> enabled	18:12:525:539	2	0	True				
+ANR	78	UnaryOperationExpression	! iommu -> enabled		2	0					
+ANR	79	UnaryOperator	!		2	0					
+ANR	80	PtrMemberAccess	iommu -> enabled		2	1					
+ANR	81	Identifier	iommu		2	0					
+ANR	82	Identifier	enabled		2	1					
+ANR	83	CompoundStatement		16:29:411:411	2	1					
+ANR	84	ReturnStatement	return ret ;	19:12:556:566	2	0	True				
+ANR	85	Identifier	ret		2	0					
+ANR	86	BreakStatement	break ;	21:8:586:591	2	3	True				
+ANR	87	Label	default :	22:4:597:604	2	4	True				
+ANR	88	Identifier	default		2	0					
+ANR	89	ReturnStatement	return ret ;	23:8:614:624	2	5	True				
+ANR	90	Identifier	ret		2	0					
+ANR	91	Statement	DPRINTF	26:4:637:643	2	9	True				
+ANR	92	Statement	(	26:11:644:644	2	10	True				
+ANR	93	Statement	"""iommu trans addr 0x%"""	26:12:645:666	2	11	True				
+ANR	94	Statement	PRIx64	26:35:668:673	2	12	True				
+ANR	95	Statement	"""\\n"""	26:42:675:678	2	13	True				
+ANR	96	Statement	","	26:46:679:679	2	14	True				
+ANR	97	Statement	addr	26:48:681:684	2	15	True				
+ANR	98	Statement	)	26:52:685:685	2	16	True				
+ANR	99	ExpressionStatement		26:53:686:686	2	17	True				
+ANR	100	IfStatement	if ( addr < iommu -> pba || addr > iommu -> pal )		2	18					
+ANR	101	Condition	addr < iommu -> pba || addr > iommu -> pal	28:8:697:734	2	0	True				
+ANR	102	OrExpression	addr < iommu -> pba || addr > iommu -> pal		2	0		||			
+ANR	103	RelationalExpression	addr < iommu -> pba		2	0		<			
+ANR	104	Identifier	addr		2	0					
+ANR	105	PtrMemberAccess	iommu -> pba		2	1					
+ANR	106	Identifier	iommu		2	0					
+ANR	107	Identifier	pba		2	1					
+ANR	108	RelationalExpression	addr > iommu -> pal		2	1		>			
+ANR	109	Identifier	addr		2	0					
+ANR	110	PtrMemberAccess	iommu -> pal		2	1					
+ANR	111	Identifier	iommu		2	0					
+ANR	112	Identifier	pal		2	1					
+ANR	113	CompoundStatement		26:48:606:606	2	1					
+ANR	114	ReturnStatement	return ret ;	29:8:747:757	2	0	True				
+ANR	115	Identifier	ret		2	0					
+ANR	116	ExpressionStatement	"pte = s390_guest_io_table_walk ( s390_pci_get_table_origin ( iommu -> g_iota ) , addr )"	32:4:770:883	2	19	True				
+ANR	117	AssignmentExpression	"pte = s390_guest_io_table_walk ( s390_pci_get_table_origin ( iommu -> g_iota ) , addr )"		2	0		=			
+ANR	118	Identifier	pte		2	0					
+ANR	119	CallExpression	"s390_guest_io_table_walk ( s390_pci_get_table_origin ( iommu -> g_iota ) , addr )"		2	1					
+ANR	120	Callee	s390_guest_io_table_walk		2	0					
+ANR	121	Identifier	s390_guest_io_table_walk		2	0					
+ANR	122	ArgumentList	s390_pci_get_table_origin ( iommu -> g_iota )		2	1					
+ANR	123	Argument	s390_pci_get_table_origin ( iommu -> g_iota )		2	0					
+ANR	124	CallExpression	s390_pci_get_table_origin ( iommu -> g_iota )		2	0					
+ANR	125	Callee	s390_pci_get_table_origin		2	0					
+ANR	126	Identifier	s390_pci_get_table_origin		2	0					
+ANR	127	ArgumentList	iommu -> g_iota		2	1					
+ANR	128	Argument	iommu -> g_iota		2	0					
+ANR	129	PtrMemberAccess	iommu -> g_iota		2	0					
+ANR	130	Identifier	iommu		2	0					
+ANR	131	Identifier	g_iota		2	1					
+ANR	132	Argument	addr		2	1					
+ANR	133	Identifier	addr		2	0					
+ANR	134	IfStatement	if ( ! pte )		2	20					
+ANR	135	Condition	! pte	34:8:893:896	2	0	True				
+ANR	136	UnaryOperationExpression	! pte		2	0					
+ANR	137	UnaryOperator	!		2	0					
+ANR	138	Identifier	pte		2	1					
+ANR	139	CompoundStatement		32:14:768:768	2	1					
+ANR	140	ReturnStatement	return ret ;	35:8:909:919	2	0	True				
+ANR	141	Identifier	ret		2	0					
+ANR	142	ExpressionStatement	flags = pte & ZPCI_PTE_FLAG_MASK	38:4:932:964	2	21	True				
+ANR	143	AssignmentExpression	flags = pte & ZPCI_PTE_FLAG_MASK		2	0		=			
+ANR	144	Identifier	flags		2	0					
+ANR	145	BitAndExpression	pte & ZPCI_PTE_FLAG_MASK		2	1		&			
+ANR	146	Identifier	pte		2	0					
+ANR	147	Identifier	ZPCI_PTE_FLAG_MASK		2	1					
+ANR	148	ExpressionStatement	ret . iova = addr	39:4:970:985	2	22	True				
+ANR	149	AssignmentExpression	ret . iova = addr		2	0		=			
+ANR	150	MemberAccess	ret . iova		2	0					
+ANR	151	Identifier	ret		2	0					
+ANR	152	Identifier	iova		2	1					
+ANR	153	Identifier	addr		2	1					
+ANR	154	ExpressionStatement	ret . translated_addr = pte & ZPCI_PTE_ADDR_MASK	40:4:991:1037	2	23	True				
+ANR	155	AssignmentExpression	ret . translated_addr = pte & ZPCI_PTE_ADDR_MASK		2	0		=			
+ANR	156	MemberAccess	ret . translated_addr		2	0					
+ANR	157	Identifier	ret		2	0					
+ANR	158	Identifier	translated_addr		2	1					
+ANR	159	BitAndExpression	pte & ZPCI_PTE_ADDR_MASK		2	1		&			
+ANR	160	Identifier	pte		2	0					
+ANR	161	Identifier	ZPCI_PTE_ADDR_MASK		2	1					
+ANR	162	ExpressionStatement	ret . addr_mask = 0xfff	41:4:1043:1064	2	24	True				
+ANR	163	AssignmentExpression	ret . addr_mask = 0xfff		2	0		=			
+ANR	164	MemberAccess	ret . addr_mask		2	0					
+ANR	165	Identifier	ret		2	0					
+ANR	166	Identifier	addr_mask		2	1					
+ANR	167	PrimaryExpression	0xfff		2	1					
+ANR	168	IfStatement	if ( flags & ZPCI_PTE_INVALID )		2	25					
+ANR	169	Condition	flags & ZPCI_PTE_INVALID	43:8:1075:1098	2	0	True				
+ANR	170	BitAndExpression	flags & ZPCI_PTE_INVALID		2	0		&			
+ANR	171	Identifier	flags		2	0					
+ANR	172	Identifier	ZPCI_PTE_INVALID		2	1					
+ANR	173	CompoundStatement		41:34:970:970	2	1					
+ANR	174	ExpressionStatement	ret . perm = IOMMU_NONE	44:8:1111:1132	2	0	True				
+ANR	175	AssignmentExpression	ret . perm = IOMMU_NONE		2	0		=			
+ANR	176	MemberAccess	ret . perm		2	0					
+ANR	177	Identifier	ret		2	0					
+ANR	178	Identifier	perm		2	1					
+ANR	179	Identifier	IOMMU_NONE		2	1					
+ANR	180	ElseStatement	else		2	0					
+ANR	181	CompoundStatement		43:11:1014:1014	2	0					
+ANR	182	ExpressionStatement	ret . perm = IOMMU_RW	46:8:1155:1174	2	0	True				
+ANR	183	AssignmentExpression	ret . perm = IOMMU_RW		2	0		=			
+ANR	184	MemberAccess	ret . perm		2	0					
+ANR	185	Identifier	ret		2	0					
+ANR	186	Identifier	perm		2	1					
+ANR	187	Identifier	IOMMU_RW		2	1					
+ANR	188	ReturnStatement	return ret ;	49:4:1187:1197	2	26	True				
+ANR	189	Identifier	ret		2	0					
+ANR	190	ReturnType	static IOMMUTLBEntry		2	1					
+ANR	191	Identifier	s390_translate_iommu		2	2					
+ANR	192	ParameterList	"MemoryRegion * mr , hwaddr addr , bool is_write"		2	3					
+ANR	193	Parameter	MemoryRegion * mr	1:42:42:57	2	0	True				
+ANR	194	ParameterType	MemoryRegion *		2	0					
+ANR	195	Identifier	mr		2	1					
+ANR	196	Parameter	hwaddr addr	1:60:60:70	2	1	True				
+ANR	197	ParameterType	hwaddr		2	0					
+ANR	198	Identifier	addr		2	1					
+ANR	199	Parameter	bool is_write	2:42:115:127	2	2	True				
+ANR	200	ParameterType	bool		2	0					
+ANR	201	Identifier	is_write		2	1					
+ANR	202	CFGEntryNode	ENTRY		2		True				
+ANR	203	CFGExitNode	EXIT		2		True				
+ANR	204	Symbol	S390PCIIOMMU		2						
+ANR	205	Symbol	iommu -> enabled		2						
+ANR	206	Symbol	flags		2						
+ANR	207	Symbol	s390_pci_get_table_origin		2						
+ANR	208	Symbol	iommu_mr		2						
+ANR	209	Symbol	ret . addr_mask		2						
+ANR	210	Symbol	iommu		2						
+ANR	211	Symbol	iommu -> pbdev -> state		2						
+ANR	212	Symbol	ret . iova		2						
+ANR	213	Symbol	iommu -> g_iota		2						
+ANR	214	Symbol	addr		2						
+ANR	215	Symbol	IOMMU_NONE		2						
+ANR	216	Symbol	iommu -> pal		2						
+ANR	217	Symbol	pte		2						
+ANR	218	Symbol	ret		2						
+ANR	219	Symbol	mr		2						
+ANR	220	Symbol	* iommu		2						
+ANR	221	Symbol	ZPCI_PTE_FLAG_MASK		2						
+ANR	222	Symbol	ZPCI_PTE_ADDR_MASK		2						
+ANR	223	Symbol	s390_guest_io_table_walk		2						
+ANR	224	Symbol	ZPCI_PTE_INVALID		2						
+ANR	225	Symbol	is_write		2						
+ANR	226	Symbol	ret . translated_addr		2						
+ANR	227	Symbol	iommu -> pbdev		2						
+ANR	228	Symbol	container_of		2						
+ANR	229	Symbol	iommu -> pba		2						
+ANR	230	Symbol	* iommu -> pbdev		2						
+ANR	231	Symbol	IOMMU_RW		2						
+ANR	232	Symbol	ret . perm		2						
+ANR	233	Symbol	* * iommu		2						

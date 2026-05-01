@@ -1,0 +1,67 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/FFmpeg_29b0d94b_21284.c								
+ANR	2	Function	decode_copy	1:0:0:278							
+ANR	3	FunctionDef	"decode_copy (uint8_t * frame , int width , int height , const uint8_t * src , const uint8_t * src_end)"		2	0					
+ANR	4	CompoundStatement		3:0:129:278	2	0					
+ANR	5	IdentifierDeclStatement	const int size = width * height ;	4:4:135:166	2	0	True				
+ANR	6	IdentifierDecl	size = width * height		2	0					
+ANR	7	IdentifierDeclType	const int		2	0					
+ANR	8	Identifier	size		2	1					
+ANR	9	AssignmentExpression	size = width * height		2	2		=			
+ANR	10	Identifier	size		2	0					
+ANR	11	MultiplicativeExpression	width * height		2	1		*			
+ANR	12	Identifier	width		2	0					
+ANR	13	Identifier	height		2	1					
+ANR	14	IfStatement	if ( src_end - src < size )		2	1					
+ANR	15	Condition	src_end - src < size	6:8:177:196	2	0	True				
+ANR	16	RelationalExpression	src_end - src < size		2	0		<			
+ANR	17	AdditiveExpression	src_end - src		2	0		-			
+ANR	18	Identifier	src_end		2	0					
+ANR	19	Identifier	src		2	1					
+ANR	20	Identifier	size		2	1					
+ANR	21	ReturnStatement	return - 1 ;	7:8:207:216	2	1	True				
+ANR	22	UnaryOperationExpression	- 1		2	0					
+ANR	23	UnaryOperator	-		2	0					
+ANR	24	PrimaryExpression	1		2	1					
+ANR	25	ExpressionStatement	"bytestream_get_buffer ( & src , frame , size )"	8:4:222:262	2	2	True				
+ANR	26	CallExpression	"bytestream_get_buffer ( & src , frame , size )"		2	0					
+ANR	27	Callee	bytestream_get_buffer		2	0					
+ANR	28	Identifier	bytestream_get_buffer		2	0					
+ANR	29	ArgumentList	& src		2	1					
+ANR	30	Argument	& src		2	0					
+ANR	31	UnaryOperationExpression	& src		2	0					
+ANR	32	UnaryOperator	&		2	0					
+ANR	33	Identifier	src		2	1					
+ANR	34	Argument	frame		2	1					
+ANR	35	Identifier	frame		2	0					
+ANR	36	Argument	size		2	2					
+ANR	37	Identifier	size		2	0					
+ANR	38	ReturnStatement	return 0 ;	9:4:268:276	2	3	True				
+ANR	39	PrimaryExpression	0		2	0					
+ANR	40	ReturnType	static int		2	1					
+ANR	41	Identifier	decode_copy		2	2					
+ANR	42	ParameterList	"uint8_t * frame , int width , int height , const uint8_t * src , const uint8_t * src_end"		2	3					
+ANR	43	Parameter	uint8_t * frame	1:23:23:36	2	0	True				
+ANR	44	ParameterType	uint8_t *		2	0					
+ANR	45	Identifier	frame		2	1					
+ANR	46	Parameter	int width	1:39:39:47	2	1	True				
+ANR	47	ParameterType	int		2	0					
+ANR	48	Identifier	width		2	1					
+ANR	49	Parameter	int height	1:50:50:59	2	2	True				
+ANR	50	ParameterType	int		2	0					
+ANR	51	Identifier	height		2	1					
+ANR	52	Parameter	const uint8_t * src	2:23:85:102	2	3	True				
+ANR	53	ParameterType	const uint8_t *		2	0					
+ANR	54	Identifier	src		2	1					
+ANR	55	Parameter	const uint8_t * src_end	2:43:105:126	2	4	True				
+ANR	56	ParameterType	const uint8_t *		2	0					
+ANR	57	Identifier	src_end		2	1					
+ANR	58	CFGEntryNode	ENTRY		2		True				
+ANR	59	CFGExitNode	EXIT		2		True				
+ANR	60	Symbol	src_end		2						
+ANR	61	Symbol	size		2						
+ANR	62	Symbol	src		2						
+ANR	63	Symbol	width		2						
+ANR	64	Symbol	& src		2						
+ANR	65	Symbol	frame		2						
+ANR	66	Symbol	height		2						

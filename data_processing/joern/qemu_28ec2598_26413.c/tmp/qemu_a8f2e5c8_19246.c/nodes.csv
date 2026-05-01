@@ -1,0 +1,234 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/qemu_a8f2e5c8_19246.c								
+ANR	2	Function	virtio_scsi_handle_ctrl_req	1:0:0:1125							
+ANR	3	FunctionDef	"virtio_scsi_handle_ctrl_req (VirtIOSCSI * s , VirtIOSCSIReq * req)"		2	0					
+ANR	4	CompoundStatement		2:0:68:1125	2	0					
+ANR	5	IdentifierDeclStatement	VirtIODevice * vdev = ( VirtIODevice * ) s ;	3:4:74:112	2	0	True				
+ANR	6	IdentifierDecl	* vdev = ( VirtIODevice * ) s		2	0					
+ANR	7	IdentifierDeclType	VirtIODevice *		2	0					
+ANR	8	Identifier	vdev		2	1					
+ANR	9	AssignmentExpression	* vdev = ( VirtIODevice * ) s		2	2		=			
+ANR	10	Identifier	vdev		2	0					
+ANR	11	CastExpression	( VirtIODevice * ) s		2	1					
+ANR	12	CastTarget	VirtIODevice *		2	0					
+ANR	13	Identifier	s		2	1					
+ANR	14	IdentifierDeclStatement	uint32_t type ;	4:4:118:131	2	1	True				
+ANR	15	IdentifierDecl	type		2	0					
+ANR	16	IdentifierDeclType	uint32_t		2	0					
+ANR	17	Identifier	type		2	1					
+ANR	18	IdentifierDeclStatement	int r = 0 ;	5:4:137:146	2	2	True				
+ANR	19	IdentifierDecl	r = 0		2	0					
+ANR	20	IdentifierDeclType	int		2	0					
+ANR	21	Identifier	r		2	1					
+ANR	22	AssignmentExpression	r = 0		2	2		=			
+ANR	23	Identifier	r		2	0					
+ANR	24	PrimaryExpression	0		2	1					
+ANR	25	IfStatement	"if ( iov_to_buf ( req -> elem . out_sg , req -> elem . out_num , 0 , & type , sizeof ( type ) ) < sizeof ( type ) )"		2	3					
+ANR	26	Condition	"iov_to_buf ( req -> elem . out_sg , req -> elem . out_num , 0 , & type , sizeof ( type ) ) < sizeof ( type )"	7:8:157:258	2	0	True				
+ANR	27	RelationalExpression	"iov_to_buf ( req -> elem . out_sg , req -> elem . out_num , 0 , & type , sizeof ( type ) ) < sizeof ( type )"		2	0		<			
+ANR	28	CallExpression	"iov_to_buf ( req -> elem . out_sg , req -> elem . out_num , 0 , & type , sizeof ( type ) )"		2	0					
+ANR	29	Callee	iov_to_buf		2	0					
+ANR	30	Identifier	iov_to_buf		2	0					
+ANR	31	ArgumentList	req -> elem . out_sg		2	1					
+ANR	32	Argument	req -> elem . out_sg		2	0					
+ANR	33	MemberAccess	req -> elem . out_sg		2	0					
+ANR	34	PtrMemberAccess	req -> elem		2	0					
+ANR	35	Identifier	req		2	0					
+ANR	36	Identifier	elem		2	1					
+ANR	37	Identifier	out_sg		2	1					
+ANR	38	Argument	req -> elem . out_num		2	1					
+ANR	39	MemberAccess	req -> elem . out_num		2	0					
+ANR	40	PtrMemberAccess	req -> elem		2	0					
+ANR	41	Identifier	req		2	0					
+ANR	42	Identifier	elem		2	1					
+ANR	43	Identifier	out_num		2	1					
+ANR	44	Argument	0		2	2					
+ANR	45	PrimaryExpression	0		2	0					
+ANR	46	Argument	& type		2	3					
+ANR	47	UnaryOperationExpression	& type		2	0					
+ANR	48	UnaryOperator	&		2	0					
+ANR	49	Identifier	type		2	1					
+ANR	50	Argument	sizeof ( type )		2	4					
+ANR	51	SizeofExpression	sizeof ( type )		2	0					
+ANR	52	Sizeof	sizeof		2	0					
+ANR	53	SizeofOperand	type		2	1					
+ANR	54	SizeofExpression	sizeof ( type )		2	1					
+ANR	55	Sizeof	sizeof		2	0					
+ANR	56	SizeofOperand	type		2	1					
+ANR	57	CompoundStatement		7:53:192:192	2	1					
+ANR	58	ExpressionStatement	virtio_scsi_bad_req ( )	9:8:271:292	2	0	True				
+ANR	59	CallExpression	virtio_scsi_bad_req ( )		2	0					
+ANR	60	Callee	virtio_scsi_bad_req		2	0					
+ANR	61	Identifier	virtio_scsi_bad_req		2	0					
+ANR	62	ArgumentList			2	1					
+ANR	63	ReturnStatement	return ;	10:8:302:308	2	1	True				
+ANR	64	ExpressionStatement	"virtio_tswap32s ( vdev , & type )"	13:4:321:349	2	4	True				
+ANR	65	CallExpression	"virtio_tswap32s ( vdev , & type )"		2	0					
+ANR	66	Callee	virtio_tswap32s		2	0					
+ANR	67	Identifier	virtio_tswap32s		2	0					
+ANR	68	ArgumentList	vdev		2	1					
+ANR	69	Argument	vdev		2	0					
+ANR	70	Identifier	vdev		2	0					
+ANR	71	Argument	& type		2	1					
+ANR	72	UnaryOperationExpression	& type		2	0					
+ANR	73	UnaryOperator	&		2	0					
+ANR	74	Identifier	type		2	1					
+ANR	75	IfStatement	if ( type == VIRTIO_SCSI_T_TMF )		2	5					
+ANR	76	Condition	type == VIRTIO_SCSI_T_TMF	14:8:359:383	2	0	True				
+ANR	77	EqualityExpression	type == VIRTIO_SCSI_T_TMF		2	0		==			
+ANR	78	Identifier	type		2	0					
+ANR	79	Identifier	VIRTIO_SCSI_T_TMF		2	1					
+ANR	80	CompoundStatement		13:35:317:317	2	1					
+ANR	81	IfStatement	"if ( virtio_scsi_parse_req ( req , sizeof ( VirtIOSCSICtrlTMFReq ) , sizeof ( VirtIOSCSICtrlTMFResp ) ) < 0 )"		2	0					
+ANR	82	Condition	"virtio_scsi_parse_req ( req , sizeof ( VirtIOSCSICtrlTMFReq ) , sizeof ( VirtIOSCSICtrlTMFResp ) ) < 0"	15:12:400:510	2	0	True				
+ANR	83	RelationalExpression	"virtio_scsi_parse_req ( req , sizeof ( VirtIOSCSICtrlTMFReq ) , sizeof ( VirtIOSCSICtrlTMFResp ) ) < 0"		2	0		<			
+ANR	84	CallExpression	"virtio_scsi_parse_req ( req , sizeof ( VirtIOSCSICtrlTMFReq ) , sizeof ( VirtIOSCSICtrlTMFResp ) )"		2	0					
+ANR	85	Callee	virtio_scsi_parse_req		2	0					
+ANR	86	Identifier	virtio_scsi_parse_req		2	0					
+ANR	87	ArgumentList	req		2	1					
+ANR	88	Argument	req		2	0					
+ANR	89	Identifier	req		2	0					
+ANR	90	Argument	sizeof ( VirtIOSCSICtrlTMFReq )		2	1					
+ANR	91	SizeofExpression	sizeof ( VirtIOSCSICtrlTMFReq )		2	0					
+ANR	92	Sizeof	sizeof		2	0					
+ANR	93	SizeofOperand	VirtIOSCSICtrlTMFReq		2	1					
+ANR	94	Argument	sizeof ( VirtIOSCSICtrlTMFResp )		2	2					
+ANR	95	SizeofExpression	sizeof ( VirtIOSCSICtrlTMFResp )		2	0					
+ANR	96	Sizeof	sizeof		2	0					
+ANR	97	SizeofOperand	VirtIOSCSICtrlTMFResp		2	1					
+ANR	98	PrimaryExpression	0		2	1					
+ANR	99	CompoundStatement		15:56:444:444	2	1					
+ANR	100	ExpressionStatement	virtio_scsi_bad_req ( )	17:12:527:548	2	0	True				
+ANR	101	CallExpression	virtio_scsi_bad_req ( )		2	0					
+ANR	102	Callee	virtio_scsi_bad_req		2	0					
+ANR	103	Identifier	virtio_scsi_bad_req		2	0					
+ANR	104	ArgumentList			2	1					
+ANR	105	ElseStatement	else		2	0					
+ANR	106	CompoundStatement		17:15:496:496	2	0					
+ANR	107	ExpressionStatement	"r = virtio_scsi_do_tmf ( s , req )"	19:12:579:609	2	0	True				
+ANR	108	AssignmentExpression	"r = virtio_scsi_do_tmf ( s , req )"		2	0		=			
+ANR	109	Identifier	r		2	0					
+ANR	110	CallExpression	"virtio_scsi_do_tmf ( s , req )"		2	1					
+ANR	111	Callee	virtio_scsi_do_tmf		2	0					
+ANR	112	Identifier	virtio_scsi_do_tmf		2	0					
+ANR	113	ArgumentList	s		2	1					
+ANR	114	Argument	s		2	0					
+ANR	115	Identifier	s		2	0					
+ANR	116	Argument	req		2	1					
+ANR	117	Identifier	req		2	0					
+ANR	118	ElseStatement	else		2	0					
+ANR	119	IfStatement	if ( type == VIRTIO_SCSI_T_AN_QUERY || type == VIRTIO_SCSI_T_AN_SUBSCRIBE )		2	0					
+ANR	120	Condition	type == VIRTIO_SCSI_T_AN_QUERY || type == VIRTIO_SCSI_T_AN_SUBSCRIBE	22:15:637:719	2	0	True				
+ANR	121	OrExpression	type == VIRTIO_SCSI_T_AN_QUERY || type == VIRTIO_SCSI_T_AN_SUBSCRIBE		2	0		||			
+ANR	122	EqualityExpression	type == VIRTIO_SCSI_T_AN_QUERY		2	0		==			
+ANR	123	Identifier	type		2	0					
+ANR	124	Identifier	VIRTIO_SCSI_T_AN_QUERY		2	1					
+ANR	125	EqualityExpression	type == VIRTIO_SCSI_T_AN_SUBSCRIBE		2	1		==			
+ANR	126	Identifier	type		2	0					
+ANR	127	Identifier	VIRTIO_SCSI_T_AN_SUBSCRIBE		2	1					
+ANR	128	CompoundStatement		22:51:653:653	2	1					
+ANR	129	IfStatement	"if ( virtio_scsi_parse_req ( req , sizeof ( VirtIOSCSICtrlANReq ) , sizeof ( VirtIOSCSICtrlANResp ) ) < 0 )"		2	0					
+ANR	130	Condition	"virtio_scsi_parse_req ( req , sizeof ( VirtIOSCSICtrlANReq ) , sizeof ( VirtIOSCSICtrlANResp ) ) < 0"	24:12:736:844	2	0	True				
+ANR	131	RelationalExpression	"virtio_scsi_parse_req ( req , sizeof ( VirtIOSCSICtrlANReq ) , sizeof ( VirtIOSCSICtrlANResp ) ) < 0"		2	0		<			
+ANR	132	CallExpression	"virtio_scsi_parse_req ( req , sizeof ( VirtIOSCSICtrlANReq ) , sizeof ( VirtIOSCSICtrlANResp ) )"		2	0					
+ANR	133	Callee	virtio_scsi_parse_req		2	0					
+ANR	134	Identifier	virtio_scsi_parse_req		2	0					
+ANR	135	ArgumentList	req		2	1					
+ANR	136	Argument	req		2	0					
+ANR	137	Identifier	req		2	0					
+ANR	138	Argument	sizeof ( VirtIOSCSICtrlANReq )		2	1					
+ANR	139	SizeofExpression	sizeof ( VirtIOSCSICtrlANReq )		2	0					
+ANR	140	Sizeof	sizeof		2	0					
+ANR	141	SizeofOperand	VirtIOSCSICtrlANReq		2	1					
+ANR	142	Argument	sizeof ( VirtIOSCSICtrlANResp )		2	2					
+ANR	143	SizeofExpression	sizeof ( VirtIOSCSICtrlANResp )		2	0					
+ANR	144	Sizeof	sizeof		2	0					
+ANR	145	SizeofOperand	VirtIOSCSICtrlANResp		2	1					
+ANR	146	PrimaryExpression	0		2	1					
+ANR	147	CompoundStatement		24:55:778:778	2	1					
+ANR	148	ExpressionStatement	virtio_scsi_bad_req ( )	26:12:861:882	2	0	True				
+ANR	149	CallExpression	virtio_scsi_bad_req ( )		2	0					
+ANR	150	Callee	virtio_scsi_bad_req		2	0					
+ANR	151	Identifier	virtio_scsi_bad_req		2	0					
+ANR	152	ArgumentList			2	1					
+ANR	153	ElseStatement	else		2	0					
+ANR	154	CompoundStatement		26:15:830:830	2	0					
+ANR	155	ExpressionStatement	req -> resp . an . event_actual = 0	28:12:913:942	2	0	True				
+ANR	156	AssignmentExpression	req -> resp . an . event_actual = 0		2	0		=			
+ANR	157	MemberAccess	req -> resp . an . event_actual		2	0					
+ANR	158	MemberAccess	req -> resp . an		2	0					
+ANR	159	PtrMemberAccess	req -> resp		2	0					
+ANR	160	Identifier	req		2	0					
+ANR	161	Identifier	resp		2	1					
+ANR	162	Identifier	an		2	1					
+ANR	163	Identifier	event_actual		2	1					
+ANR	164	PrimaryExpression	0		2	1					
+ANR	165	ExpressionStatement	req -> resp . an . response = VIRTIO_SCSI_S_OK	29:12:956:996	2	1	True				
+ANR	166	AssignmentExpression	req -> resp . an . response = VIRTIO_SCSI_S_OK		2	0		=			
+ANR	167	MemberAccess	req -> resp . an . response		2	0					
+ANR	168	MemberAccess	req -> resp . an		2	0					
+ANR	169	PtrMemberAccess	req -> resp		2	0					
+ANR	170	Identifier	req		2	0					
+ANR	171	Identifier	resp		2	1					
+ANR	172	Identifier	an		2	1					
+ANR	173	Identifier	response		2	1					
+ANR	174	Identifier	VIRTIO_SCSI_S_OK		2	1					
+ANR	175	IfStatement	if ( r == 0 )		2	6					
+ANR	176	Condition	r == 0	32:8:1022:1027	2	0	True				
+ANR	177	EqualityExpression	r == 0		2	0		==			
+ANR	178	Identifier	r		2	0					
+ANR	179	PrimaryExpression	0		2	1					
+ANR	180	CompoundStatement		31:16:961:961	2	1					
+ANR	181	ExpressionStatement	virtio_scsi_complete_req ( req )	33:8:1040:1069	2	0	True				
+ANR	182	CallExpression	virtio_scsi_complete_req ( req )		2	0					
+ANR	183	Callee	virtio_scsi_complete_req		2	0					
+ANR	184	Identifier	virtio_scsi_complete_req		2	0					
+ANR	185	ArgumentList	req		2	1					
+ANR	186	Argument	req		2	0					
+ANR	187	Identifier	req		2	0					
+ANR	188	ElseStatement	else		2	0					
+ANR	189	CompoundStatement		33:11:1013:1013	2	0					
+ANR	190	ExpressionStatement	assert ( r == - EINPROGRESS )	35:8:1092:1117	2	0	True				
+ANR	191	CallExpression	assert ( r == - EINPROGRESS )		2	0					
+ANR	192	Callee	assert		2	0					
+ANR	193	Identifier	assert		2	0					
+ANR	194	ArgumentList	r == - EINPROGRESS		2	1					
+ANR	195	Argument	r == - EINPROGRESS		2	0					
+ANR	196	EqualityExpression	r == - EINPROGRESS		2	0		==			
+ANR	197	Identifier	r		2	0					
+ANR	198	UnaryOperationExpression	- EINPROGRESS		2	1					
+ANR	199	UnaryOperator	-		2	0					
+ANR	200	Identifier	EINPROGRESS		2	1					
+ANR	201	ReturnType	void		2	1					
+ANR	202	Identifier	virtio_scsi_handle_ctrl_req		2	2					
+ANR	203	ParameterList	"VirtIOSCSI * s , VirtIOSCSIReq * req"		2	3					
+ANR	204	Parameter	VirtIOSCSI * s	1:33:33:45	2	0	True				
+ANR	205	ParameterType	VirtIOSCSI *		2	0					
+ANR	206	Identifier	s		2	1					
+ANR	207	Parameter	VirtIOSCSIReq * req	1:48:48:65	2	1	True				
+ANR	208	ParameterType	VirtIOSCSIReq *		2	0					
+ANR	209	Identifier	req		2	1					
+ANR	210	CFGEntryNode	ENTRY		2		True				
+ANR	211	CFGExitNode	EXIT		2		True				
+ANR	212	Symbol	VIRTIO_SCSI_T_TMF		2						
+ANR	213	Symbol	virtio_scsi_parse_req		2						
+ANR	214	Symbol	& type		2						
+ANR	215	Symbol	vdev		2						
+ANR	216	Symbol	* req		2						
+ANR	217	Symbol	req -> resp . an		2						
+ANR	218	Symbol	type		2						
+ANR	219	Symbol	req -> resp . an . event_actual		2						
+ANR	220	Symbol	req -> elem . out_sg		2						
+ANR	221	Symbol	r		2						
+ANR	222	Symbol	s		2						
+ANR	223	Symbol	req -> elem . out_num		2						
+ANR	224	Symbol	VIRTIO_SCSI_S_OK		2						
+ANR	225	Symbol	req -> resp . an . response		2						
+ANR	226	Symbol	req -> resp		2						
+ANR	227	Symbol	VIRTIO_SCSI_T_AN_SUBSCRIBE		2						
+ANR	228	Symbol	virtio_scsi_do_tmf		2						
+ANR	229	Symbol	VIRTIO_SCSI_T_AN_QUERY		2						
+ANR	230	Symbol	EINPROGRESS		2						
+ANR	231	Symbol	req		2						
+ANR	232	Symbol	req -> elem		2						
+ANR	233	Symbol	iov_to_buf		2						

@@ -1,0 +1,70 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1130	File	tmp/qemu_7d1b0095_390.c								
+ANR	1131	Function	gen_exception_return	1:0:0:217							
+ANR	1132	FunctionDef	"gen_exception_return (DisasContext * s , TCGv pc)"		1131	0					
+ANR	1133	CompoundStatement		2:0:59:217	1131	0					
+ANR	1134	IdentifierDeclStatement	TCGv tmp ;	3:4:65:73	1131	0	True				
+ANR	1135	IdentifierDecl	tmp		1131	0					
+ANR	1136	IdentifierDeclType	TCGv		1131	0					
+ANR	1137	Identifier	tmp		1131	1					
+ANR	1138	ExpressionStatement	"store_reg ( s , 15 , pc )"	4:4:79:99	1131	1	True				
+ANR	1139	CallExpression	"store_reg ( s , 15 , pc )"		1131	0					
+ANR	1140	Callee	store_reg		1131	0					
+ANR	1141	Identifier	store_reg		1131	0					
+ANR	1142	ArgumentList	s		1131	1					
+ANR	1143	Argument	s		1131	0					
+ANR	1144	Identifier	s		1131	0					
+ANR	1145	Argument	15		1131	1					
+ANR	1146	PrimaryExpression	15		1131	0					
+ANR	1147	Argument	pc		1131	2					
+ANR	1148	Identifier	pc		1131	0					
+ANR	1149	ExpressionStatement	tmp = load_cpu_field ( spsr )	5:4:105:131	1131	2	True				
+ANR	1150	AssignmentExpression	tmp = load_cpu_field ( spsr )		1131	0		=			
+ANR	1151	Identifier	tmp		1131	0					
+ANR	1152	CallExpression	load_cpu_field ( spsr )		1131	1					
+ANR	1153	Callee	load_cpu_field		1131	0					
+ANR	1154	Identifier	load_cpu_field		1131	0					
+ANR	1155	ArgumentList	spsr		1131	1					
+ANR	1156	Argument	spsr		1131	0					
+ANR	1157	Identifier	spsr		1131	0					
+ANR	1158	ExpressionStatement	"gen_set_cpsr ( tmp , 0xffffffff )"	6:4:137:166	1131	3	True				
+ANR	1159	CallExpression	"gen_set_cpsr ( tmp , 0xffffffff )"		1131	0					
+ANR	1160	Callee	gen_set_cpsr		1131	0					
+ANR	1161	Identifier	gen_set_cpsr		1131	0					
+ANR	1162	ArgumentList	tmp		1131	1					
+ANR	1163	Argument	tmp		1131	0					
+ANR	1164	Identifier	tmp		1131	0					
+ANR	1165	Argument	0xffffffff		1131	1					
+ANR	1166	PrimaryExpression	0xffffffff		1131	0					
+ANR	1167	ExpressionStatement	dead_tmp ( tmp )	7:4:172:185	1131	4	True				
+ANR	1168	CallExpression	dead_tmp ( tmp )		1131	0					
+ANR	1169	Callee	dead_tmp		1131	0					
+ANR	1170	Identifier	dead_tmp		1131	0					
+ANR	1171	ArgumentList	tmp		1131	1					
+ANR	1172	Argument	tmp		1131	0					
+ANR	1173	Identifier	tmp		1131	0					
+ANR	1174	ExpressionStatement	s -> is_jmp = DISAS_UPDATE	8:4:191:215	1131	5	True				
+ANR	1175	AssignmentExpression	s -> is_jmp = DISAS_UPDATE		1131	0		=			
+ANR	1176	PtrMemberAccess	s -> is_jmp		1131	0					
+ANR	1177	Identifier	s		1131	0					
+ANR	1178	Identifier	is_jmp		1131	1					
+ANR	1179	Identifier	DISAS_UPDATE		1131	1					
+ANR	1180	ReturnType	static void		1131	1					
+ANR	1181	Identifier	gen_exception_return		1131	2					
+ANR	1182	ParameterList	"DisasContext * s , TCGv pc"		1131	3					
+ANR	1183	Parameter	DisasContext * s	1:33:33:47	1131	0	True				
+ANR	1184	ParameterType	DisasContext *		1131	0					
+ANR	1185	Identifier	s		1131	1					
+ANR	1186	Parameter	TCGv pc	1:50:50:56	1131	1	True				
+ANR	1187	ParameterType	TCGv		1131	0					
+ANR	1188	Identifier	pc		1131	1					
+ANR	1189	CFGEntryNode	ENTRY		1131		True				
+ANR	1190	CFGExitNode	EXIT		1131		True				
+ANR	1191	Symbol	s		1131						
+ANR	1192	Symbol	pc		1131						
+ANR	1193	Symbol	DISAS_UPDATE		1131						
+ANR	1194	Symbol	tmp		1131						
+ANR	1195	Symbol	spsr		1131						
+ANR	1196	Symbol	s -> is_jmp		1131						
+ANR	1197	Symbol	* s		1131						
+ANR	1198	Symbol	load_cpu_field		1131						

@@ -1,0 +1,128 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/FFmpeg_3359246d_22054.c								
+ANR	2	Function	mxf_read_seek	1:0:0:468							
+ANR	3	FunctionDef	"mxf_read_seek (AVFormatContext * s , int stream_index , int64_t sample_time , int flags)"		2	0					
+ANR	4	CompoundStatement		2:0:95:468	2	0					
+ANR	5	IdentifierDeclStatement	AVStream * st = s -> streams [ stream_index ] ;	3:4:101:140	2	0	True				
+ANR	6	IdentifierDecl	* st = s -> streams [ stream_index ]		2	0					
+ANR	7	IdentifierDeclType	AVStream *		2	0					
+ANR	8	Identifier	st		2	1					
+ANR	9	AssignmentExpression	* st = s -> streams [ stream_index ]		2	2		=			
+ANR	10	Identifier	st		2	0					
+ANR	11	ArrayIndexing	s -> streams [ stream_index ]		2	1					
+ANR	12	PtrMemberAccess	s -> streams		2	0					
+ANR	13	Identifier	s		2	0					
+ANR	14	Identifier	streams		2	1					
+ANR	15	Identifier	stream_index		2	1					
+ANR	16	IdentifierDeclStatement	int64_t seconds ;	4:4:146:161	2	1	True				
+ANR	17	IdentifierDecl	seconds		2	0					
+ANR	18	IdentifierDeclType	int64_t		2	0					
+ANR	19	Identifier	seconds		2	1					
+ANR	20	IfStatement	if ( ! s -> bit_rate )		2	2					
+ANR	21	Condition	! s -> bit_rate	6:8:172:183	2	0	True				
+ANR	22	UnaryOperationExpression	! s -> bit_rate		2	0					
+ANR	23	UnaryOperator	!		2	0					
+ANR	24	PtrMemberAccess	s -> bit_rate		2	1					
+ANR	25	Identifier	s		2	0					
+ANR	26	Identifier	bit_rate		2	1					
+ANR	27	ReturnStatement	return AVERROR_INVALIDDATA ;	7:8:194:220	2	1	True				
+ANR	28	Identifier	AVERROR_INVALIDDATA		2	0					
+ANR	29	IfStatement	if ( sample_time < 0 )		2	3					
+ANR	30	Condition	sample_time < 0	8:8:230:244	2	0	True				
+ANR	31	RelationalExpression	sample_time < 0		2	0		<			
+ANR	32	Identifier	sample_time		2	0					
+ANR	33	PrimaryExpression	0		2	1					
+ANR	34	ExpressionStatement	sample_time = 0	9:8:255:270	2	1	True				
+ANR	35	AssignmentExpression	sample_time = 0		2	0		=			
+ANR	36	Identifier	sample_time		2	0					
+ANR	37	PrimaryExpression	0		2	1					
+ANR	38	ExpressionStatement	"seconds = av_rescale ( sample_time , st -> time_base . num , st -> time_base . den )"	10:4:276:347	2	4	True				
+ANR	39	AssignmentExpression	"seconds = av_rescale ( sample_time , st -> time_base . num , st -> time_base . den )"		2	0		=			
+ANR	40	Identifier	seconds		2	0					
+ANR	41	CallExpression	"av_rescale ( sample_time , st -> time_base . num , st -> time_base . den )"		2	1					
+ANR	42	Callee	av_rescale		2	0					
+ANR	43	Identifier	av_rescale		2	0					
+ANR	44	ArgumentList	sample_time		2	1					
+ANR	45	Argument	sample_time		2	0					
+ANR	46	Identifier	sample_time		2	0					
+ANR	47	Argument	st -> time_base . num		2	1					
+ANR	48	MemberAccess	st -> time_base . num		2	0					
+ANR	49	PtrMemberAccess	st -> time_base		2	0					
+ANR	50	Identifier	st		2	0					
+ANR	51	Identifier	time_base		2	1					
+ANR	52	Identifier	num		2	1					
+ANR	53	Argument	st -> time_base . den		2	2					
+ANR	54	MemberAccess	st -> time_base . den		2	0					
+ANR	55	PtrMemberAccess	st -> time_base		2	0					
+ANR	56	Identifier	st		2	0					
+ANR	57	Identifier	time_base		2	1					
+ANR	58	Identifier	den		2	1					
+ANR	59	ExpressionStatement	"avio_seek ( s -> pb , ( s -> bit_rate * seconds ) >> 3 , SEEK_SET )"	11:4:353:409	2	5	True				
+ANR	60	CallExpression	"avio_seek ( s -> pb , ( s -> bit_rate * seconds ) >> 3 , SEEK_SET )"		2	0					
+ANR	61	Callee	avio_seek		2	0					
+ANR	62	Identifier	avio_seek		2	0					
+ANR	63	ArgumentList	s -> pb		2	1					
+ANR	64	Argument	s -> pb		2	0					
+ANR	65	PtrMemberAccess	s -> pb		2	0					
+ANR	66	Identifier	s		2	0					
+ANR	67	Identifier	pb		2	1					
+ANR	68	Argument	( s -> bit_rate * seconds ) >> 3		2	1					
+ANR	69	ShiftExpression	( s -> bit_rate * seconds ) >> 3		2	0		>>			
+ANR	70	MultiplicativeExpression	s -> bit_rate * seconds		2	0		*			
+ANR	71	PtrMemberAccess	s -> bit_rate		2	0					
+ANR	72	Identifier	s		2	0					
+ANR	73	Identifier	bit_rate		2	1					
+ANR	74	Identifier	seconds		2	1					
+ANR	75	PrimaryExpression	3		2	1					
+ANR	76	Argument	SEEK_SET		2	2					
+ANR	77	Identifier	SEEK_SET		2	0					
+ANR	78	ExpressionStatement	"ff_update_cur_dts ( s , st , sample_time )"	12:4:415:452	2	6	True				
+ANR	79	CallExpression	"ff_update_cur_dts ( s , st , sample_time )"		2	0					
+ANR	80	Callee	ff_update_cur_dts		2	0					
+ANR	81	Identifier	ff_update_cur_dts		2	0					
+ANR	82	ArgumentList	s		2	1					
+ANR	83	Argument	s		2	0					
+ANR	84	Identifier	s		2	0					
+ANR	85	Argument	st		2	1					
+ANR	86	Identifier	st		2	0					
+ANR	87	Argument	sample_time		2	2					
+ANR	88	Identifier	sample_time		2	0					
+ANR	89	ReturnStatement	return 0 ;	13:4:458:466	2	7	True				
+ANR	90	PrimaryExpression	0		2	0					
+ANR	91	ReturnType	static int		2	1					
+ANR	92	Identifier	mxf_read_seek		2	2					
+ANR	93	ParameterList	"AVFormatContext * s , int stream_index , int64_t sample_time , int flags"		2	3					
+ANR	94	Parameter	AVFormatContext * s	1:25:25:42	2	0	True				
+ANR	95	ParameterType	AVFormatContext *		2	0					
+ANR	96	Identifier	s		2	1					
+ANR	97	Parameter	int stream_index	1:45:45:60	2	1	True				
+ANR	98	ParameterType	int		2	0					
+ANR	99	Identifier	stream_index		2	1					
+ANR	100	Parameter	int64_t sample_time	1:63:63:81	2	2	True				
+ANR	101	ParameterType	int64_t		2	0					
+ANR	102	Identifier	sample_time		2	1					
+ANR	103	Parameter	int flags	1:84:84:92	2	3	True				
+ANR	104	ParameterType	int		2	0					
+ANR	105	Identifier	flags		2	1					
+ANR	106	CFGEntryNode	ENTRY		2		True				
+ANR	107	CFGExitNode	EXIT		2		True				
+ANR	108	Symbol	stream_index		2						
+ANR	109	Symbol	sample_time		2						
+ANR	110	Symbol	SEEK_SET		2						
+ANR	111	Symbol	st		2						
+ANR	112	Symbol	* st		2						
+ANR	113	Symbol	flags		2						
+ANR	114	Symbol	s -> streams		2						
+ANR	115	Symbol	s -> bit_rate		2						
+ANR	116	Symbol	s -> pb		2						
+ANR	117	Symbol	st -> time_base		2						
+ANR	118	Symbol	seconds		2						
+ANR	119	Symbol	s		2						
+ANR	120	Symbol	st -> time_base . den		2						
+ANR	121	Symbol	* * s		2						
+ANR	122	Symbol	* s -> streams		2						
+ANR	123	Symbol	AVERROR_INVALIDDATA		2						
+ANR	124	Symbol	av_rescale		2						
+ANR	125	Symbol	* s		2						
+ANR	126	Symbol	* stream_index		2						
+ANR	127	Symbol	st -> time_base . num		2						

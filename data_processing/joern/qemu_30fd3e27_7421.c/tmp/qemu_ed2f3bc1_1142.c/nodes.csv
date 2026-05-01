@@ -1,0 +1,123 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1954	File	tmp/qemu_ed2f3bc1_1142.c								
+ANR	1955	Function	rom_add_file	1:0:0:2470							
+ANR	1956	FunctionDef	"rom_add_file (const char * file , const char * fw_dir , hwaddr addr , int32_t bootindex , bool option_rom , MemoryRegion * mr)"		1955	0					
+ANR	1957	CompoundStatement		4:0:156:2470	1955	0					
+ANR	1958	IdentifierDeclStatement	MachineClass * mc = MACHINE_GET_CLASS ( qdev_get_machine ( ) ) ;	5:4:162:218	1955	0	True				
+ANR	1959	IdentifierDecl	* mc = MACHINE_GET_CLASS ( qdev_get_machine ( ) )		1955	0					
+ANR	1960	IdentifierDeclType	MachineClass *		1955	0					
+ANR	1961	Identifier	mc		1955	1					
+ANR	1962	AssignmentExpression	* mc = MACHINE_GET_CLASS ( qdev_get_machine ( ) )		1955	2		=			
+ANR	1963	Identifier	mc		1955	0					
+ANR	1964	CallExpression	MACHINE_GET_CLASS ( qdev_get_machine ( ) )		1955	1					
+ANR	1965	Callee	MACHINE_GET_CLASS		1955	0					
+ANR	1966	Identifier	MACHINE_GET_CLASS		1955	0					
+ANR	1967	ArgumentList	qdev_get_machine ( )		1955	1					
+ANR	1968	Argument	qdev_get_machine ( )		1955	0					
+ANR	1969	CallExpression	qdev_get_machine ( )		1955	0					
+ANR	1970	Callee	qdev_get_machine		1955	0					
+ANR	1971	Identifier	qdev_get_machine		1955	0					
+ANR	1972	ArgumentList			1955	1					
+ANR	1973	IdentifierDeclStatement	Rom * rom ;	6:4:224:232	1955	1	True				
+ANR	1974	IdentifierDecl	* rom		1955	0					
+ANR	1975	IdentifierDeclType	Rom *		1955	0					
+ANR	1976	Identifier	rom		1955	1					
+ANR	1977	IdentifierDeclStatement	"int rc , fd = - 1 ;"	7:4:238:253	1955	2	True				
+ANR	1978	IdentifierDecl	rc		1955	0					
+ANR	1979	IdentifierDeclType	int		1955	0					
+ANR	1980	Identifier	rc		1955	1					
+ANR	1981	IdentifierDecl	fd = - 1		1955	1					
+ANR	1982	IdentifierDeclType	int		1955	0					
+ANR	1983	Identifier	fd		1955	1					
+ANR	1984	AssignmentExpression	fd = - 1		1955	2		=			
+ANR	1985	Identifier	fd		1955	0					
+ANR	1986	UnaryOperationExpression	- 1		1955	1					
+ANR	1987	UnaryOperator	-		1955	0					
+ANR	1988	PrimaryExpression	1		1955	1					
+ANR	1989	IdentifierDeclStatement	char devpath [ 100 ] ;	8:4:259:276	1955	3	True				
+ANR	1990	IdentifierDecl	devpath [ 100 ]		1955	0					
+ANR	1991	IdentifierDeclType	char [ 100 ]		1955	0					
+ANR	1992	Identifier	devpath		1955	1					
+ANR	1993	PrimaryExpression	100		1955	2					
+ANR	1994	ExpressionStatement	rom = g_malloc0 ( sizeof ( * rom ) )	9:4:282:311	1955	4	True				
+ANR	1995	AssignmentExpression	rom = g_malloc0 ( sizeof ( * rom ) )		1955	0		=			
+ANR	1996	Identifier	rom		1955	0					
+ANR	1997	CallExpression	g_malloc0 ( sizeof ( * rom ) )		1955	1					
+ANR	1998	Callee	g_malloc0		1955	0					
+ANR	1999	Identifier	g_malloc0		1955	0					
+ANR	2000	ArgumentList	sizeof ( * rom )		1955	1					
+ANR	2001	Argument	sizeof ( * rom )		1955	0					
+ANR	2002	SizeofExpression	sizeof ( * rom )		1955	0					
+ANR	2003	Sizeof	sizeof		1955	0					
+ANR	2004	UnaryOperationExpression	* rom		1955	1					
+ANR	2005	UnaryOperator	*		1955	0					
+ANR	2006	Identifier	rom		1955	1					
+ANR	2007	ExpressionStatement	rom -> name = g_strdup ( file )	10:4:317:343	1955	5	True				
+ANR	2008	AssignmentExpression	rom -> name = g_strdup ( file )		1955	0		=			
+ANR	2009	PtrMemberAccess	rom -> name		1955	0					
+ANR	2010	Identifier	rom		1955	0					
+ANR	2011	Identifier	name		1955	1					
+ANR	2012	CallExpression	g_strdup ( file )		1955	1					
+ANR	2013	Callee	g_strdup		1955	0					
+ANR	2014	Identifier	g_strdup		1955	0					
+ANR	2015	ArgumentList	file		1955	1					
+ANR	2016	Argument	file		1955	0					
+ANR	2017	Identifier	file		1955	0					
+ANR	2018	ExpressionStatement	"rom -> path = qemu_find_file ( QEMU_FILE_TYPE_BIOS , rom -> name )"	11:4:349:407	1955	6	True				
+ANR	2019	AssignmentExpression	"rom -> path = qemu_find_file ( QEMU_FILE_TYPE_BIOS , rom -> name )"		1955	0		=			
+ANR	2020	PtrMemberAccess	rom -> path		1955	0					
+ANR	2021	Identifier	rom		1955	0					
+ANR	2022	Identifier	path		1955	1					
+ANR	2023	CallExpression	"qemu_find_file ( QEMU_FILE_TYPE_BIOS , rom -> name )"		1955	1					
+ANR	2024	Callee	qemu_find_file		1955	0					
+ANR	2025	Identifier	qemu_find_file		1955	0					
+ANR	2026	ArgumentList	QEMU_FILE_TYPE_BIOS		1955	1					
+ANR	2027	Argument	QEMU_FILE_TYPE_BIOS		1955	0					
+ANR	2028	Identifier	QEMU_FILE_TYPE_BIOS		1955	0					
+ANR	2029	Argument	rom -> name		1955	1					
+ANR	2030	PtrMemberAccess	rom -> name		1955	0					
+ANR	2031	Identifier	rom		1955	0					
+ANR	2032	Identifier	name		1955	1					
+ANR	2033	ReturnType	int		1955	1					
+ANR	2034	Identifier	rom_add_file		1955	2					
+ANR	2035	ParameterList	"const char * file , const char * fw_dir , hwaddr addr , int32_t bootindex , bool option_rom , MemoryRegion * mr"		1955	3					
+ANR	2036	Parameter	const char * file	1:17:17:32	1955	0	True				
+ANR	2037	ParameterType	const char *		1955	0					
+ANR	2038	Identifier	file		1955	1					
+ANR	2039	Parameter	const char * fw_dir	1:35:35:52	1955	1	True				
+ANR	2040	ParameterType	const char *		1955	0					
+ANR	2041	Identifier	fw_dir		1955	1					
+ANR	2042	Parameter	hwaddr addr	2:17:72:82	1955	2	True				
+ANR	2043	ParameterType	hwaddr		1955	0					
+ANR	2044	Identifier	addr		1955	1					
+ANR	2045	Parameter	int32_t bootindex	2:30:85:101	1955	3	True				
+ANR	2046	ParameterType	int32_t		1955	0					
+ANR	2047	Identifier	bootindex		1955	1					
+ANR	2048	Parameter	bool option_rom	3:17:121:135	1955	4	True				
+ANR	2049	ParameterType	bool		1955	0					
+ANR	2050	Identifier	option_rom		1955	1					
+ANR	2051	Parameter	MemoryRegion * mr	3:34:138:153	1955	5	True				
+ANR	2052	ParameterType	MemoryRegion *		1955	0					
+ANR	2053	Identifier	mr		1955	1					
+ANR	2054	CFGEntryNode	ENTRY		1955		True				
+ANR	2055	CFGExitNode	EXIT		1955		True				
+ANR	2056	Symbol	devpath		1955						
+ANR	2057	Symbol	qemu_find_file		1955						
+ANR	2058	Symbol	option_rom		1955						
+ANR	2059	Symbol	mr		1955						
+ANR	2060	Symbol	qdev_get_machine		1955						
+ANR	2061	Symbol	QEMU_FILE_TYPE_BIOS		1955						
+ANR	2062	Symbol	MACHINE_GET_CLASS		1955						
+ANR	2063	Symbol	rom -> path		1955						
+ANR	2064	Symbol	rom		1955						
+ANR	2065	Symbol	rc		1955						
+ANR	2066	Symbol	file		1955						
+ANR	2067	Symbol	bootindex		1955						
+ANR	2068	Symbol	mc		1955						
+ANR	2069	Symbol	fw_dir		1955						
+ANR	2070	Symbol	g_strdup		1955						
+ANR	2071	Symbol	rom -> name		1955						
+ANR	2072	Symbol	* rom		1955						
+ANR	2073	Symbol	g_malloc0		1955						
+ANR	2074	Symbol	addr		1955						
+ANR	2075	Symbol	fd		1955						

@@ -1,0 +1,464 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	5849	File	tmp/qemu_ce137829_11094.c								
+ANR	5850	Function	commit_one_file	1:0:0:1534							
+ANR	5851	FunctionDef	"commit_one_file (BDRVVVFATState * s , int dir_index , uint32_t offset)"		5850	0					
+ANR	5852	CompoundStatement		3:0:79:1534	5850	0					
+ANR	5853	IdentifierDeclStatement	"direntry_t * direntry = array_get ( & ( s -> directory ) , dir_index ) ;"	4:4:85:145	5850	0	True				
+ANR	5854	IdentifierDecl	"* direntry = array_get ( & ( s -> directory ) , dir_index )"		5850	0					
+ANR	5855	IdentifierDeclType	direntry_t *		5850	0					
+ANR	5856	Identifier	direntry		5850	1					
+ANR	5857	AssignmentExpression	"* direntry = array_get ( & ( s -> directory ) , dir_index )"		5850	2		=			
+ANR	5858	Identifier	direntry		5850	0					
+ANR	5859	CallExpression	"array_get ( & ( s -> directory ) , dir_index )"		5850	1					
+ANR	5860	Callee	array_get		5850	0					
+ANR	5861	Identifier	array_get		5850	0					
+ANR	5862	ArgumentList	& ( s -> directory )		5850	1					
+ANR	5863	Argument	& ( s -> directory )		5850	0					
+ANR	5864	UnaryOperationExpression	& ( s -> directory )		5850	0					
+ANR	5865	UnaryOperator	&		5850	0					
+ANR	5866	PtrMemberAccess	s -> directory		5850	1					
+ANR	5867	Identifier	s		5850	0					
+ANR	5868	Identifier	directory		5850	1					
+ANR	5869	Argument	dir_index		5850	1					
+ANR	5870	Identifier	dir_index		5850	0					
+ANR	5871	IdentifierDeclStatement	uint32_t c = begin_of_direntry ( direntry ) ;	5:4:151:191	5850	1	True				
+ANR	5872	IdentifierDecl	c = begin_of_direntry ( direntry )		5850	0					
+ANR	5873	IdentifierDeclType	uint32_t		5850	0					
+ANR	5874	Identifier	c		5850	1					
+ANR	5875	AssignmentExpression	c = begin_of_direntry ( direntry )		5850	2		=			
+ANR	5876	Identifier	c		5850	0					
+ANR	5877	CallExpression	begin_of_direntry ( direntry )		5850	1					
+ANR	5878	Callee	begin_of_direntry		5850	0					
+ANR	5879	Identifier	begin_of_direntry		5850	0					
+ANR	5880	ArgumentList	direntry		5850	1					
+ANR	5881	Argument	direntry		5850	0					
+ANR	5882	Identifier	direntry		5850	0					
+ANR	5883	IdentifierDeclStatement	uint32_t first_cluster = c ;	6:4:197:223	5850	2	True				
+ANR	5884	IdentifierDecl	first_cluster = c		5850	0					
+ANR	5885	IdentifierDeclType	uint32_t		5850	0					
+ANR	5886	Identifier	first_cluster		5850	1					
+ANR	5887	AssignmentExpression	first_cluster = c		5850	2		=			
+ANR	5888	Identifier	c		5850	0					
+ANR	5889	Identifier	c		5850	1					
+ANR	5890	IdentifierDeclStatement	"mapping_t * mapping = find_mapping_for_cluster ( s , c ) ;"	7:4:229:280	5850	3	True				
+ANR	5891	IdentifierDecl	"* mapping = find_mapping_for_cluster ( s , c )"		5850	0					
+ANR	5892	IdentifierDeclType	mapping_t *		5850	0					
+ANR	5893	Identifier	mapping		5850	1					
+ANR	5894	AssignmentExpression	"* mapping = find_mapping_for_cluster ( s , c )"		5850	2		=			
+ANR	5895	Identifier	mapping		5850	0					
+ANR	5896	CallExpression	"find_mapping_for_cluster ( s , c )"		5850	1					
+ANR	5897	Callee	find_mapping_for_cluster		5850	0					
+ANR	5898	Identifier	find_mapping_for_cluster		5850	0					
+ANR	5899	ArgumentList	s		5850	1					
+ANR	5900	Argument	s		5850	0					
+ANR	5901	Identifier	s		5850	0					
+ANR	5902	Argument	c		5850	1					
+ANR	5903	Identifier	c		5850	0					
+ANR	5904	IdentifierDeclStatement	uint32_t size = filesize_of_direntry ( direntry ) ;	8:4:286:332	5850	4	True				
+ANR	5905	IdentifierDecl	size = filesize_of_direntry ( direntry )		5850	0					
+ANR	5906	IdentifierDeclType	uint32_t		5850	0					
+ANR	5907	Identifier	size		5850	1					
+ANR	5908	AssignmentExpression	size = filesize_of_direntry ( direntry )		5850	2		=			
+ANR	5909	Identifier	size		5850	0					
+ANR	5910	CallExpression	filesize_of_direntry ( direntry )		5850	1					
+ANR	5911	Callee	filesize_of_direntry		5850	0					
+ANR	5912	Identifier	filesize_of_direntry		5850	0					
+ANR	5913	ArgumentList	direntry		5850	1					
+ANR	5914	Argument	direntry		5850	0					
+ANR	5915	Identifier	direntry		5850	0					
+ANR	5916	IdentifierDeclStatement	char * cluster = g_malloc ( s -> cluster_size ) ;	9:4:338:379	5850	5	True				
+ANR	5917	IdentifierDecl	* cluster = g_malloc ( s -> cluster_size )		5850	0					
+ANR	5918	IdentifierDeclType	char *		5850	0					
+ANR	5919	Identifier	cluster		5850	1					
+ANR	5920	AssignmentExpression	* cluster = g_malloc ( s -> cluster_size )		5850	2		=			
+ANR	5921	Identifier	cluster		5850	0					
+ANR	5922	CallExpression	g_malloc ( s -> cluster_size )		5850	1					
+ANR	5923	Callee	g_malloc		5850	0					
+ANR	5924	Identifier	g_malloc		5850	0					
+ANR	5925	ArgumentList	s -> cluster_size		5850	1					
+ANR	5926	Argument	s -> cluster_size		5850	0					
+ANR	5927	PtrMemberAccess	s -> cluster_size		5850	0					
+ANR	5928	Identifier	s		5850	0					
+ANR	5929	Identifier	cluster_size		5850	1					
+ANR	5930	IdentifierDeclStatement	uint32_t i ;	10:4:385:395	5850	6	True				
+ANR	5931	IdentifierDecl	i		5850	0					
+ANR	5932	IdentifierDeclType	uint32_t		5850	0					
+ANR	5933	Identifier	i		5850	1					
+ANR	5934	IdentifierDeclStatement	int fd = 0 ;	11:4:401:411	5850	7	True				
+ANR	5935	IdentifierDecl	fd = 0		5850	0					
+ANR	5936	IdentifierDeclType	int		5850	0					
+ANR	5937	Identifier	fd		5850	1					
+ANR	5938	AssignmentExpression	fd = 0		5850	2		=			
+ANR	5939	Identifier	fd		5850	0					
+ANR	5940	PrimaryExpression	0		5850	1					
+ANR	5941	ExpressionStatement	assert ( offset < size )	13:4:418:439	5850	8	True				
+ANR	5942	CallExpression	assert ( offset < size )		5850	0					
+ANR	5943	Callee	assert		5850	0					
+ANR	5944	Identifier	assert		5850	0					
+ANR	5945	ArgumentList	offset < size		5850	1					
+ANR	5946	Argument	offset < size		5850	0					
+ANR	5947	RelationalExpression	offset < size		5850	0		<			
+ANR	5948	Identifier	offset		5850	0					
+ANR	5949	Identifier	size		5850	1					
+ANR	5950	ExpressionStatement	assert ( ( offset % s -> cluster_size ) == 0 )	14:4:445:484	5850	9	True				
+ANR	5951	CallExpression	assert ( ( offset % s -> cluster_size ) == 0 )		5850	0					
+ANR	5952	Callee	assert		5850	0					
+ANR	5953	Identifier	assert		5850	0					
+ANR	5954	ArgumentList	( offset % s -> cluster_size ) == 0		5850	1					
+ANR	5955	Argument	( offset % s -> cluster_size ) == 0		5850	0					
+ANR	5956	EqualityExpression	( offset % s -> cluster_size ) == 0		5850	0		==			
+ANR	5957	MultiplicativeExpression	offset % s -> cluster_size		5850	0		%			
+ANR	5958	Identifier	offset		5850	0					
+ANR	5959	PtrMemberAccess	s -> cluster_size		5850	1					
+ANR	5960	Identifier	s		5850	0					
+ANR	5961	Identifier	cluster_size		5850	1					
+ANR	5962	PrimaryExpression	0		5850	1					
+ANR	5963	ForStatement	for ( i = s -> cluster_size ; i < offset ; i += s -> cluster_size )		5850	10					
+ANR	5964	ForInit	i = s -> cluster_size ;	16:9:496:515	5850	0	True				
+ANR	5965	AssignmentExpression	i = s -> cluster_size		5850	0		=			
+ANR	5966	Identifier	i		5850	0					
+ANR	5967	PtrMemberAccess	s -> cluster_size		5850	1					
+ANR	5968	Identifier	s		5850	0					
+ANR	5969	Identifier	cluster_size		5850	1					
+ANR	5970	Condition	i < offset	16:30:517:526	5850	1	True				
+ANR	5971	RelationalExpression	i < offset		5850	0		<			
+ANR	5972	Identifier	i		5850	0					
+ANR	5973	Identifier	offset		5850	1					
+ANR	5974	AssignmentExpression	i += s -> cluster_size	16:42:529:548	5850	2	True	+=			
+ANR	5975	Identifier	i		5850	0					
+ANR	5976	PtrMemberAccess	s -> cluster_size		5850	1					
+ANR	5977	Identifier	s		5850	0					
+ANR	5978	Identifier	cluster_size		5850	1					
+ANR	5979	ExpressionStatement	"c = modified_fat_get ( s , c )"	17:1:552:578	5850	3	True				
+ANR	5980	AssignmentExpression	"c = modified_fat_get ( s , c )"		5850	0		=			
+ANR	5981	Identifier	c		5850	0					
+ANR	5982	CallExpression	"modified_fat_get ( s , c )"		5850	1					
+ANR	5983	Callee	modified_fat_get		5850	0					
+ANR	5984	Identifier	modified_fat_get		5850	0					
+ANR	5985	ArgumentList	s		5850	1					
+ANR	5986	Argument	s		5850	0					
+ANR	5987	Identifier	s		5850	0					
+ANR	5988	Argument	c		5850	1					
+ANR	5989	Identifier	c		5850	0					
+ANR	5990	ExpressionStatement	"fd = open ( mapping -> path , O_RDWR | O_CREAT | O_BINARY , 0666 )"	19:4:585:644	5850	11	True				
+ANR	5991	AssignmentExpression	"fd = open ( mapping -> path , O_RDWR | O_CREAT | O_BINARY , 0666 )"		5850	0		=			
+ANR	5992	Identifier	fd		5850	0					
+ANR	5993	CallExpression	"open ( mapping -> path , O_RDWR | O_CREAT | O_BINARY , 0666 )"		5850	1					
+ANR	5994	Callee	open		5850	0					
+ANR	5995	Identifier	open		5850	0					
+ANR	5996	ArgumentList	mapping -> path		5850	1					
+ANR	5997	Argument	mapping -> path		5850	0					
+ANR	5998	PtrMemberAccess	mapping -> path		5850	0					
+ANR	5999	Identifier	mapping		5850	0					
+ANR	6000	Identifier	path		5850	1					
+ANR	6001	Argument	O_RDWR | O_CREAT | O_BINARY		5850	1					
+ANR	6002	InclusiveOrExpression	O_RDWR | O_CREAT | O_BINARY		5850	0		|			
+ANR	6003	Identifier	O_RDWR		5850	0					
+ANR	6004	InclusiveOrExpression	O_CREAT | O_BINARY		5850	1		|			
+ANR	6005	Identifier	O_CREAT		5850	0					
+ANR	6006	Identifier	O_BINARY		5850	1					
+ANR	6007	Argument	0666		5850	2					
+ANR	6008	PrimaryExpression	0666		5850	0					
+ANR	6009	IfStatement	if ( fd < 0 )		5850	12					
+ANR	6010	Condition	fd < 0	20:8:654:659	5850	0	True				
+ANR	6011	RelationalExpression	fd < 0		5850	0		<			
+ANR	6012	Identifier	fd		5850	0					
+ANR	6013	PrimaryExpression	0		5850	1					
+ANR	6014	CompoundStatement		18:16:582:582	5850	1					
+ANR	6015	ExpressionStatement	"fprintf ( stderr , ""Could not open %s... (%s, %d)\\n"" , mapping -> path , strerror ( errno ) , errno )"	21:1:665:756	5850	0	True				
+ANR	6016	CallExpression	"fprintf ( stderr , ""Could not open %s... (%s, %d)\\n"" , mapping -> path , strerror ( errno ) , errno )"		5850	0					
+ANR	6017	Callee	fprintf		5850	0					
+ANR	6018	Identifier	fprintf		5850	0					
+ANR	6019	ArgumentList	stderr		5850	1					
+ANR	6020	Argument	stderr		5850	0					
+ANR	6021	Identifier	stderr		5850	0					
+ANR	6022	Argument	"""Could not open %s... (%s, %d)\\n"""		5850	1					
+ANR	6023	PrimaryExpression	"""Could not open %s... (%s, %d)\\n"""		5850	0					
+ANR	6024	Argument	mapping -> path		5850	2					
+ANR	6025	PtrMemberAccess	mapping -> path		5850	0					
+ANR	6026	Identifier	mapping		5850	0					
+ANR	6027	Identifier	path		5850	1					
+ANR	6028	Argument	strerror ( errno )		5850	3					
+ANR	6029	CallExpression	strerror ( errno )		5850	0					
+ANR	6030	Callee	strerror		5850	0					
+ANR	6031	Identifier	strerror		5850	0					
+ANR	6032	ArgumentList	errno		5850	1					
+ANR	6033	Argument	errno		5850	0					
+ANR	6034	Identifier	errno		5850	0					
+ANR	6035	Argument	errno		5850	4					
+ANR	6036	Identifier	errno		5850	0					
+ANR	6037	ReturnStatement	return fd ;	23:1:759:768	5850	1	True				
+ANR	6038	Identifier	fd		5850	0					
+ANR	6039	IfStatement	if ( offset > 0 )		5850	13					
+ANR	6040	Condition	offset > 0	25:8:784:793	5850	0	True				
+ANR	6041	RelationalExpression	offset > 0		5850	0		>			
+ANR	6042	Identifier	offset		5850	0					
+ANR	6043	PrimaryExpression	0		5850	1					
+ANR	6044	IfStatement	"if ( lseek ( fd , offset , SEEK_SET ) != offset )"		5850	1					
+ANR	6045	Condition	"lseek ( fd , offset , SEEK_SET ) != offset"	26:5:801:837	5850	0	True				
+ANR	6046	EqualityExpression	"lseek ( fd , offset , SEEK_SET ) != offset"		5850	0		!=			
+ANR	6047	CallExpression	"lseek ( fd , offset , SEEK_SET )"		5850	0					
+ANR	6048	Callee	lseek		5850	0					
+ANR	6049	Identifier	lseek		5850	0					
+ANR	6050	ArgumentList	fd		5850	1					
+ANR	6051	Argument	fd		5850	0					
+ANR	6052	Identifier	fd		5850	0					
+ANR	6053	Argument	offset		5850	1					
+ANR	6054	Identifier	offset		5850	0					
+ANR	6055	Argument	SEEK_SET		5850	2					
+ANR	6056	Identifier	SEEK_SET		5850	0					
+ANR	6057	Identifier	offset		5850	1					
+ANR	6058	ReturnStatement	return - 3 ;	27:5:845:854	5850	1	True				
+ANR	6059	UnaryOperationExpression	- 3		5850	0					
+ANR	6060	UnaryOperator	-		5850	0					
+ANR	6061	PrimaryExpression	3		5850	1					
+ANR	6062	WhileStatement	while ( offset < size )		5850	14					
+ANR	6063	Condition	offset < size	29:11:868:880	5850	0	True				
+ANR	6064	RelationalExpression	offset < size		5850	0		<			
+ANR	6065	Identifier	offset		5850	0					
+ANR	6066	Identifier	size		5850	1					
+ANR	6067	CompoundStatement		31:1:908:915	5850	1					
+ANR	6068	IdentifierDeclStatement	uint32_t c1 ;	30:1:886:897	5850	0	True				
+ANR	6069	IdentifierDecl	c1		5850	0					
+ANR	6070	IdentifierDeclType	uint32_t		5850	0					
+ANR	6071	Identifier	c1		5850	1					
+ANR	6072	IdentifierDeclStatement	int rest_size = ( size - offset > s -> cluster_size ? s -> cluster_size : size - offset ) ;	31:1:900:985	5850	1	True				
+ANR	6073	IdentifierDecl	rest_size = ( size - offset > s -> cluster_size ? s -> cluster_size : size - offset )		5850	0					
+ANR	6074	IdentifierDeclType	int		5850	0					
+ANR	6075	Identifier	rest_size		5850	1					
+ANR	6076	AssignmentExpression	rest_size = ( size - offset > s -> cluster_size ? s -> cluster_size : size - offset )		5850	2		=			
+ANR	6077	Identifier	rest_size		5850	0					
+ANR	6078	ConditionalExpression	size - offset > s -> cluster_size ? s -> cluster_size : size - offset		5850	1					
+ANR	6079	Condition	size - offset > s -> cluster_size		5850	0					
+ANR	6080	RelationalExpression	size - offset > s -> cluster_size		5850	0		>			
+ANR	6081	AdditiveExpression	size - offset		5850	0		-			
+ANR	6082	Identifier	size		5850	0					
+ANR	6083	Identifier	offset		5850	1					
+ANR	6084	PtrMemberAccess	s -> cluster_size		5850	1					
+ANR	6085	Identifier	s		5850	0					
+ANR	6086	Identifier	cluster_size		5850	1					
+ANR	6087	PtrMemberAccess	s -> cluster_size		5850	1					
+ANR	6088	Identifier	s		5850	0					
+ANR	6089	Identifier	cluster_size		5850	1					
+ANR	6090	AdditiveExpression	size - offset		5850	2		-			
+ANR	6091	Identifier	size		5850	0					
+ANR	6092	Identifier	offset		5850	1					
+ANR	6093	IdentifierDeclStatement	int ret ;	33:1:988:995	5850	2	True				
+ANR	6094	IdentifierDecl	ret		5850	0					
+ANR	6095	IdentifierDeclType	int		5850	0					
+ANR	6096	Identifier	ret		5850	1					
+ANR	6097	ExpressionStatement	"c1 = modified_fat_get ( s , c )"	35:1:999:1026	5850	3	True				
+ANR	6098	AssignmentExpression	"c1 = modified_fat_get ( s , c )"		5850	0		=			
+ANR	6099	Identifier	c1		5850	0					
+ANR	6100	CallExpression	"modified_fat_get ( s , c )"		5850	1					
+ANR	6101	Callee	modified_fat_get		5850	0					
+ANR	6102	Identifier	modified_fat_get		5850	0					
+ANR	6103	ArgumentList	s		5850	1					
+ANR	6104	Argument	s		5850	0					
+ANR	6105	Identifier	s		5850	0					
+ANR	6106	Argument	c		5850	1					
+ANR	6107	Identifier	c		5850	0					
+ANR	6108	ExpressionStatement	"assert ( ( size - offset == 0 && fat_eof ( s , c ) ) || ( size > offset && c >= 2 && ! fat_eof ( s , c ) ) )"	37:1:1030:1123	5850	4	True				
+ANR	6109	CallExpression	"assert ( ( size - offset == 0 && fat_eof ( s , c ) ) || ( size > offset && c >= 2 && ! fat_eof ( s , c ) ) )"		5850	0					
+ANR	6110	Callee	assert		5850	0					
+ANR	6111	Identifier	assert		5850	0					
+ANR	6112	ArgumentList	"( size - offset == 0 && fat_eof ( s , c ) ) || ( size > offset && c >= 2 && ! fat_eof ( s , c ) )"		5850	1					
+ANR	6113	Argument	"( size - offset == 0 && fat_eof ( s , c ) ) || ( size > offset && c >= 2 && ! fat_eof ( s , c ) )"		5850	0					
+ANR	6114	OrExpression	"( size - offset == 0 && fat_eof ( s , c ) ) || ( size > offset && c >= 2 && ! fat_eof ( s , c ) )"		5850	0		||			
+ANR	6115	AndExpression	"size - offset == 0 && fat_eof ( s , c )"		5850	0		&&			
+ANR	6116	EqualityExpression	size - offset == 0		5850	0		==			
+ANR	6117	AdditiveExpression	size - offset		5850	0		-			
+ANR	6118	Identifier	size		5850	0					
+ANR	6119	Identifier	offset		5850	1					
+ANR	6120	PrimaryExpression	0		5850	1					
+ANR	6121	CallExpression	"fat_eof ( s , c )"		5850	1					
+ANR	6122	Callee	fat_eof		5850	0					
+ANR	6123	Identifier	fat_eof		5850	0					
+ANR	6124	ArgumentList	s		5850	1					
+ANR	6125	Argument	s		5850	0					
+ANR	6126	Identifier	s		5850	0					
+ANR	6127	Argument	c		5850	1					
+ANR	6128	Identifier	c		5850	0					
+ANR	6129	AndExpression	"size > offset && c >= 2 && ! fat_eof ( s , c )"		5850	1		&&			
+ANR	6130	RelationalExpression	size > offset		5850	0		>			
+ANR	6131	Identifier	size		5850	0					
+ANR	6132	Identifier	offset		5850	1					
+ANR	6133	AndExpression	"c >= 2 && ! fat_eof ( s , c )"		5850	1		&&			
+ANR	6134	RelationalExpression	c >= 2		5850	0		>=			
+ANR	6135	Identifier	c		5850	0					
+ANR	6136	PrimaryExpression	2		5850	1					
+ANR	6137	UnaryOperationExpression	"! fat_eof ( s , c )"		5850	1					
+ANR	6138	UnaryOperator	!		5850	0					
+ANR	6139	CallExpression	"fat_eof ( s , c )"		5850	1					
+ANR	6140	Callee	fat_eof		5850	0					
+ANR	6141	Identifier	fat_eof		5850	0					
+ANR	6142	ArgumentList	s		5850	1					
+ANR	6143	Argument	s		5850	0					
+ANR	6144	Identifier	s		5850	0					
+ANR	6145	Argument	c		5850	1					
+ANR	6146	Identifier	c		5850	0					
+ANR	6147	ExpressionStatement	"ret = vvfat_read ( s -> bs , cluster2sector ( s , c ) , ( uint8_t * ) cluster , ( rest_size + 0x1ff ) / 0x200 )"	40:1:1127:1225	5850	5	True				
+ANR	6148	AssignmentExpression	"ret = vvfat_read ( s -> bs , cluster2sector ( s , c ) , ( uint8_t * ) cluster , ( rest_size + 0x1ff ) / 0x200 )"		5850	0		=			
+ANR	6149	Identifier	ret		5850	0					
+ANR	6150	CallExpression	"vvfat_read ( s -> bs , cluster2sector ( s , c ) , ( uint8_t * ) cluster , ( rest_size + 0x1ff ) / 0x200 )"		5850	1					
+ANR	6151	Callee	vvfat_read		5850	0					
+ANR	6152	Identifier	vvfat_read		5850	0					
+ANR	6153	ArgumentList	s -> bs		5850	1					
+ANR	6154	Argument	s -> bs		5850	0					
+ANR	6155	PtrMemberAccess	s -> bs		5850	0					
+ANR	6156	Identifier	s		5850	0					
+ANR	6157	Identifier	bs		5850	1					
+ANR	6158	Argument	"cluster2sector ( s , c )"		5850	1					
+ANR	6159	CallExpression	"cluster2sector ( s , c )"		5850	0					
+ANR	6160	Callee	cluster2sector		5850	0					
+ANR	6161	Identifier	cluster2sector		5850	0					
+ANR	6162	ArgumentList	s		5850	1					
+ANR	6163	Argument	s		5850	0					
+ANR	6164	Identifier	s		5850	0					
+ANR	6165	Argument	c		5850	1					
+ANR	6166	Identifier	c		5850	0					
+ANR	6167	Argument	( uint8_t * ) cluster		5850	2					
+ANR	6168	CastExpression	( uint8_t * ) cluster		5850	0					
+ANR	6169	CastTarget	uint8_t *		5850	0					
+ANR	6170	Identifier	cluster		5850	1					
+ANR	6171	Argument	( rest_size + 0x1ff ) / 0x200		5850	3					
+ANR	6172	MultiplicativeExpression	( rest_size + 0x1ff ) / 0x200		5850	0		/			
+ANR	6173	AdditiveExpression	rest_size + 0x1ff		5850	0		+			
+ANR	6174	Identifier	rest_size		5850	0					
+ANR	6175	PrimaryExpression	0x1ff		5850	1					
+ANR	6176	PrimaryExpression	0x200		5850	1					
+ANR	6177	IfStatement	if ( ret < 0 )		5850	6					
+ANR	6178	Condition	ret < 0	43:5:1233:1239	5850	0	True				
+ANR	6179	RelationalExpression	ret < 0		5850	0		<			
+ANR	6180	Identifier	ret		5850	0					
+ANR	6181	PrimaryExpression	0		5850	1					
+ANR	6182	ReturnStatement	return ret ;	44:5:1247:1257	5850	1	True				
+ANR	6183	Identifier	ret		5850	0					
+ANR	6184	IfStatement	"if ( write ( fd , cluster , rest_size ) < 0 )"		5850	7					
+ANR	6185	Condition	"write ( fd , cluster , rest_size ) < 0"	46:5:1265:1297	5850	0	True				
+ANR	6186	RelationalExpression	"write ( fd , cluster , rest_size ) < 0"		5850	0		<			
+ANR	6187	CallExpression	"write ( fd , cluster , rest_size )"		5850	0					
+ANR	6188	Callee	write		5850	0					
+ANR	6189	Identifier	write		5850	0					
+ANR	6190	ArgumentList	fd		5850	1					
+ANR	6191	Argument	fd		5850	0					
+ANR	6192	Identifier	fd		5850	0					
+ANR	6193	Argument	cluster		5850	1					
+ANR	6194	Identifier	cluster		5850	0					
+ANR	6195	Argument	rest_size		5850	2					
+ANR	6196	Identifier	rest_size		5850	0					
+ANR	6197	PrimaryExpression	0		5850	1					
+ANR	6198	ReturnStatement	return - 2 ;	47:5:1305:1314	5850	1	True				
+ANR	6199	UnaryOperationExpression	- 2		5850	0					
+ANR	6200	UnaryOperator	-		5850	0					
+ANR	6201	PrimaryExpression	2		5850	1					
+ANR	6202	ExpressionStatement	offset += rest_size	49:1:1318:1337	5850	8	True				
+ANR	6203	AssignmentExpression	offset += rest_size		5850	0		+=			
+ANR	6204	Identifier	offset		5850	0					
+ANR	6205	Identifier	rest_size		5850	1					
+ANR	6206	ExpressionStatement	c = c1	50:1:1340:1346	5850	9	True				
+ANR	6207	AssignmentExpression	c = c1		5850	0		=			
+ANR	6208	Identifier	c		5850	0					
+ANR	6209	Identifier	c1		5850	1					
+ANR	6210	IfStatement	"if ( ftruncate ( fd , size ) )"		5850	15					
+ANR	6211	Condition	"ftruncate ( fd , size )"	53:8:1363:1381	5850	0	True				
+ANR	6212	CallExpression	"ftruncate ( fd , size )"		5850	0					
+ANR	6213	Callee	ftruncate		5850	0					
+ANR	6214	Identifier	ftruncate		5850	0					
+ANR	6215	ArgumentList	fd		5850	1					
+ANR	6216	Argument	fd		5850	0					
+ANR	6217	Identifier	fd		5850	0					
+ANR	6218	Argument	size		5850	1					
+ANR	6219	Identifier	size		5850	0					
+ANR	6220	CompoundStatement		51:29:1304:1304	5850	1					
+ANR	6221	ExpressionStatement	"perror ( ""ftruncate()"" )"	54:8:1394:1415	5850	0	True				
+ANR	6222	CallExpression	"perror ( ""ftruncate()"" )"		5850	0					
+ANR	6223	Callee	perror		5850	0					
+ANR	6224	Identifier	perror		5850	0					
+ANR	6225	ArgumentList	"""ftruncate()"""		5850	1					
+ANR	6226	Argument	"""ftruncate()"""		5850	0					
+ANR	6227	PrimaryExpression	"""ftruncate()"""		5850	0					
+ANR	6228	ExpressionStatement	close ( fd )	55:8:1425:1434	5850	1	True				
+ANR	6229	CallExpression	close ( fd )		5850	0					
+ANR	6230	Callee	close		5850	0					
+ANR	6231	Identifier	close		5850	0					
+ANR	6232	ArgumentList	fd		5850	1					
+ANR	6233	Argument	fd		5850	0					
+ANR	6234	Identifier	fd		5850	0					
+ANR	6235	ReturnStatement	return - 4 ;	56:8:1444:1453	5850	2	True				
+ANR	6236	UnaryOperationExpression	- 4		5850	0					
+ANR	6237	UnaryOperator	-		5850	0					
+ANR	6238	PrimaryExpression	4		5850	1					
+ANR	6239	ExpressionStatement	close ( fd )	58:4:1465:1474	5850	16	True				
+ANR	6240	CallExpression	close ( fd )		5850	0					
+ANR	6241	Callee	close		5850	0					
+ANR	6242	Identifier	close		5850	0					
+ANR	6243	ArgumentList	fd		5850	1					
+ANR	6244	Argument	fd		5850	0					
+ANR	6245	Identifier	fd		5850	0					
+ANR	6246	ReturnStatement	"return commit_mappings ( s , first_cluster , dir_index ) ;"	60:4:1481:1532	5850	17	True				
+ANR	6247	CallExpression	"commit_mappings ( s , first_cluster , dir_index )"		5850	0					
+ANR	6248	Callee	commit_mappings		5850	0					
+ANR	6249	Identifier	commit_mappings		5850	0					
+ANR	6250	ArgumentList	s		5850	1					
+ANR	6251	Argument	s		5850	0					
+ANR	6252	Identifier	s		5850	0					
+ANR	6253	Argument	first_cluster		5850	1					
+ANR	6254	Identifier	first_cluster		5850	0					
+ANR	6255	Argument	dir_index		5850	2					
+ANR	6256	Identifier	dir_index		5850	0					
+ANR	6257	ReturnType	static int		5850	1					
+ANR	6258	Identifier	commit_one_file		5850	2					
+ANR	6259	ParameterList	"BDRVVVFATState * s , int dir_index , uint32_t offset"		5850	3					
+ANR	6260	Parameter	BDRVVVFATState * s	1:27:27:43	5850	0	True				
+ANR	6261	ParameterType	BDRVVVFATState *		5850	0					
+ANR	6262	Identifier	s		5850	1					
+ANR	6263	Parameter	int dir_index	2:1:47:59	5850	1	True				
+ANR	6264	ParameterType	int		5850	0					
+ANR	6265	Identifier	dir_index		5850	1					
+ANR	6266	Parameter	uint32_t offset	2:16:62:76	5850	2	True				
+ANR	6267	ParameterType	uint32_t		5850	0					
+ANR	6268	Identifier	offset		5850	1					
+ANR	6269	CFGEntryNode	ENTRY		5850		True				
+ANR	6270	CFGExitNode	EXIT		5850		True				
+ANR	6271	Symbol	cluster		5850						
+ANR	6272	Symbol	lseek		5850						
+ANR	6273	Symbol	O_BINARY		5850						
+ANR	6274	Symbol	O_CREAT		5850						
+ANR	6275	Symbol	& s -> directory		5850						
+ANR	6276	Symbol	fat_eof		5850						
+ANR	6277	Symbol	vvfat_read		5850						
+ANR	6278	Symbol	s -> cluster_size		5850						
+ANR	6279	Symbol	g_malloc		5850						
+ANR	6280	Symbol	O_RDWR		5850						
+ANR	6281	Symbol	* mapping		5850						
+ANR	6282	Symbol	rest_size		5850						
+ANR	6283	Symbol	dir_index		5850						
+ANR	6284	Symbol	find_mapping_for_cluster		5850						
+ANR	6285	Symbol	first_cluster		5850						
+ANR	6286	Symbol	begin_of_direntry		5850						
+ANR	6287	Symbol	write		5850						
+ANR	6288	Symbol	SEEK_SET		5850						
+ANR	6289	Symbol	ret		5850						
+ANR	6290	Symbol	mapping		5850						
+ANR	6291	Symbol	errno		5850						
+ANR	6292	Symbol	c		5850						
+ANR	6293	Symbol	offset		5850						
+ANR	6294	Symbol	mapping -> path		5850						
+ANR	6295	Symbol	array_get		5850						
+ANR	6296	Symbol	cluster2sector		5850						
+ANR	6297	Symbol	filesize_of_direntry		5850						
+ANR	6298	Symbol	i		5850						
+ANR	6299	Symbol	direntry		5850						
+ANR	6300	Symbol	stderr		5850						
+ANR	6301	Symbol	s -> bs		5850						
+ANR	6302	Symbol	c1		5850						
+ANR	6303	Symbol	commit_mappings		5850						
+ANR	6304	Symbol	strerror		5850						
+ANR	6305	Symbol	s		5850						
+ANR	6306	Symbol	modified_fat_get		5850						
+ANR	6307	Symbol	size		5850						
+ANR	6308	Symbol	ftruncate		5850						
+ANR	6309	Symbol	* s		5850						
+ANR	6310	Symbol	fd		5850						
+ANR	6311	Symbol	open		5850						

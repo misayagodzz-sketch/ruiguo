@@ -1,0 +1,195 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	853	File	tmp/qemu_a7812ae4_1699.c								
+ANR	854	Function	dec_swap_r	1:0:0:561							
+ANR	855	FunctionDef	dec_swap_r (DisasContext * dc)		854	0					
+ANR	856	CompoundStatement		2:0:49:561	854	0					
+ANR	857	IdentifierDeclStatement	TCGv t0 ;	3:1:52:59	854	0	True				
+ANR	858	IdentifierDecl	t0		854	0					
+ANR	859	IdentifierDeclType	TCGv		854	0					
+ANR	860	Identifier	t0		854	1					
+ANR	861	IdentifierDeclStatement	char modename [ 4 ] ;	5:1:77:93	854	1	True				
+ANR	862	IdentifierDecl	modename [ 4 ]		854	0					
+ANR	863	IdentifierDeclType	char [ 4 ]		854	0					
+ANR	864	Identifier	modename		854	1					
+ANR	865	PrimaryExpression	4		854	2					
+ANR	866	ExpressionStatement	"DIS ( fprintf ( logfile , ""swap%s $r%u\\n"" , swapmode_name ( dc -> op2 , modename ) , dc -> op1 ) )"	7:1:103:192	854	2	True				
+ANR	867	CallExpression	"DIS ( fprintf ( logfile , ""swap%s $r%u\\n"" , swapmode_name ( dc -> op2 , modename ) , dc -> op1 ) )"		854	0					
+ANR	868	Callee	DIS		854	0					
+ANR	869	Identifier	DIS		854	0					
+ANR	870	ArgumentList	"fprintf ( logfile , ""swap%s $r%u\\n"" , swapmode_name ( dc -> op2 , modename ) , dc -> op1 )"		854	1					
+ANR	871	Argument	"fprintf ( logfile , ""swap%s $r%u\\n"" , swapmode_name ( dc -> op2 , modename ) , dc -> op1 )"		854	0					
+ANR	872	CallExpression	"fprintf ( logfile , ""swap%s $r%u\\n"" , swapmode_name ( dc -> op2 , modename ) , dc -> op1 )"		854	0					
+ANR	873	Callee	fprintf		854	0					
+ANR	874	Identifier	fprintf		854	0					
+ANR	875	ArgumentList	logfile		854	1					
+ANR	876	Argument	logfile		854	0					
+ANR	877	Identifier	logfile		854	0					
+ANR	878	Argument	"""swap%s $r%u\\n"""		854	1					
+ANR	879	PrimaryExpression	"""swap%s $r%u\\n"""		854	0					
+ANR	880	Argument	"swapmode_name ( dc -> op2 , modename )"		854	2					
+ANR	881	CallExpression	"swapmode_name ( dc -> op2 , modename )"		854	0					
+ANR	882	Callee	swapmode_name		854	0					
+ANR	883	Identifier	swapmode_name		854	0					
+ANR	884	ArgumentList	dc -> op2		854	1					
+ANR	885	Argument	dc -> op2		854	0					
+ANR	886	PtrMemberAccess	dc -> op2		854	0					
+ANR	887	Identifier	dc		854	0					
+ANR	888	Identifier	op2		854	1					
+ANR	889	Argument	modename		854	1					
+ANR	890	Identifier	modename		854	0					
+ANR	891	Argument	dc -> op1		854	3					
+ANR	892	PtrMemberAccess	dc -> op1		854	0					
+ANR	893	Identifier	dc		854	0					
+ANR	894	Identifier	op1		854	1					
+ANR	895	ExpressionStatement	"cris_cc_mask ( dc , CC_MASK_NZ )"	10:1:196:224	854	3	True				
+ANR	896	CallExpression	"cris_cc_mask ( dc , CC_MASK_NZ )"		854	0					
+ANR	897	Callee	cris_cc_mask		854	0					
+ANR	898	Identifier	cris_cc_mask		854	0					
+ANR	899	ArgumentList	dc		854	1					
+ANR	900	Argument	dc		854	0					
+ANR	901	Identifier	dc		854	0					
+ANR	902	Argument	CC_MASK_NZ		854	1					
+ANR	903	Identifier	CC_MASK_NZ		854	0					
+ANR	904	ExpressionStatement	t0 = tcg_temp_new ( TCG_TYPE_TL )	11:1:227:257	854	4	True				
+ANR	905	AssignmentExpression	t0 = tcg_temp_new ( TCG_TYPE_TL )		854	0		=			
+ANR	906	Identifier	t0		854	0					
+ANR	907	CallExpression	tcg_temp_new ( TCG_TYPE_TL )		854	1					
+ANR	908	Callee	tcg_temp_new		854	0					
+ANR	909	Identifier	tcg_temp_new		854	0					
+ANR	910	ArgumentList	TCG_TYPE_TL		854	1					
+ANR	911	Argument	TCG_TYPE_TL		854	0					
+ANR	912	Identifier	TCG_TYPE_TL		854	0					
+ANR	913	ExpressionStatement	"t_gen_mov_TN_reg ( t0 , dc -> op1 )"	12:1:260:289	854	5	True				
+ANR	914	CallExpression	"t_gen_mov_TN_reg ( t0 , dc -> op1 )"		854	0					
+ANR	915	Callee	t_gen_mov_TN_reg		854	0					
+ANR	916	Identifier	t_gen_mov_TN_reg		854	0					
+ANR	917	ArgumentList	t0		854	1					
+ANR	918	Argument	t0		854	0					
+ANR	919	Identifier	t0		854	0					
+ANR	920	Argument	dc -> op1		854	1					
+ANR	921	PtrMemberAccess	dc -> op1		854	0					
+ANR	922	Identifier	dc		854	0					
+ANR	923	Identifier	op1		854	1					
+ANR	924	IfStatement	if ( dc -> op2 & 8 )		854	6					
+ANR	925	Condition	dc -> op2 & 8	13:5:296:306	854	0	True				
+ANR	926	BitAndExpression	dc -> op2 & 8		854	0		&			
+ANR	927	PtrMemberAccess	dc -> op2		854	0					
+ANR	928	Identifier	dc		854	0					
+ANR	929	Identifier	op2		854	1					
+ANR	930	PrimaryExpression	8		854	1					
+ANR	931	ExpressionStatement	"tcg_gen_not_tl ( t0 , t0 )"	14:2:311:333	854	1	True				
+ANR	932	CallExpression	"tcg_gen_not_tl ( t0 , t0 )"		854	0					
+ANR	933	Callee	tcg_gen_not_tl		854	0					
+ANR	934	Identifier	tcg_gen_not_tl		854	0					
+ANR	935	ArgumentList	t0		854	1					
+ANR	936	Argument	t0		854	0					
+ANR	937	Identifier	t0		854	0					
+ANR	938	Argument	t0		854	1					
+ANR	939	Identifier	t0		854	0					
+ANR	940	IfStatement	if ( dc -> op2 & 4 )		854	7					
+ANR	941	Condition	dc -> op2 & 4	15:5:340:350	854	0	True				
+ANR	942	BitAndExpression	dc -> op2 & 4		854	0		&			
+ANR	943	PtrMemberAccess	dc -> op2		854	0					
+ANR	944	Identifier	dc		854	0					
+ANR	945	Identifier	op2		854	1					
+ANR	946	PrimaryExpression	4		854	1					
+ANR	947	ExpressionStatement	"t_gen_swapw ( t0 , t0 )"	16:2:355:374	854	1	True				
+ANR	948	CallExpression	"t_gen_swapw ( t0 , t0 )"		854	0					
+ANR	949	Callee	t_gen_swapw		854	0					
+ANR	950	Identifier	t_gen_swapw		854	0					
+ANR	951	ArgumentList	t0		854	1					
+ANR	952	Argument	t0		854	0					
+ANR	953	Identifier	t0		854	0					
+ANR	954	Argument	t0		854	1					
+ANR	955	Identifier	t0		854	0					
+ANR	956	IfStatement	if ( dc -> op2 & 2 )		854	8					
+ANR	957	Condition	dc -> op2 & 2	17:5:381:391	854	0	True				
+ANR	958	BitAndExpression	dc -> op2 & 2		854	0		&			
+ANR	959	PtrMemberAccess	dc -> op2		854	0					
+ANR	960	Identifier	dc		854	0					
+ANR	961	Identifier	op2		854	1					
+ANR	962	PrimaryExpression	2		854	1					
+ANR	963	ExpressionStatement	"t_gen_swapb ( t0 , t0 )"	18:2:396:415	854	1	True				
+ANR	964	CallExpression	"t_gen_swapb ( t0 , t0 )"		854	0					
+ANR	965	Callee	t_gen_swapb		854	0					
+ANR	966	Identifier	t_gen_swapb		854	0					
+ANR	967	ArgumentList	t0		854	1					
+ANR	968	Argument	t0		854	0					
+ANR	969	Identifier	t0		854	0					
+ANR	970	Argument	t0		854	1					
+ANR	971	Identifier	t0		854	0					
+ANR	972	IfStatement	if ( dc -> op2 & 1 )		854	9					
+ANR	973	Condition	dc -> op2 & 1	19:5:422:432	854	0	True				
+ANR	974	BitAndExpression	dc -> op2 & 1		854	0		&			
+ANR	975	PtrMemberAccess	dc -> op2		854	0					
+ANR	976	Identifier	dc		854	0					
+ANR	977	Identifier	op2		854	1					
+ANR	978	PrimaryExpression	1		854	1					
+ANR	979	ExpressionStatement	"t_gen_swapr ( t0 , t0 )"	20:2:437:456	854	1	True				
+ANR	980	CallExpression	"t_gen_swapr ( t0 , t0 )"		854	0					
+ANR	981	Callee	t_gen_swapr		854	0					
+ANR	982	Identifier	t_gen_swapr		854	0					
+ANR	983	ArgumentList	t0		854	1					
+ANR	984	Argument	t0		854	0					
+ANR	985	Identifier	t0		854	0					
+ANR	986	Argument	t0		854	1					
+ANR	987	Identifier	t0		854	0					
+ANR	988	ExpressionStatement	"cris_alu ( dc , CC_OP_MOVE , cpu_R [ dc -> op1 ] , cpu_R [ dc -> op1 ] , t0 , 4 )"	21:1:459:528	854	10	True				
+ANR	989	CallExpression	"cris_alu ( dc , CC_OP_MOVE , cpu_R [ dc -> op1 ] , cpu_R [ dc -> op1 ] , t0 , 4 )"		854	0					
+ANR	990	Callee	cris_alu		854	0					
+ANR	991	Identifier	cris_alu		854	0					
+ANR	992	ArgumentList	dc		854	1					
+ANR	993	Argument	dc		854	0					
+ANR	994	Identifier	dc		854	0					
+ANR	995	Argument	CC_OP_MOVE		854	1					
+ANR	996	Identifier	CC_OP_MOVE		854	0					
+ANR	997	Argument	cpu_R [ dc -> op1 ]		854	2					
+ANR	998	ArrayIndexing	cpu_R [ dc -> op1 ]		854	0					
+ANR	999	Identifier	cpu_R		854	0					
+ANR	1000	PtrMemberAccess	dc -> op1		854	1					
+ANR	1001	Identifier	dc		854	0					
+ANR	1002	Identifier	op1		854	1					
+ANR	1003	Argument	cpu_R [ dc -> op1 ]		854	3					
+ANR	1004	ArrayIndexing	cpu_R [ dc -> op1 ]		854	0					
+ANR	1005	Identifier	cpu_R		854	0					
+ANR	1006	PtrMemberAccess	dc -> op1		854	1					
+ANR	1007	Identifier	dc		854	0					
+ANR	1008	Identifier	op1		854	1					
+ANR	1009	Argument	t0		854	4					
+ANR	1010	Identifier	t0		854	0					
+ANR	1011	Argument	4		854	5					
+ANR	1012	PrimaryExpression	4		854	0					
+ANR	1013	ExpressionStatement	tcg_temp_free ( t0 )	23:1:531:548	854	11	True				
+ANR	1014	CallExpression	tcg_temp_free ( t0 )		854	0					
+ANR	1015	Callee	tcg_temp_free		854	0					
+ANR	1016	Identifier	tcg_temp_free		854	0					
+ANR	1017	ArgumentList	t0		854	1					
+ANR	1018	Argument	t0		854	0					
+ANR	1019	Identifier	t0		854	0					
+ANR	1020	ReturnStatement	return 2 ;	24:1:551:559	854	12	True				
+ANR	1021	PrimaryExpression	2		854	0					
+ANR	1022	ReturnType	static unsigned int		854	1					
+ANR	1023	Identifier	dec_swap_r		854	2					
+ANR	1024	ParameterList	DisasContext * dc		854	3					
+ANR	1025	Parameter	DisasContext * dc	1:31:31:46	854	0	True				
+ANR	1026	ParameterType	DisasContext *		854	0					
+ANR	1027	Identifier	dc		854	1					
+ANR	1028	CFGEntryNode	ENTRY		854		True				
+ANR	1029	CFGExitNode	EXIT		854		True				
+ANR	1030	Symbol	swapmode_name		854						
+ANR	1031	Symbol	* dc -> op1		854						
+ANR	1032	Symbol	* dc		854						
+ANR	1033	Symbol	logfile		854						
+ANR	1034	Symbol	* * dc		854						
+ANR	1035	Symbol	tcg_temp_new		854						
+ANR	1036	Symbol	fprintf		854						
+ANR	1037	Symbol	* cpu_R		854						
+ANR	1038	Symbol	CC_OP_MOVE		854						
+ANR	1039	Symbol	CC_MASK_NZ		854						
+ANR	1040	Symbol	modename		854						
+ANR	1041	Symbol	TCG_TYPE_TL		854						
+ANR	1042	Symbol	dc -> op2		854						
+ANR	1043	Symbol	dc -> op1		854						
+ANR	1044	Symbol	t0		854						
+ANR	1045	Symbol	cpu_R		854						
+ANR	1046	Symbol	dc		854						

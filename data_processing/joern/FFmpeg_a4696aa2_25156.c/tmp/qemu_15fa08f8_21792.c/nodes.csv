@@ -1,0 +1,76 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	67	File	tmp/qemu_15fa08f8_21792.c								
+ANR	68	Function	arm_tr_insn_start	1:0:0:318							
+ANR	69	FunctionDef	"arm_tr_insn_start (DisasContextBase * dcbase , CPUState * cpu)"		68	0					
+ANR	70	CompoundStatement		2:0:71:318	68	0					
+ANR	71	IdentifierDeclStatement	"DisasContext * dc = container_of ( dcbase , DisasContext , base ) ;"	3:4:77:136	68	0	True				
+ANR	72	IdentifierDecl	"* dc = container_of ( dcbase , DisasContext , base )"		68	0					
+ANR	73	IdentifierDeclType	DisasContext *		68	0					
+ANR	74	Identifier	dc		68	1					
+ANR	75	AssignmentExpression	"* dc = container_of ( dcbase , DisasContext , base )"		68	2		=			
+ANR	76	Identifier	dc		68	0					
+ANR	77	CallExpression	"container_of ( dcbase , DisasContext , base )"		68	1					
+ANR	78	Callee	container_of		68	0					
+ANR	79	Identifier	container_of		68	0					
+ANR	80	ArgumentList	dcbase		68	1					
+ANR	81	Argument	dcbase		68	0					
+ANR	82	Identifier	dcbase		68	0					
+ANR	83	Argument	DisasContext		68	1					
+ANR	84	Identifier	DisasContext		68	0					
+ANR	85	Argument	base		68	2					
+ANR	86	Identifier	base		68	0					
+ANR	87	ExpressionStatement	dc -> insn_start_idx = tcg_op_buf_count ( )	5:4:143:182	68	1	True				
+ANR	88	AssignmentExpression	dc -> insn_start_idx = tcg_op_buf_count ( )		68	0		=			
+ANR	89	PtrMemberAccess	dc -> insn_start_idx		68	0					
+ANR	90	Identifier	dc		68	0					
+ANR	91	Identifier	insn_start_idx		68	1					
+ANR	92	CallExpression	tcg_op_buf_count ( )		68	1					
+ANR	93	Callee	tcg_op_buf_count		68	0					
+ANR	94	Identifier	tcg_op_buf_count		68	0					
+ANR	95	ArgumentList			68	1					
+ANR	96	ExpressionStatement	"tcg_gen_insn_start ( dc -> pc , ( dc -> condexec_cond << 4 ) | ( dc -> condexec_mask >> 1 ) , 0 )"	6:4:188:316	68	2	True				
+ANR	97	CallExpression	"tcg_gen_insn_start ( dc -> pc , ( dc -> condexec_cond << 4 ) | ( dc -> condexec_mask >> 1 ) , 0 )"		68	0					
+ANR	98	Callee	tcg_gen_insn_start		68	0					
+ANR	99	Identifier	tcg_gen_insn_start		68	0					
+ANR	100	ArgumentList	dc -> pc		68	1					
+ANR	101	Argument	dc -> pc		68	0					
+ANR	102	PtrMemberAccess	dc -> pc		68	0					
+ANR	103	Identifier	dc		68	0					
+ANR	104	Identifier	pc		68	1					
+ANR	105	Argument	( dc -> condexec_cond << 4 ) | ( dc -> condexec_mask >> 1 )		68	1					
+ANR	106	InclusiveOrExpression	( dc -> condexec_cond << 4 ) | ( dc -> condexec_mask >> 1 )		68	0		|			
+ANR	107	ShiftExpression	dc -> condexec_cond << 4		68	0		<<			
+ANR	108	PtrMemberAccess	dc -> condexec_cond		68	0					
+ANR	109	Identifier	dc		68	0					
+ANR	110	Identifier	condexec_cond		68	1					
+ANR	111	PrimaryExpression	4		68	1					
+ANR	112	ShiftExpression	dc -> condexec_mask >> 1		68	1		>>			
+ANR	113	PtrMemberAccess	dc -> condexec_mask		68	0					
+ANR	114	Identifier	dc		68	0					
+ANR	115	Identifier	condexec_mask		68	1					
+ANR	116	PrimaryExpression	1		68	1					
+ANR	117	Argument	0		68	2					
+ANR	118	PrimaryExpression	0		68	0					
+ANR	119	ReturnType	static void		68	1					
+ANR	120	Identifier	arm_tr_insn_start		68	2					
+ANR	121	ParameterList	"DisasContextBase * dcbase , CPUState * cpu"		68	3					
+ANR	122	Parameter	DisasContextBase * dcbase	1:30:30:53	68	0	True				
+ANR	123	ParameterType	DisasContextBase *		68	0					
+ANR	124	Identifier	dcbase		68	1					
+ANR	125	Parameter	CPUState * cpu	1:56:56:68	68	1	True				
+ANR	126	ParameterType	CPUState *		68	0					
+ANR	127	Identifier	cpu		68	1					
+ANR	128	CFGEntryNode	ENTRY		68		True				
+ANR	129	CFGExitNode	EXIT		68		True				
+ANR	130	Symbol	dc -> pc		68						
+ANR	131	Symbol	container_of		68						
+ANR	132	Symbol	tcg_op_buf_count		68						
+ANR	133	Symbol	dcbase		68						
+ANR	134	Symbol	* dc		68						
+ANR	135	Symbol	dc -> condexec_mask		68						
+ANR	136	Symbol	dc -> condexec_cond		68						
+ANR	137	Symbol	cpu		68						
+ANR	138	Symbol	dc -> insn_start_idx		68						
+ANR	139	Symbol	DisasContext		68						
+ANR	140	Symbol	dc		68						
+ANR	141	Symbol	base		68						

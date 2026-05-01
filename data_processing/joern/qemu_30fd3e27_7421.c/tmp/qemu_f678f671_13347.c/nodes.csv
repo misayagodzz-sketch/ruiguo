@@ -1,0 +1,194 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	2076	File	tmp/qemu_f678f671_13347.c								
+ANR	2077	Function	decode_abs_store	1:0:0:820							
+ANR	2078	FunctionDef	"decode_abs_store (CPUTriCoreState * env , DisasContext * ctx)"		2077	0					
+ANR	2079	CompoundStatement		2:0:70:820	2077	0					
+ANR	2080	IdentifierDeclStatement	int32_t op2 ;	3:4:76:87	2077	0	True				
+ANR	2081	IdentifierDecl	op2		2077	0					
+ANR	2082	IdentifierDeclType	int32_t		2077	0					
+ANR	2083	Identifier	op2		2077	1					
+ANR	2084	IdentifierDeclStatement	int32_t r1 ;	4:4:93:103	2077	1	True				
+ANR	2085	IdentifierDecl	r1		2077	0					
+ANR	2086	IdentifierDeclType	int32_t		2077	0					
+ANR	2087	Identifier	r1		2077	1					
+ANR	2088	IdentifierDeclStatement	uint32_t address ;	5:4:109:125	2077	2	True				
+ANR	2089	IdentifierDecl	address		2077	0					
+ANR	2090	IdentifierDeclType	uint32_t		2077	0					
+ANR	2091	Identifier	address		2077	1					
+ANR	2092	IdentifierDeclStatement	TCGv temp ;	6:4:131:140	2077	3	True				
+ANR	2093	IdentifierDecl	temp		2077	0					
+ANR	2094	IdentifierDeclType	TCGv		2077	0					
+ANR	2095	Identifier	temp		2077	1					
+ANR	2096	ExpressionStatement	r1 = MASK_OP_ABS_S1D ( ctx -> opcode )	8:4:147:180	2077	4	True				
+ANR	2097	AssignmentExpression	r1 = MASK_OP_ABS_S1D ( ctx -> opcode )		2077	0		=			
+ANR	2098	Identifier	r1		2077	0					
+ANR	2099	CallExpression	MASK_OP_ABS_S1D ( ctx -> opcode )		2077	1					
+ANR	2100	Callee	MASK_OP_ABS_S1D		2077	0					
+ANR	2101	Identifier	MASK_OP_ABS_S1D		2077	0					
+ANR	2102	ArgumentList	ctx -> opcode		2077	1					
+ANR	2103	Argument	ctx -> opcode		2077	0					
+ANR	2104	PtrMemberAccess	ctx -> opcode		2077	0					
+ANR	2105	Identifier	ctx		2077	0					
+ANR	2106	Identifier	opcode		2077	1					
+ANR	2107	ExpressionStatement	address = MASK_OP_ABS_OFF18 ( ctx -> opcode )	9:4:186:226	2077	5	True				
+ANR	2108	AssignmentExpression	address = MASK_OP_ABS_OFF18 ( ctx -> opcode )		2077	0		=			
+ANR	2109	Identifier	address		2077	0					
+ANR	2110	CallExpression	MASK_OP_ABS_OFF18 ( ctx -> opcode )		2077	1					
+ANR	2111	Callee	MASK_OP_ABS_OFF18		2077	0					
+ANR	2112	Identifier	MASK_OP_ABS_OFF18		2077	0					
+ANR	2113	ArgumentList	ctx -> opcode		2077	1					
+ANR	2114	Argument	ctx -> opcode		2077	0					
+ANR	2115	PtrMemberAccess	ctx -> opcode		2077	0					
+ANR	2116	Identifier	ctx		2077	0					
+ANR	2117	Identifier	opcode		2077	1					
+ANR	2118	ExpressionStatement	op2 = MASK_OP_ABS_OP2 ( ctx -> opcode )	10:4:232:266	2077	6	True				
+ANR	2119	AssignmentExpression	op2 = MASK_OP_ABS_OP2 ( ctx -> opcode )		2077	0		=			
+ANR	2120	Identifier	op2		2077	0					
+ANR	2121	CallExpression	MASK_OP_ABS_OP2 ( ctx -> opcode )		2077	1					
+ANR	2122	Callee	MASK_OP_ABS_OP2		2077	0					
+ANR	2123	Identifier	MASK_OP_ABS_OP2		2077	0					
+ANR	2124	ArgumentList	ctx -> opcode		2077	1					
+ANR	2125	Argument	ctx -> opcode		2077	0					
+ANR	2126	PtrMemberAccess	ctx -> opcode		2077	0					
+ANR	2127	Identifier	ctx		2077	0					
+ANR	2128	Identifier	opcode		2077	1					
+ANR	2129	ExpressionStatement	temp = tcg_const_i32 ( EA_ABS_FORMAT ( address ) )	12:4:273:317	2077	7	True				
+ANR	2130	AssignmentExpression	temp = tcg_const_i32 ( EA_ABS_FORMAT ( address ) )		2077	0		=			
+ANR	2131	Identifier	temp		2077	0					
+ANR	2132	CallExpression	tcg_const_i32 ( EA_ABS_FORMAT ( address ) )		2077	1					
+ANR	2133	Callee	tcg_const_i32		2077	0					
+ANR	2134	Identifier	tcg_const_i32		2077	0					
+ANR	2135	ArgumentList	EA_ABS_FORMAT ( address )		2077	1					
+ANR	2136	Argument	EA_ABS_FORMAT ( address )		2077	0					
+ANR	2137	CallExpression	EA_ABS_FORMAT ( address )		2077	0					
+ANR	2138	Callee	EA_ABS_FORMAT		2077	0					
+ANR	2139	Identifier	EA_ABS_FORMAT		2077	0					
+ANR	2140	ArgumentList	address		2077	1					
+ANR	2141	Argument	address		2077	0					
+ANR	2142	Identifier	address		2077	0					
+ANR	2143	SwitchStatement	switch ( op2 )		2077	8					
+ANR	2144	Condition	op2	14:12:332:334	2077	0	True				
+ANR	2145	Identifier	op2		2077	0					
+ANR	2146	CompoundStatement		13:17:266:266	2077	1					
+ANR	2147	Label	case OPC2_32_ABS_ST_A :	15:4:343:364	2077	0	True				
+ANR	2148	Identifier	OPC2_32_ABS_ST_A		2077	0					
+ANR	2149	ExpressionStatement	"tcg_gen_qemu_st_tl ( cpu_gpr_a [ r1 ] , temp , ctx -> mem_idx , MO_LESL )"	16:8:374:436	2077	1	True				
+ANR	2150	CallExpression	"tcg_gen_qemu_st_tl ( cpu_gpr_a [ r1 ] , temp , ctx -> mem_idx , MO_LESL )"		2077	0					
+ANR	2151	Callee	tcg_gen_qemu_st_tl		2077	0					
+ANR	2152	Identifier	tcg_gen_qemu_st_tl		2077	0					
+ANR	2153	ArgumentList	cpu_gpr_a [ r1 ]		2077	1					
+ANR	2154	Argument	cpu_gpr_a [ r1 ]		2077	0					
+ANR	2155	ArrayIndexing	cpu_gpr_a [ r1 ]		2077	0					
+ANR	2156	Identifier	cpu_gpr_a		2077	0					
+ANR	2157	Identifier	r1		2077	1					
+ANR	2158	Argument	temp		2077	1					
+ANR	2159	Identifier	temp		2077	0					
+ANR	2160	Argument	ctx -> mem_idx		2077	2					
+ANR	2161	PtrMemberAccess	ctx -> mem_idx		2077	0					
+ANR	2162	Identifier	ctx		2077	0					
+ANR	2163	Identifier	mem_idx		2077	1					
+ANR	2164	Argument	MO_LESL		2077	3					
+ANR	2165	Identifier	MO_LESL		2077	0					
+ANR	2166	BreakStatement	break ;	17:8:446:451	2077	2	True				
+ANR	2167	Label	case OPC2_32_ABS_ST_D :	18:4:457:478	2077	3	True				
+ANR	2168	Identifier	OPC2_32_ABS_ST_D		2077	0					
+ANR	2169	ExpressionStatement	"gen_st_2regs_64 ( cpu_gpr_d [ r1 + 1 ] , cpu_gpr_d [ r1 ] , temp , ctx )"	19:8:488:546	2077	4	True				
+ANR	2170	CallExpression	"gen_st_2regs_64 ( cpu_gpr_d [ r1 + 1 ] , cpu_gpr_d [ r1 ] , temp , ctx )"		2077	0					
+ANR	2171	Callee	gen_st_2regs_64		2077	0					
+ANR	2172	Identifier	gen_st_2regs_64		2077	0					
+ANR	2173	ArgumentList	cpu_gpr_d [ r1 + 1 ]		2077	1					
+ANR	2174	Argument	cpu_gpr_d [ r1 + 1 ]		2077	0					
+ANR	2175	ArrayIndexing	cpu_gpr_d [ r1 + 1 ]		2077	0					
+ANR	2176	Identifier	cpu_gpr_d		2077	0					
+ANR	2177	AdditiveExpression	r1 + 1		2077	1		+			
+ANR	2178	Identifier	r1		2077	0					
+ANR	2179	PrimaryExpression	1		2077	1					
+ANR	2180	Argument	cpu_gpr_d [ r1 ]		2077	1					
+ANR	2181	ArrayIndexing	cpu_gpr_d [ r1 ]		2077	0					
+ANR	2182	Identifier	cpu_gpr_d		2077	0					
+ANR	2183	Identifier	r1		2077	1					
+ANR	2184	Argument	temp		2077	2					
+ANR	2185	Identifier	temp		2077	0					
+ANR	2186	Argument	ctx		2077	3					
+ANR	2187	Identifier	ctx		2077	0					
+ANR	2188	BreakStatement	break ;	20:8:556:561	2077	5	True				
+ANR	2189	Label	case OPC2_32_ABS_ST_DA :	21:4:567:589	2077	6	True				
+ANR	2190	Identifier	OPC2_32_ABS_ST_DA		2077	0					
+ANR	2191	ExpressionStatement	"gen_st_2regs_64 ( cpu_gpr_a [ r1 + 1 ] , cpu_gpr_a [ r1 ] , temp , ctx )"	22:8:599:657	2077	7	True				
+ANR	2192	CallExpression	"gen_st_2regs_64 ( cpu_gpr_a [ r1 + 1 ] , cpu_gpr_a [ r1 ] , temp , ctx )"		2077	0					
+ANR	2193	Callee	gen_st_2regs_64		2077	0					
+ANR	2194	Identifier	gen_st_2regs_64		2077	0					
+ANR	2195	ArgumentList	cpu_gpr_a [ r1 + 1 ]		2077	1					
+ANR	2196	Argument	cpu_gpr_a [ r1 + 1 ]		2077	0					
+ANR	2197	ArrayIndexing	cpu_gpr_a [ r1 + 1 ]		2077	0					
+ANR	2198	Identifier	cpu_gpr_a		2077	0					
+ANR	2199	AdditiveExpression	r1 + 1		2077	1		+			
+ANR	2200	Identifier	r1		2077	0					
+ANR	2201	PrimaryExpression	1		2077	1					
+ANR	2202	Argument	cpu_gpr_a [ r1 ]		2077	1					
+ANR	2203	ArrayIndexing	cpu_gpr_a [ r1 ]		2077	0					
+ANR	2204	Identifier	cpu_gpr_a		2077	0					
+ANR	2205	Identifier	r1		2077	1					
+ANR	2206	Argument	temp		2077	2					
+ANR	2207	Identifier	temp		2077	0					
+ANR	2208	Argument	ctx		2077	3					
+ANR	2209	Identifier	ctx		2077	0					
+ANR	2210	BreakStatement	break ;	23:8:667:672	2077	8	True				
+ANR	2211	Label	case OPC2_32_ABS_ST_W :	24:4:678:699	2077	9	True				
+ANR	2212	Identifier	OPC2_32_ABS_ST_W		2077	0					
+ANR	2213	ExpressionStatement	"tcg_gen_qemu_st_tl ( cpu_gpr_d [ r1 ] , temp , ctx -> mem_idx , MO_LESL )"	25:8:709:771	2077	10	True				
+ANR	2214	CallExpression	"tcg_gen_qemu_st_tl ( cpu_gpr_d [ r1 ] , temp , ctx -> mem_idx , MO_LESL )"		2077	0					
+ANR	2215	Callee	tcg_gen_qemu_st_tl		2077	0					
+ANR	2216	Identifier	tcg_gen_qemu_st_tl		2077	0					
+ANR	2217	ArgumentList	cpu_gpr_d [ r1 ]		2077	1					
+ANR	2218	Argument	cpu_gpr_d [ r1 ]		2077	0					
+ANR	2219	ArrayIndexing	cpu_gpr_d [ r1 ]		2077	0					
+ANR	2220	Identifier	cpu_gpr_d		2077	0					
+ANR	2221	Identifier	r1		2077	1					
+ANR	2222	Argument	temp		2077	1					
+ANR	2223	Identifier	temp		2077	0					
+ANR	2224	Argument	ctx -> mem_idx		2077	2					
+ANR	2225	PtrMemberAccess	ctx -> mem_idx		2077	0					
+ANR	2226	Identifier	ctx		2077	0					
+ANR	2227	Identifier	mem_idx		2077	1					
+ANR	2228	Argument	MO_LESL		2077	3					
+ANR	2229	Identifier	MO_LESL		2077	0					
+ANR	2230	BreakStatement	break ;	26:8:781:786	2077	11	True				
+ANR	2231	ExpressionStatement	tcg_temp_free ( temp )	29:4:799:818	2077	9	True				
+ANR	2232	CallExpression	tcg_temp_free ( temp )		2077	0					
+ANR	2233	Callee	tcg_temp_free		2077	0					
+ANR	2234	Identifier	tcg_temp_free		2077	0					
+ANR	2235	ArgumentList	temp		2077	1					
+ANR	2236	Argument	temp		2077	0					
+ANR	2237	Identifier	temp		2077	0					
+ANR	2238	ReturnType	static void		2077	1					
+ANR	2239	Identifier	decode_abs_store		2077	2					
+ANR	2240	ParameterList	"CPUTriCoreState * env , DisasContext * ctx"		2077	3					
+ANR	2241	Parameter	CPUTriCoreState * env	1:29:29:48	2077	0	True				
+ANR	2242	ParameterType	CPUTriCoreState *		2077	0					
+ANR	2243	Identifier	env		2077	1					
+ANR	2244	Parameter	DisasContext * ctx	1:51:51:67	2077	1	True				
+ANR	2245	ParameterType	DisasContext *		2077	0					
+ANR	2246	Identifier	ctx		2077	1					
+ANR	2247	CFGEntryNode	ENTRY		2077		True				
+ANR	2248	CFGExitNode	EXIT		2077		True				
+ANR	2249	Symbol	temp		2077						
+ANR	2250	Symbol	* cpu_gpr_d		2077						
+ANR	2251	Symbol	address		2077						
+ANR	2252	Symbol	ctx -> opcode		2077						
+ANR	2253	Symbol	MO_LESL		2077						
+ANR	2254	Symbol	cpu_gpr_a		2077						
+ANR	2255	Symbol	ctx		2077						
+ANR	2256	Symbol	* r1		2077						
+ANR	2257	Symbol	cpu_gpr_d		2077						
+ANR	2258	Symbol	env		2077						
+ANR	2259	Symbol	MASK_OP_ABS_OFF18		2077						
+ANR	2260	Symbol	MASK_OP_ABS_S1D		2077						
+ANR	2261	Symbol	* ctx		2077						
+ANR	2262	Symbol	tcg_const_i32		2077						
+ANR	2263	Symbol	op2		2077						
+ANR	2264	Symbol	ctx -> mem_idx		2077						
+ANR	2265	Symbol	MASK_OP_ABS_OP2		2077						
+ANR	2266	Symbol	* cpu_gpr_a		2077						
+ANR	2267	Symbol	r1		2077						
+ANR	2268	Symbol	EA_ABS_FORMAT		2077						
